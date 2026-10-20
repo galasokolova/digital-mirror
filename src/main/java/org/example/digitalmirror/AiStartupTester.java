@@ -19,7 +19,7 @@ public class AiStartupTester implements CommandLineRunner {
     public void run(String... args) {
         System.out.println("🔄 Checking OpenAI connection...");
         try {
-            String reply = aiService.testConnection(chatModel);
+            String reply = aiService.testConnection();
             System.out.println("\n✅ Success! AI replies:");
             System.out.println("----------------------------------------");
             System.out.println(reply);

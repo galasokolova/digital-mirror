@@ -20,7 +20,7 @@
     </properties>
 
     <dependencies>
-        <!-- Веб-сервер и WebSocket для связи с p5.js -->
+        <!-- Connection to p5.js -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -30,14 +30,14 @@
             <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
 
-        <!-- Чтение Serial-порта Arduino (USB) -->
+        <!-- Reading Serial-port Arduino (USB) -->
         <dependency>
             <groupId>com.fazecast</groupId>
             <artifactId>jSerialComm</artifactId>
             <version>2.11.0</version>
         </dependency>
 
-        <!-- LangChain4j для работы с OpenAI API -->
+        <!-- LangChain4j for OpenAI API -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j</artifactId>
@@ -49,14 +49,14 @@
             <version>${langchain4j.version}</version>
         </dependency>
 
-        <!-- Чтение переменных из .env -->
+        <!-- .env -->
         <dependency>
             <groupId>io.github.cdimascio</groupId>
             <artifactId>dotenv-java</artifactId>
             <version>3.1.0</version>
         </dependency>
 
-        <!-- Утилиты и инструменты разработчика -->
+        <!-- dev tools -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -65,11 +65,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
+            <version>4.0.6</version>
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
 
-        <!-- Тестирование -->
+        <!-- Testing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
