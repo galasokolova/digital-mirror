@@ -1,51 +1,96 @@
-function applyFaceDistortions(faces, valLogic, valFact, valFake) {
-  // Ruducing fact-checking logic
-  let effectiveFake = max(0, valFake - valFact);
+function drawEyeBlur(leftX, leftY, rightX, rightY, spotWidth, spotHeight, blurSettings) {
+  if (blurSettings.blurAmount <= 0.5) return;
 
-  // blur radius (20px)
-  let blurAmount = 20 - map(valLogic, 0, 1023, 0, 8) - map(valFact, 0, 1023, 0, 12);
-  blurAmount = max(0, blurAmount);
-  let alphaVal = map(blurAmount, 0, 20, 0, 230);
+  push();
+  drawingContext.filter = `blur(${blurSettings.blurAmount}px)`;
+  fill(20, 20, 20, blurSettings.alphaVal);
+  noStroke();
+
+  ellipse(leftX, leftY, spotWidth, spotHeight);
+  ellipse(rightX, rightY, spotWidth, spotHeight);
+  pop();
+}
+
+// buffer to select an eye
+let eyeBuffer = null;
+
+function drawFakeDistortions(leftX, leftY, rightX, rightY, spotWidth, spotHeight, effectiveFake) {
+  if (effectiveFake <= 40) return;
+
+  // Vertical offset (forehead)
+  let yOffset = map(effectiveFake, 40, 1023, 8, 30);
+
+  // Rightward offset (adjusting)
+  let xOffset = 35;
+
+  let cloneAlpha = map(effectiveFake, 40, 1023, 140, 245);
+
+  let cropW = Math.round(spotWidth * 1.5);
+  let cropH = Math.round(spotHeight * 1.5);
+
+  if (!eyeBuffer) {
+    eyeBuffer = createGraphics(160, 120);
+    eyeBuffer.pixelDensity(1);
+  }
+
+  push();
+  imageMode(CENTER);
+  tint(255, cloneAlpha);
+
+  // 1. Left eye
+  renderSoftEye(leftX, leftY, cropW, cropH);
+  image(eyeBuffer, leftX + xOffset, leftY - yOffset);
+
+  // 2. Right eye
+  renderSoftEye(rightX, rightY, cropW, cropH);
+  image(eyeBuffer, rightX + xOffset, rightY - yOffset);
+
+  pop();
+}
+
+// takes selected fragment and cuts softly
+function renderSoftEye(cx, cy, w, h) {
+  eyeBuffer.clear();
+
+  // Top-left corner to capture video
+  let sx = Math.max(0, Math.round(cx - w / 2));
+  let sy = Math.max(0, Math.round(cy - h / 2));
+
+  // Draw video rectangle to buffer
+  eyeBuffer.image(video, 0, 0, w, h, sx, sy, w, h);
+
+  // 2. Mask mode: keep only what is drawn next
+  eyeBuffer.drawingContext.save();
+  eyeBuffer.drawingContext.globalCompositeOperation = 'destination-in';
+
+  // 3. Create radial gradient: 100% solid in center, fading to 0 at edges
+  let grad = eyeBuffer.drawingContext.createRadialGradient(
+      w / 2, h / 2, Math.min(w, h) * 0.15, // Inner radius (sharp)
+      w / 2, h / 2, Math.min(w, h) * 0.50  // Outer radius (full fade-out)
+  );
+  grad.addColorStop(0, 'rgba(0, 0, 0, 1)');
+  grad.addColorStop(0.7, 'rgba(0, 0, 0, 0.8)');
+  grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+
+  eyeBuffer.drawingContext.fillStyle = grad;
+  eyeBuffer.drawingContext.fillRect(0, 0, w, h);
+  eyeBuffer.drawingContext.restore();
+}
+
+function applyFaceDistortions(faces, valLogic, valFact, valFake) {
+  let effectiveFake = calculateEffectiveFake(valFake, valFact);
+  let blurSettings = calculateBlurSettings(valLogic, valFact);
 
   for (let i = 0; i < faces.length; i++) {
     let face = faces[i];
 
-    if (face.keypoints && face.keypoints.length > 386) {
-      let leftX = (face.keypoints[159].x + face.keypoints[145].x) / 2;
-      let leftY = (face.keypoints[159].y + face.keypoints[145].y) / 2;
-      let rightX = (face.keypoints[386].x + face.keypoints[374].x) / 2;
-      let rightY = (face.keypoints[386].y + face.keypoints[374].y) / 2;
+    if (!face.keypoints || face.keypoints.length <= 386) continue;
 
-      let eyeDist = dist(leftX, leftY, rightX, rightY);
-      let spotWidth = eyeDist * 0.7;
-      let spotHeight = eyeDist * 0.5;
+    let eyes = getEyeCenters(face.keypoints);
+    let dims = getSpotDimensions(eyes.leftX, eyes.leftY, eyes.rightX, eyes.rightY);
 
-      // 1. blurring
-      if (blurAmount > 0.5) {
-        push();
-        drawingContext.filter = `blur(${blurAmount}px)`;
-        fill(20, 20, 20, alphaVal);
-        noStroke();
-        ellipse(leftX, leftY, spotWidth, spotHeight);
-        ellipse(rightX, rightY, spotWidth, spotHeight);
-        pop();
-      }
-
-      // 2. Distortion face with "Fake Generation"
-      if (effectiveFake > 40) {
-        let distortion = map(effectiveFake, 40, 1023, 5, 50);
-        push();
-        fill(200, 30, 30, 170);
-        stroke(255);
-        strokeWeight(1);
-        ellipse(leftX - distortion, leftY - distortion, spotWidth * 0.6, spotHeight * 0.6);
-        ellipse(rightX + distortion, rightY - distortion, spotWidth * 0.6, spotHeight * 0.6);
-
-        stroke(255, 0, 0, 180);
-        line(leftX, leftY, rightX + distortion, rightY - distortion);
-        pop();
-      }
-    }
+    drawEyeBlur(eyes.leftX, eyes.leftY, eyes.rightX, eyes.rightY, dims.spotWidth, dims.spotHeight, blurSettings);
+    drawFakeDistortions(eyes.leftX, eyes.leftY, eyes.rightX, eyes.rightY, dims.spotWidth, dims.spotHeight, effectiveFake);
   }
 
   return effectiveFake;

@@ -22,7 +22,6 @@ function setup() {
 
   faceMesh.detectStart(video, gotFaces);
 
-  // First require a headline from api.js
   fetchRandomHeadline();
 }
 
@@ -39,7 +38,6 @@ function draw() {
   drawTimeline(rawTime);
   drawHUD(rawTime, rawLogic, rawFact, rawFake, effectiveFake);
 
-  // Drawing answer in the upper part of canvas
   drawHeadlineBanner();
 }
 
@@ -54,7 +52,6 @@ function drawHeadlineBanner() {
   textAlign(CENTER, CENTER);
   text(currentHeadline, width / 2, 20);
 
-  // If AI answered, show it
   if (aiAnalysisResult) {
     fill(255, 200, 50);
     textSize(11);
@@ -64,12 +61,10 @@ function drawHeadlineBanner() {
 }
 
 function keyPressed() {
-  // Space key  — send parameters to Java
   if (key === ' ') {
     let year = Math.round(map(sliderTime.value(), 0, 1023, 1960, 2026));
     sendAnalysisRequest(year, sliderLogic.value(), sliderFact.value(), sliderFake.value());
   }
-  // Key 'N' (Next) — get a new headline
   if (key === 'n' || key === 'N') {
     fetchRandomHeadline();
   }

@@ -9,7 +9,7 @@ async function fetchRandomHeadline() {
   try {
     let res = await fetch(`${API_BASE_URL}/headline/random`);
     if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
-    
+
     let data = await res.json();
     currentHeadline = data.text;
     console.log("Headline downloaded:", currentHeadline);
@@ -21,7 +21,7 @@ async function fetchRandomHeadline() {
   }
 }
 
-// Sending current acruators' values for analysis
+// Sending current actuators' values for analysis
 async function sendAnalysisRequest(tYear, logicVal, factVal, fakeVal) {
   if (isAiLoading) return; // "429 Too Many Requests" protection
   isAiLoading = true;
@@ -40,7 +40,7 @@ async function sendAnalysisRequest(tYear, logicVal, factVal, fakeVal) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
     });
-    
+
     if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
 
     let result = await res.json();
