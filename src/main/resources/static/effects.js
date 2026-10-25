@@ -11,7 +11,7 @@ function drawEyeBlur(leftX, leftY, rightX, rightY, spotWidth, spotHeight, blurSe
   pop();
 }
 
-// buffer to select an eye
+// Buffer to select an eye
 let eyeBuffer = null;
 
 function drawFakeDistortions(leftX, leftY, rightX, rightY, spotWidth, spotHeight, effectiveFake) {
@@ -48,7 +48,7 @@ function drawFakeDistortions(leftX, leftY, rightX, rightY, spotWidth, spotHeight
   pop();
 }
 
-// takes selected fragment and cuts softly
+// Takes selected fragment and cuts softly
 function renderSoftEye(cx, cy, w, h) {
   eyeBuffer.clear();
 
@@ -59,14 +59,14 @@ function renderSoftEye(cx, cy, w, h) {
   // Draw video rectangle to buffer
   eyeBuffer.image(video, 0, 0, w, h, sx, sy, w, h);
 
-  // 2. Mask mode: keep only what is drawn next
+  // Mask mode: keep only what is drawn next
   eyeBuffer.drawingContext.save();
   eyeBuffer.drawingContext.globalCompositeOperation = 'destination-in';
 
-  // 3. Create radial gradient: 100% solid in center, fading to 0 at edges
+  // Create radial gradient: solid center fading to edges
   let grad = eyeBuffer.drawingContext.createRadialGradient(
-      w / 2, h / 2, Math.min(w, h) * 0.15, // Inner radius (sharp)
-      w / 2, h / 2, Math.min(w, h) * 0.50  // Outer radius (full fade-out)
+      w / 2, h / 2, Math.min(w, h) * 0.15,
+      w / 2, h / 2, Math.min(w, h) * 0.50
   );
   grad.addColorStop(0, 'rgba(0, 0, 0, 1)');
   grad.addColorStop(0.7, 'rgba(0, 0, 0, 0.8)');
