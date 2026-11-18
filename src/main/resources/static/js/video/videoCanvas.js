@@ -1,3 +1,5 @@
+// js/video/videoCanvas.js
+
 let faceMesh;
 let video;
 let faces = [];
@@ -23,30 +25,31 @@ function setup() {
     video.hide();
 
     faceMesh.detectStart(video, gotFaces);
-
     fetchRandomHeadline();
+
+    // running request of backend
+    setInterval(pollHardwareState, 60);
 }
 
 function draw() {
-    // Render webcam feed
     image(video, 0, 0, width, height);
 
-    let rawTime = sliderTime.value();
-    let rawLogic = sliderLogic.value();
-    let rawFact = sliderFact.value();
-    let rawFake = sliderFake.value();
+    // data from the HARDWARE
+    let rawTime = hardwareState.timeline;
+    let rawLogic = hardwareState.logic;
+    let rawFact = hardwareState.factCheck;
+    let rawFake = hardwareState.fakeGenerator;
 
-    // Face distortion logic
     let effectiveFake = applyFaceDistortions(faces, rawLogic, rawFact, rawFake);
 
-    // Bottom parameters HUD
+    // lines of sliders
     drawHUD(rawTime, rawLogic, rawFact, rawFake, effectiveFake);
 }
 
 function keyPressed() {
     if (key === ' ') {
-        let year = Math.round(map(sliderTime.value(), 0, 1023, 1960, 2026));
-        sendAnalysisRequest(year, sliderLogic.value(), sliderFact.value(), sliderFake.value());
+        let year = Math.round(map(hardwareState.timeline, 0, 1023, 1960, 2026));
+        sendAnalysisRequest(year, hardwareState.logic, hardwareState.factCheck, hardwareState.fakeGenerator);
     }
     if (key === 'n' || key === 'N') {
         fetchRandomHeadline();

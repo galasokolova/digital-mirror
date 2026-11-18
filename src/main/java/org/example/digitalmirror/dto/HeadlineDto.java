@@ -1,15 +1,14 @@
 package org.example.digitalmirror.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class HeadlineDto {
-    private String id;
-    private String text;
-    private int year;
-    private int baseDistortion;
+public record HeadlineDto(
+        String id,
+        String text,
+        int year,
+        int baseDistortion,
+        String type,  // "REAL" or "FAKE"
+        String era    // "PRE_INTERNET", "INTERNET_ERA", "AI_ERA"
+) {
+    public HeadlineDto(String id, String text, int year, int baseDistortion) {
+        this(id, text, year, baseDistortion, "REAL", "INTERNET_ERA");
+    }
 }
