@@ -1,31 +1,36 @@
+
 package org.example.digitalmirror;
 
-import dev.langchain4j.model.openai.OpenAiChatModel;
-import org.example.digitalmirror.service.AiAnalysisService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
 public class AiStartupTester implements CommandLineRunner {
-    private final AiAnalysisService aiService;
-    private final OpenAiChatModel chatModel;
 
-    public AiStartupTester(AiAnalysisService aiService, OpenAiChatModel chatModel) {
-        this.aiService = aiService;
-        this.chatModel = chatModel;
+    private final String aiMode;
+
+    public AiStartupTester(
+            @Value("${ai.mode:mock}") String aiMode
+    ) {
+        this.aiMode = aiMode;
     }
 
     @Override
     public void run(String... args) {
-        System.out.println("🔄 Checking OpenAI connection...");
-        try {
-            String reply = aiService.testConnection();
-            System.out.println("\n✅ Success! AI replies:");
-            System.out.println("----------------------------------------");
-            System.out.println(reply);
-            System.out.println("----------------------------------------");
-        } catch (Exception e) {
-            System.err.println("❌ OpenAI API connection failed: " + e.getMessage());
+        System.out.println("----------------------------------------\uD83E\uDD16");
+        System.out.println("Digital Mirror AI mode: " + aiMode);
+
+        if ("live".equalsIgnoreCase(aiMode)) {
+            System.out.println(
+                    "OpenAI live mode enabled. API requests may incur costs."
+            );
+        } else {
+            System.out.println(
+                    "MOCK MODE: OpenAI requests are disabled."
+            );
         }
+
+        System.out.println("----------------------------------------\uD83E\uDD16");
     }
 }
