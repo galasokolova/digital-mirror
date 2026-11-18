@@ -2,8 +2,10 @@ package org.example.digitalmirror.controller;
 
 import org.example.digitalmirror.dto.AnalysisRequestDto;
 import org.example.digitalmirror.dto.AnalysisResponseDto;
+import org.example.digitalmirror.dto.HardwareStateDto;
 import org.example.digitalmirror.dto.HeadlineDto;
 import org.example.digitalmirror.service.AiAnalysisService;
+import org.example.digitalmirror.service.ArduinoSerialService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,21 +15,26 @@ import org.springframework.web.bind.annotation.*;
 public class MirrorApiController {
 
     private final AiAnalysisService aiService;
+    private final ArduinoSerialService hardwareService;
 
-    public MirrorApiController(AiAnalysisService aiService) {
+    public MirrorApiController(AiAnalysisService aiService, ArduinoSerialService hardwareService) {
         this.aiService = aiService;
+        this.hardwareService = hardwareService;
     }
 
-    // GET http://localhost:8080/api/headline/random
     @GetMapping("/headline/random")
     public ResponseEntity<HeadlineDto> getRandomHeadline() {
         return ResponseEntity.ok(aiService.getRandomHeadline());
     }
 
-    // POST http://localhost:8080/api/analyze (get data from p5.js)
     @PostMapping("/analyze")
     public ResponseEntity<AnalysisResponseDto> analyzeClientState(@RequestBody AnalysisRequestDto request) {
         AnalysisResponseDto response = aiService.analyzeDistortion(request);
         return ResponseEntity.ok(response);
+    }
+
+    @GetMapping("/hardware/state")
+    public ResponseEntity<HardwareStateDto> getHardwareState() {
+        return ResponseEntity.ok(hardwareService.getLatestHardwareState());
     }
 }

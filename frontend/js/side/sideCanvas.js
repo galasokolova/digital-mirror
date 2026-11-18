@@ -13,7 +13,7 @@ const sideCanvasSketch = (p) => {
     };
 
     p.draw = () => {
-        let rawTime = (typeof sliderTime !== 'undefined' && sliderTime) ? sliderTime.value() : 0;
+        let rawTime = (typeof hardwareState !== 'undefined') ? hardwareState.timeline : 0;
         renderNewsPanel(rawTime);
     };
 

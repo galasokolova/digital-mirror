@@ -45,8 +45,8 @@ public class AiAnalysisService {
             Context Year: %d.
             Parameters (0-1023): Logic=%d, FactCheck=%d, FakeGen=%d.
             
-            Provide a short 1-2 sentence epistemic critique exposing ideological bias, spin, or synthetic manipulation.
-            Keep it poignant and artistic.
+            Provide a short 1-2 sentence critique exposing ideological bias, spin, or synthetic manipulation.
+            Keep it artistic.
             """,
                 req.headline(),
                 req.timelineYear(),
