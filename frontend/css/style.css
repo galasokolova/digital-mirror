@@ -1,23 +1,39 @@
-html, body {
+
+/* ==========================================
+   DIGITAL MIRROR
+   Global styles
+   ========================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
+  min-height: 100%;
 }
 
 body {
-  margin: 20px;
   background: #181818;
-  color: #fff;
-  font-family: sans-serif;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 24px;
 }
 
-canvas {
-  display: block;
-}
+/* ==========================================
+   CANVAS LAYOUT
+   Left: Mirror
+   Right: Article
+   ========================================== */
 
 .canvas-row {
   display: flex;
-  gap: 20px;
+  justify-content: center;
   align-items: flex-start;
+  gap: 20px;
+  width: 100%;
 }
 
 #video-canvas-container,
@@ -25,4 +41,212 @@ canvas {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 640px;
+  flex: 0 0 640px;
+  min-width: 0;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==========================================
+   HARDWARE SIMULATOR
+   Temporary replacement for Arduino
+   ========================================== */
+
+#mock-controls {
+  width: 100%;
+  max-width: 900px;
+  margin: 24px auto 0;
+  padding: 24px 30px;
+
+  background: #101820;
+  color: #00ffc8;
+
+  border: 1px solid #00ffc8;
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+}
+
+/* Controller heading */
+
+#mock-controls h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#mock-controls p {
+  margin: 0 0 24px;
+  color: #8caaa5;
+  font-size: 12px;
+}
+
+/* ==========================================
+   TRUST SLIDER
+   Range: 0.00 - 1.00
+   ========================================== */
+
+#mock-controls label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.trust-control {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.trust-control input[type="range"] {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  cursor: pointer;
+  accent-color: #00ffc8;
+}
+
+.trust-control output {
+  min-width: 55px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ffc8;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Labels below slider */
+
+.trust-labels {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+
+  color: #8caaa5;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.trust-labels span:nth-child(2) {
+  text-align: center;
+}
+
+.trust-labels span:last-child {
+  text-align: right;
+}
+
+/* ==========================================
+   NAVIGATION BUTTONS
+   BACK / SELECT / NEXT
+   ========================================== */
+
+.navigation-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.navigation-buttons button {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+
+  background: #142a2b;
+  color: #00ffc8;
+
+  border: 1px solid #00ffc8;
+  border-radius: 4px;
+
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navigation-buttons button:hover {
+  background: #20504b;
+  color: #ffffff;
+}
+
+.navigation-buttons button:active {
+  background: #00ffc8;
+  color: #101820;
+}
+
+.navigation-buttons button:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* SELECT - primary action */
+
+#article-select {
+  background: #006b58;
+  color: #ffffff;
+}
+
+#article-select:hover {
+  background: #008c72;
+}
+
+/* ==========================================
+   RESPONSIVE LAYOUT
+   Smaller screens
+   ========================================== */
+
+@media (max-width: 1350px) {
+  .canvas-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 12px;
+  }
+
+  .canvas-row {
+    gap: 16px;
+  }
+
+  #video-canvas-container,
+  #side-canvas-container {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  #mock-controls {
+    padding: 20px 16px;
+    margin-top: 20px;
+  }
+
+  #mock-controls h3 {
+    font-size: 15px;
+  }
+
+  .navigation-buttons {
+    gap: 8px;
+  }
+
+  .navigation-buttons button {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .trust-labels {
+    font-size: 10px;
+  }
 }
