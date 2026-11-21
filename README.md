@@ -166,6 +166,16 @@ digital-mirror/
 
 The current visual prototype uses Trust as a temporary effect-control value. It does not yet use predictions from a trained manipulation-detection model.
 
+## Project Documentation
+
+| Area | Documentation | Description |
+|---|---|---|
+| Project | [Main README](README.md) | Project concept, architecture, and development status |
+| Machine Learning | [ML README](ml/README.md) | ML pipeline, datasets, scripts, and model training |
+| ML Research | [Initial Research Report](ml/docs/ML_RESEARCH_REPORT.md) | Dataset exploration, LIAR experiments, and initial limitations |
+| FEVER Research | [FEVER Experiments Report](ml/docs/FEVER_EXPERIMENTS_REPORT.md) | FEVER preparation, experiments E01–E06d, difficulties, and findings |
+| Arduino | [Arduino README](arduino/README.md) | Hardware, controls, firmware, and serial communication |
+
 ## Running the Prototype
 
 ### Requirements
