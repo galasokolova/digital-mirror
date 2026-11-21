@@ -32,3 +32,36 @@ build/
 
 ### VS Code ###
 .vscode/
+ml/.venv/
+ml/__pycache__/
+ml/src/__pycache__/
+
+# Python virtual environments
+.venv/
+.venv~/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Python tooling
+.ipynb_checkpoints/
+
+# ML generated models
+ml/models/*.joblib
+ml/models/*.pkl
+
+# ML datasets and generated experiment outputs
+/ml/data/raw/
+/ml/data/processed/
+/ml/data/experiments/
+
+# ML model artifacts
+/ml/models/*.joblib
+/ml/models/*.pkl
+
+# Python tooling and local files
+*.log
+.DS_Store
