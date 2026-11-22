@@ -16,7 +16,9 @@
   </div>
 
   <!-- common modules -->
-  <script src="js/common/api.js"></script>
+  <script src="js/common/claimApi.js"></script>
+  <script src="js/common/interactionFlow.js"></script>
+  <script src="js/common/arduinoSimulator.js"></script>
   <script src="js/common/articles.js"></script>
   <script src="js/common/mirrorState.js"></script>
   <script src="js/common/mockControls.js"></script>
@@ -29,9 +31,17 @@
   <script src="js/video/agents.js"></script>
   <script src="js/video/videoCanvas.js"></script>
 
-  <!-- Right canvas (retro newspaper, CRT-effect) -->
-  <script src="js/side/paperEffect.js"></script>
-  <script src="js/side/crtEffect.js"></script>
-  <script src="js/side/sideCanvas.js"></script>
+  <!-- Right canvas: Machine Mirror -->
+  <script src="js/side/machineMask.js"></script>
+  <script src="js/side/machineFrame.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById(
+              "side-canvas-container"
+      );
+
+      window.machineFrame = new MachineFrame(container);
+    });
+  </script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 /* ==========================================
    DIGITAL MIRROR
    Global styles
@@ -24,8 +23,8 @@ body {
 
 /* ==========================================
    CANVAS LAYOUT
-   Left: Mirror
-   Right: Article
+   Left: Human Mirror
+   Right: Machine Mirror
    ========================================== */
 
 .canvas-row {
@@ -36,30 +35,118 @@ body {
   width: 100%;
 }
 
-#video-canvas-container,
-#side-canvas-container {
+/* Human Mirror container */
+
+#video-canvas-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
   width: 640px;
-  flex: 0 0 640px;
+  flex: 0 1 640px;
   min-width: 0;
 }
+
+/* Machine Mirror container */
+
+#side-canvas-container {
+  position: relative;
+
+  width: 640px;
+  aspect-ratio: 4 / 3;
+
+  flex: 0 1 640px;
+  min-width: 0;
+
+  overflow: hidden;
+  background: #080b10;
+
+  isolation: isolate;
+}
+
+/* General canvas rules */
 
 canvas {
   display: block;
   max-width: 100%;
+}
+
+/* ==========================================
+   HUMAN MIRROR
+   Camera / FaceMesh
+   ========================================== */
+
+#video-canvas-container canvas {
+  width: 100%;
   height: auto;
 }
 
 /* ==========================================
-   HARDWARE SIMULATOR
-   Temporary replacement for Arduino
+   MACHINE MIRROR
+   WEBGL mask + transparent frame
+   ========================================== */
+
+/* The WEBGL canvas */
+
+#side-canvas-container canvas:not(.machine-frame-overlay) {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+}
+
+/* Transparent decorative frame */
+
+#side-canvas-container .machine-frame-overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 10;
+
+  pointer-events: none;
+}
+
+#side-canvas-container .machine-speak-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 20;
+
+  padding: 8px 14px;
+  background: #101820;
+  color: #00ffc8;
+  border: 1px solid #00ffc8;
+  border-radius: 4px;
+
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#side-canvas-container .machine-speak-button:hover {
+  background: #006b58;
+}
+
+/* ==========================================
+   OLD HARDWARE CONTROLLER
+   Temporary compatibility
    ========================================== */
 
 #mock-controls {
   width: 100%;
   max-width: 900px;
+
   margin: 24px auto 0;
   padding: 24px 30px;
 
@@ -72,10 +159,9 @@ canvas {
   font-family: "Courier New", monospace;
 }
 
-/* Controller heading */
-
 #mock-controls h3 {
   margin: 0 0 8px;
+
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -83,18 +169,20 @@ canvas {
 
 #mock-controls p {
   margin: 0 0 24px;
+
   color: #8caaa5;
   font-size: 12px;
 }
 
 /* ==========================================
    TRUST SLIDER
-   Range: 0.00 - 1.00
+   Legacy controls
    ========================================== */
 
 #mock-controls label {
   display: block;
   margin-bottom: 12px;
+
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -111,25 +199,29 @@ canvas {
   flex: 1;
   width: 100%;
   min-width: 0;
+
   cursor: pointer;
   accent-color: #00ffc8;
 }
 
 .trust-control output {
   min-width: 55px;
+
   text-align: right;
   font-size: 18px;
   font-weight: bold;
+
   color: #00ffc8;
   font-variant-numeric: tabular-nums;
 }
 
-/* Labels below slider */
+/* Slider labels */
 
 .trust-labels {
   display: flex;
   justify-content: space-between;
   gap: 12px;
+
   margin-top: 10px;
 
   color: #8caaa5;
@@ -146,7 +238,7 @@ canvas {
 }
 
 /* ==========================================
-   NAVIGATION BUTTONS
+   LEGACY NAVIGATION BUTTONS
    BACK / SELECT / NEXT
    ========================================== */
 
@@ -159,6 +251,7 @@ canvas {
 .navigation-buttons button {
   flex: 1;
   min-width: 0;
+
   padding: 14px 16px;
 
   background: #142a2b;
@@ -173,7 +266,10 @@ canvas {
   letter-spacing: 1px;
 
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+
+  transition:
+          background 0.2s,
+          color 0.2s;
 }
 
 .navigation-buttons button:hover {
@@ -191,7 +287,7 @@ canvas {
   outline-offset: 3px;
 }
 
-/* SELECT - primary action */
+/* SELECT button */
 
 #article-select {
   background: #006b58;
@@ -204,7 +300,6 @@ canvas {
 
 /* ==========================================
    RESPONSIVE LAYOUT
-   Smaller screens
    ========================================== */
 
 @media (max-width: 1350px) {
@@ -226,6 +321,10 @@ canvas {
   #side-canvas-container {
     width: 100%;
     flex: 1 1 100%;
+  }
+
+  #side-canvas-container {
+    aspect-ratio: 4 / 3;
   }
 
   #mock-controls {
