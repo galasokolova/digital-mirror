@@ -28,9 +28,10 @@ public class MirrorApiController {
     }
 
     @PostMapping("/analyze")
-    public ResponseEntity<AnalysisResponseDto> analyzeClientState(@RequestBody AnalysisRequestDto request) {
-        AnalysisResponseDto response = aiService.analyzeDistortion(request);
-        return ResponseEntity.ok(response);
+    public ResponseEntity<AnalysisResponseDto> analyzeClaim(
+            @RequestBody AnalysisRequestDto request
+    ) {
+        return ResponseEntity.ok(aiService.analyzeClaim(request));
     }
 
     @GetMapping("/hardware/state")

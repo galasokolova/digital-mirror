@@ -1,7 +1,8 @@
 package org.example.digitalmirror.dto;
 
 public record AnalysisResponseDto(
-        String analysis,
-        double biasScore,
-        String visualTone
+        String claimId,
+        String prediction,
+        double supportProbability,
+        double refuteProbability
 ) {}

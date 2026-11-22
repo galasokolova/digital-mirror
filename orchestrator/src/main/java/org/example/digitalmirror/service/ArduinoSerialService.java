@@ -133,4 +133,10 @@ public class ArduinoSerialService {
             System.out.println("🔌 [Hardware] Port closed cleanly.");
         }
     }
+
+    public double getHumanScore() {
+        int analogValue = getLatestHardwareState().logic();
+
+        return Math.clamp(analogValue / 1023.0, 0.0, 1.0);
+    }
 }
