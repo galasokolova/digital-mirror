@@ -1,25 +1,21 @@
 const machineMaskSketch = (p) => {
     const containerId = "side-canvas-container";
-    let stars = [];
-    let cosmicParticles = [];
-    let cosmicGlow;
-
-    const STAR_COUNT = 250;
-    const PARTICLE_COUNT = 90;
 
     let faceMesh = [];
     let hud;
-    let speakButton;
+    let machineSpeech;
 
     let speaking = false;
     let mouthLevel = 0;
 
-    const ROWS = 36;
-    const COLS = 44;
+    const ROWS = 28;
+    const COLS = 34;
+
 
     const FACE_W = 145;
     const FACE_H = 205;
     const FACE_D = 75;
+    const FACE_SCALE = 0.80;
 
     let machineSupport = 74;
     let machineRefute = 26;
@@ -27,25 +23,27 @@ const machineMaskSketch = (p) => {
     p.setup = function setup() {
         p.createCanvas(640, 480, p.WEBGL);
 
-        createCosmos();
-
-        cosmicGlow = p.createGraphics(p.width, p.height);
-        cosmicGlow.pixelDensity(1);
+        p.ortho(
+            -p.width / 2,
+            p.width / 2,
+            -p.height / 2,
+            p.height / 2,
+            -1000,
+            1000
+        );
 
         p.pixelDensity(1);
         p.frameRate(30);
-
 
         hud = p.createGraphics(640, 480);
         hud.pixelDensity(1);
 
         createFace();
 
-        speakButton = p.createButton("SPEAK");
-        speakButton.parent(containerId);
-        speakButton.addClass("machine-speak-button");
-        speakButton.mousePressed(speakMachine);
-    }
+        machineSpeech = new MachineSpeech((isSpeaking) => {
+            speaking = isSpeaking;
+        });
+    };
 
 // --------------------------------------
 // FACE GEOMETRY
@@ -143,19 +141,13 @@ const machineMaskSketch = (p) => {
 // MAIN DRAW
 // --------------------------------------
 
-
     p.draw = function draw() {
         try {
             p.background(3, 7, 14);
 
-            console.log("1. Background OK");
+            const time = p.frameCount * 0.2;
 
-            drawCosmos();
-            console.log("2. Cosmos OK");
-
-            let time = p.frameCount * 0.2;
-
-            let target = speaking
+            const target = speaking
                 ? 7 + 9 * p.abs(p.sin(time * 3))
                 : 0;
 
@@ -164,29 +156,28 @@ const machineMaskSketch = (p) => {
             p.push();
 
             try {
-                p.translate(0, 8, 0);
+                const layout = calculateFaceLayout();
+
+                p.translate(layout.x, layout.y, 0);
+
                 p.rotateY(p.sin(p.frameCount * 0.005) * 0.20);
                 p.rotateX(-0.04);
 
+                p.scale(layout.scale);
+
                 drawFace(time);
-                console.log("3. Face OK");
+
             } finally {
                 p.pop();
             }
 
             drawHUD();
-            console.log("4. HUD OK");
 
         } catch (error) {
             console.error("MACHINE MASK ERROR:", error);
             p.noLoop();
         }
     };
-
-
-// --------------------------------------
-// FACE RENDERING
-// --------------------------------------
 
     function drawFace(time) {
         let points = [];
@@ -272,11 +263,6 @@ const machineMaskSketch = (p) => {
         drawEyes(time);
     }
 
-// --------------------------------------
-// HUD
-// --------------------------------------
-
-
     function drawHUD() {
         hud.clear();
 
@@ -314,8 +300,6 @@ const machineMaskSketch = (p) => {
         p.pop();
     }
 
-
-
     function drawEyes(time) {
         const eyeY = -15;
         const eyeZ = 80;
@@ -337,8 +321,8 @@ const machineMaskSketch = (p) => {
 
             p.beginShape();
             for (let a = 0; a <= p.TWO_PI + 0.01; a += 0.12) {
-                const x = 35 * p.cos(a);
-                const y = 21 * p.sin(a);
+                const x = 40 * p.cos(a);
+                const y = 28 * p.sin(a);
                 p.vertex(x, y, 0);
             }
             p.endShape(p.CLOSE);
@@ -349,7 +333,7 @@ const machineMaskSketch = (p) => {
 
             p.noFill();
 
-            for (let radius of [9, 6]) {
+            for (let radius of [18, 10]) {
                 p.stroke(110, 215, 245, 180);
                 p.strokeWeight(1);
 
@@ -379,171 +363,26 @@ const machineMaskSketch = (p) => {
         }
     }
 
+    function calculateFaceLayout() {
+        const availableWidth = p.width * 0.75;
+        const availableHeight = p.height * 0.75;
 
-// --------------------------------------
-// SPEECH
-// --------------------------------------
+        const faceWidth = FACE_W * 2;
+        const faceHeight = FACE_H * 2;
+
+        const scaleX = availableWidth / faceWidth;
+        const scaleY = availableHeight / faceHeight;
+
+        return {
+            scale: Math.min(scaleX, scaleY),
+            x: 0,
+            y: 0
+        };
+    }
 
     function speakMachine() {
-        if (!("speechSynthesis" in window)) {
-            console.log("Speech not supported");
-            return;
-        }
-
-        window.speechSynthesis.cancel();
-
-        const message =
-            `My analysis indicates ${machineSupport} percent ` +
-            `support and ${machineRefute} percent contradiction.`;
-
-        const utterance = new SpeechSynthesisUtterance(message);
-
-        utterance.lang = "en-US";
-        utterance.rate = 0.82;
-        utterance.pitch = 0.65;
-
-        utterance.onstart = () => {
-            speaking = true;
-        };
-
-        utterance.onend = () => {
-            speaking = false;
-        };
-
-        utterance.onerror = () => {
-            speaking = false;
-        };
-
-        window.speechSynthesis.speak(utterance);
+        machineSpeech.speak(machineSupport);
     }
-
-
-    function createCosmos() {
-        stars = [];
-        cosmicParticles = [];
-
-        // Distant stars
-        for (let i = 0; i < STAR_COUNT; i++) {
-            stars.push({
-                x: p.random(-p.width / 2, p.width / 2),
-                y: p.random(-p.height / 2, p.height / 2),
-                z: p.random(-500, -250),
-                size: p.random(0.6, 2.2),
-                phase: p.random(p.TWO_PI),
-                speed: p.random(0.4, 1.5)
-            });
-        }
-
-        // Orbiting cosmic particles
-        for (let i = 0; i < PARTICLE_COUNT; i++) {
-            cosmicParticles.push({
-                angle: p.random(p.TWO_PI),
-                radius: p.random(225, 340),
-                depth: p.random(-170, -80),
-                speed: p.random(0.0004, 0.002),
-                size: p.random(1, 2.8),
-                phase: p.random(p.TWO_PI)
-            });
-        }
-    }
-
-// --------------------------------------
-// COSMIC BACKGROUND
-// --------------------------------------
-
-    function drawCosmos() {
-        const t = p.frameCount * 0.015;
-
-        p.push();
-
-        // Soft nebula glow behind face
-        //drawNebula();
-
-        // Stars
-        p.noFill();
-
-        for (const s of stars) {
-            const flicker =
-                90 + 130 * p.abs(p.sin(t * s.speed + s.phase));
-
-            p.stroke(170, 205, 255, flicker);
-            p.strokeWeight(s.size);
-
-            p.point(s.x, s.y, s.z);
-        }
-
-        // Orbiting particles
-
-        for (const particle of cosmicParticles) {
-            const a = particle.angle + p.frameCount * particle.speed;
-
-            const x = p.cos(a) * particle.radius;
-            const y = p.sin(a) * particle.radius * 0.85;
-
-            const alpha =
-                80 + 110 * p.abs(p.sin(t + particle.phase));
-
-            p.stroke(125, 170, 255, alpha);
-            p.strokeWeight(particle.size);
-
-            p.point(x, y, particle.depth);
-        }
-
-
-        p.pop();
-    }
-
-// --------------------------------------
-// NEBULA GLOW
-// --------------------------------------
-
-
-    function drawNebula() {
-        const ctx = cosmicGlow.drawingContext;
-
-        cosmicGlow.clear();
-
-        const cx = p.width / 2;
-        const cy = p.height / 2;
-
-        const pulse = 1 + 0.05 * p.sin(p.frameCount * 0.01);
-
-        const gradient = ctx.createRadialGradient(
-            cx, cy, 20,
-            cx, cy, 300 * pulse
-        );
-
-        gradient.addColorStop(
-            0,
-            "rgba(45, 85, 160, 0.23)"
-        );
-
-        gradient.addColorStop(
-            0.45,
-            "rgba(65, 35, 135, 0.15)"
-        );
-
-        gradient.addColorStop(
-            1,
-            "rgba(0, 0, 0, 0)"
-        );
-
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, p.width, p.height);
-
-        p.push();
-
-        // Draw the glow as a texture on a WEBGL plane
-        p.noStroke();
-        p.texture(cosmicGlow);
-        p.translate(0, 0, -400);
-        p.plane(p.width, p.height);
-
-        p.pop();
-    }
-
-
-
 
     // Integration hook: call machineMask.setAnalysis(analysis) after ANALYZE.
     p.setAnalysis = (analysis) => {
@@ -555,7 +394,18 @@ const machineMaskSketch = (p) => {
         machineRefute = Math.round(p.constrain(refute, 0, 1) * 100);
     };
 
-    p.speakPrediction = () => speakMachine();
+    p.speakPrediction = (human, machine, verifiedLabel) => {
+
+        return machineSpeech.speakDialogue(
+            human,
+            machine,
+            verifiedLabel
+        );
+    };
+    p.stopSpeech = () => machineSpeech?.stop();
 };
 
-const machineMask = new p5(machineMaskSketch, "side-canvas-container");
+window.machineMask = new p5(
+    machineMaskSketch,
+    "side-canvas-container"
+);

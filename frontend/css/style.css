@@ -22,130 +22,131 @@ body {
 }
 
 /* ==========================================
-   CANVAS LAYOUT
-   Left: Human Mirror
-   Right: Machine Mirror
+   THREE-PANEL LAYOUT
    ========================================== */
 
 .canvas-row {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  align-items: start;
   gap: 20px;
+
   width: 100%;
+  max-width: 1960px;
+
+  margin: 0 auto;
 }
 
-/* Human Mirror container */
+/* Shared container dimensions */
 
-#video-canvas-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  width: 640px;
-  flex: 0 1 640px;
-  min-width: 0;
-}
-
-/* Machine Mirror container */
-
+#human-canvas-container,
+#information-container,
 #side-canvas-container {
   position: relative;
 
-  width: 640px;
-  aspect-ratio: 4 / 3;
-
-  flex: 0 1 640px;
+  width: 100%;
   min-width: 0;
 
+  aspect-ratio: 4 / 3;
+
   overflow: hidden;
-  background: #080b10;
-
   isolation: isolate;
-}
 
-/* General canvas rules */
-
-canvas {
-  display: block;
-  max-width: 100%;
+  background: #080b10;
 }
 
 /* ==========================================
    HUMAN MIRROR
-   Camera / FaceMesh
+   Webcam + FaceMesh + NeedleSystem
    ========================================== */
 
-#video-canvas-container canvas {
-  width: 100%;
-  height: auto;
+#human-canvas-container canvas.p5Canvas {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* ==========================================
-   MACHINE MIRROR
-   WEBGL mask + transparent frame
+   INFORMATION VIDEO
    ========================================== */
 
-/* The WEBGL canvas */
+#information-video {
+  position: absolute;
+  inset: 0;
 
-#side-canvas-container canvas:not(.machine-frame-overlay) {
   display: block;
 
   width: 100%;
   height: 100%;
 
+  object-fit: contain;
+
+  background: #080b10;
+}
+
+/* ==========================================
+   MACHINE MIRROR
+   WEBGL mask
+   ========================================== */
+
+#side-canvas-container canvas.p5Canvas {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+
+  display: block;
+
+  width: 100% !important;
+  height: 100% !important;
 
   z-index: 1;
 }
 
-/* Transparent decorative frame */
+/* CRT interference layer */
 
-#side-canvas-container .machine-frame-overlay {
+#side-canvas-container .machine-interference-overlay {
   position: absolute;
+  inset: 0;
 
-  top: 0;
-  left: 0;
+  display: block;
 
   width: 100%;
   height: 100%;
 
-  z-index: 10;
+  pointer-events: none;
+
+  z-index: 5;
+}
+
+/* Decorative frame layer */
+
+#side-canvas-container .machine-frame-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
 
   pointer-events: none;
-}
 
-#side-canvas-container .machine-speak-button {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  z-index: 20;
-
-  padding: 8px 14px;
-  background: #101820;
-  color: #00ffc8;
-  border: 1px solid #00ffc8;
-  border-radius: 4px;
-
-  font-family: monospace;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#side-canvas-container .machine-speak-button:hover {
-  background: #006b58;
+  z-index: 10;
 }
 
 /* ==========================================
-   OLD HARDWARE CONTROLLER
-   Temporary compatibility
+   ARDUINO SIMULATOR
    ========================================== */
 
-#mock-controls {
+#arduino-simulator {
+  position: relative;
+
   width: 100%;
-  max-width: 900px;
+  max-width: 1960px;
 
   margin: 24px auto 0;
   padding: 24px 30px;
@@ -159,7 +160,7 @@ canvas {
   font-family: "Courier New", monospace;
 }
 
-#mock-controls h3 {
+#arduino-simulator h3 {
   margin: 0 0 8px;
 
   font-size: 18px;
@@ -167,7 +168,7 @@ canvas {
   letter-spacing: 2px;
 }
 
-#mock-controls p {
+#arduino-simulator p {
   margin: 0 0 24px;
 
   color: #8caaa5;
@@ -175,12 +176,76 @@ canvas {
 }
 
 /* ==========================================
-   TRUST SLIDER
-   Legacy controls
+   SPOKEN STATEMENT
    ========================================== */
 
-#mock-controls label {
+#statement-container {
+  min-height: 140px;
+
+  padding: 24px;
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid #41625e;
+
+  text-align: center;
+}
+
+#statement-label {
+  margin-bottom: 20px;
+
+  color: #8caaa5;
+
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+#spoken-statement {
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 500;
+
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+#spoken-statement .current-word {
+  color: #00ffc8;
+  text-shadow: 0 0 15px #00ffc866;
+}
+
+/* ==========================================
+   INTERACTION STATUS
+   ========================================== */
+
+#sim-phase {
+  margin-bottom: 24px;
+
+  color: #8caaa5;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+#sim-status {
+  margin-top: 20px;
+
+  color: #8caaa5;
+
+  font-size: 12px;
+  line-height: 1.6;
+
+  overflow-wrap: anywhere;
+}
+
+/* ==========================================
+   TRUST SLIDER
+   ========================================== */
+
+#arduino-simulator label {
   display: block;
+
   margin-bottom: 12px;
 
   font-size: 13px;
@@ -190,13 +255,16 @@ canvas {
 
 .trust-control {
   display: flex;
+
   align-items: center;
   gap: 20px;
+
   width: 100%;
 }
 
 .trust-control input[type="range"] {
   flex: 1;
+
   width: 100%;
   min-width: 0;
 
@@ -208,23 +276,24 @@ canvas {
   min-width: 55px;
 
   text-align: right;
+
   font-size: 18px;
   font-weight: bold;
+  font-variant-numeric: tabular-nums;
 
   color: #00ffc8;
-  font-variant-numeric: tabular-nums;
 }
-
-/* Slider labels */
 
 .trust-labels {
   display: flex;
+
   justify-content: space-between;
   gap: 12px;
 
   margin-top: 10px;
 
   color: #8caaa5;
+
   font-size: 11px;
   letter-spacing: 0.5px;
 }
@@ -238,12 +307,12 @@ canvas {
 }
 
 /* ==========================================
-   LEGACY NAVIGATION BUTTONS
-   BACK / SELECT / NEXT
+   NAVIGATION BUTTONS
    ========================================== */
 
 .navigation-buttons {
   display: flex;
+
   gap: 14px;
   margin-top: 28px;
 }
@@ -287,24 +356,47 @@ canvas {
   outline-offset: 3px;
 }
 
-/* SELECT button */
-
-#article-select {
+#sim-confirm {
   background: #006b58;
   color: #ffffff;
 }
 
-#article-select:hover {
+#sim-confirm:hover {
   background: #008c72;
+}
+
+/* Disabled controls */
+
+#arduino-simulator button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+#arduino-simulator button:disabled:hover {
+  background: #142a2b;
+  color: #00ffc8;
+}
+
+#arduino-simulator input:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
 }
 
 /* ==========================================
    RESPONSIVE LAYOUT
    ========================================== */
 
-@media (max-width: 1350px) {
+@media (max-width: 1000px) {
+  body {
+    padding: 16px;
+  }
+
   .canvas-row {
-    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #arduino-simulator {
+    padding: 20px;
   }
 }
 
@@ -314,26 +406,22 @@ canvas {
   }
 
   .canvas-row {
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
-  #video-canvas-container,
-  #side-canvas-container {
-    width: 100%;
-    flex: 1 1 100%;
-  }
-
-  #side-canvas-container {
-    aspect-ratio: 4 / 3;
-  }
-
-  #mock-controls {
-    padding: 20px 16px;
+  #arduino-simulator {
     margin-top: 20px;
+    padding: 20px 16px;
   }
 
-  #mock-controls h3 {
+  #arduino-simulator h3 {
     font-size: 15px;
+  }
+
+  #statement-container {
+    padding: 16px;
+    min-height: 100px;
   }
 
   .navigation-buttons {

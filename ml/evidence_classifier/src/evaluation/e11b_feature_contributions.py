@@ -7,12 +7,12 @@ import pandas as pd
 from ml.src.models.train_fever_relationship_model import make_features
 
 
-MODEL_PATH = Path("ml/models/fever_relationship_logreg.joblib")
+MODEL_PATH = Path("ml/evidence_classifier/models/fever_relationship_logreg.joblib")
 INPUT_PATH = Path(
-    "ml/data/experiments/e10b_negation_ablation_results.csv"
+    "ml/evidence_classifier/data/experiments/e10b_negation_ablation_results.csv"
 )
 OUTPUT_PATH = Path(
-    "ml/data/experiments/e11b_feature_contributions.csv"
+    "ml/evidence_classifier/data/experiments/e11b_feature_contributions.csv"
 )
 
 FEATURE_NAMES = [

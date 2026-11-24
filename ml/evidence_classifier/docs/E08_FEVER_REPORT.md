@@ -8,8 +8,8 @@
 - **Model:** separate claim and evidence TF-IDF representations + balanced Logistic Regression.
 - **Development accuracy:** **0.7796** (approximately 77.96%).
 - **Development macro F1:** **0.7788**.
-- **Saved model (local, gitignored):** `ml/models/fever_relationship_logreg.joblib`.
-- **Training script:** `ml/src/models/train_fever_relationship_model.py`.
+- **Saved model (local, gitignored):** `ml/evidence_classifier/models/fever_relationship_logreg.joblib`.
+- **Training script:** `ml/evidence_classifier/src/models/train_fever_relationship_model.py`.
 - **Model components saved:** `model`, `claim_vectorizer`, `evidence_vectorizer`, `similarity_vectorizer`, `scaler`, `feature_version=e06b`.
 
 - **Limitation:** binary classifier *must* choose SUPPORTS or REFUTES; it has not been trained on FEVER's NOT ENOUGH INFO class. Predicted probabilities are not evidence of calibrated certainty.
@@ -42,12 +42,12 @@
 
 ## 3. E08 methodology and limitations
 
-- Input: `ml/data/experiments/fever/e07c_audited_pairs.csv`.
+- Input: `ml/evidence_classifier/data/experiments/fever/e07c_audited_pairs.csv`.
 - Selection: `added_tokens` contains `not` or `never` (160 candidate pairs).
 - For each pair, test the SUPPORTS claim and the REFUTES claim **against the same `supports_evidence` and `supports_titles`**.
 - Context string constructed as `Wikipedia article: {wiki_titles}. {evidence}`.
-- Test script: `ml/src/experiments/contrastive/test_fever_negation_pairs.py`.
-- Results committed: `ml/data/experiments/fever/e08_negation_results.csv` (320 rows, 9 columns).
+- Test script: `ml/evidence_classifier/src/experiments/contrastive/test_fever_negation_pairs.py`.
+- Results committed: `ml/evidence_classifier/data/experiments/fever/e08_negation_results.csv` (320 rows, 9 columns).
 - Columns: `pair_id`, `claim`, `evidence`, `wiki_titles`, `context_evidence`, `expected`, `prediction`, `p_supports`, `correct`.
 
 **Do not overclaim E08 performance:** 95.94% agreement with assigned labels is a diagnostic result on *selected* pairs, **not** a validated independent fact-checking benchmark. Possible FEVER training overlap was not ruled out. The selected evidence may not suffice for both claims. Some pairs change more than simple negation. Titles/context construction may not exactly reproduce original FEVER records.
@@ -104,7 +104,7 @@ All 13 assigned-label mismatches occur on the SUPPORTS member: the model predict
 
 ## 6. Existing Ukraine/Russia external datasets — reuse later, not now
 
-Files in `ml/data/processed/` (local; check `.gitignore` before assuming they exist on a fresh clone):
+Files in `ml/evidence_classifier/data/processed/` (local; check `.gitignore` before assuming they exist on a fresh clone):
 
 | File | Rows | Relevant columns |
 |---|---:|---|
@@ -125,13 +125,13 @@ All 50 `claims_review.csv` records match `euvsdisinfo_false.csv` by `factcheck_u
 Branch: experiment/e09-evidence-sufficiency
 Remote: origin/experiment/e09-evidence-sufficiency
 
-ml/src/models/train_fever_relationship_model.py
-ml/src/evaluation/test_fever_relationship_contradictions.py
-ml/src/experiments/fever_baselines/ablate_fever_relationship_features.py
-ml/src/experiments/contrastive/review_fever_contrastive_pairs.py
-ml/src/experiments/contrastive/test_fever_negation_pairs.py
-ml/data/experiments/fever/e07c_audited_pairs.csv
-ml/data/experiments/fever/e08_negation_results.csv
-ml/models/fever_relationship_logreg.joblib
+ml/evidence_classifier/src/models/train_fever_relationship_model.py
+ml/evidence_classifier/src/evaluation/test_fever_relationship_contradictions.py
+ml/evidence_classifier/src/experiments/fever_baselines/ablate_fever_relationship_features.py
+ml/evidence_classifier/src/experiments/contrastive/review_fever_contrastive_pairs.py
+ml/evidence_classifier/src/experiments/contrastive/test_fever_negation_pairs.py
+ml/evidence_classifier/data/experiments/fever/e07c_audited_pairs.csv
+ml/evidence_classifier/data/experiments/fever/e08_negation_results.csv
+ml/evidence_classifier/models/fever_relationship_logreg.joblib
 ```
 

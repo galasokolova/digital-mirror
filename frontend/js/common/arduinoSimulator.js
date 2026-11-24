@@ -9,59 +9,70 @@ class ArduinoSimulator {
     }
 
     createPanel() {
-        this.panel = document.createElement("div");
+        const oldPanel = document.getElementById("arduino-simulator");
+        if (oldPanel) oldPanel.remove();
+
+        this.panel = document.createElement("section");
         this.panel.id = "arduino-simulator";
 
-        Object.assign(this.panel.style, {
-            position: "fixed",
-            bottom: "20px",
-            left: "20px",
-            zIndex: "9999",
-            background: "rgba(15, 20, 35, 0.95)",
-            color: "white",
-            padding: "16px",
-            borderRadius: "12px",
-            fontFamily: "Arial, sans-serif",
-            width: "270px",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.4)"
-        });
-
         this.panel.innerHTML = `
-      <div style="font-weight:bold;margin-bottom:12px">
-        ARDUINO SIMULATOR
-      </div>
 
-      <div id="sim-phase" style="margin-bottom:10px">
-        IDLE
-      </div>
+            <div id="statement-container">
 
-      <div style="display:flex;justify-content:space-between">
-        <span>REFUTES</span>
-        <span id="sim-score">0.50</span>
-        <span>SUPPORTS</span>
-      </div>
+                <div id="statement-label">
+                    STATEMENT
+                </div>
 
-      <input
-        id="sim-pot"
-        type="range"
-        min="0"
-        max="1023"
-        value="512"
-        style="width:100%;margin:12px 0"
-      >
+                <div id="spoken-statement">
+                    Press START to begin.
+                </div>
 
-      <div style="display:flex;gap:10px">
-        <button id="sim-next">NEXT</button>
-        <button id="sim-confirm">CONFIRM</button>
-      </div>
+            </div>
 
-      <div id="sim-status"
-           style="margin-top:12px;font-size:12px">
-        Ready
-      </div>
-    `;
+            <h3>DIGITAL MIRROR CONTROLLER</h3>
+            <p>Arduino simulation mode</p>
+
+            <div id="sim-phase">PHASE: IDLE</div>
+
+            <label for="sim-pot">
+                HOW MUCH DO YOU BELIEVE THIS CLAIM?
+            </label>
+
+            <div class="trust-control">
+                <input
+                    id="sim-pot"
+                    type="range"
+                    min="0"
+                    max="1023"
+                    step="1"
+                    value="512"
+                >
+                <output id="sim-score">0.50</output>
+            </div>
+
+            <div class="trust-labels">
+                <span>REFUTES</span>
+                <span>UNSURE</span>
+                <span>SUPPORTS</span>
+            </div>
+
+            <div class="navigation-buttons">
+                <button id="sim-next" type="button">
+                    START/NEXT
+                </button>
+
+                <button id="sim-confirm" type="button">
+                    CONFIRM
+                </button>
+            </div>
+
+            <div id="sim-status" aria-live="polite">
+                Ready
+            </div>
+        `;
 
         document.body.appendChild(this.panel);
+        this.informationVideo = new InformationVideo();
 
         this.pot = this.panel.querySelector("#sim-pot");
         this.nextButton = this.panel.querySelector("#sim-next");
@@ -72,33 +83,89 @@ class ArduinoSimulator {
             const score = Number(this.pot.value) / 1023;
 
             this.flow.setHumanScore(score);
+            // window.setHumanPreviewIntensity?.(score);
             this.updateUI();
         });
 
+
         this.nextButton.addEventListener("click", async () => {
             await this.run(async () => {
+
+                // 1. Load and analyze the next claim
+                window.machineMask?.stopSpeech?.();
                 await this.flow.next();
+
+                // 2. Reset previous visual distortions
+                window.resetHumanMirror?.();
+                window.machineFrame?.reset();
+                window.machineInterference?.setDistortion(0);
+
+                // 3. Update machine prediction
+                window.machineMask?.setAnalysis?.(this.flow.analysis);
+
+                // 4. Reset human evaluation to the middle position
                 this.pot.value = 512;
                 this.flow.setHumanScore(512 / 1023);
-                this.status.textContent = this.flow.claim.text;
+                //window.setHumanPreviewIntensity?.(512 / 1023);
+
+                // 5. Display the new claim
+                await this.informationVideo.loadClaim(
+                    this.flow.claim
+                );
+
+                this.status.textContent = "Evaluate the statement.";
             });
         });
+
+
 
         this.confirmButton.addEventListener("click", async () => {
             await this.run(async () => {
+
+                // 1. Send human evaluation to Spring Boot.
+                // Backend compares human and machine predictions
+                // against verified truth.
                 const result = await this.flow.confirm();
 
+                const humanDistortion = Number(result.humanDistortion);
+                const machineDistortion = Number(result.machineDistortion);
+
+                if (
+                    !Number.isFinite(humanDistortion) ||
+                    !Number.isFinite(machineDistortion)
+                ) {
+                    throw new Error("Invalid distortion values from backend");
+                }
+
+                console.log("CONFIRM RESULT:", result);
+
+                // 2. Human Mirror
+                window.setHumanDistortion?.(humanDistortion);
+
+                // 3. Machine Mirror — border needles
+                window.machineFrame?.setDistortion(machineDistortion);
+
+                // 4. Machine Mirror — CRT interference
+                window.machineInterference?.setDistortion(machineDistortion);
+
+                // 5. Display results
                 this.status.textContent =
-                    `Human distortion: ${result.humanDistortion.toFixed(2)}
-           | Machine distortion: ${result.machineDistortion.toFixed(2)}`;
+                    `Human distortion: ${humanDistortion.toFixed(2)}
+             | Machine distortion: ${machineDistortion.toFixed(2)}`;
 
-                // Temporary: reveal immediately after confirmation.
-                // Later the animation will run between CONFIRM and REVEAL.
-                await this.flow.reveal();
+                const reveal = await this.flow.reveal();
 
-                console.log("REVEAL:", this.flow.revealData);
+                console.log("REVEAL:", reveal);
+
+                // Machine emotional dialogue
+                await window.machineMask?.speakPrediction?.(
+                    result.humanScore,
+                    result.machineScore,
+                    reveal.verifiedLabel
+                );
             });
         });
+
     }
 
     async run(action) {
@@ -127,7 +194,8 @@ class ArduinoSimulator {
         this.panel.querySelector("#sim-score").textContent =
             this.flow.humanScore.toFixed(2);
 
-        this.pot.disabled = this.busy || phase !== "CHOOSING";
+        this.pot.disabled =
+            this.busy || phase !== "CHOOSING";
 
         this.nextButton.disabled =
             this.busy ||

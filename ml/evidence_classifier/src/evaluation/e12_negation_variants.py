@@ -9,8 +9,8 @@ from ml.src.models.train_fever_relationship_model import (
     relationship_features,
 )
 
-MODEL_PATH = Path("ml/models/fever_relationship_logreg.joblib")
-OUTPUT_PATH = Path("ml/data/experiments/e12_negation_variants.csv")
+MODEL_PATH = Path("ml/evidence_classifier/models/fever_relationship_logreg.joblib")
+OUTPUT_PATH = Path("ml/evidence_classifier/data/experiments/e12_negation_variants.csv")
 
 CLAIM = "NATO provided military assistance to Ukraine."
 TITLE = "NATO and Ukraine relations"

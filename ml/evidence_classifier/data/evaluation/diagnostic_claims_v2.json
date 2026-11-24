@@ -1,0 +1,542 @@
+[
+  {
+    "id": "diag-001-a",
+    "pairId": "pair-001",
+    "category": "entity",
+    "claim": "Venus is the hottest planet in the Solar System.",
+    "evidence": "Venus is the hottest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-001-b",
+    "pairId": "pair-001",
+    "category": "entity",
+    "claim": "Mercury is the hottest planet in the Solar System.",
+    "evidence": "Venus is the hottest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-002-a",
+    "pairId": "pair-002",
+    "category": "entity",
+    "claim": "Jupiter is the largest planet in the Solar System.",
+    "evidence": "Jupiter is the largest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-002-b",
+    "pairId": "pair-002",
+    "category": "entity",
+    "claim": "Saturn is the largest planet in the Solar System.",
+    "evidence": "Jupiter is the largest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-003-a",
+    "pairId": "pair-003",
+    "category": "entity",
+    "claim": "The Pacific Ocean is Earth's largest ocean basin.",
+    "evidence": "The Pacific Ocean is Earth's largest ocean basin.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-003-b",
+    "pairId": "pair-003",
+    "category": "entity",
+    "claim": "The Atlantic Ocean is Earth's largest ocean basin.",
+    "evidence": "The Pacific Ocean is Earth's largest ocean basin.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-004-a",
+    "pairId": "pair-004",
+    "category": "entity",
+    "claim": "Neil Armstrong was the first person to walk on the Moon.",
+    "evidence": "Neil Armstrong was the first person to walk on the Moon.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-004-b",
+    "pairId": "pair-004",
+    "category": "entity",
+    "claim": "Buzz Aldrin was the first person to walk on the Moon.",
+    "evidence": "Neil Armstrong was the first person to walk on the Moon.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-005-a",
+    "pairId": "pair-005",
+    "category": "entity",
+    "claim": "Canberra is the capital of Australia.",
+    "evidence": "Canberra is the capital of Australia.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-005-b",
+    "pairId": "pair-005",
+    "category": "entity",
+    "claim": "Sydney is the capital of Australia.",
+    "evidence": "Canberra is the capital of Australia.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-006-a",
+    "pairId": "pair-006",
+    "category": "number",
+    "claim": "Mars has two natural moons.",
+    "evidence": "Mars has two natural moons: Phobos and Deimos.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-006-b",
+    "pairId": "pair-006",
+    "category": "number",
+    "claim": "Mars has three natural moons.",
+    "evidence": "Mars has two natural moons: Phobos and Deimos.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-007-a",
+    "pairId": "pair-007",
+    "category": "number",
+    "claim": "A triangle has three sides.",
+    "evidence": "A triangle has three sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-007-b",
+    "pairId": "pair-007",
+    "category": "number",
+    "claim": "A triangle has four sides.",
+    "evidence": "A triangle has three sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-008-a",
+    "pairId": "pair-008",
+    "category": "number",
+    "claim": "A hexagon has six sides.",
+    "evidence": "A hexagon has six sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-008-b",
+    "pairId": "pair-008",
+    "category": "number",
+    "claim": "A hexagon has eight sides.",
+    "evidence": "A hexagon has six sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-009-a",
+    "pairId": "pair-009",
+    "category": "number",
+    "claim": "A water molecule contains two hydrogen atoms.",
+    "evidence": "The chemical formula for water is H2O, with two hydrogen atoms and one oxygen atom.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-009-b",
+    "pairId": "pair-009",
+    "category": "number",
+    "claim": "A water molecule contains three hydrogen atoms.",
+    "evidence": "The chemical formula for water is H2O, with two hydrogen atoms and one oxygen atom.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-010-a",
+    "pairId": "pair-010",
+    "category": "number",
+    "claim": "An adult human skeleton typically contains 206 bones.",
+    "evidence": "The adult human skeleton typically contains 206 bones.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-010-b",
+    "pairId": "pair-010",
+    "category": "number",
+    "claim": "An adult human skeleton typically contains 306 bones.",
+    "evidence": "The adult human skeleton typically contains 206 bones.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-011-a",
+    "pairId": "pair-011",
+    "category": "date",
+    "claim": "Humans first landed on the Moon in 1969.",
+    "evidence": "The first human Moon landing occurred in 1969.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-011-b",
+    "pairId": "pair-011",
+    "category": "date",
+    "claim": "Humans first landed on the Moon in 1979.",
+    "evidence": "The first human Moon landing occurred in 1969.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-012-a",
+    "pairId": "pair-012",
+    "category": "date",
+    "claim": "The Berlin Wall fell in 1989.",
+    "evidence": "The Berlin Wall fell in November 1989.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-012-b",
+    "pairId": "pair-012",
+    "category": "date",
+    "claim": "The Berlin Wall fell in 1999.",
+    "evidence": "The Berlin Wall fell in November 1989.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-013-a",
+    "pairId": "pair-013",
+    "category": "date",
+    "claim": "Tim Berners-Lee invented the World Wide Web in 1989.",
+    "evidence": "The World Wide Web was invented by Tim Berners-Lee at CERN in 1989.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-013-b",
+    "pairId": "pair-013",
+    "category": "date",
+    "claim": "Tim Berners-Lee invented the World Wide Web in 1999.",
+    "evidence": "The World Wide Web was invented by Tim Berners-Lee at CERN in 1989.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-014-a",
+    "pairId": "pair-014",
+    "category": "date",
+    "claim": "The United Nations was founded in 1945.",
+    "evidence": "The United Nations was founded in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-014-b",
+    "pairId": "pair-014",
+    "category": "date",
+    "claim": "The United Nations was founded in 1955.",
+    "evidence": "The United Nations was founded in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-015-a",
+    "pairId": "pair-015",
+    "category": "date",
+    "claim": "The first iPhone was introduced in 2007.",
+    "evidence": "The first iPhone was introduced in 2007.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-015-b",
+    "pairId": "pair-015",
+    "category": "date",
+    "claim": "The first iPhone was introduced in 2017.",
+    "evidence": "The first iPhone was introduced in 2007.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-016-a",
+    "pairId": "pair-016",
+    "category": "negation",
+    "claim": "Earth orbits the Sun.",
+    "evidence": "Earth orbits the Sun.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-016-b",
+    "pairId": "pair-016",
+    "category": "negation",
+    "claim": "Earth does not orbit the Sun.",
+    "evidence": "Earth orbits the Sun.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-017-a",
+    "pairId": "pair-017",
+    "category": "negation",
+    "claim": "Light travels faster than sound in air.",
+    "evidence": "Light travels faster than sound in a vacuum-free comparison through air.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-017-b",
+    "pairId": "pair-017",
+    "category": "negation",
+    "claim": "Light does not travel faster than sound in air.",
+    "evidence": "Light travels faster than sound in a vacuum-free comparison through air.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-018-a",
+    "pairId": "pair-018",
+    "category": "negation",
+    "claim": "The Moon is a natural satellite of Earth.",
+    "evidence": "The Moon is Earth's natural satellite.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-018-b",
+    "pairId": "pair-018",
+    "category": "negation",
+    "claim": "The Moon is not a natural satellite of Earth.",
+    "evidence": "The Moon is Earth's natural satellite.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-019-a",
+    "pairId": "pair-019",
+    "category": "negation",
+    "claim": "Water contains oxygen.",
+    "evidence": "Water contains oxygen atoms.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-019-b",
+    "pairId": "pair-019",
+    "category": "negation",
+    "claim": "Water does not contain oxygen.",
+    "evidence": "Water contains oxygen atoms.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-020-a",
+    "pairId": "pair-020",
+    "category": "negation",
+    "claim": "Jupiter is a planet.",
+    "evidence": "Jupiter is a planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-020-b",
+    "pairId": "pair-020",
+    "category": "negation",
+    "claim": "Jupiter is not a planet.",
+    "evidence": "Jupiter is a planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-021-a",
+    "pairId": "pair-021",
+    "category": "relation",
+    "claim": "The Earth orbits the Sun.",
+    "evidence": "The Earth orbits the Sun.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-021-b",
+    "pairId": "pair-021",
+    "category": "relation",
+    "claim": "The Sun orbits the Earth.",
+    "evidence": "The Earth orbits the Sun.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-022-a",
+    "pairId": "pair-022",
+    "category": "relation",
+    "claim": "The Moon orbits Earth.",
+    "evidence": "The Moon orbits Earth.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-022-b",
+    "pairId": "pair-022",
+    "category": "relation",
+    "claim": "Earth orbits the Moon.",
+    "evidence": "The Moon orbits Earth.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-023-a",
+    "pairId": "pair-023",
+    "category": "relation",
+    "claim": "Paris is the capital of France.",
+    "evidence": "Paris is the capital of France.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-023-b",
+    "pairId": "pair-023",
+    "category": "relation",
+    "claim": "France is the capital of Paris.",
+    "evidence": "Paris is the capital of France.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-024-a",
+    "pairId": "pair-024",
+    "category": "relation",
+    "claim": "A square is a rectangle.",
+    "evidence": "A square is a type of rectangle.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-024-b",
+    "pairId": "pair-024",
+    "category": "relation",
+    "claim": "Every rectangle is a square.",
+    "evidence": "A square is a type of rectangle.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-025-a",
+    "pairId": "pair-025",
+    "category": "relation",
+    "claim": "A dolphin is a mammal.",
+    "evidence": "A dolphin is a mammal.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-025-b",
+    "pairId": "pair-025",
+    "category": "relation",
+    "claim": "Every mammal is a dolphin.",
+    "evidence": "A dolphin is a mammal.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-026-a",
+    "pairId": "pair-026",
+    "category": "paraphrase",
+    "claim": "Mars has two natural moons.",
+    "evidence": "Mars has two natural satellites named Phobos and Deimos.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-026-b",
+    "pairId": "pair-026",
+    "category": "paraphrase",
+    "claim": "Two natural satellites orbit Mars.",
+    "evidence": "Mars has two natural satellites named Phobos and Deimos.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-027-a",
+    "pairId": "pair-027",
+    "category": "paraphrase",
+    "claim": "Venus is the hottest planet in the Solar System.",
+    "evidence": "Venus is the hottest planet in our Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-027-b",
+    "pairId": "pair-027",
+    "category": "paraphrase",
+    "claim": "No planet in our Solar System is hotter than Venus.",
+    "evidence": "Venus is the hottest planet in our Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-028-a",
+    "pairId": "pair-028",
+    "category": "paraphrase",
+    "claim": "Jupiter is the Solar System's largest planet.",
+    "evidence": "Jupiter is the largest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-028-b",
+    "pairId": "pair-028",
+    "category": "paraphrase",
+    "claim": "The largest planet orbiting the Sun is Jupiter.",
+    "evidence": "Jupiter is the largest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-029-a",
+    "pairId": "pair-029",
+    "category": "paraphrase",
+    "claim": "The United Nations was founded in 1945.",
+    "evidence": "The United Nations was established in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-029-b",
+    "pairId": "pair-029",
+    "category": "paraphrase",
+    "claim": "The UN was established in the year 1945.",
+    "evidence": "The United Nations was established in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-030-a",
+    "pairId": "pair-030",
+    "category": "paraphrase",
+    "claim": "Water has the chemical formula H2O.",
+    "evidence": "The chemical formula of water is H2O.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-030-b",
+    "pairId": "pair-030",
+    "category": "paraphrase",
+    "claim": "H2O is the chemical formula for water.",
+    "evidence": "The chemical formula of water is H2O.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  }
+]

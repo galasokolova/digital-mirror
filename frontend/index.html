@@ -3,45 +3,79 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Dual Canvas p5.js</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Digital Mirror</title>
+
   <link rel="stylesheet" href="css/style.css">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
   <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
 </head>
 
 <body>
-  <div class="canvas-row">
-    <div id="video-canvas-container"></div>
-    <div id="side-canvas-container"></div>
+
+<div class="canvas-row">
+
+  <!-- Human Mirror -->
+  <div id="human-canvas-container"></div>
+
+  <!-- Information -->
+  <div id="information-container">
+
+    <video
+            id="information-video"
+            preload="metadata"
+            playsinline
+            controls>
+    </video>
+
   </div>
 
-  <!-- common modules -->
-  <script src="js/common/claimApi.js"></script>
-  <script src="js/common/interactionFlow.js"></script>
-  <script src="js/common/arduinoSimulator.js"></script>
-  <script src="js/common/articles.js"></script>
-  <script src="js/common/mirrorState.js"></script>
-  <script src="js/common/mockControls.js"></script>
-  <script src="js/common/ui.js"></script>
+  <!-- Machine Mirror -->
+  <div id="side-canvas-container"></div>
 
-  <!-- Left canvas -->
-  <script src="js/video/faceMath.js"></script>
-  <script src="js/video/effects.js"></script>
-  <script src="js/video/generativeUtils.js"></script>
-  <script src="js/video/agents.js"></script>
-  <script src="js/video/videoCanvas.js"></script>
+</div>
 
-  <!-- Right canvas: Machine Mirror -->
-  <script src="js/side/machineMask.js"></script>
-  <script src="js/side/machineFrame.js"></script>
-  <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      const container = document.getElementById(
-              "side-canvas-container"
-      );
+<!-- Shared application logic -->
+<script src="js/common/claimApi.js"></script>
+<script src="js/common/interactionFlow.js"></script>
 
-      window.machineFrame = new MachineFrame(container);
-    });
-  </script>
+<!-- Information -->
+<script src="js/information/videoRegistry.js"></script>
+<script src="js/information/informationVideo.js"></script>
+
+<!-- Arduino -->
+<script src="js/common/arduinoSimulator.js"></script>
+
+<!-- Shared needle engine -->
+<script src="js/common/needle/needleAgent.js"></script>
+<script src="js/common/needle/needleSystem.js"></script>
+
+<!-- Human Mirror -->
+<script src="js/human/generativeUtils.js"></script>
+<script src="js/human/humanCanvas.js"></script>
+
+<!-- Machine Mirror -->
+<script src="js/machine/machineSpeech.js"></script>
+<script src="js/machine/machineMask.js"></script>
+<script src="js/machine/machineFrame.js"></script>
+<script src="js/machine/machineInterference.js"></script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+
+    const container = document.getElementById(
+            "side-canvas-container"
+    );
+
+    window.machineFrame = new MachineFrame(container);
+
+    window.machineInterference =
+            new MachineInterference(container);
+  });
+</script>
+
 </body>
 </html>

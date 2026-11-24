@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "diag-001-a",
+    "pairId": "pair-001",
+    "category": "entity",
+    "claim": "Venus is the hottest planet in the Solar System.",
+    "evidence": "Venus is the hottest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-001-b",
+    "pairId": "pair-001",
+    "category": "entity",
+    "claim": "Mercury is the hottest planet in the Solar System.",
+    "evidence": "Venus is the hottest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-002-a",
+    "pairId": "pair-002",
+    "category": "entity",
+    "claim": "Jupiter is the largest planet in the Solar System.",
+    "evidence": "Jupiter is the largest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-002-b",
+    "pairId": "pair-002",
+    "category": "entity",
+    "claim": "Saturn is the largest planet in the Solar System.",
+    "evidence": "Jupiter is the largest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-003-a",
+    "pairId": "pair-003",
+    "category": "entity",
+    "claim": "The Pacific Ocean is Earth's largest ocean basin.",
+    "evidence": "The Pacific Ocean is Earth's largest ocean basin.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-003-b",
+    "pairId": "pair-003",
+    "category": "entity",
+    "claim": "The Atlantic Ocean is Earth's largest ocean basin.",
+    "evidence": "The Pacific Ocean is Earth's largest ocean basin.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-004-a",
+    "pairId": "pair-004",
+    "category": "entity",
+    "claim": "Neil Armstrong was the first person to walk on the Moon.",
+    "evidence": "Neil Armstrong was the first person to walk on the Moon.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-004-b",
+    "pairId": "pair-004",
+    "category": "entity",
+    "claim": "Buzz Aldrin was the first person to walk on the Moon.",
+    "evidence": "Neil Armstrong was the first person to walk on the Moon.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-005-a",
+    "pairId": "pair-005",
+    "category": "entity",
+    "claim": "Canberra is the capital of Australia.",
+    "evidence": "Canberra is the capital of Australia.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-005-b",
+    "pairId": "pair-005",
+    "category": "entity",
+    "claim": "Sydney is the capital of Australia.",
+    "evidence": "Canberra is the capital of Australia.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-006-a",
+    "pairId": "pair-006",
+    "category": "number",
+    "claim": "Mars has two natural moons.",
+    "evidence": "Mars has two natural moons: Phobos and Deimos.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-006-b",
+    "pairId": "pair-006",
+    "category": "number",
+    "claim": "Mars has three natural moons.",
+    "evidence": "Mars has two natural moons: Phobos and Deimos.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-007-a",
+    "pairId": "pair-007",
+    "category": "number",
+    "claim": "A triangle has three sides.",
+    "evidence": "A triangle has three sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-007-b",
+    "pairId": "pair-007",
+    "category": "number",
+    "claim": "A triangle has four sides.",
+    "evidence": "A triangle has three sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-008-a",
+    "pairId": "pair-008",
+    "category": "number",
+    "claim": "A hexagon has six sides.",
+    "evidence": "A hexagon has six sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-008-b",
+    "pairId": "pair-008",
+    "category": "number",
+    "claim": "A hexagon has eight sides.",
+    "evidence": "A hexagon has six sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-009-a",
+    "pairId": "pair-009",
+    "category": "number",
+    "claim": "A water molecule contains two hydrogen atoms.",
+    "evidence": "The chemical formula for water is H2O, with two hydrogen atoms and one oxygen atom.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-009-b",
+    "pairId": "pair-009",
+    "category": "number",
+    "claim": "A water molecule contains three hydrogen atoms.",
+    "evidence": "The chemical formula for water is H2O, with two hydrogen atoms and one oxygen atom.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-010-a",
+    "pairId": "pair-010",
+    "category": "number",
+    "claim": "An adult human skeleton typically contains 206 bones.",
+    "evidence": "The adult human skeleton typically contains 206 bones.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-010-b",
+    "pairId": "pair-010",
+    "category": "number",
+    "claim": "An adult human skeleton typically contains 306 bones.",
+    "evidence": "The adult human skeleton typically contains 206 bones.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-011-a",
+    "pairId": "pair-011",
+    "category": "date",
+    "claim": "Humans first landed on the Moon in 1969.",
+    "evidence": "The first human Moon landing occurred in 1969.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-011-b",
+    "pairId": "pair-011",
+    "category": "date",
+    "claim": "Humans first landed on the Moon in 1979.",
+    "evidence": "The first human Moon landing occurred in 1969.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-012-a",
+    "pairId": "pair-012",
+    "category": "date",
+    "claim": "The Berlin Wall fell in 1989.",
+    "evidence": "The Berlin Wall fell in November 1989.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-012-b",
+    "pairId": "pair-012",
+    "category": "date",
+    "claim": "The Berlin Wall fell in 1999.",
+    "evidence": "The Berlin Wall fell in November 1989.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-013-a",
+    "pairId": "pair-013",
+    "category": "date",
+    "claim": "Tim Berners-Lee invented the World Wide Web in 1989.",
+    "evidence": "The World Wide Web was invented by Tim Berners-Lee at CERN in 1989.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-013-b",
+    "pairId": "pair-013",
+    "category": "date",
+    "claim": "Tim Berners-Lee invented the World Wide Web in 1999.",
+    "evidence": "The World Wide Web was invented by Tim Berners-Lee at CERN in 1989.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-014-a",
+    "pairId": "pair-014",
+    "category": "date",
+    "claim": "The United Nations was founded in 1945.",
+    "evidence": "The United Nations was founded in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-014-b",
+    "pairId": "pair-014",
+    "category": "date",
+    "claim": "The United Nations was founded in 1955.",
+    "evidence": "The United Nations was founded in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-015-a",
+    "pairId": "pair-015",
+    "category": "date",
+    "claim": "The first iPhone was introduced in 2007.",
+    "evidence": "The first iPhone was introduced in 2007.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-015-b",
+    "pairId": "pair-015",
+    "category": "date",
+    "claim": "The first iPhone was introduced in 2017.",
+    "evidence": "The first iPhone was introduced in 2007.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-016-a",
+    "pairId": "pair-016",
+    "category": "negation",
+    "claim": "Earth orbits the Sun.",
+    "evidence": "Earth orbits the Sun.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-016-b",
+    "pairId": "pair-016",
+    "category": "negation",
+    "claim": "Earth does not orbit the Sun.",
+    "evidence": "Earth orbits the Sun.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-017-a",
+    "pairId": "pair-017",
+    "category": "negation",
+    "claim": "Light travels faster than sound in air.",
+    "evidence": "Light travels faster than sound in a vacuum-free comparison through air.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-017-b",
+    "pairId": "pair-017",
+    "category": "negation",
+    "claim": "Light does not travel faster than sound in air.",
+    "evidence": "Light travels faster than sound in a vacuum-free comparison through air.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-018-a",
+    "pairId": "pair-018",
+    "category": "negation",
+    "claim": "The Moon is a natural satellite of Earth.",
+    "evidence": "The Moon is Earth's natural satellite.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-018-b",
+    "pairId": "pair-018",
+    "category": "negation",
+    "claim": "The Moon is not a natural satellite of Earth.",
+    "evidence": "The Moon is Earth's natural satellite.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-019-a",
+    "pairId": "pair-019",
+    "category": "negation",
+    "claim": "Water contains oxygen.",
+    "evidence": "Water contains oxygen atoms.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-019-b",
+    "pairId": "pair-019",
+    "category": "negation",
+    "claim": "Water does not contain oxygen.",
+    "evidence": "Water contains oxygen atoms.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-020-a",
+    "pairId": "pair-020",
+    "category": "negation",
+    "claim": "Jupiter is a planet.",
+    "evidence": "Jupiter is a planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-020-b",
+    "pairId": "pair-020",
+    "category": "negation",
+    "claim": "Jupiter is not a planet.",
+    "evidence": "Jupiter is a planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-021-a",
+    "pairId": "pair-021",
+    "category": "relation",
+    "claim": "The Earth orbits the Sun.",
+    "evidence": "The Earth orbits the Sun.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-021-b",
+    "pairId": "pair-021",
+    "category": "relation",
+    "claim": "The Sun orbits the Earth.",
+    "evidence": "The Earth orbits the Sun.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-022-a",
+    "pairId": "pair-022",
+    "category": "relation",
+    "claim": "The Moon orbits Earth.",
+    "evidence": "The Moon orbits Earth.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-022-b",
+    "pairId": "pair-022",
+    "category": "relation",
+    "claim": "Earth orbits the Moon.",
+    "evidence": "The Moon orbits Earth.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-023-a",
+    "pairId": "pair-023",
+    "category": "relation",
+    "claim": "Paris is the capital of France.",
+    "evidence": "Paris is the capital of France.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-023-b",
+    "pairId": "pair-023",
+    "category": "relation",
+    "claim": "France is the capital of Paris.",
+    "evidence": "Paris is the capital of France.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-024-a",
+    "pairId": "pair-024",
+    "category": "relation",
+    "claim": "A square is a rectangle.",
+    "evidence": "A square is a type of rectangle.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-024-b",
+    "pairId": "pair-024",
+    "category": "relation",
+    "claim": "Every rectangle is a square.",
+    "evidence": "A square is a type of rectangle.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-025-a",
+    "pairId": "pair-025",
+    "category": "relation",
+    "claim": "A dolphin is a mammal.",
+    "evidence": "A dolphin is a mammal.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-025-b",
+    "pairId": "pair-025",
+    "category": "relation",
+    "claim": "Every mammal is a dolphin.",
+    "evidence": "A dolphin is a mammal.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-026-a",
+    "pairId": "pair-026",
+    "category": "paraphrase",
+    "claim": "Mars has two natural moons.",
+    "evidence": "Mars has two natural satellites named Phobos and Deimos.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-026-b",
+    "pairId": "pair-026",
+    "category": "paraphrase",
+    "claim": "Two natural satellites orbit Mars.",
+    "evidence": "Mars has two natural satellites named Phobos and Deimos.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-027-a",
+    "pairId": "pair-027",
+    "category": "paraphrase",
+    "claim": "Venus is the hottest planet in the Solar System.",
+    "evidence": "Venus is the hottest planet in our Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-027-b",
+    "pairId": "pair-027",
+    "category": "paraphrase",
+    "claim": "No planet in our Solar System is hotter than Venus.",
+    "evidence": "Venus is the hottest planet in our Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-028-a",
+    "pairId": "pair-028",
+    "category": "paraphrase",
+    "claim": "Jupiter is the Solar System's largest planet.",
+    "evidence": "Jupiter is the largest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-028-b",
+    "pairId": "pair-028",
+    "category": "paraphrase",
+    "claim": "The largest planet orbiting the Sun is Jupiter.",
+    "evidence": "Jupiter is the largest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-029-a",
+    "pairId": "pair-029",
+    "category": "paraphrase",
+    "claim": "The United Nations was founded in 1945.",
+    "evidence": "The United Nations was established in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-029-b",
+    "pairId": "pair-029",
+    "category": "paraphrase",
+    "claim": "The UN was established in the year 1945.",
+    "evidence": "The United Nations was established in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-030-a",
+    "pairId": "pair-030",
+    "category": "paraphrase",
+    "claim": "Water has the chemical formula H2O.",
+    "evidence": "The chemical formula of water is H2O.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-030-b",
+    "pairId": "pair-030",
+    "category": "paraphrase",
+    "claim": "H2O is the chemical formula for water.",
+    "evidence": "The chemical formula of water is H2O.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-031-a",
+    "pairId": "pair-031",
+    "category": "entity",
+    "claim": "Ottawa is Canada's capital.",
+    "evidence": "Ottawa is the capital of Canada.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-031-b",
+    "pairId": "pair-031",
+    "category": "entity",
+    "claim": "Toronto is Canada's capital.",
+    "evidence": "Ottawa is the capital of Canada.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-032-a",
+    "pairId": "pair-032",
+    "category": "entity",
+    "claim": "Brasilia is Brazil's capital.",
+    "evidence": "Brasilia is the capital of Brazil.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-032-b",
+    "pairId": "pair-032",
+    "category": "entity",
+    "claim": "Rio de Janeiro is Brazil's capital.",
+    "evidence": "Brasilia is the capital of Brazil.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-033-a",
+    "pairId": "pair-033",
+    "category": "entity",
+    "claim": "Gold has the symbol Au.",
+    "evidence": "The chemical symbol for gold is Au.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-033-b",
+    "pairId": "pair-033",
+    "category": "entity",
+    "claim": "Gold has the symbol Ag.",
+    "evidence": "The chemical symbol for gold is Au.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-034-a",
+    "pairId": "pair-034",
+    "category": "entity",
+    "claim": "Sodium has the symbol Na.",
+    "evidence": "The chemical symbol for sodium is Na.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-034-b",
+    "pairId": "pair-034",
+    "category": "entity",
+    "claim": "Sodium has the symbol K.",
+    "evidence": "The chemical symbol for sodium is Na.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-035-a",
+    "pairId": "pair-035",
+    "category": "entity",
+    "claim": "Alexander Fleming discovered penicillin.",
+    "evidence": "Alexander Fleming discovered penicillin.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-035-b",
+    "pairId": "pair-035",
+    "category": "entity",
+    "claim": "Isaac Newton discovered penicillin.",
+    "evidence": "Alexander Fleming discovered penicillin.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-036-a",
+    "pairId": "pair-036",
+    "category": "entity",
+    "claim": "The pancreas produces insulin.",
+    "evidence": "The pancreas produces insulin.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-036-b",
+    "pairId": "pair-036",
+    "category": "entity",
+    "claim": "The liver produces insulin.",
+    "evidence": "The pancreas produces insulin.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-037-a",
+    "pairId": "pair-037",
+    "category": "entity",
+    "claim": "The heart pumps blood through the body.",
+    "evidence": "The heart pumps blood through the body.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-037-b",
+    "pairId": "pair-037",
+    "category": "entity",
+    "claim": "The lungs pump blood through the body.",
+    "evidence": "The heart pumps blood through the body.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-038-a",
+    "pairId": "pair-038",
+    "category": "entity",
+    "claim": "Mount Everest is the highest mountain above sea level.",
+    "evidence": "Mount Everest is Earth's highest mountain above sea level.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-038-b",
+    "pairId": "pair-038",
+    "category": "entity",
+    "claim": "K2 is the highest mountain above sea level.",
+    "evidence": "Mount Everest is Earth's highest mountain above sea level.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-039-a",
+    "pairId": "pair-039",
+    "category": "entity",
+    "claim": "The Nile River flows through Egypt.",
+    "evidence": "The Nile River flows through Egypt.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-039-b",
+    "pairId": "pair-039",
+    "category": "entity",
+    "claim": "The Amazon River flows through Egypt.",
+    "evidence": "The Nile River flows through Egypt.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-040-a",
+    "pairId": "pair-040",
+    "category": "entity",
+    "claim": "Guido van Rossum created Python.",
+    "evidence": "Python was created by Guido van Rossum.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-040-b",
+    "pairId": "pair-040",
+    "category": "entity",
+    "claim": "James Gosling created Python.",
+    "evidence": "Python was created by Guido van Rossum.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-041-a",
+    "pairId": "pair-041",
+    "category": "number",
+    "claim": "A pentagon has five sides.",
+    "evidence": "A pentagon has five sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-041-b",
+    "pairId": "pair-041",
+    "category": "number",
+    "claim": "A pentagon has seven sides.",
+    "evidence": "A pentagon has five sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-042-a",
+    "pairId": "pair-042",
+    "category": "number",
+    "claim": "A cube has six faces.",
+    "evidence": "A cube has six faces.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-042-b",
+    "pairId": "pair-042",
+    "category": "number",
+    "claim": "A cube has eight faces.",
+    "evidence": "A cube has six faces.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-043-a",
+    "pairId": "pair-043",
+    "category": "number",
+    "claim": "An octagon has eight sides.",
+    "evidence": "An octagon has eight sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-043-b",
+    "pairId": "pair-043",
+    "category": "number",
+    "claim": "An octagon has six sides.",
+    "evidence": "An octagon has eight sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-044-a",
+    "pairId": "pair-044",
+    "category": "number",
+    "claim": "A standard deck contains 52 cards.",
+    "evidence": "A standard deck of playing cards contains 52 cards.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-044-b",
+    "pairId": "pair-044",
+    "category": "number",
+    "claim": "A standard deck contains 42 cards.",
+    "evidence": "A standard deck of playing cards contains 52 cards.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-045-a",
+    "pairId": "pair-045",
+    "category": "number",
+    "claim": "A standard day contains 24 hours.",
+    "evidence": "There are 24 hours in a standard day.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-045-b",
+    "pairId": "pair-045",
+    "category": "number",
+    "claim": "A standard day contains 30 hours.",
+    "evidence": "There are 24 hours in a standard day.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-046-a",
+    "pairId": "pair-046",
+    "category": "number",
+    "claim": "One minute contains 60 seconds.",
+    "evidence": "There are 60 seconds in one minute.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-046-b",
+    "pairId": "pair-046",
+    "category": "number",
+    "claim": "One minute contains 100 seconds.",
+    "evidence": "There are 60 seconds in one minute.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-047-a",
+    "pairId": "pair-047",
+    "category": "number",
+    "claim": "One byte contains eight bits.",
+    "evidence": "A byte contains eight bits.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-047-b",
+    "pairId": "pair-047",
+    "category": "number",
+    "claim": "One byte contains sixteen bits.",
+    "evidence": "A byte contains eight bits.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-048-a",
+    "pairId": "pair-048",
+    "category": "number",
+    "claim": "Binary uses two digits.",
+    "evidence": "Binary numbers use two digits: 0 and 1.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-048-b",
+    "pairId": "pair-048",
+    "category": "number",
+    "claim": "Binary uses ten digits.",
+    "evidence": "Binary numbers use two digits: 0 and 1.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-049-a",
+    "pairId": "pair-049",
+    "category": "number",
+    "claim": "Carbon has atomic number 6.",
+    "evidence": "The atomic number of carbon is 6.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-049-b",
+    "pairId": "pair-049",
+    "category": "number",
+    "claim": "Carbon has atomic number 8.",
+    "evidence": "The atomic number of carbon is 6.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-050-a",
+    "pairId": "pair-050",
+    "category": "number",
+    "claim": "Oxygen has atomic number 8.",
+    "evidence": "The atomic number of oxygen is 8.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-050-b",
+    "pairId": "pair-050",
+    "category": "number",
+    "claim": "Oxygen has atomic number 6.",
+    "evidence": "The atomic number of oxygen is 8.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-051-a",
+    "pairId": "pair-051",
+    "category": "date",
+    "claim": "World War II ended in 1945.",
+    "evidence": "World War II ended in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-051-b",
+    "pairId": "pair-051",
+    "category": "date",
+    "claim": "World War II ended in 1955.",
+    "evidence": "World War II ended in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-052-a",
+    "pairId": "pair-052",
+    "category": "date",
+    "claim": "Sputnik 1 launched in 1957.",
+    "evidence": "The first artificial satellite, Sputnik 1, launched in 1957.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-052-b",
+    "pairId": "pair-052",
+    "category": "date",
+    "claim": "Sputnik 1 launched in 1967.",
+    "evidence": "The first artificial satellite, Sputnik 1, launched in 1957.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-053-a",
+    "pairId": "pair-053",
+    "category": "date",
+    "claim": "The first human spaceflight occurred in 1961.",
+    "evidence": "Yuri Gagarin became the first human in space in 1961.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-053-b",
+    "pairId": "pair-053",
+    "category": "date",
+    "claim": "The first human spaceflight occurred in 1971.",
+    "evidence": "Yuri Gagarin became the first human in space in 1961.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-054-a",
+    "pairId": "pair-054",
+    "category": "date",
+    "claim": "The Titanic sank in 1912.",
+    "evidence": "The Titanic sank in 1912.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-054-b",
+    "pairId": "pair-054",
+    "category": "date",
+    "claim": "The Titanic sank in 1922.",
+    "evidence": "The Titanic sank in 1912.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-055-a",
+    "pairId": "pair-055",
+    "category": "date",
+    "claim": "The European Union was established in 1993.",
+    "evidence": "The European Union was established in 1993.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-055-b",
+    "pairId": "pair-055",
+    "category": "date",
+    "claim": "The European Union was established in 1983.",
+    "evidence": "The European Union was established in 1993.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-056-a",
+    "pairId": "pair-056",
+    "category": "date",
+    "claim": "Wikipedia launched in 2001.",
+    "evidence": "Wikipedia launched in 2001.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-056-b",
+    "pairId": "pair-056",
+    "category": "date",
+    "claim": "Wikipedia launched in 2011.",
+    "evidence": "Wikipedia launched in 2001.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-057-a",
+    "pairId": "pair-057",
+    "category": "date",
+    "claim": "The first modern Olympics took place in 1896.",
+    "evidence": "The first modern Olympic Games took place in 1896.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-057-b",
+    "pairId": "pair-057",
+    "category": "date",
+    "claim": "The first modern Olympics took place in 1906.",
+    "evidence": "The first modern Olympic Games took place in 1896.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-058-a",
+    "pairId": "pair-058",
+    "category": "date",
+    "claim": "Apollo 11 landed on the Moon in 1969.",
+    "evidence": "The Apollo 11 Moon landing occurred in 1969.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-058-b",
+    "pairId": "pair-058",
+    "category": "date",
+    "claim": "Apollo 11 landed on the Moon in 1979.",
+    "evidence": "The Apollo 11 Moon landing occurred in 1969.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-059-a",
+    "pairId": "pair-059",
+    "category": "date",
+    "claim": "The Chernobyl disaster occurred in 1986.",
+    "evidence": "The Chernobyl nuclear disaster occurred in 1986.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-059-b",
+    "pairId": "pair-059",
+    "category": "date",
+    "claim": "The Chernobyl disaster occurred in 1996.",
+    "evidence": "The Chernobyl nuclear disaster occurred in 1986.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-060-a",
+    "pairId": "pair-060",
+    "category": "date",
+    "claim": "Hubble launched in 1990.",
+    "evidence": "The Hubble Space Telescope launched in 1990.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-060-b",
+    "pairId": "pair-060",
+    "category": "date",
+    "claim": "Hubble launched in 2000.",
+    "evidence": "The Hubble Space Telescope launched in 1990.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-061-a",
+    "pairId": "pair-061",
+    "category": "negation",
+    "claim": "Earth has a natural Moon.",
+    "evidence": "The Earth has one natural Moon.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-061-b",
+    "pairId": "pair-061",
+    "category": "negation",
+    "claim": "Earth has no natural Moon.",
+    "evidence": "The Earth has one natural Moon.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-062-a",
+    "pairId": "pair-062",
+    "category": "negation",
+    "claim": "The Sun is a star.",
+    "evidence": "The Sun is a star.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-062-b",
+    "pairId": "pair-062",
+    "category": "negation",
+    "claim": "The Sun is not a star.",
+    "evidence": "The Sun is a star.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-063-a",
+    "pairId": "pair-063",
+    "category": "negation",
+    "claim": "Iron is a chemical element.",
+    "evidence": "Iron is a chemical element.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-063-b",
+    "pairId": "pair-063",
+    "category": "negation",
+    "claim": "Iron is not a chemical element.",
+    "evidence": "Iron is a chemical element.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-064-a",
+    "pairId": "pair-064",
+    "category": "negation",
+    "claim": "Sound requires a medium to propagate.",
+    "evidence": "Sound requires a medium to propagate.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-064-b",
+    "pairId": "pair-064",
+    "category": "negation",
+    "claim": "Sound does not require a medium to propagate.",
+    "evidence": "Sound requires a medium to propagate.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-065-a",
+    "pairId": "pair-065",
+    "category": "negation",
+    "claim": "Plants use sunlight during photosynthesis.",
+    "evidence": "Plants use sunlight during photosynthesis.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-065-b",
+    "pairId": "pair-065",
+    "category": "negation",
+    "claim": "Plants do not use sunlight during photosynthesis.",
+    "evidence": "Plants use sunlight during photosynthesis.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-066-a",
+    "pairId": "pair-066",
+    "category": "negation",
+    "claim": "Java supports object-oriented programming.",
+    "evidence": "Java supports object-oriented programming.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-066-b",
+    "pairId": "pair-066",
+    "category": "negation",
+    "claim": "Java does not support object-oriented programming.",
+    "evidence": "Java supports object-oriented programming.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-067-a",
+    "pairId": "pair-067",
+    "category": "negation",
+    "claim": "Python supports functions.",
+    "evidence": "Python supports functions.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-067-b",
+    "pairId": "pair-067",
+    "category": "negation",
+    "claim": "Python does not support functions.",
+    "evidence": "Python supports functions.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-068-a",
+    "pairId": "pair-068",
+    "category": "negation",
+    "claim": "DNA contains genetic information.",
+    "evidence": "DNA contains genetic information.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-068-b",
+    "pairId": "pair-068",
+    "category": "negation",
+    "claim": "DNA does not contain genetic information.",
+    "evidence": "DNA contains genetic information.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-069-a",
+    "pairId": "pair-069",
+    "category": "negation",
+    "claim": "Electrons have negative electric charge.",
+    "evidence": "Electrons have negative electric charge.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-069-b",
+    "pairId": "pair-069",
+    "category": "negation",
+    "claim": "Electrons do not have negative electric charge.",
+    "evidence": "Electrons have negative electric charge.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-070-a",
+    "pairId": "pair-070",
+    "category": "negation",
+    "claim": "The Pacific Ocean contains salt water.",
+    "evidence": "The Pacific Ocean contains salt water.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-070-b",
+    "pairId": "pair-070",
+    "category": "negation",
+    "claim": "The Pacific Ocean does not contain salt water.",
+    "evidence": "The Pacific Ocean contains salt water.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-071-a",
+    "pairId": "pair-071",
+    "category": "relation",
+    "claim": "A dog is a mammal.",
+    "evidence": "A dog is a mammal.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-071-b",
+    "pairId": "pair-071",
+    "category": "relation",
+    "claim": "Every mammal is a dog.",
+    "evidence": "A dog is a mammal.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-072-a",
+    "pairId": "pair-072",
+    "category": "relation",
+    "claim": "A robin is a bird.",
+    "evidence": "A robin is a bird.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-072-b",
+    "pairId": "pair-072",
+    "category": "relation",
+    "claim": "Every bird is a robin.",
+    "evidence": "A robin is a bird.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-073-a",
+    "pairId": "pair-073",
+    "category": "relation",
+    "claim": "A triangle is a polygon.",
+    "evidence": "A triangle is a polygon.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-073-b",
+    "pairId": "pair-073",
+    "category": "relation",
+    "claim": "Every polygon is a triangle.",
+    "evidence": "A triangle is a polygon.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-074-a",
+    "pairId": "pair-074",
+    "category": "relation",
+    "claim": "A laptop is a computer.",
+    "evidence": "A laptop is a computer.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-074-b",
+    "pairId": "pair-074",
+    "category": "relation",
+    "claim": "Every computer is a laptop.",
+    "evidence": "A laptop is a computer.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-075-a",
+    "pairId": "pair-075",
+    "category": "relation",
+    "claim": "A whale is a mammal.",
+    "evidence": "A whale is a mammal.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-075-b",
+    "pairId": "pair-075",
+    "category": "relation",
+    "claim": "Every mammal is a whale.",
+    "evidence": "A whale is a mammal.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-076-a",
+    "pairId": "pair-076",
+    "category": "relation",
+    "claim": "London is located in England.",
+    "evidence": "London is located in England.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-076-b",
+    "pairId": "pair-076",
+    "category": "relation",
+    "claim": "England is located in London.",
+    "evidence": "London is located in England.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-077-a",
+    "pairId": "pair-077",
+    "category": "relation",
+    "claim": "Rome is located in Italy.",
+    "evidence": "Rome is located in Italy.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-077-b",
+    "pairId": "pair-077",
+    "category": "relation",
+    "claim": "Italy is located in Rome.",
+    "evidence": "Rome is located in Italy.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-078-a",
+    "pairId": "pair-078",
+    "category": "relation",
+    "claim": "A CPU executes machine instructions.",
+    "evidence": "A CPU executes machine instructions.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-078-b",
+    "pairId": "pair-078",
+    "category": "relation",
+    "claim": "Machine instructions execute a CPU.",
+    "evidence": "A CPU executes machine instructions.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-079-a",
+    "pairId": "pair-079",
+    "category": "relation",
+    "claim": "The brain controls many bodily functions.",
+    "evidence": "The brain controls many bodily functions.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-079-b",
+    "pairId": "pair-079",
+    "category": "relation",
+    "claim": "Bodily functions control the brain.",
+    "evidence": "The brain controls many bodily functions.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-080-a",
+    "pairId": "pair-080",
+    "category": "relation",
+    "claim": "Earth is part of the Solar System.",
+    "evidence": "The Earth is part of the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-080-b",
+    "pairId": "pair-080",
+    "category": "relation",
+    "claim": "The Solar System is part of Earth.",
+    "evidence": "The Earth is part of the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "diag-081-a",
+    "pairId": "pair-081",
+    "category": "paraphrase",
+    "claim": "The Sun is a star.",
+    "evidence": "The Sun is a star.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-081-b",
+    "pairId": "pair-081",
+    "category": "paraphrase",
+    "claim": "Our Sun belongs to the category of stars.",
+    "evidence": "The Sun is a star.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-082-a",
+    "pairId": "pair-082",
+    "category": "paraphrase",
+    "claim": "Earth has one natural Moon.",
+    "evidence": "Earth has one natural Moon.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-082-b",
+    "pairId": "pair-082",
+    "category": "paraphrase",
+    "claim": "There is one natural lunar satellite orbiting Earth.",
+    "evidence": "Earth has one natural Moon.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-083-a",
+    "pairId": "pair-083",
+    "category": "paraphrase",
+    "claim": "A triangle has three sides.",
+    "evidence": "A triangle has three sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-083-b",
+    "pairId": "pair-083",
+    "category": "paraphrase",
+    "claim": "Three sides form the boundary of a triangle.",
+    "evidence": "A triangle has three sides.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-084-a",
+    "pairId": "pair-084",
+    "category": "paraphrase",
+    "claim": "Oxygen has the chemical symbol O.",
+    "evidence": "The chemical symbol of oxygen is O.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-084-b",
+    "pairId": "pair-084",
+    "category": "paraphrase",
+    "claim": "The letter O represents oxygen in chemical notation.",
+    "evidence": "The chemical symbol of oxygen is O.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-085-a",
+    "pairId": "pair-085",
+    "category": "paraphrase",
+    "claim": "Guido van Rossum created Python.",
+    "evidence": "Python was created by Guido van Rossum.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-085-b",
+    "pairId": "pair-085",
+    "category": "paraphrase",
+    "claim": "The creator of Python is Guido van Rossum.",
+    "evidence": "Python was created by Guido van Rossum.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-086-a",
+    "pairId": "pair-086",
+    "category": "paraphrase",
+    "claim": "The UN was founded in 1945.",
+    "evidence": "The United Nations was founded in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-086-b",
+    "pairId": "pair-086",
+    "category": "paraphrase",
+    "claim": "The organization known as the United Nations began in 1945.",
+    "evidence": "The United Nations was founded in 1945.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-087-a",
+    "pairId": "pair-087",
+    "category": "paraphrase",
+    "claim": "Mars has two natural moons.",
+    "evidence": "Mars has two natural moons.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-087-b",
+    "pairId": "pair-087",
+    "category": "paraphrase",
+    "claim": "Two moons orbit the planet Mars.",
+    "evidence": "Mars has two natural moons.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-088-a",
+    "pairId": "pair-088",
+    "category": "paraphrase",
+    "claim": "Jupiter is the largest planet in the Solar System.",
+    "evidence": "Jupiter is the largest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-088-b",
+    "pairId": "pair-088",
+    "category": "paraphrase",
+    "claim": "No other Solar System planet is larger than Jupiter.",
+    "evidence": "Jupiter is the largest planet in the Solar System.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-089-a",
+    "pairId": "pair-089",
+    "category": "paraphrase",
+    "claim": "A byte consists of eight bits.",
+    "evidence": "A byte consists of eight bits.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-089-b",
+    "pairId": "pair-089",
+    "category": "paraphrase",
+    "claim": "Eight bits make up one byte.",
+    "evidence": "A byte consists of eight bits.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-090-a",
+    "pairId": "pair-090",
+    "category": "paraphrase",
+    "claim": "Earth revolves around the Sun.",
+    "evidence": "The Earth revolves around the Sun.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "diag-090-b",
+    "pairId": "pair-090",
+    "category": "paraphrase",
+    "claim": "Our planet travels in an orbit around the Sun.",
+    "evidence": "The Earth revolves around the Sun.",
+    "wikiTitle": null,
+    "verifiedLabel": "SUPPORTS"
+  }
+]

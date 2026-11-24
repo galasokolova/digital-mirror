@@ -1,0 +1,110 @@
+[
+  {
+    "id": "fact-001",
+    "pairId": "fact-001",
+    "category": "entity",
+    "claim": "Venus is the hottest planet in the Solar System.",
+    "evidence": "NASA reports that Venus is the hottest planet in the Solar System, with a mean surface temperature of about 464 degrees Celsius; Mercury is closer to the Sun but cooler on average.",
+    "wikiTitle": "Venus",
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "fact-002",
+    "pairId": "fact-001",
+    "category": "entity",
+    "claim": "Mercury is the hottest planet in the Solar System.",
+    "evidence": "NASA reports that Venus is the hottest planet in the Solar System, with a mean surface temperature of about 464 degrees Celsius; Mercury is closer to the Sun but cooler on average.",
+    "wikiTitle": "Venus",
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "fact-003",
+    "pairId": "fact-003",
+    "category": "number",
+    "claim": "Mars has two natural moons.",
+    "evidence": "NASA identifies exactly two natural moons orbiting Mars: Phobos and Deimos.",
+    "wikiTitle": "Mars",
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "fact-004",
+    "pairId": "fact-003",
+    "category": "number",
+    "claim": "Mars has three natural moons.",
+    "evidence": "NASA identifies exactly two natural moons orbiting Mars: Phobos and Deimos.",
+    "wikiTitle": "Mars",
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "fact-005",
+    "pairId": "fact-005",
+    "category": "entity",
+    "claim": "Jupiter is the largest planet in the Solar System.",
+    "evidence": "NASA identifies Jupiter as the largest planet in the Solar System; its equatorial diameter is approximately 142,984 kilometers.",
+    "wikiTitle": "Jupiter",
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "fact-006",
+    "pairId": "fact-005",
+    "category": "entity",
+    "claim": "Saturn is the largest planet in the Solar System.",
+    "evidence": "NASA identifies Jupiter as the largest planet in the Solar System; its equatorial diameter is approximately 142,984 kilometers.",
+    "wikiTitle": "Jupiter",
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "fact-007",
+    "pairId": "fact-007",
+    "category": "entity",
+    "claim": "The Pacific Ocean is the largest ocean basin on Earth.",
+    "evidence": "NOAA identifies the Pacific Ocean as Earth’s largest ocean basin and the Atlantic Ocean as the second largest.",
+    "wikiTitle": "Pacific Ocean",
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "fact-008",
+    "pairId": "fact-007",
+    "category": "entity",
+    "claim": "The Atlantic Ocean is the largest ocean basin on Earth.",
+    "evidence": "NOAA identifies the Pacific Ocean as Earth’s largest ocean basin and the Atlantic Ocean as the second largest.",
+    "wikiTitle": "Pacific Ocean",
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "fact-009",
+    "pairId": "fact-009",
+    "category": "date",
+    "claim": "Tim Berners-Lee invented the World Wide Web at CERN in 1989.",
+    "evidence": "CERN states that Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN.",
+    "wikiTitle": "World Wide Web",
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "fact-010",
+    "pairId": "fact-009",
+    "category": "date",
+    "claim": "Tim Berners-Lee invented the World Wide Web at CERN in 1999.",
+    "evidence": "CERN states that Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN.",
+    "wikiTitle": "World Wide Web",
+    "verifiedLabel": "REFUTES"
+  },
+  {
+    "id": "fact-011",
+    "pairId": "fact-011",
+    "category": "negation",
+    "claim": "CERN released the World Wide Web software into the public domain in 1993.",
+    "evidence": "CERN states that on 30 April 1993 it released the World Wide Web software into the public domain.",
+    "wikiTitle": "World Wide Web",
+    "verifiedLabel": "SUPPORTS"
+  },
+  {
+    "id": "fact-012",
+    "pairId": "fact-011",
+    "category": "negation",
+    "claim": "CERN never released the World Wide Web software into the public domain.",
+    "evidence": "CERN states that on 30 April 1993 it released the World Wide Web software into the public domain.",
+    "wikiTitle": "World Wide Web",
+    "verifiedLabel": "REFUTES"
+  }
+]

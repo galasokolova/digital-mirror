@@ -1,8 +1,11 @@
 class MachineFrame {
     constructor(container) {
         this.container = container;
-        this.agents = [];
-        this.maxAgents = 35;
+        this.needles = new NeedleSystem({
+            maxAgents: 6,
+            spawnRate: 0.03,
+            agentOptions: {life: 100, r: 0, g: 255, b: 200, diameter: 8, stepSize: 2}
+        });
         this.frame = 0;
 
         this.canvas = document.createElement("canvas");
@@ -47,119 +50,12 @@ class MachineFrame {
         this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     }
 
-    spawnAgent() {
-        if (this.agents.length >= this.maxAgents) return;
-        if (Math.random() > 0.25) return;
-
-        const edge = Math.floor(Math.random() * 4);
-        let x, y;
-
-        switch (edge) {
-            case 0:
-                x = Math.random() * this.width;
-                y = 0;
-                break;
-            case 1:
-                x = this.width;
-                y = Math.random() * this.height;
-                break;
-            case 2:
-                x = Math.random() * this.width;
-                y = this.height;
-                break;
-            default:
-                x = 0;
-                y = Math.random() * this.height;
-        }
-
-        this.agents.push({
-            x,
-            y,
-            life: 200,
-            size: 5,
-            r: 0,
-            g: 255,
-            b: 200
-        });
+    setDistortion(level) {
+        this.needles.setDistortion(level);
     }
 
-    drawAgents() {
-        const ctx = this.ctx;
-
-        for (let i = this.agents.length - 1; i >= 0; i--) {
-            const a = this.agents[i];
-
-            const directions = [
-                [-1, -1], [0, -1], [1, -1],
-                [-1,  0],          [1,  0],
-                [-1,  1], [0,  1], [1,  1]
-            ];
-
-            const direction =
-                directions[Math.floor(Math.random() * directions.length)];
-
-            a.x = Math.max(0, Math.min(this.width, a.x + direction[0] * 4));
-            a.y = Math.max(0, Math.min(this.height, a.y + direction[1] * 4));
-
-            const edgeDistance = Math.min(
-                a.x,
-                a.y,
-                this.width - a.x,
-                this.height - a.y
-            );
-
-            const fade = Math.pow(
-                Math.max(0, 1 - edgeDistance / 150),
-                2
-            );
-
-            if (fade > 0.01) {
-                const alpha = Math.max(0, a.life / 200) * fade;
-                const length = 5 + Math.random() * 15;
-
-                ctx.lineWidth = 1;
-
-                // Main turquoise needle
-                ctx.strokeStyle = `rgba(${a.r},${a.g},${a.b},${alpha})`;
-                ctx.beginPath();
-                ctx.moveTo(a.x, a.y);
-                ctx.lineTo(
-                    a.x + (Math.random() - 0.5) * length * 2,
-                    a.y + (Math.random() - 0.5) * length * 2
-                );
-                ctx.stroke();
-
-                // Occasional emerald spark
-                if (Math.random() < 0.25) {
-                    ctx.strokeStyle = `rgba(0,220,80,${alpha * 0.7})`;
-                    ctx.beginPath();
-                    ctx.moveTo(a.x, a.y);
-                    ctx.lineTo(
-                        a.x + (Math.random() - 0.5) * 30,
-                        a.y + (Math.random() - 0.5) * 30
-                    );
-                    ctx.stroke();
-                }
-
-                // Rare blue spike
-                if (Math.random() < 0.06) {
-                    ctx.strokeStyle = `rgba(20,80,255,${alpha * 0.7})`;
-                    ctx.beginPath();
-                    ctx.moveTo(a.x, a.y);
-                    ctx.lineTo(
-                        a.x + (Math.random() - 0.5) * 45,
-                        a.y + (Math.random() - 0.5) * 45
-                    );
-                    ctx.stroke();
-                }
-            }
-
-            a.life -= 0.7;
-
-            if (a.life <= 0) {
-                this.agents.splice(i, 1);
-            }
-        }
+    reset() {
+        this.needles.reset();
     }
 
     drawTechFrame() {
@@ -208,8 +104,9 @@ class MachineFrame {
 
         ctx.clearRect(0, 0, this.width, this.height);
 
-        this.spawnAgent();
-        this.drawAgents();
+        this.needles.spawnBorder(this.width, this.height);
+        this.needles.update(this.width, this.height);
+        this.needles.renderCanvas(ctx, this.width, this.height);
         this.drawTechFrame();
         this.drawCorners();
 

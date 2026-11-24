@@ -10,10 +10,10 @@ from transformers import (
 MODEL_NAME = "cross-encoder/nli-deberta-v3-small"
 
 INPUT_PATH = Path(
-    "ml/data/experiments/e13_negation_generalization.csv"
+    "ml/evidence_classifier/data/experiments/e13_negation_generalization.csv"
 )
 OUTPUT_PATH = Path(
-    "ml/data/experiments/e14_semantic_contradiction.csv"
+    "ml/evidence_classifier/data/experiments/e14_semantic_contradiction.csv"
 )
 
 LABEL_MAP = {

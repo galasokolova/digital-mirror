@@ -26,7 +26,7 @@ FEVER provides claims, Wikipedia evidence references, and three labels: `SUPPORT
 | Prepared dev evidence | 24,454 rows | 13,202 distinct verified claims |
 | Wikipedia archive | 109 JSONL files | Used to resolve referenced evidence |
 
-**Preparation:** I resolved FEVER evidence references against Wikipedia pages, assembled complete evidence sets, and saved them in `ml/data/processed/fever/`. The prepared verified files contain `claim_id`, `claim`, `evidence_set_id`, `evidence`, `label`, and `split`. Later I added `wiki_titles` and `context_evidence` (Wikipedia title followed by evidence text).
+**Preparation:** I resolved FEVER evidence references against Wikipedia pages, assembled complete evidence sets, and saved them in `ml/evidence_classifier/data/processed/fever/`. The prepared verified files contain `claim_id`, `claim`, `evidence_set_id`, `evidence`, `label`, and `split`. Later I added `wiki_titles` and `context_evidence` (Wikipedia title followed by evidence text).
 
 **Important decisions and limitations:**
 
@@ -146,7 +146,7 @@ E06b confusion matrix (actual rows / predicted columns: `REFUTES`, `SUPPORTS`):
 
 **Remaining weakness:** The model incorrectly classified **1,846** refuting examples as supporting, compared with **1,064** supporting examples incorrectly classified as refuting. The aggregate improvement does not establish robust contradiction understanding.
 
-Saved model: `ml/models/fever_relationship_logreg.joblib`.
+Saved model: `ml/evidence_classifier/models/fever_relationship_logreg.joblib`.
 
 ## 10. Repeating the contradiction test (E06c)
 
@@ -168,7 +168,7 @@ I used the same five controlled pairs as E06a, this time with the E06b model.
 
 **Finding:** In **all five** pairs, contradictory evidence lowered `P(SUPPORTS)`. However, only the Eiffel Tower pair crossed the classification threshold. The model still often favored `SUPPORTS` despite explicit contradiction. Five synthetic pairs are a useful debugging check, not a statistically representative benchmark.
 
-Saved results: `ml/data/experiments/fever/e06c_controlled_contradictions.csv`.
+Saved results: `ml/evidence_classifier/data/experiments/fever/e06c_controlled_contradictions.csv`.
 
 ## 11. Which features actually helped? (E06d ablation)
 
@@ -188,7 +188,7 @@ I retrained seven variants with the same dataset and model settings, removing on
 
 **Important detail:** `No Title Feature` removes only the **numeric title-overlap feature**. The Wikipedia title is still included in the evidence TF-IDF text; this is **not** a full test of removing article titles.
 
-Saved results: `ml/data/experiments/fever/e06d_feature_ablation.csv`.
+Saved results: `ml/evidence_classifier/data/experiments/fever/e06d_feature_ablation.csv`.
 
 ## 12. Current conclusions
 
@@ -220,16 +220,16 @@ Saved results: `ml/data/experiments/fever/e06d_feature_ablation.csv`.
 
 | File | Purpose |
 |---|---|
-| `ml/src/prepare_fever.py` | Prepare FEVER evidence sets |
-| `ml/src/prepare_fever_training_context.py` | Add Wikipedia article titles |
-| `ml/src/train_fever_context_model.py` | Train E05a |
-| `ml/src/compare_fever_features.py` | Run E05b |
-| `ml/src/test_fever_evidence_sensitivity.py` | Run E05c |
-| `ml/src/test_controlled_contradictions.py` | Run E06a |
-| `ml/src/train_fever_relationship_model.py` | Train E06b |
-| `ml/src/test_fever_relationship_contradictions.py` | Run E06c |
-| `ml/src/ablate_fever_relationship_features.py` | Run E06d |
-| `ml/models/fever_relationship_logreg.joblib` | Saved E06b model |
-| `ml/data/experiments/fever/` | Experiment CSV outputs |
+| `ml/evidence_classifier/src/prepare_fever.py` | Prepare FEVER evidence sets |
+| `ml/evidence_classifier/src/prepare_fever_training_context.py` | Add Wikipedia article titles |
+| `ml/evidence_classifier/src/train_fever_context_model.py` | Train E05a |
+| `ml/evidence_classifier/src/compare_fever_features.py` | Run E05b |
+| `ml/evidence_classifier/src/test_fever_evidence_sensitivity.py` | Run E05c |
+| `ml/evidence_classifier/src/test_controlled_contradictions.py` | Run E06a |
+| `ml/evidence_classifier/src/train_fever_relationship_model.py` | Train E06b |
+| `ml/evidence_classifier/src/test_fever_relationship_contradictions.py` | Run E06c |
+| `ml/evidence_classifier/src/ablate_fever_relationship_features.py` | Run E06d |
+| `ml/evidence_classifier/models/fever_relationship_logreg.joblib` | Saved E06b model |
+| `ml/evidence_classifier/data/experiments/fever/` | Experiment CSV outputs |
 
 **Reporting note:** Figures above are from recorded experiment outputs. Where only rounded metrics were retained, results are shown to four decimals; no uncertainty estimates have been computed yet.

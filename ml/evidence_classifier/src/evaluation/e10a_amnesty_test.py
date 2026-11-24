@@ -6,8 +6,8 @@ import pandas as pd
 from ml.src.models.train_fever_relationship_model import make_features
 
 
-MODEL_PATH = Path("ml/models/fever_relationship_logreg.joblib")
-OUTPUT_PATH = Path("ml/data/experiments/e10a_amnesty_results.csv")
+MODEL_PATH = Path("ml/evidence_classifier/models/fever_relationship_logreg.joblib")
+OUTPUT_PATH = Path("ml/evidence_classifier/data/experiments/e10a_amnesty_results.csv")
 
 claim = (
     "Amnesty International admits that Ukraine fights "

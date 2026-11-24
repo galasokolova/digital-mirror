@@ -8,9 +8,9 @@ from ml.src.models.train_fever_relationship_model import (
     relationship_features,
 )
 
-MODEL_PATH = Path("ml/models/fever_relationship_logreg.joblib")
+MODEL_PATH = Path("ml/evidence_classifier/models/fever_relationship_logreg.joblib")
 OUTPUT_PATH = Path(
-    "ml/data/experiments/e13_negation_generalization.csv"
+    "ml/evidence_classifier/data/experiments/e13_negation_generalization.csv"
 )
 
 CLAIM = "The committee approved the proposal."
