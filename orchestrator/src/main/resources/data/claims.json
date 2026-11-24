@@ -1,0 +1,122 @@
+[
+  {
+    "id": "fact-001",
+    "claim": "Venus is the hottest planet in the Solar System.",
+    "evidence": "NASA reports that Venus is the hottest planet in the Solar System, with a mean surface temperature of about 464 degrees Celsius; Mercury is closer to the Sun but cooler on average.",
+    "wikiTitle": "Venus",
+    "verifiedLabel": "SUPPORTS",
+    "explanation": "Venus has the highest mean surface temperature, not Mercury.",
+    "sourceTitle": "NASA — Temperatures Across Our Solar System",
+    "sourceUrl": "https://science.nasa.gov/solar-system/temperatures-across-our-solar-system/"
+  },
+  {
+    "id": "fact-002",
+    "claim": "Mercury is the hottest planet in the Solar System.",
+    "evidence": "NASA reports that Venus is the hottest planet in the Solar System, with a mean surface temperature of about 464 degrees Celsius; Mercury is closer to the Sun but cooler on average.",
+    "wikiTitle": "Venus",
+    "verifiedLabel": "REFUTES",
+    "explanation": "Venus has the highest mean surface temperature, not Mercury.",
+    "sourceTitle": "NASA — Temperatures Across Our Solar System",
+    "sourceUrl": "https://science.nasa.gov/solar-system/temperatures-across-our-solar-system/"
+  },
+  {
+    "id": "fact-003",
+    "claim": "Mars has two natural moons.",
+    "evidence": "NASA identifies exactly two natural moons orbiting Mars: Phobos and Deimos.",
+    "wikiTitle": "Mars",
+    "verifiedLabel": "SUPPORTS",
+    "explanation": "NASA lists two moons of Mars, Phobos and Deimos, not three.",
+    "sourceTitle": "NASA — Moons of Mars",
+    "sourceUrl": "https://science.nasa.gov/mars/moons/"
+  },
+  {
+    "id": "fact-004",
+    "claim": "Mars has three natural moons.",
+    "evidence": "NASA identifies exactly two natural moons orbiting Mars: Phobos and Deimos.",
+    "wikiTitle": "Mars",
+    "verifiedLabel": "REFUTES",
+    "explanation": "NASA lists two moons of Mars, Phobos and Deimos, not three.",
+    "sourceTitle": "NASA — Moons of Mars",
+    "sourceUrl": "https://science.nasa.gov/mars/moons/"
+  },
+  {
+    "id": "fact-005",
+    "claim": "Jupiter is the largest planet in the Solar System.",
+    "evidence": "NASA identifies Jupiter as the largest planet in the Solar System; its equatorial diameter is approximately 142,984 kilometers.",
+    "wikiTitle": "Jupiter",
+    "verifiedLabel": "SUPPORTS",
+    "explanation": "Jupiter, rather than Saturn, is the largest planet.",
+    "sourceTitle": "NASA — Planet Sizes and Locations in Our Solar System",
+    "sourceUrl": "https://science.nasa.gov/solar-system/planets/planet-sizes-and-locations-in-our-solar-system/"
+  },
+  {
+    "id": "fact-006",
+    "claim": "Saturn is the largest planet in the Solar System.",
+    "evidence": "NASA identifies Jupiter as the largest planet in the Solar System; its equatorial diameter is approximately 142,984 kilometers.",
+    "wikiTitle": "Jupiter",
+    "verifiedLabel": "REFUTES",
+    "explanation": "Jupiter, rather than Saturn, is the largest planet.",
+    "sourceTitle": "NASA — Planet Sizes and Locations in Our Solar System",
+    "sourceUrl": "https://science.nasa.gov/solar-system/planets/planet-sizes-and-locations-in-our-solar-system/"
+  },
+  {
+    "id": "fact-007",
+    "claim": "The Pacific Ocean is the largest ocean basin on Earth.",
+    "evidence": "NOAA identifies the Pacific Ocean as Earth’s largest ocean basin and the Atlantic Ocean as the second largest.",
+    "wikiTitle": "Pacific Ocean",
+    "verifiedLabel": "SUPPORTS",
+    "explanation": "The Pacific is the largest ocean basin; the Atlantic is second.",
+    "sourceTitle": "NOAA — What is the largest ocean basin on Earth?",
+    "sourceUrl": "https://oceanservice.noaa.gov/facts/biggestocean.html?no_redirect=true"
+  },
+  {
+    "id": "fact-008",
+    "claim": "The Atlantic Ocean is the largest ocean basin on Earth.",
+    "evidence": "NOAA identifies the Pacific Ocean as Earth’s largest ocean basin and the Atlantic Ocean as the second largest.",
+    "wikiTitle": "Pacific Ocean",
+    "verifiedLabel": "REFUTES",
+    "explanation": "The Pacific is the largest ocean basin; the Atlantic is second.",
+    "sourceTitle": "NOAA — What is the largest ocean basin on Earth?",
+    "sourceUrl": "https://oceanservice.noaa.gov/facts/biggestocean.html?no_redirect=true"
+  },
+  {
+    "id": "fact-009",
+    "claim": "Tim Berners-Lee invented the World Wide Web at CERN in 1989.",
+    "evidence": "CERN states that Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN.",
+    "wikiTitle": "World Wide Web",
+    "verifiedLabel": "SUPPORTS",
+    "explanation": "The invention dates to 1989, not 1999.",
+    "sourceTitle": "CERN — The Birth of the Web",
+    "sourceUrl": "https://home.cern/science/computing/the-birth-of-the-web"
+  },
+  {
+    "id": "fact-010",
+    "claim": "Tim Berners-Lee invented the World Wide Web at CERN in 1999.",
+    "evidence": "CERN states that Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN.",
+    "wikiTitle": "World Wide Web",
+    "verifiedLabel": "REFUTES",
+    "explanation": "The invention dates to 1989, not 1999.",
+    "sourceTitle": "CERN — The Birth of the Web",
+    "sourceUrl": "https://home.cern/science/computing/the-birth-of-the-web"
+  },
+  {
+    "id": "fact-011",
+    "claim": "CERN released the World Wide Web software into the public domain in 1993.",
+    "evidence": "CERN states that on 30 April 1993 it released the World Wide Web software into the public domain.",
+    "wikiTitle": "World Wide Web",
+    "verifiedLabel": "SUPPORTS",
+    "explanation": "CERN released the software into the public domain on 30 April 1993.",
+    "sourceTitle": "CERN — World Wide Web at 35",
+    "sourceUrl": "https://home.web.cern.ch/world-wide-web-35/"
+  },
+  {
+    "id": "fact-012",
+    "claim": "CERN never released the World Wide Web software into the public domain.",
+    "evidence": "CERN states that on 30 April 1993 it released the World Wide Web software into the public domain.",
+    "wikiTitle": "World Wide Web",
+    "verifiedLabel": "REFUTES",
+    "explanation": "CERN released the software into the public domain on 30 April 1993.",
+    "sourceTitle": "CERN — World Wide Web at 35",
+    "sourceUrl": "https://home.web.cern.ch/world-wide-web-35/"
+  }
+]
