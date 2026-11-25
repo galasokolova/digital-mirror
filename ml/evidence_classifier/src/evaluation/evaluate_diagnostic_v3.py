@@ -13,7 +13,7 @@ from evaluate_diagnostic_v2 import (
 ROOT = Path(__file__).resolve().parents[4]
 DATA_DIR = ROOT / "ml/evidence_classifier/data/evaluation"
 
-V3_DATASET = DATA_DIR / "diagnostic_claims_v3.json"
+V3_DATASET = DATA_DIR / "datasets" / "diagnostic_claims_v3.json"
 
 
 def main():
@@ -31,7 +31,7 @@ def main():
     # Save V3 results without overwriting V2.
     import evaluate_diagnostic_v2 as evaluator
     evaluator.OUTPUT = (
-        DATA_DIR / "diagnostic_results_v3.csv"
+        DATA_DIR / "results" / "diagnostic_results_v3.csv"
     )
     evaluator.save_csv(results)
 

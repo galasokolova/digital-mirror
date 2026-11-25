@@ -1,0 +1,61 @@
+id,pairId,category,claim,evidence,wikiTitle,verifiedLabel,prediction,pSupports,pRefutes,correct
+diag-001-a,pair-001,entity,Venus is the hottest planet in the Solar System.,Venus is the hottest planet in the Solar System.,,SUPPORTS,SUPPORTS,0.7241,0.2759,True
+diag-001-b,pair-001,entity,Mercury is the hottest planet in the Solar System.,Venus is the hottest planet in the Solar System.,,REFUTES,SUPPORTS,0.6791,0.3209,False
+diag-002-a,pair-002,entity,Jupiter is the largest planet in the Solar System.,Jupiter is the largest planet in the Solar System.,,SUPPORTS,SUPPORTS,0.804,0.196,True
+diag-002-b,pair-002,entity,Saturn is the largest planet in the Solar System.,Jupiter is the largest planet in the Solar System.,,REFUTES,SUPPORTS,0.7059,0.2941,False
+diag-003-a,pair-003,entity,The Pacific Ocean is Earth's largest ocean basin.,The Pacific Ocean is Earth's largest ocean basin.,,SUPPORTS,SUPPORTS,0.6407,0.3593,True
+diag-003-b,pair-003,entity,The Atlantic Ocean is Earth's largest ocean basin.,The Pacific Ocean is Earth's largest ocean basin.,,REFUTES,SUPPORTS,0.7152,0.2848,False
+diag-004-a,pair-004,entity,Neil Armstrong was the first person to walk on the Moon.,Neil Armstrong was the first person to walk on the Moon.,,SUPPORTS,SUPPORTS,0.9099,0.0901,True
+diag-004-b,pair-004,entity,Buzz Aldrin was the first person to walk on the Moon.,Neil Armstrong was the first person to walk on the Moon.,,REFUTES,SUPPORTS,0.8136,0.1864,False
+diag-005-a,pair-005,entity,Canberra is the capital of Australia.,Canberra is the capital of Australia.,,SUPPORTS,SUPPORTS,0.833,0.167,True
+diag-005-b,pair-005,entity,Sydney is the capital of Australia.,Canberra is the capital of Australia.,,REFUTES,SUPPORTS,0.7953,0.2047,False
+diag-006-a,pair-006,number,Mars has two natural moons.,Mars has two natural moons: Phobos and Deimos.,,SUPPORTS,SUPPORTS,0.9805,0.0195,True
+diag-006-b,pair-006,number,Mars has three natural moons.,Mars has two natural moons: Phobos and Deimos.,,REFUTES,SUPPORTS,0.9021,0.0979,False
+diag-007-a,pair-007,number,A triangle has three sides.,A triangle has three sides.,,SUPPORTS,SUPPORTS,0.9871,0.0129,True
+diag-007-b,pair-007,number,A triangle has four sides.,A triangle has three sides.,,REFUTES,SUPPORTS,0.9523,0.0477,False
+diag-008-a,pair-008,number,A hexagon has six sides.,A hexagon has six sides.,,SUPPORTS,SUPPORTS,0.9617,0.0383,True
+diag-008-b,pair-008,number,A hexagon has eight sides.,A hexagon has six sides.,,REFUTES,SUPPORTS,0.9553,0.0447,False
+diag-009-a,pair-009,number,A water molecule contains two hydrogen atoms.,"The chemical formula for water is H2O, with two hydrogen atoms and one oxygen atom.",,SUPPORTS,SUPPORTS,0.9841,0.0159,True
+diag-009-b,pair-009,number,A water molecule contains three hydrogen atoms.,"The chemical formula for water is H2O, with two hydrogen atoms and one oxygen atom.",,REFUTES,SUPPORTS,0.9047,0.0953,False
+diag-010-a,pair-010,number,An adult human skeleton typically contains 206 bones.,The adult human skeleton typically contains 206 bones.,,SUPPORTS,SUPPORTS,0.9626,0.0374,True
+diag-010-b,pair-010,number,An adult human skeleton typically contains 306 bones.,The adult human skeleton typically contains 206 bones.,,REFUTES,SUPPORTS,0.5131,0.4869,False
+diag-011-a,pair-011,date,Humans first landed on the Moon in 1969.,The first human Moon landing occurred in 1969.,,SUPPORTS,SUPPORTS,0.5366,0.4634,True
+diag-011-b,pair-011,date,Humans first landed on the Moon in 1979.,The first human Moon landing occurred in 1969.,,REFUTES,REFUTES,0.0768,0.9232,True
+diag-012-a,pair-012,date,The Berlin Wall fell in 1989.,The Berlin Wall fell in November 1989.,,SUPPORTS,SUPPORTS,0.9021,0.0979,True
+diag-012-b,pair-012,date,The Berlin Wall fell in 1999.,The Berlin Wall fell in November 1989.,,REFUTES,REFUTES,0.2362,0.7638,True
+diag-013-a,pair-013,date,Tim Berners-Lee invented the World Wide Web in 1989.,The World Wide Web was invented by Tim Berners-Lee at CERN in 1989.,,SUPPORTS,SUPPORTS,0.9431,0.0569,True
+diag-013-b,pair-013,date,Tim Berners-Lee invented the World Wide Web in 1999.,The World Wide Web was invented by Tim Berners-Lee at CERN in 1989.,,REFUTES,REFUTES,0.4205,0.5795,True
+diag-014-a,pair-014,date,The United Nations was founded in 1945.,The United Nations was founded in 1945.,,SUPPORTS,SUPPORTS,0.9222,0.0778,True
+diag-014-b,pair-014,date,The United Nations was founded in 1955.,The United Nations was founded in 1945.,,REFUTES,REFUTES,0.2779,0.7221,True
+diag-015-a,pair-015,date,The first iPhone was introduced in 2007.,The first iPhone was introduced in 2007.,,SUPPORTS,SUPPORTS,0.8182,0.1818,True
+diag-015-b,pair-015,date,The first iPhone was introduced in 2017.,The first iPhone was introduced in 2007.,,REFUTES,REFUTES,0.1233,0.8767,True
+diag-016-a,pair-016,negation,Earth orbits the Sun.,Earth orbits the Sun.,,SUPPORTS,SUPPORTS,0.8467,0.1533,True
+diag-016-b,pair-016,negation,Earth does not orbit the Sun.,Earth orbits the Sun.,,REFUTES,REFUTES,0.017,0.983,True
+diag-017-a,pair-017,negation,Light travels faster than sound in air.,Light travels faster than sound in a vacuum-free comparison through air.,,SUPPORTS,SUPPORTS,0.8945,0.1055,True
+diag-017-b,pair-017,negation,Light does not travel faster than sound in air.,Light travels faster than sound in a vacuum-free comparison through air.,,REFUTES,REFUTES,0.0415,0.9585,True
+diag-018-a,pair-018,negation,The Moon is a natural satellite of Earth.,The Moon is Earth's natural satellite.,,SUPPORTS,SUPPORTS,0.6429,0.3571,True
+diag-018-b,pair-018,negation,The Moon is not a natural satellite of Earth.,The Moon is Earth's natural satellite.,,REFUTES,REFUTES,0.0239,0.9761,True
+diag-019-a,pair-019,negation,Water contains oxygen.,Water contains oxygen atoms.,,SUPPORTS,SUPPORTS,0.9903,0.0097,True
+diag-019-b,pair-019,negation,Water does not contain oxygen.,Water contains oxygen atoms.,,REFUTES,REFUTES,0.0573,0.9427,True
+diag-020-a,pair-020,negation,Jupiter is a planet.,Jupiter is a planet in the Solar System.,,SUPPORTS,SUPPORTS,0.8848,0.1152,True
+diag-020-b,pair-020,negation,Jupiter is not a planet.,Jupiter is a planet in the Solar System.,,REFUTES,REFUTES,0.0077,0.9923,True
+diag-021-a,pair-021,relation,The Earth orbits the Sun.,The Earth orbits the Sun.,,SUPPORTS,SUPPORTS,0.8189,0.1811,True
+diag-021-b,pair-021,relation,The Sun orbits the Earth.,The Earth orbits the Sun.,,REFUTES,SUPPORTS,0.8189,0.1811,False
+diag-022-a,pair-022,relation,The Moon orbits Earth.,The Moon orbits Earth.,,SUPPORTS,SUPPORTS,0.9281,0.0719,True
+diag-022-b,pair-022,relation,Earth orbits the Moon.,The Moon orbits Earth.,,REFUTES,SUPPORTS,0.9208,0.0792,False
+diag-023-a,pair-023,relation,Paris is the capital of France.,Paris is the capital of France.,,SUPPORTS,SUPPORTS,0.7021,0.2979,True
+diag-023-b,pair-023,relation,France is the capital of Paris.,Paris is the capital of France.,,REFUTES,SUPPORTS,0.7167,0.2833,False
+diag-024-a,pair-024,relation,A square is a rectangle.,A square is a type of rectangle.,,SUPPORTS,SUPPORTS,0.7233,0.2767,True
+diag-024-b,pair-024,relation,Every rectangle is a square.,A square is a type of rectangle.,,REFUTES,REFUTES,0.1217,0.8783,True
+diag-025-a,pair-025,relation,A dolphin is a mammal.,A dolphin is a mammal.,,SUPPORTS,SUPPORTS,0.8549,0.1451,True
+diag-025-b,pair-025,relation,Every mammal is a dolphin.,A dolphin is a mammal.,,REFUTES,REFUTES,0.26,0.74,True
+diag-026-a,pair-026,paraphrase,Mars has two natural moons.,Mars has two natural satellites named Phobos and Deimos.,,SUPPORTS,SUPPORTS,0.95,0.05,True
+diag-026-b,pair-026,paraphrase,Two natural satellites orbit Mars.,Mars has two natural satellites named Phobos and Deimos.,,SUPPORTS,SUPPORTS,0.8454,0.1546,True
+diag-027-a,pair-027,paraphrase,Venus is the hottest planet in the Solar System.,Venus is the hottest planet in our Solar System.,,SUPPORTS,SUPPORTS,0.6844,0.3156,True
+diag-027-b,pair-027,paraphrase,No planet in our Solar System is hotter than Venus.,Venus is the hottest planet in our Solar System.,,SUPPORTS,REFUTES,0.0413,0.9587,False
+diag-028-a,pair-028,paraphrase,Jupiter is the Solar System's largest planet.,Jupiter is the largest planet in the Solar System.,,SUPPORTS,SUPPORTS,0.6997,0.3003,True
+diag-028-b,pair-028,paraphrase,The largest planet orbiting the Sun is Jupiter.,Jupiter is the largest planet in the Solar System.,,SUPPORTS,SUPPORTS,0.5353,0.4647,True
+diag-029-a,pair-029,paraphrase,The United Nations was founded in 1945.,The United Nations was established in 1945.,,SUPPORTS,SUPPORTS,0.8653,0.1347,True
+diag-029-b,pair-029,paraphrase,The UN was established in the year 1945.,The United Nations was established in 1945.,,SUPPORTS,SUPPORTS,0.8137,0.1863,True
+diag-030-a,pair-030,paraphrase,Water has the chemical formula H2O.,The chemical formula of water is H2O.,,SUPPORTS,SUPPORTS,0.9441,0.0559,True
+diag-030-b,pair-030,paraphrase,H2O is the chemical formula for water.,The chemical formula of water is H2O.,,SUPPORTS,SUPPORTS,0.8219,0.1781,True

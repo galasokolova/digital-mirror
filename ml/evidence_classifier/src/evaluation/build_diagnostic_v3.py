@@ -6,8 +6,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[4]
 DATA_DIR = ROOT / "ml" / "evidence_classifier" / "data" / "evaluation"
 
-INPUT = DATA_DIR / "diagnostic_claims_v2.json"
-OUTPUT = DATA_DIR / "diagnostic_claims_v3.json"
+INPUT = DATA_DIR / "datasets" / "diagnostic_claims_v2.json"
+OUTPUT = DATA_DIR / "datasets" / "diagnostic_claims_v3.json"
 
 # Each tuple:
 # (evidence, supported_claim, alternative_claim)

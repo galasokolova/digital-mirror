@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 import pandas as pd
 
-from ml.src.models.train_fever_relationship_model import make_features
+from ml.evidence_classifier.src.models.train_fever_relationship_model import make_features
 
 
 BASE = Path(__file__).resolve().parents[3]

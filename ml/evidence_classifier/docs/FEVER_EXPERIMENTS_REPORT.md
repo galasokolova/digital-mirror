@@ -220,15 +220,15 @@ Saved results: `ml/evidence_classifier/data/experiments/fever/e06d_feature_ablat
 
 | File | Purpose |
 |---|---|
-| `ml/evidence_classifier/src/prepare_fever.py` | Prepare FEVER evidence sets |
-| `ml/evidence_classifier/src/prepare_fever_training_context.py` | Add Wikipedia article titles |
-| `ml/evidence_classifier/src/train_fever_context_model.py` | Train E05a |
-| `ml/evidence_classifier/src/compare_fever_features.py` | Run E05b |
-| `ml/evidence_classifier/src/test_fever_evidence_sensitivity.py` | Run E05c |
-| `ml/evidence_classifier/src/test_controlled_contradictions.py` | Run E06a |
-| `ml/evidence_classifier/src/train_fever_relationship_model.py` | Train E06b |
-| `ml/evidence_classifier/src/test_fever_relationship_contradictions.py` | Run E06c |
-| `ml/evidence_classifier/src/ablate_fever_relationship_features.py` | Run E06d |
+| `ml/evidence_classifier/src/data_preparation/prepare_fever.py` | Prepare FEVER evidence sets |
+| `ml/evidence_classifier/src/data_preparation/prepare_fever_training_context.py` | Add Wikipedia article titles |
+| `ml/evidence_classifier/src/experiments/fever_baselines/train_fever_context_model.py` | Train E05a |
+| `ml/evidence_classifier/src/experiments/fever_baselines/compare_fever_features.py` | Run E05b |
+| `ml/evidence_classifier/src/experiments/fever_baselines/test_fever_evidence_sensitivity.py` | Run E05c |
+| `ml/evidence_classifier/src/experiments/fever_baselines/test_controlled_contradictions.py` | Run E06a |
+| `ml/evidence_classifier/src/models/train_fever_relationship_model.py` | Train E06b |
+| `ml/evidence_classifier/src/evaluation/test_fever_relationship_contradictions.py` | Run E06c |
+| `ml/evidence_classifier/src/experiments/fever_baselines/ablate_fever_relationship_features.py` | Run E06d |
 | `ml/evidence_classifier/models/fever_relationship_logreg.joblib` | Saved E06b model |
 | `ml/evidence_classifier/data/experiments/fever/` | Experiment CSV outputs |
 

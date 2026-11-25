@@ -6,7 +6,7 @@ from collections import Counter
 ROOT = Path(__file__).resolve().parents[4]
 
 OUTPUT = (
-    ROOT / "ml/evidence_classifier/data/evaluation/diagnostic_claims_v2.json"
+    ROOT / "ml/evidence_classifier/data/evaluation/datasets/diagnostic_claims_v2.json"
 )
 
 # Format:

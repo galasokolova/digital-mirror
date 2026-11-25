@@ -4,8 +4,8 @@ import joblib
 import numpy as np
 import pandas as pd
 
-from ml.src.models.train_fever_relationship_model import make_features
-from ml.src.experiments.fever_baselines.test_controlled_contradictions import TEST_CASES
+from ml.evidence_classifier.src.models.train_fever_relationship_model import make_features
+from ml.evidence_classifier.src.experiments.fever_baselines.test_controlled_contradictions import TEST_CASES
 
 
 BASE = Path(__file__).resolve().parents[2]

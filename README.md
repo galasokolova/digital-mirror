@@ -1,219 +1,78 @@
 # The Anatomy of Distortion: A Digital Mirror
 
-**An interactive installation exploring human trust, artificial intelligence, and the perception of information.**
+**An interactive art installation about disinformation surrounding Russia’s war against Ukraine.**
 
-## About the Project
+Digital Mirror invites visitors to evaluate claims from video clips and then examine documented evidence. A visitor and a machine each score the same claim. Their images distort according to how far their individual scores are from the verified reference. The installation asks how confidently we judge what we hear and what happens when we encounter evidence that challenges that judgment.
 
-*The Anatomy of Distortion: A Digital Mirror* is an interactive art installation that explores the relationship between human judgment, machine interpretation, and the credibility of digital information.
+## Installation Layout
 
-We encounter an enormous amount of information every day. News headlines, social media posts, and AI-generated content influence how we understand the world. Yet people do not evaluate information purely through facts. Our beliefs, experiences, emotions, and expectations shape what we choose to trust.
+| Position | Panel | What the visitor sees |
+|---|---|---|
+| Left | Human Mirror | A live camera image of the visitor, with face tracking and visual distortion after confirmation. |
+| Centre | Information Canvas | A video clip containing the claim. After confirmation, this panel shows the documented evidence, an explanation of what happened, and links to sources. |
+| Right | Machine Mirror | An animated mask that represents the machine’s assessment and reacts through distortion and speech. |
 
-Artificial intelligence approaches information differently. A machine learning model identifies patterns learned from data and produces numerical predictions.
+A framed area beneath the three panels displays the text of the statement and asks, **“How credible is this statement? Do you agree with it?”** The agreement control runs from 0 to 1. The prototype uses an on-screen slider. The physical installation is designed for an Arduino potentiometer.
 
-**What happens when a person's belief conflicts with a machine's assessment?**
+## How a Round Works
 
-Digital Mirror transforms this difference into a visual experience.
-
-Instead of displaying a simple verdict about whether an article is true or false, the installation invites visitors to reflect on their own confidence in information and observe how their judgment interacts with an algorithmic prediction.
-
-The project does not assume that artificial intelligence knows the truth. It explores the uncertainty and limitations of both human and machine interpretation.
-
-## The Concept
-
-The installation consists of two interconnected visual spaces.
-
-**The Information Canvas**
-
-The visitor reads an article selected from a small, curated dataset. Using a physical potentiometer, they express how much they trust the information on a continuous scale from 0 to 1.
-
-Three buttons control the interaction:
-
-- **BACK** — return to the previous article.
-- **SELECT** — confirm the visitor's trust evaluation.
-- **NEXT** — move to the next article.
-
-**The Digital Mirror**
-
-A camera captures the visitor's face, while a face-tracking system identifies facial landmarks.
-
-Generative visual agents produce organic patterns, particles, and distortions around the face. The mirror becomes a visual representation of the relationship between personal belief and algorithmic assessment.
-
-The intention is not to illustrate emotions directly, but to make the abstract difference between human and machine judgments visible.
-
-## How It Works
-
-The interaction is designed around five stages:
-
-1. **Read** — The visitor encounters an article.
-2. **Evaluate** — The visitor chooses a trust value between 0 and 1.
-3. **Predict** — A locally trained machine learning model estimates a manipulation score for the article.
-4. **Compare** — The system calculates the difference between the visitor's trust and the model's assessment.
-5. **Visualize** — Generative agents transform this difference into a visual distortion on the visitor's digital reflection.
+1. Press **START/NEXT** to start the installation or load the next claim. The central panel plays the clip, and the statement text appears in the frame below the panels.
+2. Set an agreement score between 0 and 1. A score of 0 means complete disagreement, 0.5 means uncertainty, and 1 means complete agreement.
+3. The local evidence classifier evaluates the claim against a curated evidence passage. Its `p_supports` output is the machine’s agreement score.
+4. Press **CONFIRM** to submit the score. Each mirror distorts according to its own assessment. At the same stage, the central panel reveals the evidence and source links so the visitor can see what the documentation establishes.
+5. The machine comments on how closely the two scores align and ends with **“But I’m just a machine. Let’s look at the evidence.”** Press **START/NEXT** to begin another round.
 
 ### Distortion Index
 
-The installation uses the following formula:
+For each participant, **D = |S − V|**, where **S** is their own agreement score and **V** is the verified reference value. `REFUTES` maps to 0 and `SUPPORTS` maps to 1.
 
-**D = |T − (1 − M)|**
+| Reference value | Agreement score | Distortion |
+|---|---:|---:|
+| 0 | 0.85 | 0.85 |
+| 1 | 0.85 | 0.15 |
 
-Where:
-
-- **T** — Human Trust, from 0 to 1.
-- **M** — Model-estimated Manipulation Score, from 0 to 1.
-- **D** — Distortion Index, from 0 to 1.
-
-A lower value indicates closer agreement between the visitor's trust and the model's estimated credibility. A higher value indicates greater disagreement.
-
-The Distortion Index controls the intensity of the generative visual effect.
-
-Importantly, this is a measure of disagreement between two assessments, **not a scientifically established measure of truth or misinformation**.
-
-## Why This Project Matters
-
-Digital Mirror addresses several questions:
-
-- Why do people trust some information and reject other information?
-- How does artificial intelligence evaluate patterns associated with potentially manipulative content?
-- What happens when human intuition and algorithmic predictions disagree?
-- Can generative art help people reflect on their own information judgments?
-
-The installation is intended to encourage critical thinking rather than provide definitive answers.
-
-Its central idea is that technology should not simply replace human judgment. It can also create opportunities to question, compare, and better understand that judgment.
+The human and machine scores enter this calculation independently. The comparison between their scores is used to choose the machine’s spoken reaction.
 
 ## Academic Context
 
-This project is being developed as an interdisciplinary academic project at **IADE**, during the **2026/2027 academic year, first semester**.
+The project is being developed at **IADE** during the first semester of the **2026/2027 academic year**.
 
-It connects four curricular units:
-
-| Curricular Unit | Contribution to the Project |
+| Curricular unit | Contribution |
 |---|---|
-| **Aprendizagem Automática Aplicada** (Applied Machine Learning) | Dataset preparation, model training, evaluation, and prediction |
-| **Computação Física e Internet das Coisas** (Physical Computing and Internet of Things) | Arduino hardware, potentiometer input, physical buttons, and sensor communication |
-| **Introdução à Inteligência Artificial** (Introduction to Artificial Intelligence) | AI concepts, algorithmic decision-making, interpretation, and limitations |
-| **Programação Criativa** (Creative Programming) | p5.js, generative agents, interactive visualization, and FaceMesh integration |
+| Aprendizagem Automática Aplicada | Dataset preparation, model training, and evaluation |
+| Computação Física e Internet das Coisas | Arduino, potentiometer, buttons, and USB serial communication |
+| Introdução à Inteligência Artificial | Interpretation of model outputs and their limitations |
+| Programação Criativa | p5.js, FaceMesh, animated masks, and interactive visual effects |
 
-The project brings together technical implementation, artistic experimentation, and critical reflection on artificial intelligence.
+## Technology and Project Structure
 
-## Technology Stack
-
-| Component | Technologies |
+| Directory | Role |
 |---|---|
-| Backend | Java 21, Spring Boot, Maven |
-| Frontend | JavaScript, HTML, CSS |
-| Creative Coding | p5.js |
-| Face Tracking | ml5.js FaceMesh |
-| Machine Learning | Local model — under development |
-| Physical Interaction | Arduino Uno, potentiometer, three buttons (planned configuration) |
-| Communication | REST API, USB serial |
+| [`frontend/`](frontend/) | JavaScript, HTML, CSS, p5.js, ml5.js FaceMesh, video playback, and speech synthesis |
+| [`orchestrator/`](orchestrator/) | Java 21 and Spring Boot. Serves the frontend, handles claim sessions, calls the ML API, and calculates distortion. |
+| [`ml/`](ml/README.md) | Python, scikit-learn, and FastAPI for local evidence classification, plus the small-talk training plan |
+| [`arduino/`](arduino/README.md) | Arduino Uno firmware and hardware documentation |
 
-## System Architecture
+## Prototype Status
 
-The system combines three main components.
+The three-panel layout, video and statement display, simulated controls, independent distortion calculations, and machine speech after confirmation are implemented. Spring Boot returns the evidence and source link after confirmation. Rendering that response in the central panel is part of the planned installation flow.
 
-**Frontend**
-
-Displays the article reader and the digital mirror. It manages the interaction state, camera input, face tracking, and generative visual effects.
-
-**Backend**
-
-A Spring Boot application serves the frontend and provides an integration layer for hardware communication and future model predictions.
-
-**Physical Controller**
-
-An Arduino-based interface is planned to provide one analog trust input and three navigation buttons.
-
-During development, the physical controls are simulated using HTML elements.
-
-The machine learning component will operate locally, without requiring paid external AI API requests.
-
-## Project Structure
-
-```text
-digital-mirror/
-├── orchestrator/     # Java Spring Boot backend
-├── frontend/         # p5.js, FaceMesh, article reader
-├── arduino/          # Firmware and hardware documentation
-├── .gitignore
-└── README.md
-```
-
-## Current Development Status
-
-### Implemented
-
-- Spring Boot application and frontend serving
-- Two interconnected p5.js canvases
-- Camera capture and FaceMesh tracking
-- Generative NeedleAgent visual effects
-- Organic particles and accumulated drawing layers
-- Local demonstration articles
-- Trust slider ranging from 0 to 1
-- BACK, SELECT, and NEXT interface controls
-- Arduino serial communication prototype
-- Mock mode without OpenAI API requests
-
-### In Development
-
-- Curated and labeled article dataset
-- Local machine learning model
-- Model evaluation and validation
-- Integration of ML predictions into the application
-- Distortion Index-driven visualization
-- Updated Arduino hardware with one potentiometer and three buttons
-- Final installation and exhibition experience
-
-The current visual prototype uses Trust as a temporary effect-control value. It does not yet use predictions from a trained manipulation-detection model.
-
-## Project Documentation
-
-| Area | Documentation | Description |
-|---|---|---|
-| Project | [Main README](README.md) | Project concept, architecture, and development status |
-| Machine Learning | [ML README](ml/README.md) | ML pipeline, datasets, scripts, and model training |
-| ML Research | [Initial Research Report](ml/docs/ML_RESEARCH_REPORT.md) | Dataset exploration, LIAR experiments, and initial limitations |
-| FEVER Research | [FEVER Experiments Report](ml/docs/FEVER_EXPERIMENTS_REPORT.md) | FEVER preparation, experiments E01–E06d, difficulties, and findings |
-| Arduino | [Arduino README](arduino/README.md) | Hardware, controls, firmware, and serial communication |
+The physical controls and the small-talk classifier are in development. The planned small-talk feature lets the machine respond briefly to greetings, thanks, and expressions of surprise during the installation.
 
 ## Running the Prototype
 
-### Requirements
+1. Follow the [evidence classifier setup](ml/evidence_classifier/README.md) to restore or train E06b and start the local FastAPI service on port 8000.
+2. With Java 21 installed, start Spring Boot from the repository root using PowerShell.
 
-- Java 21
-- A modern browser with camera access
-- Internet access for the currently CDN-hosted frontend libraries
-- Arduino hardware is not required when using simulated controls
+   ```powershell
+   cd orchestrator
+   .\mvnw.cmd spring-boot:run
+   ```
 
-### Start the Application
+3. Open [http://localhost:8080/](http://localhost:8080/) and allow camera access. Use the on-screen slider and buttons to run a round.
 
-From the repository root:
+## Research
 
-```powershell
-cd orchestrator
-.\mvnw.cmd spring-boot:run
-```
-
-Open:
-
-`http://localhost:8080/`
-
-Allow browser access to the camera.
-
-The frontend is served by Spring Boot, so a separate frontend development server is not required.
-
-For the existing Arduino prototype, see [Arduino Hardware Documentation](arduino/README.md).
-
-## Future Development
-
-The next development stage focuses on building a small, reproducible machine learning pipeline using labeled news articles.
-
-The model will estimate a manipulation-related score, subject to the limitations of its dataset and evaluation.
-
-Its predictions will be compared with visitor trust evaluations to calculate the Distortion Index and drive the generative artwork.
-
-The longer-term goal is to create a complete physical installation in which interaction, machine learning, and visual expression form a single experience.
-
----
-
-*Digital Mirror does not tell visitors what to believe. It invites them to examine how belief is formed — and what happens when a machine sees information differently.*
+- [Initial ML research](ml/evidence_classifier/docs/ML_RESEARCH_REPORT.md)
+- [FEVER experiments](ml/evidence_classifier/docs/FEVER_EXPERIMENTS_REPORT.md)
+- [Small-talk classifier plan](ml/intent_classifier/README.md)

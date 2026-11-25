@@ -8,11 +8,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[4]
 
 DATASET = (
-    ROOT / "ml/evidence_classifier/data/evaluation/diagnostic_claims_v2.json"
+    ROOT / "ml/evidence_classifier/data/evaluation/datasets/diagnostic_claims_v2.json"
 )
 
 OUTPUT = (
-    ROOT / "ml/evidence_classifier/data/evaluation/diagnostic_results_v2.csv"
+    ROOT / "ml/evidence_classifier/data/evaluation/results/diagnostic_results_v2.csv"
 )
 
 API_URL = "http://127.0.0.1:8000/predict"

@@ -10,7 +10,7 @@ CLAIMS_PATH = (
 
 OUTPUT_PATH = (
     ROOT / "ml" / "evidence_classifier" / "data" / "evaluation"
-    / "diagnostic_claims.json"
+    / "datasets" / "diagnostic_claims.json"
 )
 
 PAIRS = [

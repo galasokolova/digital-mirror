@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[4]
 
 DATASET_PATH = (
     ROOT / "ml" / "evidence_classifier" / "data" / "evaluation"
-    / "diagnostic_claims.json"
+    / "datasets" / "diagnostic_claims.json"
 )
 
 API_URL = "http://127.0.0.1:8000/predict"

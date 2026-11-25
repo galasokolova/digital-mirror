@@ -9,7 +9,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, f1_score
 from sklearn.preprocessing import StandardScaler
 
-from ml.src.models.train_fever_relationship_model import (
+from ml.evidence_classifier.src.models.train_fever_relationship_model import (
     load_split,
     relationship_features,
 )

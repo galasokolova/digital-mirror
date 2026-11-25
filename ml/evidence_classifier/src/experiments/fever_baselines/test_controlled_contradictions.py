@@ -7,7 +7,7 @@ from scipy.sparse import csr_matrix, hstack
 
 # Reuse exactly the same feature extraction
 # as during E05a training.
-from ml.src.experiments.fever_baselines.train_fever_context_model import relationship_features
+from ml.evidence_classifier.src.experiments.fever_baselines.train_fever_context_model import relationship_features
 
 BASE = Path(__file__).resolve().parents[3]
 MODEL_PATH = BASE / "models" / "fever_context_logreg.joblib"

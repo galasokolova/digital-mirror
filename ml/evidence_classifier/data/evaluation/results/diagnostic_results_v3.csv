@@ -1,0 +1,181 @@
+id,pairId,category,claim,evidence,wikiTitle,verifiedLabel,prediction,pSupports,pRefutes,correct
+diag-001-a,pair-001,entity,Venus is the hottest planet in the Solar System.,Venus is the hottest planet in the Solar System.,,SUPPORTS,SUPPORTS,0.7241,0.2759,True
+diag-001-b,pair-001,entity,Mercury is the hottest planet in the Solar System.,Venus is the hottest planet in the Solar System.,,REFUTES,SUPPORTS,0.6791,0.3209,False
+diag-002-a,pair-002,entity,Jupiter is the largest planet in the Solar System.,Jupiter is the largest planet in the Solar System.,,SUPPORTS,SUPPORTS,0.804,0.196,True
+diag-002-b,pair-002,entity,Saturn is the largest planet in the Solar System.,Jupiter is the largest planet in the Solar System.,,REFUTES,SUPPORTS,0.7059,0.2941,False
+diag-003-a,pair-003,entity,The Pacific Ocean is Earth's largest ocean basin.,The Pacific Ocean is Earth's largest ocean basin.,,SUPPORTS,SUPPORTS,0.6407,0.3593,True
+diag-003-b,pair-003,entity,The Atlantic Ocean is Earth's largest ocean basin.,The Pacific Ocean is Earth's largest ocean basin.,,REFUTES,SUPPORTS,0.7152,0.2848,False
+diag-004-a,pair-004,entity,Neil Armstrong was the first person to walk on the Moon.,Neil Armstrong was the first person to walk on the Moon.,,SUPPORTS,SUPPORTS,0.9099,0.0901,True
+diag-004-b,pair-004,entity,Buzz Aldrin was the first person to walk on the Moon.,Neil Armstrong was the first person to walk on the Moon.,,REFUTES,SUPPORTS,0.8136,0.1864,False
+diag-005-a,pair-005,entity,Canberra is the capital of Australia.,Canberra is the capital of Australia.,,SUPPORTS,SUPPORTS,0.833,0.167,True
+diag-005-b,pair-005,entity,Sydney is the capital of Australia.,Canberra is the capital of Australia.,,REFUTES,SUPPORTS,0.7953,0.2047,False
+diag-006-a,pair-006,number,Mars has two natural moons.,Mars has two natural moons: Phobos and Deimos.,,SUPPORTS,SUPPORTS,0.9805,0.0195,True
+diag-006-b,pair-006,number,Mars has three natural moons.,Mars has two natural moons: Phobos and Deimos.,,REFUTES,SUPPORTS,0.9021,0.0979,False
+diag-007-a,pair-007,number,A triangle has three sides.,A triangle has three sides.,,SUPPORTS,SUPPORTS,0.9871,0.0129,True
+diag-007-b,pair-007,number,A triangle has four sides.,A triangle has three sides.,,REFUTES,SUPPORTS,0.9523,0.0477,False
+diag-008-a,pair-008,number,A hexagon has six sides.,A hexagon has six sides.,,SUPPORTS,SUPPORTS,0.9617,0.0383,True
+diag-008-b,pair-008,number,A hexagon has eight sides.,A hexagon has six sides.,,REFUTES,SUPPORTS,0.9553,0.0447,False
+diag-009-a,pair-009,number,A water molecule contains two hydrogen atoms.,"The chemical formula for water is H2O, with two hydrogen atoms and one oxygen atom.",,SUPPORTS,SUPPORTS,0.9841,0.0159,True
+diag-009-b,pair-009,number,A water molecule contains three hydrogen atoms.,"The chemical formula for water is H2O, with two hydrogen atoms and one oxygen atom.",,REFUTES,SUPPORTS,0.9047,0.0953,False
+diag-010-a,pair-010,number,An adult human skeleton typically contains 206 bones.,The adult human skeleton typically contains 206 bones.,,SUPPORTS,SUPPORTS,0.9626,0.0374,True
+diag-010-b,pair-010,number,An adult human skeleton typically contains 306 bones.,The adult human skeleton typically contains 206 bones.,,REFUTES,SUPPORTS,0.5131,0.4869,False
+diag-011-a,pair-011,date,Humans first landed on the Moon in 1969.,The first human Moon landing occurred in 1969.,,SUPPORTS,SUPPORTS,0.5366,0.4634,True
+diag-011-b,pair-011,date,Humans first landed on the Moon in 1979.,The first human Moon landing occurred in 1969.,,REFUTES,REFUTES,0.0768,0.9232,True
+diag-012-a,pair-012,date,The Berlin Wall fell in 1989.,The Berlin Wall fell in November 1989.,,SUPPORTS,SUPPORTS,0.9021,0.0979,True
+diag-012-b,pair-012,date,The Berlin Wall fell in 1999.,The Berlin Wall fell in November 1989.,,REFUTES,REFUTES,0.2362,0.7638,True
+diag-013-a,pair-013,date,Tim Berners-Lee invented the World Wide Web in 1989.,The World Wide Web was invented by Tim Berners-Lee at CERN in 1989.,,SUPPORTS,SUPPORTS,0.9431,0.0569,True
+diag-013-b,pair-013,date,Tim Berners-Lee invented the World Wide Web in 1999.,The World Wide Web was invented by Tim Berners-Lee at CERN in 1989.,,REFUTES,REFUTES,0.4205,0.5795,True
+diag-014-a,pair-014,date,The United Nations was founded in 1945.,The United Nations was founded in 1945.,,SUPPORTS,SUPPORTS,0.9222,0.0778,True
+diag-014-b,pair-014,date,The United Nations was founded in 1955.,The United Nations was founded in 1945.,,REFUTES,REFUTES,0.2779,0.7221,True
+diag-015-a,pair-015,date,The first iPhone was introduced in 2007.,The first iPhone was introduced in 2007.,,SUPPORTS,SUPPORTS,0.8182,0.1818,True
+diag-015-b,pair-015,date,The first iPhone was introduced in 2017.,The first iPhone was introduced in 2007.,,REFUTES,REFUTES,0.1233,0.8767,True
+diag-016-a,pair-016,negation,Earth orbits the Sun.,Earth orbits the Sun.,,SUPPORTS,SUPPORTS,0.8467,0.1533,True
+diag-016-b,pair-016,negation,Earth does not orbit the Sun.,Earth orbits the Sun.,,REFUTES,REFUTES,0.017,0.983,True
+diag-017-a,pair-017,negation,Light travels faster than sound in air.,Light travels faster than sound in a vacuum-free comparison through air.,,SUPPORTS,SUPPORTS,0.8945,0.1055,True
+diag-017-b,pair-017,negation,Light does not travel faster than sound in air.,Light travels faster than sound in a vacuum-free comparison through air.,,REFUTES,REFUTES,0.0415,0.9585,True
+diag-018-a,pair-018,negation,The Moon is a natural satellite of Earth.,The Moon is Earth's natural satellite.,,SUPPORTS,SUPPORTS,0.6429,0.3571,True
+diag-018-b,pair-018,negation,The Moon is not a natural satellite of Earth.,The Moon is Earth's natural satellite.,,REFUTES,REFUTES,0.0239,0.9761,True
+diag-019-a,pair-019,negation,Water contains oxygen.,Water contains oxygen atoms.,,SUPPORTS,SUPPORTS,0.9903,0.0097,True
+diag-019-b,pair-019,negation,Water does not contain oxygen.,Water contains oxygen atoms.,,REFUTES,REFUTES,0.0573,0.9427,True
+diag-020-a,pair-020,negation,Jupiter is a planet.,Jupiter is a planet in the Solar System.,,SUPPORTS,SUPPORTS,0.8848,0.1152,True
+diag-020-b,pair-020,negation,Jupiter is not a planet.,Jupiter is a planet in the Solar System.,,REFUTES,REFUTES,0.0077,0.9923,True
+diag-021-a,pair-021,relation,The Earth orbits the Sun.,The Earth orbits the Sun.,,SUPPORTS,SUPPORTS,0.8189,0.1811,True
+diag-021-b,pair-021,relation,The Sun orbits the Earth.,The Earth orbits the Sun.,,REFUTES,SUPPORTS,0.8189,0.1811,False
+diag-022-a,pair-022,relation,The Moon orbits Earth.,The Moon orbits Earth.,,SUPPORTS,SUPPORTS,0.9281,0.0719,True
+diag-022-b,pair-022,relation,Earth orbits the Moon.,The Moon orbits Earth.,,REFUTES,SUPPORTS,0.9208,0.0792,False
+diag-023-a,pair-023,relation,Paris is the capital of France.,Paris is the capital of France.,,SUPPORTS,SUPPORTS,0.7021,0.2979,True
+diag-023-b,pair-023,relation,France is the capital of Paris.,Paris is the capital of France.,,REFUTES,SUPPORTS,0.7167,0.2833,False
+diag-024-a,pair-024,relation,A square is a rectangle.,A square is a type of rectangle.,,SUPPORTS,SUPPORTS,0.7233,0.2767,True
+diag-024-b,pair-024,relation,Every rectangle is a square.,A square is a type of rectangle.,,REFUTES,REFUTES,0.1217,0.8783,True
+diag-025-a,pair-025,relation,A dolphin is a mammal.,A dolphin is a mammal.,,SUPPORTS,SUPPORTS,0.8549,0.1451,True
+diag-025-b,pair-025,relation,Every mammal is a dolphin.,A dolphin is a mammal.,,REFUTES,REFUTES,0.26,0.74,True
+diag-026-a,pair-026,paraphrase,Mars has two natural moons.,Mars has two natural satellites named Phobos and Deimos.,,SUPPORTS,SUPPORTS,0.95,0.05,True
+diag-026-b,pair-026,paraphrase,Two natural satellites orbit Mars.,Mars has two natural satellites named Phobos and Deimos.,,SUPPORTS,SUPPORTS,0.8454,0.1546,True
+diag-027-a,pair-027,paraphrase,Venus is the hottest planet in the Solar System.,Venus is the hottest planet in our Solar System.,,SUPPORTS,SUPPORTS,0.6844,0.3156,True
+diag-027-b,pair-027,paraphrase,No planet in our Solar System is hotter than Venus.,Venus is the hottest planet in our Solar System.,,SUPPORTS,REFUTES,0.0413,0.9587,False
+diag-028-a,pair-028,paraphrase,Jupiter is the Solar System's largest planet.,Jupiter is the largest planet in the Solar System.,,SUPPORTS,SUPPORTS,0.6997,0.3003,True
+diag-028-b,pair-028,paraphrase,The largest planet orbiting the Sun is Jupiter.,Jupiter is the largest planet in the Solar System.,,SUPPORTS,SUPPORTS,0.5353,0.4647,True
+diag-029-a,pair-029,paraphrase,The United Nations was founded in 1945.,The United Nations was established in 1945.,,SUPPORTS,SUPPORTS,0.8653,0.1347,True
+diag-029-b,pair-029,paraphrase,The UN was established in the year 1945.,The United Nations was established in 1945.,,SUPPORTS,SUPPORTS,0.8137,0.1863,True
+diag-030-a,pair-030,paraphrase,Water has the chemical formula H2O.,The chemical formula of water is H2O.,,SUPPORTS,SUPPORTS,0.9441,0.0559,True
+diag-030-b,pair-030,paraphrase,H2O is the chemical formula for water.,The chemical formula of water is H2O.,,SUPPORTS,SUPPORTS,0.8219,0.1781,True
+diag-031-a,pair-031,entity,Ottawa is Canada's capital.,Ottawa is the capital of Canada.,,SUPPORTS,SUPPORTS,0.5955,0.4045,True
+diag-031-b,pair-031,entity,Toronto is Canada's capital.,Ottawa is the capital of Canada.,,REFUTES,REFUTES,0.4542,0.5458,True
+diag-032-a,pair-032,entity,Brasilia is Brazil's capital.,Brasilia is the capital of Brazil.,,SUPPORTS,SUPPORTS,0.5569,0.4431,True
+diag-032-b,pair-032,entity,Rio de Janeiro is Brazil's capital.,Brasilia is the capital of Brazil.,,REFUTES,REFUTES,0.276,0.724,True
+diag-033-a,pair-033,entity,Gold has the symbol Au.,The chemical symbol for gold is Au.,,SUPPORTS,SUPPORTS,0.8995,0.1005,True
+diag-033-b,pair-033,entity,Gold has the symbol Ag.,The chemical symbol for gold is Au.,,REFUTES,SUPPORTS,0.78,0.22,False
+diag-034-a,pair-034,entity,Sodium has the symbol Na.,The chemical symbol for sodium is Na.,,SUPPORTS,SUPPORTS,0.8788,0.1212,True
+diag-034-b,pair-034,entity,Sodium has the symbol K.,The chemical symbol for sodium is Na.,,REFUTES,SUPPORTS,0.766,0.234,False
+diag-035-a,pair-035,entity,Alexander Fleming discovered penicillin.,Alexander Fleming discovered penicillin.,,SUPPORTS,SUPPORTS,0.9792,0.0208,True
+diag-035-b,pair-035,entity,Isaac Newton discovered penicillin.,Alexander Fleming discovered penicillin.,,REFUTES,SUPPORTS,0.866,0.134,False
+diag-036-a,pair-036,entity,The pancreas produces insulin.,The pancreas produces insulin.,,SUPPORTS,SUPPORTS,0.9918,0.0082,True
+diag-036-b,pair-036,entity,The liver produces insulin.,The pancreas produces insulin.,,REFUTES,SUPPORTS,0.9788,0.0212,False
+diag-037-a,pair-037,entity,The heart pumps blood through the body.,The heart pumps blood through the body.,,SUPPORTS,SUPPORTS,0.941,0.059,True
+diag-037-b,pair-037,entity,The lungs pump blood through the body.,The heart pumps blood through the body.,,REFUTES,SUPPORTS,0.8635,0.1365,False
+diag-038-a,pair-038,entity,Mount Everest is the highest mountain above sea level.,Mount Everest is Earth's highest mountain above sea level.,,SUPPORTS,SUPPORTS,0.5239,0.4761,True
+diag-038-b,pair-038,entity,K2 is the highest mountain above sea level.,Mount Everest is Earth's highest mountain above sea level.,,REFUTES,REFUTES,0.4787,0.5213,True
+diag-039-a,pair-039,entity,The Nile River flows through Egypt.,The Nile River flows through Egypt.,,SUPPORTS,SUPPORTS,0.8629,0.1371,True
+diag-039-b,pair-039,entity,The Amazon River flows through Egypt.,The Nile River flows through Egypt.,,REFUTES,SUPPORTS,0.7524,0.2476,False
+diag-040-a,pair-040,entity,Guido van Rossum created Python.,Python was created by Guido van Rossum.,,SUPPORTS,SUPPORTS,0.9795,0.0205,True
+diag-040-b,pair-040,entity,James Gosling created Python.,Python was created by Guido van Rossum.,,REFUTES,SUPPORTS,0.7653,0.2347,False
+diag-041-a,pair-041,number,A pentagon has five sides.,A pentagon has five sides.,,SUPPORTS,SUPPORTS,0.9595,0.0405,True
+diag-041-b,pair-041,number,A pentagon has seven sides.,A pentagon has five sides.,,REFUTES,SUPPORTS,0.9302,0.0698,False
+diag-042-a,pair-042,number,A cube has six faces.,A cube has six faces.,,SUPPORTS,SUPPORTS,0.9431,0.0569,True
+diag-042-b,pair-042,number,A cube has eight faces.,A cube has six faces.,,REFUTES,SUPPORTS,0.9522,0.0478,False
+diag-043-a,pair-043,number,An octagon has eight sides.,An octagon has eight sides.,,SUPPORTS,SUPPORTS,0.9905,0.0095,True
+diag-043-b,pair-043,number,An octagon has six sides.,An octagon has eight sides.,,REFUTES,SUPPORTS,0.9584,0.0416,False
+diag-044-a,pair-044,number,A standard deck contains 52 cards.,A standard deck of playing cards contains 52 cards.,,SUPPORTS,SUPPORTS,0.973,0.027,True
+diag-044-b,pair-044,number,A standard deck contains 42 cards.,A standard deck of playing cards contains 52 cards.,,REFUTES,REFUTES,0.4964,0.5036,True
+diag-045-a,pair-045,number,A standard day contains 24 hours.,There are 24 hours in a standard day.,,SUPPORTS,SUPPORTS,0.9451,0.0549,True
+diag-045-b,pair-045,number,A standard day contains 30 hours.,There are 24 hours in a standard day.,,REFUTES,REFUTES,0.3697,0.6303,True
+diag-046-a,pair-046,number,One minute contains 60 seconds.,There are 60 seconds in one minute.,,SUPPORTS,SUPPORTS,0.9837,0.0163,True
+diag-046-b,pair-046,number,One minute contains 100 seconds.,There are 60 seconds in one minute.,,REFUTES,SUPPORTS,0.6049,0.3951,False
+diag-047-a,pair-047,number,One byte contains eight bits.,A byte contains eight bits.,,SUPPORTS,SUPPORTS,0.9909,0.0091,True
+diag-047-b,pair-047,number,One byte contains sixteen bits.,A byte contains eight bits.,,REFUTES,SUPPORTS,0.9636,0.0364,False
+diag-048-a,pair-048,number,Binary uses two digits.,Binary numbers use two digits: 0 and 1.,,SUPPORTS,SUPPORTS,0.9838,0.0162,True
+diag-048-b,pair-048,number,Binary uses ten digits.,Binary numbers use two digits: 0 and 1.,,REFUTES,SUPPORTS,0.5797,0.4203,False
+diag-049-a,pair-049,number,Carbon has atomic number 6.,The atomic number of carbon is 6.,,SUPPORTS,SUPPORTS,0.9446,0.0554,True
+diag-049-b,pair-049,number,Carbon has atomic number 8.,The atomic number of carbon is 6.,,REFUTES,REFUTES,0.3445,0.6555,True
+diag-050-a,pair-050,number,Oxygen has atomic number 8.,The atomic number of oxygen is 8.,,SUPPORTS,SUPPORTS,0.9488,0.0512,True
+diag-050-b,pair-050,number,Oxygen has atomic number 6.,The atomic number of oxygen is 8.,,REFUTES,REFUTES,0.3636,0.6364,True
+diag-051-a,pair-051,date,World War II ended in 1945.,World War II ended in 1945.,,SUPPORTS,SUPPORTS,0.8899,0.1101,True
+diag-051-b,pair-051,date,World War II ended in 1955.,World War II ended in 1945.,,REFUTES,REFUTES,0.1921,0.8079,True
+diag-052-a,pair-052,date,Sputnik 1 launched in 1957.,"The first artificial satellite, Sputnik 1, launched in 1957.",,SUPPORTS,SUPPORTS,0.9014,0.0986,True
+diag-052-b,pair-052,date,Sputnik 1 launched in 1967.,"The first artificial satellite, Sputnik 1, launched in 1957.",,REFUTES,SUPPORTS,0.8384,0.1616,False
+diag-053-a,pair-053,date,The first human spaceflight occurred in 1961.,Yuri Gagarin became the first human in space in 1961.,,SUPPORTS,SUPPORTS,0.8012,0.1988,True
+diag-053-b,pair-053,date,The first human spaceflight occurred in 1971.,Yuri Gagarin became the first human in space in 1961.,,REFUTES,REFUTES,0.1017,0.8983,True
+diag-054-a,pair-054,date,The Titanic sank in 1912.,The Titanic sank in 1912.,,SUPPORTS,SUPPORTS,0.9365,0.0635,True
+diag-054-b,pair-054,date,The Titanic sank in 1922.,The Titanic sank in 1912.,,REFUTES,REFUTES,0.4001,0.5999,True
+diag-055-a,pair-055,date,The European Union was established in 1993.,The European Union was established in 1993.,,SUPPORTS,SUPPORTS,0.9361,0.0639,True
+diag-055-b,pair-055,date,The European Union was established in 1983.,The European Union was established in 1993.,,REFUTES,REFUTES,0.3871,0.6129,True
+diag-056-a,pair-056,date,Wikipedia launched in 2001.,Wikipedia launched in 2001.,,SUPPORTS,SUPPORTS,0.8989,0.1011,True
+diag-056-b,pair-056,date,Wikipedia launched in 2011.,Wikipedia launched in 2001.,,REFUTES,REFUTES,0.2,0.8,True
+diag-057-a,pair-057,date,The first modern Olympics took place in 1896.,The first modern Olympic Games took place in 1896.,,SUPPORTS,SUPPORTS,0.7891,0.2109,True
+diag-057-b,pair-057,date,The first modern Olympics took place in 1906.,The first modern Olympic Games took place in 1896.,,REFUTES,REFUTES,0.1844,0.8156,True
+diag-058-a,pair-058,date,Apollo 11 landed on the Moon in 1969.,The Apollo 11 Moon landing occurred in 1969.,,SUPPORTS,SUPPORTS,0.5465,0.4535,True
+diag-058-b,pair-058,date,Apollo 11 landed on the Moon in 1979.,The Apollo 11 Moon landing occurred in 1969.,,REFUTES,SUPPORTS,0.5554,0.4446,False
+diag-059-a,pair-059,date,The Chernobyl disaster occurred in 1986.,The Chernobyl nuclear disaster occurred in 1986.,,SUPPORTS,SUPPORTS,0.9366,0.0634,True
+diag-059-b,pair-059,date,The Chernobyl disaster occurred in 1996.,The Chernobyl nuclear disaster occurred in 1986.,,REFUTES,REFUTES,0.3699,0.6301,True
+diag-060-a,pair-060,date,Hubble launched in 1990.,The Hubble Space Telescope launched in 1990.,,SUPPORTS,SUPPORTS,0.9335,0.0665,True
+diag-060-b,pair-060,date,Hubble launched in 2000.,The Hubble Space Telescope launched in 1990.,,REFUTES,REFUTES,0.2081,0.7919,True
+diag-061-a,pair-061,negation,Earth has a natural Moon.,The Earth has one natural Moon.,,SUPPORTS,SUPPORTS,0.9493,0.0507,True
+diag-061-b,pair-061,negation,Earth has no natural Moon.,The Earth has one natural Moon.,,REFUTES,REFUTES,0.1522,0.8478,True
+diag-062-a,pair-062,negation,The Sun is a star.,The Sun is a star.,,SUPPORTS,SUPPORTS,0.8002,0.1998,True
+diag-062-b,pair-062,negation,The Sun is not a star.,The Sun is a star.,,REFUTES,REFUTES,0.0116,0.9884,True
+diag-063-a,pair-063,negation,Iron is a chemical element.,Iron is a chemical element.,,SUPPORTS,SUPPORTS,0.832,0.168,True
+diag-063-b,pair-063,negation,Iron is not a chemical element.,Iron is a chemical element.,,REFUTES,REFUTES,0.0153,0.9847,True
+diag-064-a,pair-064,negation,Sound requires a medium to propagate.,Sound requires a medium to propagate.,,SUPPORTS,SUPPORTS,0.9758,0.0242,True
+diag-064-b,pair-064,negation,Sound does not require a medium to propagate.,Sound requires a medium to propagate.,,REFUTES,REFUTES,0.1237,0.8763,True
+diag-065-a,pair-065,negation,Plants use sunlight during photosynthesis.,Plants use sunlight during photosynthesis.,,SUPPORTS,SUPPORTS,0.944,0.056,True
+diag-065-b,pair-065,negation,Plants do not use sunlight during photosynthesis.,Plants use sunlight during photosynthesis.,,REFUTES,REFUTES,0.0952,0.9048,True
+diag-066-a,pair-066,negation,Java supports object-oriented programming.,Java supports object-oriented programming.,,SUPPORTS,SUPPORTS,0.9728,0.0272,True
+diag-066-b,pair-066,negation,Java does not support object-oriented programming.,Java supports object-oriented programming.,,REFUTES,REFUTES,0.0981,0.9019,True
+diag-067-a,pair-067,negation,Python supports functions.,Python supports functions.,,SUPPORTS,SUPPORTS,0.9822,0.0178,True
+diag-067-b,pair-067,negation,Python does not support functions.,Python supports functions.,,REFUTES,REFUTES,0.0306,0.9694,True
+diag-068-a,pair-068,negation,DNA contains genetic information.,DNA contains genetic information.,,SUPPORTS,SUPPORTS,0.9922,0.0078,True
+diag-068-b,pair-068,negation,DNA does not contain genetic information.,DNA contains genetic information.,,REFUTES,REFUTES,0.1498,0.8502,True
+diag-069-a,pair-069,negation,Electrons have negative electric charge.,Electrons have negative electric charge.,,SUPPORTS,SUPPORTS,0.917,0.083,True
+diag-069-b,pair-069,negation,Electrons do not have negative electric charge.,Electrons have negative electric charge.,,REFUTES,REFUTES,0.0681,0.9319,True
+diag-070-a,pair-070,negation,The Pacific Ocean contains salt water.,The Pacific Ocean contains salt water.,,SUPPORTS,SUPPORTS,0.8887,0.1113,True
+diag-070-b,pair-070,negation,The Pacific Ocean does not contain salt water.,The Pacific Ocean contains salt water.,,REFUTES,REFUTES,0.0375,0.9625,True
+diag-071-a,pair-071,relation,A dog is a mammal.,A dog is a mammal.,,SUPPORTS,REFUTES,0.4875,0.5125,False
+diag-071-b,pair-071,relation,Every mammal is a dog.,A dog is a mammal.,,REFUTES,REFUTES,0.0298,0.9702,True
+diag-072-a,pair-072,relation,A robin is a bird.,A robin is a bird.,,SUPPORTS,REFUTES,0.3736,0.6264,False
+diag-072-b,pair-072,relation,Every bird is a robin.,A robin is a bird.,,REFUTES,REFUTES,0.1207,0.8793,True
+diag-073-a,pair-073,relation,A triangle is a polygon.,A triangle is a polygon.,,SUPPORTS,REFUTES,0.0516,0.9484,False
+diag-073-b,pair-073,relation,Every polygon is a triangle.,A triangle is a polygon.,,REFUTES,REFUTES,0.043,0.957,True
+diag-074-a,pair-074,relation,A laptop is a computer.,A laptop is a computer.,,SUPPORTS,SUPPORTS,0.5575,0.4425,True
+diag-074-b,pair-074,relation,Every computer is a laptop.,A laptop is a computer.,,REFUTES,REFUTES,0.1611,0.8389,True
+diag-075-a,pair-075,relation,A whale is a mammal.,A whale is a mammal.,,SUPPORTS,SUPPORTS,0.8192,0.1808,True
+diag-075-b,pair-075,relation,Every mammal is a whale.,A whale is a mammal.,,REFUTES,REFUTES,0.1631,0.8369,True
+diag-076-a,pair-076,relation,London is located in England.,London is located in England.,,SUPPORTS,SUPPORTS,0.7705,0.2295,True
+diag-076-b,pair-076,relation,England is located in London.,London is located in England.,,REFUTES,SUPPORTS,0.7923,0.2077,False
+diag-077-a,pair-077,relation,Rome is located in Italy.,Rome is located in Italy.,,SUPPORTS,SUPPORTS,0.7702,0.2298,True
+diag-077-b,pair-077,relation,Italy is located in Rome.,Rome is located in Italy.,,REFUTES,SUPPORTS,0.8195,0.1805,False
+diag-078-a,pair-078,relation,A CPU executes machine instructions.,A CPU executes machine instructions.,,SUPPORTS,SUPPORTS,0.9728,0.0272,True
+diag-078-b,pair-078,relation,Machine instructions execute a CPU.,A CPU executes machine instructions.,,REFUTES,SUPPORTS,0.9431,0.0569,False
+diag-079-a,pair-079,relation,The brain controls many bodily functions.,The brain controls many bodily functions.,,SUPPORTS,SUPPORTS,0.9696,0.0304,True
+diag-079-b,pair-079,relation,Bodily functions control the brain.,The brain controls many bodily functions.,,REFUTES,SUPPORTS,0.8968,0.1032,False
+diag-080-a,pair-080,relation,Earth is part of the Solar System.,The Earth is part of the Solar System.,,SUPPORTS,SUPPORTS,0.9079,0.0921,True
+diag-080-b,pair-080,relation,The Solar System is part of Earth.,The Earth is part of the Solar System.,,REFUTES,SUPPORTS,0.9215,0.0785,False
+diag-081-a,pair-081,paraphrase,The Sun is a star.,The Sun is a star.,,SUPPORTS,SUPPORTS,0.8002,0.1998,True
+diag-081-b,pair-081,paraphrase,Our Sun belongs to the category of stars.,The Sun is a star.,,SUPPORTS,REFUTES,0.4519,0.5481,False
+diag-082-a,pair-082,paraphrase,Earth has one natural Moon.,Earth has one natural Moon.,,SUPPORTS,SUPPORTS,0.9265,0.0735,True
+diag-082-b,pair-082,paraphrase,There is one natural lunar satellite orbiting Earth.,Earth has one natural Moon.,,SUPPORTS,SUPPORTS,0.9157,0.0843,True
+diag-083-a,pair-083,paraphrase,A triangle has three sides.,A triangle has three sides.,,SUPPORTS,SUPPORTS,0.9871,0.0129,True
+diag-083-b,pair-083,paraphrase,Three sides form the boundary of a triangle.,A triangle has three sides.,,SUPPORTS,SUPPORTS,0.7701,0.2299,True
+diag-084-a,pair-084,paraphrase,Oxygen has the chemical symbol O.,The chemical symbol of oxygen is O.,,SUPPORTS,SUPPORTS,0.9076,0.0924,True
+diag-084-b,pair-084,paraphrase,The letter O represents oxygen in chemical notation.,The chemical symbol of oxygen is O.,,SUPPORTS,SUPPORTS,0.6119,0.3881,True
+diag-085-a,pair-085,paraphrase,Guido van Rossum created Python.,Python was created by Guido van Rossum.,,SUPPORTS,SUPPORTS,0.9795,0.0205,True
+diag-085-b,pair-085,paraphrase,The creator of Python is Guido van Rossum.,Python was created by Guido van Rossum.,,SUPPORTS,SUPPORTS,0.6267,0.3733,True
+diag-086-a,pair-086,paraphrase,The UN was founded in 1945.,The United Nations was founded in 1945.,,SUPPORTS,SUPPORTS,0.7644,0.2356,True
+diag-086-b,pair-086,paraphrase,The organization known as the United Nations began in 1945.,The United Nations was founded in 1945.,,SUPPORTS,SUPPORTS,0.5661,0.4339,True
+diag-087-a,pair-087,paraphrase,Mars has two natural moons.,Mars has two natural moons.,,SUPPORTS,SUPPORTS,0.9771,0.0229,True
+diag-087-b,pair-087,paraphrase,Two moons orbit the planet Mars.,Mars has two natural moons.,,SUPPORTS,SUPPORTS,0.6463,0.3537,True
+diag-088-a,pair-088,paraphrase,Jupiter is the largest planet in the Solar System.,Jupiter is the largest planet in the Solar System.,,SUPPORTS,SUPPORTS,0.804,0.196,True
+diag-088-b,pair-088,paraphrase,No other Solar System planet is larger than Jupiter.,Jupiter is the largest planet in the Solar System.,,SUPPORTS,REFUTES,0.1171,0.8829,False
+diag-089-a,pair-089,paraphrase,A byte consists of eight bits.,A byte consists of eight bits.,,SUPPORTS,SUPPORTS,0.9756,0.0244,True
+diag-089-b,pair-089,paraphrase,Eight bits make up one byte.,A byte consists of eight bits.,,SUPPORTS,SUPPORTS,0.9273,0.0727,True
+diag-090-a,pair-090,paraphrase,Earth revolves around the Sun.,The Earth revolves around the Sun.,,SUPPORTS,SUPPORTS,0.8968,0.1032,True
+diag-090-b,pair-090,paraphrase,Our planet travels in an orbit around the Sun.,The Earth revolves around the Sun.,,SUPPORTS,REFUTES,0.4102,0.5898,False

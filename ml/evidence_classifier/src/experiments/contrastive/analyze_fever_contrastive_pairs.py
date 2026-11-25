@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
-from ml.src.models.train_fever_relationship_model import load_split
+from ml.evidence_classifier.src.models.train_fever_relationship_model import load_split
 
 
 BASE = Path(__file__).resolve().parents[3]
