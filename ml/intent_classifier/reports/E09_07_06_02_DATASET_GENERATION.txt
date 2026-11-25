@@ -1,0 +1,174 @@
+=== E09.07.6.2: CONTRASTIVE DATASET GENERATION ===
+
+Loading: b01_explicit.json
+
+Batch distribution:
+GREETING                    20
+GOODBYE                     20
+GRATITUDE                   20
+AGREEMENT                   20
+DISAGREEMENT                20
+UNCERTAINTY                 20
+ACKNOWLEDGMENT              20
+AFFIRMATIVE_ANSWER          20
+NEGATIVE_ANSWER             20
+QUESTION                    20
+CLARIFICATION               20
+STATEMENT                   20
+Batch records: 240
+Target distribution reached: YES
+
+Loading: b02_implicit.json
+
+Batch distribution:
+GREETING                    20
+GOODBYE                     20
+GRATITUDE                   20
+AGREEMENT                   20
+DISAGREEMENT                20
+UNCERTAINTY                 20
+ACKNOWLEDGMENT              20
+AFFIRMATIVE_ANSWER          20
+NEGATIVE_ANSWER             20
+QUESTION                    20
+CLARIFICATION               20
+STATEMENT                   20
+Batch records: 240
+Target distribution reached: YES
+
+Loading: b03_short.json
+
+Batch distribution:
+GREETING                    20
+GOODBYE                     20
+GRATITUDE                   20
+AGREEMENT                   20
+DISAGREEMENT                20
+UNCERTAINTY                 20
+ACKNOWLEDGMENT              20
+AFFIRMATIVE_ANSWER          20
+NEGATIVE_ANSWER             20
+QUESTION                    20
+CLARIFICATION               20
+STATEMENT                   20
+Batch records: 240
+Target distribution reached: YES
+
+Loading: b04_complex.json
+
+Batch distribution:
+GREETING                    20
+GOODBYE                     20
+GRATITUDE                   20
+AGREEMENT                   20
+DISAGREEMENT                20
+UNCERTAINTY                 20
+ACKNOWLEDGMENT              20
+AFFIRMATIVE_ANSWER          20
+NEGATIVE_ANSWER             20
+QUESTION                    20
+CLARIFICATION               20
+STATEMENT                   20
+Batch records: 240
+Target distribution reached: YES
+
+Loading: b05_challenging.json
+
+Batch distribution:
+GREETING                    20
+GOODBYE                     20
+GRATITUDE                   20
+AGREEMENT                   20
+DISAGREEMENT                20
+UNCERTAINTY                 20
+ACKNOWLEDGMENT              20
+AFFIRMATIVE_ANSWER          20
+NEGATIVE_ANSWER             20
+QUESTION                    20
+CLARIFICATION               20
+STATEMENT                   20
+Batch records: 240
+Target distribution reached: YES
+
+=== DATASET SUMMARY ===
+Records: 1200
+Loaded batches: 5/5
+Contrastive groups: 300
+Topics: 12
+
+=== INTENT DISTRIBUTION ===
+intent
+GREETING              100
+GOODBYE               100
+GRATITUDE             100
+AGREEMENT             100
+DISAGREEMENT          100
+UNCERTAINTY           100
+ACKNOWLEDGMENT        100
+AFFIRMATIVE_ANSWER    100
+NEGATIVE_ANSWER       100
+QUESTION              100
+CLARIFICATION         100
+STATEMENT             100
+
+=== STYLE DISTRIBUTION ===
+style
+explicit       240
+implicit       240
+short          240
+complex        240
+challenging    240
+
+=== TOPIC DISTRIBUTION ===
+topic
+video_audio                  124
+art_exhibitions              123
+news_media                   120
+evidence                     120
+education                    120
+personal_decisions           120
+information_sources          113
+science                      113
+technology                    64
+human_machine_interaction     63
+artificial_intelligence       60
+everyday_conversation         60
+
+=== INTENT / STYLE MATRIX ===
+style               explicit  implicit  short  complex  challenging
+intent                                                             
+GREETING                  20        20     20       20           20
+GOODBYE                   20        20     20       20           20
+GRATITUDE                 20        20     20       20           20
+AGREEMENT                 20        20     20       20           20
+DISAGREEMENT              20        20     20       20           20
+UNCERTAINTY               20        20     20       20           20
+ACKNOWLEDGMENT            20        20     20       20           20
+AFFIRMATIVE_ANSWER        20        20     20       20           20
+NEGATIVE_ANSWER           20        20     20       20           20
+QUESTION                  20        20     20       20           20
+CLARIFICATION             20        20     20       20           20
+STATEMENT                 20        20     20       20           20
+
+=== TEXT LENGTH ===
+count    1200.000000
+mean        8.989167
+std         3.450455
+min         2.000000
+25%         6.000000
+50%         9.000000
+75%        11.000000
+max        21.000000
+
+=== GENERATION STATUS ===
+Target records: 1200
+Generated records: 1200
+Progress: 100.00%
+Status: COMPLETE
+
+Saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\raw\digital_mirror_contrastive\contrastive_intents_v1.csv
+Model loaded: NO
+Model trained: NO
+Evaluation data loaded: NO
+
+=== GENERATION FINISHED ===

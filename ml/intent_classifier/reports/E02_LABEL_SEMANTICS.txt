@@ -1,0 +1,1062 @@
+=== E02: SWITCHBOARD LABEL SEMANTICS ===
+Transcript files found: 1155
+
+======================================================================
+TAG: aa
+DESCRIPTION: Agree / Accept
+TOTAL ROWS: 10,136
+======================================================================
+01. That's right,  /
+    Conversation: 3326 | Caller: B | Index: 196
+02. Yeah,  /
+    Conversation: 2041 | Caller: A | Index: 201
+03. <Laughter> There's an idea. /
+    Conversation: 2383 | Caller: A | Index: 87
+04. something like that. /
+    Conversation: 2669 | Caller: A | Index: 153
+05. Yes.  /
+    Conversation: 2180 | Caller: B | Index: 98
+06. true. /
+    Conversation: 2005 | Caller: B | Index: 189
+07. No -- /
+    Conversation: 3615 | Caller: A | Index: 144
+08. Uh-huh.  /
+    Conversation: 3354 | Caller: A | Index: 175
+09. they do. /
+    Conversation: 3363 | Caller: B | Index: 42
+10. That's true. /
+    Conversation: 2078 | Caller: B | Index: 318
+11. Yeah,  /
+    Conversation: 4346 | Caller: B | Index: 116
+12. Right.  /
+    Conversation: 2249 | Caller: B | Index: 106
+13. Yeah,  /
+    Conversation: 2305 | Caller: A | Index: 90
+14. # Right,  /
+    Conversation: 4774 | Caller: A | Index: 99
+15. {D Well, } yeah,  /
+    Conversation: 2455 | Caller: A | Index: 148
+16. {F Oh, } they are. /
+    Conversation: 3039 | Caller: A | Index: 145
+17. that's true, /
+    Conversation: 3076 | Caller: A | Index: 105
+18. Uh-huh,  /
+    Conversation: 2105 | Caller: B | Index: 137
+19. Uh-huh,  /
+    Conversation: 4341 | Caller: A | Index: 11
+20. Yeah.  /
+    Conversation: 2061 | Caller: B | Index: 368
+
+======================================================================
+TAG: ar
+DESCRIPTION: Reject
+TOTAL ROWS: 303
+======================================================================
+01. {F Oh, } no  /
+    Conversation: 2969 | Caller: A | Index: 3
+02. {F Uh, } I wouldn't <baby_crying>. -/
+    Conversation: 3265 | Caller: A | Index: 108
+03. (( no,  /
+    Conversation: 2526 | Caller: A | Index: 99
+04. {D Well, } [ I don't, + I don't ] know.  /
+    Conversation: 2344 | Caller: A | Index: 120
+05. {D Well, } yes,  /
+    Conversation: 3367 | Caller: B | Index: 72
+06. -- # No,  /
+    Conversation: 3707 | Caller: B | Index: 37
+07. {C And } I disagree with you.  /
+    Conversation: 2062 | Caller: A | Index: 69
+08. {D Well, } they do have places around here where you can get money for your newspapers,
+    Conversation: 2594 | Caller: B | Index: 98
+09. No,  /
+    Conversation: 3414 | Caller: B | Index: 82
+10. No,  /
+    Conversation: 3514 | Caller: B | Index: 28
+11. No,  /
+    Conversation: 4316 | Caller: B | Index: 24
+12. no,  /
+    Conversation: 3515 | Caller: B | Index: 47
+13. {D Well } no,  /
+    Conversation: 2729 | Caller: A | Index: 163
+14. no,  /
+    Conversation: 2893 | Caller: B | Index: 233
+15. No  /
+    Conversation: 4886 | Caller: A | Index: 101
+16. No,  /
+    Conversation: 3038 | Caller: B | Index: 73
+17. No,  /
+    Conversation: 2627 | Caller: A | Index: 105
+18. no <laughter>. /
+    Conversation: 3666 | Caller: B | Index: 108
+19. No,  /
+    Conversation: 3054 | Caller: A | Index: 29
+20. No. /
+    Conversation: 2064 | Caller: A | Index: 37
+
+======================================================================
+TAG: aap
+DESCRIPTION: Accept-part
+TOTAL ROWS: 57
+======================================================================
+01. {D Well, } even if it's not technical. If it's, {F uh, } some social thing or whatever. It doesn't matter.  /
+    Conversation: 4082 | Caller: B | Index: 79
+02. I guess so.  /
+    Conversation: 3202 | Caller: B | Index: 47
+03. # {D Well, } {F uh, } #
+    Conversation: 2579 | Caller: A | Index: 139
+04. {D well, } it isn't and it is.  /
+    Conversation: 3586 | Caller: A | Index: 40
+05. # that's probably # true. /
+    Conversation: 2690 | Caller: B | Index: 170
+06. {D Well, } in a way it is,  /
+    Conversation: 2441 | Caller: A | Index: 237
+07. Up to a point. /
+    Conversation: 2893 | Caller: A | Index: 52
+08. at least. # /
+    Conversation: 3926 | Caller: B | Index: 52
+09. A perceived decline anyway, yeah. /
+    Conversation: 2379 | Caller: A | Index: 185
+10. {D Well, } it sort of is.  /
+    Conversation: 4618 | Caller: A | Index: 79
+11. {D Well, } [ I think that, {D well, } part, + I think that's partially ] true, too. /
+    Conversation: 3019 | Caller: A | Index: 37
+12. {D Well, } that is one problem,  /
+    Conversation: 3327 | Caller: B | Index: 106
+13. Someti-, - /
+    Conversation: 2278 | Caller: A | Index: 231
+14. I guess that would be good,  /
+    Conversation: 2870 | Caller: A | Index: 185
+15. came out around the first of the year. /
+    Conversation: 2247 | Caller: B | Index: 105
+16. I probably agree with that. /
+    Conversation: 4023 | Caller: A | Index: 24
+17. I know that's kind of how I am.  /
+    Conversation: 3245 | Caller: A | Index: 47
+18. # pretty # much.  /
+    Conversation: 2851 | Caller: B | Index: 167
+19. # {D Well, } to # punish him for the crime but  also to try and reeducate the man's thinking. /
+    Conversation: 3095 | Caller: A | Index: 87
+20. You're probably right </talking>.  /
+    Conversation: 4659 | Caller: A | Index: 79
+
+======================================================================
+TAG: arp
+DESCRIPTION: Reject-part
+TOTAL ROWS: 23
+======================================================================
+01. It depends on who  [ (( ha-, )) + ]  examines your eyes. /
+    Conversation: 3092 | Caller: A | Index: 141
+02. {D Well, }
+    Conversation: 2220 | Caller: B | Index: 275
+03. {D Well, } it depends on what rank you are, #  of course </barking>. # /
+    Conversation: 2061 | Caller: B | Index: 195
+04. {C But } not all country.  /
+    Conversation: 2220 | Caller: A | Index: 14
+05. # Maybe #  /
+    Conversation: 3535 | Caller: B | Index: 113
+06. [ I, + I ] don't disagree totally with that,  /
+    Conversation: 3537 | Caller: A | Index: 26
+07. {D Well, } [ may-, + {D you know, } maybe ] not.  /
+    Conversation: 3080 | Caller: B | Index: 184
+08. {D Well, } presentation's not always all of it either. /
+    Conversation: 2661 | Caller: B | Index: 72
+09. {D Well, } I don't know how much you can learn. /
+    Conversation: 3342 | Caller: B | Index: 5
+10. {D Well, } more or less.  /
+    Conversation: 2365 | Caller: A | Index: 43
+11. Wasn't the decline so much.  /
+    Conversation: 2835 | Caller: A | Index: 67
+12. Yeah,  /
+    Conversation: 2379 | Caller: B | Index: 4
+13. Actually, it would be worth it, if he were able to get a program that would do something that he normally had to do by hand. /
+    Conversation: 2545 | Caller: B | Index: 26
+14. {D Well, } we actually planned for about one year. /
+    Conversation: 2782 | Caller: A | Index: 32
+15. {D Well, } I think it's more of a, - /
+    Conversation: 3841 | Caller: B | Index: 31
+16. {D Well, } vehicles  /
+    Conversation: 3063 | Caller: A | Index: 8
+17. definitely able to go to war twenty years ago but not vote. /
+    Conversation: 2379 | Caller: B | Index: 5
+18. {C but } you have a rider. /
+    Conversation: 2921 | Caller: A | Index: 446
+19. {D Well, } except for Vietnam. /
+    Conversation: 2032 | Caller: B | Index: 290
+20. {F Um, } {F um, } {D well, } [ n-, +
+    Conversation: 2734 | Caller: B | Index: 124
+
+======================================================================
+TAG: b
+DESCRIPTION: Acknowledgment
+TOTAL ROWS: 36,180
+======================================================================
+01. Right. /
+    Conversation: 2647 | Caller: B | Index: 93
+02. All right.  /
+    Conversation: 3021 | Caller: B | Index: 211
+03. Uh-huh. /
+    Conversation: 3340 | Caller: A | Index: 137
+04. Yeah. /
+    Conversation: 2819 | Caller: B | Index: 127
+05. Uh-huh. /
+    Conversation: 3750 | Caller: A | Index: 20
+06. Oh. /
+    Conversation: 3093 | Caller: B | Index: 52
+07. yeah,  /
+    Conversation: 2887 | Caller: B | Index: 78
+08. Yeah,  /
+    Conversation: 4698 | Caller: B | Index: 53
+09. Okay.  /
+    Conversation: 3036 | Caller: A | Index: 123
+10. okay. /
+    Conversation: 2871 | Caller: A | Index: 72
+11. # Yeah. # /
+    Conversation: 2593 | Caller: B | Index: 114
+12. Yeah. /
+    Conversation: 2330 | Caller: B | Index: 7
+13. Yeah. /
+    Conversation: 3039 | Caller: B | Index: 173
+14. Uh-huh. /
+    Conversation: 4074 | Caller: B | Index: 85
+15. {F Oh, } yeah,  /
+    Conversation: 2078 | Caller: B | Index: 299
+16. Uh-huh. /
+    Conversation: 2122 | Caller: B | Index: 75
+17. Uh-huh. /
+    Conversation: 2340 | Caller: B | Index: 92
+18. Yeah.   /
+    Conversation: 3994 | Caller: A | Index: 134
+19. Yeah,  /
+    Conversation: 2379 | Caller: B | Index: 169
+20. Huh. /
+    Conversation: 3526 | Caller: A | Index: 46
+
+======================================================================
+TAG: ba
+DESCRIPTION: Appreciation
+TOTAL ROWS: 4,523
+======================================================================
+01. {D Well, } that's good. /
+    Conversation: 3557 | Caller: B | Index: 57
+02. {F Oh, } sure. /
+    Conversation: 3773 | Caller: A | Index: 134
+03. Wow. /
+    Conversation: 4622 | Caller: A | Index: 64
+04. {F Oh, } my. /
+    Conversation: 3030 | Caller: A | Index: 73
+05. # Exactly. # /
+    Conversation: 4770 | Caller: A | Index: 58
+06. I see. /
+    Conversation: 3034 | Caller: A | Index: 122
+07. {F Oh, } God. /
+    Conversation: 2264 | Caller: A | Index: 18
+08. that's good. /
+    Conversation: 2439 | Caller: B | Index: 242
+09. <Laughter> Isn't that the truth.  /
+    Conversation: 3354 | Caller: A | Index: 19
+10. {F Oh, } my. /
+    Conversation: 2719 | Caller: A | Index: 10
+11. That's good.  /
+    Conversation: 2842 | Caller: A | Index: 123
+12. <Laughter> Whoops <laughter>. /
+    Conversation: 2641 | Caller: A | Index: 233
+13. Wow. /
+    Conversation: 3596 | Caller: A | Index: 39
+14. {F Oh, } sure. # /
+    Conversation: 2818 | Caller: A | Index: 86
+15. {F Um, } boy. /
+    Conversation: 2093 | Caller: A | Index: 93
+16. That's true.  /
+    Conversation: 2834 | Caller: B | Index: 366
+17. # {F Oh, } boy.  # /
+    Conversation: 2756 | Caller: A | Index: 239
+18. {F Oh, } dear <laughter>. /
+    Conversation: 4032 | Caller: A | Index: 94
+19. {F Oh } my. /
+    Conversation: 4876 | Caller: A | Index: 119
+20. [ Makes good, + makes good  ] sense. /
+    Conversation: 3525 | Caller: A | Index: 139
+
+======================================================================
+TAG: h
+DESCRIPTION: Hedge
+TOTAL ROWS: 1,218
+======================================================================
+01. but, I don't know,  /
+    Conversation: 3317 | Caller: A | Index: 100
+02. I don't know,  /
+    Conversation: 4548 | Caller: A | Index: 68
+03. {C but } I don't know if it is so much anymore.  /
+    Conversation: 4060 | Caller: B | Index: 34
+04. {C but, } {F uh, } I don't know,  /
+    Conversation: 2995 | Caller: B | Index: 152
+05. {C but } I'm just curious,  /
+    Conversation: 2433 | Caller: A | Index: 26
+06. <Noise>  {C But, }  {F uh, } I don't know  /
+    Conversation: 3268 | Caller: B | Index: 110
+07. I don't know.  /
+    Conversation: 4707 | Caller: B | Index: 5
+08. But <lipsmack> I don't know. /
+    Conversation: 4384 | Caller: B | Index: 70
+09. I don't know,  /
+    Conversation: 2566 | Caller: A | Index: 225
+10. {C And, }  {F uh, } <lipsmack> I don't know,  /
+    Conversation: 3138 | Caller: A | Index: 83
+11. {E I mean, }  I don't know,  /
+    Conversation: 4022 | Caller: B | Index: 140
+12. [ I do    not, +
+    Conversation: 2970 | Caller: B | Index: 73
+13. I don't know, {F uh, }  /
+    Conversation: 2994 | Caller: A | Index: 91
+14. {C So, } I don't know.   /
+    Conversation: 3606 | Caller: A | Index: 184
+15. {C But, } I don't know,  /
+    Conversation: 2898 | Caller: B | Index: 106
+16. I don't know about you. /
+    Conversation: 2792 | Caller: B | Index: 97
+17. Of course, I don't,  {D you know, } - /
+    Conversation: 3342 | Caller: A | Index: 12
+18. [ I, + I  ] don't know,  /
+    Conversation: 3458 | Caller: B | Index: 79
+19. [  [ I don't know, + [ I, + I ] don't, ] + I really don't know, ] {F uh, } /
+    Conversation: 3509 | Caller: B | Index: 69
+20. {C But, } [  I, + I ] don't know.  /
+    Conversation: 3328 | Caller: B | Index: 105
+
+======================================================================
+TAG: bh
+DESCRIPTION: Backchannel in question form
+TOTAL ROWS: 1,044
+======================================================================
+01. Isn't that amazing? /
+    Conversation: 2495 | Caller: A | Index: 18
+02. Really? /
+    Conversation: 2851 | Caller: B | Index: 64
+03. Really? /
+    Conversation: 2072 | Caller: B | Index: 19
+04. {F Oh, } really? /
+    Conversation: 3448 | Caller: A | Index: 190
+05. {F Oh, } are you? /
+    Conversation: 3453 | Caller: A | Index: 33
+06. {F Oh, } does she really? /
+    Conversation: 4709 | Caller: A | Index: 71
+07. Are you? /
+    Conversation: 3852 | Caller: A | Index: 110
+08. {F Oh, } really? /
+    Conversation: 3728 | Caller: B | Index: 88
+09. Really? /
+    Conversation: 2197 | Caller: A | Index: 65
+10. Is it? /
+    Conversation: 2499 | Caller: A | Index: 218
+11. # {F Oh, } really? # /
+    Conversation: 2956 | Caller: B | Index: 219
+12. Really? /
+    Conversation: 3595 | Caller: A | Index: 36
+13. {F Oh, } really <laughter>? /
+    Conversation: 3666 | Caller: A | Index: 205
+14. {F Oh, } really? /
+    Conversation: 3530 | Caller: A | Index: 94
+15. {F Oh, } he does?  /
+    Conversation: 2485 | Caller: B | Index: 51
+16. {F Oh, } really. /
+    Conversation: 3397 | Caller: A | Index: 25
+17. What a trap. {F Huh. } /
+    Conversation: 3051 | Caller: A | Index: 214
+18. {F Oh, } really? /
+    Conversation: 3310 | Caller: B | Index: 20
+19. You haven't? /
+    Conversation: 2466 | Caller: B | Index: 29
+20. Is that right? /
+    Conversation: 2265 | Caller: A | Index: 99
+
+======================================================================
+TAG: br
+DESCRIPTION: Signal non-understanding
+TOTAL ROWS: 237
+======================================================================
+01. Say what? /
+    Conversation: 4707 | Caller: A | Index: 15
+02. {F Huh? } /
+    Conversation: 4175 | Caller: A | Index: 133
+03. I beg your pardon. /
+    Conversation: 3226 | Caller: A | Index: 45
+04. That's what, -/
+    Conversation: 3190 | Caller: A | Index: 132
+05. {D Now } [ what is, + {F uh, } what is, ] {F uh, } the steamed shellfish you said? /
+    Conversation: 3506 | Caller: B | Index: 13
+06. Pardon me? /
+    Conversation: 2368 | Caller: B | Index: 221
+07. Pardon me? /
+    Conversation: 3075 | Caller: B | Index: 95
+08. {F Huh? } /
+    Conversation: 2889 | Caller: B | Index: 71
+09. Pardon me? /
+    Conversation: 3596 | Caller: A | Index: 69
+10. That's just what on their part,  /
+    Conversation: 2794 | Caller: B | Index: 87
+11. # You mean # the, {F uh, } the employers? /
+    Conversation: 3956 | Caller: B | Index: 24
+12. What? /
+    Conversation: 2085 | Caller: B | Index: 25
+13. What? /
+    Conversation: 3266 | Caller: B | Index: 133
+14. Pardon me? /
+    Conversation: 2244 | Caller: B | Index: 84
+15. {F Huh? } /
+    Conversation: 4080 | Caller: B | Index: 3
+16. <Throat_clearing> The ones that what? /
+    Conversation: 4936 | Caller: A | Index: 78
+17. I'm sorry? /
+    Conversation: 4928 | Caller: B | Index: 83
+18. I'm sorry? /
+    Conversation: 3310 | Caller: B | Index: 117
+19. What's that? /
+    Conversation: 2521 | Caller: B | Index: 35
+20. What?  /
+    Conversation: 2061 | Caller: A | Index: 431
+
+======================================================================
+TAG: bf
+DESCRIPTION: Summarize / Rephrase
+TOTAL ROWS: 934
+======================================================================
+01. {C So } there's lots to do. /
+    Conversation: 3082 | Caller: B | Index: 89
+02. just the form. /
+    Conversation: 4127 | Caller: A | Index: 112
+03. {F Oh, } you moved from Dallas to San # Francisco. # /
+    Conversation: 4519 | Caller: B | Index: 25
+04. # At least, #
+    Conversation: 3926 | Caller: B | Index: 54
+05. see the inside of them or whatever. /
+    Conversation: 2875 | Caller: B | Index: 341
+06. -- you want to buy American. /
+    Conversation: 4137 | Caller: B | Index: 9
+07. just smelling the air <breathing>.  /
+    Conversation: 3030 | Caller: B | Index: 202
+08. # Put the # colors away <laughter>. /
+    Conversation: 3135 | Caller: A | Index: 106
+09. Common problem. /
+    Conversation: 2887 | Caller: B | Index: 354
+10. {C So } they wanted to make their homes there. /
+    Conversation: 3524 | Caller: A | Index: 109
+11. {C so } people  can just tape them I guess,
+    Conversation: 2847 | Caller: B | Index: 265
+12. {C but } you're going to look nice for the kids <laughter>. /
+    Conversation: 3883 | Caller: A | Index: 36
+13. {F Oh, } {D well, } that's quite a change from California to Utah, /
+    Conversation: 3883 | Caller: B | Index: 142
+14. He is gone. /
+    Conversation: 2969 | Caller: A | Index: 56
+15. Hard rock?   /
+    Conversation: 3994 | Caller: B | Index: 177
+16. {C but } yet you can have your friends, {F uh, }  /
+    Conversation: 2921 | Caller: B | Index: 285
+17. {F Oh, } [ like, +  like ] social changes. /
+    Conversation: 3399 | Caller: B | Index: 58
+18. that's hard. /
+    Conversation: 3004 | Caller: B | Index: 79
+19. A whole fam-, - /
+    Conversation: 2952 | Caller: A | Index: 131
+20. {F Oh, } you do a lot then.  /
+    Conversation: 3838 | Caller: B | Index: 27
+
+======================================================================
+TAG: ny
+DESCRIPTION: Yes Answer
+TOTAL ROWS: 2,826
+======================================================================
+01. Yes. /
+    Conversation: 3449 | Caller: B | Index: 60
+02. {F Oh, } {F oh, } yes,  /
+    Conversation: 2279 | Caller: A | Index: 23
+03. {F Oh } yeah.  /
+    Conversation: 2938 | Caller: B | Index: 34
+04. Yeah. /
+    Conversation: 2549 | Caller: A | Index: 35
+05. Yeah.  /
+    Conversation: 2954 | Caller: A | Index: 291
+06. Yes.  /
+    Conversation: 3174 | Caller: A | Index: 102
+07. uh, yeah.  /
+    Conversation: 4102 | Caller: B | Index: 60
+08. Yes,  /
+    Conversation: 3146 | Caller: B | Index: 123
+09. Yeah,  /
+    Conversation: 2299 | Caller: A | Index: 59
+10. Uh-huh. /
+    Conversation: 4829 | Caller: B | Index: 120
+11. Yeah,  /
+    Conversation: 2780 | Caller: A | Index: 10
+12. Yes,  /
+    Conversation: 2450 | Caller: B | Index: 35
+13. {F Uh, } yes.  /
+    Conversation: 2427 | Caller: B | Index: 4
+14. {F Um, } yeah,  /
+    Conversation: 2445 | Caller: A | Index: 17
+15. Yeah,  /
+    Conversation: 2432 | Caller: A | Index: 52
+16. Yeah. /
+    Conversation: 4483 | Caller: A | Index: 147
+17. Yes. /
+    Conversation: 2313 | Caller: A | Index: 88
+18. Yes,  /
+    Conversation: 2457 | Caller: A | Index: 148
+19. Uh-huh. /
+    Conversation: 3090 | Caller: A | Index: 204
+20. Yeah,  /
+    Conversation: 2187 | Caller: A | Index: 290
+
+======================================================================
+TAG: nn
+DESCRIPTION: No Answer
+TOTAL ROWS: 1,230
+======================================================================
+01. No. /
+    Conversation: 2792 | Caller: B | Index: 112
+02. No,  /
+    Conversation: 2300 | Caller: B | Index: 2
+03. No,  /
+    Conversation: 2598 | Caller: A | Index: 279
+04. No,  /
+    Conversation: 2913 | Caller: B | Index: 193
+05. No,  /
+    Conversation: 2373 | Caller: A | Index: 71
+06. No. /
+    Conversation: 3185 | Caller: B | Index: 17
+07. {F Um, } no,  /
+    Conversation: 2707 | Caller: B | Index: 311
+08. No,  /
+    Conversation: 2032 | Caller: B | Index: 186
+09. No,  /
+    Conversation: 4099 | Caller: B | Index: 33
+10. No,  /
+    Conversation: 3781 | Caller: B | Index: 94
+11. {F Uh, } [ [ [ no, + no ] + not, ] + no, ]  /
+    Conversation: 3067 | Caller: B | Index: 14
+12. {F Uh, } no,  /
+    Conversation: 2830 | Caller: A | Index: 325
+13. No. /
+    Conversation: 3697 | Caller: A | Index: 91
+14. No, {F uh, }  /
+    Conversation: 2386 | Caller: B | Index: 68
+15. No <laughter>. /
+    Conversation: 2499 | Caller: A | Index: 216
+16. No,  /
+    Conversation: 2667 | Caller: A | Index: 243
+17. No,  /
+    Conversation: 2090 | Caller: A | Index: 160
+18. # {F uh, } no,  /
+    Conversation: 3541 | Caller: B | Index: 52
+19. -- no.  /
+    Conversation: 2707 | Caller: A | Index: 221
+20. <Sigh> {F Uh, } <sigh>,   no, {F uh, } {F um, }  /
+    Conversation: 3047 | Caller: A | Index: 15
+
+======================================================================
+TAG: ng
+DESCRIPTION: Negative non-no answer
+TOTAL ROWS: 290
+======================================================================
+01. Very few. /
+    Conversation: 4013 | Caller: B | Index: 110
+02. {C but, } no, sir,  /
+    Conversation: 3852 | Caller: B | Index: 46
+03. {F Oh, } {D well } [ there are, + there is ] one spot that was just a little bit on the gory side. /
+    Conversation: 2435 | Caller: A | Index: 300
+04. not actually <laughter>. /
+    Conversation: 3092 | Caller: B | Index: 12
+05. I'm not acquainted with any, {D you know, }  /
+    Conversation: 3353 | Caller: B | Index: 77
+06. [ I, + {D well, } I ] don't, because I work all day. /
+    Conversation: 3606 | Caller: A | Index: 50
+07. I don't think so <laughter>. /
+    Conversation: 2830 | Caller: B | Index: 65
+08. Never -- /
+    Conversation: 3256 | Caller: A | Index: 76
+09. I've never heard of that.  /
+    Conversation: 4153 | Caller: A | Index: 125
+10. {F Uh, } not necessarily a price thing.  /
+    Conversation: 2634 | Caller: B | Index: 112
+11. {D Well, } {D now, } I wouldn't call it danger.  /
+    Conversation: 3596 | Caller: B | Index: 54
+12. {F Uh, } {D actually } no.  /
+    Conversation: 3255 | Caller: A | Index: 65
+13. {F Um, } {D well, } [ not, + not ] really from, {D you know, } - /
+    Conversation: 2549 | Caller: B | Index: 15
+14. {F Uh, } not yet.  /
+    Conversation: 2874 | Caller: A | Index: 148
+15. # {F Uh. } # Not really.  /
+    Conversation: 3760 | Caller: A | Index: 102
+16. I have not heard of [ it, +  any  problems of it ] flooding anywhere,  /
+    Conversation: 3393 | Caller: A | Index: 56
+17. {F Um, } [ the, + the ] team I live and die with {D actually } is the Red Sox, mostly die,  /
+    Conversation: 2565 | Caller: A | Index: 115
+18. {F Uh, } not really, {F uh, } {D you know, }  /
+    Conversation: 4339 | Caller: A | Index: 62
+19. probably not,  /
+    Conversation: 2446 | Caller: A | Index: 150
+20. Not with me personally.  /
+    Conversation: 2064 | Caller: B | Index: 75
+
+======================================================================
+TAG: na
+DESCRIPTION: Affirmative non-yes answer
+TOTAL ROWS: 764
+======================================================================
+01. Sure. /
+    Conversation: 3365 | Caller: A | Index: 27
+02. [ I lo-, + I know ] a lot of good places to go.  /
+    Conversation: 3311 | Caller: B | Index: 91
+03. Right. /
+    Conversation: 2461 | Caller: B | Index: 146
+04. Almost a hundred percent. /
+    Conversation: 2932 | Caller: B | Index: 19
+05. We have all kinds of testing  /
+    Conversation: 4733 | Caller: A | Index: 27
+06. {F Uh, } just barely. /
+    Conversation: 2955 | Caller: B | Index: 5
+07. Right. /
+    Conversation: 2752 | Caller: A | Index: 117
+08. {F Um, } basically, the whole, - /
+    Conversation: 2397 | Caller: A | Index: 31
+09. We might as well. /
+    Conversation: 3862 | Caller: B | Index: 18
+10. I think they cover AIDS,  /
+    Conversation: 4130 | Caller: A | Index: 13
+11. Everybody <laughter>. /
+    Conversation: 3636 | Caller: B | Index: 138
+12. {F Um, } {F uh, } I think there's some problems,  /
+    Conversation: 3286 | Caller: B | Index: 7
+13. sometimes it can be. /
+    Conversation: 4675 | Caller: B | Index: 56
+14. Right </beep>.  /
+    Conversation: 2492 | Caller: A | Index: 73
+15. {D Well, } it was around here last night,  /
+    Conversation: 3596 | Caller: B | Index: 23
+16. Right. /
+    Conversation: 3801 | Caller: A | Index: 90
+17. Adjustable, {F uh } --
+    Conversation: 3639 | Caller: B | Index: 161
+18. {F Um, } probably, {F oh, }  /
+    Conversation: 2342 | Caller: B | Index: 37
+19. I do,  /
+    Conversation: 3760 | Caller: B | Index: 165
+20. # {C and } that's it. #  /
+    Conversation: 2528 | Caller: B | Index: 150
+
+======================================================================
+TAG: qy
+DESCRIPTION: Yes-No Question
+TOTAL ROWS: 3,785
+======================================================================
+01. Do you have a boat? /
+    Conversation: 3342 | Caller: A | Index: 45
+02. -- {C but. }   Do you own a gun? /
+    Conversation: 4077 | Caller: B | Index: 59
+03. Have you seen the movie, {F um, } CROSSING DELANCY? /
+    Conversation: 3445 | Caller: A | Index: 61
+04. Have you? /
+    Conversation: 3055 | Caller: B | Index: 214
+05. Did you ever see the movie BEETLEJUICE? /
+    Conversation: 2598 | Caller: A | Index: 136
+06. Is it pretty easy? /
+    Conversation: 4314 | Caller: B | Index: 145
+07. {D So, }  in Maryland [ are you, + {F uh, } are you ] a Skins fan? /
+    Conversation: 2549 | Caller: A | Index: 14
+08. [ Are, + are ] you working anywhere while you are going to school? /
+    Conversation: 2092 | Caller: B | Index: 23
+09. Are you a T I -er? /
+    Conversation: 2692 | Caller: A | Index: 0
+10. Do you have any others,  /
+    Conversation: 2053 | Caller: B | Index: 30
+11. Is your cat a purebred? /
+    Conversation: 4074 | Caller: A | Index: 91
+12. {D So } do you like romantic music? /
+    Conversation: 3747 | Caller: B | Index: 62
+13. Do they budget at all?  /
+    Conversation: 4519 | Caller: B | Index: 80
+14. Did we do what was correct there? /
+    Conversation: 2373 | Caller: B | Index: 11
+15. do you enjoy doing it?  /
+    Conversation: 2492 | Caller: A | Index: 115
+16. # Do you # think that it's just, {F uh, }  medical guys?  /
+    Conversation: 3537 | Caller: B | Index: 22
+17. do you watch anything {D like } with sports or anything like that? /
+    Conversation: 4177 | Caller: A | Index: 126
+18. {F Uh, } got kids? /
+    Conversation: 3791 | Caller: A | Index: 9
+19. Do you like Randy Travis? /
+    Conversation: 3087 | Caller: A | Index: 207
+20. Are you there in school? /
+    Conversation: 3509 | Caller: B | Index: 123
+
+======================================================================
+TAG: qw
+DESCRIPTION: Wh-Question
+TOTAL ROWS: 1,890
+======================================================================
+01. {F Uh, } [ h-, + how ]  is that going to affect the, {F uh, } sports weapons?  {E I mean, } rifles,
+    Conversation: 2448 | Caller: A | Index: 38
+02. What --
+    Conversation: 3651 | Caller: B | Index: 2
+03. [  Where, + where ] are you from? /
+    Conversation: 2679 | Caller: A | Index: 1
+04. {D Well, } {D well } what would be the unemployment rate  out there? /
+    Conversation: 2373 | Caller: A | Index: 225
+05. [ Who, + who ] was in that. /
+    Conversation: 2871 | Caller: B | Index: 8
+06. what do you read?   /
+    Conversation: 2968 | Caller: A | Index: 1
+07. {C And } how do you spell that breed? /
+    Conversation: 3239 | Caller: B | Index: 71
+08. {C And } how old was he? /
+    Conversation: 3451 | Caller: B | Index: 95
+09. how did they get their reputation, then? /
+    Conversation: 4184 | Caller: B | Index: 108
+10. {D so, }  {F uh, } {D well, } {F uh, }  what kind of vacations do you like? /
+    Conversation: 3514 | Caller: B | Index: 3
+11. # {D So } # what kind do you, {F uh, } get? /
+    Conversation: 4758 | Caller: A | Index: 17
+12. How long did you get to stay there? /
+    Conversation: 3311 | Caller: A | Index: 244
+13. What do you think we can do? /
+    Conversation: 2094 | Caller: B | Index: 58
+14. How did you put that many miles on it, in,
+    Conversation: 2965 | Caller: B | Index: 85
+15. [ how far, + about how far  ] do you go walking? /
+    Conversation: 2229 | Caller: A | Index: 151
+16. what do you think is the biggest problem? /
+    Conversation: 3083 | Caller: A | Index: 1
+17. {F Um, } what kind of hobbies do you have? /
+    Conversation: 2053 | Caller: A | Index: 0
+18. -- {F um, } where do you work at  /
+    Conversation: 2984 | Caller: A | Index: 8
+19. What kind of mix do you have?  /
+    Conversation: 3727 | Caller: A | Index: 14
+20. {C so } what kind of movies have you seen, lately, I guess? /
+    Conversation: 2435 | Caller: A | Index: 1
+
+======================================================================
+TAG: qy^d
+DESCRIPTION: Declarative Yes-No Question
+TOTAL ROWS: 1,217
+======================================================================
+01. {C So } you probably could give some great advice. /
+    Conversation: 3068 | Caller: A | Index: 4
+02. [ [ I, + I, ] + I, ] assume you have kids <<Music in background>>. /
+    Conversation: 2362 | Caller: A | Index: 0
+03. Your family doesn't live close, then? /
+    Conversation: 3075 | Caller: B | Index: 15
+04. Bet you were surprised that you said that by mistake.  /
+    Conversation: 2340 | Caller: A | Index: 249
+05. It's still considered Garland. /
+    Conversation: 3051 | Caller: A | Index: 50
+06. {D Well, } considering you moved here from California,  I guess, <inhaling> the rain for the past few weeks has been different than what you have  down there. /
+    Conversation: 3663 | Caller: B | Index: 2
+07. <Laughter> Down here? /
+    Conversation: 3596 | Caller: A | Index: 164
+08. You don't think it's abnormal? /
+    Conversation: 4157 | Caller: B | Index: 73
+09. # {C And } it's # twice a week? /
+    Conversation: 3130 | Caller: A | Index: 13
+10. {C And } that was in your children's high school, /
+    Conversation: 3242 | Caller: A | Index: 143
+11. they just fly right back out, if you have the, -/
+    Conversation: 3576 | Caller: B | Index: 120
+12. {C And, }  {F uh, } they've got these, I don't know what, if you're familiar with Sarasota county at all. /
+    Conversation: 4483 | Caller: A | Index: 11
+13. Just supervised more or less than anything and security, I guess. /
+    Conversation: 2340 | Caller: B | Index: 84
+14. {D So } you have never heard of {D like } the Christian music that I listen to probably. /
+    Conversation: 4092 | Caller: B | Index: 55
+15. On just particular things - /
+    Conversation: 2557 | Caller: B | Index: 58
+16. {F Oh, } it's that one  that's about, {F uh, } what an inch and a half wide. /
+    Conversation: 2615 | Caller: B | Index: 223
+17. {C but } you have friends that have children. /
+    Conversation: 3099 | Caller: B | Index: 13
+18. Marcos -- -/
+    Conversation: 3334 | Caller: A | Index: 52
+19. {C So } you're on it a lot. /
+    Conversation: 2405 | Caller: B | Index: 38
+20. {C And } you never see it. /
+    Conversation: 2078 | Caller: B | Index: 174
+
+======================================================================
+TAG: qh
+DESCRIPTION: Rhetorical Question
+TOTAL ROWS: 563
+======================================================================
+01. can you believe it,  /
+    Conversation: 3333 | Caller: A | Index: 159
+02. {C so } you're going do I want [ a di-, + a ] green lawn or a muddy feet <laughter>,
+    Conversation: 2457 | Caller: A | Index: 132
+03. [ {C and, } + {C and } ] what were we trying to do.  /
+    Conversation: 2617 | Caller: A | Index: 136
+04. {C or } are they going to be the thieves and the people --
+    Conversation: 3134 | Caller: B | Index: 125
+05. {C or } they going be taught something,  /
+    Conversation: 2461 | Caller: A | Index: 60
+06. {C But } if you build computer systems, {D like, } {D well, } {D you know, }  what does that computer program really do, {D you know. } Or, especially if  you write {D like } papers, # {D you know. } #
+    Conversation: 4905 | Caller: B | Index: 125
+07. [ {C and, } +
+    Conversation: 3074 | Caller: B | Index: 280
+08. what can they do about the oil burning over in Kuwait?  /
+    Conversation: 2293 | Caller: A | Index: 68
+09. {D you know. } [ [ What's, + {F uh, }
+    Conversation: 2252 | Caller: B | Index: 177
+10. [ [ Can't you, + can't you put, ] +
+    Conversation: 2991 | Caller: A | Index: 46
+11. {D well } --
+    Conversation: 3586 | Caller: B | Index: 222
+12. What do you do with all these troops that have been taken care of by, {F uh, } Bulgaria [ and, +
+    Conversation: 2252 | Caller: B | Index: 229
+13. are we willing to pay for it,
+    Conversation: 2502 | Caller: A | Index: 243
+14. {C So } all we had to sit here [ and, + and ] ask is {D well, } what aren't they telling us, {D you know. }  /
+    Conversation: 2888 | Caller: A | Index: 229
+15. Why should I go out of my way when it doesn't matter. /
+    Conversation: 2303 | Caller: A | Index: 12
+16. what are you going to do? /
+    Conversation: 4004 | Caller: B | Index: 10
+17. {C So, } if you don't want to burn coal for power,
+    Conversation: 2094 | Caller: B | Index: 93
+18. How much of your resource should you dedicate to, {F uh, } making things work for others?  /
+    Conversation: 4725 | Caller: A | Index: 5
+19. {E I mean, } why should we push English, /
+    Conversation: 2446 | Caller: A | Index: 188
+20. you know what I'm saying,  /
+    Conversation: 2571 | Caller: A | Index: 48
+
+======================================================================
+TAG: fp
+DESCRIPTION: Conventional Opening
+TOTAL ROWS: 207
+======================================================================
+01. it certainly is, {F uh, } going to be a pleasure to chat with you. /
+    Conversation: 3979 | Caller: A | Index: 1
+02. Hello? /
+    Conversation: 4150 | Caller: B | Index: 36
+03. How you doing? /
+    Conversation: 4792 | Caller: B | Index: 3
+04. Hello there. /
+    Conversation: 2160 | Caller: B | Index: 1
+05. Hi, Judy.  /
+    Conversation: 2767 | Caller: B | Index: 3
+06. Hi. /
+    Conversation: 3315 | Caller: B | Index: 1
+07. Hi,  /
+    Conversation: 3365 | Caller: B | Index: 0
+08. Hi. /
+    Conversation: 3039 | Caller: B | Index: 3
+09. Hello. /
+    Conversation: 2018 | Caller: B | Index: 0
+10. Fine,  /
+    Conversation: 2025 | Caller: B | Index: 2
+11. Hello /
+    Conversation: 2344 | Caller: B | Index: 0
+12. What's your name? /
+    Conversation: 2061 | Caller: B | Index: 5
+13. {C And } a very good afternoon to you. /
+    Conversation: 3281 | Caller: A | Index: 1
+14. Hi <laughter>. /
+    Conversation: 2632 | Caller: B | Index: 1
+15. Yes,  /
+    Conversation: 3666 | Caller: B | Index: 1
+16. Brian in Plano, Texas.  How are you doing today? /
+    Conversation: 3647 | Caller: A | Index: 0
+17. I'm from Maryland <noise>  /
+    Conversation: 2767 | Caller: A | Index: 1
+18. Hi,  /
+    Conversation: 3518 | Caller: B | Index: 1
+19. {C and } I'm calling from Plano, Texas. /
+    Conversation: 3420 | Caller: A | Index: 2
+20. Good.   /
+    Conversation: 4792 | Caller: B | Index: 5
+
+======================================================================
+TAG: fc
+DESCRIPTION: Conventional Closing
+TOTAL ROWS: 2,404
+======================================================================
+01. Bye-bye. /
+    Conversation: 2264 | Caller: A | Index: 139
+02. {C and, } -/
+    Conversation: 3184 | Caller: B | Index: 127
+03. Okay. /
+    Conversation: 2559 | Caller: B | Index: 148
+04. it has been, Becky,  /
+    Conversation: 2275 | Caller: A | Index: 258
+05. # Bye-bye. # /
+    Conversation: 2005 | Caller: B | Index: 253
+06. All righty,  /
+    Conversation: 2632 | Caller: A | Index: 234
+07. have a good evening. /
+    Conversation: 2439 | Caller: B | Index: 294
+08. Okay.  /
+    Conversation: 2954 | Caller: B | Index: 370
+09. I know,  /
+    Conversation: 2018 | Caller: A | Index: 217
+10. Right. /
+    Conversation: 2955 | Caller: B | Index: 224
+11. I guess I'll go back to work. /
+    Conversation: 2331 | Caller: A | Index: 266
+12. Yeah,  /
+    Conversation: 2405 | Caller: A | Index: 297
+13. {D well } good talking to you. /
+    Conversation: 2205 | Caller: B | Index: 197
+14. Okay,  {F uh, }  /
+    Conversation: 2784 | Caller: A | Index: 183
+15. {D well, } it's been nice talking to you. /
+    Conversation: 2524 | Caller: B | Index: 171
+16. # [ {C But, } + # {F uh, } {C so, } ] yeah,  /
+    Conversation: 2578 | Caller: A | Index: 217
+17. You too. /
+    Conversation: 3270 | Caller: B | Index: 104
+18. I've enjoyed, -/
+    Conversation: 3250 | Caller: A | Index: 142
+19. Okay,  /
+    Conversation: 2910 | Caller: B | Index: 186
+20. Okay. /
+    Conversation: 2005 | Caller: A | Index: 248
+
+======================================================================
+TAG: ft
+DESCRIPTION: Thanking
+TOTAL ROWS: 76
+======================================================================
+01. {D Well, } thank you. /
+    Conversation: 2593 | Caller: B | Index: 126
+02. {C And } thanks for calling. /
+    Conversation: 2952 | Caller: B | Index: 364
+03. {F Oh. }  Thank you very much <laughter>.  /
+    Conversation: 2399 | Caller: B | Index: 156
+04. {D Well, } thank you. /
+    Conversation: 4329 | Caller: B | Index: 151
+05. thank you,  /
+    Conversation: 2086 | Caller: B | Index: 216
+06. thank you,  /
+    Conversation: 2086 | Caller: B | Index: 238
+07. Thank you, ma'am.  /
+    Conversation: 2151 | Caller: A | Index: 99
+08. Thank you.  /
+    Conversation: 2827 | Caller: B | Index: 244
+09. Thank you <talking>   <<Talking to someone else in background>>.  /
+    Conversation: 2984 | Caller: A | Index: 28
+10. Thank you,  /
+    Conversation: 2104 | Caller: A | Index: 46
+11. thanks. /
+    Conversation: 2229 | Caller: B | Index: 277
+12. thank you. /
+    Conversation: 2632 | Caller: B | Index: 233
+13. Thanks,  /
+    Conversation: 2650 | Caller: A | Index: 39
+14. Thank you very much. /
+    Conversation: 3219 | Caller: A | Index: 122
+15. {D Well, } thank you <laughter>. /
+    Conversation: 2950 | Caller: B | Index: 268
+16. thanks. /
+    Conversation: 2751 | Caller: A | Index: 188
+17. Thank you very much. /
+    Conversation: 2145 | Caller: A | Index: 155
+18. Thanks.  /
+    Conversation: 2593 | Caller: B | Index: 129
+19. {F Oh, } thank you.  /
+    Conversation: 2952 | Caller: B | Index: 363
+20. Thank you. /
+    Conversation: 2962 | Caller: A | Index: 209
+
+======================================================================
+TAG: sv
+DESCRIPTION: Statement Opinion
+TOTAL ROWS: 25,696
+======================================================================
+01. {C But, } [ it, + it's ] just finding the time for <laughter> these things that [ you -- +
+    Conversation: 3735 | Caller: B | Index: 110
+02. [ {C and, } + {C and } ] they   kind of capsize it --
+    Conversation: 3280 | Caller: A | Index: 52
+03. -- {C but } they don't. /
+    Conversation: 2839 | Caller: B | Index: 220
+04. If there's, too many people that get their hands on one little project, {D you know, }  [ that things, + ] [ they're, + ] [ you get, + [ y-, + you ] miss  ] that overlap --
+    Conversation: 2692 | Caller: B | Index: 143
+05. {E I mean, } {C and } I just don't think it's healthy  /
+    Conversation: 2433 | Caller: A | Index: 177
+06. They, [ in their, + in their ] own peer  relationships, they do not treat themselves equal,  /
+    Conversation: 3103 | Caller: B | Index: 140
+07. # {C But } I do # think that's one of the major changes.   {D You know,  /
+    Conversation: 3384 | Caller: B | Index: 65
+08. Everybody loves their car,  /
+    Conversation: 2293 | Caller: B | Index: 22
+09. it is.  /
+    Conversation: 2663 | Caller: A | Index: 160
+10. -- {C and } it seems to me they could  have been a lot more creative stuff used. /
+    Conversation: 2181 | Caller: A | Index: 37
+11. {C But } they're not doing bad.  /
+    Conversation: 3269 | Caller: A | Index: 29
+12. That's where I think most of the cost is coming. /
+    Conversation: 3537 | Caller: B | Index: 24
+13. {D You know, } you don't have to put up with all these wild critters coming into your property. /
+    Conversation: 2534 | Caller: A | Index: 124
+14. {D Well, } [ do you, +  does yours ]  have that this one had it where {D you know, } you would see something coming in the rear view  mirror, {E I mean } not the rear, those little side mirror things -- /
+    Conversation: 2431 | Caller: A | Index: 216
+15. {C and } you don't stop to think about it. /
+    Conversation: 3275 | Caller: B | Index: 15
+16. {C and } it would make women go to  work sometime if they knew their kids were being taken care of.  /
+    Conversation: 2085 | Caller: A | Index: 43
+17. It's hard to consider that something could go on indefinitely. /
+    Conversation: 3382 | Caller: A | Index: 79
+18. -- {C and, }  {F uh, } [ that, + that ] wears a bit down.  /
+    Conversation: 4936 | Caller: A | Index: 111
+19. # [ I # think + [ as, {F uh, } + as, ] {F uh, } mother {D you know, } I use to think  ] sometimes [ it's not so much, + {F uh, } it's not so much ] the kids,  /
+    Conversation: 2826 | Caller: A | Index: 182
+20. I guess in particular my viewpoint is that they financially cannot go into a war.  /
+    Conversation: 3272 | Caller: A | Index: 24
+
+======================================================================
+TAG: sd
+DESCRIPTION: Statement Non-opinion
+TOTAL ROWS: 70,464
+======================================================================
+01. it was just wonderful. /
+    Conversation: 3124 | Caller: A | Index: 50
+02. {C And } hope that we can stay in this situation <laughter> for awhile.  /
+    Conversation: 4165 | Caller: A | Index: 70
+03. {C and } that's one thing that impressed me so much is no matter what size yard somebody had, they had a beautiful garden in it.  /
+    Conversation: 2935 | Caller: B | Index: 83
+04. {C so } that made it a little more and that they were from Utah also  /
+    Conversation: 3280 | Caller: B | Index: 81
+05. pretty, but, - /
+    Conversation: 2719 | Caller: A | Index: 264
+06. Bobby Witt --
+    Conversation: 3504 | Caller: B | Index: 135
+07. It was like four dollars a semester hour -- /
+    Conversation: 3232 | Caller: A | Index: 43
+08. I guess [ we're, + we're ] just at the point, {F uh, } - /
+    Conversation: 4103 | Caller: A | Index: 41
+09. {D You know, }
+    Conversation: 2955 | Caller: B | Index: 141
+10. {C And, }  {F uh, } [ each one of the, +   everybody ] that showed up donated some money for the rent and [ for, + for ] {D like } soft drinks  /
+    Conversation: 4050 | Caller: B | Index: 54
+11. it's very expensive. /
+    Conversation: 2821 | Caller: A | Index: 116
+12. I don't know if it's, uh, if it's partly from what's blooming, you know, right now, pollen and stuff like that,  /
+    Conversation: 2752 | Caller: B | Index: 40
+13. [ She, +  her ] lips were a little bit wide,  /
+    Conversation: 2893 | Caller: B | Index: 94
+14. {C and } he was definitely, - /
+    Conversation: 3052 | Caller: A | Index: 104
+15. [ It didn't, + it didn't  ] quite pass. /
+    Conversation: 2692 | Caller: B | Index: 92
+16. {C and } --
+    Conversation: 3988 | Caller: B | Index: 98
+17. {C and } those got so high we finally decided  for him and me both to have a card it was {D like } ninety dollars <laughter> or something I think, /
+    Conversation: 2999 | Caller: A | Index: 162
+18. {F Um, } I don't want any of those ones that will  ((   ))  up the kids, /
+    Conversation: 2844 | Caller: A | Index: 218
+19. [ I'm not, + {F uh, } I have ] one again at U T down there now,
+    Conversation: 2418 | Caller: A | Index: 164
+20. {D Well, } I'll tell you, [ I -- +
+    Conversation: 3830 | Caller: A | Index: 184
+
+=== EXPLORATION COMPLETE ===

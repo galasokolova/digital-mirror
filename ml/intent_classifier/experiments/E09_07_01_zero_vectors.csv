@@ -1,0 +1,3 @@
+id,text,model_text,intent,group,predicted,correct,nonzero_features,zero_vector,total_features,known_features,unknown_features,feature_coverage,known_feature_list,unknown_feature_list,total_words,known_words,unknown_words,word_coverage,unknown_word_list
+DMT-0006,Howdy,howdy,GREETING,short,STATEMENT,False,0,True,1,0,1,0.0,,howdy,1,0,1,0.0,howdy
+DMT-0028,Cheerio,cheerio,GOODBYE,short,STATEMENT,False,0,True,1,0,1,0.0,,cheerio,1,0,1,0.0,cheerio

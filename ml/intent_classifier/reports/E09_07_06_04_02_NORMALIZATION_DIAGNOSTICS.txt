@@ -1,0 +1,190 @@
+=== NORMALIZATION DIAGNOSTICS ===
+
+Records: 135827
+
+=== COLUMNS ===
+swda_filename
+conversation_no
+transcript_index
+act_tag
+caller
+utterance_index
+subutterance_index
+text
+damsl_tag
+segment_count
+source_indices
+source_tags
+end_transcript_index
+clean_text
+raw_token_count
+clean_token_count
+intent
+normalized_text
+model_text
+
+=== TEST A: TEXT -> MODEL TEXT ===
+Matching: 66072
+Mismatching: 69755
+Mismatch rate: 51.3558%
+
+=== MISMATCH EXAMPLES ===
+
+Record index: 0
+text: '{F Uh, } first, {F um, } I need to know, {F uh, }  how do you feel [ about, + {F uh, } about ] sending, {F uh, } an elderly, {F uh, } family member to a nursing home? /'
+normalized_text: 'uh, first, um, i need to know, uh, how do you feel about, uh, about sending, uh, an elderly, uh, family member to a nursing home?'
+model_text: 'uh first um i need to know uh how do you feel about uh about sending uh an elderly uh family member to a nursing home'
+intent: 'QUESTION'
+calculated_model_text: 'f uh first f um i need to know f uh how do you feel about + f uh about sending f uh an elderly f uh family member to a nursing home'
+
+Record index: 1
+text: "{D Well, } of course, [ it's, + {D you know, } it's ]  one of the last few things in the world you'd ever want to do, {D you know. }   Unless it's just, {D you know, } really, {D you know, }  and, {F uh, } [ for their, + {F uh, } {D you know, }  for their ] own good. /"
+normalized_text: "well, of course, it's, you know, it's one of the last few things in the world you'd ever want to do, you know. unless it's just, you know, really, you know, and, uh, for their, uh, you know, for their own good."
+model_text: "well of course it's you know it's one of the last few things in the world you'd ever want to do you know unless it's just you know really you know and uh for their uh you know for their own good"
+intent: 'STATEMENT'
+calculated_model_text: "d well of course it's + d you know it's one of the last few things in the world you'd ever want to do d you know unless it's just d you know really d you know and f uh for their + f uh d you know for their own good"
+
+Record index: 4
+text: "I'd be very very careful [ and, + ] {F uh, } {D you know, }  checking them out.  /"
+normalized_text: "i'd be very very careful and, uh, you know, checking them out."
+model_text: "i'd be very very careful and uh you know checking them out"
+intent: 'STATEMENT'
+calculated_model_text: "i'd be very very careful and + f uh d you know checking them out"
+
+Record index: 6
+text: 'She had a rather massive stroke [ about, + {F uh, } about ] -- -- {F uh, } eight months ago I guess.  /'
+normalized_text: 'she had a rather massive stroke about, uh, about uh, eight months ago i guess.'
+model_text: 'she had a rather massive stroke about uh about uh eight months ago i guess'
+intent: 'STATEMENT'
+calculated_model_text: 'she had a rather massive stroke about + f uh about f uh eight months ago i guess'
+
+Record index: 8
+text: '{C And, }  {F uh, }  [ we were, + I was ] fortunate in that  /'
+normalized_text: 'and, uh, we were, i was fortunate in that'
+model_text: 'and uh we were i was fortunate in that'
+intent: 'STATEMENT'
+calculated_model_text: 'c and f uh we were + i was fortunate in that'
+
+Record index: 9
+text: 'I was personally acquainted with the, {F uh, }  people who, {F uh, } ran the nursing home in our little hometown. /'
+normalized_text: 'i was personally acquainted with the, uh, people who, uh, ran the nursing home in our little hometown.'
+model_text: 'i was personally acquainted with the uh people who uh ran the nursing home in our little hometown'
+intent: 'STATEMENT'
+calculated_model_text: 'i was personally acquainted with the f uh people who f uh ran the nursing home in our little hometown'
+
+Record index: 11
+text: '{C So, } I was very comfortable, {D you know, }  in doing it when it got to the point that we had to do it.  /'
+normalized_text: 'so, i was very comfortable, you know, in doing it when it got to the point that we had to do it.'
+model_text: 'so i was very comfortable you know in doing it when it got to the point that we had to do it'
+intent: 'STATEMENT'
+calculated_model_text: 'c so i was very comfortable d you know in doing it when it got to the point that we had to do it'
+
+Record index: 12
+text: '{D well, }  I had an occasion for my mother-in-law who had fell and [ needed to be, + ] {D you know, }  could not take care of herself anymore, was confined to a nursing home for a while  /'
+normalized_text: 'well, i had an occasion for my mother-in-law who had fell and needed to be, you know, could not take care of herself anymore, was confined to a nursing home for a while'
+model_text: 'well i had an occasion for my mother in law who had fell and needed to be you know could not take care of herself anymore was confined to a nursing home for a while'
+intent: 'STATEMENT'
+calculated_model_text: 'd well i had an occasion for my mother in law who had fell and needed to be + d you know could not take care of herself anymore was confined to a nursing home for a while'
+
+Record index: 14
+text: '{F Uh, } it had to be done  in a hurry.  /'
+normalized_text: 'uh, it had to be done in a hurry.'
+model_text: 'uh it had to be done in a hurry'
+intent: 'STATEMENT'
+calculated_model_text: 'f uh it had to be done in a hurry'
+
+Record index: 15
+text: "{E I mean, } we didn't have, {D you know, } {D like } six months to check  all of these places out.  /"
+normalized_text: "i mean, we didn't have, you know, like six months to check all of these places out."
+model_text: "i mean we didn't have you know like six months to check all of these places out"
+intent: 'STATEMENT'
+calculated_model_text: "e i mean we didn't have d you know d like six months to check all of these places out"
+
+Record index: 16
+text: '{C And } it was really [ not, + not ] very good, {F uh, } deal. /'
+normalized_text: 'and it was really not, not very good, uh, deal.'
+model_text: 'and it was really not not very good uh deal'
+intent: 'STATEMENT'
+calculated_model_text: 'c and it was really not + not very good f uh deal'
+
+Record index: 20
+text: 'Fortunately, she only had to stay <noise> <<faint in background>> a few weeks  /'
+normalized_text: 'fortunately, she only had to stay a few weeks'
+model_text: 'fortunately she only had to stay a few weeks'
+intent: 'STATEMENT'
+calculated_model_text: 'fortunately she only had to stay <noise> <<faint in background>> a few weeks'
+
+Record index: 21
+text: '{C and } she was able [ to, + to ] return to her apartment again.  /'
+normalized_text: 'and she was able to, to return to her apartment again.'
+model_text: 'and she was able to to return to her apartment again'
+intent: 'STATEMENT'
+calculated_model_text: 'c and she was able to + to return to her apartment again'
+
+Record index: 22
+text: "{C But } it's really a [ big, + {F uh, }   big, ] {F uh, } decision [ as to, +  {D you know, } when to ] do it.  /"
+normalized_text: "but it's really a big, uh, big, uh, decision as to, you know, when to do it."
+model_text: "but it's really a big uh big uh decision as to you know when to do it"
+intent: 'STATEMENT'
+calculated_model_text: "c but it's really a big + f uh big f uh decision as to + d you know when to do it"
+
+Record index: 24
+text: "Of course, {D you know, } there's not  one on every corner, especially, {D you know, } smaller areas, smaller towns. /"
+normalized_text: "of course, you know, there's not one on every corner, especially, you know, smaller areas, smaller towns."
+model_text: "of course you know there's not one on every corner especially you know smaller areas smaller towns"
+intent: 'STATEMENT'
+calculated_model_text: "of course d you know there's not one on every corner especially d you know smaller areas smaller towns"
+
+Record index: 29
+text: 'Probably the hardest thing [ in, + in ]  my family, {F uh, } my grandmother, she had to be put in a nursing home  /'
+normalized_text: 'probably the hardest thing in, in my family, uh, my grandmother, she had to be put in a nursing home'
+model_text: 'probably the hardest thing in in my family uh my grandmother she had to be put in a nursing home'
+intent: 'STATEMENT'
+calculated_model_text: 'probably the hardest thing in + in my family f uh my grandmother she had to be put in a nursing home'
+
+Record index: 30
+text: '{C and, }  {F um, }  she had used the walker [ for, + for ] quite some time, probably about six to  nine months.  /'
+normalized_text: 'and, um, she had used the walker for, for quite some time, probably about six to nine months.'
+model_text: 'and um she had used the walker for for quite some time probably about six to nine months'
+intent: 'STATEMENT'
+calculated_model_text: 'c and f um she had used the walker for + for quite some time probably about six to nine months'
+
+Record index: 31
+text: '{C And, }  {F um, } she had a fall  /'
+normalized_text: 'and, um, she had a fall'
+model_text: 'and um she had a fall'
+intent: 'STATEMENT'
+calculated_model_text: 'c and f um she had a fall'
+
+Record index: 32
+text: "{C and, }  {F uh, } finally, {F uh, } she  had Parkinson's disease, /"
+normalized_text: "and, uh, finally, uh, she had parkinson's disease,"
+model_text: "and uh finally uh she had parkinson's disease"
+intent: 'STATEMENT'
+calculated_model_text: "c and f uh finally f uh she had parkinson's disease"
+
+Record index: 34
+text: '{C and } it got so much that she could not take care of  her house. /'
+normalized_text: 'and it got so much that she could not take care of her house.'
+model_text: 'and it got so much that she could not take care of her house'
+intent: 'STATEMENT'
+calculated_model_text: 'c and it got so much that she could not take care of her house'
+
+=== TEST B: NORMALIZED TEXT -> MODEL TEXT ===
+Matching: 135827
+Mismatching: 0
+Mismatch rate: 0.0000%
+
+=== TEST C: TEXT -> NORMALIZED TEXT ===
+Matching: 0
+Mismatching: 135827
+Mismatch rate: 100.0000%
+
+=== EMPTY MODEL TEXTS ===
+Empty model texts: 0
+
+Source dataset modified: NO
+Model loaded: NO
+Model trained: NO
+
+=== DIAGNOSTICS FINISHED ===

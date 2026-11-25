@@ -1,0 +1,35 @@
+id,text,intent,context,scenario,style,context_required,source
+NST-0461,Where did you hear that?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0462,Who took the photograph?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0463,How old is this recording?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0464,What are the main findings?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0466,Did anyone interview the witness?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0467,How does the device work?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0468,When does the exhibition close?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0470,What caused the power outage?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0471,Who funded the research?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0474,Does this happen every year?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0475,What language are they speaking?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0476,Are the results publicly available?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0477,How long was the interview?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0478,Which newspaper published the story?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0479,Did the weather affect attendance?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0480,What did the reporter find?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0481,How often do people change their minds here?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0483,Is there a way to check the original footage?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0484,Who was responsible for collecting all these survey responses?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0485,How did the researchers decide which participants to include?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0486,Does the museum offer guided tours on weekday mornings?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0487,What other explanations have been proposed for this event?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0488,Can I access the archive without creating an account?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0489,How much electricity does this installation use each day?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0490,When will the next set of results become available?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0491,Are there any photographs from before the building collapsed?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0492,Which countries participated in the first round of interviews?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0493,What kind of microphone are you using for this?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0494,Did the journalist speak to anyone outside the organization?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0496,Is there somewhere I can find the full interview rather than just the short clip?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0497,What happens if two independent sources publish completely different accounts of the same event?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0498,Do you know whether the people who collected the data were present during the incident?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0499,How many visitors have tried the installation since it opened to the public last week?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+NST-0500,Where could I find a copy of the report that includes all the original tables?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1

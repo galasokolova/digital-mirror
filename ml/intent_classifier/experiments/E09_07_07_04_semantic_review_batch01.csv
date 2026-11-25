@@ -1,0 +1,51 @@
+review_id,text,context,reviewed_intent,naturalness,context_required,review_status,notes,intent_without_context,intent_with_context
+REV-0001,I missed the name of the organization you mentioned.,The review was conducted by the local council.,CLARIFICATION,NATURAL,NO,ACCEPT,Indirect request to repeat the organization name.,CLARIFICATION,CLARIFICATION
+REV-0002,I spent the morning sorting through old documents and found a letter from my grandfather.,,STATEMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,STATEMENT,STATEMENT
+REV-0003,Mine doesn't.,Does your phone support that feature?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0004,Not really.,Do you enjoy cooking?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0005,Ah.,That symbol represents uncertainty.,ACKNOWLEDGMENT,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,ACKNOWLEDGMENT
+REV-0006,Did anyone interview the witness?,,QUESTION,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,QUESTION,QUESTION
+REV-0007,I really appreciate your help.,,GRATITUDE,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,GRATITUDE,GRATITUDE
+REV-0008,Not necessarily.,More information always helps.,DISAGREEMENT,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,DISAGREEMENT
+REV-0009,How long was the interview?,,QUESTION,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,QUESTION,QUESTION
+REV-0010,Message received.,The schedule has changed.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0011,Have a safe trip home.,,GOODBYE,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,GOODBYE,GOODBYE
+REV-0012,Still thinking.,Have you formed an opinion?,UNCERTAINTY,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,UNCERTAINTY,UNCERTAINTY
+REV-0013,I'm not following the part where you said the two sources were not independent.,The reports cannot be treated as independent evidence.,CLARIFICATION,NATURAL,NO,ACCEPT,Indirect request to clarify the previous explanation.,CLARIFICATION,CLARIFICATION
+REV-0014,How often do people change their minds here?,,QUESTION,NATURAL,NO,ACCEPT,Requests new information about frequency.,QUESTION,QUESTION
+REV-0015,That's an oversimplification of things.,Technology is always good for society.,DISAGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,DISAGREEMENT,DISAGREEMENT
+REV-0016,That's what I was thinking.,The clip was taken out of context.,AGREEMENT,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,AGREEMENT
+REV-0017,"No, we took the train.",Did you drive here?,NEGATIVE_ANSWER,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,NEGATIVE_ANSWER,NEGATIVE_ANSWER
+REV-0018,I can read everything on the screen from here.,Can you read the text?,AFFIRMATIVE_ANSWER,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,STATEMENT,AFFIRMATIVE_ANSWER
+REV-0019,Are you saying the event happened somewhere else entirely?,The location in the caption is incorrect.,CLARIFICATION,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,CLARIFICATION,CLARIFICATION
+REV-0020,I understand how this works now.,The slider changes the intensity of the pattern.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0021,The train was so crowded that I ended up standing all the way home.,,STATEMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,STATEMENT,STATEMENT
+REV-0022,Nothing yet.,Have you received a reply?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0023,"Ah, gotcha.",The photo was cropped for display.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0024,What happens to my recording after I leave?,,QUESTION,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,QUESTION,QUESTION
+REV-0025,I wouldn't bet on it.,How certain are you about that prediction?,UNCERTAINTY,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,UNCERTAINTY,UNCERTAINTY
+REV-0026,Never have.,Have you ever tried skiing?,NEGATIVE_ANSWER,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,NEGATIVE_ANSWER,NEGATIVE_ANSWER
+REV-0027,My brother moved into a smaller flat last month.,,STATEMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,STATEMENT,STATEMENT
+REV-0028,"Okay, that explains it.",The screen went dark because it timed out.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0029,I wouldn't put it that way.,The audience failed the experiment.,DISAGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,DISAGREEMENT,DISAGREEMENT
+REV-0030,So long!,,GOODBYE,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,GOODBYE,GOODBYE
+REV-0031,"Ah, right.",The original was in French.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0032,Your conclusion goes beyond what the numbers actually show.,The survey proves the entire population agrees.,DISAGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,DISAGREEMENT,DISAGREEMENT
+REV-0033,Okay.,The next clip is shorter.,ACKNOWLEDGMENT,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,ACKNOWLEDGMENT
+REV-0034,Who knows?,Will the plan succeed?,UNCERTAINTY,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,UNCERTAINTY
+REV-0035,"Well, hello!",,GREETING,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,GREETING,GREETING
+REV-0036,"Yes, please.",Would you like some water?,AFFIRMATIVE_ANSWER,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,AFFIRMATIVE_ANSWER
+REV-0037,"Okay, I know what to expect.",The next section contains three questions.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0038,Can I access the archive without creating an account?,,QUESTION,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,QUESTION,QUESTION
+REV-0039,I couldn't find it anywhere in the folder.,Did you locate the original file?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,STATEMENT,NEGATIVE_ANSWER
+REV-0040,Good morning!,,GREETING,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,GREETING,GREETING
+REV-0041,"That means a lot, thanks.",,GRATITUDE,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,GRATITUDE,GRATITUDE
+REV-0042,Nobody answered the phone.,Did anyone pick up?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,STATEMENT,NEGATIVE_ANSWER
+REV-0043,I'll catch up with you later.,,GOODBYE,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,GOODBYE,GOODBYE
+REV-0044,Not anymore.,Do you still live there?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0045,Possibly.,Do you think they'll return?,UNCERTAINTY,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,UNCERTAINTY,UNCERTAINTY
+REV-0046,Thanks for giving me a chance to reconsider.,,GRATITUDE,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,GRATITUDE,GRATITUDE
+REV-0047,I owe you one.,I have helped you find what you were looking for.,GRATITUDE,NATURAL,YES,ACCEPT,Context resolves competing dialogue functions.,AMBIGUOUS,GRATITUDE
+REV-0048,I understand.,The article was updated this morning.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0049,"Oh, okay.",The first image is a reconstruction.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0050,Noted.,The date is in the bottom corner.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from utterance.,ACKNOWLEDGMENT,ACKNOWLEDGMENT

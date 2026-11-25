@@ -1,0 +1,61 @@
+id,text,intent,contrast_group,topic,style,context,source,word_count
+DMC-0482,Not my view of this source.,DISAGREEMENT,CG-B03-001,information_sources,short,This source is unreliable.,digital_mirror_contrastive_v1,6
+DMC-0485,Note: The publisher lists its address online.,STATEMENT,CG-B03-001,information_sources,short,,digital_mirror_contrastive_v1,7
+DMC-0494,Not my view of the experiment.,DISAGREEMENT,CG-B03-004,science,short,The experiment supports the hypothesis.,digital_mirror_contrastive_v1,6
+DMC-0497,Note: The experiment used two samples.,STATEMENT,CG-B03-004,science,short,,digital_mirror_contrastive_v1,6
+DMC-0500,What date was the experiment conducted?,QUESTION,CG-B03-005,science,short,We are discussing the experiment.,digital_mirror_contrastive_v1,6
+DMC-0506,Not my view of the headline.,DISAGREEMENT,CG-B03-007,news_media,short,The headline exaggerates the findings.,digital_mirror_contrastive_v1,6
+DMC-0509,Note: The article appeared on Monday.,STATEMENT,CG-B03-007,news_media,short,,digital_mirror_contrastive_v1,6
+DMC-0518,Not my view of the receipt.,DISAGREEMENT,CG-B03-010,evidence,short,The receipt establishes the date.,digital_mirror_contrastive_v1,6
+DMC-0521,Note: The receipt has a printed timestamp.,STATEMENT,CG-B03-010,evidence,short,,digital_mirror_contrastive_v1,7
+DMC-0524,At what location was the receipt issued?,QUESTION,CG-B03-011,evidence,short,We are discussing the receipt.,digital_mirror_contrastive_v1,7
+DMC-0530,Not my view of the recording.,DISAGREEMENT,CG-B03-013,video_audio,short,The recording lacks context.,digital_mirror_contrastive_v1,6
+DMC-0533,Note: The recording lasts four minutes.,STATEMENT,CG-B03-013,video_audio,short,,digital_mirror_contrastive_v1,6
+DMC-0534,Already listened to the original audio.,AFFIRMATIVE_ANSWER,CG-B03-014,video_audio,short,Have you listened to the original audio?,digital_mirror_contrastive_v1,6
+DMC-0542,Not my view of the model.,DISAGREEMENT,CG-B03-016,artificial_intelligence,short,The model needs more examples.,digital_mirror_contrastive_v1,6
+DMC-0545,Note: The model returns three scores.,STATEMENT,CG-B03-016,artificial_intelligence,short,,digital_mirror_contrastive_v1,6
+DMC-0548,Quick question: Which dataset was used?,QUESTION,CG-B03-017,artificial_intelligence,short,We are discussing the model.,digital_mirror_contrastive_v1,6
+DMC-0554,Not my view of the update.,DISAGREEMENT,CG-B03-019,technology,short,The update improves stability.,digital_mirror_contrastive_v1,6
+DMC-0557,Note: The update requires a restart.,STATEMENT,CG-B03-019,technology,short,,digital_mirror_contrastive_v1,6
+DMC-0560,What date was the update released?,QUESTION,CG-B03-020,technology,short,We are discussing the update.,digital_mirror_contrastive_v1,6
+DMC-0566,Not my view of the assignment.,DISAGREEMENT,CG-B03-022,education,short,The assignment needs clearer instructions.,digital_mirror_contrastive_v1,6
+DMC-0569,Note: The assignment includes two exercises.,STATEMENT,CG-B03-022,education,short,,digital_mirror_contrastive_v1,6
+DMC-0572,What date is the assignment due?,QUESTION,CG-B03-023,education,short,We are discussing the assignment.,digital_mirror_contrastive_v1,6
+DMC-0577,Same view on the train schedule.,AGREEMENT,CG-B03-025,everyday_conversation,short,The earlier train is more convenient.,digital_mirror_contrastive_v1,6
+DMC-0578,Not my view of the train schedule.,DISAGREEMENT,CG-B03-025,everyday_conversation,short,The earlier train is more convenient.,digital_mirror_contrastive_v1,7
+DMC-0579,Point about the train schedule understood.,ACKNOWLEDGMENT,CG-B03-025,everyday_conversation,short,The earlier train is more convenient.,digital_mirror_contrastive_v1,6
+DMC-0581,Note: The train stops at three stations.,STATEMENT,CG-B03-025,everyday_conversation,short,,digital_mirror_contrastive_v1,7
+DMC-0583,"Not yet, regarding the train schedule.",NEGATIVE_ANSWER,CG-B03-026,everyday_conversation,short,Have you checked the timetable?,digital_mirror_contrastive_v1,6
+DMC-0584,Quick question: Which platform does the train leave from?,QUESTION,CG-B03-026,everyday_conversation,short,We are discussing the train schedule.,digital_mirror_contrastive_v1,9
+DMC-0590,Not my view of the apartment.,DISAGREEMENT,CG-B03-028,personal_decisions,short,The smaller apartment is a better choice.,digital_mirror_contrastive_v1,6
+DMC-0593,Note: The apartment has two bedrooms.,STATEMENT,CG-B03-028,personal_decisions,short,,digital_mirror_contrastive_v1,6
+DMC-0596,Quick question: How large is the apartment?,QUESTION,CG-B03-029,personal_decisions,short,We are discussing the apartment.,digital_mirror_contrastive_v1,7
+DMC-0602,Not my view of the projection.,DISAGREEMENT,CG-B03-031,art_exhibitions,short,The projection belongs in the darker room.,digital_mirror_contrastive_v1,6
+DMC-0605,Note: The projection uses two screens.,STATEMENT,CG-B03-031,art_exhibitions,short,,digital_mirror_contrastive_v1,6
+DMC-0614,Not my view of the interface.,DISAGREEMENT,CG-B03-034,human_machine_interaction,short,The interface should wait for a response.,digital_mirror_contrastive_v1,6
+DMC-0617,Note: The interface has a confirmation button.,STATEMENT,CG-B03-034,human_machine_interaction,short,,digital_mirror_contrastive_v1,7
+DMC-0620,Quick question: How long does the interface wait?,QUESTION,CG-B03-035,human_machine_interaction,short,We are discussing the interface.,digital_mirror_contrastive_v1,8
+DMC-0624,Thanks for guiding me through the interface.,GRATITUDE,CG-B03-036,human_machine_interaction,short,,digital_mirror_contrastive_v1,7
+DMC-0626,Not my view of the correction.,DISAGREEMENT,CG-B03-037,news_media,short,The correction deserves more attention.,digital_mirror_contrastive_v1,6
+DMC-0629,Note: The correction appears below the article.,STATEMENT,CG-B03-037,news_media,short,,digital_mirror_contrastive_v1,7
+DMC-0632,At what location was the correction published?,QUESTION,CG-B03-038,news_media,short,We are discussing the correction.,digital_mirror_contrastive_v1,7
+DMC-0636,Thanks for pointing out the correction.,GRATITUDE,CG-B03-039,news_media,short,,digital_mirror_contrastive_v1,6
+DMC-0638,Not my view of the photograph.,DISAGREEMENT,CG-B03-040,evidence,short,The photograph is insufficient proof.,digital_mirror_contrastive_v1,6
+DMC-0641,Note: The photograph shows a street sign.,STATEMENT,CG-B03-040,evidence,short,,digital_mirror_contrastive_v1,7
+DMC-0644,What date was the photograph taken?,QUESTION,CG-B03-041,evidence,short,We are discussing the photograph.,digital_mirror_contrastive_v1,6
+DMC-0650,Not my view of the interview.,DISAGREEMENT,CG-B03-043,information_sources,short,The interview is a useful reference.,digital_mirror_contrastive_v1,6
+DMC-0653,Note: The interview includes two speakers.,STATEMENT,CG-B03-043,information_sources,short,,digital_mirror_contrastive_v1,6
+DMC-0662,Not my view of the subtitles.,DISAGREEMENT,CG-B03-046,video_audio,short,The subtitles need revision.,digital_mirror_contrastive_v1,6
+DMC-0665,Note: The subtitles appear beneath the image.,STATEMENT,CG-B03-046,video_audio,short,,digital_mirror_contrastive_v1,7
+DMC-0668,Quick question: Which language are the subtitles in?,QUESTION,CG-B03-047,video_audio,short,We are discussing the subtitles.,digital_mirror_contrastive_v1,8
+DMC-0674,Not my view of the measurement.,DISAGREEMENT,CG-B03-049,science,short,The measurement should be repeated.,digital_mirror_contrastive_v1,6
+DMC-0677,Note: The measurement is expressed in grams.,STATEMENT,CG-B03-049,science,short,,digital_mirror_contrastive_v1,7
+DMC-0680,Quick question: Which instrument was used?,QUESTION,CG-B03-050,science,short,We are discussing the measurement.,digital_mirror_contrastive_v1,6
+DMC-0686,Not my view of the lecture.,DISAGREEMENT,CG-B03-052,education,short,The lecture should include an example.,digital_mirror_contrastive_v1,6
+DMC-0689,Note: The lecture lasted an hour.,STATEMENT,CG-B03-052,education,short,,digital_mirror_contrastive_v1,6
+DMC-0698,Not my view of the appointment.,DISAGREEMENT,CG-B03-055,personal_decisions,short,The later appointment suits us better.,digital_mirror_contrastive_v1,6
+DMC-0701,Note: The appointment is on Thursday.,STATEMENT,CG-B03-055,personal_decisions,short,,digital_mirror_contrastive_v1,6
+DMC-0704,At what location is the appointment scheduled?,QUESTION,CG-B03-056,personal_decisions,short,We are discussing the appointment.,digital_mirror_contrastive_v1,7
+DMC-0710,Not my view of the sculpture.,DISAGREEMENT,CG-B03-058,art_exhibitions,short,The sculpture needs more space.,digital_mirror_contrastive_v1,6
+DMC-0713,Note: The sculpture stands on a wooden base.,STATEMENT,CG-B03-058,art_exhibitions,short,,digital_mirror_contrastive_v1,8
+DMC-0716,Quick question: What material is the sculpture made of?,QUESTION,CG-B03-059,art_exhibitions,short,We are discussing the sculpture.,digital_mirror_contrastive_v1,9

@@ -1,0 +1,906 @@
+=== E06: LABEL AMBIGUITY ANALYSIS ===
+Input rows: 204,915
+Non-empty rows: 201,230
+
+======================================================================
+EXPERIMENT A: ALL DAMSL LABELS
+======================================================================
+Total rows: 201,230
+Unique texts: 127,058
+Repeated unique texts: 3,336
+Ambiguous unique texts: 1,541
+Ambiguous text percentage: 1.21%
+Ambiguous rows: 68,630
+Ambiguous row percentage: 34.11%
+Empirical text-only ceiling: 0.9090
+
+=== MOST FREQUENT AMBIGUOUS TEXTS ===
+
+------------------------------------------------------------
+Text: uh-huh.
+Total occurrences: 14375
+Different labels: 15
+  b: 13,615 (94.71%)
+  ny: 339 (2.36%)
+  aa: 278 (1.93%)
+  %: 40 (0.28%)
+  bk: 34 (0.24%)
+  fc: 30 (0.21%)
+  b^m: 17 (0.12%)
+  fo_o_fw_"_by_bc: 6 (0.04%)
+  sd: 6 (0.04%)
+  nn: 3 (0.02%)
+  bd: 2 (0.01%)
+  qy: 2 (0.01%)
+  ^h: 1 (0.01%)
+  sv: 1 (0.01%)
+  t3: 1 (0.01%)
+
+------------------------------------------------------------
+Text: yeah.
+Total occurrences: 11511
+Different labels: 16
+  b: 9,144 (79.44%)
+  aa: 1,131 (9.83%)
+  ny: 752 (6.53%)
+  %: 348 (3.02%)
+  b^m: 66 (0.57%)
+  fc: 42 (0.36%)
+  bk: 8 (0.07%)
+  fo_o_fw_"_by_bc: 7 (0.06%)
+  ba: 4 (0.03%)
+  qy: 2 (0.02%)
+  ^h: 2 (0.02%)
+  aap_am: 1 (0.01%)
+  bd: 1 (0.01%)
+  bh: 1 (0.01%)
+  na: 1 (0.01%)
+  sd: 1 (0.01%)
+
+------------------------------------------------------------
+Text: yeah,
+Total occurrences: 7454
+Different labels: 17
+  b: 3,857 (51.74%)
+  aa: 2,200 (29.51%)
+  ny: 837 (11.23%)
+  %: 366 (4.91%)
+  fc: 85 (1.14%)
+  b^m: 65 (0.87%)
+  bk: 17 (0.23%)
+  fo_o_fw_"_by_bc: 11 (0.15%)
+  ^q: 4 (0.05%)
+  ^h: 3 (0.04%)
+  qy: 2 (0.03%)
+  arp_nd: 2 (0.03%)
+  aap_am: 1 (0.01%)
+  ba: 1 (0.01%)
+  bd: 1 (0.01%)
+  sv: 1 (0.01%)
+  t3: 1 (0.01%)
+
+------------------------------------------------------------
+Text: right.
+Total occurrences: 3948
+Different labels: 16
+  b: 3,134 (79.38%)
+  aa: 666 (16.87%)
+  na: 81 (2.05%)
+  fc: 17 (0.43%)
+  ^g: 14 (0.35%)
+  %: 13 (0.33%)
+  b^m: 6 (0.15%)
+  bk: 6 (0.15%)
+  ba: 3 (0.08%)
+  qy^d: 2 (0.05%)
+  bd: 1 (0.03%)
+  ^q: 1 (0.03%)
+  fo_o_fw_"_by_bc: 1 (0.03%)
+  ny: 1 (0.03%)
+  sd: 1 (0.03%)
+  sv: 1 (0.03%)
+
+------------------------------------------------------------
+Text: oh.
+Total occurrences: 1409
+Different labels: 7
+  b: 1,203 (85.38%)
+  bk: 171 (12.14%)
+  %: 28 (1.99%)
+  ^h: 2 (0.14%)
+  ba: 2 (0.14%)
+  fc: 2 (0.14%)
+  sd: 1 (0.07%)
+
+------------------------------------------------------------
+Text: no,
+Total occurrences: 1284
+Different labels: 17
+  nn: 725 (56.46%)
+  aa: 293 (22.82%)
+  ar: 133 (10.36%)
+  b: 51 (3.97%)
+  %: 19 (1.48%)
+  fo_o_fw_"_by_bc: 16 (1.25%)
+  b^m: 10 (0.78%)
+  fc: 8 (0.62%)
+  ^h: 6 (0.47%)
+  ^q: 6 (0.47%)
+  bd: 6 (0.47%)
+  arp_nd: 4 (0.31%)
+  ba: 2 (0.16%)
+  bk: 2 (0.16%)
+  sd: 1 (0.08%)
+  t1: 1 (0.08%)
+  t3: 1 (0.08%)
+
+------------------------------------------------------------
+Text: okay.
+Total occurrences: 1207
+Different labels: 16
+  b: 405 (33.55%)
+  bk: 331 (27.42%)
+  fo_o_fw_"_by_bc: 204 (16.90%)
+  fc: 143 (11.85%)
+  aa: 68 (5.63%)
+  %: 22 (1.82%)
+  b^m: 15 (1.24%)
+  ^h: 4 (0.33%)
+  na: 4 (0.33%)
+  t3: 3 (0.25%)
+  bd: 3 (0.25%)
+  ^g: 1 (0.08%)
+  ad: 1 (0.08%)
+  oo_co_cc: 1 (0.08%)
+  sd: 1 (0.08%)
+  sv: 1 (0.08%)
+
+------------------------------------------------------------
+Text: uh-huh,
+Total occurrences: 1145
+Different labels: 8
+  b: 874 (76.33%)
+  aa: 179 (15.63%)
+  ny: 64 (5.59%)
+  fc: 15 (1.31%)
+  nn: 4 (0.35%)
+  b^m: 4 (0.35%)
+  %: 3 (0.26%)
+  bk: 2 (0.17%)
+
+------------------------------------------------------------
+Text: yes.
+Total occurrences: 1066
+Different labels: 10
+  b: 458 (42.96%)
+  aa: 315 (29.55%)
+  ny: 269 (25.23%)
+  %: 11 (1.03%)
+  fo_o_fw_"_by_bc: 5 (0.47%)
+  ba: 2 (0.19%)
+  fc: 2 (0.19%)
+  b^m: 2 (0.19%)
+  ^q: 1 (0.09%)
+  fp: 1 (0.09%)
+
+------------------------------------------------------------
+Text: right,
+Total occurrences: 943
+Different labels: 11
+  b: 453 (48.04%)
+  aa: 439 (46.55%)
+  na: 36 (3.82%)
+  bk: 4 (0.42%)
+  ba: 3 (0.32%)
+  %: 3 (0.32%)
+  ^g: 1 (0.11%)
+  ^h: 1 (0.11%)
+  fo_o_fw_"_by_bc: 1 (0.11%)
+  qy: 1 (0.11%)
+  t1: 1 (0.11%)
+
+------------------------------------------------------------
+Text: yes,
+Total occurrences: 751
+Different labels: 13
+  aa: 319 (42.48%)
+  ny: 232 (30.89%)
+  b: 163 (21.70%)
+  %: 10 (1.33%)
+  fo_o_fw_"_by_bc: 9 (1.20%)
+  fc: 9 (1.20%)
+  fp: 2 (0.27%)
+  t3: 2 (0.27%)
+  ^q: 1 (0.13%)
+  ar: 1 (0.13%)
+  bk: 1 (0.13%)
+  b^m: 1 (0.13%)
+  sv: 1 (0.13%)
+
+------------------------------------------------------------
+Text: okay,
+Total occurrences: 691
+Different labels: 15
+  b: 192 (27.79%)
+  fo_o_fw_"_by_bc: 181 (26.19%)
+  bk: 124 (17.95%)
+  fc: 102 (14.76%)
+  aa: 33 (4.78%)
+  %: 32 (4.63%)
+  b^m: 8 (1.16%)
+  ^h: 6 (0.87%)
+  ^q: 5 (0.72%)
+  na: 2 (0.29%)
+  bd: 2 (0.29%)
+  ba: 1 (0.14%)
+  bh: 1 (0.14%)
+  sv: 1 (0.14%)
+  t3: 1 (0.14%)
+
+------------------------------------------------------------
+Text: so.
+Total occurrences: 631
+Different labels: 2
+  %: 629 (99.68%)
+  fc: 2 (0.32%)
+
+------------------------------------------------------------
+Text: oh, yeah.
+Total occurrences: 626
+Different labels: 7
+  b: 421 (67.25%)
+  aa: 107 (17.09%)
+  ny: 53 (8.47%)
+  ba: 32 (5.11%)
+  bk: 9 (1.44%)
+  b^m: 3 (0.48%)
+  bh: 1 (0.16%)
+
+------------------------------------------------------------
+Text: that's right.
+Total occurrences: 610
+Different labels: 7
+  aa: 476 (78.03%)
+  ba: 90 (14.75%)
+  b: 17 (2.79%)
+  na: 13 (2.13%)
+  sd: 7 (1.15%)
+  sv: 6 (0.98%)
+  bk: 1 (0.16%)
+
+------------------------------------------------------------
+Text: no.
+Total occurrences: 610
+Different labels: 15
+  nn: 277 (45.41%)
+  aa: 212 (34.75%)
+  b: 47 (7.70%)
+  ar: 27 (4.43%)
+  b^m: 20 (3.28%)
+  fo_o_fw_"_by_bc: 8 (1.31%)
+  %: 4 (0.66%)
+  fc: 3 (0.49%)
+  ny: 3 (0.49%)
+  bd: 2 (0.33%)
+  ^q: 2 (0.33%)
+  sv: 2 (0.33%)
+  ba: 1 (0.16%)
+  bk: 1 (0.16%)
+  bf: 1 (0.16%)
+
+------------------------------------------------------------
+Text: yeah
+Total occurrences: 591
+Different labels: 6
+  b: 379 (64.13%)
+  aa: 119 (20.14%)
+  ny: 62 (10.49%)
+  %: 26 (4.40%)
+  b^m: 4 (0.68%)
+  fc: 1 (0.17%)
+
+------------------------------------------------------------
+Text: um.
+Total occurrences: 575
+Different labels: 6
+  %: 309 (53.74%)
+  b: 262 (45.57%)
+  ^h: 1 (0.17%)
+  b^m: 1 (0.17%)
+  fc: 1 (0.17%)
+  no: 1 (0.17%)
+
+------------------------------------------------------------
+Text: huh.
+Total occurrences: 567
+Different labels: 7
+  b: 411 (72.49%)
+  %: 149 (26.28%)
+  br: 3 (0.53%)
+  ^h: 1 (0.18%)
+  bk: 1 (0.18%)
+  h: 1 (0.18%)
+  no: 1 (0.18%)
+
+------------------------------------------------------------
+Text: and,
+Total occurrences: 518
+Different labels: 4
+  %: 515 (99.42%)
+  b: 1 (0.19%)
+  fc: 1 (0.19%)
+  sd: 1 (0.19%)
+
+------------------------------------------------------------
+Text: sure.
+Total occurrences: 433
+Different labels: 7
+  b: 315 (72.75%)
+  aa: 70 (16.17%)
+  ba: 23 (5.31%)
+  na: 19 (4.39%)
+  %: 3 (0.69%)
+  sd: 2 (0.46%)
+  sv: 1 (0.23%)
+
+------------------------------------------------------------
+Text: but,
+Total occurrences: 422
+Different labels: 2
+  %: 421 (99.76%)
+  fc: 1 (0.24%)
+
+------------------------------------------------------------
+Text: that's true.
+Total occurrences: 418
+Different labels: 6
+  aa: 311 (74.40%)
+  ba: 68 (16.27%)
+  sv: 35 (8.37%)
+  sd: 2 (0.48%)
+  b: 1 (0.24%)
+  fc: 1 (0.24%)
+
+------------------------------------------------------------
+Text: huh-uh.
+Total occurrences: 392
+Different labels: 6
+  b: 284 (72.45%)
+  nn: 67 (17.09%)
+  aa: 34 (8.67%)
+  fc: 4 (1.02%)
+  ny: 2 (0.51%)
+  ar: 1 (0.26%)
+
+------------------------------------------------------------
+Text: oh, okay.
+Total occurrences: 381
+Different labels: 7
+  bk: 258 (67.72%)
+  b: 110 (28.87%)
+  fc: 6 (1.57%)
+  aa: 4 (1.05%)
+  ba: 1 (0.26%)
+  bd: 1 (0.26%)
+  sd: 1 (0.26%)
+
+------------------------------------------------------------
+Text: oh, yeah,
+Total occurrences: 301
+Different labels: 11
+  b: 123 (40.86%)
+  aa: 97 (32.23%)
+  ny: 52 (17.28%)
+  ba: 15 (4.98%)
+  bk: 5 (1.66%)
+  fc: 2 (0.66%)
+  %: 2 (0.66%)
+  fo_o_fw_"_by_bc: 2 (0.66%)
+  ^q: 1 (0.33%)
+  b^m: 1 (0.33%)
+  ar: 1 (0.33%)
+
+------------------------------------------------------------
+Text: exactly.
+Total occurrences: 286
+Different labels: 5
+  aa: 257 (89.86%)
+  ba: 21 (7.34%)
+  na: 4 (1.40%)
+  b: 2 (0.70%)
+  sd: 2 (0.70%)
+
+------------------------------------------------------------
+Text: or,
+Total occurrences: 256
+Different labels: 3
+  %: 248 (96.88%)
+  qy: 6 (2.34%)
+  fc: 2 (0.78%)
+
+------------------------------------------------------------
+Text: i don't know,
+Total occurrences: 245
+Different labels: 7
+  h: 206 (84.08%)
+  no: 20 (8.16%)
+  sd: 14 (5.71%)
+  %: 2 (0.82%)
+  aap_am: 1 (0.41%)
+  ar: 1 (0.41%)
+  fo_o_fw_"_by_bc: 1 (0.41%)
+
+------------------------------------------------------------
+Text: wow.
+Total occurrences: 228
+Different labels: 2
+  ba: 224 (98.25%)
+  b: 4 (1.75%)
+
+=== AMBIGUITY BY LABEL ===
+%                    total= 15,670 ambiguous=  5,278 rate= 33.68%
+^2                   total=    730 ambiguous=     21 rate=  2.88%
+^g                   total=     93 ambiguous=     73 rate= 78.49%
+^h                   total=    557 ambiguous=    146 rate= 26.21%
+^q                   total=    986 ambiguous=     43 rate=  4.36%
+aa                   total= 11,157 ambiguous=  9,893 rate= 88.67%
+aap_am               total=    105 ambiguous=     38 rate= 36.19%
+ad                   total=    752 ambiguous=     14 rate=  1.86%
+ar                   total=    345 ambiguous=    247 rate= 71.59%
+arp_nd               total=    207 ambiguous=     28 rate= 13.53%
+b                    total= 38,378 ambiguous= 37,969 rate= 98.93%
+b^m                  total=    689 ambiguous=    311 rate= 45.14%
+ba                   total=  4,797 ambiguous=  2,482 rate= 51.74%
+bd                   total=    104 ambiguous=     67 rate= 64.42%
+bf                   total=    961 ambiguous=     22 rate=  2.29%
+bh                   total=  1,057 ambiguous=    647 rate= 61.21%
+bk                   total=  1,309 ambiguous=  1,248 rate= 95.34%
+br                   total=    299 ambiguous=    130 rate= 43.48%
+fa                   total=     79 ambiguous=     17 rate= 21.52%
+fc                   total=  2,584 ambiguous=  1,016 rate= 39.32%
+fo_o_fw_"_by_bc      total=  1,189 ambiguous=    697 rate= 58.62%
+fp                   total=    225 ambiguous=     90 rate= 40.00%
+ft                   total=     78 ambiguous=     51 rate= 65.38%
+h                    total=  1,227 ambiguous=    650 rate= 52.97%
+na                   total=    851 ambiguous=    345 rate= 40.54%
+ng                   total=    303 ambiguous=     73 rate= 24.09%
+nn                   total=  1,378 ambiguous=  1,332 rate= 96.66%
+no                   total=    286 ambiguous=    114 rate= 39.86%
+ny                   total=  3,040 ambiguous=  2,979 rate= 97.99%
+oo_co_cc             total=    110 ambiguous=      5 rate=  4.55%
+qh                   total=    578 ambiguous=     34 rate=  5.88%
+qo                   total=    657 ambiguous=     19 rate=  2.89%
+qrr                  total=    210 ambiguous=      4 rate=  1.90%
+qw                   total=  1,990 ambiguous=     69 rate=  3.47%
+qw^d                 total=     80 ambiguous=      4 rate=  5.00%
+qy                   total=  4,759 ambiguous=    250 rate=  5.25%
+qy^d                 total=  1,217 ambiguous=     33 rate=  2.71%
+sd                   total= 75,402 ambiguous=  1,492 rate=  1.98%
+sv                   total= 26,526 ambiguous=    636 rate=  2.40%
+t1                   total=    103 ambiguous=      7 rate=  6.80%
+t3                   total=    114 ambiguous=     26 rate= 22.81%
+x                    total=     48 ambiguous=     30 rate= 62.50%
+
+=== LABEL OVERLAP ===
+sd           <-> sv           195 shared texts
+aa           <-> sd           175 shared texts
+aa           <-> ba           165 shared texts
+%            <-> sd           154 shared texts
+aa           <-> b            139 shared texts
+%            <-> b            136 shared texts
+ba           <-> sv           126 shared texts
+aa           <-> sv           125 shared texts
+ba           <-> sd           106 shared texts
+b            <-> ba           95 shared texts
+%            <-> aa           93 shared texts
+b            <-> fo_o_fw_"_by_bc 67 shared texts
+b            <-> ny           66 shared texts
+na           <-> sd           64 shared texts
+aa           <-> na           63 shared texts
+aa           <-> ny           61 shared texts
+%            <-> fo_o_fw_"_by_bc 60 shared texts
+aa           <-> fc           58 shared texts
+b            <-> fc           57 shared texts
+%            <-> sv           55 shared texts
+b^m          <-> sd           55 shared texts
+b            <-> bk           53 shared texts
+aa           <-> fo_o_fw_"_by_bc 49 shared texts
+ba           <-> fc           46 shared texts
+bh           <-> qy           46 shared texts
+%            <-> ny           42 shared texts
+h            <-> sd           42 shared texts
+%            <-> ba           39 shared texts
+%            <-> fc           39 shared texts
+b            <-> sd           39 shared texts
+
+======================================================================
+EXPERIMENT B: SELECTED DAMSL LABELS
+======================================================================
+Total rows: 176,503
+Unique texts: 114,643
+Repeated unique texts: 2,193
+Ambiguous unique texts: 1,046
+Ambiguous text percentage: 0.91%
+Ambiguous rows: 59,376
+Ambiguous row percentage: 33.64%
+Empirical text-only ceiling: 0.9219
+
+=== MOST FREQUENT AMBIGUOUS TEXTS ===
+
+------------------------------------------------------------
+Text: uh-huh.
+Total occurrences: 14274
+Different labels: 8
+  b: 13,615 (95.38%)
+  ny: 339 (2.37%)
+  aa: 278 (1.95%)
+  fc: 30 (0.21%)
+  sd: 6 (0.04%)
+  nn: 3 (0.02%)
+  qy: 2 (0.01%)
+  sv: 1 (0.01%)
+
+------------------------------------------------------------
+Text: yeah.
+Total occurrences: 11079
+Different labels: 10
+  b: 9,144 (82.53%)
+  aa: 1,131 (10.21%)
+  ny: 752 (6.79%)
+  fc: 42 (0.38%)
+  ba: 4 (0.04%)
+  qy: 2 (0.02%)
+  aap_am: 1 (0.01%)
+  bh: 1 (0.01%)
+  na: 1 (0.01%)
+  sd: 1 (0.01%)
+
+------------------------------------------------------------
+Text: yeah,
+Total occurrences: 6986
+Different labels: 9
+  b: 3,857 (55.21%)
+  aa: 2,200 (31.49%)
+  ny: 837 (11.98%)
+  fc: 85 (1.22%)
+  arp_nd: 2 (0.03%)
+  qy: 2 (0.03%)
+  aap_am: 1 (0.01%)
+  ba: 1 (0.01%)
+  sv: 1 (0.01%)
+
+------------------------------------------------------------
+Text: right.
+Total occurrences: 3906
+Different labels: 9
+  b: 3,134 (80.24%)
+  aa: 666 (17.05%)
+  na: 81 (2.07%)
+  fc: 17 (0.44%)
+  ba: 3 (0.08%)
+  qy^d: 2 (0.05%)
+  ny: 1 (0.03%)
+  sd: 1 (0.03%)
+  sv: 1 (0.03%)
+
+------------------------------------------------------------
+Text: no,
+Total occurrences: 1217
+Different labels: 8
+  nn: 725 (59.57%)
+  aa: 293 (24.08%)
+  ar: 133 (10.93%)
+  b: 51 (4.19%)
+  fc: 8 (0.66%)
+  arp_nd: 4 (0.33%)
+  ba: 2 (0.16%)
+  sd: 1 (0.08%)
+
+------------------------------------------------------------
+Text: oh.
+Total occurrences: 1208
+Different labels: 4
+  b: 1,203 (99.59%)
+  ba: 2 (0.17%)
+  fc: 2 (0.17%)
+  sd: 1 (0.08%)
+
+------------------------------------------------------------
+Text: uh-huh,
+Total occurrences: 1136
+Different labels: 5
+  b: 874 (76.94%)
+  aa: 179 (15.76%)
+  ny: 64 (5.63%)
+  fc: 15 (1.32%)
+  nn: 4 (0.35%)
+
+------------------------------------------------------------
+Text: yes.
+Total occurrences: 1047
+Different labels: 6
+  b: 458 (43.74%)
+  aa: 315 (30.09%)
+  ny: 269 (25.69%)
+  ba: 2 (0.19%)
+  fc: 2 (0.19%)
+  fp: 1 (0.10%)
+
+------------------------------------------------------------
+Text: right,
+Total occurrences: 932
+Different labels: 5
+  b: 453 (48.61%)
+  aa: 439 (47.10%)
+  na: 36 (3.86%)
+  ba: 3 (0.32%)
+  qy: 1 (0.11%)
+
+------------------------------------------------------------
+Text: yes,
+Total occurrences: 727
+Different labels: 7
+  aa: 319 (43.88%)
+  ny: 232 (31.91%)
+  b: 163 (22.42%)
+  fc: 9 (1.24%)
+  fp: 2 (0.28%)
+  ar: 1 (0.14%)
+  sv: 1 (0.14%)
+
+------------------------------------------------------------
+Text: okay.
+Total occurrences: 622
+Different labels: 6
+  b: 405 (65.11%)
+  fc: 143 (22.99%)
+  aa: 68 (10.93%)
+  na: 4 (0.64%)
+  sd: 1 (0.16%)
+  sv: 1 (0.16%)
+
+------------------------------------------------------------
+Text: oh, yeah.
+Total occurrences: 614
+Different labels: 5
+  b: 421 (68.57%)
+  aa: 107 (17.43%)
+  ny: 53 (8.63%)
+  ba: 32 (5.21%)
+  bh: 1 (0.16%)
+
+------------------------------------------------------------
+Text: that's right.
+Total occurrences: 609
+Different labels: 6
+  aa: 476 (78.16%)
+  ba: 90 (14.78%)
+  b: 17 (2.79%)
+  na: 13 (2.13%)
+  sd: 7 (1.15%)
+  sv: 6 (0.99%)
+
+------------------------------------------------------------
+Text: no.
+Total occurrences: 572
+Different labels: 8
+  nn: 277 (48.43%)
+  aa: 212 (37.06%)
+  b: 47 (8.22%)
+  ar: 27 (4.72%)
+  ny: 3 (0.52%)
+  fc: 3 (0.52%)
+  sv: 2 (0.35%)
+  ba: 1 (0.17%)
+
+------------------------------------------------------------
+Text: yeah
+Total occurrences: 561
+Different labels: 4
+  b: 379 (67.56%)
+  aa: 119 (21.21%)
+  ny: 62 (11.05%)
+  fc: 1 (0.18%)
+
+------------------------------------------------------------
+Text: sure.
+Total occurrences: 430
+Different labels: 6
+  b: 315 (73.26%)
+  aa: 70 (16.28%)
+  ba: 23 (5.35%)
+  na: 19 (4.42%)
+  sd: 2 (0.47%)
+  sv: 1 (0.23%)
+
+------------------------------------------------------------
+Text: that's true.
+Total occurrences: 418
+Different labels: 6
+  aa: 311 (74.40%)
+  ba: 68 (16.27%)
+  sv: 35 (8.37%)
+  sd: 2 (0.48%)
+  b: 1 (0.24%)
+  fc: 1 (0.24%)
+
+------------------------------------------------------------
+Text: huh.
+Total occurrences: 415
+Different labels: 3
+  b: 411 (99.04%)
+  br: 3 (0.72%)
+  h: 1 (0.24%)
+
+------------------------------------------------------------
+Text: huh-uh.
+Total occurrences: 392
+Different labels: 6
+  b: 284 (72.45%)
+  nn: 67 (17.09%)
+  aa: 34 (8.67%)
+  fc: 4 (1.02%)
+  ny: 2 (0.51%)
+  ar: 1 (0.26%)
+
+------------------------------------------------------------
+Text: okay,
+Total occurrences: 332
+Different labels: 7
+  b: 192 (57.83%)
+  fc: 102 (30.72%)
+  aa: 33 (9.94%)
+  na: 2 (0.60%)
+  ba: 1 (0.30%)
+  bh: 1 (0.30%)
+  sv: 1 (0.30%)
+
+------------------------------------------------------------
+Text: oh, yeah,
+Total occurrences: 290
+Different labels: 6
+  b: 123 (42.41%)
+  aa: 97 (33.45%)
+  ny: 52 (17.93%)
+  ba: 15 (5.17%)
+  fc: 2 (0.69%)
+  ar: 1 (0.34%)
+
+------------------------------------------------------------
+Text: exactly.
+Total occurrences: 286
+Different labels: 5
+  aa: 257 (89.86%)
+  ba: 21 (7.34%)
+  na: 4 (1.40%)
+  b: 2 (0.70%)
+  sd: 2 (0.70%)
+
+------------------------------------------------------------
+Text: um.
+Total occurrences: 263
+Different labels: 2
+  b: 262 (99.62%)
+  fc: 1 (0.38%)
+
+------------------------------------------------------------
+Text: wow.
+Total occurrences: 228
+Different labels: 2
+  ba: 224 (98.25%)
+  b: 4 (1.75%)
+
+------------------------------------------------------------
+Text: i don't know,
+Total occurrences: 222
+Different labels: 4
+  h: 206 (92.79%)
+  sd: 14 (6.31%)
+  ar: 1 (0.45%)
+  aap_am: 1 (0.45%)
+
+------------------------------------------------------------
+Text: i know.
+Total occurrences: 222
+Different labels: 5
+  aa: 136 (61.26%)
+  ba: 45 (20.27%)
+  sd: 32 (14.41%)
+  b: 7 (3.15%)
+  sv: 2 (0.90%)
+
+------------------------------------------------------------
+Text: really.
+Total occurrences: 212
+Different labels: 6
+  b: 152 (71.70%)
+  bh: 26 (12.26%)
+  aa: 23 (10.85%)
+  ba: 9 (4.25%)
+  fc: 1 (0.47%)
+  na: 1 (0.47%)
+
+------------------------------------------------------------
+Text: i don't know.
+Total occurrences: 175
+Different labels: 5
+  h: 150 (85.71%)
+  sd: 19 (10.86%)
+  aap_am: 3 (1.71%)
+  b: 2 (1.14%)
+  aa: 1 (0.57%)
+
+------------------------------------------------------------
+Text: really?
+Total occurrences: 175
+Different labels: 3
+  bh: 168 (96.00%)
+  qy: 6 (3.43%)
+  fc: 1 (0.57%)
+
+------------------------------------------------------------
+Text: oh, really.
+Total occurrences: 145
+Different labels: 4
+  b: 96 (66.21%)
+  bh: 47 (32.41%)
+  ba: 1 (0.69%)
+  fc: 1 (0.69%)
+
+=== AMBIGUITY BY LABEL ===
+aa                   total= 11,157 ambiguous=  9,866 rate= 88.43%
+aap_am               total=    105 ambiguous=     36 rate= 34.29%
+ar                   total=    345 ambiguous=    244 rate= 70.72%
+arp_nd               total=    207 ambiguous=     26 rate= 12.56%
+b                    total= 38,378 ambiguous= 37,753 rate= 98.37%
+ba                   total=  4,797 ambiguous=  2,360 rate= 49.20%
+bh                   total=  1,057 ambiguous=    621 rate= 58.75%
+br                   total=    299 ambiguous=    119 rate= 39.80%
+fc                   total=  2,584 ambiguous=    821 rate= 31.77%
+fp                   total=    225 ambiguous=     44 rate= 19.56%
+ft                   total=     78 ambiguous=     51 rate= 65.38%
+h                    total=  1,227 ambiguous=    605 rate= 49.31%
+na                   total=    851 ambiguous=    339 rate= 39.84%
+ng                   total=    303 ambiguous=     68 rate= 22.44%
+nn                   total=  1,378 ambiguous=  1,308 rate= 94.92%
+ny                   total=  3,040 ambiguous=  2,976 rate= 97.89%
+qh                   total=    578 ambiguous=     32 rate=  5.54%
+qw                   total=  1,990 ambiguous=     47 rate=  2.36%
+qy                   total=  4,759 ambiguous=    219 rate=  4.60%
+qy^d                 total=  1,217 ambiguous=     32 rate=  2.63%
+sd                   total= 75,402 ambiguous=  1,209 rate=  1.60%
+sv                   total= 26,526 ambiguous=    600 rate=  2.26%
+
+=== LABEL OVERLAP ===
+sd           <-> sv           195 shared texts
+aa           <-> sd           175 shared texts
+aa           <-> ba           165 shared texts
+aa           <-> b            139 shared texts
+ba           <-> sv           126 shared texts
+aa           <-> sv           125 shared texts
+ba           <-> sd           106 shared texts
+b            <-> ba           95 shared texts
+b            <-> ny           66 shared texts
+na           <-> sd           64 shared texts
+aa           <-> na           63 shared texts
+aa           <-> ny           61 shared texts
+aa           <-> fc           58 shared texts
+b            <-> fc           57 shared texts
+ba           <-> fc           46 shared texts
+bh           <-> qy           46 shared texts
+h            <-> sd           42 shared texts
+b            <-> sd           39 shared texts
+fc           <-> sd           39 shared texts
+na           <-> sv           37 shared texts
+ng           <-> sd           33 shared texts
+ba           <-> na           32 shared texts
+b            <-> na           28 shared texts
+aa           <-> nn           22 shared texts
+b            <-> sv           21 shared texts
+fc           <-> sv           21 shared texts
+ar           <-> nn           20 shared texts
+fc           <-> ny           19 shared texts
+aa           <-> ar           18 shared texts
+b            <-> bh           18 shared texts
+
+=== ANALYSIS COMPLETE ===

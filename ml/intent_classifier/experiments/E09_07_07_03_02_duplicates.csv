@@ -1,0 +1,3 @@
+id,text,intent,context,scenario,style,context_required,source
+NST-0213,Not necessarily.,DISAGREEMENT,More information always helps.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+NST-0273,Not necessarily.,UNCERTAINTY,Does that imply the report is false?,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1

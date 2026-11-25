@@ -1,0 +1,241 @@
+model_text,expected,baseline_prediction,contrastive_prediction,status
+hello there how's everything going,GREETING,QUESTION,QUESTION,BOTH_INCORRECT
+it's lovely to meet you today,GREETING,GREETING,GREETING,BOTH_CORRECT
+greetings nice to be here,GREETING,GREETING,GREETING,BOTH_CORRECT
+hope you're having a pleasant morning,GREETING,QUESTION,QUESTION,BOTH_INCORRECT
+a warm hello to you,GREETING,GREETING,GREETING,BOTH_CORRECT
+howdy,GREETING,QUESTION,QUESTION,BOTH_INCORRECT
+greetings to you,GREETING,GREETING,GREETING,BOTH_CORRECT
+lovely morning,GREETING,GREETING,GREETING,BOTH_CORRECT
+hello good morning,GREETING,GREETING,GREETING,BOTH_CORRECT
+hiya there,GREETING,GREETING,GREETING,BOTH_CORRECT
+hello interactive mirror nice to meet you,GREETING,GREETING,GREETING,BOTH_CORRECT
+hi is this where we begin,GREETING,GREETING,QUESTION,REGRESSED
+greetings to the virtual host,GREETING,GREETING,GREETING,BOTH_CORRECT
+hello i'm here for the experience,GREETING,GREETING,GREETING,BOTH_CORRECT
+hi there interactive mirror,GREETING,GREETING,GREETING,BOTH_CORRECT
+before we begin i'd like to say hello,GREETING,GREETING,STATEMENT,REGRESSED
+what a pleasure it is to meet you today,GREETING,GREETING,GREETING,BOTH_CORRECT
+hello to whoever is guiding this experience,GREETING,GREETING,GREETING,BOTH_CORRECT
+allow me to introduce myself and say hello,GREETING,STATEMENT,STATEMENT,BOTH_INCORRECT
+a very good afternoon to everyone here,GREETING,GREETING,GREETING,BOTH_CORRECT
+i'll be heading off shortly,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+enjoy the rest of your afternoon,GOODBYE,QUESTION,QUESTION,BOTH_INCORRECT
+i hope our paths cross again,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+i must be on my way,GOODBYE,STATEMENT,STATEMENT,BOTH_INCORRECT
+wishing you a pleasant evening,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+farewell for now,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+goodbye for today,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+cheerio,GOODBYE,QUESTION,QUESTION,BOTH_INCORRECT
+bye for today,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+until tomorrow,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+that's the end of my visit farewell,GOODBYE,STATEMENT,STATEMENT,BOTH_INCORRECT
+i'm leaving the exhibition now bye,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+goodbye virtual host,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+i'll finish my session here farewell,GOODBYE,STATEMENT,STATEMENT,BOTH_INCORRECT
+see you on my next visit to the mirror,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+i've enjoyed our conversation but it's time to leave,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+before i head out let me wish you well,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+i'll leave you to your next visitor now goodbye,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+although i'd enjoy staying longer i must say farewell,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+our conversation has come to an end so goodbye for now,GOODBYE,GOODBYE,GOODBYE,BOTH_CORRECT
+i'm grateful for your assistance,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+that was very kind of you,GRATITUDE,STATEMENT,STATEMENT,BOTH_INCORRECT
+you've been a great help thanks,GRATITUDE,QUESTION,QUESTION,BOTH_INCORRECT
+your help means a great deal to me,GRATITUDE,STATEMENT,STATEMENT,BOTH_INCORRECT
+i'm thankful for your time,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+really appreciate that,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+thanks for everything,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+thanks kindly,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+my thanks,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+very grateful,GRATITUDE,STATEMENT,STATEMENT,BOTH_INCORRECT
+i'm grateful for the evidence you provided,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+thanks for displaying the original report,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+i appreciate the explanation of that headline,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+thank you for guiding me through the exhibit,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+your comparison of the sources was helpful thanks,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+i want to express my gratitude for the time you spent helping me,GRATITUDE,STATEMENT,STATEMENT,BOTH_INCORRECT
+your willingness to explain the details is much appreciated,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+i'm genuinely thankful that you took the trouble to clarify this,GRATITUDE,STATEMENT,STATEMENT,BOTH_INCORRECT
+please accept my thanks for making the information accessible,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+i appreciate how patiently you've answered my questions,GRATITUDE,GRATITUDE,GRATITUDE,BOTH_CORRECT
+you've made a valid point,AGREEMENT,QUESTION,QUESTION,BOTH_INCORRECT
+that's precisely my view,AGREEMENT,AGREEMENT,AGREEMENT,BOTH_CORRECT
+your reasoning makes sense to me,AGREEMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+we're of the same opinion,AGREEMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i share your assessment,AGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_INCORRECT
+spot on,AGREEMENT,QUESTION,QUESTION,BOTH_INCORRECT
+quite right,AGREEMENT,AGREEMENT,AGREEMENT,BOTH_CORRECT
+agreed entirely,AGREEMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+my thoughts exactly,AGREEMENT,AGREEMENT,AGREEMENT,BOTH_CORRECT
+true indeed,AGREEMENT,AGREEMENT,AGREEMENT,BOTH_CORRECT
+your assessment of that headline matches mine,AGREEMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i share your conclusion about the evidence,AGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_INCORRECT
+i agree that the clip is misleading,AGREEMENT,AGREEMENT,AGREEMENT,BOTH_CORRECT
+your interpretation of the report seems correct to me,AGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_INCORRECT
+we reach the same conclusion about this claim,AGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_INCORRECT
+having considered your reasoning i reach the same conclusion,AGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_INCORRECT
+on that particular issue our opinions are entirely aligned,AGREEMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+the argument you've presented is consistent with my own view,AGREEMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i endorse your conclusion because the evidence supports it,AGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_INCORRECT
+although i initially hesitated i now agree with your assessment,AGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_INCORRECT
+that's not how i see things,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+your conclusion seems mistaken to me,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+my view differs considerably from yours,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+i cannot endorse that argument,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+that reasoning doesn't hold up,DISAGREEMENT,QUESTION,QUESTION,BOTH_INCORRECT
+i object,DISAGREEMENT,AGREEMENT,STATEMENT,BOTH_INCORRECT
+not so,DISAGREEMENT,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_INCORRECT
+quite the opposite,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+that's mistaken,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+i differ,DISAGREEMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i reject your interpretation of the headline,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+your assessment of this clip is incorrect,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+i dispute your conclusion about the source,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+i disagree with the way you've interpreted the evidence,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+the claim you just endorsed is wrong in my view,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+even after considering your argument i cannot accept your conclusion,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+while i respect your reasoning i reach the opposite conclusion,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+the interpretation you've offered conflicts with my own assessment,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+i reject that explanation because its central premise is mistaken,DISAGREEMENT,DISAGREEMENT,DISAGREEMENT,BOTH_CORRECT
+despite the points you've raised i remain opposed to your conclusion,DISAGREEMENT,QUESTION,QUESTION,BOTH_INCORRECT
+i'm undecided about this,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+it's difficult for me to tell,UNCERTAINTY,STATEMENT,STATEMENT,BOTH_INCORRECT
+i haven't formed an opinion yet,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+i could be mistaken about it,UNCERTAINTY,DISAGREEMENT,DISAGREEMENT,BOTH_INCORRECT
+i'm torn between the possibilities,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+possibly so,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+hard to tell,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+undecided,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+difficult to judge,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+not definite,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+i haven't decided whether this headline is credible,UNCERTAINTY,STATEMENT,STATEMENT,BOTH_INCORRECT
+i'm uncertain about the reliability of that clip,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+the evidence leaves me undecided,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+i can't tell which account is accurate,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+i'm unsure how to interpret this report,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+there are several plausible explanations and i cannot choose between them,UNCERTAINTY,STATEMENT,STATEMENT,BOTH_INCORRECT
+i would need more information before forming a definite opinion,UNCERTAINTY,UNCERTAINTY,UNCERTAINTY,BOTH_CORRECT
+although both accounts sound plausible i remain uncertain,UNCERTAINTY,STATEMENT,STATEMENT,BOTH_INCORRECT
+i'm hesitant to draw a conclusion because the details are incomplete,UNCERTAINTY,STATEMENT,STATEMENT,BOTH_INCORRECT
+at this point i cannot confidently determine which interpretation is correct,UNCERTAINTY,DISAGREEMENT,DISAGREEMENT,BOTH_INCORRECT
+i've heard what you've said,ACKNOWLEDGMENT,QUESTION,QUESTION,BOTH_INCORRECT
+i've followed your explanation so far,ACKNOWLEDGMENT,ACKNOWLEDGMENT,ACKNOWLEDGMENT,BOTH_CORRECT
+i've taken note of that,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+your message has been received,ACKNOWLEDGMENT,QUESTION,QUESTION,BOTH_INCORRECT
+i'm following the discussion,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+understood so far,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+duly noted,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+information received,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i'm following,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+heard you,ACKNOWLEDGMENT,QUESTION,QUESTION,BOTH_INCORRECT
+i've noted the date shown on the screen,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i've registered the information about the source,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i follow your description of the verification process,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i've heard your explanation of the video,ACKNOWLEDGMENT,ACKNOWLEDGMENT,ACKNOWLEDGMENT,BOTH_CORRECT
+i've taken in the details you've displayed,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i have registered the information you provided without forming a judgment,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i follow the sequence of events you've just described,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i've taken note of the distinction you made between the two reports,ACKNOWLEDGMENT,STATEMENT,STATEMENT,BOTH_INCORRECT
+i understand the procedure you've outlined for this session,ACKNOWLEDGMENT,QUESTION,QUESTION,BOTH_INCORRECT
+i've heard your account and am following what you're telling me,ACKNOWLEDGMENT,QUESTION,QUESTION,BOTH_INCORRECT
+yes that would suit me,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i have already done that,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i'm available for that,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i'd be happy to,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes that is what i requested,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i shall,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+sure can,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+i certainly can,AFFIRMATIVE_ANSWER,AGREEMENT,AGREEMENT,BOTH_INCORRECT
+yes i have,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i will,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i'd like to view the original footage,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i'm ready for the next claim,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i've watched the entire clip,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes you may display the evidence,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i want to continue this session,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i would be willing to answer another question about the report,AFFIRMATIVE_ANSWER,STATEMENT,STATEMENT,BOTH_INCORRECT
+yes i have previously encountered the article you're asking about,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i'd like you to proceed with the comparison you offered,AFFIRMATIVE_ANSWER,QUESTION,QUESTION,BOTH_INCORRECT
+yes i can confirm that i've finished viewing the material,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+yes i would prefer to examine the original source first,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,BOTH_CORRECT
+no that wouldn't suit me,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i haven't done that yet,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i'm unavailable for that,NEGATIVE_ANSWER,STATEMENT,STATEMENT,BOTH_INCORRECT
+no i'd rather not,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no that isn't what i requested,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no chance,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+i cannot,NEGATIVE_ANSWER,UNCERTAINTY,UNCERTAINTY,BOTH_INCORRECT
+no i haven't,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i won't,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no not today,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i don't want to watch another clip,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i haven't encountered this report before,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i'm not ready to continue,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i didn't see the original footage,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i would prefer not to answer that question,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i would not like to proceed to another example at this time,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i haven't previously read the article you're asking about,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i don't wish to take part in the optional recording,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+no i wasn't able to view the entire video before responding,NEGATIVE_ANSWER,DISAGREEMENT,DISAGREEMENT,BOTH_INCORRECT
+no i would prefer not to provide the additional information requested,NEGATIVE_ANSWER,NEGATIVE_ANSWER,NEGATIVE_ANSWER,BOTH_CORRECT
+when did that happen,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+who was involved in the event,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+what caused the change,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+how long did the process take,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+which option costs less,QUESTION,STATEMENT,STATEMENT,BOTH_INCORRECT
+who reported it,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+when exactly,QUESTION,AGREEMENT,AGREEMENT,BOTH_INCORRECT
+which country,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+how many participants,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+what happened,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+which organization verified this footage,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+where can i access the original recording,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+when was the source document released,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+what evidence supports the reported figure,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+who funded the study mentioned in the clip,QUESTION,STATEMENT,STATEMENT,BOTH_INCORRECT
+what independent sources have corroborated the account presented in the video,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+how was the sample selected for the study described in this report,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+which records establish the date on which the event occurred,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+what methods were used to verify the authenticity of the recording,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+who was responsible for collecting the statistics quoted in the article,QUESTION,QUESTION,QUESTION,BOTH_CORRECT
+would you mind saying that once more,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+which part are you referring to,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+i'm unclear about your last remark,CLARIFICATION,STATEMENT,STATEMENT,BOTH_INCORRECT
+could you put that in simpler words,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+i missed the last few words you said,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+say again,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+come again,CLARIFICATION,GOODBYE,GOODBYE,BOTH_INCORRECT
+meaning what,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+which part exactly,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+repeat that please,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+could you explain what you mean by verified,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+i missed the name of the source could you repeat it,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+what does that term on the screen mean,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+could you rephrase the claim you just displayed,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+i'm unclear about the distinction you just made between the reports,CLARIFICATION,STATEMENT,STATEMENT,BOTH_INCORRECT
+when you used that expression earlier what exactly were you referring to,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+could you restate your previous explanation using less technical language,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+i couldn't follow the final part of your explanation could you go over it again,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+i'm not clear whether your last remark referred to the clip or the article,CLARIFICATION,STATEMENT,STATEMENT,BOTH_INCORRECT
+would you clarify the meaning of the phrase you used in your previous response,CLARIFICATION,CLARIFICATION,CLARIFICATION,BOTH_CORRECT
+i usually read the paper over breakfast,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+my neighbour works at a library,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+the meeting ended before noon,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+i moved here three years ago,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+the room has two large windows,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+it's raining,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+i'm seated,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+the screen flickers,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+it's noon,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+i'm visiting,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+the video contains two interviews,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+the headline appears above the photograph,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+i watched a documentary about this subject last month,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+the report includes a chart with five columns,STATEMENT,QUESTION,QUESTION,BOTH_INCORRECT
+the display shows the publication date,STATEMENT,QUESTION,QUESTION,BOTH_INCORRECT
+the article describes a series of events that occurred over several months,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+i first encountered this topic during a lecture at university,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+the recording begins with an introduction followed by an interview,STATEMENT,QUESTION,QUESTION,BOTH_INCORRECT
+the document contains a list of references at the end of the final section,STATEMENT,STATEMENT,STATEMENT,BOTH_CORRECT
+several newspapers covered the announcement on the following morning,STATEMENT,QUESTION,QUESTION,BOTH_INCORRECT

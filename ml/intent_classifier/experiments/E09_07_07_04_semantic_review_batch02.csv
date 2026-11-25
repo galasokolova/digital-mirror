@@ -1,0 +1,51 @@
+review_id,text,context,reviewed_intent,naturalness,context_required,review_status,notes,intent_without_context,intent_with_context
+REV-0051,I left it at home.,Did you bring your notebook?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Indirect negative answer: notebook left at home.,STATEMENT,NEGATIVE_ANSWER
+REV-0052,I don't buy the argument that popularity equals quality.,The most popular film must be the best.,DISAGREEMENT,NATURAL,NO,ACCEPT,Explicit rejection of argument.,DISAGREEMENT,DISAGREEMENT
+REV-0053,They aren't.,Are your friends coming?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Elliptical denial of attendance.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0054,I can see several possibilities without knowing which fits.,Which explanation is correct?,UNCERTAINTY,NATURAL,NO,ACCEPT,Explicit uncertainty among alternatives.,UNCERTAINTY,UNCERTAINTY
+REV-0055,I can get behind that.,We should compare the two accounts.,AGREEMENT,NATURAL,NO,ACCEPT,Endorses proposal.,AGREEMENT,AGREEMENT
+REV-0056,Far from it.,The discussion was pointless.,DISAGREEMENT,NATURAL,YES,ACCEPT,Rejects preceding assessment.,AMBIGUOUS,DISAGREEMENT
+REV-0057,It isn't.,Is the screen on?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Elliptical negative reply.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0058,I might feel differently after seeing the recording.,Do you have a firm opinion yet?,UNCERTAINTY,NATURAL,NO,REVISE,Tentative opinion; no firm commitment.,UNCERTAINTY,UNCERTAINTY
+REV-0059,Have a lovely evening.,,GOODBYE,NATURAL,NO,ACCEPT,Conventional farewell.,GOODBYE,GOODBYE
+REV-0060,We went there yesterday.,Have you visited the gallery?,AFFIRMATIVE_ANSWER,NATURAL,YES,ACCEPT,Visit confirms prior attendance.,STATEMENT,AFFIRMATIVE_ANSWER
+REV-0061,I hear you.,The instructions were difficult to read.,ACKNOWLEDGMENT,NATURAL,YES,ACCEPT,Acknowledges concern; may also signal agreement.,AMBIGUOUS,ACKNOWLEDGMENT
+REV-0062,The screen froze.,,STATEMENT,NATURAL,NO,ACCEPT,Reports technical event.,STATEMENT,STATEMENT
+REV-0063,"Thanks, friend.",,GRATITUDE,NATURAL,NO,ACCEPT,Expresses thanks.,GRATITUDE,GRATITUDE
+REV-0064,"Yes, I saw it on the news yesterday.",Have you seen this story before?,AFFIRMATIVE_ANSWER,NATURAL,NO,ACCEPT,Explicit positive answer.,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER
+REV-0065,How so?,The comparison is misleading.,CLARIFICATION,NATURAL,YES,ACCEPT,Requests elaboration of preceding claim.,AMBIGUOUS,CLARIFICATION
+REV-0066,That matches my own impression.,The audience seemed confused.,AGREEMENT,NATURAL,NO,ACCEPT,Expresses shared impression.,AGREEMENT,AGREEMENT
+REV-0067,Bye bye!,,GOODBYE,NATURAL,NO,ACCEPT,Conventional farewell.,GOODBYE,GOODBYE
+REV-0068,A few times.,Have you used this website before?,AFFIRMATIVE_ANSWER,NATURAL,YES,ACCEPT,Frequency implies positive answer.,AMBIGUOUS,AFFIRMATIVE_ANSWER
+REV-0069,"Thanks, seriously.",,GRATITUDE,NATURAL,NO,ACCEPT,Emphatic thanks.,GRATITUDE,GRATITUDE
+REV-0070,"A typo, you mean?",There is an error in the caption.,CLARIFICATION,NATURAL,NO,ACCEPT,Checks intended meaning of error.,CLARIFICATION,CLARIFICATION
+REV-0071,I've been working on a painting all week.,,STATEMENT,NATURAL,NO,ACCEPT,Reports ongoing activity.,STATEMENT,STATEMENT
+REV-0072,We moved here last summer.,,STATEMENT,NATURAL,NO,ACCEPT,Reports past event.,STATEMENT,STATEMENT
+REV-0073,The recording lasts three minutes.,,STATEMENT,NATURAL,NO,ACCEPT,Reports duration.,STATEMENT,STATEMENT
+REV-0074,My phone died.,,STATEMENT,NATURAL,NO,ACCEPT,Reports phone failure.,STATEMENT,STATEMENT
+REV-0075,I see the distinction.,The estimate is not a measurement.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Signals understanding of distinction.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0076,How old is this recording?,,QUESTION,NATURAL,NO,ACCEPT,Requests recording age.,QUESTION,QUESTION
+REV-0077,The link won't open.,Can you access the link?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Inability to open link implies negative answer.,STATEMENT,NEGATIVE_ANSWER
+REV-0078,Wrong conclusion.,The figures prove the policy worked.,DISAGREEMENT,NATURAL,NO,ACCEPT,Rejects inference.,DISAGREEMENT,DISAGREEMENT
+REV-0079,Hard to tell.,Does the recording look authentic?,UNCERTAINTY,NATURAL,NO,ACCEPT,Expresses uncertainty.,UNCERTAINTY,UNCERTAINTY
+REV-0080,Not convinced.,That explanation settles it.,DISAGREEMENT,NATURAL,YES,REVISE,Rejects claim of settled explanation; uncertainty also plausible.,AMBIGUOUS,DISAGREEMENT
+REV-0081,I share that view.,We should keep the design simple.,AGREEMENT,NATURAL,NO,ACCEPT,Explicit shared view.,AGREEMENT,AGREEMENT
+REV-0082,"Hey, friend!",,GREETING,NATURAL,NO,ACCEPT,Informal greeting.,GREETING,GREETING
+REV-0083,Cheers!,Here is the information you asked for.,GRATITUDE,NATURAL,YES,ACCEPT,Thanks in response to information; farewell also possible alone.,AMBIGUOUS,GRATITUDE
+REV-0084,"Sorry, could you go back to the point you made about how the sample was selected?",The sample was drawn from a restricted population.,CLARIFICATION,NATURAL,NO,ACCEPT,Requests repetition of earlier explanation.,CLARIFICATION,CLARIFICATION
+REV-0085,Lunch is ready.,,STATEMENT,NATURAL,NO,ACCEPT,Reports readiness of lunch.,STATEMENT,STATEMENT
+REV-0086,It was lovely chatting with you this afternoon.,,GOODBYE,NATURAL,NO,ACCEPT,Conventional closing remark.,GOODBYE,GOODBYE
+REV-0087,Greetings!,,GREETING,NATURAL,NO,ACCEPT,Conventional greeting.,GREETING,GREETING
+REV-0088,There's no telling just yet.,Will the repairs solve the problem?,UNCERTAINTY,NATURAL,NO,ACCEPT,Explicit uncertainty.,UNCERTAINTY,UNCERTAINTY
+REV-0089,How do you decide which articles to include when there are hundreds of stories available?,,QUESTION,NATURAL,NO,ACCEPT,Requests selection criteria.,QUESTION,QUESTION
+REV-0090,Is there somewhere I can find the full interview rather than just the short clip?,,QUESTION,NATURAL,NO,ACCEPT,Requests location of full interview.,QUESTION,QUESTION
+REV-0091,I'm struggling to work out what actually happened.,Can you explain the sequence of events?,UNCERTAINTY,NATURAL,NO,REVISE,Expresses inability to determine events.,UNCERTAINTY,UNCERTAINTY
+REV-0092,Makes sense.,The delay comes from processing.,ACKNOWLEDGMENT,NATURAL,YES,ACCEPT,Acknowledges explanation; agreement also plausible.,AMBIGUOUS,ACKNOWLEDGMENT
+REV-0093,"No, thanks.",Are you taking a leaflet?,NEGATIVE_ANSWER,NATURAL,NO,ACCEPT,Declines offered item.,NEGATIVE_ANSWER,NEGATIVE_ANSWER
+REV-0094,Stay safe!,,GOODBYE,NATURAL,NO,ACCEPT,Conventional farewell wish.,GOODBYE,GOODBYE
+REV-0095,What did the reporter find?,,QUESTION,NATURAL,NO,ACCEPT,Requests reporter findings.,QUESTION,QUESTION
+REV-0096,Where did you hear that?,,QUESTION,NATURAL,NO,ACCEPT,Requests source of information.,QUESTION,QUESTION
+REV-0097,"I wasn't sure at first, but I think your explanation makes more sense now.",The apparent contradiction comes from the different reporting dates.,AGREEMENT,NATURAL,NO,ACCEPT,Endorses explanation after initial uncertainty.,AGREEMENT,AGREEMENT
+REV-0098,Can you explain that last bit?,The result depends on the baseline.,CLARIFICATION,NATURAL,NO,ACCEPT,Requests clarification of prior statement.,CLARIFICATION,CLARIFICATION
+REV-0099,I'd agree.,That seems the fairest interpretation.,AGREEMENT,NATURAL,NO,ACCEPT,Explicit agreement.,AGREEMENT,AGREEMENT
+REV-0100,What kind of microphone are you using for this?,,QUESTION,NATURAL,NO,ACCEPT,Requests microphone type.,QUESTION,QUESTION

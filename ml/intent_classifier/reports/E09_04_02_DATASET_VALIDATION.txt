@@ -1,0 +1,261 @@
+=== E09.04.2: DIGITAL MIRROR DATASET VALIDATION ===
+
+=== DATASET OVERVIEW ===
+Records: 600
+Columns: ['id', 'text', 'intent', 'source']
+
+=== STRUCTURAL VALIDATION ===
+Missing values: 0
+
+Empty required fields:
+id        0
+intent    0
+source    0
+text      0
+
+Duplicate IDs: 0
+Duplicate rows: 0
+Empty model texts: 0
+Invalid labels: []
+Missing labels: []
+
+=== CLASS DISTRIBUTION ===
+                    records  percentage
+intent                                 
+GREETING                 50        8.33
+GOODBYE                  50        8.33
+GRATITUDE                50        8.33
+AGREEMENT                50        8.33
+DISAGREEMENT             50        8.33
+UNCERTAINTY              50        8.33
+ACKNOWLEDGMENT           50        8.33
+AFFIRMATIVE_ANSWER       50        8.33
+NEGATIVE_ANSWER          50        8.33
+QUESTION                 50        8.33
+CLARIFICATION            50        8.33
+STATEMENT                50        8.33
+
+Total classes: 12
+
+=== DUPLICATE TEXT ANALYSIS ===
+Raw text duplicates: 0
+Normalized text duplicates: 0
+Model text duplicates: 0
+
+=== LABEL CONFLICT ANALYSIS ===
+Conflicting unique texts: 0
+Conflicting records: 0
+
+=== TEXT LENGTH ANALYSIS ===
+count    600.00
+mean       4.27
+std        1.41
+min        1.00
+25%        3.00
+50%        4.00
+75%        5.00
+max        9.00
+
+Short texts (1-3 words): 152
+Short text percentage: 25.33%
+
+Text length by intent:
+                    min  max  mean  median
+intent                                    
+GREETING              1    6  2.58     2.0
+GOODBYE               1    6  3.78     4.0
+GRATITUDE             1    6  4.22     4.0
+AGREEMENT             1    7  4.36     4.0
+DISAGREEMENT          2    9  4.52     4.0
+UNCERTAINTY           1    7  4.86     5.0
+ACKNOWLEDGMENT        1    6  3.92     4.0
+AFFIRMATIVE_ANSWER    1    7  3.56     3.5
+NEGATIVE_ANSWER       1    7  4.32     5.0
+QUESTION              3    6  4.66     4.0
+CLARIFICATION         1    8  5.08     5.0
+STATEMENT             3    8  5.34     5.0
+
+=== VOCABULARY ANALYSIS ===
+Unique words: 532
+            intent  total_words  unique_words
+          GREETING          129            36
+           GOODBYE          189            84
+         GRATITUDE          211            71
+         AGREEMENT          218            80
+      DISAGREEMENT          226            71
+       UNCERTAINTY          243            92
+    ACKNOWLEDGMENT          196            48
+AFFIRMATIVE_ANSWER          178            52
+   NEGATIVE_ANSWER          216            61
+          QUESTION          233            93
+     CLARIFICATION          254            84
+         STATEMENT          267           127
+
+=== DATA SOURCES ===
+source
+digital_mirror_synthetic_v1    600
+
+=== SAMPLE UTTERANCES ===
+
+--- GREETING ---
+DM-0014: Hello digital mirror
+DM-0040: Nice to see you again
+DM-0031: Hey friend
+DM-0046: Hey there
+DM-0018: Evening
+DM-0049: Well hello
+DM-0027: Glad to see you
+DM-0026: Nice to see you
+DM-0033: Hi friend
+DM-0020: A very good morning to you
+
+--- GOODBYE ---
+DM-0064: I ought to leave
+DM-0090: See you around
+DM-0081: I will be off now
+DM-0096: I will say goodbye now
+DM-0068: Have a good afternoon
+DM-0099: I am calling it a day
+DM-0077: Bye machine
+DM-0076: Bye everyone
+DM-0083: I am leaving now
+DM-0070: Have a good one
+
+--- GRATITUDE ---
+DM-0114: Thank you for the information
+DM-0140: Thank you for the correction
+DM-0131: A big thank you
+DM-0146: Thanks for the experience
+DM-0118: I appreciate your time
+DM-0149: Thank you for your guidance
+DM-0127: Thank you for waiting
+DM-0126: Thanks for your patience
+DM-0133: I owe you thanks
+DM-0120: I really appreciate it
+
+--- AGREEMENT ---
+DM-0164: You got that right
+DM-0190: Count me in agreement
+DM-0181: I agree that the source matters
+DM-0196: I agree entirely
+DM-0168: I agree with the conclusion
+DM-0199: I agree on this point
+DM-0177: That is a fair point
+DM-0176: You make a valid point
+DM-0183: I agree that we should check facts
+DM-0170: I endorse that view
+
+--- DISAGREEMENT ---
+DM-0214: I oppose that view
+DM-0240: That interpretation conflicts with the source
+DM-0231: I cannot agree with that
+DM-0246: We disagree on this
+DM-0218: I take the opposite view
+DM-0249: I object to that interpretation
+DM-0227: Your reasoning is incorrect
+DM-0226: That argument is flawed
+DM-0233: I do not share that view
+DM-0220: We have opposing views
+
+--- UNCERTAINTY ---
+DM-0264: I cannot say for sure
+DM-0290: I am hesitant to judge
+DM-0281: I have not decided yet
+DM-0296: I am not completely sure
+DM-0268: It may be accurate
+DM-0299: I am not confident in my judgment
+DM-0277: I am uncertain about the claim
+DM-0276: I am unsure about the source
+DM-0283: I have no firm conclusion
+DM-0270: It could go either way
+
+--- ACKNOWLEDGMENT ---
+DM-0314: I understand the instructions
+DM-0340: I get how it works
+DM-0331: I have understood the message
+DM-0346: Message received
+DM-0318: I see how it works
+DM-0349: I understand now
+DM-0327: The explanation is clear
+DM-0326: That is clear to me
+DM-0333: I have noted the information
+DM-0320: I see the connection
+
+--- AFFIRMATIVE_ANSWER ---
+DM-0364: Yes, I am interested
+DM-0390: I am ready for the next one
+DM-0381: Yes, you may
+DM-0396: Absolutely, go ahead
+DM-0368: Sure, go ahead
+DM-0399: Yes, let us do that
+DM-0377: I would like to see it
+DM-0376: I would like that
+DM-0383: Yes, that is fine
+DM-0370: Sure, let us begin
+
+--- NEGATIVE_ANSWER ---
+DM-0414: No, I would rather not
+DM-0440: I am not ready for another one
+DM-0431: No, that is not necessary
+DM-0446: No thanks
+DM-0418: I do not want to participate
+DM-0449: I would like to skip it
+DM-0427: No more questions
+DM-0426: No more videos
+DM-0433: No, I do not need that
+DM-0420: I do not want to start
+
+--- QUESTION ---
+DM-0464: How did you reach that conclusion?
+DM-0490: Why is the source important?
+DM-0481: Are there other sources?
+DM-0496: Which source is reliable?
+DM-0468: What happened next?
+DM-0499: Which article came first?
+DM-0477: Can I check the source myself?
+DM-0476: Can I see the original article?
+DM-0483: Are there official records?
+DM-0470: What is missing from the report?
+
+--- CLARIFICATION ---
+DM-0514: Can you put that more simply?
+DM-0540: Could you repeat the last word?
+DM-0531: Did you mean the original article?
+DM-0546: Can you explain what you meant?
+DM-0518: I am lost in the explanation
+DM-0549: Please elaborate on that point
+DM-0527: Please clarify the conclusion
+DM-0526: Could you clarify your answer?
+DM-0533: Are you referring to the headline?
+DM-0520: I missed the meaning
+
+--- STATEMENT ---
+DM-0564: I get news from different sources
+DM-0590: The website contains several articles
+DM-0581: My friend sent me the link
+DM-0596: The report cites two sources
+DM-0568: The video was recorded last year
+DM-0599: The photograph shows a building
+DM-0577: The machine is displaying a number
+DM-0576: The screen shows two different results
+DM-0583: My family discussed the story
+DM-0570: The source was named in the report
+
+=== FINAL VALIDATION ===
+PASS | Expected record count
+PASS | Required columns present
+PASS | No missing values
+PASS | No empty required fields
+PASS | Unique IDs
+PASS | No duplicate rows
+PASS | No empty model texts
+PASS | No invalid labels
+PASS | All intent classes present
+PASS | Balanced class distribution
+PASS | No raw text duplicates
+PASS | No normalized text duplicates
+PASS | No model text duplicates
+PASS | No conflicting labels
+PASS | Correct dataset source
+
+=== ALL VALIDATION CHECKS PASSED ===

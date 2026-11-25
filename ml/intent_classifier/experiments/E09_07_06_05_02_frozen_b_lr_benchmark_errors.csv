@@ -1,0 +1,72 @@
+model_text,expected,predicted,correct,top3_correct,top3_labels,max_probability,id,text,group
+hello there how's everything going,GREETING,QUESTION,False,True,QUESTION|GREETING|STATEMENT,0.6134144795997444,DMT-0001,"Hello there, how's everything going?",natural
+hope you're having a pleasant morning,GREETING,GOODBYE,False,False,GOODBYE|QUESTION|STATEMENT,0.42564643502310207,DMT-0004,Hope you're having a pleasant morning.,natural
+howdy,GREETING,QUESTION,False,False,QUESTION|ACKNOWLEDGMENT|STATEMENT,0.35598922414893225,DMT-0006,Howdy,short
+hi is this where we begin,GREETING,QUESTION,False,True,QUESTION|GREETING|GOODBYE,0.3754068420987446,DMT-0012,"Hi, is this where we begin?",installation
+before we begin i'd like to say hello,GREETING,AFFIRMATIVE_ANSWER,False,True,AFFIRMATIVE_ANSWER|GREETING|STATEMENT,0.281568053554059,DMT-0016,"Before we begin, I'd like to say hello.",complex
+allow me to introduce myself and say hello,GREETING,STATEMENT,False,True,STATEMENT|GREETING|QUESTION,0.33757141454310813,DMT-0019,Allow me to introduce myself and say hello.,complex
+enjoy the rest of your afternoon,GOODBYE,QUESTION,False,True,QUESTION|GOODBYE|STATEMENT,0.48297908076503443,DMT-0022,Enjoy the rest of your afternoon.,natural
+i must be on my way,GOODBYE,STATEMENT,False,True,STATEMENT|AFFIRMATIVE_ANSWER|GOODBYE,0.4767215933212875,DMT-0024,I must be on my way.,natural
+cheerio,GOODBYE,QUESTION,False,False,QUESTION|STATEMENT|ACKNOWLEDGMENT,0.34176540090070795,DMT-0028,Cheerio,short
+that's the end of my visit farewell,GOODBYE,AFFIRMATIVE_ANSWER,False,True,AFFIRMATIVE_ANSWER|GOODBYE|STATEMENT,0.4107402953719932,DMT-0031,"That's the end of my visit, farewell.",installation
+that was very kind of you,GRATITUDE,STATEMENT,False,False,STATEMENT|AGREEMENT|QUESTION,0.6578516929752205,DMT-0042,That was very kind of you.,natural
+you've been a great help thanks,GRATITUDE,QUESTION,False,True,QUESTION|GOODBYE|GRATITUDE,0.5009141629707179,DMT-0043,"You've been a great help, thanks.",natural
+your help means a great deal to me,GRATITUDE,STATEMENT,False,False,STATEMENT|QUESTION|AGREEMENT,0.628891692773117,DMT-0044,Your help means a great deal to me.,natural
+i'm thankful for your time,GRATITUDE,GOODBYE,False,True,GOODBYE|GRATITUDE|STATEMENT,0.4204225739959307,DMT-0045,I'm thankful for your time.,natural
+very grateful,GRATITUDE,STATEMENT,False,True,STATEMENT|AGREEMENT|GRATITUDE,0.27631006240166905,DMT-0050,Very grateful,short
+i want to express my gratitude for the time you spent helping me,GRATITUDE,STATEMENT,False,True,STATEMENT|GRATITUDE|AGREEMENT,0.6097519680118083,DMT-0056,I want to express my gratitude for the time you spent helping me.,complex
+i'm genuinely thankful that you took the trouble to clarify this,GRATITUDE,STATEMENT,False,False,STATEMENT|QUESTION|CLARIFICATION,0.4419136067523937,DMT-0058,I'm genuinely thankful that you took the trouble to clarify this.,complex
+your reasoning makes sense to me,AGREEMENT,STATEMENT,False,True,STATEMENT|AGREEMENT|DISAGREEMENT,0.35381250302866696,DMT-0063,Your reasoning makes sense to me.,natural
+we're of the same opinion,AGREEMENT,STATEMENT,False,True,STATEMENT|AGREEMENT|GOODBYE,0.41549410128415043,DMT-0064,We're of the same opinion.,natural
+i share your assessment,AGREEMENT,DISAGREEMENT,False,True,DISAGREEMENT|AGREEMENT|ACKNOWLEDGMENT,0.41390509241000445,DMT-0065,I share your assessment.,natural
+spot on,AGREEMENT,QUESTION,False,False,QUESTION|AFFIRMATIVE_ANSWER|STATEMENT,0.2319394551641699,DMT-0066,Spot on,short
+quite right,AGREEMENT,ACKNOWLEDGMENT,False,True,ACKNOWLEDGMENT|AGREEMENT|AFFIRMATIVE_ANSWER,0.3178149866999814,DMT-0067,Quite right,short
+i share your conclusion about the evidence,AGREEMENT,DISAGREEMENT,False,True,DISAGREEMENT|AGREEMENT|QUESTION,0.7169506300828321,DMT-0072,I share your conclusion about the evidence.,installation
+we reach the same conclusion about this claim,AGREEMENT,DISAGREEMENT,False,True,DISAGREEMENT|AGREEMENT|STATEMENT,0.5116107151342376,DMT-0075,We reach the same conclusion about this claim.,installation
+having considered your reasoning i reach the same conclusion,AGREEMENT,DISAGREEMENT,False,True,DISAGREEMENT|AGREEMENT|GOODBYE,0.3038803787273906,DMT-0076,"Having considered your reasoning, I reach the same conclusion.",complex
+on that particular issue our opinions are entirely aligned,AGREEMENT,STATEMENT,False,True,STATEMENT|QUESTION|AGREEMENT,0.427690808370901,DMT-0077,"On that particular issue, our opinions are entirely aligned.",complex
+the argument you've presented is consistent with my own view,AGREEMENT,STATEMENT,False,False,STATEMENT|QUESTION|DISAGREEMENT,0.4117847264694822,DMT-0078,The argument you've presented is consistent with my own view.,complex
+i endorse your conclusion because the evidence supports it,AGREEMENT,DISAGREEMENT,False,True,DISAGREEMENT|AGREEMENT|QUESTION,0.5312711447533467,DMT-0079,I endorse your conclusion because the evidence supports it.,complex
+that reasoning doesn't hold up,DISAGREEMENT,QUESTION,False,False,QUESTION|STATEMENT|AGREEMENT,0.34582180126321665,DMT-0085,That reasoning doesn't hold up.,natural
+i object,DISAGREEMENT,AGREEMENT,False,True,AGREEMENT|STATEMENT|DISAGREEMENT,0.3365056350981666,DMT-0086,I object,short
+not so,DISAGREEMENT,NEGATIVE_ANSWER,False,True,NEGATIVE_ANSWER|DISAGREEMENT|QUESTION,0.6902715644605136,DMT-0087,Not so,short
+i differ,DISAGREEMENT,STATEMENT,False,True,STATEMENT|DISAGREEMENT|GOODBYE,0.2844985501361179,DMT-0090,I differ,short
+despite the points you've raised i remain opposed to your conclusion,DISAGREEMENT,AGREEMENT,False,False,AGREEMENT|QUESTION|STATEMENT,0.3932174369260551,DMT-0100,"Despite the points you've raised, I remain opposed to your conclusion.",complex
+it's difficult for me to tell,UNCERTAINTY,GOODBYE,False,True,GOODBYE|STATEMENT|UNCERTAINTY,0.37506840055194207,DMT-0102,It's difficult for me to tell.,natural
+i could be mistaken about it,UNCERTAINTY,DISAGREEMENT,False,False,DISAGREEMENT|STATEMENT|AFFIRMATIVE_ANSWER,0.7434247020274921,DMT-0104,I could be mistaken about it.,natural
+not definite,UNCERTAINTY,AGREEMENT,False,True,AGREEMENT|UNCERTAINTY|DISAGREEMENT,0.4240614890364014,DMT-0110,Not definite,short
+i haven't decided whether this headline is credible,UNCERTAINTY,STATEMENT,False,True,STATEMENT|UNCERTAINTY|QUESTION,0.4282678249642458,DMT-0111,I haven't decided whether this headline is credible.,installation
+there are several plausible explanations and i cannot choose between them,UNCERTAINTY,STATEMENT,False,True,STATEMENT|UNCERTAINTY|NEGATIVE_ANSWER,0.5776535264566588,DMT-0116,There are several plausible explanations and I cannot choose between them.,complex
+although both accounts sound plausible i remain uncertain,UNCERTAINTY,STATEMENT,False,True,STATEMENT|UNCERTAINTY|AFFIRMATIVE_ANSWER,0.6286050893525779,DMT-0118,"Although both accounts sound plausible, I remain uncertain.",complex
+i'm hesitant to draw a conclusion because the details are incomplete,UNCERTAINTY,STATEMENT,False,False,STATEMENT|AGREEMENT|QUESTION,0.4092764864944534,DMT-0119,I'm hesitant to draw a conclusion because the details are incomplete.,complex
+at this point i cannot confidently determine which interpretation is correct,UNCERTAINTY,DISAGREEMENT,False,True,DISAGREEMENT|UNCERTAINTY|STATEMENT,0.7096723792650381,DMT-0120,At this point I cannot confidently determine which interpretation is correct.,complex
+i've heard what you've said,ACKNOWLEDGMENT,QUESTION,False,False,QUESTION|STATEMENT|CLARIFICATION,0.5307063777972276,DMT-0121,I've heard what you've said.,natural
+i've taken note of that,ACKNOWLEDGMENT,STATEMENT,False,True,STATEMENT|ACKNOWLEDGMENT|GOODBYE,0.8065448631920228,DMT-0123,I've taken note of that.,natural
+heard you,ACKNOWLEDGMENT,QUESTION,False,True,QUESTION|ACKNOWLEDGMENT|STATEMENT,0.6594403653593244,DMT-0130,Heard you,short
+i've noted the date shown on the screen,ACKNOWLEDGMENT,STATEMENT,False,False,STATEMENT|QUESTION|AFFIRMATIVE_ANSWER,0.6509343111192537,DMT-0131,I've noted the date shown on the screen.,installation
+i've registered the information about the source,ACKNOWLEDGMENT,STATEMENT,False,True,STATEMENT|ACKNOWLEDGMENT|QUESTION,0.3791976762225473,DMT-0132,I've registered the information about the source.,installation
+i've taken in the details you've displayed,ACKNOWLEDGMENT,STATEMENT,False,False,STATEMENT|QUESTION|GOODBYE,0.45383595401953797,DMT-0135,I've taken in the details you've displayed.,installation
+i have registered the information you provided without forming a judgment,ACKNOWLEDGMENT,STATEMENT,False,False,STATEMENT|QUESTION|UNCERTAINTY,0.5499967809579981,DMT-0136,I have registered the information you provided without forming a judgment.,complex
+i follow the sequence of events you've just described,ACKNOWLEDGMENT,STATEMENT,False,True,STATEMENT|QUESTION|ACKNOWLEDGMENT,0.5423205658703956,DMT-0137,I follow the sequence of events you've just described.,complex
+i've taken note of the distinction you made between the two reports,ACKNOWLEDGMENT,STATEMENT,False,True,STATEMENT|QUESTION|ACKNOWLEDGMENT,0.5615034414551723,DMT-0138,I've taken note of the distinction you made between the two reports.,complex
+i understand the procedure you've outlined for this session,ACKNOWLEDGMENT,QUESTION,False,True,QUESTION|STATEMENT|ACKNOWLEDGMENT,0.5607557690830445,DMT-0139,I understand the procedure you've outlined for this session.,complex
+yes i'd be happy to,AFFIRMATIVE_ANSWER,GOODBYE,False,True,GOODBYE|AFFIRMATIVE_ANSWER|AGREEMENT,0.23408915090516672,DMT-0144,"Yes, I'd be happy to.",natural
+i certainly can,AFFIRMATIVE_ANSWER,AGREEMENT,False,True,AGREEMENT|AFFIRMATIVE_ANSWER|STATEMENT,0.6748805121211036,DMT-0148,I certainly can,short
+yes i would be willing to answer another question about the report,AFFIRMATIVE_ANSWER,STATEMENT,False,True,STATEMENT|AFFIRMATIVE_ANSWER|QUESTION,0.35736580873319695,DMT-0156,"Yes, I would be willing to answer another question about the report.",complex
+yes i'd like you to proceed with the comparison you offered,AFFIRMATIVE_ANSWER,QUESTION,False,True,QUESTION|AFFIRMATIVE_ANSWER|STATEMENT,0.36256425683260596,DMT-0158,"Yes, I'd like you to proceed with the comparison you offered.",complex
+no i'm unavailable for that,NEGATIVE_ANSWER,STATEMENT,False,True,STATEMENT|AGREEMENT|NEGATIVE_ANSWER,0.3171760790715284,DMT-0163,"No, I'm unavailable for that.",natural
+i cannot,NEGATIVE_ANSWER,UNCERTAINTY,False,True,UNCERTAINTY|DISAGREEMENT|NEGATIVE_ANSWER,0.9255685769018477,DMT-0167,I cannot,short
+no i won't,NEGATIVE_ANSWER,AGREEMENT,False,True,AGREEMENT|NEGATIVE_ANSWER|GOODBYE,0.5747058969577754,DMT-0169,No I won't,short
+no i wasn't able to view the entire video before responding,NEGATIVE_ANSWER,DISAGREEMENT,False,True,DISAGREEMENT|STATEMENT|NEGATIVE_ANSWER,0.31221479955614073,DMT-0179,"No, I wasn't able to view the entire video before responding.",complex
+which option costs less,QUESTION,STATEMENT,False,True,STATEMENT|QUESTION|ACKNOWLEDGMENT,0.4495498614100002,DMT-0185,Which option costs less?,natural
+when exactly,QUESTION,AGREEMENT,False,False,AGREEMENT|AFFIRMATIVE_ANSWER|ACKNOWLEDGMENT,0.6000588244064586,DMT-0187,When exactly?,short
+who funded the study mentioned in the clip,QUESTION,STATEMENT,False,True,STATEMENT|QUESTION|AFFIRMATIVE_ANSWER,0.42985255086948293,DMT-0195,Who funded the study mentioned in the clip?,installation
+i'm unclear about your last remark,CLARIFICATION,STATEMENT,False,False,STATEMENT|QUESTION|UNCERTAINTY,0.3731068059048325,DMT-0203,I'm unclear about your last remark.,natural
+come again,CLARIFICATION,GOODBYE,False,False,GOODBYE|STATEMENT|QUESTION,0.6339119787739019,DMT-0207,Come again?,short
+i'm unclear about the distinction you just made between the reports,CLARIFICATION,STATEMENT,False,False,STATEMENT|UNCERTAINTY|QUESTION,0.26352550582014656,DMT-0215,I'm unclear about the distinction you just made between the reports.,installation
+i'm not clear whether your last remark referred to the clip or the article,CLARIFICATION,STATEMENT,False,False,STATEMENT|QUESTION|UNCERTAINTY,0.4491472583426619,DMT-0219,I'm not clear whether your last remark referred to the clip or the article.,complex
+i moved here three years ago,STATEMENT,AFFIRMATIVE_ANSWER,False,True,AFFIRMATIVE_ANSWER|STATEMENT|QUESTION,0.5039376859212952,DMT-0224,I moved here three years ago.,natural
+the report includes a chart with five columns,STATEMENT,QUESTION,False,True,QUESTION|STATEMENT|AFFIRMATIVE_ANSWER,0.548890548046691,DMT-0234,The report includes a chart with five columns.,installation
+the display shows the publication date,STATEMENT,QUESTION,False,True,QUESTION|STATEMENT|AFFIRMATIVE_ANSWER,0.46682973923802257,DMT-0235,The display shows the publication date.,installation
+the recording begins with an introduction followed by an interview,STATEMENT,QUESTION,False,True,QUESTION|STATEMENT|ACKNOWLEDGMENT,0.4492809668057753,DMT-0238,The recording begins with an introduction followed by an interview.,complex
+several newspapers covered the announcement on the following morning,STATEMENT,QUESTION,False,True,QUESTION|STATEMENT|CLARIFICATION,0.5316904191609783,DMT-0240,Several newspapers covered the announcement on the following morning.,complex

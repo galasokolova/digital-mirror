@@ -1,0 +1,74 @@
+PASS: Assembly SHA-256
+PASS: Small talk schema and count
+PASS: ID coverage
+PASS: Metadata values
+PASS: GREETING quotas
+PASS: GOODBYE quotas
+PASS: GRATITUDE quotas
+PASS: AGREEMENT quotas
+PASS: DISAGREEMENT quotas
+PASS: UNCERTAINTY quotas
+PASS: ACKNOWLEDGMENT quotas
+PASS: AFFIRMATIVE_ANSWER quotas
+PASS: NEGATIVE_ANSWER quotas
+PASS: QUESTION quotas
+PASS: CLARIFICATION quotas
+PASS: STATEMENT quotas
+PASS: small_talk count
+PASS: small_talk unique IDs and nonempty text
+PASS: small_talk classes
+PASS: digital_mirror count
+PASS: digital_mirror unique IDs and nonempty text
+PASS: digital_mirror classes
+PASS: contrastive count
+PASS: contrastive unique IDs and nonempty text
+PASS: contrastive classes
+
+=== DATASET COMPARISON ===
+{'dataset': 'small_talk', 'scope': 'ALL', 'records': 600, 'tokens': 2710, 'vocabulary': 845, 'ttr': 0.3118081180811808, 'mattr_50': 0.8550477264186396, 'hapax_ratio': 0.5846153846153846, 'mean_length': 4.516666666666667, 'median_length': 3.5, 'std_length': 3.2253768083055903, 'min_length': 1, 'max_length': 16, 'short_share': 0.5}
+{'dataset': 'digital_mirror', 'scope': 'ALL', 'records': 600, 'tokens': 2560, 'vocabulary': 532, 'ttr': 0.2078125, 'mattr_50': 0.761178813221824, 'hapax_ratio': 0.5056390977443609, 'mean_length': 4.266666666666667, 'median_length': 4.0, 'std_length': 1.412641340027806, 'min_length': 1, 'max_length': 9, 'short_share': 0.25333333333333335}
+{'dataset': 'contrastive', 'scope': 'ALL', 'records': 1200, 'tokens': 10787, 'vocabulary': 382, 'ttr': 0.03541299712617039, 'mattr_50': 0.7576917489290371, 'hapax_ratio': 0.060209424083769635, 'mean_length': 8.989166666666666, 'median_length': 9.0, 'std_length': 3.44901666743178, 'min_length': 2, 'max_length': 21, 'short_share': 0.0125}
+
+=== PAIRWISE SIMILARITY ===
+{'dataset': 'small_talk', 'scope': 'ALL', 'pairs': 179700, 'low': 179563, 'moderate': 134, 'high': 1, 'very_high': 2}
+{'dataset': 'small_talk', 'scope': 'within_class', 'pairs': 14700, 'low': 14593, 'moderate': 105, 'high': 1, 'very_high': 1}
+{'dataset': 'small_talk', 'scope': 'between_classes', 'pairs': 165000, 'low': 164970, 'moderate': 29, 'high': 0, 'very_high': 1}
+{'dataset': 'digital_mirror', 'scope': 'ALL', 'pairs': 179700, 'low': 179229, 'moderate': 442, 'high': 29, 'very_high': 0}
+{'dataset': 'digital_mirror', 'scope': 'within_class', 'pairs': 14700, 'low': 14325, 'moderate': 356, 'high': 19, 'very_high': 0}
+{'dataset': 'digital_mirror', 'scope': 'between_classes', 'pairs': 165000, 'low': 164904, 'moderate': 86, 'high': 10, 'very_high': 0}
+{'dataset': 'contrastive', 'scope': 'ALL', 'pairs': 719400, 'low': 710735, 'moderate': 4916, 'high': 3749, 'very_high': 0}
+{'dataset': 'contrastive', 'scope': 'between_classes', 'pairs': 660000, 'low': 659764, 'moderate': 233, 'high': 3, 'very_high': 0}
+{'dataset': 'contrastive', 'scope': 'within_class', 'pairs': 59400, 'low': 50971, 'moderate': 4683, 'high': 3746, 'very_high': 0}
+Saved: E09_07_07_03_02_lexical_statistics.csv
+Saved: E09_07_07_03_02_repeated_patterns.csv
+Saved: E09_07_07_03_02_similarity_summary.csv
+Saved: E09_07_07_03_02_similarity_pairs.csv
+style: Cramer V=0.398573 (descriptive only)
+Saved: E09_07_07_03_02_intent_style.csv
+scenario: Cramer V=1.000000 (descriptive only)
+Saved: E09_07_07_03_02_intent_scenario.csv
+
+=== CONTEXT ===
+{'intent': 'GREETING', 'records': 50, 'present': 0, 'required': 0, 'required_missing': 0}
+{'intent': 'GOODBYE', 'records': 50, 'present': 0, 'required': 0, 'required_missing': 0}
+{'intent': 'GRATITUDE', 'records': 50, 'present': 5, 'required': 5, 'required_missing': 0}
+{'intent': 'AGREEMENT', 'records': 50, 'present': 50, 'required': 38, 'required_missing': 0}
+{'intent': 'DISAGREEMENT', 'records': 50, 'present': 50, 'required': 23, 'required_missing': 0}
+{'intent': 'UNCERTAINTY', 'records': 50, 'present': 50, 'required': 23, 'required_missing': 0}
+{'intent': 'ACKNOWLEDGMENT', 'records': 50, 'present': 50, 'required': 13, 'required_missing': 0}
+{'intent': 'AFFIRMATIVE_ANSWER', 'records': 50, 'present': 50, 'required': 50, 'required_missing': 0}
+{'intent': 'NEGATIVE_ANSWER', 'records': 50, 'present': 50, 'required': 50, 'required_missing': 0}
+{'intent': 'QUESTION', 'records': 50, 'present': 10, 'required': 44, 'required_missing': 34}
+{'intent': 'CLARIFICATION', 'records': 50, 'present': 50, 'required': 50, 'required_missing': 0}
+{'intent': 'STATEMENT', 'records': 50, 'present': 0, 'required': 0, 'required_missing': 0}
+Saved: E09_07_07_03_02_context_statistics.csv
+Saved: E09_07_07_03_02_missing_context.csv
+Duplicate groups: 1
+Conflicting groups: 1
+Saved: E09_07_07_03_02_duplicates.csv
+Saved: E09_07_07_04_semantic_review.csv
+Saved: E09_07_07_04_semantic_review_answer_key.csv
+Review records: 600
+No records removed. No model trained. No evaluation dataset read.
+PASS: All three input files unchanged
+VALIDATION: PASS (diagnostic flags require review)

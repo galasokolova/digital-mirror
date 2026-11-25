@@ -1,0 +1,2803 @@
+=== E04: UTTERANCE RECONSTRUCTION EXPLORATION ===
+Transcript files found: 1155
+
+Total rows: 223,606
+Continuation rows: 18,691
+
+=== CALLER VALUES ===
+caller
+A    114734
+B    108872
+
+=== CONTINUATION CALLERS ===
+caller
+B    9540
+A    9151
+
+=== SUBUTTERANCE INDEX DISTRIBUTION ===
+subutterance_index
+1    18691
+
+=== CONTINUATION EXAMPLES ===
+
+================================================================================
+EXAMPLE 1
+================================================================================
+
+   
+conversation_no: 3142
+transcript_index: 40
+caller: A
+utterance_index: 27
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+   
+conversation_no: 3142
+transcript_index: 41
+caller: B
+utterance_index: 28
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {C And, }  {F uh, } we like Indian food, and Thai cuisine and, {F uh, } sort of gourmet Mexican and, {F uh, } things like that, as well as Tex-Mex and Italian and, {F uh, } Chinese and things, [ and, + and ] things of that sort.  /
+
+   
+conversation_no: 3142
+transcript_index: 42
+caller: B
+utterance_index: 28
+subutterance_index: 2
+act_tag: o
+damsl_tag: fo_o_fw_"_by_bc
+text: {D Now, } yes,  /
+
+   
+conversation_no: 3142
+transcript_index: 43
+caller: B
+utterance_index: 28
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: of course, we like to occasionally go out and get down and dirty with barbecue or  hamburgers <laughter> --
+
+   
+conversation_no: 3142
+transcript_index: 44
+caller: A
+utterance_index: 29
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Right. /
+
+>>>
+conversation_no: 3142
+transcript_index: 45
+caller: B
+utterance_index: 30
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- or something like that, too.  /
+
+   
+conversation_no: 3142
+transcript_index: 46
+caller: B
+utterance_index: 30
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C And, }  {F uh, } we probably go out one to two times a week. /
+
+   
+conversation_no: 3142
+transcript_index: 47
+caller: A
+utterance_index: 31
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Right. /
+
+   
+conversation_no: 3142
+transcript_index: 48
+caller: B
+utterance_index: 32
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {C And, }  {F uh, } {F uh, } we're pretty much regulars at an [ Italian, + local Italian ] restaurant. /
+
+================================================================================
+EXAMPLE 2
+================================================================================
+
+   
+conversation_no: 2131
+transcript_index: 244
+caller: B
+utterance_index: 155
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {F Oh, } [ I, + I've  ] never cared for Hank,
+
+   
+conversation_no: 2131
+transcript_index: 245
+caller: A
+utterance_index: 156
+subutterance_index: 1
+act_tag: aa
+damsl_tag: aa
+text: I never have either, /
+
+   
+conversation_no: 2131
+transcript_index: 246
+caller: B
+utterance_index: 157
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: Williams, Junior. /
+
+   
+conversation_no: 2131
+transcript_index: 247
+caller: A
+utterance_index: 158
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {C and } I never have figured out how he won, {F uh, } entertainer of the year for about,
+
+   
+conversation_no: 2131
+transcript_index: 248
+caller: B
+utterance_index: 159
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Oh <laughter>. /
+
+>>>
+conversation_no: 2131
+transcript_index: 249
+caller: A
+utterance_index: 160
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: three or four years in a row. /
+
+   
+conversation_no: 2131
+transcript_index: 250
+caller: B
+utterance_index: 161
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {F Oh, } [ we, + we ] watch those award shows too,  /
+
+   
+conversation_no: 2131
+transcript_index: 251
+caller: B
+utterance_index: 161
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: we enjoy watching the country and the Grammies and stuff  /
+
+   
+conversation_no: 2131
+transcript_index: 252
+caller: B
+utterance_index: 161
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: {C but } [ I just, + I just ] don't care for him, /
+
+================================================================================
+EXAMPLE 3
+================================================================================
+
+   
+conversation_no: 3050
+transcript_index: 195
+caller: A
+utterance_index: 101
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- lots and lots of people take off work,
+
+   
+conversation_no: 3050
+transcript_index: 196
+caller: B
+utterance_index: 102
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yeah. /
+
+   
+conversation_no: 3050
+transcript_index: 197
+caller: A
+utterance_index: 103
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: [ to go + --
+
+   
+conversation_no: 3050
+transcript_index: 198
+caller: B
+utterance_index: 104
+subutterance_index: 1
+act_tag: ^2
+damsl_tag: ^2
+text: To watch them,  /
+
+   
+conversation_no: 3050
+transcript_index: 199
+caller: B
+utterance_index: 104
+subutterance_index: 2
+act_tag: %
+damsl_tag: %
+text: yeah. /
+
+>>>
+conversation_no: 3050
+transcript_index: 200
+caller: A
+utterance_index: 105
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- to go ] an watch [ the, + the, ]  {F uh, } ladies <<sounds like some loss of words here>>,
+
+   
+conversation_no: 3050
+transcript_index: 201
+caller: B
+utterance_index: 106
+subutterance_index: 1
+act_tag: ^2
+damsl_tag: ^2
+text: The ladies, -/
+
+   
+conversation_no: 3050
+transcript_index: 202
+caller: A
+utterance_index: 107
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: play.  /
+
+   
+conversation_no: 3050
+transcript_index: 203
+caller: A
+utterance_index: 107
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C So, } {E I mean, } I think [ it's  actually, + it's absolutely ] wonderful to see. /
+
+================================================================================
+EXAMPLE 4
+================================================================================
+
+   
+conversation_no: 3095
+transcript_index: 41
+caller: A
+utterance_index: 31
+subutterance_index: 1
+act_tag: x
+damsl_tag: x
+text: <Noise> <<guttural sounds>>.
+
+   
+conversation_no: 3095
+transcript_index: 42
+caller: B
+utterance_index: 32
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: my wife participated in a jury trial <lipsmack>  several years back --
+
+   
+conversation_no: 3095
+transcript_index: 43
+caller: A
+utterance_index: 33
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yes. /
+
+   
+conversation_no: 3095
+transcript_index: 44
+caller: B
+utterance_index: 34
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- wherein the individual after it was over and they,
+
+   
+conversation_no: 3095
+transcript_index: 45
+caller: A
+utterance_index: 35
+subutterance_index: 1
+act_tag: x
+damsl_tag: x
+text: <Talking>.
+
+>>>
+conversation_no: 3095
+transcript_index: 46
+caller: B
+utterance_index: 36
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: had came up with the maximum sentence --
+
+   
+conversation_no: 3095
+transcript_index: 47
+caller: A
+utterance_index: 37
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yes. /
+
+   
+conversation_no: 3095
+transcript_index: 48
+caller: B
+utterance_index: 38
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- in the jury form they found out that, {F uh, }  the gentleman involved had a long history of the same type offense --
+
+   
+conversation_no: 3095
+transcript_index: 49
+caller: A
+utterance_index: 39
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Right. /
+
+================================================================================
+EXAMPLE 5
+================================================================================
+
+   
+conversation_no: 4370
+transcript_index: 26
+caller: B
+utterance_index: 16
+subutterance_index: 1
+act_tag: %
+damsl_tag: %
+text: {D See. } -/
+
+   
+conversation_no: 4370
+transcript_index: 27
+caller: A
+utterance_index: 17
+subutterance_index: 1
+act_tag: %
+damsl_tag: %
+text: {D So, } -/
+
+   
+conversation_no: 4370
+transcript_index: 28
+caller: B
+utterance_index: 18
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {C So, }  if it's your peers and you're not educated --
+
+   
+conversation_no: 4370
+transcript_index: 29
+caller: A
+utterance_index: 19
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: {C So } if you're a --
+
+   
+conversation_no: 4370
+transcript_index: 30
+caller: B
+utterance_index: 20
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- then, -/
+
+>>>
+conversation_no: 4370
+transcript_index: 31
+caller: A
+utterance_index: 21
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- nincompoop on trial, [ you'd, + you'd ] have to have --
+
+   
+conversation_no: 4370
+transcript_index: 32
+caller: B
+utterance_index: 22
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: [ You want -- +
+
+   
+conversation_no: 4370
+transcript_index: 33
+caller: A
+utterance_index: 23
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- nincompoops to, {F uh, } -/
+
+   
+conversation_no: 4370
+transcript_index: 34
+caller: B
+utterance_index: 24
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- you want ] a nincompoop jury because  they'll sympathize with you a bit --
+
+================================================================================
+EXAMPLE 6
+================================================================================
+
+   
+conversation_no: 3528
+transcript_index: 123
+caller: A
+utterance_index: 91
+subutterance_index: 1
+act_tag: aa
+damsl_tag: aa
+text: Yeah,   /
+
+   
+conversation_no: 3528
+transcript_index: 124
+caller: A
+utterance_index: 91
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: they really were,   /
+
+   
+conversation_no: 3528
+transcript_index: 125
+caller: A
+utterance_index: 91
+subutterance_index: 3
+act_tag: %
+damsl_tag: %
+text: they --
+
+   
+conversation_no: 3528
+transcript_index: 126
+caller: B
+utterance_index: 92
+subutterance_index: 1
+act_tag: qy^d
+damsl_tag: qy^d
+text: Looked pretty --
+
+   
+conversation_no: 3528
+transcript_index: 127
+caller: A
+utterance_index: 93
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- just, {F uh, } -/
+
+>>>
+conversation_no: 3528
+transcript_index: 128
+caller: B
+utterance_index: 94
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- confining, {F huh. }  /
+
+   
+conversation_no: 3528
+transcript_index: 129
+caller: A
+utterance_index: 95
+subutterance_index: 1
+act_tag: ny
+damsl_tag: ny
+text: {F Oh, } yeah,  /
+
+   
+conversation_no: 3528
+transcript_index: 130
+caller: A
+utterance_index: 95
+subutterance_index: 2
+act_tag: sd^e
+damsl_tag: sd
+text: {C and, } {F uh, } the whole thing was small  /
+
+   
+conversation_no: 3528
+transcript_index: 131
+caller: A
+utterance_index: 95
+subutterance_index: 3
+act_tag: sv
+damsl_tag: sv
+text: {C and, } {D yeah, } [ you, + {E I mean, } you ] actually put it on <laughter>, {D you know. } /
+
+================================================================================
+EXAMPLE 7
+================================================================================
+
+   
+conversation_no: 2495
+transcript_index: 164
+caller: A
+utterance_index: 101
+subutterance_index: 2
+act_tag: x
+damsl_tag: x
+text: <laughter>.
+
+   
+conversation_no: 2495
+transcript_index: 165
+caller: B
+utterance_index: 102
+subutterance_index: 1
+act_tag: ba
+damsl_tag: ba
+text: That's true. /
+
+   
+conversation_no: 2495
+transcript_index: 166
+caller: A
+utterance_index: 103
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {E I mean } the fumes are amazing,  /
+
+   
+conversation_no: 2495
+transcript_index: 167
+caller: A
+utterance_index: 103
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C and } [ I, + I ] don't think I could stay sane,
+
+   
+conversation_no: 2495
+transcript_index: 168
+caller: B
+utterance_index: 104
+subutterance_index: 1
+act_tag: x
+damsl_tag: x
+text: <Children_talking>.
+
+>>>
+conversation_no: 2495
+transcript_index: 169
+caller: A
+utterance_index: 105
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: {D you know } <laughter>,
+
+   
+conversation_no: 2495
+transcript_index: 170
+caller: B
+utterance_index: 106
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: No. /
+
+   
+conversation_no: 2495
+transcript_index: 171
+caller: A
+utterance_index: 107
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: [ and + ] working with all that.  /
+
+   
+conversation_no: 2495
+transcript_index: 172
+caller: A
+utterance_index: 107
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C So, } {E I mean, } I know it's not lead based any more, paints,  /
+
+================================================================================
+EXAMPLE 8
+================================================================================
+
+   
+conversation_no: 2479
+transcript_index: 285
+caller: B
+utterance_index: 162
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: # Uh-huh. #  /
+
+   
+conversation_no: 2479
+transcript_index: 286
+caller: B
+utterance_index: 162
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: Even at that age they need that time, /
+
+   
+conversation_no: 2479
+transcript_index: 287
+caller: A
+utterance_index: 163
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yes. /
+
+   
+conversation_no: 2479
+transcript_index: 288
+caller: B
+utterance_index: 164
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: we all need that time,
+
+   
+conversation_no: 2479
+transcript_index: 289
+caller: A
+utterance_index: 165
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yeah. /
+
+>>>
+conversation_no: 2479
+transcript_index: 290
+caller: B
+utterance_index: 166
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: just some quiet time to wind down from the day. /
+
+   
+conversation_no: 2479
+transcript_index: 291
+caller: A
+utterance_index: 167
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Right.  /
+
+   
+conversation_no: 2479
+transcript_index: 292
+caller: A
+utterance_index: 167
+subutterance_index: 2
+act_tag: aa
+damsl_tag: aa
+text: That's exactly it.  /
+
+   
+conversation_no: 2479
+transcript_index: 293
+caller: A
+utterance_index: 167
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: {C So, }  another thing that we tried to do, - /
+
+================================================================================
+EXAMPLE 9
+================================================================================
+
+   
+conversation_no: 3001
+transcript_index: 181
+caller: B
+utterance_index: 90
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yeah,  /
+
+   
+conversation_no: 3001
+transcript_index: 182
+caller: B
+utterance_index: 90
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: we're doing an H M O right now, {F um, }  /
+
+   
+conversation_no: 3001
+transcript_index: 183
+caller: B
+utterance_index: 90
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: {C and } when we go to get prescriptions it's five dollars, [ so-, + ]  /
+
+   
+conversation_no: 3001
+transcript_index: 184
+caller: B
+utterance_index: 90
+subutterance_index: 4
+act_tag: sd
+damsl_tag: sd
+text: {C but, }
+
+   
+conversation_no: 3001
+transcript_index: 185
+caller: A
+utterance_index: 91
+subutterance_index: 1
+act_tag: ba
+damsl_tag: ba
+text: # That's not bad either. # /
+
+>>>
+conversation_no: 3001
+transcript_index: 186
+caller: B
+utterance_index: 92
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: #  [ [ so-, + {D you know, } sometime, ] + # sometimes ]  when you go, {D you know, } the prescription, - /
+
+   
+conversation_no: 3001
+transcript_index: 187
+caller: B
+utterance_index: 92
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: like my husband always  takes  ((   ))  which is kind of like, {D you know, }  Contact stuff, only better.   /
+
+   
+conversation_no: 3001
+transcript_index: 188
+caller: B
+utterance_index: 92
+subutterance_index: 3
+act_tag: %
+damsl_tag: %
+text: {F Um, } you - /
+
+   
+conversation_no: 3001
+transcript_index: 189
+caller: B
+utterance_index: 92
+subutterance_index: 4
+act_tag: sd
+damsl_tag: sd
+text: that's {D like } a buck a capsule. /
+
+================================================================================
+EXAMPLE 10
+================================================================================
+
+   
+conversation_no: 3624
+transcript_index: 26
+caller: A
+utterance_index: 19
+subutterance_index: 1
+act_tag: ba
+damsl_tag: ba
+text: Wow. /
+
+   
+conversation_no: 3624
+transcript_index: 27
+caller: B
+utterance_index: 20
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: We have a --
+
+   
+conversation_no: 3624
+transcript_index: 28
+caller: A
+utterance_index: 21
+subutterance_index: 1
+act_tag: ba
+damsl_tag: ba
+text: That's great. /
+
+   
+conversation_no: 3624
+transcript_index: 29
+caller: B
+utterance_index: 22
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- nice big one here in State College, called the  (( Nitny ))  Valley --
+
+   
+conversation_no: 3624
+transcript_index: 30
+caller: A
+utterance_index: 23
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+>>>
+conversation_no: 3624
+transcript_index: 31
+caller: B
+utterance_index: 24
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- Symphony.  /
+
+   
+conversation_no: 3624
+transcript_index: 32
+caller: B
+utterance_index: 24
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: I play in the Altoona Symphony,  /
+
+   
+conversation_no: 3624
+transcript_index: 33
+caller: B
+utterance_index: 24
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: was about forty-five miles  away -- /
+
+   
+conversation_no: 3624
+transcript_index: 34
+caller: A
+utterance_index: 25
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+================================================================================
+EXAMPLE 11
+================================================================================
+
+   
+conversation_no: 2909
+transcript_index: 264
+caller: B
+utterance_index: 128
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: # Yeah. # /
+
+   
+conversation_no: 2909
+transcript_index: 265
+caller: A
+utterance_index: 129
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- {C so } ] he had to have a work visa there. /
+
+   
+conversation_no: 2909
+transcript_index: 266
+caller: B
+utterance_index: 130
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Oh. /
+
+   
+conversation_no: 2909
+transcript_index: 267
+caller: A
+utterance_index: 131
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {C And } of course they had a lot of musicians [ from, + from ] other countries --
+
+   
+conversation_no: 2909
+transcript_index: 268
+caller: B
+utterance_index: 132
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: # Uh-huh. # /
+
+>>>
+conversation_no: 2909
+transcript_index: 269
+caller: A
+utterance_index: 133
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- # [ and, + {F uh, } ] # in the Mexico City Symphony. /
+
+   
+conversation_no: 2909
+transcript_index: 270
+caller: B
+utterance_index: 134
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+   
+conversation_no: 2909
+transcript_index: 271
+caller: A
+utterance_index: 135
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {C But } I think, {F um, } {D like } three out of the four other people in the trumpet section are from Mexico now. /
+
+   
+conversation_no: 2909
+transcript_index: 272
+caller: B
+utterance_index: 136
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: {F Oh, } really. /
+
+================================================================================
+EXAMPLE 12
+================================================================================
+
+   
+conversation_no: 3144
+transcript_index: 177
+caller: A
+utterance_index: 94
+subutterance_index: 3
+act_tag: %
+damsl_tag: %
+text: {C but } knew that, {F uh, } - /
+
+   
+conversation_no: 3144
+transcript_index: 178
+caller: A
+utterance_index: 94
+subutterance_index: 4
+act_tag: sv
+damsl_tag: sv
+text: [ we've, + we've ] got a lot of company this summer, which is wonderful.  /
+
+   
+conversation_no: 3144
+transcript_index: 179
+caller: A
+utterance_index: 94
+subutterance_index: 5
+act_tag: sd
+damsl_tag: sd
+text: We're really enjoying it  /
+
+   
+conversation_no: 3144
+transcript_index: 180
+caller: A
+utterance_index: 94
+subutterance_index: 6
+act_tag: sd
+damsl_tag: sd
+text: {C but } some of the different things we're doing, {F uh } --
+
+   
+conversation_no: 3144
+transcript_index: 181
+caller: B
+utterance_index: 95
+subutterance_index: 1
+act_tag: b^r
+damsl_tag: b
+text: # Uh-huh. # /
+
+>>>
+conversation_no: 3144
+transcript_index: 182
+caller: A
+utterance_index: 96
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- # there's # just not [ a time, + enough time ] to do it all  /
+
+   
+conversation_no: 3144
+transcript_index: 183
+caller: A
+utterance_index: 96
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C and } [ he said, + {D well, } realistically <laughter>,
+
+   
+conversation_no: 3144
+transcript_index: 184
+caller: B
+utterance_index: 97
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: # Yeah. # /
+
+   
+conversation_no: 3144
+transcript_index: 185
+caller: A
+utterance_index: 98
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: # {D You know, } he # knew ] he couldn't get them all in.  /
+
+================================================================================
+EXAMPLE 13
+================================================================================
+
+   
+conversation_no: 4799
+transcript_index: 57
+caller: B
+utterance_index: 34
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {C And } they got her going again. /
+
+   
+conversation_no: 4799
+transcript_index: 58
+caller: A
+utterance_index: 35
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yeah. /
+
+   
+conversation_no: 4799
+transcript_index: 59
+caller: B
+utterance_index: 36
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {C So } I guess as far as looking, - /
+
+   
+conversation_no: 4799
+transcript_index: 60
+caller: B
+utterance_index: 36
+subutterance_index: 2
+act_tag: sv@
+damsl_tag: sv
+text: I said as what you're looking for, I think you need to look for [ an active, + {F uh, } an <talking> interactive ] staff.
+
+   
+conversation_no: 4799
+transcript_index: 61
+caller: A
+utterance_index: 37
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+>>>
+conversation_no: 4799
+transcript_index: 62
+caller: B
+utterance_index: 38
+subutterance_index: 1
+act_tag: +@
+damsl_tag: +
+text: Somebody who is willing to [ work with, + {F uh, } {D you know, } work with ] a patients and [ do -- +
+
+   
+conversation_no: 4799
+transcript_index: 63
+caller: A
+utterance_index: 39
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yeah. /
+
+   
+conversation_no: 4799
+transcript_index: 64
+caller: B
+utterance_index: 40
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- do ] things with them and treat them, [ treat + ] # like (( they're )) , # -/
+
+   
+conversation_no: 4799
+transcript_index: 65
+caller: A
+utterance_index: 41
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: # {C And } I'm sure # [ it's, + it's ] expensive./
+
+================================================================================
+EXAMPLE 14
+================================================================================
+
+   
+conversation_no: 3825
+transcript_index: 84
+caller: A
+utterance_index: 40
+subutterance_index: 1
+act_tag: x
+damsl_tag: x
+text: <Laughter>.
+
+   
+conversation_no: 3825
+transcript_index: 85
+caller: B
+utterance_index: 41
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: <Laughter> {F Uh, } I suspect we'll do quite a bit more  genealogy  /
+
+   
+conversation_no: 3825
+transcript_index: 86
+caller: B
+utterance_index: 41
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C and } [ I, + I ] suspect we will do more of it.  /
+
+   
+conversation_no: 3825
+transcript_index: 87
+caller: B
+utterance_index: 41
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: {F Uh, } I found [ out some, + about some ]  of the relatives [ [ I didn't, + {D you know, } I, ] + I ] didn't even know  their names, some of the --
+
+   
+conversation_no: 3825
+transcript_index: 88
+caller: A
+utterance_index: 42
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: {F Um. } /
+
+>>>
+conversation_no: 3825
+transcript_index: 89
+caller: B
+utterance_index: 43
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- two or three generations back and some of the aunts and  uncles  /
+
+   
+conversation_no: 3825
+transcript_index: 90
+caller: B
+utterance_index: 43
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C and, }  {F uh, } there's a lot of things there you have to stop,  /
+
+   
+conversation_no: 3825
+transcript_index: 91
+caller: B
+utterance_index: 43
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: they're really kind of  fascinating.  /
+
+   
+conversation_no: 3825
+transcript_index: 92
+caller: B
+utterance_index: 43
+subutterance_index: 4
+act_tag: sd
+damsl_tag: sd
+text: I found out my grandmother was one of a twin. /
+
+================================================================================
+EXAMPLE 15
+================================================================================
+
+   
+conversation_no: 3203
+transcript_index: 178
+caller: B
+utterance_index: 114
+subutterance_index: 1
+act_tag: x
+damsl_tag: x
+text: <Laughter>.
+
+   
+conversation_no: 3203
+transcript_index: 179
+caller: A
+utterance_index: 115
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: For that reason it can stay the same, /
+
+   
+conversation_no: 3203
+transcript_index: 180
+caller: B
+utterance_index: 116
+subutterance_index: 1
+act_tag: ba
+damsl_tag: ba
+text: That's right <laughter>. /
+
+   
+conversation_no: 3203
+transcript_index: 181
+caller: A
+utterance_index: 117
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: [ {C but } + <laughter>,
+
+   
+conversation_no: 3203
+transcript_index: 182
+caller: B
+utterance_index: 118
+subutterance_index: 1
+act_tag: ba^r
+damsl_tag: ba
+text: That's right <laughter>. /
+
+>>>
+conversation_no: 3203
+transcript_index: 183
+caller: A
+utterance_index: 119
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: {C But } ] we love being where we are. /
+
+================================================================================
+EXAMPLE 16
+================================================================================
+
+   
+conversation_no: 3158
+transcript_index: 121
+caller: B
+utterance_index: 82
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+   
+conversation_no: 3158
+transcript_index: 122
+caller: A
+utterance_index: 83
+subutterance_index: 1
+act_tag: %
+damsl_tag: %
+text: {D You know, } {C and so, } -/
+
+   
+conversation_no: 3158
+transcript_index: 123
+caller: B
+utterance_index: 84
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {D Well, } it's hard to find the time.  /
+
+   
+conversation_no: 3158
+transcript_index: 124
+caller: B
+utterance_index: 84
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: [  I, + I ] wouldn't if I didn't have this car time ability probably --
+
+   
+conversation_no: 3158
+transcript_index: 125
+caller: A
+utterance_index: 85
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yeah. /
+
+>>>
+conversation_no: 3158
+transcript_index: 126
+caller: B
+utterance_index: 86
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- because at night if I sit down, I'm doing something with the kids or --
+
+   
+conversation_no: 3158
+transcript_index: 127
+caller: A
+utterance_index: 87
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yeah. /
+
+   
+conversation_no: 3158
+transcript_index: 128
+caller: B
+utterance_index: 88
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- just not sitting down at all <laughter>. /
+
+   
+conversation_no: 3158
+transcript_index: 129
+caller: A
+utterance_index: 89
+subutterance_index: 1
+act_tag: aa
+damsl_tag: aa
+text: <Laughter> That's true.  /
+
+================================================================================
+EXAMPLE 17
+================================================================================
+
+   
+conversation_no: 3576
+transcript_index: 88
+caller: B
+utterance_index: 49
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+   
+conversation_no: 3576
+transcript_index: 89
+caller: A
+utterance_index: 50
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: [ This, + this ] spring we got a thousand pine trees from the, - /
+
+   
+conversation_no: 3576
+transcript_index: 90
+caller: A
+utterance_index: 50
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: actually this fall, I was talking about, - /
+
+   
+conversation_no: 3576
+transcript_index: 91
+caller: A
+utterance_index: 50
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: two weeks ago --
+
+   
+conversation_no: 3576
+transcript_index: 92
+caller: B
+utterance_index: 51
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Oh. /
+
+>>>
+conversation_no: 3576
+transcript_index: 93
+caller: A
+utterance_index: 52
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- we got a thousand pine trees from the, {D you know, } soil and conservation people -- /
+
+   
+conversation_no: 3576
+transcript_index: 94
+caller: B
+utterance_index: 53
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+   
+conversation_no: 3576
+transcript_index: 95
+caller: A
+utterance_index: 54
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: -- {C and, } {F uh, } we're in the process [ of, + of ] planting -- /
+
+   
+conversation_no: 3576
+transcript_index: 96
+caller: B
+utterance_index: 55
+subutterance_index: 1
+act_tag: ba
+damsl_tag: ba
+text: Wow  that's, -/
+
+================================================================================
+EXAMPLE 18
+================================================================================
+
+   
+conversation_no: 4483
+transcript_index: 117
+caller: B
+utterance_index: 69
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: Make it a little more convenient.  /
+
+   
+conversation_no: 4483
+transcript_index: 118
+caller: B
+utterance_index: 69
+subutterance_index: 3
+act_tag: %
+damsl_tag: %
+text: {C But, } -/
+
+   
+conversation_no: 4483
+transcript_index: 119
+caller: A
+utterance_index: 70
+subutterance_index: 1
+act_tag: aa
+damsl_tag: aa
+text: <Swallowing> Yeah,  /
+
+   
+conversation_no: 4483
+transcript_index: 120
+caller: A
+utterance_index: 70
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: they've got these large garbage  cans that you can rent from the waste management company here.
+
+   
+conversation_no: 4483
+transcript_index: 121
+caller: B
+utterance_index: 71
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yeah. /
+
+>>>
+conversation_no: 4483
+transcript_index: 122
+caller: A
+utterance_index: 72
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: {F Uh, } if you want to have a nice garbage  can, {D you know. }  /
+
+   
+conversation_no: 4483
+transcript_index: 123
+caller: A
+utterance_index: 72
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C And } it's on wheels  /
+
+   
+conversation_no: 4483
+transcript_index: 124
+caller: A
+utterance_index: 72
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: {C and } # it's big. # /
+
+   
+conversation_no: 4483
+transcript_index: 125
+caller: B
+utterance_index: 73
+subutterance_index: 1
+act_tag: qy
+damsl_tag: qy
+text: # {F Oh, } you can # actually rent those? /
+
+================================================================================
+EXAMPLE 19
+================================================================================
+
+   
+conversation_no: 3049
+transcript_index: 220
+caller: A
+utterance_index: 115
+subutterance_index: 2
+act_tag: ar^r
+damsl_tag: ar
+text: no,  /
+
+   
+conversation_no: 3049
+transcript_index: 221
+caller: A
+utterance_index: 115
+subutterance_index: 3
+act_tag: ar^r
+damsl_tag: ar
+text: no,  /
+
+   
+conversation_no: 3049
+transcript_index: 222
+caller: A
+utterance_index: 115
+subutterance_index: 4
+act_tag: sd
+damsl_tag: sd
+text: it was called, {F uh, }  <noise>  HARD WAY, where he was an actor, [ trying to portray -- +
+
+   
+conversation_no: 3049
+transcript_index: 223
+caller: B
+utterance_index: 116
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: {F Oh, } okay,  /
+
+   
+conversation_no: 3049
+transcript_index: 224
+caller: B
+utterance_index: 116
+subutterance_index: 2
+act_tag: o@
+damsl_tag: fo_o_fw_"_by_bc
+text: trying to  ((   )) ,
+
+>>>
+conversation_no: 3049
+transcript_index: 225
+caller: A
+utterance_index: 117
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- trying to [ portray, +  portray ] ] a policeman. /
+
+   
+conversation_no: 3049
+transcript_index: 226
+caller: B
+utterance_index: 118
+subutterance_index: 1
+act_tag: +@
+damsl_tag: +
+text: Yeah. /
+
+   
+conversation_no: 3049
+transcript_index: 227
+caller: A
+utterance_index: 119
+subutterance_index: 1
+act_tag: %
+damsl_tag: %
+text: {C And } that, -/
+
+================================================================================
+EXAMPLE 20
+================================================================================
+
+   
+conversation_no: 2061
+transcript_index: 229
+caller: A
+utterance_index: 131
+subutterance_index: 1
+act_tag: sd(^q)
+damsl_tag: sd
+text: # {C So } he goes, # [ have you come up with  a -lution, + {F uh, } have you come up with a solution? ]  /
+
+   
+conversation_no: 2061
+transcript_index: 230
+caller: A
+utterance_index: 131
+subutterance_index: 2
+act_tag: sd(^q)
+damsl_tag: sd
+text: They go, yeah,  /
+
+   
+conversation_no: 2061
+transcript_index: 231
+caller: A
+utterance_index: 131
+subutterance_index: 3
+act_tag: ^q
+damsl_tag: ^q
+text: change the rower # <laughter>.  /
+
+   
+conversation_no: 2061
+transcript_index: 232
+caller: A
+utterance_index: 131
+subutterance_index: 4
+act_tag: sd
+damsl_tag: sd
+text: {D You know, } it's like  everyone's a, #
+
+   
+conversation_no: 2061
+transcript_index: 233
+caller: B
+utterance_index: 132
+subutterance_index: 1
+act_tag: x
+damsl_tag: x
+text: # <Laughter>. #
+
+>>>
+conversation_no: 2061
+transcript_index: 234
+caller: A
+utterance_index: 133
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: manager  /
+
+   
+conversation_no: 2061
+transcript_index: 235
+caller: A
+utterance_index: 133
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C but, } {D you know, } # it's like # --
+
+   
+conversation_no: 2061
+transcript_index: 236
+caller: B
+utterance_index: 134
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: # Yeah. # /
+
+   
+conversation_no: 2061
+transcript_index: 237
+caller: A
+utterance_index: 135
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- [ only use + ] {D like } one person does the work  /
+
+================================================================================
+EXAMPLE 21
+================================================================================
+
+   
+conversation_no: 2205
+transcript_index: 108
+caller: B
+utterance_index: 48
+subutterance_index: 5
+act_tag: sd
+damsl_tag: sd
+text: he goes to our church  /
+
+   
+conversation_no: 2205
+transcript_index: 109
+caller: B
+utterance_index: 48
+subutterance_index: 6
+act_tag: %
+damsl_tag: %
+text: {C so, } -/
+
+   
+conversation_no: 2205
+transcript_index: 110
+caller: A
+utterance_index: 49
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {F Um. }  {D Well } [ I am, + we're ]  fairly new to the area  /
+
+   
+conversation_no: 2205
+transcript_index: 111
+caller: A
+utterance_index: 49
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C and so } we're still shopping  <laughter>,
+
+   
+conversation_no: 2205
+transcript_index: 112
+caller: B
+utterance_index: 50
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {D Well } the,
+
+>>>
+conversation_no: 2205
+transcript_index: 113
+caller: A
+utterance_index: 51
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: for a favorite channel. /
+
+   
+conversation_no: 2205
+transcript_index: 114
+caller: B
+utterance_index: 52
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: Channel eight when they came here thirteen,  fourteen years ago, Dave Fox and Tracy Rowlett came together,
+
+   
+conversation_no: 2205
+transcript_index: 115
+caller: A
+utterance_index: 53
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+   
+conversation_no: 2205
+transcript_index: 116
+caller: B
+utterance_index: 54
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: {F uh, } from Oklahoma City  /
+
+================================================================================
+EXAMPLE 22
+================================================================================
+
+   
+conversation_no: 3190
+transcript_index: 26
+caller: A
+utterance_index: 19
+subutterance_index: 1
+act_tag: qy
+damsl_tag: qy
+text: {F Oh, } just this year? /
+
+   
+conversation_no: 3190
+transcript_index: 27
+caller: B
+utterance_index: 20
+subutterance_index: 1
+act_tag: ny
+damsl_tag: ny
+text: Uh-huh -- /
+
+   
+conversation_no: 3190
+transcript_index: 28
+caller: A
+utterance_index: 21
+subutterance_index: 1
+act_tag: ba
+damsl_tag: ba
+text: {F Oh, } my, -/
+
+   
+conversation_no: 3190
+transcript_index: 29
+caller: B
+utterance_index: 22
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: -- they don't have enough money --
+
+   
+conversation_no: 3190
+transcript_index: 30
+caller: A
+utterance_index: 23
+subutterance_index: 1
+act_tag: %
+damsl_tag: %
+text: {F Uh. } /
+
+>>>
+conversation_no: 3190
+transcript_index: 31
+caller: B
+utterance_index: 24
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- to keep it going,  /
+
+   
+conversation_no: 3190
+transcript_index: 32
+caller: B
+utterance_index: 24
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: it [ doesn't, +   doesn't ] pay.  /
+
+   
+conversation_no: 3190
+transcript_index: 33
+caller: B
+utterance_index: 24
+subutterance_index: 3
+act_tag: %
+damsl_tag: %
+text: {C So. } -/
+
+   
+conversation_no: 3190
+transcript_index: 34
+caller: A
+utterance_index: 25
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: {C So } that wouldn't be a good spot  to go on a vacation, now --
+
+================================================================================
+EXAMPLE 23
+================================================================================
+
+   
+conversation_no: 3051
+transcript_index: 105
+caller: B
+utterance_index: 51
+subutterance_index: 4
+act_tag: ^h
+damsl_tag: ^h
+text: let's see what,  /
+
+   
+conversation_no: 3051
+transcript_index: 106
+caller: B
+utterance_index: 51
+subutterance_index: 5
+act_tag: sd
+damsl_tag: sd
+text: I don't remember if he said it was sixty dollars a square foot <children_yelling>,
+
+   
+conversation_no: 3051
+transcript_index: 107
+caller: A
+utterance_index: 52
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: {D (( Well )) }
+
+   
+conversation_no: 3051
+transcript_index: 108
+caller: B
+utterance_index: 53
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: off the creek and eighty on the creek,
+
+   
+conversation_no: 3051
+transcript_index: 109
+caller: A
+utterance_index: 54
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: Yeah. /
+
+>>>
+conversation_no: 3051
+transcript_index: 110
+caller: B
+utterance_index: 55
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: or, if it was eighty and a hundred. /
+
+   
+conversation_no: 3051
+transcript_index: 111
+caller: A
+utterance_index: 56
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: Probably # eighty. # /
+
+   
+conversation_no: 3051
+transcript_index: 112
+caller: B
+utterance_index: 57
+subutterance_index: 1
+act_tag: ar
+damsl_tag: ar
+text: # I think # it was sixty, eighty. /
+
+   
+conversation_no: 3051
+transcript_index: 113
+caller: A
+utterance_index: 58
+subutterance_index: 1
+act_tag: b^m
+damsl_tag: b^m
+text: Sixty, eighty. /
+
+================================================================================
+EXAMPLE 24
+================================================================================
+
+   
+conversation_no: 3004
+transcript_index: 44
+caller: B
+utterance_index: 28
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: my oldest tends for me now if I go somewhere  /
+
+   
+conversation_no: 3004
+transcript_index: 45
+caller: B
+utterance_index: 28
+subutterance_index: 4
+act_tag: %
+damsl_tag: %
+text: {C but, } -/
+
+   
+conversation_no: 3004
+transcript_index: 46
+caller: A
+utterance_index: 29
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh,  /
+
+   
+conversation_no: 3004
+transcript_index: 47
+caller: A
+utterance_index: 29
+subutterance_index: 2
+act_tag: qw
+damsl_tag: qw
+text: how old,
+
+   
+conversation_no: 3004
+transcript_index: 48
+caller: B
+utterance_index: 30
+subutterance_index: 1
+act_tag: %
+damsl_tag: %
+text: before, -/
+
+>>>
+conversation_no: 3004
+transcript_index: 49
+caller: A
+utterance_index: 31
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: is your oldest? /
+
+   
+conversation_no: 3004
+transcript_index: 50
+caller: B
+utterance_index: 32
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: He's almost a teenager <laughter>. /
+
+   
+conversation_no: 3004
+transcript_index: 51
+caller: A
+utterance_index: 33
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: {F Oh, } {D well, } he's plenty big enough then <laughter>. /
+
+   
+conversation_no: 3004
+transcript_index: 52
+caller: B
+utterance_index: 34
+subutterance_index: 1
+act_tag: aa
+damsl_tag: aa
+text: Yeah,  /
+
+================================================================================
+EXAMPLE 25
+================================================================================
+
+   
+conversation_no: 2380
+transcript_index: 84
+caller: B
+utterance_index: 53
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yeah. /
+
+   
+conversation_no: 2380
+transcript_index: 85
+caller: A
+utterance_index: 54
+subutterance_index: 1
+act_tag: %
+damsl_tag: %
+text: {C So, } {F uh, }  I do, - /
+
+   
+conversation_no: 2380
+transcript_index: 86
+caller: A
+utterance_index: 54
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: although I'm  a lawyer's daughter and I have lawyer's,
+
+   
+conversation_no: 2380
+transcript_index: 87
+caller: B
+utterance_index: 55
+subutterance_index: 1
+act_tag: bh@
+damsl_tag: bh
+text: Oh  (( really )) ?
+
+   
+conversation_no: 2380
+transcript_index: 88
+caller: A
+utterance_index: 56
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: and judges on both sides of the family, and  uncles and cousins and things like that, I really think that we have  gotten into much, too legalistic of society and that [ we, +  we ] spend far too  much on the fine points of the law and  far too little on achieving justice. /
+
+>>>
+conversation_no: 2380
+transcript_index: 89
+caller: B
+utterance_index: 57
+subutterance_index: 1
+act_tag: +@
+damsl_tag: +
+text: Yeah,  /
+
+   
+conversation_no: 2380
+transcript_index: 90
+caller: B
+utterance_index: 57
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: {C and } it seems a lot of  times [ that, +  {F uh, } especially in criminals that, ] their rights are so protected  /
+
+   
+conversation_no: 2380
+transcript_index: 91
+caller: B
+utterance_index: 57
+subutterance_index: 3
+act_tag: bh
+damsl_tag: bh
+text: {C but } what about the rights of, {D you know, } the rest of society,  /
+
+   
+conversation_no: 2380
+transcript_index: 92
+caller: B
+utterance_index: 57
+subutterance_index: 4
+act_tag: sv
+damsl_tag: sv
+text: {E I mean, } we're protecting  this person's rights who has broken the law,
+
+================================================================================
+EXAMPLE 26
+================================================================================
+
+   
+conversation_no: 2168
+transcript_index: 120
+caller: B
+utterance_index: 60
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- {D yeah, }  that he had suggested [ that, + that ] maybe they could reduce the number of administrators [ and, + and ] some of the people who were administrators saying, [ [ that, + that, ] + {F uh, } that's ] not what he was hired for.  /
+
+   
+conversation_no: 2168
+transcript_index: 121
+caller: B
+utterance_index: 60
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: {C But } they resented the fact that he would try to save some costs there. /
+
+   
+conversation_no: 2168
+transcript_index: 122
+caller: A
+utterance_index: 61
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {D Well, } {D you know } he did, supposedly cut administrators,  /
+
+   
+conversation_no: 2168
+transcript_index: 123
+caller: A
+utterance_index: 61
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: {C but } what they've done is create other offices for those same people, and just [ rehi-, + ] renamed their jobs --
+
+   
+conversation_no: 2168
+transcript_index: 124
+caller: B
+utterance_index: 62
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: {F Um. } /
+
+>>>
+conversation_no: 2168
+transcript_index: 125
+caller: A
+utterance_index: 63
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- and, {D you know, } opened up [ n-, + ] [ other n-, + other ] things.  /
+
+   
+conversation_no: 2168
+transcript_index: 126
+caller: A
+utterance_index: 63
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: One thing we've got going is called reading and initiative,  /
+
+   
+conversation_no: 2168
+transcript_index: 127
+caller: A
+utterance_index: 63
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: {C and } they've hired all these administrators in on that, {D you know. } /
+
+   
+conversation_no: 2168
+transcript_index: 128
+caller: B
+utterance_index: 64
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: {D Well, } {D you know, } the other thing that bothers me is the amount of money [ that it tak-, + that it took ] to contest [ the, + the ] football, {F um, } issue. /
+
+================================================================================
+EXAMPLE 27
+================================================================================
+
+   
+conversation_no: 2883
+transcript_index: 77
+caller: A
+utterance_index: 47
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: {C and, } {F uh, } <laughter>. Poor thing he comes home very depressed every night <laughter>,
+
+   
+conversation_no: 2883
+transcript_index: 78
+caller: B
+utterance_index: 48
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Oh. /
+
+   
+conversation_no: 2883
+transcript_index: 79
+caller: A
+utterance_index: 49
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: because the world has so  many problems of that sort,  /
+
+   
+conversation_no: 2883
+transcript_index: 80
+caller: A
+utterance_index: 49
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: {D so } [ [ [ it's, +
+
+   
+conversation_no: 2883
+transcript_index: 81
+caller: B
+utterance_index: 50
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Yeah. /
+
+>>>
+conversation_no: 2883
+transcript_index: 82
+caller: A
+utterance_index: 51
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: it's, ] +  {F uh, } it's, ] +  {F uh, } it's ]  a really big problem I think, and, {F um, } takes mature people [ to, +  to ]  treat it, {F uh, }  /
+
+   
+conversation_no: 2883
+transcript_index: 83
+caller: A
+utterance_index: 51
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: [ so that it's, +  so that it's ] a real advantage to you, instead of a disadvantage. /
+
+   
+conversation_no: 2883
+transcript_index: 84
+caller: B
+utterance_index: 52
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Right.  /
+
+   
+conversation_no: 2883
+transcript_index: 85
+caller: B
+utterance_index: 52
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: I think, {F um, } the way the tax  system was, they encouraged people to use credit cards, {D you know, } with a big  write off at the end of the year. /
+
+================================================================================
+EXAMPLE 28
+================================================================================
+
+   
+conversation_no: 4733
+transcript_index: 157
+caller: A
+utterance_index: 95
+subutterance_index: 6
+act_tag: qh
+damsl_tag: qh
+text: # {C So } what # --
+
+   
+conversation_no: 4733
+transcript_index: 158
+caller: B
+utterance_index: 96
+subutterance_index: 1
+act_tag: bh
+damsl_tag: bh
+text: # Is that right? # /
+
+   
+conversation_no: 4733
+transcript_index: 159
+caller: A
+utterance_index: 97
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- does that tell you?  /
+
+   
+conversation_no: 4733
+transcript_index: 160
+caller: A
+utterance_index: 97
+subutterance_index: 2
+act_tag: sv
+damsl_tag: sv
+text: # It tells you there's a whole # --
+
+   
+conversation_no: 4733
+transcript_index: 161
+caller: B
+utterance_index: 98
+subutterance_index: 1
+act_tag: ba
+damsl_tag: ba
+text: # {F Oh, } my gosh. # /
+
+>>>
+conversation_no: 4733
+transcript_index: 162
+caller: A
+utterance_index: 99
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- lot of wasted time. /
+
+   
+conversation_no: 4733
+transcript_index: 163
+caller: B
+utterance_index: 100
+subutterance_index: 1
+act_tag: ba
+damsl_tag: ba
+text: {F Oh, } my gosh. /
+
+   
+conversation_no: 4733
+transcript_index: 164
+caller: A
+utterance_index: 101
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: {C And } they could be using this time better. /
+
+   
+conversation_no: 4733
+transcript_index: 165
+caller: B
+utterance_index: 102
+subutterance_index: 1
+act_tag: sd
+damsl_tag: sd
+text: {D Well, } for example, in my son's kindergarten.  They're really finished at lunch time.  /
+
+================================================================================
+EXAMPLE 29
+================================================================================
+
+   
+conversation_no: 2929
+transcript_index: 35
+caller: A
+utterance_index: 19
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+   
+conversation_no: 2929
+transcript_index: 36
+caller: B
+utterance_index: 20
+subutterance_index: 1
+act_tag: +@
+damsl_tag: +
+text: {C And, } {F uh, }
+
+   
+conversation_no: 2929
+transcript_index: 37
+caller: A
+utterance_index: 21
+subutterance_index: 1
+act_tag: sv
+damsl_tag: sv
+text: Or to change even, {D like }   if you didn't approve or didn't think you were getting good service. /
+
+   
+conversation_no: 2929
+transcript_index: 38
+caller: B
+utterance_index: 22
+subutterance_index: 1
+act_tag: +@
+damsl_tag: +
+text: {F Oh, } absolutely that, the choice would be yours --
+
+   
+conversation_no: 2929
+transcript_index: 39
+caller: A
+utterance_index: 23
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+>>>
+conversation_no: 2929
+transcript_index: 40
+caller: B
+utterance_index: 24
+subutterance_index: 1
+act_tag: +@
+damsl_tag: +
+text: -- {D yes, }  if you felt that you weren't  being, {F um, } given the proper guidelines --
+
+   
+conversation_no: 2929
+transcript_index: 41
+caller: A
+utterance_index: 25
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh. /
+
+   
+conversation_no: 2929
+transcript_index: 42
+caller: B
+utterance_index: 26
+subutterance_index: 1
+act_tag: +@
+damsl_tag: +
+text: -- for your health that you should be able to  make, {F um, } a choice there. /
+
+   
+conversation_no: 2929
+transcript_index: 43
+caller: A
+utterance_index: 27
+subutterance_index: 1
+act_tag: aa
+damsl_tag: aa
+text: Uh-huh.  /
+
+================================================================================
+EXAMPLE 30
+================================================================================
+
+   
+conversation_no: 3381
+transcript_index: 0
+caller: A
+utterance_index: 1
+subutterance_index: 1
+act_tag: %
+damsl_tag: %
+text: {F Uh, } I guess it's, {F uh, } - /
+
+   
+conversation_no: 3381
+transcript_index: 1
+caller: A
+utterance_index: 1
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: watching [ the ra-, +  the T V ] today there had a lot of  stuff [ on, +  on, ] {F uh, } crime.  /
+
+   
+conversation_no: 3381
+transcript_index: 2
+caller: A
+utterance_index: 1
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: In our state right now, {F uh, } recently they've had a lot of, {F uh, } {F uh, } the rapists, {F uh, }  murder type, {F uh, } killers going around  /
+
+   
+conversation_no: 3381
+transcript_index: 3
+caller: A
+utterance_index: 1
+subutterance_index: 4
+act_tag: %
+damsl_tag: %
+text: {C and } --
+
+   
+conversation_no: 3381
+transcript_index: 4
+caller: B
+utterance_index: 2
+subutterance_index: 1
+act_tag: ba
+damsl_tag: ba
+text: {F Oh, } gracious. /
+
+>>>
+conversation_no: 3381
+transcript_index: 5
+caller: A
+utterance_index: 3
+subutterance_index: 1
+act_tag: +
+damsl_tag: +
+text: -- {D well, } [ I, +  I, ] - /
+
+   
+conversation_no: 3381
+transcript_index: 6
+caller: A
+utterance_index: 3
+subutterance_index: 2
+act_tag: sd
+damsl_tag: sd
+text: they've caught them  /
+
+   
+conversation_no: 3381
+transcript_index: 7
+caller: A
+utterance_index: 3
+subutterance_index: 3
+act_tag: sd
+damsl_tag: sd
+text: {C and } [ they, +  they're ] in there. /
+
+   
+conversation_no: 3381
+transcript_index: 8
+caller: B
+utterance_index: 4
+subutterance_index: 1
+act_tag: b
+damsl_tag: b
+text: Uh-huh.  /
+
+=== EXPLORATION COMPLETE ===

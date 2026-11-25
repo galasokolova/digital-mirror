@@ -1,0 +1,375 @@
+=== E03: DAMSL TAG NORMALIZATION ===
+Transcript files found: 1155
+
+=== BEFORE NORMALIZATION ===
+Total rows: 223,606
+Raw unique tags: 303
+
+=== AFTER NORMALIZATION ===
+Total rows: 223,606
+Normalized unique tags: 43
+
+=== NORMALIZED LABEL DISTRIBUTION ===
+damsl_tag
+sd                 75403
+b                  38381
+sv                 26527
++                  18691
+%                  15682
+aa                 11157
+ba                  4797
+qy                  4760
+x                   3678
+ny                  3040
+fc                  2585
+qw                  1990
+nn                  1378
+bk                  1309
+h                   1227
+fo_o_fw_"_by_bc     1222
+qy^d                1217
+bh                  1057
+^q                   986
+bf                   961
+na                   851
+ad                   752
+^2                   730
+b^m                  689
+qo                   657
+qh                   578
+^h                   557
+ar                   345
+ng                   303
+br                   299
+no                   286
+fp                   225
+qrr                  210
+arp_nd               207
+t3                   117
+oo_co_cc             110
+aap_am               105
+bd                   104
+t1                   103
+^g                    93
+qw^d                  80
+fa                    79
+ft                    78
+
+=== NORMALIZATION STATISTICS ===
+Changed labels: 14,101
+Unchanged labels: 209,505
+Changed percentage: 6.31%
+
+=== RAW TO DAMSL MAPPING ===
+   act_tag       damsl_tag  count
+         %               %  15547
+        %@               %    130
+        %*               %      3
+      %,o@               %      1
+       %@*               %      1
+         +               +  17813
+        +@               +    867
+        +*               +     11
+        ^2              ^2    714
+       ^2@              ^2      7
+      ^2^g              ^2      5
+       ^2*              ^2      2
+      ^2^r              ^2      1
+      ^2^t              ^2      1
+        ^g              ^g     92
+       ^g@              ^g      1
+        ^h              ^h    553
+      ^h^r              ^h      2
+       ^h@              ^h      1
+      ^h^t              ^h      1
+        ^q              ^q    972
+      ^q^t              ^q      6
+       ^q*              ^q      3
+       ^q@              ^q      3
+      ^q^r              ^q      2
+        aa              aa  10136
+      aa^r              aa    916
+      aa^m              aa     69
+       aa@              aa     21
+       aa*              aa      4
+      aa^2              aa      3
+      aa^t              aa      3
+     aa,o@              aa      2
+     aa,ar              aa      1
+      aa^h              aa      1
+   aa^r,o@              aa      1
+       aap          aap_am     57
+        am          aap_am     44
+      am^r          aap_am      2
+     aap^m          aap_am      1
+     aap^r          aap_am      1
+        ad              ad    666
+      ad^t              ad     64
+    ad(^q)              ad      6
+       ad@              ad      4
+      ad^c              ad      4
+      ad^r              ad      4
+       ad*              ad      2
+     ad,o@              ad      1
+    ad,qy@              ad      1
+        ar              ar    303
+      ar^r              ar     41
+      ar^m              ar      1
+        nd          arp_nd    181
+       arp          arp_nd     23
+      nd^t          arp_nd      3
+         b               b  36180
+       b^r               b   2102
+        b@               b     80
+        b*               b      7
+     b^m^t               b      3
+      b^m@               b      2
+     b^m^g               b      2
+     b^m^r               b      2
+       b^2               b      1
+      b^r@               b      1
+       b^t               b      1
+       b^m             b^m    688
+ b^m,sd,o@             b^m      1
+        ba              ba   4523
+        fe              ba    134
+      ba^r              ba    103
+       ba@              ba     32
+      ba^m              ba      3
+     ba,fe              ba      1
+     ba^m@              ba      1
+        bd              bd     96
+      bd^r              bd      7
+       bd@              bd      1
+        bf              bf    934
+       bf@              bf      8
+      bf^r              bf      6
+      bf^m              bf      3
+    bf(^q)              bf      2
+       bf*              bf      2
+      bf^g              bf      2
+      bf^t              bf      2
+  bf,nn,o@              bf      1
+      bf^2              bf      1
+        bh              bh   1044
+      bh^m              bh      6
+       bh@              bh      3
+      bh^r              bh      3
+  bh,sd,o@              bh      1
+        bk              bk   1254
+      bk^r              bk     30
+      bk^m              bk     21
+       bk@              bk      2
+  bk,sd,o@              bk      1
+      bk^t              bk      1
+        br              br    237
+      br^m              br     59
+      br^r              br      2
+     br,o@              br      1
+        fa              fa     75
+      fa^c              fa      2
+      fa^r              fa      1
+      fa^t              fa      1
+        fc              fc   2404
+      fc^m              fc    131
+      fc^t              fc     29
+      fc^r              fc     18
+       fc@              fc      2
+     fc,o@              fc      1
+         o fo_o_fw_"_by_bc    801
+        o@ fo_o_fw_"_by_bc    339
+         " fo_o_fw_"_by_bc     26
+        by fo_o_fw_"_by_bc     19
+        bc fo_o_fw_"_by_bc     11
+        fo fo_o_fw_"_by_bc      5
+        o* fo_o_fw_"_by_bc      5
+       o^r fo_o_fw_"_by_bc      4
+        fw fo_o_fw_"_by_bc      3
+       o^c fo_o_fw_"_by_bc      3
+      bc^r fo_o_fw_"_by_bc      2
+       o^t fo_o_fw_"_by_bc      2
+      fo^c fo_o_fw_"_by_bc      1
+       fw* fo_o_fw_"_by_bc      1
+        fp              fp    207
+      fp^m              fp     15
+      fp^r              fp      3
+        ft              ft     76
+      ft^m              ft      1
+      ft^t              ft      1
+         h               h   1218
+       h^r               h      4
+       h^t               h      2
+      h,sd               h      1
+        h@               h      1
+       h^m               h      1
+        na              na    764
+      na^r              na     37
+      na^m              na     34
+      na^t              na      9
+       na@              na      3
+      ny^e              na      2
+  na,sd,o@              na      1
+    na^m^t              na      1
+        ng              ng    290
+      nn^e              ng      5
+      ng^r              ng      4
+      ng^m              ng      2
+   ng^r,o@              ng      1
+      ng^t              ng      1
+        nn              nn   1230
+      nn^r              nn    137
+      nn^m              nn      6
+       nn*              nn      2
+     nn^r@              nn      1
+    nn^r^t              nn      1
+      nn^t              nn      1
+        no              no    279
+      no^t              no      4
+      no^r              no      2
+       no@              no      1
+        ny              ny   2826
+      ny^r              ny    196
+      ny^m              ny      7
+       ny@              ny      6
+      ny^c              ny      2
+       ny*              ny      1
+    ny^c^r              ny      1
+      ny^t              ny      1
+        co        oo_co_cc     49
+        cc        oo_co_cc     35
+      co^t        oo_co_cc     13
+        oo        oo_co_cc      4
+      co^c        oo_co_cc      3
+      cc^r        oo_co_cc      2
+      oo^t        oo_co_cc      2
+      cc^t        oo_co_cc      1
+    oo(^q)        oo_co_cc      1
+        qh              qh    563
+      qh^m              qh      4
+       qh@              qh      3
+      qh^h              qh      2
+      qh^r              qh      2
+    qh(^q)              qh      1
+       qh*              qh      1
+      qh^c              qh      1
+      qh^g              qh      1
+        qo              qo    644
+      qo^t              qo      6
+      qo^d              qo      4
+       qo@              qo      1
+    qo^d^c              qo      1
+      qo^r              qo      1
+       qrr             qrr    198
+     qrr^t             qrr      6
+     qrr^d             qrr      5
+      qrr@             qrr      1
+        qw              qw   1890
+      qw^t              qw     49
+      qw^r              qw     14
+      qw^h              qw     11
+       qw@              qw      9
+    qw^d^t              qw      3
+      qw^g              qw      3
+       qw*              qw      2
+      qw^c              qw      2
+      qw^m              qw      2
+    qw(^q)              qw      1
+     qw^d@              qw      1
+    qw^d^c              qw      1
+    qw^r^t              qw      1
+     qw^t@              qw      1
+      qw^d            qw^d     80
+        qy              qy   3785
+      qy^g              qy    436
+        qr              qy    220
+      qy^t              qy    114
+      qy^r              qy     29
+       qy@              qy     21
+      qy^h              qy     21
+    qy^g^t              qy     19
+      qy^c              qy     16
+      qy^m              qy     16
+    qy^d^t              qy     14
+      qr^d              qy     12
+      qy^2              qy      8
+     qy^d@              qy      6
+    qy^d^r              qy      6
+    qy(^q)              qy      4
+    qy^d^m              qy      4
+     qy^g*              qy      4
+     qy^g@              qy      4
+      qr^t              qy      3
+       qy*              qy      3
+    qy^c^r              qy      2
+    qy^d^h              qy      2
+    qy^g^c              qy      2
+    qy^g^r              qy      2
+    qr(^q)              qy      1
+     qr^d*              qy      1
+  qy,am,o@              qy      1
+  qy^d(^q)              qy      1
+     qy^d*              qy      1
+    qy^d^c              qy      1
+     qy^h@              qy      1
+      qy^d            qy^d   1217
+        sd              sd  70464
+      sd^e              sd   1939
+    sd(^q)              sd   1341
+      sd^t              sd    929
+      sd^r              sd    248
+       sd@              sd    230
+      sd^m              sd     66
+      sd^c              sd     50
+       sd*              sd     46
+  sd(^q)^t              sd     22
+     sd,o@              sd     16
+    sd^e^t              sd     10
+     sd^e@              sd      8
+      sd^2              sd      5
+    sd^e^m              sd      5
+    sd^e^r              sd      5
+   sd(^q)*              sd      4
+   sd(^q)@              sd      4
+  sd(^q)^r              sd      1
+   sd,qy^g              sd      1
+     sd,sv              sd      1
+     sd;no              sd      1
+   sd;qy^d              sd      1
+     sd;sv              sd      1
+sd^e(^q)^r              sd      1
+     sd^m*              sd      1
+     sd^m@              sd      1
+     sd^r@              sd      1
+     sd^t*              sd      1
+        sv              sv  25696
+    sv(^q)              sv    301
+      sv^t              sv    157
+      sv^e              sv    118
+      sv^r              sv     88
+       sv@              sv     84
+      sv^m              sv     25
+       sv*              sv     23
+        fx              sv      9
+     sv,o@              sv      8
+   sv(^q)@              sv      5
+  sv,sd,o@              sv      3
+      sv^2              sv      3
+      sv^c              sv      3
+   sv(^q)*              sv      1
+  sv,qy^g@              sv      1
+     sv;sd              sv      1
+    sv^e^r              sv      1
+        t1              t1    102
+      t1^t              t1      1
+        t3              t3    117
+         x               x   3628
+        x@               x     48
+        x*               x      2
+
+=== EMPTY NORMALIZED TAGS ===
+Count: 0
+
+=== CONTINUATION ROWS ===
+Count: 18,691
+
+=== EXPLORATION COMPLETE ===

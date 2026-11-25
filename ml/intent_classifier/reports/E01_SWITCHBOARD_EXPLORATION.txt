@@ -1,0 +1,365 @@
+=== E01: SWITCHBOARD DATASET EXPLORATION ===
+Dataset directory: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\raw\switchboard\swda
+Transcript files found: 1155
+
+=== DATASET OVERVIEW ===
+Total rows: 223,606
+Total columns: 8
+Unique conversations: 1,155
+Unique raw labels: 303
+
+=== COLUMN TYPES ===
+swda_filename           str
+conversation_no       int64
+transcript_index      int64
+act_tag                 str
+caller                  str
+utterance_index       int64
+subutterance_index    int64
+text                    str
+dtype: object
+
+=== MISSING VALUES ===
+swda_filename         0
+conversation_no       0
+transcript_index      0
+act_tag               0
+caller                0
+utterance_index       0
+subutterance_index    0
+text                  0
+dtype: int64
+
+=== DUPLICATE ROWS ===
+0
+
+=== EMPTY TEXTS ===
+0
+
+=== RAW LABEL DISTRIBUTION ===
+            count  percentage
+act_tag                      
+sd          70464      31.513
+b           36180      16.180
+sv          25696      11.492
++           17813       7.966
+%           15547       6.953
+aa          10136       4.533
+ba           4523       2.023
+qy           3785       1.693
+x            3628       1.622
+ny           2826       1.264
+fc           2404       1.075
+b^r          2102       0.940
+sd^e         1939       0.867
+qw           1890       0.845
+sd(^q)       1341       0.600
+bk           1254       0.561
+nn           1230       0.550
+h            1218       0.545
+qy^d         1217       0.544
+bh           1044       0.467
+^q            972       0.435
+bf            934       0.418
+sd^t          929       0.415
+aa^r          916       0.410
++@            867       0.388
+o             801       0.358
+na            764       0.342
+^2            714       0.319
+b^m           688       0.308
+ad            666       0.298
+qo            644       0.288
+qh            563       0.252
+^h            553       0.247
+qy^g          436       0.195
+o@            339       0.152
+ar            303       0.136
+sv(^q)        301       0.135
+ng            290       0.130
+no            279       0.125
+sd^r          248       0.111
+br            237       0.106
+sd@           230       0.103
+qr            220       0.098
+fp            207       0.093
+qrr           198       0.089
+ny^r          196       0.088
+nd            181       0.081
+sv^t          157       0.070
+nn^r          137       0.061
+fe            134       0.060
+fc^m          131       0.059
+%@            130       0.058
+sv^e          118       0.053
+t3            117       0.052
+qy^t          114       0.051
+ba^r          103       0.046
+t1            102       0.046
+bd             96       0.043
+^g             92       0.041
+sv^r           88       0.039
+sv@            84       0.038
+qw^d           80       0.036
+b@             80       0.036
+ft             76       0.034
+fa             75       0.034
+aa^m           69       0.031
+sd^m           66       0.030
+ad^t           64       0.029
+br^m           59       0.026
+aap            57       0.025
+sd^c           50       0.022
+co             49       0.022
+qw^t           49       0.022
+x@             48       0.021
+sd*            46       0.021
+am             44       0.020
+ar^r           41       0.018
+na^r           37       0.017
+cc             35       0.016
+na^m           34       0.015
+ba@            32       0.014
+bk^r           30       0.013
+qy^r           29       0.013
+fc^t           29       0.013
+"              26       0.012
+sv^m           25       0.011
+sv*            23       0.010
+arp            23       0.010
+sd(^q)^t       22       0.010
+qy^h           21       0.009
+qy@            21       0.009
+aa@            21       0.009
+bk^m           21       0.009
+by             19       0.008
+qy^g^t         19       0.008
+fc^r           18       0.008
+qy^m           16       0.007
+qy^c           16       0.007
+sd,o@          16       0.007
+fp^m           15       0.007
+qw^r           14       0.006
+qy^d^t         14       0.006
+co^t           13       0.006
+qr^d           12       0.005
++*             11       0.005
+qw^h           11       0.005
+bc             11       0.005
+sd^e^t         10       0.004
+qw@             9       0.004
+na^t            9       0.004
+fx              9       0.004
+sd^e@           8       0.004
+qy^2            8       0.004
+bf@             8       0.004
+sv,o@           8       0.004
+ny^m            7       0.003
+b*              7       0.003
+bd^r            7       0.003
+^2@             7       0.003
+bf^r            6       0.003
+qy^d^r          6       0.003
+ny@             6       0.003
+qo^t            6       0.003
+qy^d@           6       0.003
+bh^m            6       0.003
+ad(^q)          6       0.003
+qrr^t           6       0.003
+nn^m            6       0.003
+^q^t            6       0.003
+o*              5       0.002
+nn^e            5       0.002
+^2^g            5       0.002
+sd^e^r          5       0.002
+sd^e^m          5       0.002
+sv(^q)@         5       0.002
+sd^2            5       0.002
+fo              5       0.002
+qrr^d           5       0.002
+qy(^q)          4       0.002
+o^r             4       0.002
+qy^g*           4       0.002
+qy^g@           4       0.002
+qh^m            4       0.002
+h^r             4       0.002
+qo^d            4       0.002
+ad^c            4       0.002
+ad^r            4       0.002
+oo              4       0.002
+no^t            4       0.002
+ad@             4       0.002
+sd(^q)*         4       0.002
+aa*             4       0.002
+qy^d^m          4       0.002
+sd(^q)@         4       0.002
+ng^r            4       0.002
+bh^r            3       0.001
+qr^t            3       0.001
+qw^g            3       0.001
+fp^r            3       0.001
+^q*             3       0.001
+b^m^t           3       0.001
+co^c            3       0.001
+aa^t            3       0.001
+na@             3       0.001
+fw              3       0.001
+o^c             3       0.001
+bh@             3       0.001
+nd^t            3       0.001
+sv^c            3       0.001
+ba^m            3       0.001
+^q@             3       0.001
+qw^d^t          3       0.001
+sv^2            3       0.001
+qh@             3       0.001
+bf^m            3       0.001
+aa^2            3       0.001
+%*              3       0.001
+qy*             3       0.001
+sv,sd,o@        3       0.001
+bf^g            2       0.001
+ny^e            2       0.001
+nn*             2       0.001
+qy^d^h          2       0.001
+ng^m            2       0.001
+qy^g^r          2       0.001
+no^r            2       0.001
+am^r            2       0.001
+^q^r            2       0.001
+^h^r            2       0.001
+^2*             2       0.001
+b^m^r           2       0.001
+o^t             2       0.001
+br^r            2       0.001
+qy^g^c          2       0.001
+qh^r            2       0.001
+x*              2       0.001
+bf^t            2       0.001
+qh^h            2       0.001
+b^m@            2       0.001
+qy^c^r          2       0.001
+bk@             2       0.001
+ad*             2       0.001
+bf*             2       0.001
+qw*             2       0.001
+qw^c            2       0.001
+aa,o@           2       0.001
+b^m^g           2       0.001
+bf(^q)          2       0.001
+ny^c            2       0.001
+bc^r            2       0.001
+oo^t            2       0.001
+cc^r            2       0.001
+fc@             2       0.001
+qw^m            2       0.001
+h^t             2       0.001
+fa^c            2       0.001
+qy^d(^q)        1       0.000
+qo^r            1       0.000
+^2^t            1       0.000
+na^m^t          1       0.000
+ft^t            1       0.000
+fa^t            1       0.000
+t1^t            1       0.000
+ft^m            1       0.000
+fo^c            1       0.000
+qo^d^c          1       0.000
+qh^c            1       0.000
+qw^d^c          1       0.000
+ar^m            1       0.000
+qy^h@           1       0.000
+qh^g            1       0.000
+b^2             1       0.000
+bk^t            1       0.000
+nn^t            1       0.000
+nn^r^t          1       0.000
+bf^2            1       0.000
+ny^t            1       0.000
+no@             1       0.000
+cc^t            1       0.000
+qr(^q)          1       0.000
+^h@             1       0.000
+aap^r           1       0.000
+sd^m*           1       0.000
+qh(^q)          1       0.000
+aap^m           1       0.000
+aa,ar           1       0.000
+qw^d@           1       0.000
+h,sd            1       0.000
+bh,sd,o@        1       0.000
+ng^t            1       0.000
+aa^r,o@         1       0.000
+ng^r,o@         1       0.000
+sd(^q)^r        1       0.000
+sd,sv           1       0.000
+sd;sv           1       0.000
+ad,qy@          1       0.000
+ad,o@           1       0.000
+fa^r            1       0.000
+%,o@            1       0.000
+fw*             1       0.000
+na,sd,o@        1       0.000
+bk,sd,o@        1       0.000
+fc,o@           1       0.000
+b^m,sd,o@       1       0.000
+sv,qy^g@        1       0.000
+ny*             1       0.000
+qy,am,o@        1       0.000
+br,o@           1       0.000
+qh*             1       0.000
+qw^r^t          1       0.000
+qy^d*           1       0.000
+bf,nn,o@        1       0.000
+sd^t*           1       0.000
+ny^c^r          1       0.000
+sv(^q)*         1       0.000
+oo(^q)          1       0.000
+h@              1       0.000
+bd@             1       0.000
+sd^e(^q)^r      1       0.000
+sd^r@           1       0.000
+qy^d^c          1       0.000
+qw(^q)          1       0.000
+^g@             1       0.000
+qo@             1       0.000
+h^m             1       0.000
+sv;sd           1       0.000
+^h^t            1       0.000
+sd,qy^g         1       0.000
+^2^r            1       0.000
+sv^e^r          1       0.000
+qw^t@           1       0.000
+nn^r@           1       0.000
+aa^h            1       0.000
+sd^m@           1       0.000
+ba^m@           1       0.000
+b^t             1       0.000
+qrr@            1       0.000
+qr^d*           1       0.000
+b^r@            1       0.000
+%@*             1       0.000
+sd;qy^d         1       0.000
+sd;no           1       0.000
+ba,fe           1       0.000
+
+=== CONTINUATION ROWS ===
+Count: 17,813
+Percentage: 7.97%
+
+=== RAW TEXT LENGTH STATISTICS ===
+count    223606.000000
+mean          9.811383
+std           9.026066
+min           1.000000
+25%           3.000000
+50%           7.000000
+75%          13.000000
+max         127.000000
+
+=== SHORT TEXTS ===
+One token: 3,253
+Two tokens: 47,203
+Three tokens: 12,655
+
+=== EXPLORATION COMPLETE ===

@@ -1,0 +1,84 @@
+=== E08a: INTENT DATASET PREPARATION ===
+Taxonomy version: 1.0
+Input rows: 204,915
+Empty texts excluded: 3,685
+
+=== DATASET STATISTICS ===
+Included rows: 170,706
+Excluded unmapped rows: 30,524
+Retained percentage: 83.31%
+Intent classes: 12
+Conversations: 1,155
+
+=== INTENT DISTRIBUTION ===
+STATEMENT                  101,928  59.71%
+ACKNOWLEDGMENT              38,378  22.48%
+AGREEMENT                   11,157   6.54%
+QUESTION                     8,913   5.22%
+AFFIRMATIVE_ANSWER           3,891   2.28%
+GOODBYE                      2,584   1.51%
+NEGATIVE_ANSWER              1,681   0.98%
+UNCERTAINTY                  1,227   0.72%
+DISAGREEMENT                   345   0.20%
+CLARIFICATION                  299   0.18%
+GREETING                       225   0.13%
+GRATITUDE                       78   0.05%
+
+=== CLASS IMBALANCE ===
+Largest class: STATEMENT
+Largest class size: 101,928
+Smallest class: GRATITUDE
+Smallest class size: 78
+Imbalance ratio: 1306.77
+
+=== EXCLUDED DAMSL LABELS ===
+damsl_tag
+%                  15670
+ba                  4797
+bk                  1309
+fo_o_fw_"_by_bc     1189
+bh                  1057
+^q                   986
+bf                   961
+ad                   752
+^2                   730
+b^m                  689
+qh                   578
+^h                   557
+no                   286
+arp_nd               207
+t3                   114
+oo_co_cc             110
+aap_am               105
+bd                   104
+t1                   103
+^g                    93
+fa                    79
+x                     48
+
+=== INTENT MAPPING DISTRIBUTION ===
+damsl_tag              aa   ar      b   br    fc   fp  ft     h   na   ng    nn    ny   qo  qrr    qw  qw^d    qy  qy^d     sd     sv
+intent                                                                                                                               
+ACKNOWLEDGMENT          0    0  38378    0     0    0   0     0    0    0     0     0    0    0     0     0     0     0      0      0
+AFFIRMATIVE_ANSWER      0    0      0    0     0    0   0     0  851    0     0  3040    0    0     0     0     0     0      0      0
+AGREEMENT           11157    0      0    0     0    0   0     0    0    0     0     0    0    0     0     0     0     0      0      0
+CLARIFICATION           0    0      0  299     0    0   0     0    0    0     0     0    0    0     0     0     0     0      0      0
+DISAGREEMENT            0  345      0    0     0    0   0     0    0    0     0     0    0    0     0     0     0     0      0      0
+GOODBYE                 0    0      0    0  2584    0   0     0    0    0     0     0    0    0     0     0     0     0      0      0
+GRATITUDE               0    0      0    0     0    0  78     0    0    0     0     0    0    0     0     0     0     0      0      0
+GREETING                0    0      0    0     0  225   0     0    0    0     0     0    0    0     0     0     0     0      0      0
+NEGATIVE_ANSWER         0    0      0    0     0    0   0     0    0  303  1378     0    0    0     0     0     0     0      0      0
+QUESTION                0    0      0    0     0    0   0     0    0    0     0     0  657  210  1990    80  4759  1217      0      0
+STATEMENT               0    0      0    0     0    0   0     0    0    0     0     0    0    0     0     0     0     0  75402  26526
+UNCERTAINTY             0    0      0    0     0    0   0  1227    0    0     0     0    0    0     0     0     0     0      0      0
+
+=== VALIDATION ===
+Row accounting: PASSED
+Missing intents: 0
+Empty texts: 0
+Intent class validation: PASSED
+
+=== OUTPUT ===
+Saved to: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\intent_dataset_v1.csv
+
+=== PREPARATION COMPLETE ===

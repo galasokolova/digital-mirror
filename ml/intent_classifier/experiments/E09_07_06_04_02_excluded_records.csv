@@ -1,0 +1,2 @@
+id,text,intent,contrast_group,topic,style,context,source,normalized_text,model_text,exclusion_reason
+DMC-0032,Who wrote the article?,QUESTION,CG-B01-008,news_media,explicit,We are discussing the headline.,digital_mirror_contrastive_v1,who wrote the article?,who wrote the article,existing_domain_duplicate

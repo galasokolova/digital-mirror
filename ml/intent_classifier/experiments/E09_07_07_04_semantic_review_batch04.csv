@@ -1,0 +1,51 @@
+review_id,text,context,reviewed_intent,naturalness,context_required,review_status,notes,intent_without_context,intent_with_context
+REV-0151,Quite the opposite.,The new layout is easier to read.,DISAGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,DISAGREEMENT,DISAGREEMENT
+REV-0152,"Well, I have to agree with you there.",The first example is not representative.,AGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,AGREEMENT,AGREEMENT
+REV-0153,Same here.,I think the first version is clearer.,AGREEMENT,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,AGREEMENT
+REV-0154,I found an old receipt.,,STATEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,STATEMENT,STATEMENT
+REV-0155,Thanks a million.,,GRATITUDE,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GRATITUDE,GRATITUDE
+REV-0156,Good morning to you too.,,GREETING,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GREETING,GREETING
+REV-0157,I wouldn't dispute that.,The wording is ambiguous.,AGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,AGREEMENT,AGREEMENT
+REV-0158,Cheerio!,,GOODBYE,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GOODBYE,GOODBYE
+REV-0159,I didn't.,Did you call her?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0160,You're right.,That argument contradicts itself.,AGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,AGREEMENT,AGREEMENT
+REV-0161,I'm unsure.,Which version is accurate?,UNCERTAINTY,NATURAL,NO,ACCEPT,Intent identifiable from wording.,UNCERTAINTY,UNCERTAINTY
+REV-0162,I agree with that conclusion.,The claim is not well supported.,AGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,AGREEMENT,AGREEMENT
+REV-0163,Time for me to go.,,GOODBYE,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GOODBYE,GOODBYE
+REV-0164,That's misleading.,The headline accurately summarizes the report.,DISAGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,DISAGREEMENT,DISAGREEMENT
+REV-0165,See you soon.,,GOODBYE,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GOODBYE,GOODBYE
+REV-0166,"I usually do, actually.",Do you read the comments?,AFFIRMATIVE_ANSWER,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,AFFIRMATIVE_ANSWER
+REV-0167,"No, I checked both of my email accounts and there was nothing from them.",Have you received their confirmation?,NEGATIVE_ANSWER,NATURAL,NO,ACCEPT,Intent identifiable from wording.,NEGATIVE_ANSWER,NEGATIVE_ANSWER
+REV-0168,How much electricity does this installation use each day?,,QUESTION,NATURAL,NO,ACCEPT,Intent identifiable from wording.,QUESTION,QUESTION
+REV-0169,"Okay, got it.",The dial controls the volume.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0170,My name isn't on it.,Are you on the list?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,STATEMENT,NEGATIVE_ANSWER
+REV-0171,"Yes, I remember that.",Do you remember the first image?,AFFIRMATIVE_ANSWER,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,AFFIRMATIVE_ANSWER
+REV-0172,Define reliable.,We used a reliable source.,CLARIFICATION,NATURAL,NO,ACCEPT,Intent identifiable from wording.,CLARIFICATION,CLARIFICATION
+REV-0173,Thanks heaps.,,GRATITUDE,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GRATITUDE,GRATITUDE
+REV-0174,That remains an open question.,Was the footage edited?,UNCERTAINTY,NATURAL,NO,ACCEPT,Intent identifiable from wording.,UNCERTAINTY,UNCERTAINTY
+REV-0175,I see it that way.,The second explanation is stronger.,AGREEMENT,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,AGREEMENT
+REV-0176,I really appreciate you taking the time to explain that without making me feel silly.,,GRATITUDE,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GRATITUDE,GRATITUDE
+REV-0177,I was.,Were you at the exhibition yesterday?,AFFIRMATIVE_ANSWER,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,AFFIRMATIVE_ANSWER
+REV-0178,No one did.,Did anyone volunteer?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0179,I'm undecided.,Which explanation do you prefer?,UNCERTAINTY,NATURAL,NO,ACCEPT,Intent identifiable from wording.,UNCERTAINTY,UNCERTAINTY
+REV-0180,Do you mean the headline?,The wording was changed.,CLARIFICATION,NATURAL,NO,ACCEPT,Intent identifiable from wording.,CLARIFICATION,CLARIFICATION
+REV-0181,That's how I see it.,The argument is missing context.,AGREEMENT,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,STATEMENT,AGREEMENT
+REV-0182,"Hey, you!",,AMBIGUOUS,NATURAL,YES,REVISE,No context supplied; greeting or attention-getter.,AMBIGUOUS,AMBIGUOUS
+REV-0183,Nice meeting you!,,AMBIGUOUS,NATURAL,YES,REVISE,No context supplied; meeting or closing formula.,AMBIGUOUS,AMBIGUOUS
+REV-0184,I'm against that idea.,We should remove the captions.,DISAGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,DISAGREEMENT,DISAGREEMENT
+REV-0185,Thank you for the reminder.,,GRATITUDE,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GRATITUDE,GRATITUDE
+REV-0186,I see.,The audio was recorded separately.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0187,The first few seconds of the recording are silent.,,STATEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,STATEMENT,STATEMENT
+REV-0188,Bad assumption.,Everyone understands the instructions.,DISAGREEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,DISAGREEMENT,DISAGREEMENT
+REV-0189,Thank you kindly.,,GRATITUDE,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GRATITUDE,GRATITUDE
+REV-0190,Meaning what?,The account was compromised.,CLARIFICATION,NATURAL,NO,ACCEPT,Intent identifiable from wording.,CLARIFICATION,CLARIFICATION
+REV-0191,I wasn't.,Were you there yesterday?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0192,There were three different versions of the poster.,,STATEMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,STATEMENT,STATEMENT
+REV-0193,Nah.,Do you drink coffee?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0194,All clear.,The blue light means recording.,ACKNOWLEDGMENT,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,ACKNOWLEDGMENT
+REV-0195,I've never been there.,Have you visited Berlin?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,STATEMENT,NEGATIVE_ANSWER
+REV-0196,Hello there!,,GREETING,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GREETING,GREETING
+REV-0197,Do you know whether the people who collected the data were present during the incident?,,QUESTION,NATURAL,NO,ACCEPT,Intent identifiable from wording.,QUESTION,QUESTION
+REV-0198,No.,Did you watch the video?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Previous turn resolves conversational function.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0199,Roger.,The microphone is now active.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Intent identifiable from wording.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0200,"Hey, good morning!",,GREETING,NATURAL,NO,ACCEPT,Intent identifiable from wording.,GREETING,GREETING

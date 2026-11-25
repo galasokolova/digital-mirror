@@ -1,0 +1,115 @@
+=== E09.04.3: DIGITAL MIRROR PREPROCESSING ===
+
+Input records: 600
+
+=== TEXT TRANSFORMATIONS ===
+Normalization changes: 600
+Punctuation removal changes: 138
+Total changed texts: 600
+
+=== PREPROCESSING EXAMPLES ===
+
+ID: DM-0111
+Intent: GRATITUDE
+Original:   Thanks for the evidence
+Normalized: thanks for the evidence
+Model text: thanks for the evidence
+
+ID: DM-0420
+Intent: NEGATIVE_ANSWER
+Original:   I do not want to start
+Normalized: i do not want to start
+Model text: i do not want to start
+
+ID: DM-0566
+Intent: STATEMENT
+Original:   The story appeared on Monday
+Normalized: the story appeared on monday
+Model text: the story appeared on monday
+
+ID: DM-0078
+Intent: GOODBYE
+Original:   Farewell computer
+Normalized: farewell computer
+Model text: farewell computer
+
+ID: DM-0182
+Intent: AGREEMENT
+Original:   I agree that evidence matters
+Normalized: i agree that evidence matters
+Model text: i agree that evidence matters
+
+ID: DM-0285
+Intent: UNCERTAINTY
+Original:   I have not made up my mind
+Normalized: i have not made up my mind
+Model text: i have not made up my mind
+
+ID: DM-0011
+Intent: GREETING
+Original:   Hi there machine
+Normalized: hi there machine
+Model text: hi there machine
+
+ID: DM-0470
+Intent: QUESTION
+Original:   What is missing from the report?
+Normalized: what is missing from the report?
+Model text: what is missing from the report
+
+ID: DM-0079
+Intent: GOODBYE
+Original:   See you robot
+Normalized: see you robot
+Model text: see you robot
+
+ID: DM-0350
+Intent: ACKNOWLEDGMENT
+Original:   Now I follow
+Normalized: now i follow
+Model text: now i follow
+
+ID: DM-0056
+Intent: GOODBYE
+Original:   See you soon
+Normalized: see you soon
+Model text: see you soon
+
+ID: DM-0119
+Intent: GRATITUDE
+Original:   I am thankful for that
+Normalized: i am thankful for that
+Model text: i am thankful for that
+
+=== VALIDATION ===
+PASS | Expected record count
+PASS | No records removed
+PASS | Unique IDs
+PASS | No empty model texts
+PASS | Unique model texts
+PASS | All intent classes present
+PASS | Balanced class distribution
+PASS | Normalization is idempotent
+
+=== OUTPUT DATASET ===
+Records: 600
+Columns: ['id', 'text', 'intent', 'source', 'normalized_text', 'model_text']
+
+Class distribution:
+intent
+GREETING              50
+GOODBYE               50
+GRATITUDE             50
+AGREEMENT             50
+DISAGREEMENT          50
+UNCERTAINTY           50
+ACKNOWLEDGMENT        50
+AFFIRMATIVE_ANSWER    50
+NEGATIVE_ANSWER       50
+QUESTION              50
+CLARIFICATION         50
+STATEMENT             50
+
+Saved to: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\digital_mirror_v1\train.csv
+
+=== PREPROCESSING COMPLETE ===

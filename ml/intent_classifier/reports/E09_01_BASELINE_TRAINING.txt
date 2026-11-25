@@ -1,0 +1,151 @@
+=== E09: INTENT CLASSIFIER BASELINES ===
+Train rows: 135,827
+Validation rows: 16,913
+Classes: 12
+Text column: model_text
+Random state: 42
+Seen validation rows: 5,908
+Unseen validation rows: 11,005
+
+======================================================================
+E09_00_majority
+======================================================================
+
+Training started...
+Training completed.
+
+=== METRICS ===
+Accuracy:       0.5947
+Macro F1:       0.0622
+Weighted F1:    0.4435
+Training time:  0.19s
+Inference time: 0.0018s
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+    ACKNOWLEDGMENT     0.0000    0.0000    0.0000      3809
+AFFIRMATIVE_ANSWER     0.0000    0.0000    0.0000       428
+         AGREEMENT     0.0000    0.0000    0.0000      1069
+     CLARIFICATION     0.0000    0.0000    0.0000        23
+      DISAGREEMENT     0.0000    0.0000    0.0000        23
+           GOODBYE     0.0000    0.0000    0.0000       220
+         GRATITUDE     0.0000    0.0000    0.0000         7
+          GREETING     0.0000    0.0000    0.0000        26
+   NEGATIVE_ANSWER     0.0000    0.0000    0.0000       170
+          QUESTION     0.0000    0.0000    0.0000       967
+         STATEMENT     0.5947    1.0000    0.7458     10058
+       UNCERTAINTY     0.0000    0.0000    0.0000       113
+
+          accuracy                         0.5947     16913
+         macro avg     0.0496    0.0833    0.0622     16913
+      weighted avg     0.3537    0.5947    0.4435     16913
+
+
+=== CONFUSION MATRIX ===
+Predicted           ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  AGREEMENT  CLARIFICATION  DISAGREEMENT  GOODBYE  GRATITUDE  GREETING  NEGATIVE_ANSWER  QUESTION  STATEMENT  UNCERTAINTY
+Actual                                                                                                                                                                         
+ACKNOWLEDGMENT                   0                   0          0              0             0        0          0         0                0         0       3809            0
+AFFIRMATIVE_ANSWER               0                   0          0              0             0        0          0         0                0         0        428            0
+AGREEMENT                        0                   0          0              0             0        0          0         0                0         0       1069            0
+CLARIFICATION                    0                   0          0              0             0        0          0         0                0         0         23            0
+DISAGREEMENT                     0                   0          0              0             0        0          0         0                0         0         23            0
+GOODBYE                          0                   0          0              0             0        0          0         0                0         0        220            0
+GRATITUDE                        0                   0          0              0             0        0          0         0                0         0          7            0
+GREETING                         0                   0          0              0             0        0          0         0                0         0         26            0
+NEGATIVE_ANSWER                  0                   0          0              0             0        0          0         0                0         0        170            0
+QUESTION                         0                   0          0              0             0        0          0         0                0         0        967            0
+STATEMENT                        0                   0          0              0             0        0          0         0                0         0      10058            0
+UNCERTAINTY                      0                   0          0              0             0        0          0         0                0         0        113            0
+
+=== SEEN / UNSEEN TEXT EVALUATION ===
+
+Seen texts
+Rows: 5,908
+Accuracy: 0.0511
+Macro F1 (all classes): 0.0081
+Classes present: 12/12
+
+Unseen texts
+Rows: 11,005
+Accuracy: 0.8865
+Macro F1 (all classes): 0.0783
+Classes present: 12/12
+
+======================================================================
+E09_01_word_logreg
+======================================================================
+
+Training started...
+Training completed.
+
+=== METRICS ===
+Accuracy:       0.8857
+Macro F1:       0.5274
+Weighted F1:    0.8649
+Training time:  74.77s
+Inference time: 0.6486s
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+    ACKNOWLEDGMENT     0.8147    0.9635    0.8828      3809
+AFFIRMATIVE_ANSWER     0.6000    0.0280    0.0536       428
+         AGREEMENT     0.6064    0.3199    0.4189      1069
+     CLARIFICATION     1.0000    0.3043    0.4667        23
+      DISAGREEMENT     0.0000    0.0000    0.0000        23
+           GOODBYE     0.9020    0.6273    0.7399       220
+         GRATITUDE     0.0000    0.0000    0.0000         7
+          GREETING     1.0000    0.4615    0.6316        26
+   NEGATIVE_ANSWER     0.6050    0.7118    0.6541       170
+          QUESTION     0.9395    0.6422    0.7629       967
+         STATEMENT     0.9323    0.9923    0.9614     10058
+       UNCERTAINTY     0.8824    0.6637    0.7576       113
+
+          accuracy                         0.8857     16913
+         macro avg     0.6902    0.4762    0.5274     16913
+      weighted avg     0.8717    0.8857    0.8649     16913
+
+
+=== CONFUSION MATRIX ===
+Predicted           ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  AGREEMENT  CLARIFICATION  DISAGREEMENT  GOODBYE  GRATITUDE  GREETING  NEGATIVE_ANSWER  QUESTION  STATEMENT  UNCERTAINTY
+Actual                                                                                                                                                                         
+ACKNOWLEDGMENT                3670                   5        103              0             0        4          0         0                5         1         19            2
+AFFIRMATIVE_ANSWER             265                  12         84              0             0        0          0         0                0         0         67            0
+AGREEMENT                      514                   3        342              0             0        2          0         0               55         2        151            0
+CLARIFICATION                    3                   0          0              7             0        0          0         0                0         5          8            0
+DISAGREEMENT                     0                   0          0              0             0        0          0         0               13         0          9            1
+GOODBYE                         42                   0          3              0             0      138          0         0                0         1         36            0
+GRATITUDE                        0                   0          0              0             0        6          0         0                0         0          1            0
+GREETING                         0                   0          0              0             0        1          0        12                0         0         13            0
+NEGATIVE_ANSWER                  5                   0          0              0             0        0          0         0              121         0         44            0
+QUESTION                         4                   0          1              0             0        1          0         0                1       621        339            0
+STATEMENT                        2                   0         31              0             0        1          0         0                5        31       9981            7
+UNCERTAINTY                      0                   0          0              0             0        0          0         0                0         0         38           75
+
+=== SEEN / UNSEEN TEXT EVALUATION ===
+
+Seen texts
+Rows: 5,908
+Accuracy: 0.7883
+Macro F1 (all classes): 0.5832
+Classes present: 12/12
+
+Unseen texts
+Rows: 11,005
+Accuracy: 0.9379
+Macro F1 (all classes): 0.3185
+Classes present: 12/12
+
+Model saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\models\E09_01_word_logreg.joblib
+Vocabulary size: 76,862
+Training iterations: [164]
+
+=== EXPERIMENT COMPARISON ===
+        experiment  accuracy  macro_f1  weighted_f1  training_seconds  inference_seconds
+   E09_00_majority    0.5947    0.0622       0.4435            0.1901             0.0018
+E09_01_word_logreg    0.8857    0.5274       0.8649           74.7740             0.6486
+
+Results saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\experiments\E09_baseline_results.csv
+
+=== TRAINING COMPLETE ===

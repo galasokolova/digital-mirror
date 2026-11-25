@@ -1,0 +1,10 @@
+dataset,scope,pairs,low,moderate,high,very_high
+small_talk,ALL,179700,179563,134,1,2
+small_talk,within_class,14700,14593,105,1,1
+small_talk,between_classes,165000,164970,29,0,1
+digital_mirror,ALL,179700,179229,442,29,0
+digital_mirror,within_class,14700,14325,356,19,0
+digital_mirror,between_classes,165000,164904,86,10,0
+contrastive,ALL,719400,710735,4916,3749,0
+contrastive,between_classes,660000,659764,233,3,0
+contrastive,within_class,59400,50971,4683,3746,0

@@ -1,0 +1,766 @@
+=== E08a.2: CUSTOM INTENT AMBIGUITY ===
+Input rows: 170,706
+Intent classes: 12
+
+======================================================================
+A: ORIGINAL CLEAN TEXT
+======================================================================
+Empty texts after normalization: 0
+Total rows: 170,706
+Unique texts: 113,608
+Repeated unique texts: 1,771
+Ambiguous unique texts: 645
+Ambiguous text percentage: 0.57%
+Ambiguous rows: 54,704
+Ambiguous row percentage: 32.05%
+Empirical text-only ceiling: 0.9297
+
+=== MOST FREQUENT AMBIGUOUS TEXTS ===
+
+------------------------------------------------------------
+Text: Uh-huh.
+Total occurrences: 13,553
+Different intents: 7
+  ACKNOWLEDGMENT             13,046 (96.26%)
+  AFFIRMATIVE_ANSWER            280 (2.07%)
+  AGREEMENT                     185 (1.37%)
+  GOODBYE                        30 (0.22%)
+  STATEMENT                       7 (0.05%)
+  NEGATIVE_ANSWER                 3 (0.02%)
+  QUESTION                        2 (0.01%)
+
+------------------------------------------------------------
+Text: Yeah.
+Total occurrences: 9,970
+Different intents: 6
+  ACKNOWLEDGMENT              8,457 (84.82%)
+  AGREEMENT                     837 (8.40%)
+  AFFIRMATIVE_ANSWER            636 (6.38%)
+  GOODBYE                        37 (0.37%)
+  QUESTION                        2 (0.02%)
+  STATEMENT                       1 (0.01%)
+
+------------------------------------------------------------
+Text: Yeah,
+Total occurrences: 6,232
+Different intents: 5
+  ACKNOWLEDGMENT              3,491 (56.02%)
+  AGREEMENT                   1,930 (30.97%)
+  AFFIRMATIVE_ANSWER            728 (11.68%)
+  GOODBYE                        81 (1.30%)
+  QUESTION                        2 (0.03%)
+
+------------------------------------------------------------
+Text: Right.
+Total occurrences: 3,533
+Different intents: 5
+  ACKNOWLEDGMENT              2,925 (82.79%)
+  AGREEMENT                     519 (14.69%)
+  AFFIRMATIVE_ANSWER             71 (2.01%)
+  GOODBYE                        16 (0.45%)
+  STATEMENT                       2 (0.06%)
+
+------------------------------------------------------------
+Text: Oh.
+Total occurrences: 1,197
+Different intents: 3
+  ACKNOWLEDGMENT              1,194 (99.75%)
+  GOODBYE                         2 (0.17%)
+  STATEMENT                       1 (0.08%)
+
+------------------------------------------------------------
+Text: yeah.
+Total occurrences: 1,103
+Different intents: 4
+  ACKNOWLEDGMENT                687 (62.28%)
+  AGREEMENT                     294 (26.65%)
+  AFFIRMATIVE_ANSWER            117 (10.61%)
+  GOODBYE                         5 (0.45%)
+
+------------------------------------------------------------
+Text: Uh-huh,
+Total occurrences: 1,053
+Different intents: 5
+  ACKNOWLEDGMENT                823 (78.16%)
+  AGREEMENT                     165 (15.67%)
+  AFFIRMATIVE_ANSWER             49 (4.65%)
+  GOODBYE                        15 (1.42%)
+  NEGATIVE_ANSWER                 1 (0.09%)
+
+------------------------------------------------------------
+Text: No,
+Total occurrences: 1,014
+Different intents: 6
+  NEGATIVE_ANSWER               616 (60.75%)
+  AGREEMENT                     261 (25.74%)
+  DISAGREEMENT                   84 (8.28%)
+  ACKNOWLEDGMENT                 44 (4.34%)
+  GOODBYE                         8 (0.79%)
+  STATEMENT                       1 (0.10%)
+
+------------------------------------------------------------
+Text: Yes.
+Total occurrences: 920
+Different intents: 5
+  ACKNOWLEDGMENT                419 (45.54%)
+  AGREEMENT                     263 (28.59%)
+  AFFIRMATIVE_ANSWER            235 (25.54%)
+  GOODBYE                         2 (0.22%)
+  GREETING                        1 (0.11%)
+
+------------------------------------------------------------
+Text: Right,
+Total occurrences: 810
+Different intents: 3
+  ACKNOWLEDGMENT                408 (50.37%)
+  AGREEMENT                     372 (45.93%)
+  AFFIRMATIVE_ANSWER             30 (3.70%)
+
+------------------------------------------------------------
+Text: yeah,
+Total occurrences: 750
+Different intents: 5
+  ACKNOWLEDGMENT                366 (48.80%)
+  AGREEMENT                     270 (36.00%)
+  AFFIRMATIVE_ANSWER            109 (14.53%)
+  GOODBYE                         4 (0.53%)
+  STATEMENT                       1 (0.13%)
+
+------------------------------------------------------------
+Text: uh-huh.
+Total occurrences: 721
+Different intents: 3
+  ACKNOWLEDGMENT                569 (78.92%)
+  AGREEMENT                      93 (12.90%)
+  AFFIRMATIVE_ANSWER             59 (8.18%)
+
+------------------------------------------------------------
+Text: Yes,
+Total occurrences: 649
+Different intents: 7
+  AGREEMENT                     283 (43.61%)
+  AFFIRMATIVE_ANSWER            212 (32.67%)
+  ACKNOWLEDGMENT                141 (21.73%)
+  GOODBYE                         9 (1.39%)
+  GREETING                        2 (0.31%)
+  DISAGREEMENT                    1 (0.15%)
+  STATEMENT                       1 (0.15%)
+
+------------------------------------------------------------
+Text: Okay.
+Total occurrences: 573
+Different intents: 5
+  ACKNOWLEDGMENT                364 (63.53%)
+  GOODBYE                       140 (24.43%)
+  AGREEMENT                      63 (10.99%)
+  AFFIRMATIVE_ANSWER              4 (0.70%)
+  STATEMENT                       2 (0.35%)
+
+------------------------------------------------------------
+Text: Oh, yeah.
+Total occurrences: 570
+Different intents: 3
+  ACKNOWLEDGMENT                418 (73.33%)
+  AGREEMENT                     104 (18.25%)
+  AFFIRMATIVE_ANSWER             48 (8.42%)
+
+------------------------------------------------------------
+Text: Yeah
+Total occurrences: 469
+Different intents: 4
+  ACKNOWLEDGMENT                331 (70.58%)
+  AGREEMENT                      90 (19.19%)
+  AFFIRMATIVE_ANSWER             47 (10.02%)
+  GOODBYE                         1 (0.21%)
+
+------------------------------------------------------------
+Text: No.
+Total occurrences: 468
+Different intents: 7
+  NEGATIVE_ANSWER               223 (47.65%)
+  AGREEMENT                     176 (37.61%)
+  ACKNOWLEDGMENT                 47 (10.04%)
+  DISAGREEMENT                   17 (3.63%)
+  AFFIRMATIVE_ANSWER              2 (0.43%)
+  GOODBYE                         2 (0.43%)
+  STATEMENT                       1 (0.21%)
+
+------------------------------------------------------------
+Text: That's right.
+Total occurrences: 433
+Different intents: 4
+  AGREEMENT                     406 (93.76%)
+  ACKNOWLEDGMENT                 13 (3.00%)
+  AFFIRMATIVE_ANSWER              9 (2.08%)
+  STATEMENT                       5 (1.15%)
+
+------------------------------------------------------------
+Text: Huh.
+Total occurrences: 408
+Different intents: 3
+  ACKNOWLEDGMENT                404 (99.02%)
+  CLARIFICATION                   3 (0.74%)
+  UNCERTAINTY                     1 (0.25%)
+
+------------------------------------------------------------
+Text: right.
+Total occurrences: 370
+Different intents: 5
+  ACKNOWLEDGMENT                209 (56.49%)
+  AGREEMENT                     147 (39.73%)
+  AFFIRMATIVE_ANSWER             11 (2.97%)
+  QUESTION                        2 (0.54%)
+  GOODBYE                         1 (0.27%)
+
+=== AMBIGUITY BY INTENT ===
+ACKNOWLEDGMENT            total= 38,378 ambiguous= 37,478 rate= 97.65%
+AFFIRMATIVE_ANSWER        total=  3,891 ambiguous=  3,294 rate= 84.66%
+AGREEMENT                 total= 11,157 ambiguous=  9,532 rate= 85.44%
+CLARIFICATION             total=    299 ambiguous=     99 rate= 33.11%
+DISAGREEMENT              total=    345 ambiguous=    234 rate= 67.83%
+GOODBYE                   total=  2,584 ambiguous=    787 rate= 30.46%
+GRATITUDE                 total=     78 ambiguous=     50 rate= 64.10%
+GREETING                  total=    225 ambiguous=     42 rate= 18.67%
+NEGATIVE_ANSWER           total=  1,681 ambiguous=  1,348 rate= 80.19%
+QUESTION                  total=  8,913 ambiguous=     86 rate=  0.96%
+STATEMENT                 total=101,928 ambiguous=  1,207 rate=  1.18%
+UNCERTAINTY               total=  1,227 ambiguous=    547 rate= 44.58%
+
+=== INTENT OVERLAP ===
+AGREEMENT                 <-> STATEMENT                 235 shared texts
+ACKNOWLEDGMENT            <-> AGREEMENT                 157 shared texts
+AFFIRMATIVE_ANSWER        <-> AGREEMENT                 139 shared texts
+ACKNOWLEDGMENT            <-> AFFIRMATIVE_ANSWER        108 shared texts
+AFFIRMATIVE_ANSWER        <-> STATEMENT                 74 shared texts
+AGREEMENT                 <-> GOODBYE                   66 shared texts
+ACKNOWLEDGMENT            <-> GOODBYE                   61 shared texts
+GOODBYE                   <-> STATEMENT                 49 shared texts
+STATEMENT                 <-> UNCERTAINTY               45 shared texts
+ACKNOWLEDGMENT            <-> STATEMENT                 39 shared texts
+NEGATIVE_ANSWER           <-> STATEMENT                 38 shared texts
+AGREEMENT                 <-> NEGATIVE_ANSWER           36 shared texts
+AFFIRMATIVE_ANSWER        <-> GOODBYE                   34 shared texts
+DISAGREEMENT              <-> NEGATIVE_ANSWER           25 shared texts
+AGREEMENT                 <-> DISAGREEMENT              21 shared texts
+DISAGREEMENT              <-> STATEMENT                 16 shared texts
+ACKNOWLEDGMENT            <-> NEGATIVE_ANSWER           15 shared texts
+CLARIFICATION             <-> QUESTION                  14 shared texts
+GOODBYE                   <-> GRATITUDE                 13 shared texts
+GOODBYE                   <-> QUESTION                  11 shared texts
+
+======================================================================
+B: LOWERCASE TEXT
+======================================================================
+Empty texts after normalization: 0
+Total rows: 170,706
+Unique texts: 112,925
+Repeated unique texts: 1,791
+Ambiguous unique texts: 629
+Ambiguous text percentage: 0.56%
+Ambiguous rows: 55,220
+Ambiguous row percentage: 32.35%
+Empirical text-only ceiling: 0.9285
+
+=== MOST FREQUENT AMBIGUOUS TEXTS ===
+
+------------------------------------------------------------
+Text: uh-huh.
+Total occurrences: 14,274
+Different intents: 7
+  ACKNOWLEDGMENT             13,615 (95.38%)
+  AFFIRMATIVE_ANSWER            339 (2.37%)
+  AGREEMENT                     278 (1.95%)
+  GOODBYE                        30 (0.21%)
+  STATEMENT                       7 (0.05%)
+  NEGATIVE_ANSWER                 3 (0.02%)
+  QUESTION                        2 (0.01%)
+
+------------------------------------------------------------
+Text: yeah.
+Total occurrences: 11,073
+Different intents: 6
+  ACKNOWLEDGMENT              9,144 (82.58%)
+  AGREEMENT                   1,131 (10.21%)
+  AFFIRMATIVE_ANSWER            753 (6.80%)
+  GOODBYE                        42 (0.38%)
+  QUESTION                        2 (0.02%)
+  STATEMENT                       1 (0.01%)
+
+------------------------------------------------------------
+Text: yeah,
+Total occurrences: 6,982
+Different intents: 6
+  ACKNOWLEDGMENT              3,857 (55.24%)
+  AGREEMENT                   2,200 (31.51%)
+  AFFIRMATIVE_ANSWER            837 (11.99%)
+  GOODBYE                        85 (1.22%)
+  QUESTION                        2 (0.03%)
+  STATEMENT                       1 (0.01%)
+
+------------------------------------------------------------
+Text: right.
+Total occurrences: 3,903
+Different intents: 6
+  ACKNOWLEDGMENT              3,134 (80.30%)
+  AGREEMENT                     666 (17.06%)
+  AFFIRMATIVE_ANSWER             82 (2.10%)
+  GOODBYE                        17 (0.44%)
+  QUESTION                        2 (0.05%)
+  STATEMENT                       2 (0.05%)
+
+------------------------------------------------------------
+Text: no,
+Total occurrences: 1,211
+Different intents: 6
+  NEGATIVE_ANSWER               725 (59.87%)
+  AGREEMENT                     293 (24.19%)
+  DISAGREEMENT                  133 (10.98%)
+  ACKNOWLEDGMENT                 51 (4.21%)
+  GOODBYE                         8 (0.66%)
+  STATEMENT                       1 (0.08%)
+
+------------------------------------------------------------
+Text: oh.
+Total occurrences: 1,206
+Different intents: 3
+  ACKNOWLEDGMENT              1,203 (99.75%)
+  GOODBYE                         2 (0.17%)
+  STATEMENT                       1 (0.08%)
+
+------------------------------------------------------------
+Text: uh-huh,
+Total occurrences: 1,136
+Different intents: 5
+  ACKNOWLEDGMENT                874 (76.94%)
+  AGREEMENT                     179 (15.76%)
+  AFFIRMATIVE_ANSWER             64 (5.63%)
+  GOODBYE                        15 (1.32%)
+  NEGATIVE_ANSWER                 4 (0.35%)
+
+------------------------------------------------------------
+Text: yes.
+Total occurrences: 1,045
+Different intents: 5
+  ACKNOWLEDGMENT                458 (43.83%)
+  AGREEMENT                     315 (30.14%)
+  AFFIRMATIVE_ANSWER            269 (25.74%)
+  GOODBYE                         2 (0.19%)
+  GREETING                        1 (0.10%)
+
+------------------------------------------------------------
+Text: right,
+Total occurrences: 929
+Different intents: 4
+  ACKNOWLEDGMENT                453 (48.76%)
+  AGREEMENT                     439 (47.26%)
+  AFFIRMATIVE_ANSWER             36 (3.88%)
+  QUESTION                        1 (0.11%)
+
+------------------------------------------------------------
+Text: yes,
+Total occurrences: 727
+Different intents: 7
+  AGREEMENT                     319 (43.88%)
+  AFFIRMATIVE_ANSWER            232 (31.91%)
+  ACKNOWLEDGMENT                163 (22.42%)
+  GOODBYE                         9 (1.24%)
+  GREETING                        2 (0.28%)
+  DISAGREEMENT                    1 (0.14%)
+  STATEMENT                       1 (0.14%)
+
+------------------------------------------------------------
+Text: okay.
+Total occurrences: 622
+Different intents: 5
+  ACKNOWLEDGMENT                405 (65.11%)
+  GOODBYE                       143 (22.99%)
+  AGREEMENT                      68 (10.93%)
+  AFFIRMATIVE_ANSWER              4 (0.64%)
+  STATEMENT                       2 (0.32%)
+
+------------------------------------------------------------
+Text: oh, yeah.
+Total occurrences: 581
+Different intents: 3
+  ACKNOWLEDGMENT                421 (72.46%)
+  AGREEMENT                     107 (18.42%)
+  AFFIRMATIVE_ANSWER             53 (9.12%)
+
+------------------------------------------------------------
+Text: no.
+Total occurrences: 571
+Different intents: 7
+  NEGATIVE_ANSWER               277 (48.51%)
+  AGREEMENT                     212 (37.13%)
+  ACKNOWLEDGMENT                 47 (8.23%)
+  DISAGREEMENT                   27 (4.73%)
+  AFFIRMATIVE_ANSWER              3 (0.53%)
+  GOODBYE                         3 (0.53%)
+  STATEMENT                       2 (0.35%)
+
+------------------------------------------------------------
+Text: yeah
+Total occurrences: 561
+Different intents: 4
+  ACKNOWLEDGMENT                379 (67.56%)
+  AGREEMENT                     119 (21.21%)
+  AFFIRMATIVE_ANSWER             62 (11.05%)
+  GOODBYE                         1 (0.18%)
+
+------------------------------------------------------------
+Text: that's right.
+Total occurrences: 519
+Different intents: 4
+  AGREEMENT                     476 (91.71%)
+  ACKNOWLEDGMENT                 17 (3.28%)
+  AFFIRMATIVE_ANSWER             13 (2.50%)
+  STATEMENT                      13 (2.50%)
+
+------------------------------------------------------------
+Text: huh.
+Total occurrences: 415
+Different intents: 3
+  ACKNOWLEDGMENT                411 (99.04%)
+  CLARIFICATION                   3 (0.72%)
+  UNCERTAINTY                     1 (0.24%)
+
+------------------------------------------------------------
+Text: sure.
+Total occurrences: 407
+Different intents: 4
+  ACKNOWLEDGMENT                315 (77.40%)
+  AGREEMENT                      70 (17.20%)
+  AFFIRMATIVE_ANSWER             19 (4.67%)
+  STATEMENT                       3 (0.74%)
+
+------------------------------------------------------------
+Text: huh-uh.
+Total occurrences: 392
+Different intents: 6
+  ACKNOWLEDGMENT                284 (72.45%)
+  NEGATIVE_ANSWER                67 (17.09%)
+  AGREEMENT                      34 (8.67%)
+  GOODBYE                         4 (1.02%)
+  AFFIRMATIVE_ANSWER              2 (0.51%)
+  DISAGREEMENT                    1 (0.26%)
+
+------------------------------------------------------------
+Text: that's true.
+Total occurrences: 350
+Different intents: 4
+  AGREEMENT                     311 (88.86%)
+  STATEMENT                      37 (10.57%)
+  ACKNOWLEDGMENT                  1 (0.29%)
+  GOODBYE                         1 (0.29%)
+
+------------------------------------------------------------
+Text: okay,
+Total occurrences: 330
+Different intents: 5
+  ACKNOWLEDGMENT                192 (58.18%)
+  GOODBYE                       102 (30.91%)
+  AGREEMENT                      33 (10.00%)
+  AFFIRMATIVE_ANSWER              2 (0.61%)
+  STATEMENT                       1 (0.30%)
+
+=== AMBIGUITY BY INTENT ===
+ACKNOWLEDGMENT            total= 38,378 ambiguous= 37,555 rate= 97.86%
+AFFIRMATIVE_ANSWER        total=  3,891 ambiguous=  3,314 rate= 85.17%
+AGREEMENT                 total= 11,157 ambiguous=  9,691 rate= 86.86%
+CLARIFICATION             total=    299 ambiguous=    118 rate= 39.46%
+DISAGREEMENT              total=    345 ambiguous=    244 rate= 70.72%
+GOODBYE                   total=  2,584 ambiguous=    806 rate= 31.19%
+GRATITUDE                 total=     78 ambiguous=     51 rate= 65.38%
+GREETING                  total=    225 ambiguous=     44 rate= 19.56%
+NEGATIVE_ANSWER           total=  1,681 ambiguous=  1,373 rate= 81.68%
+QUESTION                  total=  8,913 ambiguous=    105 rate=  1.18%
+STATEMENT                 total=101,928 ambiguous=  1,317 rate=  1.29%
+UNCERTAINTY               total=  1,227 ambiguous=    602 rate= 49.06%
+
+=== INTENT OVERLAP ===
+AGREEMENT                 <-> STATEMENT                 236 shared texts
+ACKNOWLEDGMENT            <-> AGREEMENT                 139 shared texts
+AFFIRMATIVE_ANSWER        <-> AGREEMENT                 121 shared texts
+ACKNOWLEDGMENT            <-> AFFIRMATIVE_ANSWER        91 shared texts
+AFFIRMATIVE_ANSWER        <-> STATEMENT                 87 shared texts
+AGREEMENT                 <-> GOODBYE                   58 shared texts
+ACKNOWLEDGMENT            <-> GOODBYE                   57 shared texts
+STATEMENT                 <-> UNCERTAINTY               47 shared texts
+ACKNOWLEDGMENT            <-> STATEMENT                 46 shared texts
+GOODBYE                   <-> STATEMENT                 46 shared texts
+NEGATIVE_ANSWER           <-> STATEMENT                 42 shared texts
+AGREEMENT                 <-> NEGATIVE_ANSWER           32 shared texts
+AFFIRMATIVE_ANSWER        <-> GOODBYE                   30 shared texts
+DISAGREEMENT              <-> NEGATIVE_ANSWER           23 shared texts
+AGREEMENT                 <-> DISAGREEMENT              18 shared texts
+DISAGREEMENT              <-> STATEMENT                 17 shared texts
+CLARIFICATION             <-> QUESTION                  14 shared texts
+QUESTION                  <-> STATEMENT                 14 shared texts
+ACKNOWLEDGMENT            <-> NEGATIVE_ANSWER           12 shared texts
+GOODBYE                   <-> QUESTION                  12 shared texts
+
+======================================================================
+C: WITHOUT PUNCTUATION
+======================================================================
+Empty texts after normalization: 0
+Total rows: 170,706
+Unique texts: 111,389
+Repeated unique texts: 1,854
+Ambiguous unique texts: 624
+Ambiguous text percentage: 0.56%
+Ambiguous rows: 56,835
+Ambiguous row percentage: 33.29%
+Empirical text-only ceiling: 0.9252
+
+=== MOST FREQUENT AMBIGUOUS TEXTS ===
+
+------------------------------------------------------------
+Text: yeah
+Total occurrences: 18,635
+Different intents: 6
+  ACKNOWLEDGMENT             13,396 (71.89%)
+  AGREEMENT                   3,452 (18.52%)
+  AFFIRMATIVE_ANSWER          1,653 (8.87%)
+  GOODBYE                       128 (0.69%)
+  QUESTION                        4 (0.02%)
+  STATEMENT                       2 (0.01%)
+
+------------------------------------------------------------
+Text: uh huh
+Total occurrences: 15,546
+Different intents: 7
+  ACKNOWLEDGMENT             14,612 (93.99%)
+  AGREEMENT                     461 (2.97%)
+  AFFIRMATIVE_ANSWER            412 (2.65%)
+  GOODBYE                        45 (0.29%)
+  NEGATIVE_ANSWER                 7 (0.05%)
+  STATEMENT                       7 (0.05%)
+  QUESTION                        2 (0.01%)
+
+------------------------------------------------------------
+Text: right
+Total occurrences: 4,902
+Different intents: 6
+  ACKNOWLEDGMENT              3,624 (73.93%)
+  AGREEMENT                   1,129 (23.03%)
+  AFFIRMATIVE_ANSWER            124 (2.53%)
+  GOODBYE                        17 (0.35%)
+  QUESTION                        6 (0.12%)
+  STATEMENT                       2 (0.04%)
+
+------------------------------------------------------------
+Text: no
+Total occurrences: 1,887
+Different intents: 9
+  NEGATIVE_ANSWER             1,059 (56.12%)
+  AGREEMENT                     528 (27.98%)
+  DISAGREEMENT                  180 (9.54%)
+  ACKNOWLEDGMENT                 99 (5.25%)
+  GOODBYE                        11 (0.58%)
+  STATEMENT                       4 (0.21%)
+  AFFIRMATIVE_ANSWER              3 (0.16%)
+  CLARIFICATION                   2 (0.11%)
+  QUESTION                        1 (0.05%)
+
+------------------------------------------------------------
+Text: yes
+Total occurrences: 1,835
+Different intents: 8
+  AGREEMENT                     660 (35.97%)
+  ACKNOWLEDGMENT                636 (34.66%)
+  AFFIRMATIVE_ANSWER            521 (28.39%)
+  GOODBYE                        12 (0.65%)
+  GREETING                        3 (0.16%)
+  CLARIFICATION                   1 (0.05%)
+  DISAGREEMENT                    1 (0.05%)
+  STATEMENT                       1 (0.05%)
+
+------------------------------------------------------------
+Text: oh
+Total occurrences: 1,280
+Different intents: 3
+  ACKNOWLEDGMENT              1,276 (99.69%)
+  GOODBYE                         3 (0.23%)
+  STATEMENT                       1 (0.08%)
+
+------------------------------------------------------------
+Text: oh yeah
+Total occurrences: 1,052
+Different intents: 6
+  ACKNOWLEDGMENT                659 (62.64%)
+  AGREEMENT                     247 (23.48%)
+  AFFIRMATIVE_ANSWER            139 (13.21%)
+  GOODBYE                         4 (0.38%)
+  QUESTION                        2 (0.19%)
+  DISAGREEMENT                    1 (0.10%)
+
+------------------------------------------------------------
+Text: okay
+Total occurrences: 977
+Different intents: 6
+  ACKNOWLEDGMENT                612 (62.64%)
+  GOODBYE                       249 (25.49%)
+  AGREEMENT                     101 (10.34%)
+  AFFIRMATIVE_ANSWER              6 (0.61%)
+  QUESTION                        6 (0.61%)
+  STATEMENT                       3 (0.31%)
+
+------------------------------------------------------------
+Text: that's right
+Total occurrences: 653
+Different intents: 4
+  AGREEMENT                     597 (91.42%)
+  AFFIRMATIVE_ANSWER             24 (3.68%)
+  ACKNOWLEDGMENT                 18 (2.76%)
+  STATEMENT                      14 (2.14%)
+
+------------------------------------------------------------
+Text: sure
+Total occurrences: 500
+Different intents: 5
+  ACKNOWLEDGMENT                369 (73.80%)
+  AGREEMENT                      99 (19.80%)
+  AFFIRMATIVE_ANSWER             24 (4.80%)
+  STATEMENT                       5 (1.00%)
+  GOODBYE                         3 (0.60%)
+
+------------------------------------------------------------
+Text: huh
+Total occurrences: 463
+Different intents: 5
+  ACKNOWLEDGMENT                425 (91.79%)
+  CLARIFICATION                  35 (7.56%)
+  AGREEMENT                       1 (0.22%)
+  QUESTION                        1 (0.22%)
+  UNCERTAINTY                     1 (0.22%)
+
+------------------------------------------------------------
+Text: that's true
+Total occurrences: 434
+Different intents: 4
+  AGREEMENT                     389 (89.63%)
+  STATEMENT                      42 (9.68%)
+  ACKNOWLEDGMENT                  2 (0.46%)
+  GOODBYE                         1 (0.23%)
+
+------------------------------------------------------------
+Text: i don't know
+Total occurrences: 432
+Different intents: 5
+  UNCERTAINTY                   392 (90.74%)
+  STATEMENT                      36 (8.33%)
+  ACKNOWLEDGMENT                  2 (0.46%)
+  DISAGREEMENT                    1 (0.23%)
+  AGREEMENT                       1 (0.23%)
+
+------------------------------------------------------------
+Text: huh uh
+Total occurrences: 407
+Different intents: 6
+  ACKNOWLEDGMENT                288 (70.76%)
+  NEGATIVE_ANSWER                72 (17.69%)
+  AGREEMENT                      40 (9.83%)
+  GOODBYE                         4 (0.98%)
+  AFFIRMATIVE_ANSWER              2 (0.49%)
+  DISAGREEMENT                    1 (0.25%)
+
+------------------------------------------------------------
+Text: exactly
+Total occurrences: 337
+Different intents: 4
+  AGREEMENT                     325 (96.44%)
+  AFFIRMATIVE_ANSWER              8 (2.37%)
+  ACKNOWLEDGMENT                  2 (0.59%)
+  STATEMENT                       2 (0.59%)
+
+------------------------------------------------------------
+Text: i know
+Total occurrences: 297
+Different intents: 6
+  AGREEMENT                     223 (75.08%)
+  STATEMENT                      58 (19.53%)
+  ACKNOWLEDGMENT                 12 (4.04%)
+  AFFIRMATIVE_ANSWER              2 (0.67%)
+  GOODBYE                         1 (0.34%)
+  NEGATIVE_ANSWER                 1 (0.34%)
+
+------------------------------------------------------------
+Text: um
+Total occurrences: 290
+Different intents: 3
+  ACKNOWLEDGMENT                286 (98.62%)
+  CLARIFICATION                   3 (1.03%)
+  GOODBYE                         1 (0.34%)
+
+------------------------------------------------------------
+Text: really
+Total occurrences: 237
+Different intents: 5
+  ACKNOWLEDGMENT                189 (79.75%)
+  AGREEMENT                      39 (16.46%)
+  QUESTION                        6 (2.53%)
+  GOODBYE                         2 (0.84%)
+  AFFIRMATIVE_ANSWER              1 (0.42%)
+
+------------------------------------------------------------
+Text: it is
+Total occurrences: 176
+Different intents: 5
+  AGREEMENT                      98 (55.68%)
+  STATEMENT                      74 (42.05%)
+  AFFIRMATIVE_ANSWER              2 (1.14%)
+  GOODBYE                         1 (0.57%)
+  QUESTION                        1 (0.57%)
+
+------------------------------------------------------------
+Text: yep
+Total occurrences: 160
+Different intents: 4
+  ACKNOWLEDGMENT                 83 (51.88%)
+  AGREEMENT                      52 (32.50%)
+  AFFIRMATIVE_ANSWER             21 (13.12%)
+  GOODBYE                         4 (2.50%)
+
+=== AMBIGUITY BY INTENT ===
+ACKNOWLEDGMENT            total= 38,378 ambiguous= 37,977 rate= 98.96%
+AFFIRMATIVE_ANSWER        total=  3,891 ambiguous=  3,370 rate= 86.61%
+AGREEMENT                 total= 11,157 ambiguous=  9,952 rate= 89.20%
+CLARIFICATION             total=    299 ambiguous=    148 rate= 49.50%
+DISAGREEMENT              total=    345 ambiguous=    249 rate= 72.17%
+GOODBYE                   total=  2,584 ambiguous=    863 rate= 33.40%
+GRATITUDE                 total=     78 ambiguous=     55 rate= 70.51%
+GREETING                  total=    225 ambiguous=     56 rate= 24.89%
+NEGATIVE_ANSWER           total=  1,681 ambiguous=  1,422 rate= 84.59%
+QUESTION                  total=  8,913 ambiguous=    284 rate=  3.19%
+STATEMENT                 total=101,928 ambiguous=  1,732 rate=  1.70%
+UNCERTAINTY               total=  1,227 ambiguous=    727 rate= 59.25%
+
+=== INTENT OVERLAP ===
+AGREEMENT                 <-> STATEMENT                 247 shared texts
+ACKNOWLEDGMENT            <-> AGREEMENT                 94 shared texts
+AFFIRMATIVE_ANSWER        <-> AGREEMENT                 88 shared texts
+AFFIRMATIVE_ANSWER        <-> STATEMENT                 82 shared texts
+ACKNOWLEDGMENT            <-> AFFIRMATIVE_ANSWER        62 shared texts
+GOODBYE                   <-> STATEMENT                 51 shared texts
+QUESTION                  <-> STATEMENT                 51 shared texts
+AGREEMENT                 <-> GOODBYE                   49 shared texts
+STATEMENT                 <-> UNCERTAINTY               48 shared texts
+ACKNOWLEDGMENT            <-> GOODBYE                   46 shared texts
+NEGATIVE_ANSWER           <-> STATEMENT                 43 shared texts
+ACKNOWLEDGMENT            <-> STATEMENT                 42 shared texts
+AFFIRMATIVE_ANSWER        <-> GOODBYE                   27 shared texts
+AGREEMENT                 <-> NEGATIVE_ANSWER           25 shared texts
+AGREEMENT                 <-> QUESTION                  24 shared texts
+ACKNOWLEDGMENT            <-> QUESTION                  22 shared texts
+GOODBYE                   <-> QUESTION                  21 shared texts
+AFFIRMATIVE_ANSWER        <-> QUESTION                  20 shared texts
+DISAGREEMENT              <-> NEGATIVE_ANSWER           17 shared texts
+AGREEMENT                 <-> DISAGREEMENT              16 shared texts
+
+=== EXPERIMENT COMPARISON ===
+            experiment   rows  unique_texts  ambiguous_texts  ambiguous_rows_pct  ceiling_pct
+A: ORIGINAL CLEAN TEXT 170706        113608              645               32.05        92.97
+     B: LOWERCASE TEXT 170706        112925              629               32.35        92.85
+C: WITHOUT PUNCTUATION 170706        111389              624               33.29        92.52
+
+=== ANALYSIS COMPLETE ===

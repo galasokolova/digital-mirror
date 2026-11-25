@@ -1,0 +1,101 @@
+=== E09.06.2c: FINAL INSTALLATION DATASET PREPROCESSING ===
+
+=== INPUT DATASET ===
+Path: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\evaluation\digital_mirror_final\test.csv
+Records: 240
+
+=== PREPROCESSING STATISTICS ===
+Normalization changes: 240 (100.00%)
+Punctuation removal changes: 192 (80.00%)
+Total changed records: 240 (100.00%)
+
+=== PREPROCESSING EXAMPLES ===
+
+Intent: GREETING
+Original:   Hello there, how's everything going?
+Normalized: hello there, how's everything going?
+Model text: hello there how's everything going
+
+Intent: GOODBYE
+Original:   I'll be heading off shortly.
+Normalized: i'll be heading off shortly.
+Model text: i'll be heading off shortly
+
+Intent: GRATITUDE
+Original:   I'm grateful for your assistance.
+Normalized: i'm grateful for your assistance.
+Model text: i'm grateful for your assistance
+
+Intent: AGREEMENT
+Original:   You've made a valid point.
+Normalized: you've made a valid point.
+Model text: you've made a valid point
+
+Intent: DISAGREEMENT
+Original:   That's not how I see things.
+Normalized: that's not how i see things.
+Model text: that's not how i see things
+
+Intent: UNCERTAINTY
+Original:   I'm undecided about this.
+Normalized: i'm undecided about this.
+Model text: i'm undecided about this
+
+Intent: ACKNOWLEDGMENT
+Original:   I've heard what you've said.
+Normalized: i've heard what you've said.
+Model text: i've heard what you've said
+
+Intent: AFFIRMATIVE_ANSWER
+Original:   Yes, that would suit me.
+Normalized: yes, that would suit me.
+Model text: yes that would suit me
+
+Intent: NEGATIVE_ANSWER
+Original:   No, that wouldn't suit me.
+Normalized: no, that wouldn't suit me.
+Model text: no that wouldn't suit me
+
+Intent: QUESTION
+Original:   When did that happen?
+Normalized: when did that happen?
+Model text: when did that happen
+
+Intent: CLARIFICATION
+Original:   Would you mind saying that once more?
+Normalized: would you mind saying that once more?
+Model text: would you mind saying that once more
+
+Intent: STATEMENT
+Original:   I usually read the paper over breakfast.
+Normalized: i usually read the paper over breakfast.
+Model text: i usually read the paper over breakfast
+
+=== PREPROCESSING VALIDATION ===
+PASS | Expected input record count
+PASS | Expected output record count
+PASS | No records removed
+PASS | Original columns preserved
+PASS | Unique IDs
+PASS | No empty normalized texts
+PASS | No empty model texts
+PASS | Unique normalized texts
+PASS | Unique model texts
+PASS | All intent classes preserved
+PASS | Class distribution preserved
+PASS | Group distribution preserved
+PASS | Preprocessing is idempotent
+PASS | Expected output columns
+
+Checks passed: 14 / 14
+
+=== OUTPUT DATASET ===
+Saved to: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\evaluation\digital_mirror_final\test_processed.csv
+Records: 240
+Columns: 7
+
+Original dataset modified: NO
+Model loaded: NO
+Model training performed: NO
+
+=== PREPROCESSING COMPLETE ===

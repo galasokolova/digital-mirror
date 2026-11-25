@@ -1,0 +1,7 @@
+reference,reference_records,unique_reference_texts,overlapping_records,overlap_percentage,same_label,ambiguous_labels,conflicting_label
+switchboard_train,135827,88914,4,1.6666666666666667,3,1,0
+switchboard_validation,16913,11485,1,0.4166666666666667,1,0,0
+switchboard_test,17966,12031,2,0.8333333333333334,2,0,0
+digital_mirror_original_train,600,600,17,7.083333333333333,17,0,0
+digital_mirror_eligible_train,579,579,16,6.666666666666667,16,0,0
+installation_development_benchmark,60,60,0,0.0,0,0,0

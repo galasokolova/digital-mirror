@@ -1,0 +1,1282 @@
+=== E09.03: INSTALLATION INTENT TEST ===
+Test cases: 60
+Intent classes: 12
+Seen texts: 16
+Unseen texts: 44
+
+======================================================================
+E09_01
+======================================================================
+
+Text: Hello!
+Expected:  GREETING
+Predicted: GREETING
+Result: CORRECT
+Seen in training: True
+Top 3:
+  GREETING               0.7266
+  QUESTION               0.1210
+  STATEMENT              0.0787
+
+Text: Hi there!
+Expected:  GREETING
+Predicted: GREETING
+Result: CORRECT
+Seen in training: False
+Top 3:
+  GREETING               0.7554
+  STATEMENT              0.1054
+  QUESTION               0.0625
+
+Text: Good morning.
+Expected:  GREETING
+Predicted: GREETING
+Result: CORRECT
+Seen in training: True
+Top 3:
+  GREETING               0.4982
+  STATEMENT              0.2444
+  GOODBYE                0.0727
+
+Text: Good evening.
+Expected:  GREETING
+Predicted: GOODBYE
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  GOODBYE                0.4159
+  STATEMENT              0.3737
+  QUESTION               0.0644
+
+Text: Hey, how are you?
+Expected:  GREETING
+Predicted: QUESTION
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.9327
+  GOODBYE                0.0239
+  GREETING               0.0190
+
+Text: Goodbye!
+Expected:  GOODBYE
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.7645
+  QUESTION               0.1159
+  AGREEMENT              0.0323
+
+Text: See you later.
+Expected:  GOODBYE
+Predicted: GOODBYE
+Result: CORRECT
+Seen in training: True
+Top 3:
+  GOODBYE                0.6315
+  STATEMENT              0.1409
+  QUESTION               0.0952
+
+Text: Bye for now.
+Expected:  GOODBYE
+Predicted: GOODBYE
+Result: CORRECT
+Seen in training: False
+Top 3:
+  GOODBYE                0.4634
+  STATEMENT              0.4015
+  QUESTION               0.0934
+
+Text: Have a nice day.
+Expected:  GOODBYE
+Predicted: GOODBYE
+Result: CORRECT
+Seen in training: True
+Top 3:
+  GOODBYE                0.5094
+  STATEMENT              0.4103
+  QUESTION               0.0538
+
+Text: I have to go now.
+Expected:  GOODBYE
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.9806
+  GOODBYE                0.0083
+  QUESTION               0.0031
+
+Text: Thank you!
+Expected:  GRATITUDE
+Predicted: GOODBYE
+Result: INCORRECT
+Seen in training: True
+Top 3:
+  GOODBYE                0.5739
+  GRATITUDE              0.3213
+  QUESTION               0.0390
+
+Text: Thanks a lot.
+Expected:  GRATITUDE
+Predicted: GOODBYE
+Result: INCORRECT
+Seen in training: True
+Top 3:
+  GOODBYE                0.3236
+  STATEMENT              0.2424
+  GRATITUDE              0.2083
+
+Text: Thank you for explaining.
+Expected:  GRATITUDE
+Predicted: GOODBYE
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  GOODBYE                0.4844
+  STATEMENT              0.1945
+  QUESTION               0.1567
+
+Text: I appreciate your help.
+Expected:  GRATITUDE
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.3946
+  GOODBYE                0.3580
+  QUESTION               0.1438
+
+Text: Many thanks.
+Expected:  GRATITUDE
+Predicted: GOODBYE
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  GOODBYE                0.6031
+  STATEMENT              0.1453
+  GRATITUDE              0.1179
+
+Text: I agree with you.
+Expected:  AGREEMENT
+Predicted: AGREEMENT
+Result: CORRECT
+Seen in training: True
+Top 3:
+  AGREEMENT              0.9195
+  STATEMENT              0.0519
+  GOODBYE                0.0105
+
+Text: You are absolutely right.
+Expected:  AGREEMENT
+Predicted: AGREEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AGREEMENT              0.6233
+  QUESTION               0.1211
+  STATEMENT              0.1135
+
+Text: I think so too.
+Expected:  AGREEMENT
+Predicted: AGREEMENT
+Result: CORRECT
+Seen in training: True
+Top 3:
+  AGREEMENT              0.7346
+  STATEMENT              0.2203
+  AFFIRMATIVE_ANSWER     0.0143
+
+Text: I completely agree.
+Expected:  AGREEMENT
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.4582
+  AGREEMENT              0.4431
+  QUESTION               0.0246
+
+Text: That is exactly what I think.
+Expected:  AGREEMENT
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.5944
+  AGREEMENT              0.3485
+  QUESTION               0.0157
+
+Text: I disagree with you.
+Expected:  DISAGREEMENT
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.3791
+  AGREEMENT              0.1846
+  QUESTION               0.1608
+
+Text: I don't agree.
+Expected:  DISAGREEMENT
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: True
+Top 3:
+  STATEMENT              0.4477
+  AGREEMENT              0.3054
+  DISAGREEMENT           0.0785
+
+Text: I think you are wrong.
+Expected:  DISAGREEMENT
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.8628
+  AGREEMENT              0.0544
+  QUESTION               0.0280
+
+Text: I have a different opinion.
+Expected:  DISAGREEMENT
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.9525
+  GOODBYE                0.0168
+  AFFIRMATIVE_ANSWER     0.0106
+
+Text: I don't think that's right.
+Expected:  DISAGREEMENT
+Predicted: AGREEMENT
+Result: INCORRECT
+Seen in training: True
+Top 3:
+  AGREEMENT              0.4884
+  STATEMENT              0.3964
+  AFFIRMATIVE_ANSWER     0.0341
+
+Text: I'm not sure.
+Expected:  UNCERTAINTY
+Predicted: UNCERTAINTY
+Result: CORRECT
+Seen in training: True
+Top 3:
+  UNCERTAINTY            0.4982
+  STATEMENT              0.4158
+  AGREEMENT              0.0221
+
+Text: I don't know.
+Expected:  UNCERTAINTY
+Predicted: UNCERTAINTY
+Result: CORRECT
+Seen in training: True
+Top 3:
+  UNCERTAINTY            0.9592
+  STATEMENT              0.0385
+  NEGATIVE_ANSWER        0.0008
+
+Text: I can't decide.
+Expected:  UNCERTAINTY
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.9344
+  AGREEMENT              0.0169
+  UNCERTAINTY            0.0115
+
+Text: I'm not certain.
+Expected:  UNCERTAINTY
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: True
+Top 3:
+  STATEMENT              0.9019
+  UNCERTAINTY            0.0334
+  NEGATIVE_ANSWER        0.0211
+
+Text: I have some doubts.
+Expected:  UNCERTAINTY
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.9587
+  AFFIRMATIVE_ANSWER     0.0204
+  GOODBYE                0.0055
+
+Text: I see.
+Expected:  ACKNOWLEDGMENT
+Predicted: ACKNOWLEDGMENT
+Result: CORRECT
+Seen in training: True
+Top 3:
+  ACKNOWLEDGMENT         0.8942
+  STATEMENT              0.0808
+  AGREEMENT              0.0091
+
+Text: I understand.
+Expected:  ACKNOWLEDGMENT
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: True
+Top 3:
+  STATEMENT              0.6356
+  AGREEMENT              0.2219
+  ACKNOWLEDGMENT         0.0597
+
+Text: Got it.
+Expected:  ACKNOWLEDGMENT
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.9044
+  AGREEMENT              0.0472
+  QUESTION               0.0229
+
+Text: I understand what you mean.
+Expected:  ACKNOWLEDGMENT
+Predicted: QUESTION
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.3903
+  STATEMENT              0.3651
+  AGREEMENT              0.0853
+
+Text: Okay, I see.
+Expected:  ACKNOWLEDGMENT
+Predicted: ACKNOWLEDGMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  ACKNOWLEDGMENT         0.8877
+  STATEMENT              0.0416
+  AGREEMENT              0.0291
+
+Text: Yes, please.
+Expected:  AFFIRMATIVE_ANSWER
+Predicted: AGREEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  AGREEMENT              0.3093
+  AFFIRMATIVE_ANSWER     0.2204
+  ACKNOWLEDGMENT         0.2154
+
+Text: Yes, I would.
+Expected:  AFFIRMATIVE_ANSWER
+Predicted: AGREEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  AGREEMENT              0.3932
+  STATEMENT              0.2812
+  AFFIRMATIVE_ANSWER     0.2544
+
+Text: Yes, I do.
+Expected:  AFFIRMATIVE_ANSWER
+Predicted: AFFIRMATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AFFIRMATIVE_ANSWER     0.4761
+  AGREEMENT              0.2728
+  STATEMENT              0.1819
+
+Text: Yes, I can.
+Expected:  AFFIRMATIVE_ANSWER
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.3526
+  AGREEMENT              0.3171
+  AFFIRMATIVE_ANSWER     0.2120
+
+Text: Yes, I am.
+Expected:  AFFIRMATIVE_ANSWER
+Predicted: AFFIRMATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AFFIRMATIVE_ANSWER     0.3931
+  STATEMENT              0.2680
+  AGREEMENT              0.2665
+
+Text: No, thank you.
+Expected:  NEGATIVE_ANSWER
+Predicted: GOODBYE
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  GOODBYE                0.5544
+  GRATITUDE              0.2742
+  AGREEMENT              0.0483
+
+Text: No, I don't.
+Expected:  NEGATIVE_ANSWER
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.3809
+  NEGATIVE_ANSWER        0.3673
+  AGREEMENT              0.1227
+
+Text: No, I can't.
+Expected:  NEGATIVE_ANSWER
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.6351
+  AGREEMENT              0.1821
+  NEGATIVE_ANSWER        0.0829
+
+Text: No, I wouldn't.
+Expected:  NEGATIVE_ANSWER
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.4765
+  AGREEMENT              0.2516
+  NEGATIVE_ANSWER        0.1526
+
+Text: No, I am not.
+Expected:  NEGATIVE_ANSWER
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.5239
+  AGREEMENT              0.2163
+  NEGATIVE_ANSWER        0.1590
+
+Text: Where is the evidence?
+Expected:  QUESTION
+Predicted: QUESTION
+Result: CORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.6961
+  STATEMENT              0.2627
+  AGREEMENT              0.0103
+
+Text: Is this information true?
+Expected:  QUESTION
+Predicted: QUESTION
+Result: CORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.3733
+  AGREEMENT              0.2868
+  STATEMENT              0.2676
+
+Text: How do you know that?
+Expected:  QUESTION
+Predicted: QUESTION
+Result: CORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.9873
+  STATEMENT              0.0072
+  ACKNOWLEDGMENT         0.0015
+
+Text: Who published this news?
+Expected:  QUESTION
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.7300
+  QUESTION               0.1786
+  AGREEMENT              0.0184
+
+Text: Can you show me the source?
+Expected:  QUESTION
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.6560
+  QUESTION               0.2755
+  AGREEMENT              0.0195
+
+Text: What do you mean?
+Expected:  CLARIFICATION
+Predicted: QUESTION
+Result: INCORRECT
+Seen in training: True
+Top 3:
+  QUESTION               0.9985
+  CLARIFICATION          0.0012
+  GOODBYE                0.0001
+
+Text: Could you repeat that?
+Expected:  CLARIFICATION
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.4944
+  QUESTION               0.4349
+  AGREEMENT              0.0285
+
+Text: I didn't understand that.
+Expected:  CLARIFICATION
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.9337
+  AGREEMENT              0.0208
+  QUESTION               0.0170
+
+Text: Could you explain that again?
+Expected:  CLARIFICATION
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.5768
+  QUESTION               0.3222
+  GOODBYE                0.0307
+
+Text: Sorry, what did you say?
+Expected:  CLARIFICATION
+Predicted: QUESTION
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.7568
+  CLARIFICATION          0.2125
+  AGREEMENT              0.0088
+
+Text: I thought it was true.
+Expected:  STATEMENT
+Predicted: STATEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.7622
+  AGREEMENT              0.2047
+  AFFIRMATIVE_ANSWER     0.0118
+
+Text: This information is new to me.
+Expected:  STATEMENT
+Predicted: STATEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.9285
+  QUESTION               0.0340
+  AGREEMENT              0.0096
+
+Text: I read this news yesterday.
+Expected:  STATEMENT
+Predicted: STATEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.9089
+  QUESTION               0.0297
+  AFFIRMATIVE_ANSWER     0.0175
+
+Text: The article was published last week.
+Expected:  STATEMENT
+Predicted: STATEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.8882
+  QUESTION               0.0768
+  AGREEMENT              0.0088
+
+Text: I have seen this video before.
+Expected:  STATEMENT
+Predicted: STATEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.9425
+  QUESTION               0.0203
+  AFFIRMATIVE_ANSWER     0.0122
+
+=== INSTALLATION TEST RESULTS ===
+Accuracy: 0.3833
+Macro F1: 0.3527
+Top-3 accuracy: 0.7500
+Correct predictions: 23/60
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+    ACKNOWLEDGMENT     1.0000    0.4000    0.5714         5
+AFFIRMATIVE_ANSWER     1.0000    0.4000    0.5714         5
+         AGREEMENT     0.5000    0.6000    0.5455         5
+     CLARIFICATION     0.0000    0.0000    0.0000         5
+      DISAGREEMENT     0.0000    0.0000    0.0000         5
+           GOODBYE     0.3333    0.6000    0.4286         5
+         GRATITUDE     0.0000    0.0000    0.0000         5
+          GREETING     1.0000    0.6000    0.7500         5
+   NEGATIVE_ANSWER     0.0000    0.0000    0.0000         5
+          QUESTION     0.4286    0.6000    0.5000         5
+         STATEMENT     0.1724    1.0000    0.2941         5
+       UNCERTAINTY     1.0000    0.4000    0.5714         5
+
+          accuracy                         0.3833        60
+         macro avg     0.4529    0.3833    0.3527        60
+      weighted avg     0.4529    0.3833    0.3527        60
+
+
+=== SEEN / UNSEEN ===
+Seen=True: 9/16 (0.5625)
+Seen=False: 14/44 (0.3182)
+
+======================================================================
+E09_02
+======================================================================
+
+Text: Hello!
+Expected:  GREETING
+Predicted: GREETING
+Result: CORRECT
+Seen in training: True
+Top 3:
+  GREETING               0.9938
+  QUESTION               0.0035
+  STATEMENT              0.0006
+
+Text: Hi there!
+Expected:  GREETING
+Predicted: GREETING
+Result: CORRECT
+Seen in training: False
+Top 3:
+  GREETING               0.9936
+  GOODBYE                0.0017
+  QUESTION               0.0014
+
+Text: Good morning.
+Expected:  GREETING
+Predicted: GREETING
+Result: CORRECT
+Seen in training: True
+Top 3:
+  GREETING               0.9896
+  GOODBYE                0.0022
+  STATEMENT              0.0021
+
+Text: Good evening.
+Expected:  GREETING
+Predicted: GOODBYE
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  GOODBYE                0.7186
+  GREETING               0.0719
+  STATEMENT              0.0607
+
+Text: Hey, how are you?
+Expected:  GREETING
+Predicted: GREETING
+Result: CORRECT
+Seen in training: False
+Top 3:
+  GREETING               0.9440
+  QUESTION               0.0421
+  GOODBYE                0.0101
+
+Text: Goodbye!
+Expected:  GOODBYE
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.2952
+  QUESTION               0.2824
+  AFFIRMATIVE_ANSWER     0.0846
+
+Text: See you later.
+Expected:  GOODBYE
+Predicted: GOODBYE
+Result: CORRECT
+Seen in training: True
+Top 3:
+  GOODBYE                0.9133
+  QUESTION               0.0256
+  STATEMENT              0.0168
+
+Text: Bye for now.
+Expected:  GOODBYE
+Predicted: GOODBYE
+Result: CORRECT
+Seen in training: False
+Top 3:
+  GOODBYE                0.8473
+  STATEMENT              0.0676
+  QUESTION               0.0495
+
+Text: Have a nice day.
+Expected:  GOODBYE
+Predicted: GOODBYE
+Result: CORRECT
+Seen in training: True
+Top 3:
+  GOODBYE                0.8804
+  STATEMENT              0.0722
+  QUESTION               0.0238
+
+Text: I have to go now.
+Expected:  GOODBYE
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.7413
+  GOODBYE                0.1432
+  AFFIRMATIVE_ANSWER     0.0363
+
+Text: Thank you!
+Expected:  GRATITUDE
+Predicted: GRATITUDE
+Result: CORRECT
+Seen in training: True
+Top 3:
+  GRATITUDE              0.9587
+  GOODBYE                0.0400
+  QUESTION               0.0004
+
+Text: Thanks a lot.
+Expected:  GRATITUDE
+Predicted: GRATITUDE
+Result: CORRECT
+Seen in training: True
+Top 3:
+  GRATITUDE              0.9585
+  GOODBYE                0.0324
+  STATEMENT              0.0021
+
+Text: Thank you for explaining.
+Expected:  GRATITUDE
+Predicted: GRATITUDE
+Result: CORRECT
+Seen in training: False
+Top 3:
+  GRATITUDE              0.6132
+  GOODBYE                0.3268
+  QUESTION               0.0233
+
+Text: I appreciate your help.
+Expected:  GRATITUDE
+Predicted: GOODBYE
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  GOODBYE                0.8186
+  QUESTION               0.0861
+  STATEMENT              0.0374
+
+Text: Many thanks.
+Expected:  GRATITUDE
+Predicted: GRATITUDE
+Result: CORRECT
+Seen in training: False
+Top 3:
+  GRATITUDE              0.7180
+  GOODBYE                0.2630
+  STATEMENT              0.0040
+
+Text: I agree with you.
+Expected:  AGREEMENT
+Predicted: AGREEMENT
+Result: CORRECT
+Seen in training: True
+Top 3:
+  AGREEMENT              0.9838
+  GOODBYE                0.0046
+  DISAGREEMENT           0.0045
+
+Text: You are absolutely right.
+Expected:  AGREEMENT
+Predicted: AGREEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AGREEMENT              0.6665
+  QUESTION               0.1295
+  GOODBYE                0.1078
+
+Text: I think so too.
+Expected:  AGREEMENT
+Predicted: AGREEMENT
+Result: CORRECT
+Seen in training: True
+Top 3:
+  AGREEMENT              0.8902
+  STATEMENT              0.0330
+  GOODBYE                0.0297
+
+Text: I completely agree.
+Expected:  AGREEMENT
+Predicted: AGREEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AGREEMENT              0.6427
+  STATEMENT              0.1238
+  AFFIRMATIVE_ANSWER     0.0586
+
+Text: That is exactly what I think.
+Expected:  AGREEMENT
+Predicted: AGREEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AGREEMENT              0.7269
+  STATEMENT              0.0999
+  AFFIRMATIVE_ANSWER     0.0662
+
+Text: I disagree with you.
+Expected:  DISAGREEMENT
+Predicted: DISAGREEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  DISAGREEMENT           0.9338
+  AGREEMENT              0.0194
+  QUESTION               0.0147
+
+Text: I don't agree.
+Expected:  DISAGREEMENT
+Predicted: DISAGREEMENT
+Result: CORRECT
+Seen in training: True
+Top 3:
+  DISAGREEMENT           0.9710
+  AGREEMENT              0.0104
+  NEGATIVE_ANSWER        0.0053
+
+Text: I think you are wrong.
+Expected:  DISAGREEMENT
+Predicted: GOODBYE
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  GOODBYE                0.2314
+  STATEMENT              0.2304
+  AGREEMENT              0.1839
+
+Text: I have a different opinion.
+Expected:  DISAGREEMENT
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.6313
+  GOODBYE                0.1599
+  AFFIRMATIVE_ANSWER     0.0882
+
+Text: I don't think that's right.
+Expected:  DISAGREEMENT
+Predicted: AGREEMENT
+Result: INCORRECT
+Seen in training: True
+Top 3:
+  AGREEMENT              0.5895
+  DISAGREEMENT           0.1610
+  AFFIRMATIVE_ANSWER     0.0791
+
+Text: I'm not sure.
+Expected:  UNCERTAINTY
+Predicted: UNCERTAINTY
+Result: CORRECT
+Seen in training: True
+Top 3:
+  UNCERTAINTY            0.9729
+  STATEMENT              0.0088
+  NEGATIVE_ANSWER        0.0084
+
+Text: I don't know.
+Expected:  UNCERTAINTY
+Predicted: UNCERTAINTY
+Result: CORRECT
+Seen in training: True
+Top 3:
+  UNCERTAINTY            0.9996
+  DISAGREEMENT           0.0002
+  STATEMENT              0.0001
+
+Text: I can't decide.
+Expected:  UNCERTAINTY
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.4781
+  UNCERTAINTY            0.2064
+  GOODBYE                0.0655
+
+Text: I'm not certain.
+Expected:  UNCERTAINTY
+Predicted: UNCERTAINTY
+Result: CORRECT
+Seen in training: True
+Top 3:
+  UNCERTAINTY            0.3135
+  NEGATIVE_ANSWER        0.2801
+  STATEMENT              0.2381
+
+Text: I have some doubts.
+Expected:  UNCERTAINTY
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.5658
+  AFFIRMATIVE_ANSWER     0.2886
+  GOODBYE                0.0374
+
+Text: I see.
+Expected:  ACKNOWLEDGMENT
+Predicted: ACKNOWLEDGMENT
+Result: CORRECT
+Seen in training: True
+Top 3:
+  ACKNOWLEDGMENT         0.7934
+  STATEMENT              0.0829
+  AGREEMENT              0.0346
+
+Text: I understand.
+Expected:  ACKNOWLEDGMENT
+Predicted: AGREEMENT
+Result: INCORRECT
+Seen in training: True
+Top 3:
+  AGREEMENT              0.4456
+  STATEMENT              0.2950
+  AFFIRMATIVE_ANSWER     0.1038
+
+Text: Got it.
+Expected:  ACKNOWLEDGMENT
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.5887
+  AGREEMENT              0.1884
+  AFFIRMATIVE_ANSWER     0.0728
+
+Text: I understand what you mean.
+Expected:  ACKNOWLEDGMENT
+Predicted: CLARIFICATION
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  CLARIFICATION          0.7933
+  QUESTION               0.1094
+  AGREEMENT              0.0469
+
+Text: Okay, I see.
+Expected:  ACKNOWLEDGMENT
+Predicted: ACKNOWLEDGMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  ACKNOWLEDGMENT         0.6696
+  GOODBYE                0.1125
+  AGREEMENT              0.0812
+
+Text: Yes, please.
+Expected:  AFFIRMATIVE_ANSWER
+Predicted: AFFIRMATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AFFIRMATIVE_ANSWER     0.3828
+  AGREEMENT              0.2390
+  GOODBYE                0.0834
+
+Text: Yes, I would.
+Expected:  AFFIRMATIVE_ANSWER
+Predicted: AFFIRMATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AFFIRMATIVE_ANSWER     0.6393
+  AGREEMENT              0.2379
+  STATEMENT              0.0458
+
+Text: Yes, I do.
+Expected:  AFFIRMATIVE_ANSWER
+Predicted: AFFIRMATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AFFIRMATIVE_ANSWER     0.7948
+  AGREEMENT              0.1255
+  STATEMENT              0.0246
+
+Text: Yes, I can.
+Expected:  AFFIRMATIVE_ANSWER
+Predicted: AFFIRMATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AFFIRMATIVE_ANSWER     0.4993
+  AGREEMENT              0.2384
+  GOODBYE                0.0808
+
+Text: Yes, I am.
+Expected:  AFFIRMATIVE_ANSWER
+Predicted: AFFIRMATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  AFFIRMATIVE_ANSWER     0.7249
+  AGREEMENT              0.1522
+  STATEMENT              0.0379
+
+Text: No, thank you.
+Expected:  NEGATIVE_ANSWER
+Predicted: GRATITUDE
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  GRATITUDE              0.9078
+  GOODBYE                0.0844
+  DISAGREEMENT           0.0029
+
+Text: No, I don't.
+Expected:  NEGATIVE_ANSWER
+Predicted: NEGATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  NEGATIVE_ANSWER        0.7642
+  DISAGREEMENT           0.1717
+  AGREEMENT              0.0262
+
+Text: No, I can't.
+Expected:  NEGATIVE_ANSWER
+Predicted: NEGATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  NEGATIVE_ANSWER        0.5183
+  DISAGREEMENT           0.1629
+  AGREEMENT              0.1176
+
+Text: No, I wouldn't.
+Expected:  NEGATIVE_ANSWER
+Predicted: NEGATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  NEGATIVE_ANSWER        0.7954
+  AGREEMENT              0.0799
+  DISAGREEMENT           0.0317
+
+Text: No, I am not.
+Expected:  NEGATIVE_ANSWER
+Predicted: NEGATIVE_ANSWER
+Result: CORRECT
+Seen in training: False
+Top 3:
+  NEGATIVE_ANSWER        0.5695
+  DISAGREEMENT           0.1506
+  AGREEMENT              0.1485
+
+Text: Where is the evidence?
+Expected:  QUESTION
+Predicted: QUESTION
+Result: CORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.8871
+  STATEMENT              0.0524
+  GOODBYE                0.0187
+
+Text: Is this information true?
+Expected:  QUESTION
+Predicted: QUESTION
+Result: CORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.5093
+  AGREEMENT              0.2930
+  STATEMENT              0.0747
+
+Text: How do you know that?
+Expected:  QUESTION
+Predicted: QUESTION
+Result: CORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.9837
+  CLARIFICATION          0.0109
+  STATEMENT              0.0014
+
+Text: Who published this news?
+Expected:  QUESTION
+Predicted: QUESTION
+Result: CORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.3085
+  STATEMENT              0.2423
+  CLARIFICATION          0.1631
+
+Text: Can you show me the source?
+Expected:  QUESTION
+Predicted: QUESTION
+Result: CORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.6045
+  STATEMENT              0.2259
+  CLARIFICATION          0.0494
+
+Text: What do you mean?
+Expected:  CLARIFICATION
+Predicted: CLARIFICATION
+Result: CORRECT
+Seen in training: True
+Top 3:
+  CLARIFICATION          0.6907
+  QUESTION               0.3083
+  UNCERTAINTY            0.0004
+
+Text: Could you repeat that?
+Expected:  CLARIFICATION
+Predicted: QUESTION
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.6890
+  STATEMENT              0.1600
+  GOODBYE                0.0443
+
+Text: I didn't understand that.
+Expected:  CLARIFICATION
+Predicted: STATEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.6121
+  QUESTION               0.0857
+  AGREEMENT              0.0826
+
+Text: Could you explain that again?
+Expected:  CLARIFICATION
+Predicted: QUESTION
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  QUESTION               0.5525
+  STATEMENT              0.2004
+  GOODBYE                0.1142
+
+Text: Sorry, what did you say?
+Expected:  CLARIFICATION
+Predicted: CLARIFICATION
+Result: CORRECT
+Seen in training: False
+Top 3:
+  CLARIFICATION          0.9871
+  QUESTION               0.0118
+  AGREEMENT              0.0003
+
+Text: I thought it was true.
+Expected:  STATEMENT
+Predicted: AGREEMENT
+Result: INCORRECT
+Seen in training: False
+Top 3:
+  AGREEMENT              0.5500
+  STATEMENT              0.2444
+  AFFIRMATIVE_ANSWER     0.1126
+
+Text: This information is new to me.
+Expected:  STATEMENT
+Predicted: STATEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.5476
+  QUESTION               0.1789
+  GOODBYE                0.0757
+
+Text: I read this news yesterday.
+Expected:  STATEMENT
+Predicted: STATEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.4592
+  AFFIRMATIVE_ANSWER     0.1738
+  QUESTION               0.1237
+
+Text: The article was published last week.
+Expected:  STATEMENT
+Predicted: STATEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.4893
+  QUESTION               0.2833
+  AFFIRMATIVE_ANSWER     0.0642
+
+Text: I have seen this video before.
+Expected:  STATEMENT
+Predicted: STATEMENT
+Result: CORRECT
+Seen in training: False
+Top 3:
+  STATEMENT              0.6378
+  AFFIRMATIVE_ANSWER     0.1075
+  QUESTION               0.0668
+
+=== INSTALLATION TEST RESULTS ===
+Accuracy: 0.7167
+Macro F1: 0.7182
+Top-3 accuracy: 0.8000
+Correct predictions: 43/60
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+    ACKNOWLEDGMENT     1.0000    0.4000    0.5714         5
+AFFIRMATIVE_ANSWER     1.0000    1.0000    1.0000         5
+         AGREEMENT     0.6250    1.0000    0.7692         5
+     CLARIFICATION     0.6667    0.4000    0.5000         5
+      DISAGREEMENT     1.0000    0.4000    0.5714         5
+           GOODBYE     0.5000    0.6000    0.5455         5
+         GRATITUDE     0.8000    0.8000    0.8000         5
+          GREETING     1.0000    0.8000    0.8889         5
+   NEGATIVE_ANSWER     1.0000    0.8000    0.8889         5
+          QUESTION     0.7143    1.0000    0.8333         5
+         STATEMENT     0.3636    0.8000    0.5000         5
+       UNCERTAINTY     1.0000    0.6000    0.7500         5
+
+          accuracy                         0.7167        60
+         macro avg     0.8058    0.7167    0.7182        60
+      weighted avg     0.8058    0.7167    0.7182        60
+
+
+=== SEEN / UNSEEN ===
+Seen=True: 14/16 (0.8750)
+Seen=False: 29/44 (0.6591)
+
+=== FINAL MODEL COMPARISON ===
+ model  accuracy  macro_f1  top_3_accuracy  correct  total
+E09_01    0.3833    0.3527          0.7500       23     60
+E09_02    0.7167    0.7182          0.8000       43     60
+
+=== TEST COMPLETE ===

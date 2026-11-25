@@ -1,0 +1,97 @@
+=== E09.04.4: DATASET OVERLAP ANALYSIS ===
+
+=== DATASET OVERVIEW ===
+Digital Mirror: 600
+Switchboard train: 135,827
+Switchboard validation: 16,913
+Switchboard test: 17,966
+Installation test: 60
+
+=== SWITCHBOARD TRAIN OVERLAP ===
+Overlapping records: 29
+New unique texts: 571
+Overlap percentage: 4.83%
+
+Overlap categories:
+status
+SAME_LABEL           10
+AMBIGUOUS_LABELS     13
+CONFLICTING_LABEL     6
+
+Overlapping training records:
+     id                       text                 model_text      domain_intent                                                                                             switchboard_intents            status
+DM-0001                         Hi                         hi           GREETING                                                                                                        GREETING        SAME_LABEL
+DM-0003                        Hey                        hey           GREETING                                                                                         ACKNOWLEDGMENT, GOODBYE CONFLICTING_LABEL
+DM-0006           Nice to meet you           nice to meet you           GREETING                                                                                                         GOODBYE CONFLICTING_LABEL
+DM-0051                        Bye                        bye            GOODBYE                                                                                                         GOODBYE        SAME_LABEL
+DM-0054                  Take care                  take care            GOODBYE                                                                                                         GOODBYE        SAME_LABEL
+DM-0057          See you next time          see you next time            GOODBYE                                                                                                         GOODBYE        SAME_LABEL
+DM-0060            Catch you later            catch you later            GOODBYE                                                                                                         GOODBYE        SAME_LABEL
+DM-0070            Have a good one            have a good one            GOODBYE                                                                                                         GOODBYE        SAME_LABEL
+DM-0087          Talk to you later          talk to you later            GOODBYE                                                                                                         GOODBYE        SAME_LABEL
+DM-0092 It was good talking to you it was good talking to you            GOODBYE                                                                                                         GOODBYE        SAME_LABEL
+DM-0101                     Thanks                     thanks          GRATITUDE                                                                                              GOODBYE, GRATITUDE  AMBIGUOUS_LABELS
+DM-0104        Thank you very much        thank you very much          GRATITUDE                                                                                              GOODBYE, GRATITUDE  AMBIGUOUS_LABELS
+DM-0120     I really appreciate it     i really appreciate it          GRATITUDE                                                                                                         GOODBYE CONFLICTING_LABEL
+DM-0151                    I agree                    i agree          AGREEMENT                                                                                            AGREEMENT, STATEMENT  AMBIGUOUS_LABELS
+DM-0153           Absolutely right           absolutely right          AGREEMENT                                                                                                       AGREEMENT        SAME_LABEL
+DM-0155                    Exactly                    exactly          AGREEMENT                                                        ACKNOWLEDGMENT, AFFIRMATIVE_ANSWER, AGREEMENT, STATEMENT  AMBIGUOUS_LABELS
+DM-0160        I feel the same way        i feel the same way          AGREEMENT                                                                                                       STATEMENT CONFLICTING_LABEL
+DM-0161            That is correct            that is correct          AGREEMENT                                                                                              AFFIRMATIVE_ANSWER CONFLICTING_LABEL
+DM-0200          I agree with that          i agree with that          AGREEMENT                                                                                            AGREEMENT, STATEMENT  AMBIGUOUS_LABELS
+DM-0251                      Maybe                      maybe        UNCERTAINTY                                                                                                  ACKNOWLEDGMENT CONFLICTING_LABEL
+DM-0351                        Yes                        yes AFFIRMATIVE_ANSWER        ACKNOWLEDGMENT, AFFIRMATIVE_ANSWER, AGREEMENT, CLARIFICATION, DISAGREEMENT, GOODBYE, GREETING, STATEMENT  AMBIGUOUS_LABELS
+DM-0352                        Yep                        yep AFFIRMATIVE_ANSWER                                                          ACKNOWLEDGMENT, AFFIRMATIVE_ANSWER, AGREEMENT, GOODBYE  AMBIGUOUS_LABELS
+DM-0354                  Certainly                  certainly AFFIRMATIVE_ANSWER                                                                                   AFFIRMATIVE_ANSWER, AGREEMENT  AMBIGUOUS_LABELS
+DM-0355                  Of course                  of course AFFIRMATIVE_ANSWER                                                                   ACKNOWLEDGMENT, AFFIRMATIVE_ANSWER, AGREEMENT  AMBIGUOUS_LABELS
+DM-0401                         No                         no    NEGATIVE_ANSWER ACKNOWLEDGMENT, AFFIRMATIVE_ANSWER, AGREEMENT, CLARIFICATION, DISAGREEMENT, GOODBYE, NEGATIVE_ANSWER, STATEMENT  AMBIGUOUS_LABELS
+DM-0402                       Nope                       nope    NEGATIVE_ANSWER                                                                        AGREEMENT, DISAGREEMENT, NEGATIVE_ANSWER  AMBIGUOUS_LABELS
+DM-0506             What was that?              what was that      CLARIFICATION                                                                                         CLARIFICATION, QUESTION  AMBIGUOUS_LABELS
+DM-0507                    Pardon?                     pardon      CLARIFICATION                                                                                          CLARIFICATION, GOODBYE  AMBIGUOUS_LABELS
+DM-0593      I work with computers      i work with computers          STATEMENT                                                                                                       STATEMENT        SAME_LABEL
+
+=== SWITCHBOARD VALIDATION OVERLAP ===
+Overlapping records: 13
+Overlap percentage: 2.17%
+
+=== SWITCHBOARD TEST OVERLAP ===
+Overlapping records: 19
+Overlap percentage: 3.17%
+
+=== INSTALLATION TEST E09.03 OVERLAP ===
+Overlapping records: 0
+Overlap percentage: 0.00%
+
+=== OVERLAP SUMMARY ===
+                 dataset  overlapping_records  overlap_percentage
+       Switchboard Train                   29                4.83
+  Switchboard Validation                   13                2.17
+        Switchboard Test                   19                3.17
+Installation Test E09.03                    0                0.00
+
+=== TRAINING ELIGIBILITY ===
+Original domain records: 600
+Records overlapping evaluation datasets: 21
+Eligible domain records: 579
+
+=== ELIGIBLE CLASS DISTRIBUTION ===
+                    original  eligible  excluded
+intent                                          
+ACKNOWLEDGMENT            50        50         0
+AFFIRMATIVE_ANSWER        50        45         5
+AGREEMENT                 50        45         5
+CLARIFICATION             50        48         2
+DISAGREEMENT              50        50         0
+GOODBYE                   50        47         3
+GRATITUDE                 50        48         2
+GREETING                  50        49         1
+NEGATIVE_ANSWER           50        48         2
+QUESTION                  50        50         0
+STATEMENT                 50        50         0
+UNCERTAINTY               50        49         1
+
+=== ELIGIBLE DATASET SAVED ===
+Records: 579
+Saved to: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\digital_mirror_v1\train_eligible.csv
+
+=== OVERLAP ANALYSIS COMPLETE ===

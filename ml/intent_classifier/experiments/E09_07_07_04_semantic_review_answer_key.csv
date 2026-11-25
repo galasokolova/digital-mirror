@@ -1,0 +1,601 @@
+review_id,id,text,intent,context,scenario,style,context_required,source
+REV-0001,NST-0537,I missed the name of the organization you mentioned.,CLARIFICATION,The review was conducted by the local council.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0002,NST-0600,I spent the morning sorting through old documents and found a letter from my grandfather.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0003,NST-0429,Mine doesn't.,NEGATIVE_ANSWER,Does your phone support that feature?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0004,NST-0425,Not really.,NEGATIVE_ANSWER,Do you enjoy cooking?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0005,NST-0304,Ah.,ACKNOWLEDGMENT,That symbol represents uncertainty.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0006,NST-0466,Did anyone interview the witness?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0007,NST-0131,I really appreciate your help.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0008,NST-0213,Not necessarily.,DISAGREEMENT,More information always helps.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0009,NST-0477,How long was the interview?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0010,NST-0315,Message received.,ACKNOWLEDGMENT,The schedule has changed.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0011,NST-0093,Have a safe trip home.,GOODBYE,,conversation_closing,polite,False,digital_mirror_small_talk_v1
+REV-0012,NST-0266,Still thinking.,UNCERTAINTY,Have you formed an opinion?,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0013,NST-0546,I'm not following the part where you said the two sources were not independent.,CLARIFICATION,The reports cannot be treated as independent evidence.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0014,NST-0481,How often do people change their minds here?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0015,NST-0236,That's an oversimplification of things.,DISAGREEMENT,Technology is always good for society.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0016,NST-0189,That's what I was thinking.,AGREEMENT,The clip was taken out of context.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0017,NST-0440,"No, we took the train.",NEGATIVE_ANSWER,Did you drive here?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0018,NST-0397,I can read everything on the screen from here.,AFFIRMATIVE_ANSWER,Can you read the text?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0019,NST-0541,Are you saying the event happened somewhere else entirely?,CLARIFICATION,The location in the caption is incorrect.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0020,NST-0347,I understand how this works now.,ACKNOWLEDGMENT,The slider changes the intensity of the pattern.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0021,NST-0596,The train was so crowded that I ended up standing all the way home.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0022,NST-0426,Nothing yet.,NEGATIVE_ANSWER,Have you received a reply?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0023,NST-0326,"Ah, gotcha.",ACKNOWLEDGMENT,The photo was cropped for display.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0024,NST-0482,What happens to my recording after I leave?,QUESTION,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0025,NST-0279,I wouldn't bet on it.,UNCERTAINTY,How certain are you about that prediction?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0026,NST-0420,Never have.,NEGATIVE_ANSWER,Have you ever tried skiing?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0027,NST-0582,My brother moved into a smaller flat last month.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0028,NST-0340,"Okay, that explains it.",ACKNOWLEDGMENT,The screen went dark because it timed out.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0029,NST-0231,I wouldn't put it that way.,DISAGREEMENT,The audience failed the experiment.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0030,NST-0060,So long!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0031,NST-0317,"Ah, right.",ACKNOWLEDGMENT,The original was in French.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0032,NST-0242,Your conclusion goes beyond what the numbers actually show.,DISAGREEMENT,The survey proves the entire population agrees.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0033,NST-0305,Okay.,ACKNOWLEDGMENT,The next clip is shorter.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0034,NST-0254,Who knows?,UNCERTAINTY,Will the plan succeed?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0035,NST-0013,"Well, hello!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0036,NST-0372,"Yes, please.",AFFIRMATIVE_ANSWER,Would you like some water?,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0037,NST-0346,"Okay, I know what to expect.",ACKNOWLEDGMENT,The next section contains three questions.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0038,NST-0488,Can I access the archive without creating an account?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0039,NST-0445,I couldn't find it anywhere in the folder.,NEGATIVE_ANSWER,Did you locate the original file?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0040,NST-0022,Good morning!,GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0041,NST-0139,"That means a lot, thanks.",GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0042,NST-0436,Nobody answered the phone.,NEGATIVE_ANSWER,Did anyone pick up?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0043,NST-0089,I'll catch up with you later.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0044,NST-0424,Not anymore.,NEGATIVE_ANSWER,Do you still live there?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0045,NST-0252,Possibly.,UNCERTAINTY,Do you think they'll return?,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0046,NST-0146,Thanks for giving me a chance to reconsider.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0047,NST-0133,I owe you one.,GRATITUDE,I have helped you find what you were looking for.,final_reaction,neutral,True,digital_mirror_small_talk_v1
+REV-0048,NST-0330,I understand.,ACKNOWLEDGMENT,The article was updated this morning.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0049,NST-0316,"Oh, okay.",ACKNOWLEDGMENT,The first image is a reconstruction.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0050,NST-0308,Noted.,ACKNOWLEDGMENT,The date is in the bottom corner.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0051,NST-0437,I left it at home.,NEGATIVE_ANSWER,Did you bring your notebook?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0052,NST-0241,I don't buy the argument that popularity equals quality.,DISAGREEMENT,The most popular film must be the best.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0053,NST-0418,They aren't.,NEGATIVE_ANSWER,Are your friends coming?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0054,NST-0298,I can see several possibilities without knowing which fits.,UNCERTAINTY,Which explanation is correct?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0055,NST-0183,I can get behind that.,AGREEMENT,We should compare the two accounts.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0056,NST-0219,Far from it.,DISAGREEMENT,The discussion was pointless.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0057,NST-0413,It isn't.,NEGATIVE_ANSWER,Is the screen on?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0058,NST-0294,I might feel differently after seeing the recording.,UNCERTAINTY,Do you have a firm opinion yet?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0059,NST-0084,Have a lovely evening.,GOODBYE,,conversation_closing,polite,False,digital_mirror_small_talk_v1
+REV-0060,NST-0384,We went there yesterday.,AFFIRMATIVE_ANSWER,Have you visited the gallery?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0061,NST-0320,I hear you.,ACKNOWLEDGMENT,The instructions were difficult to read.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0062,NST-0555,The screen froze.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0063,NST-0119,"Thanks, friend.",GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0064,NST-0395,"Yes, I saw it on the news yesterday.",AFFIRMATIVE_ANSWER,Have you seen this story before?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0065,NST-0505,How so?,CLARIFICATION,The comparison is misleading.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0066,NST-0187,That matches my own impression.,AGREEMENT,The audience seemed confused.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0067,NST-0076,Bye bye!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0068,NST-0379,A few times.,AFFIRMATIVE_ANSWER,Have you used this website before?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0069,NST-0117,"Thanks, seriously.",GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0070,NST-0515,"A typo, you mean?",CLARIFICATION,There is an error in the caption.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0071,NST-0580,I've been working on a painting all week.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0072,NST-0565,We moved here last summer.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0073,NST-0564,The recording lasts three minutes.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0074,NST-0553,My phone died.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0075,NST-0336,I see the distinction.,ACKNOWLEDGMENT,The estimate is not a measurement.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0076,NST-0463,How old is this recording?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0077,NST-0434,The link won't open.,NEGATIVE_ANSWER,Can you access the link?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0078,NST-0208,Wrong conclusion.,DISAGREEMENT,The figures prove the policy worked.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0079,NST-0255,Hard to tell.,UNCERTAINTY,Does the recording look authentic?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0080,NST-0202,Not convinced.,DISAGREEMENT,That explanation settles it.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0081,NST-0180,I share that view.,AGREEMENT,We should keep the design simple.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0082,NST-0016,"Hey, friend!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0083,NST-0107,Cheers!,GRATITUDE,Here is the information you asked for.,final_reaction,casual,True,digital_mirror_small_talk_v1
+REV-0084,NST-0549,"Sorry, could you go back to the point you made about how the sample was selected?",CLARIFICATION,The sample was drawn from a restricted population.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0085,NST-0557,Lunch is ready.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0086,NST-0097,It was lovely chatting with you this afternoon.,GOODBYE,,conversation_closing,polite,False,digital_mirror_small_talk_v1
+REV-0087,NST-0009,Greetings!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0088,NST-0280,There's no telling just yet.,UNCERTAINTY,Will the repairs solve the problem?,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0089,NST-0495,How do you decide which articles to include when there are hundreds of stories available?,QUESTION,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0090,NST-0496,Is there somewhere I can find the full interview rather than just the short clip?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0091,NST-0295,I'm struggling to work out what actually happened.,UNCERTAINTY,Can you explain the sequence of events?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0092,NST-0313,Makes sense.,ACKNOWLEDGMENT,The delay comes from processing.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0093,NST-0421,"No, thanks.",NEGATIVE_ANSWER,Are you taking a leaflet?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0094,NST-0067,Stay safe!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0095,NST-0480,What did the reporter find?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0096,NST-0461,Where did you hear that?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0097,NST-0199,"I wasn't sure at first, but I think your explanation makes more sense now.",AGREEMENT,The apparent contradiction comes from the different reporting dates.,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0098,NST-0532,Can you explain that last bit?,CLARIFICATION,The result depends on the baseline.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0099,NST-0172,I'd agree.,AGREEMENT,That seems the fairest interpretation.,discussion_and_clarification,hesitant,False,digital_mirror_small_talk_v1
+REV-0100,NST-0493,What kind of microphone are you using for this?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0101,NST-0536,Are you talking about the source or the author?,CLARIFICATION,They were not identified.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0102,NST-0453,Any updates?,QUESTION,The investigation is ongoing.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0103,NST-0120,Appreciate your help.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0104,NST-0410,I wouldn't.,NEGATIVE_ANSWER,Would you buy that again?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0105,NST-0377,All the time.,AFFIRMATIVE_ANSWER,Do you listen to podcasts often?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0106,NST-0173,That's fair.,AGREEMENT,We should consider both explanations.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0107,NST-0148,Thank you for walking me through all that.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0108,NST-0101,Thanks!,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0109,NST-0169,No argument there.,AGREEMENT,The evidence is incomplete.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0110,NST-0561,I live near the coast.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0111,NST-0341,I understand the instructions.,ACKNOWLEDGMENT,Press once to begin and twice to stop.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0112,NST-0587,Someone had already cleared the snow from the pavement.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0113,NST-0201,Disagree.,DISAGREEMENT,This is the best approach.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0114,NST-0452,Who said that?,QUESTION,A witness claims the road was blocked.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0115,NST-0141,I appreciate the extra detail.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0116,NST-0075,Until tomorrow.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0117,NST-0023,"Evening, everyone!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0118,NST-0193,I think your criticism of the headline is justified.,AGREEMENT,The headline exaggerates the findings.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0119,NST-0325,"Oh, I see.",ACKNOWLEDGMENT,The sound comes from the right speaker.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0120,NST-0015,"Ah, hello!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0121,NST-0417,We haven't.,NEGATIVE_ANSWER,Have you both eaten?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0122,NST-0259,Beats me.,UNCERTAINTY,Why did the screen freeze?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0123,NST-0043,"Hello, nice to meet you.",GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0124,NST-0149,Thanks for pointing out something I had missed.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0125,NST-0108,Thanks again.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0126,NST-0263,I'm torn.,UNCERTAINTY,Which account seems more credible?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0127,NST-0087,Hope to see you again.,GOODBYE,,conversation_closing,polite,False,digital_mirror_small_talk_v1
+REV-0128,NST-0270,I suppose.,UNCERTAINTY,Could the delay have been accidental?,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0129,NST-0179,You've got a point.,AGREEMENT,The translation might be misleading.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0130,NST-0132,That was kind of you.,GRATITUDE,I have helped you find what you were looking for.,final_reaction,neutral,True,digital_mirror_small_talk_v1
+REV-0131,NST-0563,My sister works in healthcare.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0132,NST-0464,What are the main findings?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0133,NST-0444,I've got nothing in my pockets.,NEGATIVE_ANSWER,Do you have any coins?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0134,NST-0396,I've already watched the whole thing at home.,AFFIRMATIVE_ANSWER,Have you watched the entire video?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0135,NST-0473,How many people responded?,QUESTION,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0136,NST-0447,We haven't had a chance to discuss it yet.,NEGATIVE_ANSWER,Have you talked about the proposal?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0137,NST-0427,Neither did I.,NEGATIVE_ANSWER,I missed the broadcast. Did you watch it?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0138,NST-0560,Prices went up.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0139,NST-0503,As in?,CLARIFICATION,The footage was manipulated.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0140,NST-0287,I honestly couldn't say.,UNCERTAINTY,Did the witness remember correctly?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0141,NST-0456,How much?,QUESTION,Admission requires a ticket.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0142,NST-0052,Goodbye!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0143,NST-0491,Are there any photographs from before the building collapsed?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0144,NST-0318,"Right, okay.",ACKNOWLEDGMENT,The file is still loading.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0145,NST-0178,I feel the same way.,AGREEMENT,The presentation was too rushed.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0146,NST-0356,I have.,AFFIRMATIVE_ANSWER,Have you visited Lisbon?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0147,NST-0585,The library has a separate room for group projects.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0148,NST-0238,That interpretation doesn't work for me.,DISAGREEMENT,The painting represents happiness alone.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0149,NST-0069,I'm off.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0150,NST-0165,Good point.,AGREEMENT,The speaker may be mistaken.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0151,NST-0212,Quite the opposite.,DISAGREEMENT,The new layout is easier to read.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0152,NST-0194,"Well, I have to agree with you there.",AGREEMENT,The first example is not representative.,discussion_and_clarification,hesitant,False,digital_mirror_small_talk_v1
+REV-0153,NST-0156,Same here.,AGREEMENT,I think the first version is clearer.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0154,NST-0576,I found an old receipt.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0155,NST-0106,Thanks a million.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0156,NST-0046,Good morning to you too.,GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0157,NST-0190,I wouldn't dispute that.,AGREEMENT,The wording is ambiguous.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0158,NST-0061,Cheerio!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0159,NST-0404,I didn't.,NEGATIVE_ANSWER,Did you call her?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0160,NST-0159,You're right.,AGREEMENT,That argument contradicts itself.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0161,NST-0267,I'm unsure.,UNCERTAINTY,Which version is accurate?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0162,NST-0185,I agree with that conclusion.,AGREEMENT,The claim is not well supported.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0163,NST-0091,Time for me to go.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0164,NST-0222,That's misleading.,DISAGREEMENT,The headline accurately summarizes the report.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0165,NST-0064,See you soon.,GOODBYE,,conversation_closing,polite,False,digital_mirror_small_talk_v1
+REV-0166,NST-0392,"I usually do, actually.",AFFIRMATIVE_ANSWER,Do you read the comments?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0167,NST-0450,"No, I checked both of my email accounts and there was nothing from them.",NEGATIVE_ANSWER,Have you received their confirmation?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0168,NST-0489,How much electricity does this installation use each day?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0169,NST-0327,"Okay, got it.",ACKNOWLEDGMENT,The dial controls the volume.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0170,NST-0439,My name isn't on it.,NEGATIVE_ANSWER,Are you on the list?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0171,NST-0381,"Yes, I remember that.",AFFIRMATIVE_ANSWER,Do you remember the first image?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0172,NST-0506,Define reliable.,CLARIFICATION,We used a reliable source.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0173,NST-0111,Thanks heaps.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0174,NST-0286,That remains an open question.,UNCERTAINTY,Was the footage edited?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0175,NST-0188,I see it that way.,AGREEMENT,The second explanation is stronger.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0176,NST-0150,I really appreciate you taking the time to explain that without making me feel silly.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0177,NST-0362,I was.,AFFIRMATIVE_ANSWER,Were you at the exhibition yesterday?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0178,NST-0428,No one did.,NEGATIVE_ANSWER,Did anyone volunteer?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0179,NST-0256,I'm undecided.,UNCERTAINTY,Which explanation do you prefer?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0180,NST-0519,Do you mean the headline?,CLARIFICATION,The wording was changed.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0181,NST-0177,That's how I see it.,AGREEMENT,The argument is missing context.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0182,NST-0020,"Hey, you!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0183,NST-0029,Nice meeting you!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0184,NST-0228,I'm against that idea.,DISAGREEMENT,We should remove the captions.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0185,NST-0144,Thank you for the reminder.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0186,NST-0310,I see.,ACKNOWLEDGMENT,The audio was recorded separately.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0187,NST-0581,The first few seconds of the recording are silent.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0188,NST-0216,Bad assumption.,DISAGREEMENT,Everyone understands the instructions.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0189,NST-0114,Thank you kindly.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0190,NST-0502,Meaning what?,CLARIFICATION,The account was compromised.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0191,NST-0412,I wasn't.,NEGATIVE_ANSWER,Were you there yesterday?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0192,NST-0583,There were three different versions of the poster.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0193,NST-0403,Nah.,NEGATIVE_ANSWER,Do you drink coffee?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0194,NST-0314,All clear.,ACKNOWLEDGMENT,The blue light means recording.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0195,NST-0432,I've never been there.,NEGATIVE_ANSWER,Have you visited Berlin?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0196,NST-0012,Hello there!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0197,NST-0498,Do you know whether the people who collected the data were present during the incident?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0198,NST-0401,No.,NEGATIVE_ANSWER,Did you watch the video?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0199,NST-0309,Roger.,ACKNOWLEDGMENT,The microphone is now active.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0200,NST-0024,"Hey, good morning!",GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0201,NST-0014,"Oh, hi!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0202,NST-0523,Can you rephrase that please?,CLARIFICATION,The estimate is not statistically robust.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0203,NST-0126,Thanks for listening.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0204,NST-0475,What language are they speaking?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0205,NST-0504,Which part exactly?,CLARIFICATION,Some of the report is inaccurate.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0206,NST-0163,Precisely.,AGREEMENT,The context changes the meaning.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0207,NST-0535,Could you explain what you mean by original?,CLARIFICATION,We need the original document.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0208,NST-0053,See you!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0209,NST-0088,It was nice meeting you.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0210,NST-0184,That's a fair assessment.,AGREEMENT,The experiment has some limitations.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0211,NST-0054,Take care!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0212,NST-0155,My thoughts exactly.,AGREEMENT,The comparison is unfair.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0213,NST-0246,That sounds like an excuse rather than a justification.,DISAGREEMENT,The delay was completely acceptable because we were busy.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0214,NST-0070,Gotta go.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0215,NST-0040,What a pleasure to meet you.,GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0216,NST-0531,What are you comparing it with?,CLARIFICATION,The rate is unusually high.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0217,NST-0191,I was leaning toward the same explanation myself.,AGREEMENT,The error was probably accidental.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0218,NST-0342,I see what happened.,ACKNOWLEDGMENT,The first upload was interrupted.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0219,NST-0283,I keep changing my mind.,UNCERTAINTY,Which explanation seems more likely?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0220,NST-0248,We shouldn't treat an opinion as an established fact.,DISAGREEMENT,The commentator's opinion is sufficient proof.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0221,NST-0292,I keep going back and forth on that.,UNCERTAINTY,Have you decided whether to trust the report?,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0222,NST-0027,"Hello, my friend!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0223,NST-0367,They are.,AFFIRMATIVE_ANSWER,Are the speakers connected?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0224,NST-0077,Farewell!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0225,NST-0142,Thanks for being so patient.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0226,NST-0210,I object.,DISAGREEMENT,We should ignore the minority opinion.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0227,NST-0171,Exactly my point.,AGREEMENT,The numbers need checking.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0228,NST-0003,Hi there!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0229,NST-0365,It is.,AFFIRMATIVE_ANSWER,Is that your bag?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0230,NST-0533,Is that the same person speaking?,CLARIFICATION,The second recording features the witness.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0231,NST-0508,What specifically?,CLARIFICATION,Something was missing from the transcript.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0232,NST-0157,Couldn't agree more.,AGREEMENT,We need better evidence.,discussion_and_clarification,emphatic,False,digital_mirror_small_talk_v1
+REV-0233,NST-0078,Safe travels!,GOODBYE,,conversation_closing,polite,False,digital_mirror_small_talk_v1
+REV-0234,NST-0181,I'd say the same.,AGREEMENT,The result is inconclusive.,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0235,NST-0140,Thanks for bearing with me.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0236,NST-0214,I doubt that.,DISAGREEMENT,The author must be impartial.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0237,NST-0376,Most days.,AFFIRMATIVE_ANSWER,Do you usually cook at home?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0238,NST-0419,Not yet.,NEGATIVE_ANSWER,Have you finished?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0239,NST-0073,Talk later.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0240,NST-0567,I usually walk to work.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0241,NST-0063,See you around.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0242,NST-0408,I couldn't.,NEGATIVE_ANSWER,Could you hear the recording?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0243,NST-0018,"Morning, folks!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0244,NST-0579,A cyclist stopped beside us at the crossing.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0245,NST-0592,The local newspaper published a photograph of the bridge before the repairs began.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0246,NST-0547,"When you say the date is wrong, are you referring to publication or filming?",CLARIFICATION,The date attached to the clip is incorrect.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0247,NST-0034,"Hi, stranger!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0248,NST-0262,Too early.,UNCERTAINTY,Can we draw a conclusion yet?,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0249,NST-0130,Thanks for everything.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0250,NST-0448,I didn't notice any subtitles in that video.,NEGATIVE_ANSWER,Did you see subtitles?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0251,NST-0138,I appreciate you showing me.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0252,NST-0019,"Hello, everybody!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0253,NST-0509,Come again?,CLARIFICATION,The audio is out of sync.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0254,NST-0145,I really appreciate how clearly you explained that.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0255,NST-0543,"When you mentioned a correction, was it the published article?",CLARIFICATION,A correction was issued.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0256,NST-0442,"No, she's still at work.",NEGATIVE_ANSWER,Has your sister come home?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0257,NST-0005,Good evening!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0258,NST-0038,Good to see you again.,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0259,NST-0269,We'll see.,UNCERTAINTY,Do you expect the update to work?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0260,NST-0526,Is that a literal translation?,CLARIFICATION,The translated phrase sounds unusual.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0261,NST-0154,Spot on.,AGREEMENT,The wording leaves out important details.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0262,NST-0358,I could.,AFFIRMATIVE_ANSWER,Could you read the subtitles from there?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0263,NST-0203,Absolutely not.,DISAGREEMENT,Everyone should accept that conclusion.,discussion_and_clarification,emphatic,True,digital_mirror_small_talk_v1
+REV-0264,NST-0303,Oh.,ACKNOWLEDGMENT,The museum closes at six.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0265,NST-0423,Not today.,NEGATIVE_ANSWER,Did you exercise today?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0266,NST-0290,I haven't settled on anything.,UNCERTAINTY,Which design do you prefer?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0267,NST-0568,The shop closes at six.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0268,NST-0134,Thanks for clearing that up.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0269,NST-0162,Totally agree.,AGREEMENT,The interface should be simpler.,discussion_and_clarification,emphatic,False,digital_mirror_small_talk_v1
+REV-0270,NST-0268,Potentially.,UNCERTAINTY,Could the two events be related?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0271,NST-0538,Does that mean the whole report was withdrawn?,CLARIFICATION,The publisher issued a withdrawal notice.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0272,NST-0281,I need a little longer.,UNCERTAINTY,Have you reached a verdict?,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0273,NST-0021,"Hi, folks!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0274,NST-0467,How does the device work?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0275,NST-0386,I was there last night.,AFFIRMATIVE_ANSWER,Were you at the event?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0276,NST-0337,I've got the idea.,ACKNOWLEDGMENT,The two panels respond independently.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0277,NST-0121,Much obliged.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0278,NST-0469,Can visitors record their reactions?,QUESTION,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0279,NST-0415,It doesn't.,NEGATIVE_ANSWER,Does the button work?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0280,NST-0588,The camera picked up voices from the next room.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0281,NST-0042,"Well, look who's here!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0282,NST-0497,What happens if two independent sources publish completely different accounts of the same event?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0283,NST-0289,It's all a bit murky.,UNCERTAINTY,What actually happened that morning?,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0284,NST-0459,Who benefits?,QUESTION,A new policy was introduced.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0285,NST-0574,The room feels warmer now.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0286,NST-0258,Could be.,UNCERTAINTY,Maybe the camera was faulty.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0287,NST-0245,I disagree with how you've framed the whole issue.,DISAGREEMENT,This is just a question of personal taste.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0288,NST-0319,"Okay, understood.",ACKNOWLEDGMENT,Only one answer is needed.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0289,NST-0357,I can.,AFFIRMATIVE_ANSWER,Can you hear me?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0290,NST-0161,I agree.,AGREEMENT,The second source is more reliable.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0291,NST-0348,"Oh, now I see why the two dates are different.",ACKNOWLEDGMENT,One date is publication and the other is revision.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0292,NST-0278,It could go either way.,UNCERTAINTY,Will the experiment work?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0293,NST-0422,"No, sorry.",NEGATIVE_ANSWER,Do you have a pen?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0294,NST-0112,Thanks loads.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0295,NST-0152,Absolutely.,AGREEMENT,We should check the original first.,discussion_and_clarification,emphatic,True,digital_mirror_small_talk_v1
+REV-0296,NST-0332,Got the message.,ACKNOWLEDGMENT,The session ends automatically.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0297,NST-0080,All the best!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0298,NST-0250,"Even if the figures are accurate, I disagree with the interpretation you've offered.",DISAGREEMENT,These figures demonstrate that the project was a failure.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0299,NST-0544,Could you walk me through that distinction once more?,CLARIFICATION,The two estimates use different definitions.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0300,NST-0443,The shop is closed today.,NEGATIVE_ANSWER,Is the shop open?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0301,NST-0514,Could you elaborate?,CLARIFICATION,The study has limitations.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0302,NST-0458,Which source?,QUESTION,Several outlets covered the event.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0303,NST-0405,I don't.,NEGATIVE_ANSWER,Do you recognize him?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0304,NST-0200,I share your concern that the wording could lead people to the wrong conclusion.,AGREEMENT,The wording suggests a stronger result than the study supports.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0305,NST-0457,When exactly?,QUESTION,The next screening is tomorrow.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0306,NST-0195,That is pretty much how I would describe it.,AGREEMENT,The display feels a little crowded.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0307,NST-0487,What other explanations have been proposed for this event?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0308,NST-0554,Traffic was awful.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0309,NST-0206,No way.,DISAGREEMENT,That argument is flawless.,discussion_and_clarification,emphatic,True,digital_mirror_small_talk_v1
+REV-0310,NST-0360,I would.,AFFIRMATIVE_ANSWER,Would you use that app again?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0311,NST-0247,I think the original version was much more effective.,DISAGREEMENT,The revised version is clearly superior.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0312,NST-0361,I am.,AFFIRMATIVE_ANSWER,Are you ready?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0313,NST-0352,Yep.,AFFIRMATIVE_ANSWER,Is your microphone on?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0314,NST-0086,I'll leave you to it.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0315,NST-0539,Is the number you gave an average or a total?,CLARIFICATION,The figure was twenty thousand.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0316,NST-0048,"Hey, it's really good to see you again.",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0317,NST-0008,Howdy!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0318,NST-0359,I will.,AFFIRMATIVE_ANSWER,Will you watch the next clip?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0319,NST-0599,Our building has a shared laundry room in the basement next to the bicycle racks.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0320,NST-0339,That clears things up.,ACKNOWLEDGMENT,The timestamp is in local time.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0321,NST-0407,I can't.,NEGATIVE_ANSWER,Can you open the file?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0322,NST-0227,That doesn't follow logically.,DISAGREEMENT,"The price increased, so quality improved.",discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0323,NST-0039,"Hey, it's been a while.",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0324,NST-0334,"Oh, understood.",ACKNOWLEDGMENT,The second number is a percentage.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0325,NST-0237,I think you're mistaken here.,DISAGREEMENT,The second graph shows a decline.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0326,NST-0373,"Yes, indeed.",AFFIRMATIVE_ANSWER,Was the ticket free?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0327,NST-0094,I'll be on my way.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0328,NST-0569,Our internet keeps cutting out.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0329,NST-0552,Time flies.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0330,NST-0230,That's a poor comparison.,DISAGREEMENT,These two surveys are basically identical.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0331,NST-0468,When does the exhibition close?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0332,NST-0351,Yes.,AFFIRMATIVE_ANSWER,Did you see the clip?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0333,NST-0099,I'll say goodbye now and let you get on.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0334,NST-0558,Nobody came.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0335,NST-0056,See ya!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0336,NST-0510,Say that again?,CLARIFICATION,The sample was collected before the event.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0337,NST-0207,Not quite.,DISAGREEMENT,Those two situations are identical.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0338,NST-0032,"Hello, welcome!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0339,NST-0051,Bye!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0340,NST-0331,Duly noted.,ACKNOWLEDGMENT,The original link is unavailable.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0341,NST-0335,"Okay, I'm following.",ACKNOWLEDGMENT,The timeline begins in January.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0342,NST-0584,I tend to read the news over breakfast.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0343,NST-0479,Did the weather affect attendance?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0344,NST-0211,Strongly disagree.,DISAGREEMENT,Privacy is irrelevant here.,discussion_and_clarification,emphatic,True,digital_mirror_small_talk_v1
+REV-0345,NST-0402,Nope.,NEGATIVE_ANSWER,Is the door locked?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0346,NST-0182,We're on the same page.,AGREEMENT,The source needs verification.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0347,NST-0570,The article includes two photographs.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0348,NST-0409,I won't.,NEGATIVE_ANSWER,Will you attend tomorrow?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0349,NST-0050,"Good morning, it's nice to finally meet you.",GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0350,NST-0049,"Hello there, what a lovely surprise to see you.",GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0351,NST-0098,I hope you enjoy the rest of your evening.,GOODBYE,,conversation_closing,polite,False,digital_mirror_small_talk_v1
+REV-0352,NST-0209,That's debatable.,DISAGREEMENT,This is obviously the cheapest option.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0353,NST-0355,I do.,AFFIRMATIVE_ANSWER,Do you own a bicycle?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0354,NST-0125,Thank you both.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0355,NST-0243,I wouldn't dismiss the alternative explanation quite so quickly.,DISAGREEMENT,There is no other possible explanation.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0356,NST-0296,Part of me thinks it might be genuine.,UNCERTAINTY,Do you believe the image is authentic?,discussion_and_clarification,hesitant,False,digital_mirror_small_talk_v1
+REV-0357,NST-0293,There isn't enough here for me to decide.,UNCERTAINTY,What is your verdict on the claim?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0358,NST-0521,Before or after?,CLARIFICATION,The interview took place around the announcement.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0359,NST-0400,"I have, but the version I watched had a different title and no subtitles.",AFFIRMATIVE_ANSWER,Have you seen this film before?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0360,NST-0110,So many thanks.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0361,NST-0416,It didn't.,NEGATIVE_ANSWER,Did the alarm ring?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0362,NST-0343,I've taken note of that.,ACKNOWLEDGMENT,The deadline moved to Friday.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0363,NST-0517,Could you be more specific?,CLARIFICATION,There were problems with the source.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0364,NST-0122,Forever grateful.,GRATITUDE,I have helped you find what you were looking for.,final_reaction,casual,True,digital_mirror_small_talk_v1
+REV-0365,NST-0264,Difficult to say.,UNCERTAINTY,Was the change deliberate?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0366,NST-0398,We did manage to find the original recording.,AFFIRMATIVE_ANSWER,Did you find the original recording?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0367,NST-0170,We're in agreement.,AGREEMENT,This needs further investigation.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0368,NST-0017,"Hi, everyone!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0369,NST-0035,"Oh, hello there!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0370,NST-0378,Once or twice.,AFFIRMATIVE_ANSWER,Have you tried that game?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0371,NST-0589,I bought this jacket at a secondhand shop downtown.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0372,NST-0524,"Sorry, I missed the date.",CLARIFICATION,The meeting was on the seventeenth.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0373,NST-0363,I had.,AFFIRMATIVE_ANSWER,Had you heard about this before today?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0374,NST-0037,Lovely to see you.,GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0375,NST-0004,Morning!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0376,NST-0499,How many visitors have tried the installation since it opened to the public last week?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0377,NST-0540,Could you repeat the part about the missing footage?,CLARIFICATION,The first minute of the recording is unavailable.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0378,NST-0118,Thanks anyway.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0379,NST-0476,Are the results publicly available?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0380,NST-0302,Mm-hmm.,ACKNOWLEDGMENT,There are two versions of the report.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0381,NST-0011,"Hey, stranger!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0382,NST-0174,Makes perfect sense.,AGREEMENT,The change would reduce confusion.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0383,NST-0483,Is there a way to check the original footage?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0384,NST-0116,Thanks for that.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0385,NST-0511,In other words?,CLARIFICATION,The estimate is conditional.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0386,NST-0062,Good night!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0387,NST-0232,That seems completely unreasonable.,DISAGREEMENT,We should ban all discussion.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0388,NST-0265,No idea yet.,UNCERTAINTY,What caused the interruption?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0389,NST-0529,Are those percentages or counts?,CLARIFICATION,The chart shows twelve and twenty.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0390,NST-0438,There wasn't any sound.,NEGATIVE_ANSWER,Could you hear the clip?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0391,NST-0528,Does that include the introduction?,CLARIFICATION,The recording lasts five minutes.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0392,NST-0344,"Right, I'm with you now.",ACKNOWLEDGMENT,The first number refers to the sample size.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0393,NST-0501,In what sense?,CLARIFICATION,The results are significant.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0394,NST-0571,I left my glasses upstairs.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0395,NST-0366,It was.,AFFIRMATIVE_ANSWER,Was the room crowded?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0396,NST-0103,Much appreciated.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0397,NST-0354,I did.,AFFIRMATIVE_ANSWER,Did you check the date?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0398,NST-0542,What does the second label on that chart refer to?,CLARIFICATION,The chart uses two categories.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0399,NST-0494,Did the journalist speak to anyone outside the organization?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0400,NST-0435,We ran out yesterday.,NEGATIVE_ANSWER,Do you have any milk left?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0401,NST-0109,Really appreciate it.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0402,NST-0485,How did the researchers decide which participants to include?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0403,NST-0311,Got it.,ACKNOWLEDGMENT,The left panel shows your reaction.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0404,NST-0478,Which newspaper published the story?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0405,NST-0136,Thank you for your patience.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0406,NST-0085,I'd better get going.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0407,NST-0598,The exhibition includes recordings made by people who lived in the neighbourhood during the seventies.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0408,NST-0244,"The problem is with the assumption, not the calculation.",DISAGREEMENT,The calculation must be the source of the error.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0409,NST-0338,I follow you now.,ACKNOWLEDGMENT,The map uses a different scale.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0410,NST-0066,Have fun!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0411,NST-0065,See you tomorrow.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0412,NST-0393,"Yes, that's my first name.",AFFIRMATIVE_ANSWER,Is that your first name?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0413,NST-0273,Not necessarily.,UNCERTAINTY,Does that imply the report is false?,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0414,NST-0545,Do you mean the recording itself was altered or just the description underneath it?,CLARIFICATION,The material was modified before publication.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0415,NST-0036,Nice to meet you.,GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0416,NST-0249,"I understand why you think that, but I don't share your conclusion.",DISAGREEMENT,The recording is enough to establish what happened.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0417,NST-0375,Every day.,AFFIRMATIVE_ANSWER,Do you take the bus regularly?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0418,NST-0044,"Hey, glad you're here.",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0419,NST-0041,So nice to see you.,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0420,NST-0291,Both explanations seem plausible to me right now.,UNCERTAINTY,Which account is more convincing?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0421,NST-0124,"Thanks, honestly.",GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0422,NST-0030,Lovely meeting you!,GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0423,NST-0123,Deeply grateful.,GRATITUDE,I have helped you find what you were looking for.,final_reaction,casual,True,digital_mirror_small_talk_v1
+REV-0424,NST-0158,Quite right.,AGREEMENT,The dates do not match.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0425,NST-0414,It wasn't.,NEGATIVE_ANSWER,Was the room crowded?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0426,NST-0500,Where could I find a copy of the report that includes all the original tables?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0427,NST-0462,Who took the photograph?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0428,NST-0010,Good afternoon!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0429,NST-0534,"When you say edited, do you mean shortened?",CLARIFICATION,The video was edited.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0430,NST-0166,For sure.,AGREEMENT,We should be cautious about this claim.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0431,NST-0307,Understood.,ACKNOWLEDGMENT,Please wait until the video ends.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0432,NST-0001,Hey!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0433,NST-0513,Which version specifically?,CLARIFICATION,The earlier version was withdrawn.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0434,NST-0399,"Yes, my brother sent me that link last week.",AFFIRMATIVE_ANSWER,Did someone send you this link?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0435,NST-0530,Which of those two statements?,CLARIFICATION,One statement was corrected.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0436,NST-0083,Enjoy the rest of today.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0437,NST-0451,Why?,QUESTION,The screening has been cancelled.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0438,NST-0192,You've convinced me that the second interpretation is stronger.,AGREEMENT,The second interpretation fits the evidence better.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0439,NST-0490,When will the next set of results become available?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0440,NST-0102,Thank you!,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0441,NST-0312,I follow.,ACKNOWLEDGMENT,The second figure is an average.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0442,NST-0455,Whereabouts?,QUESTION,A new gallery opened outside town.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0443,NST-0328,"Right, I see.",ACKNOWLEDGMENT,The caption refers to the previous image.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0444,NST-0431,"No, I missed it.",NEGATIVE_ANSWER,Did you catch the announcement?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0445,NST-0153,Agreed.,AGREEMENT,The headline is misleading.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0446,NST-0321,I'm listening.,ACKNOWLEDGMENT,There is another detail to mention.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0447,NST-0446,"No, the battery died before I got home.",NEGATIVE_ANSWER,Was your phone still working when you arrived?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0448,NST-0055,Later!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0449,NST-0260,I wonder.,UNCERTAINTY,That might explain the discrepancy.,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0450,NST-0092,See you on the way out.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0451,NST-0391,My camera is switched on.,AFFIRMATIVE_ANSWER,Is your camera on?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0452,NST-0257,Not entirely sure.,UNCERTAINTY,Is that the original image?,discussion_and_clarification,hesitant,False,digital_mirror_small_talk_v1
+REV-0453,NST-0507,"Sorry, which one?",CLARIFICATION,One of these recordings is authentic.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0454,NST-0369,He has.,AFFIRMATIVE_ANSWER,Has your brother arrived?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0455,NST-0449,There aren't any dates on the original document.,NEGATIVE_ANSWER,Does the document include dates?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0456,NST-0472,Where can I read more?,QUESTION,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0457,NST-0002,Hello!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0458,NST-0233,I can't support that conclusion.,DISAGREEMENT,The sample proves everyone agrees.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0459,NST-0556,I'm from Canada.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0460,NST-0223,I wouldn't agree.,DISAGREEMENT,The changes are all beneficial.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0461,NST-0151,Exactly!,AGREEMENT,That explanation seems more plausible.,discussion_and_clarification,emphatic,True,digital_mirror_small_talk_v1
+REV-0462,NST-0527,"By recent, how recent exactly?",CLARIFICATION,The data are recent.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0463,NST-0175,Same opinion here.,AGREEMENT,The first approach is more convincing.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0464,NST-0329,I get it.,ACKNOWLEDGMENT,The colors represent categories.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0465,NST-0394,I would definitely try it.,AFFIRMATIVE_ANSWER,Would you try the installation?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0466,NST-0137,Thanks for taking the time.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0467,NST-0385,I can hear you clearly.,AFFIRMATIVE_ANSWER,Can you hear my voice?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0468,NST-0522,What counts as independent here?,CLARIFICATION,We require independent verification.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0469,NST-0454,What happened?,QUESTION,There was a disturbance downtown.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0470,NST-0350,"Okay, I've got a better picture of the process.",ACKNOWLEDGMENT,The system collects a response before displaying the result.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0471,NST-0059,Until next time.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0472,NST-0370,Sure did.,AFFIRMATIVE_ANSWER,Did you enjoy the concert?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0473,NST-0486,Does the museum offer guided tours on weekday mornings?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0474,NST-0006,Hey there!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0475,NST-0492,Which countries participated in the first round of interviews?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0476,NST-0284,The jury's still out.,UNCERTAINTY,Is this method reliable?,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0477,NST-0129,Thanks for sharing.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0478,NST-0562,The bus arrived ten minutes late.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0479,NST-0240,We clearly have different views.,DISAGREEMENT,The ending was the strongest part.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0480,NST-0484,Who was responsible for collecting all these survey responses?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0481,NST-0196,Your reasoning fits with what I noticed earlier.,AGREEMENT,The shadows suggest the images were combined.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0482,NST-0198,"I agree, especially about the lack of independent evidence.",AGREEMENT,The claim needs independent confirmation.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0483,NST-0525,What exactly was left out?,CLARIFICATION,The clip omits important details.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0484,NST-0306,Gotcha.,ACKNOWLEDGMENT,You need to hold the button down.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0485,NST-0520,Which figure are you quoting?,CLARIFICATION,The figure is much higher.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0486,NST-0573,My battery is almost empty.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0487,NST-0516,What does that particular technical term mean here?,CLARIFICATION,The report describes selection bias.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0488,NST-0548,Could you explain whether that percentage refers to all participants or only those who responded?,CLARIFICATION,The response rate was reported as forty percent.,discussion_and_clarification,polite,True,digital_mirror_small_talk_v1
+REV-0489,NST-0322,Go on.,ACKNOWLEDGMENT,The explanation has two parts.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0490,NST-0079,See you Monday.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0491,NST-0057,Bye for now.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0492,NST-0441,I haven't seen that one.,NEGATIVE_ANSWER,Have you watched that documentary?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0493,NST-0025,"Oh, hey there!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0494,NST-0387,It works on my phone.,AFFIRMATIVE_ANSWER,Does the link work for you?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0495,NST-0551,It's raining.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0496,NST-0253,Perhaps.,UNCERTAINTY,Could that explain the delay?,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0497,NST-0261,It's unclear.,UNCERTAINTY,Can we establish the date?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0498,NST-0071,I'm heading out.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0499,NST-0113,Big thanks!,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0500,NST-0186,I'd go along with that.,AGREEMENT,We should use the earlier recording.,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0501,NST-0205,I disagree.,DISAGREEMENT,The design needs no changes.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0502,NST-0299,"I thought I understood what happened, but now I'm not sure which details to trust.",UNCERTAINTY,Has the second account changed your assessment?,discussion_and_clarification,hesitant,False,digital_mirror_small_talk_v1
+REV-0503,NST-0578,The museum was closed when we got there.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0504,NST-0220,I differ.,DISAGREEMENT,This is a perfect example.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0505,NST-0300,"Until I hear the other side of the story, I can't really form an opinion.",UNCERTAINTY,What do you think of the dispute?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0506,NST-0383,I already checked it.,AFFIRMATIVE_ANSWER,Did you verify the address?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0507,NST-0135,I appreciate the heads up.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0508,NST-0276,I haven't made up my mind.,UNCERTAINTY,Which account do you believe?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0509,NST-0288,I'm somewhere in the middle.,UNCERTAINTY,How confident are you in either interpretation?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0510,NST-0382,I've seen it before.,AFFIRMATIVE_ANSWER,Have you watched this documentary?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0511,NST-0127,Thanks for explaining.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0512,NST-0595,There's a little bakery across the street that sells fresh bread until lunchtime.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0513,NST-0272,It's anybody's guess.,UNCERTAINTY,What will happen next?,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0514,NST-0147,I appreciate you taking my question seriously.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0515,NST-0470,What caused the power outage?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0516,NST-0406,I haven't.,NEGATIVE_ANSWER,Have you read the article?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0517,NST-0512,What kind exactly?,CLARIFICATION,There was a technical error.,discussion_and_clarification,fragmented,True,digital_mirror_small_talk_v1
+REV-0518,NST-0218,That's unfair.,DISAGREEMENT,The visitors are simply careless.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0519,NST-0323,I'm following.,ACKNOWLEDGMENT,The two measurements use different units.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0520,NST-0217,I think otherwise.,DISAGREEMENT,The ending was predictable.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0521,NST-0068,Take it easy.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0522,NST-0275,I'm wavering.,UNCERTAINTY,Have you settled on an interpretation?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0523,NST-0411,I'm not.,NEGATIVE_ANSWER,Are you a teacher?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0524,NST-0324,That's clear.,ACKNOWLEDGMENT,The graph shows monthly totals.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0525,NST-0590,The electricity went out halfway through the film.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0526,NST-0235,I take issue with that.,DISAGREEMENT,People who disagree are uninformed.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0527,NST-0058,Catch you later.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0528,NST-0333,Loud and clear.,ACKNOWLEDGMENT,The instructions are being repeated.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0529,NST-0225,Exactly backwards.,DISAGREEMENT,The delay caused the earlier error.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0530,NST-0277,I'm still weighing the options.,UNCERTAINTY,Which approach would you choose?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0531,NST-0389,I still have the receipt.,AFFIRMATIVE_ANSWER,Do you have proof of purchase?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0532,NST-0474,Does this happen every year?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0533,NST-0168,I'm with you.,AGREEMENT,The original footage matters more.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0534,NST-0597,I keep a separate folder on my computer for photographs from each trip.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0535,NST-0176,I think so too.,AGREEMENT,The image looks edited.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0536,NST-0074,Catch you tomorrow.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0537,NST-0274,I'm hesitant.,UNCERTAINTY,Have you decided whether to accept the claim?,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0538,NST-0215,That's incorrect.,DISAGREEMENT,The two measurements are equivalent.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0539,NST-0364,We did.,AFFIRMATIVE_ANSWER,Did you and your friend see the film?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0540,NST-0380,Very much so.,AFFIRMATIVE_ANSWER,Are you interested in photography?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0541,NST-0167,Definitely agree.,AGREEMENT,The conclusion is premature.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0542,NST-0374,That's correct.,AFFIRMATIVE_ANSWER,Is your appointment on Tuesday?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0543,NST-0465,Is there a second source?,QUESTION,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0544,NST-0572,Someone opened the window.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0545,NST-0566,There's a scratch on the lens.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0546,NST-0104,Many thanks.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0547,NST-0586,We spent most of Sunday fixing the garden fence.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0548,NST-0082,I'll see you later.,GOODBYE,,conversation_closing,polite,False,digital_mirror_small_talk_v1
+REV-0549,NST-0297,I'd rather wait until we know a bit more.,UNCERTAINTY,Are you ready to make a judgment?,discussion_and_clarification,polite,False,digital_mirror_small_talk_v1
+REV-0550,NST-0234,The evidence suggests otherwise.,DISAGREEMENT,The recording confirms the accusation.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0551,NST-0047,"Hello, it's lovely meeting you.",GREETING,,initial_contact,polite,False,digital_mirror_small_talk_v1
+REV-0552,NST-0072,Talk soon.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0553,NST-0197,I had a similar reaction to that argument.,AGREEMENT,The speaker ignored an important objection.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0554,NST-0371,Certainly can.,AFFIRMATIVE_ANSWER,Can you open the document?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0555,NST-0301,Uh-huh.,ACKNOWLEDGMENT,The recording starts with an interview.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0556,NST-0081,Have a good one!,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0557,NST-0388,"Yes, both of them.",AFFIRMATIVE_ANSWER,Did you read both articles?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0558,NST-0128,Thanks for asking.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0559,NST-0550,Which recording did you mean?,CLARIFICATION,The recording was incomplete.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0560,NST-0471,Who funded the research?,QUESTION,,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0561,NST-0045,"Hi, great to see you.",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0562,NST-0271,I can't tell.,UNCERTAINTY,Is that a genuine photograph?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0563,NST-0353,Yup.,AFFIRMATIVE_ANSWER,Have you finished reading?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0564,NST-0368,She does.,AFFIRMATIVE_ANSWER,Does your sister speak English?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0565,NST-0100,Maybe we'll bump into each other again sometime.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0566,NST-0390,"I did, this morning.",AFFIRMATIVE_ANSWER,Did you send the email?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0567,NST-0095,Let's talk again sometime.,GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0568,NST-0594,My laptop has been making a strange noise ever since I installed the update.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0569,NST-0345,I get what you're saying.,ACKNOWLEDGMENT,The translation leaves out a detail.,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0570,NST-0221,Not my view.,DISAGREEMENT,The artwork should be purely decorative.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0571,NST-0160,Fair point.,AGREEMENT,We cannot judge from one example.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0572,NST-0577,My neighbour grows tomatoes on her balcony.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0573,NST-0349,I understand what the numbers on the screen represent.,ACKNOWLEDGMENT,The values show relative frequency.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0574,NST-0591,I used to take the ferry every morning before I changed jobs.,STATEMENT,,discussion_and_clarification,casual,False,digital_mirror_small_talk_v1
+REV-0575,NST-0164,That's true.,AGREEMENT,The sample is too small.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0576,NST-0007,Hiya!,GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0577,NST-0285,I'm not ruling anything out.,UNCERTAINTY,Which theory is correct?,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0578,NST-0460,Any witnesses?,QUESTION,An accident was reported nearby.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0579,NST-0226,I see it differently.,DISAGREEMENT,The installation should be silent.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0580,NST-0430,Not this time.,NEGATIVE_ANSWER,Did you win again?,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0581,NST-0593,We had to move the furniture into the hallway while the floor was being replaced.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0582,NST-0204,Hardly.,DISAGREEMENT,That was a fair comparison.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0583,NST-0575,They cancelled the afternoon lecture.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0584,NST-0028,"Hi, good evening!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0585,NST-0518,Are you referring to yesterday?,CLARIFICATION,That happened the day before.,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0586,NST-0239,I'd argue the reverse.,DISAGREEMENT,The longer version is clearer.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0587,NST-0224,That's not true.,DISAGREEMENT,Nobody complained about the noise.,discussion_and_clarification,casual,True,digital_mirror_small_talk_v1
+REV-0588,NST-0096,"I've got to run, but I'll see you soon.",GOODBYE,,conversation_closing,casual,False,digital_mirror_small_talk_v1
+REV-0589,NST-0031,"Hey, welcome!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0590,NST-0033,"Hey, folks!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0591,NST-0433,My camera is off.,NEGATIVE_ANSWER,Is your camera running?,discussion_and_clarification,neutral,True,digital_mirror_small_talk_v1
+REV-0592,NST-0090,Have a great weekend.,GOODBYE,,conversation_closing,polite,False,digital_mirror_small_talk_v1
+REV-0593,NST-0559,Winter starts soon.,STATEMENT,,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0594,NST-0105,Thanks a bunch.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1
+REV-0595,NST-0143,I am grateful for your honesty.,GRATITUDE,,final_reaction,neutral,False,digital_mirror_small_talk_v1
+REV-0596,NST-0229,Your argument misses something.,DISAGREEMENT,Only the final result matters.,discussion_and_clarification,neutral,False,digital_mirror_small_talk_v1
+REV-0597,NST-0251,Maybe.,UNCERTAINTY,Will the weather improve?,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0598,NST-0282,I'm guessing at this point.,UNCERTAINTY,Do you know what caused it?,discussion_and_clarification,hesitant,True,digital_mirror_small_talk_v1
+REV-0599,NST-0026,"Well, hi there!",GREETING,,initial_contact,casual,False,digital_mirror_small_talk_v1
+REV-0600,NST-0115,Thanks so much.,GRATITUDE,,final_reaction,casual,False,digital_mirror_small_talk_v1

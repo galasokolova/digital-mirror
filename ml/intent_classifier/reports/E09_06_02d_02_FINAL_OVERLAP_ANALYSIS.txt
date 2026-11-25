@@ -1,0 +1,173 @@
+=== E09.06.2d: FINAL INSTALLATION DATASET OVERLAP ANALYSIS ===
+
+=== DATASET VALIDATION ===
+PASS | Expected final test size
+PASS | Unique final test IDs
+PASS | Unique final test model texts
+PASS | No empty final test model texts
+PASS | All intent classes present
+PASS | Balanced final test classes
+PASS | Balanced final test groups
+PASS | Expected size: switchboard_train
+PASS | Expected size: switchboard_validation
+PASS | Expected size: switchboard_test
+PASS | Expected size: digital_mirror_original_train
+PASS | Expected size: digital_mirror_eligible_train
+PASS | Expected size: installation_development_benchmark
+
+======================================================================
+REFERENCE: SWITCHBOARD_TRAIN
+======================================================================
+Reference records: 135,827
+Unique reference model texts: 88,914
+Overlapping final test records: 0
+Overlap percentage: 0.00%
+Non-overlapping records: 240
+
+Overlap categories:
+status
+SAME_LABEL           0
+AMBIGUOUS_LABELS     0
+CONFLICTING_LABEL    0
+
+======================================================================
+REFERENCE: SWITCHBOARD_VALIDATION
+======================================================================
+Reference records: 16,913
+Unique reference model texts: 11,485
+Overlapping final test records: 0
+Overlap percentage: 0.00%
+Non-overlapping records: 240
+
+Overlap categories:
+status
+SAME_LABEL           0
+AMBIGUOUS_LABELS     0
+CONFLICTING_LABEL    0
+
+======================================================================
+REFERENCE: SWITCHBOARD_TEST
+======================================================================
+Reference records: 17,966
+Unique reference model texts: 12,031
+Overlapping final test records: 0
+Overlap percentage: 0.00%
+Non-overlapping records: 240
+
+Overlap categories:
+status
+SAME_LABEL           0
+AMBIGUOUS_LABELS     0
+CONFLICTING_LABEL    0
+
+======================================================================
+REFERENCE: DIGITAL_MIRROR_ORIGINAL_TRAIN
+======================================================================
+Reference records: 600
+Unique reference model texts: 600
+Overlapping final test records: 0
+Overlap percentage: 0.00%
+Non-overlapping records: 240
+
+Overlap categories:
+status
+SAME_LABEL           0
+AMBIGUOUS_LABELS     0
+CONFLICTING_LABEL    0
+
+======================================================================
+REFERENCE: DIGITAL_MIRROR_ELIGIBLE_TRAIN
+======================================================================
+Reference records: 579
+Unique reference model texts: 579
+Overlapping final test records: 0
+Overlap percentage: 0.00%
+Non-overlapping records: 240
+
+Overlap categories:
+status
+SAME_LABEL           0
+AMBIGUOUS_LABELS     0
+CONFLICTING_LABEL    0
+
+======================================================================
+REFERENCE: INSTALLATION_DEVELOPMENT_BENCHMARK
+======================================================================
+Reference records: 60
+Unique reference model texts: 60
+Overlapping final test records: 0
+Overlap percentage: 0.00%
+Non-overlapping records: 240
+
+Overlap categories:
+status
+SAME_LABEL           0
+AMBIGUOUS_LABELS     0
+CONFLICTING_LABEL    0
+
+=== REFERENCE OVERLAP SUMMARY ===
+                         reference  reference_records  unique_reference_texts  overlapping_records  overlap_percentage  same_label  ambiguous_labels  conflicting_label
+                 switchboard_train             135827                   88914                    0                 0.0           0                 0                  0
+            switchboard_validation              16913                   11485                    0                 0.0           0                 0                  0
+                  switchboard_test              17966                   12031                    0                 0.0           0                 0                  0
+     digital_mirror_original_train                600                     600                    0                 0.0           0                 0                  0
+     digital_mirror_eligible_train                579                     579                    0                 0.0           0                 0                  0
+installation_development_benchmark                 60                      60                    0                 0.0           0                 0                  0
+
+=== TOTAL OVERLAP ANALYSIS ===
+Original records: 240
+Unique overlapping records: 0
+Non-overlapping records: 240
+Total overlap percentage: 0.00%
+
+=== OVERLAP BY INTENT ===
+                    original  overlapping  non_overlapping
+intent                                                    
+GREETING                  20            0               20
+GOODBYE                   20            0               20
+GRATITUDE                 20            0               20
+AGREEMENT                 20            0               20
+DISAGREEMENT              20            0               20
+UNCERTAINTY               20            0               20
+ACKNOWLEDGMENT            20            0               20
+AFFIRMATIVE_ANSWER        20            0               20
+NEGATIVE_ANSWER           20            0               20
+QUESTION                  20            0               20
+CLARIFICATION             20            0               20
+STATEMENT                 20            0               20
+
+=== OVERLAP BY GROUP ===
+              original  overlapping  non_overlapping
+group                                               
+natural             60            0               60
+short               60            0               60
+installation        60            0               60
+complex             60            0               60
+
+=== OVERLAP BY INTENT AND GROUP ===
+group               natural  short  installation  complex
+intent                                                   
+GREETING                  0      0             0        0
+GOODBYE                   0      0             0        0
+GRATITUDE                 0      0             0        0
+AGREEMENT                 0      0             0        0
+DISAGREEMENT              0      0             0        0
+UNCERTAINTY               0      0             0        0
+ACKNOWLEDGMENT            0      0             0        0
+AFFIRMATIVE_ANSWER        0      0             0        0
+NEGATIVE_ANSWER           0      0             0        0
+QUESTION                  0      0             0        0
+CLARIFICATION             0      0             0        0
+STATEMENT                 0      0             0        0
+
+=== FINAL DATASET STATUS ===
+Exact text overlap: NONE
+Dataset eligible for final evaluation: YES
+
+Original dataset modified: NO
+Processed dataset modified: NO
+Records automatically removed: NO
+Model loaded: NO
+Model training performed: NO
+
+=== OVERLAP ANALYSIS COMPLETE ===

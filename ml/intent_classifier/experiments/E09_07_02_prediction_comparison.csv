@@ -1,0 +1,241 @@
+id,text,expected,group,baseline_prediction,char_prediction,baseline_correct,char_correct,status
+DMT-0001,"Hello there, how's everything going?",GREETING,natural,GREETING,QUESTION,True,False,REGRESSED
+DMT-0002,It's lovely to meet you today.,GREETING,natural,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0003,"Greetings, nice to be here.",GREETING,natural,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0004,Hope you're having a pleasant morning.,GREETING,natural,QUESTION,GOODBYE,False,False,BOTH_INCORRECT
+DMT-0005,A warm hello to you.,GREETING,natural,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0006,Howdy,GREETING,short,STATEMENT,GREETING,False,True,IMPROVED
+DMT-0007,Greetings to you,GREETING,short,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0008,Lovely morning,GREETING,short,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0009,"Hello, good morning",GREETING,short,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0010,Hiya there,GREETING,short,QUESTION,GREETING,False,True,IMPROVED
+DMT-0011,"Hello, interactive mirror, nice to meet you.",GREETING,installation,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0012,"Hi, is this where we begin?",GREETING,installation,GREETING,QUESTION,True,False,REGRESSED
+DMT-0013,Greetings to the virtual host.,GREETING,installation,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0014,"Hello, I'm here for the experience.",GREETING,installation,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0015,"Hi there, interactive mirror.",GREETING,installation,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0016,"Before we begin, I'd like to say hello.",GREETING,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0017,What a pleasure it is to meet you today.,GREETING,complex,GREETING,GOODBYE,True,False,REGRESSED
+DMT-0018,Hello to whoever is guiding this experience.,GREETING,complex,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0019,Allow me to introduce myself and say hello.,GREETING,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0020,A very good afternoon to everyone here.,GREETING,complex,GREETING,GREETING,True,True,BOTH_CORRECT
+DMT-0021,I'll be heading off shortly.,GOODBYE,natural,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0022,Enjoy the rest of your afternoon.,GOODBYE,natural,QUESTION,QUESTION,False,False,BOTH_INCORRECT
+DMT-0023,I hope our paths cross again.,GOODBYE,natural,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0024,I must be on my way.,GOODBYE,natural,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0025,Wishing you a pleasant evening.,GOODBYE,natural,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0026,Farewell for now,GOODBYE,short,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0027,Goodbye for today,GOODBYE,short,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0028,Cheerio,GOODBYE,short,STATEMENT,NEGATIVE_ANSWER,False,False,BOTH_INCORRECT
+DMT-0029,Bye for today,GOODBYE,short,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0030,Until tomorrow,GOODBYE,short,STATEMENT,NEGATIVE_ANSWER,False,False,BOTH_INCORRECT
+DMT-0031,"That's the end of my visit, farewell.",GOODBYE,installation,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0032,"I'm leaving the exhibition now, bye.",GOODBYE,installation,GOODBYE,STATEMENT,True,False,REGRESSED
+DMT-0033,"Goodbye, virtual host.",GOODBYE,installation,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0034,"I'll finish my session here, farewell.",GOODBYE,installation,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0035,See you on my next visit to the mirror.,GOODBYE,installation,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0036,"I've enjoyed our conversation, but it's time to leave.",GOODBYE,complex,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0037,"Before I head out, let me wish you well.",GOODBYE,complex,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0038,"I'll leave you to your next visitor now, goodbye.",GOODBYE,complex,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0039,"Although I'd enjoy staying longer, I must say farewell.",GOODBYE,complex,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0040,"Our conversation has come to an end, so goodbye for now.",GOODBYE,complex,GOODBYE,GOODBYE,True,True,BOTH_CORRECT
+DMT-0041,I'm grateful for your assistance.,GRATITUDE,natural,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0042,That was very kind of you.,GRATITUDE,natural,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0043,"You've been a great help, thanks.",GRATITUDE,natural,GOODBYE,GOODBYE,False,False,BOTH_INCORRECT
+DMT-0044,Your help means a great deal to me.,GRATITUDE,natural,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0045,I'm thankful for your time.,GRATITUDE,natural,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0046,Really appreciate that,GRATITUDE,short,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0047,Thanks for everything,GRATITUDE,short,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0048,Thanks kindly,GRATITUDE,short,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0049,My thanks,GRATITUDE,short,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0050,Very grateful,GRATITUDE,short,STATEMENT,NEGATIVE_ANSWER,False,False,BOTH_INCORRECT
+DMT-0051,I'm grateful for the evidence you provided.,GRATITUDE,installation,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0052,Thanks for displaying the original report.,GRATITUDE,installation,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0053,I appreciate the explanation of that headline.,GRATITUDE,installation,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0054,Thank you for guiding me through the exhibit.,GRATITUDE,installation,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0055,"Your comparison of the sources was helpful, thanks.",GRATITUDE,installation,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0056,I want to express my gratitude for the time you spent helping me.,GRATITUDE,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0057,Your willingness to explain the details is much appreciated.,GRATITUDE,complex,QUESTION,GRATITUDE,False,True,IMPROVED
+DMT-0058,I'm genuinely thankful that you took the trouble to clarify this.,GRATITUDE,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0059,Please accept my thanks for making the information accessible.,GRATITUDE,complex,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0060,I appreciate how patiently you've answered my questions.,GRATITUDE,complex,GRATITUDE,GRATITUDE,True,True,BOTH_CORRECT
+DMT-0061,You've made a valid point.,AGREEMENT,natural,QUESTION,QUESTION,False,False,BOTH_INCORRECT
+DMT-0062,That's precisely my view.,AGREEMENT,natural,AGREEMENT,AGREEMENT,True,True,BOTH_CORRECT
+DMT-0063,Your reasoning makes sense to me.,AGREEMENT,natural,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0064,We're of the same opinion.,AGREEMENT,natural,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0065,I share your assessment.,AGREEMENT,natural,DISAGREEMENT,DISAGREEMENT,False,False,BOTH_INCORRECT
+DMT-0066,Spot on,AGREEMENT,short,STATEMENT,NEGATIVE_ANSWER,False,False,BOTH_INCORRECT
+DMT-0067,Quite right,AGREEMENT,short,AFFIRMATIVE_ANSWER,AGREEMENT,False,True,IMPROVED
+DMT-0068,Agreed entirely,AGREEMENT,short,STATEMENT,DISAGREEMENT,False,False,BOTH_INCORRECT
+DMT-0069,My thoughts exactly,AGREEMENT,short,AFFIRMATIVE_ANSWER,AGREEMENT,False,True,IMPROVED
+DMT-0070,True indeed,AGREEMENT,short,AGREEMENT,AGREEMENT,True,True,BOTH_CORRECT
+DMT-0071,Your assessment of that headline matches mine.,AGREEMENT,installation,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0072,I share your conclusion about the evidence.,AGREEMENT,installation,DISAGREEMENT,QUESTION,False,False,BOTH_INCORRECT
+DMT-0073,I agree that the clip is misleading.,AGREEMENT,installation,AGREEMENT,AGREEMENT,True,True,BOTH_CORRECT
+DMT-0074,Your interpretation of the report seems correct to me.,AGREEMENT,installation,STATEMENT,DISAGREEMENT,False,False,BOTH_INCORRECT
+DMT-0075,We reach the same conclusion about this claim.,AGREEMENT,installation,STATEMENT,DISAGREEMENT,False,False,BOTH_INCORRECT
+DMT-0076,"Having considered your reasoning, I reach the same conclusion.",AGREEMENT,complex,DISAGREEMENT,GOODBYE,False,False,BOTH_INCORRECT
+DMT-0077,"On that particular issue, our opinions are entirely aligned.",AGREEMENT,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0078,The argument you've presented is consistent with my own view.,AGREEMENT,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0079,I endorse your conclusion because the evidence supports it.,AGREEMENT,complex,DISAGREEMENT,QUESTION,False,False,BOTH_INCORRECT
+DMT-0080,"Although I initially hesitated, I now agree with your assessment.",AGREEMENT,complex,DISAGREEMENT,AGREEMENT,False,True,IMPROVED
+DMT-0081,That's not how I see things.,DISAGREEMENT,natural,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0082,Your conclusion seems mistaken to me.,DISAGREEMENT,natural,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0083,My view differs considerably from yours.,DISAGREEMENT,natural,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0084,I cannot endorse that argument.,DISAGREEMENT,natural,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0085,That reasoning doesn't hold up.,DISAGREEMENT,natural,QUESTION,QUESTION,False,False,BOTH_INCORRECT
+DMT-0086,I object,DISAGREEMENT,short,STATEMENT,DISAGREEMENT,False,True,IMPROVED
+DMT-0087,Not so,DISAGREEMENT,short,NEGATIVE_ANSWER,NEGATIVE_ANSWER,False,False,BOTH_INCORRECT
+DMT-0088,Quite the opposite,DISAGREEMENT,short,STATEMENT,DISAGREEMENT,False,True,IMPROVED
+DMT-0089,That's mistaken,DISAGREEMENT,short,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0090,I differ,DISAGREEMENT,short,STATEMENT,DISAGREEMENT,False,True,IMPROVED
+DMT-0091,I reject your interpretation of the headline.,DISAGREEMENT,installation,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0092,Your assessment of this clip is incorrect.,DISAGREEMENT,installation,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0093,I dispute your conclusion about the source.,DISAGREEMENT,installation,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0094,I disagree with the way you've interpreted the evidence.,DISAGREEMENT,installation,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0095,The claim you just endorsed is wrong in my view.,DISAGREEMENT,installation,DISAGREEMENT,STATEMENT,True,False,REGRESSED
+DMT-0096,"Even after considering your argument, I cannot accept your conclusion.",DISAGREEMENT,complex,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0097,"While I respect your reasoning, I reach the opposite conclusion.",DISAGREEMENT,complex,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0098,The interpretation you've offered conflicts with my own assessment.,DISAGREEMENT,complex,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0099,I reject that explanation because its central premise is mistaken.,DISAGREEMENT,complex,DISAGREEMENT,DISAGREEMENT,True,True,BOTH_CORRECT
+DMT-0100,"Despite the points you've raised, I remain opposed to your conclusion.",DISAGREEMENT,complex,STATEMENT,QUESTION,False,False,BOTH_INCORRECT
+DMT-0101,I'm undecided about this.,UNCERTAINTY,natural,UNCERTAINTY,STATEMENT,True,False,REGRESSED
+DMT-0102,It's difficult for me to tell.,UNCERTAINTY,natural,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0103,I haven't formed an opinion yet.,UNCERTAINTY,natural,UNCERTAINTY,NEGATIVE_ANSWER,True,False,REGRESSED
+DMT-0104,I could be mistaken about it.,UNCERTAINTY,natural,DISAGREEMENT,DISAGREEMENT,False,False,BOTH_INCORRECT
+DMT-0105,I'm torn between the possibilities.,UNCERTAINTY,natural,STATEMENT,UNCERTAINTY,False,True,IMPROVED
+DMT-0106,Possibly so,UNCERTAINTY,short,UNCERTAINTY,UNCERTAINTY,True,True,BOTH_CORRECT
+DMT-0107,Hard to tell,UNCERTAINTY,short,UNCERTAINTY,UNCERTAINTY,True,True,BOTH_CORRECT
+DMT-0108,Undecided,UNCERTAINTY,short,UNCERTAINTY,UNCERTAINTY,True,True,BOTH_CORRECT
+DMT-0109,Difficult to judge,UNCERTAINTY,short,UNCERTAINTY,UNCERTAINTY,True,True,BOTH_CORRECT
+DMT-0110,Not definite,UNCERTAINTY,short,NEGATIVE_ANSWER,AGREEMENT,False,False,BOTH_INCORRECT
+DMT-0111,I haven't decided whether this headline is credible.,UNCERTAINTY,installation,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0112,I'm uncertain about the reliability of that clip.,UNCERTAINTY,installation,STATEMENT,QUESTION,False,False,BOTH_INCORRECT
+DMT-0113,The evidence leaves me undecided.,UNCERTAINTY,installation,UNCERTAINTY,UNCERTAINTY,True,True,BOTH_CORRECT
+DMT-0114,I can't tell which account is accurate.,UNCERTAINTY,installation,STATEMENT,UNCERTAINTY,False,True,IMPROVED
+DMT-0115,I'm unsure how to interpret this report.,UNCERTAINTY,installation,UNCERTAINTY,UNCERTAINTY,True,True,BOTH_CORRECT
+DMT-0116,There are several plausible explanations and I cannot choose between them.,UNCERTAINTY,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0117,I would need more information before forming a definite opinion.,UNCERTAINTY,complex,UNCERTAINTY,STATEMENT,True,False,REGRESSED
+DMT-0118,"Although both accounts sound plausible, I remain uncertain.",UNCERTAINTY,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0119,I'm hesitant to draw a conclusion because the details are incomplete.,UNCERTAINTY,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0120,At this point I cannot confidently determine which interpretation is correct.,UNCERTAINTY,complex,DISAGREEMENT,DISAGREEMENT,False,False,BOTH_INCORRECT
+DMT-0121,I've heard what you've said.,ACKNOWLEDGMENT,natural,QUESTION,QUESTION,False,False,BOTH_INCORRECT
+DMT-0122,I've followed your explanation so far.,ACKNOWLEDGMENT,natural,STATEMENT,CLARIFICATION,False,False,BOTH_INCORRECT
+DMT-0123,I've taken note of that.,ACKNOWLEDGMENT,natural,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0124,Your message has been received.,ACKNOWLEDGMENT,natural,QUESTION,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0125,I'm following the discussion.,ACKNOWLEDGMENT,natural,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0126,Understood so far,ACKNOWLEDGMENT,short,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0127,Duly noted,ACKNOWLEDGMENT,short,QUESTION,NEGATIVE_ANSWER,False,False,BOTH_INCORRECT
+DMT-0128,Information received,ACKNOWLEDGMENT,short,STATEMENT,NEGATIVE_ANSWER,False,False,BOTH_INCORRECT
+DMT-0129,I'm following,ACKNOWLEDGMENT,short,GREETING,GREETING,False,False,BOTH_INCORRECT
+DMT-0130,Heard you,ACKNOWLEDGMENT,short,QUESTION,QUESTION,False,False,BOTH_INCORRECT
+DMT-0131,I've noted the date shown on the screen.,ACKNOWLEDGMENT,installation,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0132,I've registered the information about the source.,ACKNOWLEDGMENT,installation,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0133,I follow your description of the verification process.,ACKNOWLEDGMENT,installation,STATEMENT,QUESTION,False,False,BOTH_INCORRECT
+DMT-0134,I've heard your explanation of the video.,ACKNOWLEDGMENT,installation,STATEMENT,QUESTION,False,False,BOTH_INCORRECT
+DMT-0135,I've taken in the details you've displayed.,ACKNOWLEDGMENT,installation,STATEMENT,QUESTION,False,False,BOTH_INCORRECT
+DMT-0136,I have registered the information you provided without forming a judgment.,ACKNOWLEDGMENT,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0137,I follow the sequence of events you've just described.,ACKNOWLEDGMENT,complex,QUESTION,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0138,I've taken note of the distinction you made between the two reports.,ACKNOWLEDGMENT,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0139,I understand the procedure you've outlined for this session.,ACKNOWLEDGMENT,complex,QUESTION,QUESTION,False,False,BOTH_INCORRECT
+DMT-0140,I've heard your account and am following what you're telling me.,ACKNOWLEDGMENT,complex,STATEMENT,QUESTION,False,False,BOTH_INCORRECT
+DMT-0141,"Yes, that would suit me.",AFFIRMATIVE_ANSWER,natural,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0142,"Yes, I have already done that.",AFFIRMATIVE_ANSWER,natural,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0143,"Yes, I'm available for that.",AFFIRMATIVE_ANSWER,natural,STATEMENT,AFFIRMATIVE_ANSWER,False,True,IMPROVED
+DMT-0144,"Yes, I'd be happy to.",AFFIRMATIVE_ANSWER,natural,GOODBYE,GOODBYE,False,False,BOTH_INCORRECT
+DMT-0145,"Yes, that is what I requested.",AFFIRMATIVE_ANSWER,natural,AFFIRMATIVE_ANSWER,CLARIFICATION,True,False,REGRESSED
+DMT-0146,"Yes, I shall",AFFIRMATIVE_ANSWER,short,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0147,Sure can,AFFIRMATIVE_ANSWER,short,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0148,I certainly can,AFFIRMATIVE_ANSWER,short,AFFIRMATIVE_ANSWER,AGREEMENT,True,False,REGRESSED
+DMT-0149,Yes I have,AFFIRMATIVE_ANSWER,short,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0150,Yes I will,AFFIRMATIVE_ANSWER,short,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0151,"Yes, I'd like to view the original footage.",AFFIRMATIVE_ANSWER,installation,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0152,"Yes, I'm ready for the next claim.",AFFIRMATIVE_ANSWER,installation,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0153,"Yes, I've watched the entire clip.",AFFIRMATIVE_ANSWER,installation,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0154,"Yes, you may display the evidence.",AFFIRMATIVE_ANSWER,installation,AFFIRMATIVE_ANSWER,QUESTION,True,False,REGRESSED
+DMT-0155,"Yes, I want to continue this session.",AFFIRMATIVE_ANSWER,installation,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0156,"Yes, I would be willing to answer another question about the report.",AFFIRMATIVE_ANSWER,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0157,"Yes, I have previously encountered the article you're asking about.",AFFIRMATIVE_ANSWER,complex,AFFIRMATIVE_ANSWER,STATEMENT,True,False,REGRESSED
+DMT-0158,"Yes, I'd like you to proceed with the comparison you offered.",AFFIRMATIVE_ANSWER,complex,QUESTION,QUESTION,False,False,BOTH_INCORRECT
+DMT-0159,"Yes, I can confirm that I've finished viewing the material.",AFFIRMATIVE_ANSWER,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0160,"Yes, I would prefer to examine the original source first.",AFFIRMATIVE_ANSWER,complex,AFFIRMATIVE_ANSWER,AFFIRMATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0161,"No, that wouldn't suit me.",NEGATIVE_ANSWER,natural,NEGATIVE_ANSWER,NEGATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0162,"No, I haven't done that yet.",NEGATIVE_ANSWER,natural,NEGATIVE_ANSWER,NEGATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0163,"No, I'm unavailable for that.",NEGATIVE_ANSWER,natural,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0164,"No, I'd rather not.",NEGATIVE_ANSWER,natural,NEGATIVE_ANSWER,NEGATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0165,"No, that isn't what I requested.",NEGATIVE_ANSWER,natural,NEGATIVE_ANSWER,NEGATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0166,No chance,NEGATIVE_ANSWER,short,NEGATIVE_ANSWER,DISAGREEMENT,True,False,REGRESSED
+DMT-0167,I cannot,NEGATIVE_ANSWER,short,UNCERTAINTY,UNCERTAINTY,False,False,BOTH_INCORRECT
+DMT-0168,No I haven't,NEGATIVE_ANSWER,short,NEGATIVE_ANSWER,NEGATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0169,No I won't,NEGATIVE_ANSWER,short,NEGATIVE_ANSWER,NEGATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0170,"No, not today",NEGATIVE_ANSWER,short,NEGATIVE_ANSWER,NEGATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0171,"No, I don't want to watch another clip.",NEGATIVE_ANSWER,installation,NEGATIVE_ANSWER,STATEMENT,True,False,REGRESSED
+DMT-0172,"No, I haven't encountered this report before.",NEGATIVE_ANSWER,installation,NEGATIVE_ANSWER,STATEMENT,True,False,REGRESSED
+DMT-0173,"No, I'm not ready to continue.",NEGATIVE_ANSWER,installation,NEGATIVE_ANSWER,NEGATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0174,"No, I didn't see the original footage.",NEGATIVE_ANSWER,installation,NEGATIVE_ANSWER,STATEMENT,True,False,REGRESSED
+DMT-0175,"No, I would prefer not to answer that question.",NEGATIVE_ANSWER,installation,NEGATIVE_ANSWER,NEGATIVE_ANSWER,True,True,BOTH_CORRECT
+DMT-0176,"No, I would not like to proceed to another example at this time.",NEGATIVE_ANSWER,complex,NEGATIVE_ANSWER,STATEMENT,True,False,REGRESSED
+DMT-0177,"No, I haven't previously read the article you're asking about.",NEGATIVE_ANSWER,complex,NEGATIVE_ANSWER,QUESTION,True,False,REGRESSED
+DMT-0178,"No, I don't wish to take part in the optional recording.",NEGATIVE_ANSWER,complex,NEGATIVE_ANSWER,STATEMENT,True,False,REGRESSED
+DMT-0179,"No, I wasn't able to view the entire video before responding.",NEGATIVE_ANSWER,complex,DISAGREEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0180,"No, I would prefer not to provide the additional information requested.",NEGATIVE_ANSWER,complex,NEGATIVE_ANSWER,STATEMENT,True,False,REGRESSED
+DMT-0181,When did that happen?,QUESTION,natural,QUESTION,CLARIFICATION,True,False,REGRESSED
+DMT-0182,Who was involved in the event?,QUESTION,natural,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0183,What caused the change?,QUESTION,natural,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0184,How long did the process take?,QUESTION,natural,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0185,Which option costs less?,QUESTION,natural,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0186,Who reported it?,QUESTION,short,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0187,When exactly?,QUESTION,short,AGREEMENT,AGREEMENT,False,False,BOTH_INCORRECT
+DMT-0188,Which country?,QUESTION,short,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0189,How many participants?,QUESTION,short,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0190,What happened?,QUESTION,short,QUESTION,CLARIFICATION,True,False,REGRESSED
+DMT-0191,Which organization verified this footage?,QUESTION,installation,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0192,Where can I access the original recording?,QUESTION,installation,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0193,When was the source document released?,QUESTION,installation,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0194,What evidence supports the reported figure?,QUESTION,installation,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0195,Who funded the study mentioned in the clip?,QUESTION,installation,QUESTION,STATEMENT,True,False,REGRESSED
+DMT-0196,What independent sources have corroborated the account presented in the video?,QUESTION,complex,QUESTION,STATEMENT,True,False,REGRESSED
+DMT-0197,How was the sample selected for the study described in this report?,QUESTION,complex,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0198,Which records establish the date on which the event occurred?,QUESTION,complex,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0199,What methods were used to verify the authenticity of the recording?,QUESTION,complex,QUESTION,QUESTION,True,True,BOTH_CORRECT
+DMT-0200,Who was responsible for collecting the statistics quoted in the article?,QUESTION,complex,QUESTION,STATEMENT,True,False,REGRESSED
+DMT-0201,Would you mind saying that once more?,CLARIFICATION,natural,QUESTION,CLARIFICATION,False,True,IMPROVED
+DMT-0202,Which part are you referring to?,CLARIFICATION,natural,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0203,I'm unclear about your last remark.,CLARIFICATION,natural,QUESTION,QUESTION,False,False,BOTH_INCORRECT
+DMT-0204,Could you put that in simpler words?,CLARIFICATION,natural,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0205,I missed the last few words you said.,CLARIFICATION,natural,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0206,Say again?,CLARIFICATION,short,CLARIFICATION,GREETING,True,False,REGRESSED
+DMT-0207,Come again?,CLARIFICATION,short,GOODBYE,GREETING,False,False,BOTH_INCORRECT
+DMT-0208,Meaning what?,CLARIFICATION,short,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0209,Which part exactly?,CLARIFICATION,short,CLARIFICATION,AGREEMENT,True,False,REGRESSED
+DMT-0210,Repeat that please,CLARIFICATION,short,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0211,Could you explain what you mean by verified?,CLARIFICATION,installation,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0212,"I missed the name of the source, could you repeat it?",CLARIFICATION,installation,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0213,What does that term on the screen mean?,CLARIFICATION,installation,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0214,Could you rephrase the claim you just displayed?,CLARIFICATION,installation,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0215,I'm unclear about the distinction you just made between the reports.,CLARIFICATION,installation,STATEMENT,QUESTION,False,False,BOTH_INCORRECT
+DMT-0216,"When you used that expression earlier, what exactly were you referring to?",CLARIFICATION,complex,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0217,Could you restate your previous explanation using less technical language?,CLARIFICATION,complex,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0218,"I couldn't follow the final part of your explanation, could you go over it again?",CLARIFICATION,complex,CLARIFICATION,CLARIFICATION,True,True,BOTH_CORRECT
+DMT-0219,I'm not clear whether your last remark referred to the clip or the article.,CLARIFICATION,complex,STATEMENT,STATEMENT,False,False,BOTH_INCORRECT
+DMT-0220,Would you clarify the meaning of the phrase you used in your previous response?,CLARIFICATION,complex,QUESTION,CLARIFICATION,False,True,IMPROVED
+DMT-0221,I usually read the paper over breakfast.,STATEMENT,natural,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0222,My neighbour works at a library.,STATEMENT,natural,STATEMENT,NEGATIVE_ANSWER,True,False,REGRESSED
+DMT-0223,The meeting ended before noon.,STATEMENT,natural,STATEMENT,GREETING,True,False,REGRESSED
+DMT-0224,I moved here three years ago.,STATEMENT,natural,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0225,The room has two large windows.,STATEMENT,natural,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0226,It's raining,STATEMENT,short,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0227,I'm seated,STATEMENT,short,STATEMENT,GREETING,True,False,REGRESSED
+DMT-0228,The screen flickers,STATEMENT,short,STATEMENT,DISAGREEMENT,True,False,REGRESSED
+DMT-0229,It's noon,STATEMENT,short,STATEMENT,DISAGREEMENT,True,False,REGRESSED
+DMT-0230,I'm visiting,STATEMENT,short,GREETING,GREETING,False,False,BOTH_INCORRECT
+DMT-0231,The video contains two interviews.,STATEMENT,installation,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0232,The headline appears above the photograph.,STATEMENT,installation,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0233,I watched a documentary about this subject last month.,STATEMENT,installation,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0234,The report includes a chart with five columns.,STATEMENT,installation,QUESTION,QUESTION,False,False,BOTH_INCORRECT
+DMT-0235,The display shows the publication date.,STATEMENT,installation,STATEMENT,QUESTION,True,False,REGRESSED
+DMT-0236,The article describes a series of events that occurred over several months.,STATEMENT,complex,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0237,I first encountered this topic during a lecture at university.,STATEMENT,complex,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0238,The recording begins with an introduction followed by an interview.,STATEMENT,complex,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0239,The document contains a list of references at the end of the final section.,STATEMENT,complex,STATEMENT,STATEMENT,True,True,BOTH_CORRECT
+DMT-0240,Several newspapers covered the announcement on the following morning.,STATEMENT,complex,STATEMENT,STATEMENT,True,True,BOTH_CORRECT

@@ -1,0 +1,115 @@
+=== E09.07.6.4.1: CONTRASTIVE DATASET PREPROCESSING ===
+
+Input SHA256: b11af2e72229fe7a1f1244f60f10340debc5f0ac92175522500c9fa1baa6987e
+
+=== INPUT DATASET ===
+Records: 1200
+Columns: 8
+
+=== PREPROCESSING VALIDATION ===
+PASS | Expected output columns
+PASS | Record count preserved
+PASS | Original columns preserved
+PASS | Record IDs preserved
+PASS | Unique record IDs
+PASS | Original text preserved
+PASS | Intent labels preserved
+PASS | Class distribution preserved
+PASS | Contrastive groups preserved
+PASS | Context preserved
+PASS | No empty normalized texts
+PASS | No empty model texts
+PASS | Normalization reproducible
+PASS | Model text reproducible
+
+Checks passed: 14 / 14
+Saved: E09_07_06_04_01_preprocessing_checks.csv
+
+=== TEXT TRANSFORMATIONS ===
+Total records: 1200
+Changed during normalization: 1180 (98.33%)
+Changed during punctuation removal: 1200 (100.00%)
+Changed from original to model text: 1200 (100.00%)
+Saved: E09_07_06_04_01_text_transformations.csv
+
+=== TRANSFORMATION EXAMPLES ===
+      id                                                       text                                            normalized_text                                                model_text             intent    style  normalization_changed  punctuation_changed  model_text_changed
+DMC-0001                    I agree that this source is unreliable.                    i agree that this source is unreliable.                    i agree that this source is unreliable          AGREEMENT explicit                   True                 True                True
+DMC-0002            I disagree with your assessment of this source.            i disagree with your assessment of this source.            i disagree with your assessment of this source       DISAGREEMENT explicit                   True                 True                True
+DMC-0003              I understand your concerns about this source.              i understand your concerns about this source.              i understand your concerns about this source     ACKNOWLEDGMENT explicit                   True                 True                True
+DMC-0004       I am uncertain about the reliability of this source.       i am uncertain about the reliability of this source.       i am uncertain about the reliability of this source        UNCERTAINTY explicit                   True                 True                True
+DMC-0005             The source was published by a local newspaper.             the source was published by a local newspaper.             the source was published by a local newspaper          STATEMENT explicit                   True                 True                True
+DMC-0006           I support your interpretation of the experiment.           i support your interpretation of the experiment.           i support your interpretation of the experiment          AGREEMENT explicit                   True                 True                True
+DMC-0007            I reject your interpretation of the experiment.            i reject your interpretation of the experiment.            i reject your interpretation of the experiment       DISAGREEMENT explicit                   True                 True                True
+DMC-0008      I have understood your explanation of the experiment.      i have understood your explanation of the experiment.      i have understood your explanation of the experiment     ACKNOWLEDGMENT explicit                   True                 True                True
+DMC-0009             I am not sure how to interpret the experiment.             i am not sure how to interpret the experiment.             i am not sure how to interpret the experiment        UNCERTAINTY explicit                   True                 True                True
+DMC-0010              The experiment was conducted in a laboratory.              the experiment was conducted in a laboratory.              the experiment was conducted in a laboratory          STATEMENT explicit                   True                 True                True
+DMC-0011                       Yes, I watched the entire recording.                       yes, i watched the entire recording.                        yes i watched the entire recording AFFIRMATIVE_ANSWER explicit                   True                 True                True
+DMC-0012                  No, I did not watch the entire recording.                  no, i did not watch the entire recording.                   no i did not watch the entire recording    NEGATIVE_ANSWER explicit                   True                 True                True
+DMC-0013                       Who produced the original recording?                       who produced the original recording?                       who produced the original recording           QUESTION explicit                   True                 True                True
+DMC-0014 Could you clarify what you mean by the original recording? could you clarify what you mean by the original recording? could you clarify what you mean by the original recording      CLARIFICATION explicit                   True                 True                True
+DMC-0015                        Yes, I have installed the software.                        yes, i have installed the software.                         yes i have installed the software AFFIRMATIVE_ANSWER explicit                   True                 True                True
+DMC-0016                     No, I have not installed the software.                     no, i have not installed the software.                      no i have not installed the software    NEGATIVE_ANSWER explicit                   True                 True                True
+DMC-0017                               Who developed this software?                               who developed this software?                               who developed this software           QUESTION explicit                   True                 True                True
+DMC-0018              Could you explain what you mean by available?              could you explain what you mean by available?              could you explain what you mean by available      CLARIFICATION explicit                   True                 True                True
+DMC-0019                Hello, it is nice to be at this exhibition.                hello, it is nice to be at this exhibition.                 hello it is nice to be at this exhibition           GREETING explicit                   True                 True                True
+DMC-0020             Goodbye, I hope to visit the exhibition again.             goodbye, i hope to visit the exhibition again.              goodbye i hope to visit the exhibition again            GOODBYE explicit                   True                 True                True
+
+=== MODEL TEXT LENGTH ===
+count    1200.000000
+mean        8.989167
+std         3.450455
+min         2.000000
+25%         6.000000
+50%         9.000000
+75%        11.000000
+max        21.000000
+
+=== SHORT EXPRESSIONS ===
+At most 1 words: 0 (0.00%)
+At most 2 words: 4 (0.33%)
+At most 3 words: 15 (1.25%)
+At most 5 words: 216 (18.00%)
+
+=== LENGTH BY STYLE ===
+      style  records      mean  median  minimum  maximum
+challenging      240 10.987500    11.0        8       16
+    complex      240 13.533333    13.0        8       21
+   explicit      240  7.358333     7.0        4       13
+   implicit      240  8.095833     8.0        6       12
+      short      240  4.970833     5.0        2        9
+Saved: E09_07_06_04_01_model_text_length_by_style.csv
+
+=== INTERNAL COLLISION PREVIEW ===
+Unique model texts: 1200
+Duplicate model text excess: 0
+Records involved in duplicates: 0
+Conflicting unique model texts: 0
+Records involved in conflicts: 0
+Saved: E09_07_06_04_01_internal_duplicate_preview.csv
+Saved: E09_07_06_04_01_internal_conflict_preview.csv
+Records removed: 0
+
+=== OUTPUT DATASET ===
+Saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\digital_mirror_contrastive_v1\train.csv
+Records: 1200
+Columns: 10
+Output SHA256: 22a21a7b29f97197fcfe0280a16e95da10bf3dafb91dce989cd80d6a3573c3e9
+Saved dataset verification: PASS
+
+=== PREPROCESSING SUMMARY ===
+Preprocessing: COMPLETE
+Records removed: 0
+Intent labels changed: 0
+External overlap analysis: PENDING
+Dataset ready for training: NO
+Model loaded: NO
+Model trained: NO
+Evaluation data loaded: NO
+
+=== FILE INTEGRITY ===
+Original SHA256: b11af2e72229fe7a1f1244f60f10340debc5f0ac92175522500c9fa1baa6987e
+Current SHA256:  b11af2e72229fe7a1f1244f60f10340debc5f0ac92175522500c9fa1baa6987e
+Source dataset unchanged: YES
+
+=== PREPROCESSING FINISHED ===

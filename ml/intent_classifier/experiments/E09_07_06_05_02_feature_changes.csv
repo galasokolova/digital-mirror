@@ -1,0 +1,3 @@
+transformer,old_features,new_features,shared_features,added_features,removed_features,jaccard_similarity,mean_idf_difference,mean_absolute_idf_difference,max_absolute_idf_difference
+word,77043,77515,77043,472,0,0.9939108559633619,0.004302983523009069,0.013055780513184411,2.763837256780679
+char,100000,100000,98974,1026,1026,0.979688397046305,-0.002721758503355959,0.01909148699254658,2.763837256780679

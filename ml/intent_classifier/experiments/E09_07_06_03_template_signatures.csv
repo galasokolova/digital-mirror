@@ -1,0 +1,1201 @@
+id,intent,style,contrast_group,text,signature
+DMC-0001,AGREEMENT,explicit,CG-B01-001,I agree that this source is unreliable.,i agree that this <shared> is unreliable
+DMC-0002,DISAGREEMENT,explicit,CG-B01-001,I disagree with your assessment of this source.,i disagree with your assessment of this <shared>
+DMC-0003,ACKNOWLEDGMENT,explicit,CG-B01-001,I understand your concerns about this source.,i understand your concerns about this <shared>
+DMC-0004,UNCERTAINTY,explicit,CG-B01-001,I am uncertain about the reliability of this source.,i am uncertain about the reliability of this <shared>
+DMC-0005,STATEMENT,explicit,CG-B01-001,The source was published by a local newspaper.,the <shared> was published by a local newspaper
+DMC-0006,AGREEMENT,explicit,CG-B01-002,I support your interpretation of the experiment.,i support your interpretation of <shared> <shared>
+DMC-0007,DISAGREEMENT,explicit,CG-B01-002,I reject your interpretation of the experiment.,i reject your interpretation of <shared> <shared>
+DMC-0008,ACKNOWLEDGMENT,explicit,CG-B01-002,I have understood your explanation of the experiment.,i have understood your explanation of <shared> <shared>
+DMC-0009,UNCERTAINTY,explicit,CG-B01-002,I am not sure how to interpret the experiment.,i am not sure how to interpret <shared> <shared>
+DMC-0010,STATEMENT,explicit,CG-B01-002,The experiment was conducted in a laboratory.,<shared> <shared> was conducted in a laboratory
+DMC-0011,AFFIRMATIVE_ANSWER,explicit,CG-B01-003,"Yes, I watched the entire recording.",yes i watched <shared> entire <shared>
+DMC-0012,NEGATIVE_ANSWER,explicit,CG-B01-003,"No, I did not watch the entire recording.",no i did not watch <shared> entire <shared>
+DMC-0013,QUESTION,explicit,CG-B01-003,Who produced the original recording?,who produced <shared> original <shared>
+DMC-0014,CLARIFICATION,explicit,CG-B01-003,Could you clarify what you mean by the original recording?,could you clarify what you mean by <shared> original <shared>
+DMC-0015,AFFIRMATIVE_ANSWER,explicit,CG-B01-004,"Yes, I have installed the software.",yes i have installed the software
+DMC-0016,NEGATIVE_ANSWER,explicit,CG-B01-004,"No, I have not installed the software.",no i have not installed the software
+DMC-0017,QUESTION,explicit,CG-B01-004,Who developed this software?,who developed this software
+DMC-0018,CLARIFICATION,explicit,CG-B01-004,Could you explain what you mean by available?,could you explain what you mean by available
+DMC-0019,GREETING,explicit,CG-B01-005,"Hello, it is nice to be at this exhibition.",hello it is nice to be at this <shared>
+DMC-0020,GOODBYE,explicit,CG-B01-005,"Goodbye, I hope to visit the exhibition again.",goodbye i hope to visit the <shared> again
+DMC-0021,GRATITUDE,explicit,CG-B01-005,Thank you for showing me around the exhibition.,thank you for showing me around the <shared>
+DMC-0022,GREETING,explicit,CG-B01-006,"Hello, I am ready to interact with you.",hello i am ready to interact with you
+DMC-0023,GOODBYE,explicit,CG-B01-006,"Goodbye, I am ending our conversation now.",goodbye i am ending our conversation now
+DMC-0024,GRATITUDE,explicit,CG-B01-006,Thank you for answering my questions.,thank you for answering my questions
+DMC-0025,AGREEMENT,explicit,CG-B01-007,I agree that the headline exaggerates the findings.,i agree that <shared> headline exaggerates <shared> findings
+DMC-0026,DISAGREEMENT,explicit,CG-B01-007,I disagree with the view that the headline exaggerates the findings.,i disagree with <shared> view that <shared> headline exaggerates <shared> findings
+DMC-0027,ACKNOWLEDGMENT,explicit,CG-B01-007,I understand your explanation about the headline.,i understand your explanation about <shared> headline
+DMC-0028,UNCERTAINTY,explicit,CG-B01-007,I am unsure whether the headline exaggerates the findings.,i am unsure whether <shared> headline exaggerates <shared> findings
+DMC-0029,STATEMENT,explicit,CG-B01-007,The article appeared on Monday.,<shared> article appeared on monday
+DMC-0030,AFFIRMATIVE_ANSWER,explicit,CG-B01-008,"Yes, I have read the full article.",yes i have read <shared> full article
+DMC-0031,NEGATIVE_ANSWER,explicit,CG-B01-008,"No, I have not read the full article.",no i have not read <shared> full article
+DMC-0032,QUESTION,explicit,CG-B01-008,Who wrote the article?,who wrote <shared> article
+DMC-0033,CLARIFICATION,explicit,CG-B01-008,"Could you clarify what you mean by ""exaggerates the findings""?",could you clarify what you mean by exaggerates <shared> findings
+DMC-0034,GREETING,explicit,CG-B01-009,"Hello, welcome to the newsroom.",hello welcome to <shared> newsroom
+DMC-0035,GOODBYE,explicit,CG-B01-009,"Goodbye, I am leaving the newsroom now.",goodbye i am leaving <shared> newsroom now
+DMC-0036,GRATITUDE,explicit,CG-B01-009,Thank you for finding the article.,thank you for finding <shared> article
+DMC-0037,AGREEMENT,explicit,CG-B01-010,I agree that the receipt establishes the date.,i agree that <shared> <shared> establishes <shared> date
+DMC-0038,DISAGREEMENT,explicit,CG-B01-010,I disagree with the view that the receipt establishes the date.,i disagree with <shared> view that <shared> <shared> establishes <shared> date
+DMC-0039,ACKNOWLEDGMENT,explicit,CG-B01-010,I understand your explanation about the receipt.,i understand your explanation about <shared> <shared>
+DMC-0040,UNCERTAINTY,explicit,CG-B01-010,I am unsure whether the receipt establishes the date.,i am unsure whether <shared> <shared> establishes <shared> date
+DMC-0041,STATEMENT,explicit,CG-B01-010,The receipt has a printed timestamp.,<shared> <shared> has a printed timestamp
+DMC-0042,AFFIRMATIVE_ANSWER,explicit,CG-B01-011,"Yes, I have examined the receipt.",yes i have examined <shared> receipt
+DMC-0043,NEGATIVE_ANSWER,explicit,CG-B01-011,"No, I have not examined the receipt.",no i have not examined <shared> receipt
+DMC-0044,QUESTION,explicit,CG-B01-011,Where was the receipt issued?,where was <shared> receipt issued
+DMC-0045,CLARIFICATION,explicit,CG-B01-011,"Could you clarify what you mean by ""establishes the date""?",could you clarify what you mean by establishes <shared> date
+DMC-0046,GREETING,explicit,CG-B01-012,"Hello, welcome to the evidence desk.",hello welcome to <shared> evidence desk
+DMC-0047,GOODBYE,explicit,CG-B01-012,"Goodbye, I am leaving the evidence desk now.",goodbye i am leaving <shared> evidence desk now
+DMC-0048,GRATITUDE,explicit,CG-B01-012,Thank you for locating the receipt.,thank you for locating <shared> receipt
+DMC-0049,AGREEMENT,explicit,CG-B01-013,I agree that the recording lacks context.,i agree that <shared> <shared> lacks context
+DMC-0050,DISAGREEMENT,explicit,CG-B01-013,I disagree with the view that the recording lacks context.,i disagree with <shared> view that <shared> <shared> lacks context
+DMC-0051,ACKNOWLEDGMENT,explicit,CG-B01-013,I understand your explanation about the recording.,i understand your explanation about <shared> <shared>
+DMC-0052,UNCERTAINTY,explicit,CG-B01-013,I am unsure whether the recording lacks context.,i am unsure whether <shared> <shared> lacks context
+DMC-0053,STATEMENT,explicit,CG-B01-013,The recording lasts four minutes.,<shared> <shared> lasts four minutes
+DMC-0054,AFFIRMATIVE_ANSWER,explicit,CG-B01-014,"Yes, I have listened to the original audio.",yes i have listened to the original audio
+DMC-0055,NEGATIVE_ANSWER,explicit,CG-B01-014,"No, I have not listened to the original audio.",no i have not listened to the original audio
+DMC-0056,QUESTION,explicit,CG-B01-014,Who recorded the interview?,who recorded the interview
+DMC-0057,CLARIFICATION,explicit,CG-B01-014,"Could you clarify what you mean by ""lacks context""?",could you clarify what you mean by lacks context
+DMC-0058,GREETING,explicit,CG-B01-015,"Hello, welcome to the screening room.",hello welcome to <shared> screening room
+DMC-0059,GOODBYE,explicit,CG-B01-015,"Goodbye, I am leaving the screening room now.",goodbye i am leaving <shared> screening room now
+DMC-0060,GRATITUDE,explicit,CG-B01-015,Thank you for playing the recording.,thank you for playing <shared> recording
+DMC-0061,AGREEMENT,explicit,CG-B01-016,I agree that the model needs more examples.,i agree that <shared> <shared> needs more examples
+DMC-0062,DISAGREEMENT,explicit,CG-B01-016,I disagree with the view that the model needs more examples.,i disagree with <shared> view that <shared> <shared> needs more examples
+DMC-0063,ACKNOWLEDGMENT,explicit,CG-B01-016,I understand your explanation about the model.,i understand your explanation about <shared> <shared>
+DMC-0064,UNCERTAINTY,explicit,CG-B01-016,I am unsure whether the model needs more examples.,i am unsure whether <shared> <shared> needs more examples
+DMC-0065,STATEMENT,explicit,CG-B01-016,The model returns three scores.,<shared> <shared> returns three scores
+DMC-0066,AFFIRMATIVE_ANSWER,explicit,CG-B01-017,"Yes, I have tested the latest model.",yes i have tested the latest model
+DMC-0067,NEGATIVE_ANSWER,explicit,CG-B01-017,"No, I have not tested the latest model.",no i have not tested the latest model
+DMC-0068,QUESTION,explicit,CG-B01-017,Which dataset was used?,which dataset was used
+DMC-0069,CLARIFICATION,explicit,CG-B01-017,"Could you clarify what you mean by ""more examples""?",could you clarify what you mean by more examples
+DMC-0070,GREETING,explicit,CG-B01-018,"Hello, welcome to the AI workshop.",hello welcome to <shared> ai workshop
+DMC-0071,GOODBYE,explicit,CG-B01-018,"Goodbye, I am leaving the AI workshop now.",goodbye i am leaving <shared> ai workshop now
+DMC-0072,GRATITUDE,explicit,CG-B01-018,Thank you for demonstrating the model.,thank you for demonstrating <shared> model
+DMC-0073,AGREEMENT,explicit,CG-B01-019,I agree that the update improves stability.,i agree that <shared> <shared> improves stability
+DMC-0074,DISAGREEMENT,explicit,CG-B01-019,I disagree with the view that the update improves stability.,i disagree with <shared> view that <shared> <shared> improves stability
+DMC-0075,ACKNOWLEDGMENT,explicit,CG-B01-019,I understand your explanation about the update.,i understand your explanation about <shared> <shared>
+DMC-0076,UNCERTAINTY,explicit,CG-B01-019,I am unsure whether the update improves stability.,i am unsure whether <shared> <shared> improves stability
+DMC-0077,STATEMENT,explicit,CG-B01-019,The update requires a restart.,<shared> <shared> requires a restart
+DMC-0078,AFFIRMATIVE_ANSWER,explicit,CG-B01-020,"Yes, I have installed the update.",yes i have installed the update
+DMC-0079,NEGATIVE_ANSWER,explicit,CG-B01-020,"No, I have not installed the update.",no i have not installed the update
+DMC-0080,QUESTION,explicit,CG-B01-020,When was the update released?,when was the update released
+DMC-0081,CLARIFICATION,explicit,CG-B01-020,"Could you clarify what you mean by ""stability""?",could you clarify what you mean by stability
+DMC-0082,GREETING,explicit,CG-B01-021,"Hello, welcome to the computer lab.",hello welcome to <shared> computer lab
+DMC-0083,GOODBYE,explicit,CG-B01-021,"Goodbye, I am leaving the computer lab now.",goodbye i am leaving <shared> computer lab now
+DMC-0084,GRATITUDE,explicit,CG-B01-021,Thank you for installing the update.,thank you for installing <shared> update
+DMC-0085,AGREEMENT,explicit,CG-B01-022,I agree that the assignment needs clearer instructions.,i agree that <shared> <shared> needs clearer instructions
+DMC-0086,DISAGREEMENT,explicit,CG-B01-022,I disagree with the view that the assignment needs clearer instructions.,i disagree with <shared> view that <shared> <shared> needs clearer instructions
+DMC-0087,ACKNOWLEDGMENT,explicit,CG-B01-022,I understand your explanation about the assignment.,i understand your explanation about <shared> <shared>
+DMC-0088,UNCERTAINTY,explicit,CG-B01-022,I am unsure whether the assignment needs clearer instructions.,i am unsure whether <shared> <shared> needs clearer instructions
+DMC-0089,STATEMENT,explicit,CG-B01-022,The assignment includes two exercises.,<shared> <shared> includes two exercises
+DMC-0090,AFFIRMATIVE_ANSWER,explicit,CG-B01-023,"Yes, I have submitted the assignment.",yes i have submitted the assignment
+DMC-0091,NEGATIVE_ANSWER,explicit,CG-B01-023,"No, I have not submitted the assignment.",no i have not submitted the assignment
+DMC-0092,QUESTION,explicit,CG-B01-023,When is the assignment due?,when is the assignment due
+DMC-0093,CLARIFICATION,explicit,CG-B01-023,"Could you clarify what you mean by ""clearer instructions""?",could you clarify what you mean by clearer instructions
+DMC-0094,GREETING,explicit,CG-B01-024,"Hello, welcome to the classroom.",hello welcome to <shared> classroom
+DMC-0095,GOODBYE,explicit,CG-B01-024,"Goodbye, I am leaving the classroom now.",goodbye i am leaving <shared> classroom now
+DMC-0096,GRATITUDE,explicit,CG-B01-024,Thank you for explaining the assignment.,thank you for explaining <shared> assignment
+DMC-0097,AGREEMENT,explicit,CG-B01-025,I agree that the earlier train is more convenient.,i agree that <shared> earlier <shared> is more convenient
+DMC-0098,DISAGREEMENT,explicit,CG-B01-025,I disagree with the view that the earlier train is more convenient.,i disagree with <shared> view that <shared> earlier <shared> is more convenient
+DMC-0099,ACKNOWLEDGMENT,explicit,CG-B01-025,I understand your explanation about the train schedule.,i understand your explanation about <shared> <shared> schedule
+DMC-0100,UNCERTAINTY,explicit,CG-B01-025,I am unsure whether the earlier train is more convenient.,i am unsure whether <shared> earlier <shared> is more convenient
+DMC-0101,STATEMENT,explicit,CG-B01-025,The train stops at three stations.,<shared> <shared> stops at three stations
+DMC-0102,AFFIRMATIVE_ANSWER,explicit,CG-B01-026,"Yes, I have checked the timetable.",yes i have checked the timetable
+DMC-0103,NEGATIVE_ANSWER,explicit,CG-B01-026,"No, I have not checked the timetable.",no i have not checked the timetable
+DMC-0104,QUESTION,explicit,CG-B01-026,Which platform does the train leave from?,which platform does the train leave from
+DMC-0105,CLARIFICATION,explicit,CG-B01-026,"Could you clarify what you mean by ""more convenient""?",could you clarify what you mean by more convenient
+DMC-0106,GREETING,explicit,CG-B01-027,"Hello, welcome to the station.",hello welcome to <shared> station
+DMC-0107,GOODBYE,explicit,CG-B01-027,"Goodbye, I am leaving the station now.",goodbye i am leaving <shared> station now
+DMC-0108,GRATITUDE,explicit,CG-B01-027,Thank you for checking the timetable.,thank you for checking <shared> timetable
+DMC-0109,AGREEMENT,explicit,CG-B01-028,I agree that the smaller apartment is a better choice.,i agree that <shared> smaller <shared> is a better choice
+DMC-0110,DISAGREEMENT,explicit,CG-B01-028,I disagree with the view that the smaller apartment is a better choice.,i disagree with <shared> view that <shared> smaller <shared> is a better choice
+DMC-0111,ACKNOWLEDGMENT,explicit,CG-B01-028,I understand your explanation about the apartment.,i understand your explanation about <shared> <shared>
+DMC-0112,UNCERTAINTY,explicit,CG-B01-028,I am unsure whether the smaller apartment is a better choice.,i am unsure whether <shared> smaller <shared> is a better choice
+DMC-0113,STATEMENT,explicit,CG-B01-028,The apartment has two bedrooms.,<shared> <shared> has two bedrooms
+DMC-0114,AFFIRMATIVE_ANSWER,explicit,CG-B01-029,"Yes, I have visited the apartment.",yes i have visited the apartment
+DMC-0115,NEGATIVE_ANSWER,explicit,CG-B01-029,"No, I have not visited the apartment.",no i have not visited the apartment
+DMC-0116,QUESTION,explicit,CG-B01-029,How large is the apartment?,how large is the apartment
+DMC-0117,CLARIFICATION,explicit,CG-B01-029,"Could you clarify what you mean by ""better choice""?",could you clarify what you mean by better choice
+DMC-0118,GREETING,explicit,CG-B01-030,"Hello, welcome to the viewing.",hello welcome to <shared> viewing
+DMC-0119,GOODBYE,explicit,CG-B01-030,"Goodbye, I am leaving the viewing now.",goodbye i am leaving <shared> viewing now
+DMC-0120,GRATITUDE,explicit,CG-B01-030,Thank you for arranging the visit.,thank you for arranging <shared> visit
+DMC-0121,AGREEMENT,explicit,CG-B01-031,I agree that the projection belongs in the darker room.,i agree that <shared> <shared> belongs in <shared> darker room
+DMC-0122,DISAGREEMENT,explicit,CG-B01-031,I disagree with the view that the projection belongs in the darker room.,i disagree with <shared> view that <shared> <shared> belongs in <shared> darker room
+DMC-0123,ACKNOWLEDGMENT,explicit,CG-B01-031,I understand your explanation about the projection.,i understand your explanation about <shared> <shared>
+DMC-0124,UNCERTAINTY,explicit,CG-B01-031,I am unsure whether the projection belongs in the darker room.,i am unsure whether <shared> <shared> belongs in <shared> darker room
+DMC-0125,STATEMENT,explicit,CG-B01-031,The projection uses two screens.,<shared> <shared> uses two screens
+DMC-0126,AFFIRMATIVE_ANSWER,explicit,CG-B01-032,"Yes, I have seen the projection.",yes i have seen the projection
+DMC-0127,NEGATIVE_ANSWER,explicit,CG-B01-032,"No, I have not seen the projection.",no i have not seen the projection
+DMC-0128,QUESTION,explicit,CG-B01-032,Who designed the projection?,who designed the projection
+DMC-0129,CLARIFICATION,explicit,CG-B01-032,"Could you clarify what you mean by ""darker room""?",could you clarify what you mean by darker room
+DMC-0130,GREETING,explicit,CG-B01-033,"Hello, welcome to the gallery.",hello welcome to <shared> gallery
+DMC-0131,GOODBYE,explicit,CG-B01-033,"Goodbye, I am leaving the gallery now.",goodbye i am leaving <shared> gallery now
+DMC-0132,GRATITUDE,explicit,CG-B01-033,Thank you for showing the projection.,thank you for showing <shared> projection
+DMC-0133,AGREEMENT,explicit,CG-B01-034,I agree that the interface should wait for a response.,i agree that <shared> <shared> should wait for a response
+DMC-0134,DISAGREEMENT,explicit,CG-B01-034,I disagree with the view that the interface should wait for a response.,i disagree with <shared> view that <shared> <shared> should wait for a response
+DMC-0135,ACKNOWLEDGMENT,explicit,CG-B01-034,I understand your explanation about the interface.,i understand your explanation about <shared> <shared>
+DMC-0136,UNCERTAINTY,explicit,CG-B01-034,I am unsure whether the interface should wait for a response.,i am unsure whether <shared> <shared> should wait for a response
+DMC-0137,STATEMENT,explicit,CG-B01-034,The interface has a confirmation button.,<shared> <shared> has a confirmation button
+DMC-0138,AFFIRMATIVE_ANSWER,explicit,CG-B01-035,"Yes, I have tried the interface.",yes i have tried the interface
+DMC-0139,NEGATIVE_ANSWER,explicit,CG-B01-035,"No, I have not tried the interface.",no i have not tried the interface
+DMC-0140,QUESTION,explicit,CG-B01-035,How long does the interface wait?,how long does the interface wait
+DMC-0141,CLARIFICATION,explicit,CG-B01-035,"Could you clarify what you mean by ""wait for a response""?",could you clarify what you mean by wait for a response
+DMC-0142,GREETING,explicit,CG-B01-036,"Hello, welcome to the installation.",hello welcome to <shared> installation
+DMC-0143,GOODBYE,explicit,CG-B01-036,"Goodbye, I am leaving the installation now.",goodbye i am leaving <shared> installation now
+DMC-0144,GRATITUDE,explicit,CG-B01-036,Thank you for guiding me through the interface.,thank you for guiding me through <shared> interface
+DMC-0145,AGREEMENT,explicit,CG-B01-037,I agree that the correction deserves more attention.,i agree that <shared> <shared> deserves more attention
+DMC-0146,DISAGREEMENT,explicit,CG-B01-037,I disagree with the view that the correction deserves more attention.,i disagree with <shared> view that <shared> <shared> deserves more attention
+DMC-0147,ACKNOWLEDGMENT,explicit,CG-B01-037,I understand your explanation about the correction.,i understand your explanation about <shared> <shared>
+DMC-0148,UNCERTAINTY,explicit,CG-B01-037,I am unsure whether the correction deserves more attention.,i am unsure whether <shared> <shared> deserves more attention
+DMC-0149,STATEMENT,explicit,CG-B01-037,The correction appears below the article.,<shared> <shared> appears below <shared> article
+DMC-0150,AFFIRMATIVE_ANSWER,explicit,CG-B01-038,"Yes, I have read the correction.",yes i have read the correction
+DMC-0151,NEGATIVE_ANSWER,explicit,CG-B01-038,"No, I have not read the correction.",no i have not read the correction
+DMC-0152,QUESTION,explicit,CG-B01-038,Where was the correction published?,where was the correction published
+DMC-0153,CLARIFICATION,explicit,CG-B01-038,"Could you clarify what you mean by ""more attention""?",could you clarify what you mean by more attention
+DMC-0154,GREETING,explicit,CG-B01-039,"Hello, welcome to the press briefing.",hello welcome to <shared> press briefing
+DMC-0155,GOODBYE,explicit,CG-B01-039,"Goodbye, I am leaving the press briefing now.",goodbye i am leaving <shared> press briefing now
+DMC-0156,GRATITUDE,explicit,CG-B01-039,Thank you for pointing out the correction.,thank you for pointing out <shared> correction
+DMC-0157,AGREEMENT,explicit,CG-B01-040,I agree that the photograph is insufficient proof.,i agree that <shared> <shared> is insufficient proof
+DMC-0158,DISAGREEMENT,explicit,CG-B01-040,I disagree with the view that the photograph is insufficient proof.,i disagree with <shared> view that <shared> <shared> is insufficient proof
+DMC-0159,ACKNOWLEDGMENT,explicit,CG-B01-040,I understand your explanation about the photograph.,i understand your explanation about <shared> <shared>
+DMC-0160,UNCERTAINTY,explicit,CG-B01-040,I am unsure whether the photograph is insufficient proof.,i am unsure whether <shared> <shared> is insufficient proof
+DMC-0161,STATEMENT,explicit,CG-B01-040,The photograph shows a street sign.,<shared> <shared> shows a street sign
+DMC-0162,AFFIRMATIVE_ANSWER,explicit,CG-B01-041,"Yes, I have examined the photograph.",yes i have examined the photograph
+DMC-0163,NEGATIVE_ANSWER,explicit,CG-B01-041,"No, I have not examined the photograph.",no i have not examined the photograph
+DMC-0164,QUESTION,explicit,CG-B01-041,When was the photograph taken?,when was the photograph taken
+DMC-0165,CLARIFICATION,explicit,CG-B01-041,"Could you clarify what you mean by ""insufficient proof""?",could you clarify what you mean by insufficient proof
+DMC-0166,GREETING,explicit,CG-B01-042,"Hello, welcome to the archive.",hello welcome to <shared> archive
+DMC-0167,GOODBYE,explicit,CG-B01-042,"Goodbye, I am leaving the archive now.",goodbye i am leaving <shared> archive now
+DMC-0168,GRATITUDE,explicit,CG-B01-042,Thank you for retrieving the photograph.,thank you for retrieving <shared> photograph
+DMC-0169,AGREEMENT,explicit,CG-B01-043,I agree that the interview is a useful reference.,i agree that <shared> <shared> is a useful reference
+DMC-0170,DISAGREEMENT,explicit,CG-B01-043,I disagree with the view that the interview is a useful reference.,i disagree with <shared> view that <shared> <shared> is a useful reference
+DMC-0171,ACKNOWLEDGMENT,explicit,CG-B01-043,I understand your explanation about the interview.,i understand your explanation about <shared> <shared>
+DMC-0172,UNCERTAINTY,explicit,CG-B01-043,I am unsure whether the interview is a useful reference.,i am unsure whether <shared> <shared> is a useful reference
+DMC-0173,STATEMENT,explicit,CG-B01-043,The interview includes two speakers.,<shared> <shared> includes two speakers
+DMC-0174,AFFIRMATIVE_ANSWER,explicit,CG-B01-044,"Yes, I have reviewed the interview.",yes i have reviewed the interview
+DMC-0175,NEGATIVE_ANSWER,explicit,CG-B01-044,"No, I have not reviewed the interview.",no i have not reviewed the interview
+DMC-0176,QUESTION,explicit,CG-B01-044,Who conducted the interview?,who conducted the interview
+DMC-0177,CLARIFICATION,explicit,CG-B01-044,"Could you clarify what you mean by ""useful reference""?",could you clarify what you mean by useful reference
+DMC-0178,GREETING,explicit,CG-B01-045,"Hello, welcome to the research desk.",hello welcome to <shared> research desk
+DMC-0179,GOODBYE,explicit,CG-B01-045,"Goodbye, I am leaving the research desk now.",goodbye i am leaving <shared> research desk now
+DMC-0180,GRATITUDE,explicit,CG-B01-045,Thank you for sharing the interview.,thank you for sharing <shared> interview
+DMC-0181,AGREEMENT,explicit,CG-B01-046,I agree that the subtitles need revision.,i agree that <shared> <shared> need revision
+DMC-0182,DISAGREEMENT,explicit,CG-B01-046,I disagree with the view that the subtitles need revision.,i disagree with <shared> view that <shared> <shared> need revision
+DMC-0183,ACKNOWLEDGMENT,explicit,CG-B01-046,I understand your explanation about the subtitles.,i understand your explanation about <shared> <shared>
+DMC-0184,UNCERTAINTY,explicit,CG-B01-046,I am unsure whether the subtitles need revision.,i am unsure whether <shared> <shared> need revision
+DMC-0185,STATEMENT,explicit,CG-B01-046,The subtitles appear beneath the image.,<shared> <shared> appear beneath <shared> image
+DMC-0186,AFFIRMATIVE_ANSWER,explicit,CG-B01-047,"Yes, I have reviewed the subtitles.",yes i have reviewed the subtitles
+DMC-0187,NEGATIVE_ANSWER,explicit,CG-B01-047,"No, I have not reviewed the subtitles.",no i have not reviewed the subtitles
+DMC-0188,QUESTION,explicit,CG-B01-047,Which language are the subtitles in?,which language are the subtitles in
+DMC-0189,CLARIFICATION,explicit,CG-B01-047,"Could you clarify what you mean by ""revision""?",could you clarify what you mean by revision
+DMC-0190,GREETING,explicit,CG-B01-048,"Hello, welcome to the editing studio.",hello welcome to <shared> editing studio
+DMC-0191,GOODBYE,explicit,CG-B01-048,"Goodbye, I am leaving the editing studio now.",goodbye i am leaving <shared> editing studio now
+DMC-0192,GRATITUDE,explicit,CG-B01-048,Thank you for reviewing the subtitles.,thank you for reviewing <shared> subtitles
+DMC-0193,AGREEMENT,explicit,CG-B01-049,I agree that the measurement should be repeated.,i agree that <shared> <shared> should be repeated
+DMC-0194,DISAGREEMENT,explicit,CG-B01-049,I disagree with the view that the measurement should be repeated.,i disagree with <shared> view that <shared> <shared> should be repeated
+DMC-0195,ACKNOWLEDGMENT,explicit,CG-B01-049,I understand your explanation about the measurement.,i understand your explanation about <shared> <shared>
+DMC-0196,UNCERTAINTY,explicit,CG-B01-049,I am unsure whether the measurement should be repeated.,i am unsure whether <shared> <shared> should be repeated
+DMC-0197,STATEMENT,explicit,CG-B01-049,The measurement is expressed in grams.,<shared> <shared> is expressed in grams
+DMC-0198,AFFIRMATIVE_ANSWER,explicit,CG-B01-050,"Yes, I have recorded the measurement.",yes i have recorded the measurement
+DMC-0199,NEGATIVE_ANSWER,explicit,CG-B01-050,"No, I have not recorded the measurement.",no i have not recorded the measurement
+DMC-0200,QUESTION,explicit,CG-B01-050,Which instrument was used?,which instrument was used
+DMC-0201,CLARIFICATION,explicit,CG-B01-050,"Could you clarify what you mean by ""repeated""?",could you clarify what you mean by repeated
+DMC-0202,GREETING,explicit,CG-B01-051,"Hello, welcome to the laboratory.",hello welcome to <shared> laboratory
+DMC-0203,GOODBYE,explicit,CG-B01-051,"Goodbye, I am leaving the laboratory now.",goodbye i am leaving <shared> laboratory now
+DMC-0204,GRATITUDE,explicit,CG-B01-051,Thank you for checking the measurement.,thank you for checking <shared> measurement
+DMC-0205,AGREEMENT,explicit,CG-B01-052,I agree that the lecture should include an example.,i agree that <shared> <shared> should include an example
+DMC-0206,DISAGREEMENT,explicit,CG-B01-052,I disagree with the view that the lecture should include an example.,i disagree with <shared> view that <shared> <shared> should include an example
+DMC-0207,ACKNOWLEDGMENT,explicit,CG-B01-052,I understand your explanation about the lecture.,i understand your explanation about <shared> <shared>
+DMC-0208,UNCERTAINTY,explicit,CG-B01-052,I am unsure whether the lecture should include an example.,i am unsure whether <shared> <shared> should include an example
+DMC-0209,STATEMENT,explicit,CG-B01-052,The lecture lasted an hour.,<shared> <shared> lasted an hour
+DMC-0210,AFFIRMATIVE_ANSWER,explicit,CG-B01-053,"Yes, I have attended the lecture.",yes i have attended the lecture
+DMC-0211,NEGATIVE_ANSWER,explicit,CG-B01-053,"No, I have not attended the lecture.",no i have not attended the lecture
+DMC-0212,QUESTION,explicit,CG-B01-053,Who delivered the lecture?,who delivered the lecture
+DMC-0213,CLARIFICATION,explicit,CG-B01-053,"Could you clarify what you mean by ""an example""?",could you clarify what you mean by an example
+DMC-0214,GREETING,explicit,CG-B01-054,"Hello, welcome to the seminar.",hello welcome to <shared> seminar
+DMC-0215,GOODBYE,explicit,CG-B01-054,"Goodbye, I am leaving the seminar now.",goodbye i am leaving <shared> seminar now
+DMC-0216,GRATITUDE,explicit,CG-B01-054,Thank you for explaining the lecture.,thank you for explaining <shared> lecture
+DMC-0217,AGREEMENT,explicit,CG-B01-055,I agree that the later appointment suits us better.,i agree that <shared> later <shared> suits us better
+DMC-0218,DISAGREEMENT,explicit,CG-B01-055,I disagree with the view that the later appointment suits us better.,i disagree with <shared> view that <shared> later <shared> suits us better
+DMC-0219,ACKNOWLEDGMENT,explicit,CG-B01-055,I understand your explanation about the appointment.,i understand your explanation about <shared> <shared>
+DMC-0220,UNCERTAINTY,explicit,CG-B01-055,I am unsure whether the later appointment suits us better.,i am unsure whether <shared> later <shared> suits us better
+DMC-0221,STATEMENT,explicit,CG-B01-055,The appointment is on Thursday.,<shared> <shared> is on thursday
+DMC-0222,AFFIRMATIVE_ANSWER,explicit,CG-B01-056,"Yes, I have confirmed the appointment.",yes i have confirmed the appointment
+DMC-0223,NEGATIVE_ANSWER,explicit,CG-B01-056,"No, I have not confirmed the appointment.",no i have not confirmed the appointment
+DMC-0224,QUESTION,explicit,CG-B01-056,Where is the appointment scheduled?,where is the appointment scheduled
+DMC-0225,CLARIFICATION,explicit,CG-B01-056,"Could you clarify what you mean by ""suits us better""?",could you clarify what you mean by suits us better
+DMC-0226,GREETING,explicit,CG-B01-057,"Hello, welcome to the reception desk.",hello welcome to <shared> reception desk
+DMC-0227,GOODBYE,explicit,CG-B01-057,"Goodbye, I am leaving the reception desk now.",goodbye i am leaving <shared> reception desk now
+DMC-0228,GRATITUDE,explicit,CG-B01-057,Thank you for arranging the appointment.,thank you for arranging <shared> appointment
+DMC-0229,AGREEMENT,explicit,CG-B01-058,I agree that the sculpture needs more space.,i agree that <shared> <shared> needs more space
+DMC-0230,DISAGREEMENT,explicit,CG-B01-058,I disagree with the view that the sculpture needs more space.,i disagree with <shared> view that <shared> <shared> needs more space
+DMC-0231,ACKNOWLEDGMENT,explicit,CG-B01-058,I understand your explanation about the sculpture.,i understand your explanation about <shared> <shared>
+DMC-0232,UNCERTAINTY,explicit,CG-B01-058,I am unsure whether the sculpture needs more space.,i am unsure whether <shared> <shared> needs more space
+DMC-0233,STATEMENT,explicit,CG-B01-058,The sculpture stands on a wooden base.,<shared> <shared> stands on a wooden base
+DMC-0234,AFFIRMATIVE_ANSWER,explicit,CG-B01-059,"Yes, I have seen the sculpture.",yes i have seen the sculpture
+DMC-0235,NEGATIVE_ANSWER,explicit,CG-B01-059,"No, I have not seen the sculpture.",no i have not seen the sculpture
+DMC-0236,QUESTION,explicit,CG-B01-059,What material is the sculpture made of?,what material is the sculpture made of
+DMC-0237,CLARIFICATION,explicit,CG-B01-059,"Could you clarify what you mean by ""more space""?",could you clarify what you mean by more space
+DMC-0238,GREETING,explicit,CG-B01-060,"Hello, welcome to the exhibition.",hello welcome to <shared> exhibition
+DMC-0239,GOODBYE,explicit,CG-B01-060,"Goodbye, I am leaving the exhibition now.",goodbye i am leaving <shared> exhibition now
+DMC-0240,GRATITUDE,explicit,CG-B01-060,Thank you for introducing the sculpture.,thank you for introducing <shared> sculpture
+DMC-0241,AGREEMENT,implicit,CG-B02-001,That is my view of this source as well.,that is my view of this source as well
+DMC-0242,DISAGREEMENT,implicit,CG-B02-001,I see this source quite differently.,i see this source quite differently
+DMC-0243,ACKNOWLEDGMENT,implicit,CG-B02-001,Your point about this source has come through clearly.,your point about this source has come through clearly
+DMC-0244,UNCERTAINTY,implicit,CG-B02-001,I am still weighing up the arguments about this source.,i am still weighing up the arguments about this source
+DMC-0245,STATEMENT,implicit,CG-B02-001,"For reference, the publisher lists its address online.",for reference the publisher lists its address online
+DMC-0246,AFFIRMATIVE_ANSWER,implicit,CG-B02-002,I already have checked the publisher.,i already have checked the publisher
+DMC-0247,NEGATIVE_ANSWER,implicit,CG-B02-002,I have yet to do that with this source.,i have yet to do that with this source
+DMC-0248,QUESTION,implicit,CG-B02-002,I would like to know: who owns the publication?,i would like to know who owns the publication
+DMC-0249,CLARIFICATION,implicit,CG-B02-002,"What exactly does ""unreliable"" refer to here?",what exactly does unreliable refer to here
+DMC-0250,GREETING,implicit,CG-B02-003,Nice to see you here at the media desk.,nice to see you here at <shared> media desk
+DMC-0251,GOODBYE,implicit,CG-B02-003,Until next time at the media desk.,until next time at <shared> media desk
+DMC-0252,GRATITUDE,implicit,CG-B02-003,I really appreciate you checking the publisher.,i really appreciate you checking <shared> publisher
+DMC-0253,AGREEMENT,implicit,CG-B02-004,That is my view of the experiment as well.,that is my view of <shared> <shared> as well
+DMC-0254,DISAGREEMENT,implicit,CG-B02-004,I see the experiment quite differently.,i see <shared> <shared> quite differently
+DMC-0255,ACKNOWLEDGMENT,implicit,CG-B02-004,Your point about the experiment has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0256,UNCERTAINTY,implicit,CG-B02-004,I am still weighing up the arguments about the experiment.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0257,STATEMENT,implicit,CG-B02-004,"For reference, the experiment used two samples.",for reference <shared> <shared> used two samples
+DMC-0258,AFFIRMATIVE_ANSWER,implicit,CG-B02-005,I already have read the laboratory notes.,i already have read <shared> laboratory notes
+DMC-0259,NEGATIVE_ANSWER,implicit,CG-B02-005,I have yet to do that with the experiment.,i have yet to do that with <shared> experiment
+DMC-0260,QUESTION,implicit,CG-B02-005,I would like to know: when was the experiment conducted?,i would like to know when was <shared> experiment conducted
+DMC-0261,CLARIFICATION,implicit,CG-B02-005,"What exactly does ""supports the hypothesis"" refer to here?",what exactly does supports <shared> hypothesis refer to here
+DMC-0262,GREETING,implicit,CG-B02-006,Nice to see you here at the science workshop.,nice to see you here at <shared> science workshop
+DMC-0263,GOODBYE,implicit,CG-B02-006,Until next time at the science workshop.,until next time at <shared> science workshop
+DMC-0264,GRATITUDE,implicit,CG-B02-006,I really appreciate you explaining the experiment.,i really appreciate you explaining <shared> experiment
+DMC-0265,AGREEMENT,implicit,CG-B02-007,That is my view of the headline as well.,that is my view of <shared> headline as well
+DMC-0266,DISAGREEMENT,implicit,CG-B02-007,I see the headline quite differently.,i see <shared> headline quite differently
+DMC-0267,ACKNOWLEDGMENT,implicit,CG-B02-007,Your point about the headline has come through clearly.,your point about <shared> headline has come through clearly
+DMC-0268,UNCERTAINTY,implicit,CG-B02-007,I am still weighing up the arguments about the headline.,i am still weighing up <shared> arguments about <shared> headline
+DMC-0269,STATEMENT,implicit,CG-B02-007,"For reference, the article appeared on Monday.",for reference <shared> article appeared on monday
+DMC-0270,AFFIRMATIVE_ANSWER,implicit,CG-B02-008,I already have read the full article.,i already have read <shared> full article
+DMC-0271,NEGATIVE_ANSWER,implicit,CG-B02-008,I have yet to do that with the headline.,i have yet to do that with <shared> headline
+DMC-0272,QUESTION,implicit,CG-B02-008,I would like to know: who wrote the article?,i would like to know who wrote <shared> article
+DMC-0273,CLARIFICATION,implicit,CG-B02-008,"What exactly does ""exaggerates the findings"" refer to here?",what exactly does exaggerates <shared> findings refer to here
+DMC-0274,GREETING,implicit,CG-B02-009,Nice to see you here at the newsroom.,nice to see you here at <shared> newsroom
+DMC-0275,GOODBYE,implicit,CG-B02-009,Until next time at the newsroom.,until next time at <shared> newsroom
+DMC-0276,GRATITUDE,implicit,CG-B02-009,I really appreciate you finding the article.,i really appreciate you finding <shared> article
+DMC-0277,AGREEMENT,implicit,CG-B02-010,That is my view of the receipt as well.,that is my view of <shared> <shared> as well
+DMC-0278,DISAGREEMENT,implicit,CG-B02-010,I see the receipt quite differently.,i see <shared> <shared> quite differently
+DMC-0279,ACKNOWLEDGMENT,implicit,CG-B02-010,Your point about the receipt has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0280,UNCERTAINTY,implicit,CG-B02-010,I am still weighing up the arguments about the receipt.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0281,STATEMENT,implicit,CG-B02-010,"For reference, the receipt has a printed timestamp.",for reference <shared> <shared> has a printed timestamp
+DMC-0282,AFFIRMATIVE_ANSWER,implicit,CG-B02-011,I already have examined the receipt.,i already have examined <shared> receipt
+DMC-0283,NEGATIVE_ANSWER,implicit,CG-B02-011,I have yet to do that with the receipt.,i have yet to do that with <shared> receipt
+DMC-0284,QUESTION,implicit,CG-B02-011,I would like to know: where was the receipt issued?,i would like to know where was <shared> receipt issued
+DMC-0285,CLARIFICATION,implicit,CG-B02-011,"What exactly does ""establishes the date"" refer to here?",what exactly does establishes <shared> date refer to here
+DMC-0286,GREETING,implicit,CG-B02-012,Nice to see you here at the evidence desk.,nice to see you here at <shared> evidence desk
+DMC-0287,GOODBYE,implicit,CG-B02-012,Until next time at the evidence desk.,until next time at <shared> evidence desk
+DMC-0288,GRATITUDE,implicit,CG-B02-012,I really appreciate you locating the receipt.,i really appreciate you locating <shared> receipt
+DMC-0289,AGREEMENT,implicit,CG-B02-013,That is my view of the recording as well.,that is my view of <shared> <shared> as well
+DMC-0290,DISAGREEMENT,implicit,CG-B02-013,I see the recording quite differently.,i see <shared> <shared> quite differently
+DMC-0291,ACKNOWLEDGMENT,implicit,CG-B02-013,Your point about the recording has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0292,UNCERTAINTY,implicit,CG-B02-013,I am still weighing up the arguments about the recording.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0293,STATEMENT,implicit,CG-B02-013,"For reference, the recording lasts four minutes.",for reference <shared> <shared> lasts four minutes
+DMC-0294,AFFIRMATIVE_ANSWER,implicit,CG-B02-014,I already have listened to the original audio.,i already have listened <shared> the original audio
+DMC-0295,NEGATIVE_ANSWER,implicit,CG-B02-014,I have yet to do that with the recording.,i have yet <shared> do that with the recording
+DMC-0296,QUESTION,implicit,CG-B02-014,I would like to know: who recorded the interview?,i would like <shared> know who recorded the interview
+DMC-0297,CLARIFICATION,implicit,CG-B02-014,"What exactly does ""lacks context"" refer to here?",what exactly does lacks context refer <shared> here
+DMC-0298,GREETING,implicit,CG-B02-015,Nice to see you here at the screening room.,nice to see you here at <shared> screening room
+DMC-0299,GOODBYE,implicit,CG-B02-015,Until next time at the screening room.,until next time at <shared> screening room
+DMC-0300,GRATITUDE,implicit,CG-B02-015,I really appreciate you playing the recording.,i really appreciate you playing <shared> recording
+DMC-0301,AGREEMENT,implicit,CG-B02-016,That is my view of the model as well.,that is my view of <shared> <shared> as well
+DMC-0302,DISAGREEMENT,implicit,CG-B02-016,I see the model quite differently.,i see <shared> <shared> quite differently
+DMC-0303,ACKNOWLEDGMENT,implicit,CG-B02-016,Your point about the model has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0304,UNCERTAINTY,implicit,CG-B02-016,I am still weighing up the arguments about the model.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0305,STATEMENT,implicit,CG-B02-016,"For reference, the model returns three scores.",for reference <shared> <shared> returns three scores
+DMC-0306,AFFIRMATIVE_ANSWER,implicit,CG-B02-017,I already have tested the latest model.,i already have tested the latest model
+DMC-0307,NEGATIVE_ANSWER,implicit,CG-B02-017,I have yet to do that with the model.,i have yet to do that with the model
+DMC-0308,QUESTION,implicit,CG-B02-017,I would like to know: which dataset was used?,i would like to know which dataset was used
+DMC-0309,CLARIFICATION,implicit,CG-B02-017,"What exactly does ""more examples"" refer to here?",what exactly does more examples refer to here
+DMC-0310,GREETING,implicit,CG-B02-018,Nice to see you here at the AI workshop.,nice to see you here at <shared> ai workshop
+DMC-0311,GOODBYE,implicit,CG-B02-018,Until next time at the AI workshop.,until next time at <shared> ai workshop
+DMC-0312,GRATITUDE,implicit,CG-B02-018,I really appreciate you demonstrating the model.,i really appreciate you demonstrating <shared> model
+DMC-0313,AGREEMENT,implicit,CG-B02-019,That is my view of the update as well.,that is my view of <shared> <shared> as well
+DMC-0314,DISAGREEMENT,implicit,CG-B02-019,I see the update quite differently.,i see <shared> <shared> quite differently
+DMC-0315,ACKNOWLEDGMENT,implicit,CG-B02-019,Your point about the update has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0316,UNCERTAINTY,implicit,CG-B02-019,I am still weighing up the arguments about the update.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0317,STATEMENT,implicit,CG-B02-019,"For reference, the update requires a restart.",for reference <shared> <shared> requires a restart
+DMC-0318,AFFIRMATIVE_ANSWER,implicit,CG-B02-020,I already have installed the update.,i already have installed the update
+DMC-0319,NEGATIVE_ANSWER,implicit,CG-B02-020,I have yet to do that with the update.,i have yet to do that with the update
+DMC-0320,QUESTION,implicit,CG-B02-020,I would like to know: when was the update released?,i would like to know when was the update released
+DMC-0321,CLARIFICATION,implicit,CG-B02-020,"What exactly does ""stability"" refer to here?",what exactly does stability refer to here
+DMC-0322,GREETING,implicit,CG-B02-021,Nice to see you here at the computer lab.,nice to see you here at <shared> computer lab
+DMC-0323,GOODBYE,implicit,CG-B02-021,Until next time at the computer lab.,until next time at <shared> computer lab
+DMC-0324,GRATITUDE,implicit,CG-B02-021,I really appreciate you installing the update.,i really appreciate you installing <shared> update
+DMC-0325,AGREEMENT,implicit,CG-B02-022,That is my view of the assignment as well.,that is my view of <shared> <shared> as well
+DMC-0326,DISAGREEMENT,implicit,CG-B02-022,I see the assignment quite differently.,i see <shared> <shared> quite differently
+DMC-0327,ACKNOWLEDGMENT,implicit,CG-B02-022,Your point about the assignment has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0328,UNCERTAINTY,implicit,CG-B02-022,I am still weighing up the arguments about the assignment.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0329,STATEMENT,implicit,CG-B02-022,"For reference, the assignment includes two exercises.",for reference <shared> <shared> includes two exercises
+DMC-0330,AFFIRMATIVE_ANSWER,implicit,CG-B02-023,I already have submitted the assignment.,i already have submitted the assignment
+DMC-0331,NEGATIVE_ANSWER,implicit,CG-B02-023,I have yet to do that with the assignment.,i have yet to do that with the assignment
+DMC-0332,QUESTION,implicit,CG-B02-023,I would like to know: when is the assignment due?,i would like to know when is the assignment due
+DMC-0333,CLARIFICATION,implicit,CG-B02-023,"What exactly does ""clearer instructions"" refer to here?",what exactly does clearer instructions refer to here
+DMC-0334,GREETING,implicit,CG-B02-024,Nice to see you here at the classroom.,nice to see you here at <shared> classroom
+DMC-0335,GOODBYE,implicit,CG-B02-024,Until next time at the classroom.,until next time at <shared> classroom
+DMC-0336,GRATITUDE,implicit,CG-B02-024,I really appreciate you explaining the assignment.,i really appreciate you explaining <shared> assignment
+DMC-0337,AGREEMENT,implicit,CG-B02-025,That is my view of the train schedule as well.,that is my view of <shared> <shared> schedule as well
+DMC-0338,DISAGREEMENT,implicit,CG-B02-025,I see the train schedule quite differently.,i see <shared> <shared> schedule quite differently
+DMC-0339,ACKNOWLEDGMENT,implicit,CG-B02-025,Your point about the train schedule has come through clearly.,your point about <shared> <shared> schedule has come through clearly
+DMC-0340,UNCERTAINTY,implicit,CG-B02-025,I am still weighing up the arguments about the train schedule.,i am still weighing up <shared> arguments about <shared> <shared> schedule
+DMC-0341,STATEMENT,implicit,CG-B02-025,"For reference, the train stops at three stations.",for reference <shared> <shared> stops at three stations
+DMC-0342,AFFIRMATIVE_ANSWER,implicit,CG-B02-026,I already have checked the timetable.,i already have checked the timetable
+DMC-0343,NEGATIVE_ANSWER,implicit,CG-B02-026,I have yet to do that with the train schedule.,i have yet to do that with the train schedule
+DMC-0344,QUESTION,implicit,CG-B02-026,I would like to know: which platform does the train leave from?,i would like to know which platform does the train leave from
+DMC-0345,CLARIFICATION,implicit,CG-B02-026,"What exactly does ""more convenient"" refer to here?",what exactly does more convenient refer to here
+DMC-0346,GREETING,implicit,CG-B02-027,Nice to see you here at the station.,nice to see you here at <shared> station
+DMC-0347,GOODBYE,implicit,CG-B02-027,Until next time at the station.,until next time at <shared> station
+DMC-0348,GRATITUDE,implicit,CG-B02-027,I really appreciate you checking the timetable.,i really appreciate you checking <shared> timetable
+DMC-0349,AGREEMENT,implicit,CG-B02-028,That is my view of the apartment as well.,that is my view of <shared> <shared> as well
+DMC-0350,DISAGREEMENT,implicit,CG-B02-028,I see the apartment quite differently.,i see <shared> <shared> quite differently
+DMC-0351,ACKNOWLEDGMENT,implicit,CG-B02-028,Your point about the apartment has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0352,UNCERTAINTY,implicit,CG-B02-028,I am still weighing up the arguments about the apartment.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0353,STATEMENT,implicit,CG-B02-028,"For reference, the apartment has two bedrooms.",for reference <shared> <shared> has two bedrooms
+DMC-0354,AFFIRMATIVE_ANSWER,implicit,CG-B02-029,I already have visited the apartment.,i already have visited the apartment
+DMC-0355,NEGATIVE_ANSWER,implicit,CG-B02-029,I have yet to do that with the apartment.,i have yet to do that with the apartment
+DMC-0356,QUESTION,implicit,CG-B02-029,I would like to know: how large is the apartment?,i would like to know how large is the apartment
+DMC-0357,CLARIFICATION,implicit,CG-B02-029,"What exactly does ""better choice"" refer to here?",what exactly does better choice refer to here
+DMC-0358,GREETING,implicit,CG-B02-030,Nice to see you here at the viewing.,nice to see you here at <shared> viewing
+DMC-0359,GOODBYE,implicit,CG-B02-030,Until next time at the viewing.,until next time at <shared> viewing
+DMC-0360,GRATITUDE,implicit,CG-B02-030,I really appreciate you arranging the visit.,i really appreciate you arranging <shared> visit
+DMC-0361,AGREEMENT,implicit,CG-B02-031,That is my view of the projection as well.,that is my view of <shared> <shared> as well
+DMC-0362,DISAGREEMENT,implicit,CG-B02-031,I see the projection quite differently.,i see <shared> <shared> quite differently
+DMC-0363,ACKNOWLEDGMENT,implicit,CG-B02-031,Your point about the projection has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0364,UNCERTAINTY,implicit,CG-B02-031,I am still weighing up the arguments about the projection.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0365,STATEMENT,implicit,CG-B02-031,"For reference, the projection uses two screens.",for reference <shared> <shared> uses two screens
+DMC-0366,AFFIRMATIVE_ANSWER,implicit,CG-B02-032,I already have seen the projection.,i already have seen the projection
+DMC-0367,NEGATIVE_ANSWER,implicit,CG-B02-032,I have yet to do that with the projection.,i have yet to do that with the projection
+DMC-0368,QUESTION,implicit,CG-B02-032,I would like to know: who designed the projection?,i would like to know who designed the projection
+DMC-0369,CLARIFICATION,implicit,CG-B02-032,"What exactly does ""darker room"" refer to here?",what exactly does darker room refer to here
+DMC-0370,GREETING,implicit,CG-B02-033,Nice to see you here at the gallery.,nice to see you here at <shared> gallery
+DMC-0371,GOODBYE,implicit,CG-B02-033,Until next time at the gallery.,until next time at <shared> gallery
+DMC-0372,GRATITUDE,implicit,CG-B02-033,I really appreciate you showing the projection.,i really appreciate you showing <shared> projection
+DMC-0373,AGREEMENT,implicit,CG-B02-034,That is my view of the interface as well.,that is my view of <shared> <shared> as well
+DMC-0374,DISAGREEMENT,implicit,CG-B02-034,I see the interface quite differently.,i see <shared> <shared> quite differently
+DMC-0375,ACKNOWLEDGMENT,implicit,CG-B02-034,Your point about the interface has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0376,UNCERTAINTY,implicit,CG-B02-034,I am still weighing up the arguments about the interface.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0377,STATEMENT,implicit,CG-B02-034,"For reference, the interface has a confirmation button.",for reference <shared> <shared> has a confirmation button
+DMC-0378,AFFIRMATIVE_ANSWER,implicit,CG-B02-035,I already have tried the interface.,i already have tried the interface
+DMC-0379,NEGATIVE_ANSWER,implicit,CG-B02-035,I have yet to do that with the interface.,i have yet to do that with the interface
+DMC-0380,QUESTION,implicit,CG-B02-035,I would like to know: how long does the interface wait?,i would like to know how long does the interface wait
+DMC-0381,CLARIFICATION,implicit,CG-B02-035,"What exactly does ""wait for a response"" refer to here?",what exactly does wait for a response refer to here
+DMC-0382,GREETING,implicit,CG-B02-036,Nice to see you here at the installation.,nice to see you here at <shared> installation
+DMC-0383,GOODBYE,implicit,CG-B02-036,Until next time at the installation.,until next time at <shared> installation
+DMC-0384,GRATITUDE,implicit,CG-B02-036,I really appreciate you guiding me through the interface.,i really appreciate you guiding me through <shared> interface
+DMC-0385,AGREEMENT,implicit,CG-B02-037,That is my view of the correction as well.,that is my view of <shared> <shared> as well
+DMC-0386,DISAGREEMENT,implicit,CG-B02-037,I see the correction quite differently.,i see <shared> <shared> quite differently
+DMC-0387,ACKNOWLEDGMENT,implicit,CG-B02-037,Your point about the correction has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0388,UNCERTAINTY,implicit,CG-B02-037,I am still weighing up the arguments about the correction.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0389,STATEMENT,implicit,CG-B02-037,"For reference, the correction appears below the article.",for reference <shared> <shared> appears below <shared> article
+DMC-0390,AFFIRMATIVE_ANSWER,implicit,CG-B02-038,I already have read the correction.,i already have read the correction
+DMC-0391,NEGATIVE_ANSWER,implicit,CG-B02-038,I have yet to do that with the correction.,i have yet to do that with the correction
+DMC-0392,QUESTION,implicit,CG-B02-038,I would like to know: where was the correction published?,i would like to know where was the correction published
+DMC-0393,CLARIFICATION,implicit,CG-B02-038,"What exactly does ""more attention"" refer to here?",what exactly does more attention refer to here
+DMC-0394,GREETING,implicit,CG-B02-039,Nice to see you here at the press briefing.,nice to see you here at <shared> press briefing
+DMC-0395,GOODBYE,implicit,CG-B02-039,Until next time at the press briefing.,until next time at <shared> press briefing
+DMC-0396,GRATITUDE,implicit,CG-B02-039,I really appreciate you pointing out the correction.,i really appreciate you pointing out <shared> correction
+DMC-0397,AGREEMENT,implicit,CG-B02-040,That is my view of the photograph as well.,that is my view of <shared> <shared> as well
+DMC-0398,DISAGREEMENT,implicit,CG-B02-040,I see the photograph quite differently.,i see <shared> <shared> quite differently
+DMC-0399,ACKNOWLEDGMENT,implicit,CG-B02-040,Your point about the photograph has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0400,UNCERTAINTY,implicit,CG-B02-040,I am still weighing up the arguments about the photograph.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0401,STATEMENT,implicit,CG-B02-040,"For reference, the photograph shows a street sign.",for reference <shared> <shared> shows a street sign
+DMC-0402,AFFIRMATIVE_ANSWER,implicit,CG-B02-041,I already have examined the photograph.,i already have examined the photograph
+DMC-0403,NEGATIVE_ANSWER,implicit,CG-B02-041,I have yet to do that with the photograph.,i have yet to do that with the photograph
+DMC-0404,QUESTION,implicit,CG-B02-041,I would like to know: when was the photograph taken?,i would like to know when was the photograph taken
+DMC-0405,CLARIFICATION,implicit,CG-B02-041,"What exactly does ""insufficient proof"" refer to here?",what exactly does insufficient proof refer to here
+DMC-0406,GREETING,implicit,CG-B02-042,Nice to see you here at the archive.,nice to see you here at <shared> archive
+DMC-0407,GOODBYE,implicit,CG-B02-042,Until next time at the archive.,until next time at <shared> archive
+DMC-0408,GRATITUDE,implicit,CG-B02-042,I really appreciate you retrieving the photograph.,i really appreciate you retrieving <shared> photograph
+DMC-0409,AGREEMENT,implicit,CG-B02-043,That is my view of the interview as well.,that is my view of <shared> <shared> as well
+DMC-0410,DISAGREEMENT,implicit,CG-B02-043,I see the interview quite differently.,i see <shared> <shared> quite differently
+DMC-0411,ACKNOWLEDGMENT,implicit,CG-B02-043,Your point about the interview has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0412,UNCERTAINTY,implicit,CG-B02-043,I am still weighing up the arguments about the interview.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0413,STATEMENT,implicit,CG-B02-043,"For reference, the interview includes two speakers.",for reference <shared> <shared> includes two speakers
+DMC-0414,AFFIRMATIVE_ANSWER,implicit,CG-B02-044,I already have reviewed the interview.,i already have reviewed the interview
+DMC-0415,NEGATIVE_ANSWER,implicit,CG-B02-044,I have yet to do that with the interview.,i have yet to do that with the interview
+DMC-0416,QUESTION,implicit,CG-B02-044,I would like to know: who conducted the interview?,i would like to know who conducted the interview
+DMC-0417,CLARIFICATION,implicit,CG-B02-044,"What exactly does ""useful reference"" refer to here?",what exactly does useful reference refer to here
+DMC-0418,GREETING,implicit,CG-B02-045,Nice to see you here at the research desk.,nice to see you here at <shared> research desk
+DMC-0419,GOODBYE,implicit,CG-B02-045,Until next time at the research desk.,until next time at <shared> research desk
+DMC-0420,GRATITUDE,implicit,CG-B02-045,I really appreciate you sharing the interview.,i really appreciate you sharing <shared> interview
+DMC-0421,AGREEMENT,implicit,CG-B02-046,That is my view of the subtitles as well.,that is my view of <shared> <shared> as well
+DMC-0422,DISAGREEMENT,implicit,CG-B02-046,I see the subtitles quite differently.,i see <shared> <shared> quite differently
+DMC-0423,ACKNOWLEDGMENT,implicit,CG-B02-046,Your point about the subtitles has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0424,UNCERTAINTY,implicit,CG-B02-046,I am still weighing up the arguments about the subtitles.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0425,STATEMENT,implicit,CG-B02-046,"For reference, the subtitles appear beneath the image.",for reference <shared> <shared> appear beneath <shared> image
+DMC-0426,AFFIRMATIVE_ANSWER,implicit,CG-B02-047,I already have reviewed the subtitles.,i already have reviewed the subtitles
+DMC-0427,NEGATIVE_ANSWER,implicit,CG-B02-047,I have yet to do that with the subtitles.,i have yet to do that with the subtitles
+DMC-0428,QUESTION,implicit,CG-B02-047,I would like to know: which language are the subtitles in?,i would like to know which language are the subtitles in
+DMC-0429,CLARIFICATION,implicit,CG-B02-047,"What exactly does ""revision"" refer to here?",what exactly does revision refer to here
+DMC-0430,GREETING,implicit,CG-B02-048,Nice to see you here at the editing studio.,nice to see you here at <shared> editing studio
+DMC-0431,GOODBYE,implicit,CG-B02-048,Until next time at the editing studio.,until next time at <shared> editing studio
+DMC-0432,GRATITUDE,implicit,CG-B02-048,I really appreciate you reviewing the subtitles.,i really appreciate you reviewing <shared> subtitles
+DMC-0433,AGREEMENT,implicit,CG-B02-049,That is my view of the measurement as well.,that is my view of <shared> <shared> as well
+DMC-0434,DISAGREEMENT,implicit,CG-B02-049,I see the measurement quite differently.,i see <shared> <shared> quite differently
+DMC-0435,ACKNOWLEDGMENT,implicit,CG-B02-049,Your point about the measurement has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0436,UNCERTAINTY,implicit,CG-B02-049,I am still weighing up the arguments about the measurement.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0437,STATEMENT,implicit,CG-B02-049,"For reference, the measurement is expressed in grams.",for reference <shared> <shared> is expressed in grams
+DMC-0438,AFFIRMATIVE_ANSWER,implicit,CG-B02-050,I already have recorded the measurement.,i already have recorded the measurement
+DMC-0439,NEGATIVE_ANSWER,implicit,CG-B02-050,I have yet to do that with the measurement.,i have yet to do that with the measurement
+DMC-0440,QUESTION,implicit,CG-B02-050,I would like to know: which instrument was used?,i would like to know which instrument was used
+DMC-0441,CLARIFICATION,implicit,CG-B02-050,"What exactly does ""repeated"" refer to here?",what exactly does repeated refer to here
+DMC-0442,GREETING,implicit,CG-B02-051,Nice to see you here at the laboratory.,nice to see you here at <shared> laboratory
+DMC-0443,GOODBYE,implicit,CG-B02-051,Until next time at the laboratory.,until next time at <shared> laboratory
+DMC-0444,GRATITUDE,implicit,CG-B02-051,I really appreciate you checking the measurement.,i really appreciate you checking <shared> measurement
+DMC-0445,AGREEMENT,implicit,CG-B02-052,That is my view of the lecture as well.,that is my view of <shared> <shared> as well
+DMC-0446,DISAGREEMENT,implicit,CG-B02-052,I see the lecture quite differently.,i see <shared> <shared> quite differently
+DMC-0447,ACKNOWLEDGMENT,implicit,CG-B02-052,Your point about the lecture has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0448,UNCERTAINTY,implicit,CG-B02-052,I am still weighing up the arguments about the lecture.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0449,STATEMENT,implicit,CG-B02-052,"For reference, the lecture lasted an hour.",for reference <shared> <shared> lasted an hour
+DMC-0450,AFFIRMATIVE_ANSWER,implicit,CG-B02-053,I already have attended the lecture.,i already have attended the lecture
+DMC-0451,NEGATIVE_ANSWER,implicit,CG-B02-053,I have yet to do that with the lecture.,i have yet to do that with the lecture
+DMC-0452,QUESTION,implicit,CG-B02-053,I would like to know: who delivered the lecture?,i would like to know who delivered the lecture
+DMC-0453,CLARIFICATION,implicit,CG-B02-053,"What exactly does ""an example"" refer to here?",what exactly does an example refer to here
+DMC-0454,GREETING,implicit,CG-B02-054,Nice to see you here at the seminar.,nice to see you here at <shared> seminar
+DMC-0455,GOODBYE,implicit,CG-B02-054,Until next time at the seminar.,until next time at <shared> seminar
+DMC-0456,GRATITUDE,implicit,CG-B02-054,I really appreciate you explaining the lecture.,i really appreciate you explaining <shared> lecture
+DMC-0457,AGREEMENT,implicit,CG-B02-055,That is my view of the appointment as well.,that is my view of <shared> <shared> as well
+DMC-0458,DISAGREEMENT,implicit,CG-B02-055,I see the appointment quite differently.,i see <shared> <shared> quite differently
+DMC-0459,ACKNOWLEDGMENT,implicit,CG-B02-055,Your point about the appointment has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0460,UNCERTAINTY,implicit,CG-B02-055,I am still weighing up the arguments about the appointment.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0461,STATEMENT,implicit,CG-B02-055,"For reference, the appointment is on Thursday.",for reference <shared> <shared> is on thursday
+DMC-0462,AFFIRMATIVE_ANSWER,implicit,CG-B02-056,I already have confirmed the appointment.,i already have confirmed the appointment
+DMC-0463,NEGATIVE_ANSWER,implicit,CG-B02-056,I have yet to do that with the appointment.,i have yet to do that with the appointment
+DMC-0464,QUESTION,implicit,CG-B02-056,I would like to know: where is the appointment scheduled?,i would like to know where is the appointment scheduled
+DMC-0465,CLARIFICATION,implicit,CG-B02-056,"What exactly does ""suits us better"" refer to here?",what exactly does suits us better refer to here
+DMC-0466,GREETING,implicit,CG-B02-057,Nice to see you here at the reception desk.,nice to see you here at <shared> reception desk
+DMC-0467,GOODBYE,implicit,CG-B02-057,Until next time at the reception desk.,until next time at <shared> reception desk
+DMC-0468,GRATITUDE,implicit,CG-B02-057,I really appreciate you arranging the appointment.,i really appreciate you arranging <shared> appointment
+DMC-0469,AGREEMENT,implicit,CG-B02-058,That is my view of the sculpture as well.,that is my view of <shared> <shared> as well
+DMC-0470,DISAGREEMENT,implicit,CG-B02-058,I see the sculpture quite differently.,i see <shared> <shared> quite differently
+DMC-0471,ACKNOWLEDGMENT,implicit,CG-B02-058,Your point about the sculpture has come through clearly.,your point about <shared> <shared> has come through clearly
+DMC-0472,UNCERTAINTY,implicit,CG-B02-058,I am still weighing up the arguments about the sculpture.,i am still weighing up <shared> arguments about <shared> <shared>
+DMC-0473,STATEMENT,implicit,CG-B02-058,"For reference, the sculpture stands on a wooden base.",for reference <shared> <shared> stands on a wooden base
+DMC-0474,AFFIRMATIVE_ANSWER,implicit,CG-B02-059,I already have seen the sculpture.,i already have seen the sculpture
+DMC-0475,NEGATIVE_ANSWER,implicit,CG-B02-059,I have yet to do that with the sculpture.,i have yet to do that with the sculpture
+DMC-0476,QUESTION,implicit,CG-B02-059,I would like to know: what material is the sculpture made of?,i would like to know what material is the sculpture made of
+DMC-0477,CLARIFICATION,implicit,CG-B02-059,"What exactly does ""more space"" refer to here?",what exactly does more space refer to here
+DMC-0478,GREETING,implicit,CG-B02-060,Nice to see you here at the exhibition.,nice to see you here at <shared> exhibition
+DMC-0479,GOODBYE,implicit,CG-B02-060,Until next time at the exhibition.,until next time at <shared> exhibition
+DMC-0480,GRATITUDE,implicit,CG-B02-060,I really appreciate you introducing the sculpture.,i really appreciate you introducing <shared> sculpture
+DMC-0481,AGREEMENT,short,CG-B03-001,Same view on this source.,same view on this source
+DMC-0482,DISAGREEMENT,short,CG-B03-001,Not my view of this source.,not my view of this source
+DMC-0483,ACKNOWLEDGMENT,short,CG-B03-001,Point about this source understood.,point about this source understood
+DMC-0484,UNCERTAINTY,short,CG-B03-001,Undecided about this source.,undecided about this source
+DMC-0485,STATEMENT,short,CG-B03-001,Note: The publisher lists its address online.,note the publisher lists its address online
+DMC-0486,AFFIRMATIVE_ANSWER,short,CG-B03-002,Already checked the publisher.,already checked the publisher
+DMC-0487,NEGATIVE_ANSWER,short,CG-B03-002,"Not yet, regarding this source.",not yet regarding this source
+DMC-0488,QUESTION,short,CG-B03-002,Which person owns the publication?,which person owns the publication
+DMC-0489,CLARIFICATION,short,CG-B03-002,"""unreliable"" meaning?",unreliable meaning
+DMC-0490,GREETING,short,CG-B03-003,Hi from the media desk.,hi from <shared> media desk
+DMC-0491,GOODBYE,short,CG-B03-003,Bye from the media desk.,bye from <shared> media desk
+DMC-0492,GRATITUDE,short,CG-B03-003,Thanks for checking the publisher.,thanks for checking <shared> publisher
+DMC-0493,AGREEMENT,short,CG-B03-004,Same view on the experiment.,same view on <shared> <shared>
+DMC-0494,DISAGREEMENT,short,CG-B03-004,Not my view of the experiment.,not my view of <shared> <shared>
+DMC-0495,ACKNOWLEDGMENT,short,CG-B03-004,Point about the experiment understood.,point about <shared> <shared> understood
+DMC-0496,UNCERTAINTY,short,CG-B03-004,Undecided about the experiment.,undecided about <shared> <shared>
+DMC-0497,STATEMENT,short,CG-B03-004,Note: The experiment used two samples.,note <shared> <shared> used two samples
+DMC-0498,AFFIRMATIVE_ANSWER,short,CG-B03-005,Already read the laboratory notes.,already read <shared> laboratory notes
+DMC-0499,NEGATIVE_ANSWER,short,CG-B03-005,"Not yet, regarding the experiment.",not yet regarding <shared> experiment
+DMC-0500,QUESTION,short,CG-B03-005,What date was the experiment conducted?,what date was <shared> experiment conducted
+DMC-0501,CLARIFICATION,short,CG-B03-005,"""supports the hypothesis"" meaning?",supports <shared> hypothesis meaning
+DMC-0502,GREETING,short,CG-B03-006,Hi from the science workshop.,hi from <shared> science workshop
+DMC-0503,GOODBYE,short,CG-B03-006,Bye from the science workshop.,bye from <shared> science workshop
+DMC-0504,GRATITUDE,short,CG-B03-006,Thanks for explaining the experiment.,thanks for explaining <shared> experiment
+DMC-0505,AGREEMENT,short,CG-B03-007,Same view on the headline.,same view on <shared> headline
+DMC-0506,DISAGREEMENT,short,CG-B03-007,Not my view of the headline.,not my view of <shared> headline
+DMC-0507,ACKNOWLEDGMENT,short,CG-B03-007,Point about the headline understood.,point about <shared> headline understood
+DMC-0508,UNCERTAINTY,short,CG-B03-007,Undecided about the headline.,undecided about <shared> headline
+DMC-0509,STATEMENT,short,CG-B03-007,Note: The article appeared on Monday.,note <shared> article appeared on monday
+DMC-0510,AFFIRMATIVE_ANSWER,short,CG-B03-008,Already read the full article.,already read <shared> full article
+DMC-0511,NEGATIVE_ANSWER,short,CG-B03-008,"Not yet, regarding the headline.",not yet regarding <shared> headline
+DMC-0512,QUESTION,short,CG-B03-008,Which person wrote the article?,which person wrote <shared> article
+DMC-0513,CLARIFICATION,short,CG-B03-008,"""exaggerates the findings"" meaning?",exaggerates <shared> findings meaning
+DMC-0514,GREETING,short,CG-B03-009,Hi from the newsroom.,hi from <shared> newsroom
+DMC-0515,GOODBYE,short,CG-B03-009,Bye from the newsroom.,bye from <shared> newsroom
+DMC-0516,GRATITUDE,short,CG-B03-009,Thanks for finding the article.,thanks for finding <shared> article
+DMC-0517,AGREEMENT,short,CG-B03-010,Same view on the receipt.,same view on <shared> <shared>
+DMC-0518,DISAGREEMENT,short,CG-B03-010,Not my view of the receipt.,not my view of <shared> <shared>
+DMC-0519,ACKNOWLEDGMENT,short,CG-B03-010,Point about the receipt understood.,point about <shared> <shared> understood
+DMC-0520,UNCERTAINTY,short,CG-B03-010,Undecided about the receipt.,undecided about <shared> <shared>
+DMC-0521,STATEMENT,short,CG-B03-010,Note: The receipt has a printed timestamp.,note <shared> <shared> has a printed timestamp
+DMC-0522,AFFIRMATIVE_ANSWER,short,CG-B03-011,Already examined the receipt.,already examined <shared> receipt
+DMC-0523,NEGATIVE_ANSWER,short,CG-B03-011,"Not yet, regarding the receipt.",not yet regarding <shared> receipt
+DMC-0524,QUESTION,short,CG-B03-011,At what location was the receipt issued?,at what location was <shared> receipt issued
+DMC-0525,CLARIFICATION,short,CG-B03-011,"""establishes the date"" meaning?",establishes <shared> date meaning
+DMC-0526,GREETING,short,CG-B03-012,Hi from the evidence desk.,hi from <shared> evidence desk
+DMC-0527,GOODBYE,short,CG-B03-012,Bye from the evidence desk.,bye from <shared> evidence desk
+DMC-0528,GRATITUDE,short,CG-B03-012,Thanks for locating the receipt.,thanks for locating <shared> receipt
+DMC-0529,AGREEMENT,short,CG-B03-013,Same view on the recording.,same view on <shared> <shared>
+DMC-0530,DISAGREEMENT,short,CG-B03-013,Not my view of the recording.,not my view of <shared> <shared>
+DMC-0531,ACKNOWLEDGMENT,short,CG-B03-013,Point about the recording understood.,point about <shared> <shared> understood
+DMC-0532,UNCERTAINTY,short,CG-B03-013,Undecided about the recording.,undecided about <shared> <shared>
+DMC-0533,STATEMENT,short,CG-B03-013,Note: The recording lasts four minutes.,note <shared> <shared> lasts four minutes
+DMC-0534,AFFIRMATIVE_ANSWER,short,CG-B03-014,Already listened to the original audio.,already listened to the original audio
+DMC-0535,NEGATIVE_ANSWER,short,CG-B03-014,"Not yet, regarding the recording.",not yet regarding the recording
+DMC-0536,QUESTION,short,CG-B03-014,Which person recorded the interview?,which person recorded the interview
+DMC-0537,CLARIFICATION,short,CG-B03-014,"""lacks context"" meaning?",lacks context meaning
+DMC-0538,GREETING,short,CG-B03-015,Hi from the screening room.,hi from <shared> screening room
+DMC-0539,GOODBYE,short,CG-B03-015,Bye from the screening room.,bye from <shared> screening room
+DMC-0540,GRATITUDE,short,CG-B03-015,Thanks for playing the recording.,thanks for playing <shared> recording
+DMC-0541,AGREEMENT,short,CG-B03-016,Same view on the model.,same view on <shared> <shared>
+DMC-0542,DISAGREEMENT,short,CG-B03-016,Not my view of the model.,not my view of <shared> <shared>
+DMC-0543,ACKNOWLEDGMENT,short,CG-B03-016,Point about the model understood.,point about <shared> <shared> understood
+DMC-0544,UNCERTAINTY,short,CG-B03-016,Undecided about the model.,undecided about <shared> <shared>
+DMC-0545,STATEMENT,short,CG-B03-016,Note: The model returns three scores.,note <shared> <shared> returns three scores
+DMC-0546,AFFIRMATIVE_ANSWER,short,CG-B03-017,Already tested the latest model.,already tested the latest model
+DMC-0547,NEGATIVE_ANSWER,short,CG-B03-017,"Not yet, regarding the model.",not yet regarding the model
+DMC-0548,QUESTION,short,CG-B03-017,Quick question: Which dataset was used?,quick question which dataset was used
+DMC-0549,CLARIFICATION,short,CG-B03-017,"""more examples"" meaning?",more examples meaning
+DMC-0550,GREETING,short,CG-B03-018,Hi from the AI workshop.,hi from <shared> ai workshop
+DMC-0551,GOODBYE,short,CG-B03-018,Bye from the AI workshop.,bye from <shared> ai workshop
+DMC-0552,GRATITUDE,short,CG-B03-018,Thanks for demonstrating the model.,thanks for demonstrating <shared> model
+DMC-0553,AGREEMENT,short,CG-B03-019,Same view on the update.,same view on <shared> <shared>
+DMC-0554,DISAGREEMENT,short,CG-B03-019,Not my view of the update.,not my view of <shared> <shared>
+DMC-0555,ACKNOWLEDGMENT,short,CG-B03-019,Point about the update understood.,point about <shared> <shared> understood
+DMC-0556,UNCERTAINTY,short,CG-B03-019,Undecided about the update.,undecided about <shared> <shared>
+DMC-0557,STATEMENT,short,CG-B03-019,Note: The update requires a restart.,note <shared> <shared> requires a restart
+DMC-0558,AFFIRMATIVE_ANSWER,short,CG-B03-020,Already installed the update.,already installed the update
+DMC-0559,NEGATIVE_ANSWER,short,CG-B03-020,"Not yet, regarding the update.",not yet regarding the update
+DMC-0560,QUESTION,short,CG-B03-020,What date was the update released?,what date was the update released
+DMC-0561,CLARIFICATION,short,CG-B03-020,"""stability"" meaning?",stability meaning
+DMC-0562,GREETING,short,CG-B03-021,Hi from the computer lab.,hi from <shared> computer lab
+DMC-0563,GOODBYE,short,CG-B03-021,Bye from the computer lab.,bye from <shared> computer lab
+DMC-0564,GRATITUDE,short,CG-B03-021,Thanks for installing the update.,thanks for installing <shared> update
+DMC-0565,AGREEMENT,short,CG-B03-022,Same view on the assignment.,same view on <shared> <shared>
+DMC-0566,DISAGREEMENT,short,CG-B03-022,Not my view of the assignment.,not my view of <shared> <shared>
+DMC-0567,ACKNOWLEDGMENT,short,CG-B03-022,Point about the assignment understood.,point about <shared> <shared> understood
+DMC-0568,UNCERTAINTY,short,CG-B03-022,Undecided about the assignment.,undecided about <shared> <shared>
+DMC-0569,STATEMENT,short,CG-B03-022,Note: The assignment includes two exercises.,note <shared> <shared> includes two exercises
+DMC-0570,AFFIRMATIVE_ANSWER,short,CG-B03-023,Already submitted the assignment.,already submitted the assignment
+DMC-0571,NEGATIVE_ANSWER,short,CG-B03-023,"Not yet, regarding the assignment.",not yet regarding the assignment
+DMC-0572,QUESTION,short,CG-B03-023,What date is the assignment due?,what date is the assignment due
+DMC-0573,CLARIFICATION,short,CG-B03-023,"""clearer instructions"" meaning?",clearer instructions meaning
+DMC-0574,GREETING,short,CG-B03-024,Hi from the classroom.,hi from <shared> classroom
+DMC-0575,GOODBYE,short,CG-B03-024,Bye from the classroom.,bye from <shared> classroom
+DMC-0576,GRATITUDE,short,CG-B03-024,Thanks for explaining the assignment.,thanks for explaining <shared> assignment
+DMC-0577,AGREEMENT,short,CG-B03-025,Same view on the train schedule.,same view on <shared> <shared> schedule
+DMC-0578,DISAGREEMENT,short,CG-B03-025,Not my view of the train schedule.,not my view of <shared> <shared> schedule
+DMC-0579,ACKNOWLEDGMENT,short,CG-B03-025,Point about the train schedule understood.,point about <shared> <shared> schedule understood
+DMC-0580,UNCERTAINTY,short,CG-B03-025,Undecided about the train schedule.,undecided about <shared> <shared> schedule
+DMC-0581,STATEMENT,short,CG-B03-025,Note: The train stops at three stations.,note <shared> <shared> stops at three stations
+DMC-0582,AFFIRMATIVE_ANSWER,short,CG-B03-026,Already checked the timetable.,already checked the timetable
+DMC-0583,NEGATIVE_ANSWER,short,CG-B03-026,"Not yet, regarding the train schedule.",not yet regarding the train schedule
+DMC-0584,QUESTION,short,CG-B03-026,Quick question: Which platform does the train leave from?,quick question which platform does the train leave from
+DMC-0585,CLARIFICATION,short,CG-B03-026,"""more convenient"" meaning?",more convenient meaning
+DMC-0586,GREETING,short,CG-B03-027,Hi from the station.,hi from <shared> station
+DMC-0587,GOODBYE,short,CG-B03-027,Bye from the station.,bye from <shared> station
+DMC-0588,GRATITUDE,short,CG-B03-027,Thanks for checking the timetable.,thanks for checking <shared> timetable
+DMC-0589,AGREEMENT,short,CG-B03-028,Same view on the apartment.,same view on <shared> <shared>
+DMC-0590,DISAGREEMENT,short,CG-B03-028,Not my view of the apartment.,not my view of <shared> <shared>
+DMC-0591,ACKNOWLEDGMENT,short,CG-B03-028,Point about the apartment understood.,point about <shared> <shared> understood
+DMC-0592,UNCERTAINTY,short,CG-B03-028,Undecided about the apartment.,undecided about <shared> <shared>
+DMC-0593,STATEMENT,short,CG-B03-028,Note: The apartment has two bedrooms.,note <shared> <shared> has two bedrooms
+DMC-0594,AFFIRMATIVE_ANSWER,short,CG-B03-029,Already visited the apartment.,already visited the apartment
+DMC-0595,NEGATIVE_ANSWER,short,CG-B03-029,"Not yet, regarding the apartment.",not yet regarding the apartment
+DMC-0596,QUESTION,short,CG-B03-029,Quick question: How large is the apartment?,quick question how large is the apartment
+DMC-0597,CLARIFICATION,short,CG-B03-029,"""better choice"" meaning?",better choice meaning
+DMC-0598,GREETING,short,CG-B03-030,Hi from the viewing.,hi from <shared> viewing
+DMC-0599,GOODBYE,short,CG-B03-030,Bye from the viewing.,bye from <shared> viewing
+DMC-0600,GRATITUDE,short,CG-B03-030,Thanks for arranging the visit.,thanks for arranging <shared> visit
+DMC-0601,AGREEMENT,short,CG-B03-031,Same view on the projection.,same view on <shared> <shared>
+DMC-0602,DISAGREEMENT,short,CG-B03-031,Not my view of the projection.,not my view of <shared> <shared>
+DMC-0603,ACKNOWLEDGMENT,short,CG-B03-031,Point about the projection understood.,point about <shared> <shared> understood
+DMC-0604,UNCERTAINTY,short,CG-B03-031,Undecided about the projection.,undecided about <shared> <shared>
+DMC-0605,STATEMENT,short,CG-B03-031,Note: The projection uses two screens.,note <shared> <shared> uses two screens
+DMC-0606,AFFIRMATIVE_ANSWER,short,CG-B03-032,Already seen the projection.,already seen the projection
+DMC-0607,NEGATIVE_ANSWER,short,CG-B03-032,"Not yet, regarding the projection.",not yet regarding the projection
+DMC-0608,QUESTION,short,CG-B03-032,Which person designed the projection?,which person designed the projection
+DMC-0609,CLARIFICATION,short,CG-B03-032,"""darker room"" meaning?",darker room meaning
+DMC-0610,GREETING,short,CG-B03-033,Hi from the gallery.,hi from <shared> gallery
+DMC-0611,GOODBYE,short,CG-B03-033,Bye from the gallery.,bye from <shared> gallery
+DMC-0612,GRATITUDE,short,CG-B03-033,Thanks for showing the projection.,thanks for showing <shared> projection
+DMC-0613,AGREEMENT,short,CG-B03-034,Same view on the interface.,same view on <shared> <shared>
+DMC-0614,DISAGREEMENT,short,CG-B03-034,Not my view of the interface.,not my view of <shared> <shared>
+DMC-0615,ACKNOWLEDGMENT,short,CG-B03-034,Point about the interface understood.,point about <shared> <shared> understood
+DMC-0616,UNCERTAINTY,short,CG-B03-034,Undecided about the interface.,undecided about <shared> <shared>
+DMC-0617,STATEMENT,short,CG-B03-034,Note: The interface has a confirmation button.,note <shared> <shared> has a confirmation button
+DMC-0618,AFFIRMATIVE_ANSWER,short,CG-B03-035,Already tried the interface.,already tried the interface
+DMC-0619,NEGATIVE_ANSWER,short,CG-B03-035,"Not yet, regarding the interface.",not yet regarding the interface
+DMC-0620,QUESTION,short,CG-B03-035,Quick question: How long does the interface wait?,quick question how long does the interface wait
+DMC-0621,CLARIFICATION,short,CG-B03-035,"""wait for a response"" meaning?",wait for a response meaning
+DMC-0622,GREETING,short,CG-B03-036,Hi from the installation.,hi from <shared> installation
+DMC-0623,GOODBYE,short,CG-B03-036,Bye from the installation.,bye from <shared> installation
+DMC-0624,GRATITUDE,short,CG-B03-036,Thanks for guiding me through the interface.,thanks for guiding me through <shared> interface
+DMC-0625,AGREEMENT,short,CG-B03-037,Same view on the correction.,same view on <shared> <shared>
+DMC-0626,DISAGREEMENT,short,CG-B03-037,Not my view of the correction.,not my view of <shared> <shared>
+DMC-0627,ACKNOWLEDGMENT,short,CG-B03-037,Point about the correction understood.,point about <shared> <shared> understood
+DMC-0628,UNCERTAINTY,short,CG-B03-037,Undecided about the correction.,undecided about <shared> <shared>
+DMC-0629,STATEMENT,short,CG-B03-037,Note: The correction appears below the article.,note <shared> <shared> appears below <shared> article
+DMC-0630,AFFIRMATIVE_ANSWER,short,CG-B03-038,Already read the correction.,already read the correction
+DMC-0631,NEGATIVE_ANSWER,short,CG-B03-038,"Not yet, regarding the correction.",not yet regarding the correction
+DMC-0632,QUESTION,short,CG-B03-038,At what location was the correction published?,at what location was the correction published
+DMC-0633,CLARIFICATION,short,CG-B03-038,"""more attention"" meaning?",more attention meaning
+DMC-0634,GREETING,short,CG-B03-039,Hi from the press briefing.,hi from <shared> press briefing
+DMC-0635,GOODBYE,short,CG-B03-039,Bye from the press briefing.,bye from <shared> press briefing
+DMC-0636,GRATITUDE,short,CG-B03-039,Thanks for pointing out the correction.,thanks for pointing out <shared> correction
+DMC-0637,AGREEMENT,short,CG-B03-040,Same view on the photograph.,same view on <shared> <shared>
+DMC-0638,DISAGREEMENT,short,CG-B03-040,Not my view of the photograph.,not my view of <shared> <shared>
+DMC-0639,ACKNOWLEDGMENT,short,CG-B03-040,Point about the photograph understood.,point about <shared> <shared> understood
+DMC-0640,UNCERTAINTY,short,CG-B03-040,Undecided about the photograph.,undecided about <shared> <shared>
+DMC-0641,STATEMENT,short,CG-B03-040,Note: The photograph shows a street sign.,note <shared> <shared> shows a street sign
+DMC-0642,AFFIRMATIVE_ANSWER,short,CG-B03-041,Already examined the photograph.,already examined the photograph
+DMC-0643,NEGATIVE_ANSWER,short,CG-B03-041,"Not yet, regarding the photograph.",not yet regarding the photograph
+DMC-0644,QUESTION,short,CG-B03-041,What date was the photograph taken?,what date was the photograph taken
+DMC-0645,CLARIFICATION,short,CG-B03-041,"""insufficient proof"" meaning?",insufficient proof meaning
+DMC-0646,GREETING,short,CG-B03-042,Hi from the archive.,hi from <shared> archive
+DMC-0647,GOODBYE,short,CG-B03-042,Bye from the archive.,bye from <shared> archive
+DMC-0648,GRATITUDE,short,CG-B03-042,Thanks for retrieving the photograph.,thanks for retrieving <shared> photograph
+DMC-0649,AGREEMENT,short,CG-B03-043,Same view on the interview.,same view on <shared> <shared>
+DMC-0650,DISAGREEMENT,short,CG-B03-043,Not my view of the interview.,not my view of <shared> <shared>
+DMC-0651,ACKNOWLEDGMENT,short,CG-B03-043,Point about the interview understood.,point about <shared> <shared> understood
+DMC-0652,UNCERTAINTY,short,CG-B03-043,Undecided about the interview.,undecided about <shared> <shared>
+DMC-0653,STATEMENT,short,CG-B03-043,Note: The interview includes two speakers.,note <shared> <shared> includes two speakers
+DMC-0654,AFFIRMATIVE_ANSWER,short,CG-B03-044,Already reviewed the interview.,already reviewed the interview
+DMC-0655,NEGATIVE_ANSWER,short,CG-B03-044,"Not yet, regarding the interview.",not yet regarding the interview
+DMC-0656,QUESTION,short,CG-B03-044,Which person conducted the interview?,which person conducted the interview
+DMC-0657,CLARIFICATION,short,CG-B03-044,"""useful reference"" meaning?",useful reference meaning
+DMC-0658,GREETING,short,CG-B03-045,Hi from the research desk.,hi from <shared> research desk
+DMC-0659,GOODBYE,short,CG-B03-045,Bye from the research desk.,bye from <shared> research desk
+DMC-0660,GRATITUDE,short,CG-B03-045,Thanks for sharing the interview.,thanks for sharing <shared> interview
+DMC-0661,AGREEMENT,short,CG-B03-046,Same view on the subtitles.,same view on <shared> <shared>
+DMC-0662,DISAGREEMENT,short,CG-B03-046,Not my view of the subtitles.,not my view of <shared> <shared>
+DMC-0663,ACKNOWLEDGMENT,short,CG-B03-046,Point about the subtitles understood.,point about <shared> <shared> understood
+DMC-0664,UNCERTAINTY,short,CG-B03-046,Undecided about the subtitles.,undecided about <shared> <shared>
+DMC-0665,STATEMENT,short,CG-B03-046,Note: The subtitles appear beneath the image.,note <shared> <shared> appear beneath <shared> image
+DMC-0666,AFFIRMATIVE_ANSWER,short,CG-B03-047,Already reviewed the subtitles.,already reviewed the subtitles
+DMC-0667,NEGATIVE_ANSWER,short,CG-B03-047,"Not yet, regarding the subtitles.",not yet regarding the subtitles
+DMC-0668,QUESTION,short,CG-B03-047,Quick question: Which language are the subtitles in?,quick question which language are the subtitles in
+DMC-0669,CLARIFICATION,short,CG-B03-047,"""revision"" meaning?",revision meaning
+DMC-0670,GREETING,short,CG-B03-048,Hi from the editing studio.,hi from <shared> editing studio
+DMC-0671,GOODBYE,short,CG-B03-048,Bye from the editing studio.,bye from <shared> editing studio
+DMC-0672,GRATITUDE,short,CG-B03-048,Thanks for reviewing the subtitles.,thanks for reviewing <shared> subtitles
+DMC-0673,AGREEMENT,short,CG-B03-049,Same view on the measurement.,same view on <shared> <shared>
+DMC-0674,DISAGREEMENT,short,CG-B03-049,Not my view of the measurement.,not my view of <shared> <shared>
+DMC-0675,ACKNOWLEDGMENT,short,CG-B03-049,Point about the measurement understood.,point about <shared> <shared> understood
+DMC-0676,UNCERTAINTY,short,CG-B03-049,Undecided about the measurement.,undecided about <shared> <shared>
+DMC-0677,STATEMENT,short,CG-B03-049,Note: The measurement is expressed in grams.,note <shared> <shared> is expressed in grams
+DMC-0678,AFFIRMATIVE_ANSWER,short,CG-B03-050,Already recorded the measurement.,already recorded the measurement
+DMC-0679,NEGATIVE_ANSWER,short,CG-B03-050,"Not yet, regarding the measurement.",not yet regarding the measurement
+DMC-0680,QUESTION,short,CG-B03-050,Quick question: Which instrument was used?,quick question which instrument was used
+DMC-0681,CLARIFICATION,short,CG-B03-050,"""repeated"" meaning?",repeated meaning
+DMC-0682,GREETING,short,CG-B03-051,Hi from the laboratory.,hi from <shared> laboratory
+DMC-0683,GOODBYE,short,CG-B03-051,Bye from the laboratory.,bye from <shared> laboratory
+DMC-0684,GRATITUDE,short,CG-B03-051,Thanks for checking the measurement.,thanks for checking <shared> measurement
+DMC-0685,AGREEMENT,short,CG-B03-052,Same view on the lecture.,same view on <shared> <shared>
+DMC-0686,DISAGREEMENT,short,CG-B03-052,Not my view of the lecture.,not my view of <shared> <shared>
+DMC-0687,ACKNOWLEDGMENT,short,CG-B03-052,Point about the lecture understood.,point about <shared> <shared> understood
+DMC-0688,UNCERTAINTY,short,CG-B03-052,Undecided about the lecture.,undecided about <shared> <shared>
+DMC-0689,STATEMENT,short,CG-B03-052,Note: The lecture lasted an hour.,note <shared> <shared> lasted an hour
+DMC-0690,AFFIRMATIVE_ANSWER,short,CG-B03-053,Already attended the lecture.,already attended the lecture
+DMC-0691,NEGATIVE_ANSWER,short,CG-B03-053,"Not yet, regarding the lecture.",not yet regarding the lecture
+DMC-0692,QUESTION,short,CG-B03-053,Which person delivered the lecture?,which person delivered the lecture
+DMC-0693,CLARIFICATION,short,CG-B03-053,"""an example"" meaning?",an example meaning
+DMC-0694,GREETING,short,CG-B03-054,Hi from the seminar.,hi from <shared> seminar
+DMC-0695,GOODBYE,short,CG-B03-054,Bye from the seminar.,bye from <shared> seminar
+DMC-0696,GRATITUDE,short,CG-B03-054,Thanks for explaining the lecture.,thanks for explaining <shared> lecture
+DMC-0697,AGREEMENT,short,CG-B03-055,Same view on the appointment.,same view on <shared> <shared>
+DMC-0698,DISAGREEMENT,short,CG-B03-055,Not my view of the appointment.,not my view of <shared> <shared>
+DMC-0699,ACKNOWLEDGMENT,short,CG-B03-055,Point about the appointment understood.,point about <shared> <shared> understood
+DMC-0700,UNCERTAINTY,short,CG-B03-055,Undecided about the appointment.,undecided about <shared> <shared>
+DMC-0701,STATEMENT,short,CG-B03-055,Note: The appointment is on Thursday.,note <shared> <shared> is on thursday
+DMC-0702,AFFIRMATIVE_ANSWER,short,CG-B03-056,Already confirmed the appointment.,already confirmed the appointment
+DMC-0703,NEGATIVE_ANSWER,short,CG-B03-056,"Not yet, regarding the appointment.",not yet regarding the appointment
+DMC-0704,QUESTION,short,CG-B03-056,At what location is the appointment scheduled?,at what location is the appointment scheduled
+DMC-0705,CLARIFICATION,short,CG-B03-056,"""suits us better"" meaning?",suits us better meaning
+DMC-0706,GREETING,short,CG-B03-057,Hi from the reception desk.,hi from <shared> reception desk
+DMC-0707,GOODBYE,short,CG-B03-057,Bye from the reception desk.,bye from <shared> reception desk
+DMC-0708,GRATITUDE,short,CG-B03-057,Thanks for arranging the appointment.,thanks for arranging <shared> appointment
+DMC-0709,AGREEMENT,short,CG-B03-058,Same view on the sculpture.,same view on <shared> <shared>
+DMC-0710,DISAGREEMENT,short,CG-B03-058,Not my view of the sculpture.,not my view of <shared> <shared>
+DMC-0711,ACKNOWLEDGMENT,short,CG-B03-058,Point about the sculpture understood.,point about <shared> <shared> understood
+DMC-0712,UNCERTAINTY,short,CG-B03-058,Undecided about the sculpture.,undecided about <shared> <shared>
+DMC-0713,STATEMENT,short,CG-B03-058,Note: The sculpture stands on a wooden base.,note <shared> <shared> stands on a wooden base
+DMC-0714,AFFIRMATIVE_ANSWER,short,CG-B03-059,Already seen the sculpture.,already seen the sculpture
+DMC-0715,NEGATIVE_ANSWER,short,CG-B03-059,"Not yet, regarding the sculpture.",not yet regarding the sculpture
+DMC-0716,QUESTION,short,CG-B03-059,Quick question: What material is the sculpture made of?,quick question what material is the sculpture made of
+DMC-0717,CLARIFICATION,short,CG-B03-059,"""more space"" meaning?",more space meaning
+DMC-0718,GREETING,short,CG-B03-060,Hi from the exhibition.,hi from <shared> exhibition
+DMC-0719,GOODBYE,short,CG-B03-060,Bye from the exhibition.,bye from <shared> exhibition
+DMC-0720,GRATITUDE,short,CG-B03-060,Thanks for introducing the sculpture.,thanks for introducing <shared> sculpture
+DMC-0721,AGREEMENT,complex,CG-B04-001,"After considering the alternatives, I have reached the same conclusion about this source as you.",after considering the alternatives i have reached the same conclusion about this source as you
+DMC-0722,DISAGREEMENT,complex,CG-B04-001,"Although I follow your reasoning, I cannot accept your conclusion about this source.",although i follow your reasoning i cannot accept your conclusion about this source
+DMC-0723,ACKNOWLEDGMENT,complex,CG-B04-001,"I have followed your explanation of this source, without taking a position on it.",i have followed your explanation of this source without taking a position on it
+DMC-0724,UNCERTAINTY,complex,CG-B04-001,"Until I have more information about this source, I cannot decide which interpretation to accept.",until i have more information about this source i cannot decide which interpretation to accept
+DMC-0725,STATEMENT,complex,CG-B04-001,"For the record, the publisher lists its address online.",for the record the publisher lists its address online
+DMC-0726,AFFIRMATIVE_ANSWER,complex,CG-B04-002,"Yes, before coming here today I had already checked the publisher.",yes before coming here today i had already checked the publisher
+DMC-0727,NEGATIVE_ANSWER,complex,CG-B04-002,"No, despite having had the opportunity, I have not checked the publisher.",no despite having had the opportunity i have not checked the publisher
+DMC-0728,QUESTION,complex,CG-B04-002,"Before we move on from this source, could you tell me the following: who owns the publication?",before we move on from this source could you tell me the following who owns the publication
+DMC-0729,CLARIFICATION,complex,CG-B04-002,"Before we continue, could you explain again what you meant by ""unreliable""?",before we continue could you explain again what you meant by unreliable
+DMC-0730,GREETING,complex,CG-B04-003,"Good afternoon, it is a pleasure to meet you here at the media desk.",good afternoon it is a pleasure to meet you here at <shared> media desk
+DMC-0731,GOODBYE,complex,CG-B04-003,"I must leave the media desk now, so I will say goodbye until our next meeting.",i must leave <shared> media desk now so i will say goodbye until our next meeting
+DMC-0732,GRATITUDE,complex,CG-B04-003,I wanted to express my appreciation for your time spent checking the publisher.,i wanted to express my appreciation for your time spent checking <shared> publisher
+DMC-0733,AGREEMENT,complex,CG-B04-004,"After considering the alternatives, I have reached the same conclusion about the experiment as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0734,DISAGREEMENT,complex,CG-B04-004,"Although I follow your reasoning, I cannot accept your conclusion about the experiment.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0735,ACKNOWLEDGMENT,complex,CG-B04-004,"I have followed your explanation of the experiment, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0736,UNCERTAINTY,complex,CG-B04-004,"Until I have more information about the experiment, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0737,STATEMENT,complex,CG-B04-004,"For the record, the experiment used two samples.",for <shared> record <shared> <shared> used two samples
+DMC-0738,AFFIRMATIVE_ANSWER,complex,CG-B04-005,"Yes, before coming here today I had already read the laboratory notes.",yes before coming here today i had already read <shared> laboratory notes
+DMC-0739,NEGATIVE_ANSWER,complex,CG-B04-005,"No, despite having had the opportunity, I have not read the laboratory notes.",no despite having had <shared> opportunity i have not read <shared> laboratory notes
+DMC-0740,QUESTION,complex,CG-B04-005,"Before we move on from the experiment, could you tell me the following: when was the experiment conducted?",before we move on from <shared> experiment could you tell me <shared> following when was <shared> experiment conducted
+DMC-0741,CLARIFICATION,complex,CG-B04-005,"Before we continue, could you explain again what you meant by ""supports the hypothesis""?",before we continue could you explain again what you meant by supports <shared> hypothesis
+DMC-0742,GREETING,complex,CG-B04-006,"Good afternoon, it is a pleasure to meet you here at the science workshop.",good afternoon it is a pleasure to meet you here at <shared> science workshop
+DMC-0743,GOODBYE,complex,CG-B04-006,"I must leave the science workshop now, so I will say goodbye until our next meeting.",i must leave <shared> science workshop now so i will say goodbye until our next meeting
+DMC-0744,GRATITUDE,complex,CG-B04-006,I wanted to express my appreciation for your time spent explaining the experiment.,i wanted to express my appreciation for your time spent explaining <shared> experiment
+DMC-0745,AGREEMENT,complex,CG-B04-007,"After considering the alternatives, I have reached the same conclusion about the headline as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> headline as you
+DMC-0746,DISAGREEMENT,complex,CG-B04-007,"Although I follow your reasoning, I cannot accept your conclusion about the headline.",although i follow your reasoning i cannot accept your conclusion about <shared> headline
+DMC-0747,ACKNOWLEDGMENT,complex,CG-B04-007,"I have followed your explanation of the headline, without taking a position on it.",i have followed your explanation of <shared> headline without taking a position on it
+DMC-0748,UNCERTAINTY,complex,CG-B04-007,"Until I have more information about the headline, I cannot decide which interpretation to accept.",until i have more information about <shared> headline i cannot decide which interpretation to accept
+DMC-0749,STATEMENT,complex,CG-B04-007,"For the record, the article appeared on Monday.",for <shared> record <shared> article appeared on monday
+DMC-0750,AFFIRMATIVE_ANSWER,complex,CG-B04-008,"Yes, before coming here today I had already read the full article.",yes before coming here today i had already read <shared> full article
+DMC-0751,NEGATIVE_ANSWER,complex,CG-B04-008,"No, despite having had the opportunity, I have not read the full article.",no despite having had <shared> opportunity i have not read <shared> full article
+DMC-0752,QUESTION,complex,CG-B04-008,"Before we move on from the headline, could you tell me the following: who wrote the article?",before we move on from <shared> headline could you tell me <shared> following who wrote <shared> article
+DMC-0753,CLARIFICATION,complex,CG-B04-008,"Before we continue, could you explain again what you meant by ""exaggerates the findings""?",before we continue could you explain again what you meant by exaggerates <shared> findings
+DMC-0754,GREETING,complex,CG-B04-009,"Good afternoon, it is a pleasure to meet you here at the newsroom.",good afternoon it is a pleasure to meet you here at <shared> newsroom
+DMC-0755,GOODBYE,complex,CG-B04-009,"I must leave the newsroom now, so I will say goodbye until our next meeting.",i must leave <shared> newsroom now so i will say goodbye until our next meeting
+DMC-0756,GRATITUDE,complex,CG-B04-009,I wanted to express my appreciation for your time spent finding the article.,i wanted to express my appreciation for your time spent finding <shared> article
+DMC-0757,AGREEMENT,complex,CG-B04-010,"After considering the alternatives, I have reached the same conclusion about the receipt as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0758,DISAGREEMENT,complex,CG-B04-010,"Although I follow your reasoning, I cannot accept your conclusion about the receipt.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0759,ACKNOWLEDGMENT,complex,CG-B04-010,"I have followed your explanation of the receipt, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0760,UNCERTAINTY,complex,CG-B04-010,"Until I have more information about the receipt, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0761,STATEMENT,complex,CG-B04-010,"For the record, the receipt has a printed timestamp.",for <shared> record <shared> <shared> has a printed timestamp
+DMC-0762,AFFIRMATIVE_ANSWER,complex,CG-B04-011,"Yes, before coming here today I had already examined the receipt.",yes before coming here today i had already examined <shared> receipt
+DMC-0763,NEGATIVE_ANSWER,complex,CG-B04-011,"No, despite having had the opportunity, I have not examined the receipt.",no despite having had <shared> opportunity i have not examined <shared> receipt
+DMC-0764,QUESTION,complex,CG-B04-011,"Before we move on from the receipt, could you tell me the following: where was the receipt issued?",before we move on from <shared> receipt could you tell me <shared> following where was <shared> receipt issued
+DMC-0765,CLARIFICATION,complex,CG-B04-011,"Before we continue, could you explain again what you meant by ""establishes the date""?",before we continue could you explain again what you meant by establishes <shared> date
+DMC-0766,GREETING,complex,CG-B04-012,"Good afternoon, it is a pleasure to meet you here at the evidence desk.",good afternoon it is a pleasure to meet you here at <shared> evidence desk
+DMC-0767,GOODBYE,complex,CG-B04-012,"I must leave the evidence desk now, so I will say goodbye until our next meeting.",i must leave <shared> evidence desk now so i will say goodbye until our next meeting
+DMC-0768,GRATITUDE,complex,CG-B04-012,I wanted to express my appreciation for your time spent locating the receipt.,i wanted to express my appreciation for your time spent locating <shared> receipt
+DMC-0769,AGREEMENT,complex,CG-B04-013,"After considering the alternatives, I have reached the same conclusion about the recording as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0770,DISAGREEMENT,complex,CG-B04-013,"Although I follow your reasoning, I cannot accept your conclusion about the recording.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0771,ACKNOWLEDGMENT,complex,CG-B04-013,"I have followed your explanation of the recording, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0772,UNCERTAINTY,complex,CG-B04-013,"Until I have more information about the recording, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0773,STATEMENT,complex,CG-B04-013,"For the record, the recording lasts four minutes.",for <shared> record <shared> <shared> lasts four minutes
+DMC-0774,AFFIRMATIVE_ANSWER,complex,CG-B04-014,"Yes, before coming here today I had already listened to the original audio.",yes before coming here today i had already listened to the original audio
+DMC-0775,NEGATIVE_ANSWER,complex,CG-B04-014,"No, despite having had the opportunity, I have not listened to the original audio.",no despite having had the opportunity i have not listened to the original audio
+DMC-0776,QUESTION,complex,CG-B04-014,"Before we move on from the recording, could you tell me the following: who recorded the interview?",before we move on from the recording could you tell me the following who recorded the interview
+DMC-0777,CLARIFICATION,complex,CG-B04-014,"Before we continue, could you explain again what you meant by ""lacks context""?",before we continue could you explain again what you meant by lacks context
+DMC-0778,GREETING,complex,CG-B04-015,"Good afternoon, it is a pleasure to meet you here at the screening room.",good afternoon it is a pleasure to meet you here at <shared> screening room
+DMC-0779,GOODBYE,complex,CG-B04-015,"I must leave the screening room now, so I will say goodbye until our next meeting.",i must leave <shared> screening room now so i will say goodbye until our next meeting
+DMC-0780,GRATITUDE,complex,CG-B04-015,I wanted to express my appreciation for your time spent playing the recording.,i wanted to express my appreciation for your time spent playing <shared> recording
+DMC-0781,AGREEMENT,complex,CG-B04-016,"After considering the alternatives, I have reached the same conclusion about the model as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0782,DISAGREEMENT,complex,CG-B04-016,"Although I follow your reasoning, I cannot accept your conclusion about the model.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0783,ACKNOWLEDGMENT,complex,CG-B04-016,"I have followed your explanation of the model, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0784,UNCERTAINTY,complex,CG-B04-016,"Until I have more information about the model, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0785,STATEMENT,complex,CG-B04-016,"For the record, the model returns three scores.",for <shared> record <shared> <shared> returns three scores
+DMC-0786,AFFIRMATIVE_ANSWER,complex,CG-B04-017,"Yes, before coming here today I had already tested the latest model.",yes before coming here today i had already tested the latest model
+DMC-0787,NEGATIVE_ANSWER,complex,CG-B04-017,"No, despite having had the opportunity, I have not tested the latest model.",no despite having had the opportunity i have not tested the latest model
+DMC-0788,QUESTION,complex,CG-B04-017,"Before we move on from the model, could you tell me the following: which dataset was used?",before we move on from the model could you tell me the following which dataset was used
+DMC-0789,CLARIFICATION,complex,CG-B04-017,"Before we continue, could you explain again what you meant by ""more examples""?",before we continue could you explain again what you meant by more examples
+DMC-0790,GREETING,complex,CG-B04-018,"Good afternoon, it is a pleasure to meet you here at the AI workshop.",good afternoon it is a pleasure to meet you here at <shared> ai workshop
+DMC-0791,GOODBYE,complex,CG-B04-018,"I must leave the AI workshop now, so I will say goodbye until our next meeting.",i must leave <shared> ai workshop now so i will say goodbye until our next meeting
+DMC-0792,GRATITUDE,complex,CG-B04-018,I wanted to express my appreciation for your time spent demonstrating the model.,i wanted to express my appreciation for your time spent demonstrating <shared> model
+DMC-0793,AGREEMENT,complex,CG-B04-019,"After considering the alternatives, I have reached the same conclusion about the update as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0794,DISAGREEMENT,complex,CG-B04-019,"Although I follow your reasoning, I cannot accept your conclusion about the update.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0795,ACKNOWLEDGMENT,complex,CG-B04-019,"I have followed your explanation of the update, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0796,UNCERTAINTY,complex,CG-B04-019,"Until I have more information about the update, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0797,STATEMENT,complex,CG-B04-019,"For the record, the update requires a restart.",for <shared> record <shared> <shared> requires a restart
+DMC-0798,AFFIRMATIVE_ANSWER,complex,CG-B04-020,"Yes, before coming here today I had already installed the update.",yes before coming here today i had already installed the update
+DMC-0799,NEGATIVE_ANSWER,complex,CG-B04-020,"No, despite having had the opportunity, I have not installed the update.",no despite having had the opportunity i have not installed the update
+DMC-0800,QUESTION,complex,CG-B04-020,"Before we move on from the update, could you tell me the following: when was the update released?",before we move on from the update could you tell me the following when was the update released
+DMC-0801,CLARIFICATION,complex,CG-B04-020,"Before we continue, could you explain again what you meant by ""stability""?",before we continue could you explain again what you meant by stability
+DMC-0802,GREETING,complex,CG-B04-021,"Good afternoon, it is a pleasure to meet you here at the computer lab.",good afternoon it is a pleasure to meet you here at <shared> computer lab
+DMC-0803,GOODBYE,complex,CG-B04-021,"I must leave the computer lab now, so I will say goodbye until our next meeting.",i must leave <shared> computer lab now so i will say goodbye until our next meeting
+DMC-0804,GRATITUDE,complex,CG-B04-021,I wanted to express my appreciation for your time spent installing the update.,i wanted to express my appreciation for your time spent installing <shared> update
+DMC-0805,AGREEMENT,complex,CG-B04-022,"After considering the alternatives, I have reached the same conclusion about the assignment as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0806,DISAGREEMENT,complex,CG-B04-022,"Although I follow your reasoning, I cannot accept your conclusion about the assignment.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0807,ACKNOWLEDGMENT,complex,CG-B04-022,"I have followed your explanation of the assignment, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0808,UNCERTAINTY,complex,CG-B04-022,"Until I have more information about the assignment, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0809,STATEMENT,complex,CG-B04-022,"For the record, the assignment includes two exercises.",for <shared> record <shared> <shared> includes two exercises
+DMC-0810,AFFIRMATIVE_ANSWER,complex,CG-B04-023,"Yes, before coming here today I had already submitted the assignment.",yes before coming here today i had already submitted the assignment
+DMC-0811,NEGATIVE_ANSWER,complex,CG-B04-023,"No, despite having had the opportunity, I have not submitted the assignment.",no despite having had the opportunity i have not submitted the assignment
+DMC-0812,QUESTION,complex,CG-B04-023,"Before we move on from the assignment, could you tell me the following: when is the assignment due?",before we move on from the assignment could you tell me the following when is the assignment due
+DMC-0813,CLARIFICATION,complex,CG-B04-023,"Before we continue, could you explain again what you meant by ""clearer instructions""?",before we continue could you explain again what you meant by clearer instructions
+DMC-0814,GREETING,complex,CG-B04-024,"Good afternoon, it is a pleasure to meet you here at the classroom.",good afternoon it is a pleasure to meet you here at <shared> classroom
+DMC-0815,GOODBYE,complex,CG-B04-024,"I must leave the classroom now, so I will say goodbye until our next meeting.",i must leave <shared> classroom now so i will say goodbye until our next meeting
+DMC-0816,GRATITUDE,complex,CG-B04-024,I wanted to express my appreciation for your time spent explaining the assignment.,i wanted to express my appreciation for your time spent explaining <shared> assignment
+DMC-0817,AGREEMENT,complex,CG-B04-025,"After considering the alternatives, I have reached the same conclusion about the train schedule as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> schedule as you
+DMC-0818,DISAGREEMENT,complex,CG-B04-025,"Although I follow your reasoning, I cannot accept your conclusion about the train schedule.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared> schedule
+DMC-0819,ACKNOWLEDGMENT,complex,CG-B04-025,"I have followed your explanation of the train schedule, without taking a position on it.",i have followed your explanation of <shared> <shared> schedule without taking a position on it
+DMC-0820,UNCERTAINTY,complex,CG-B04-025,"Until I have more information about the train schedule, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> schedule i cannot decide which interpretation to accept
+DMC-0821,STATEMENT,complex,CG-B04-025,"For the record, the train stops at three stations.",for <shared> record <shared> <shared> stops at three stations
+DMC-0822,AFFIRMATIVE_ANSWER,complex,CG-B04-026,"Yes, before coming here today I had already checked the timetable.",yes before coming here today i had already checked the timetable
+DMC-0823,NEGATIVE_ANSWER,complex,CG-B04-026,"No, despite having had the opportunity, I have not checked the timetable.",no despite having had the opportunity i have not checked the timetable
+DMC-0824,QUESTION,complex,CG-B04-026,"Before we move on from the train schedule, could you tell me the following: which platform does the train leave from?",before we move on from the train schedule could you tell me the following which platform does the train leave from
+DMC-0825,CLARIFICATION,complex,CG-B04-026,"Before we continue, could you explain again what you meant by ""more convenient""?",before we continue could you explain again what you meant by more convenient
+DMC-0826,GREETING,complex,CG-B04-027,"Good afternoon, it is a pleasure to meet you here at the station.",good afternoon it is a pleasure to meet you here at <shared> station
+DMC-0827,GOODBYE,complex,CG-B04-027,"I must leave the station now, so I will say goodbye until our next meeting.",i must leave <shared> station now so i will say goodbye until our next meeting
+DMC-0828,GRATITUDE,complex,CG-B04-027,I wanted to express my appreciation for your time spent checking the timetable.,i wanted to express my appreciation for your time spent checking <shared> timetable
+DMC-0829,AGREEMENT,complex,CG-B04-028,"After considering the alternatives, I have reached the same conclusion about the apartment as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0830,DISAGREEMENT,complex,CG-B04-028,"Although I follow your reasoning, I cannot accept your conclusion about the apartment.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0831,ACKNOWLEDGMENT,complex,CG-B04-028,"I have followed your explanation of the apartment, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0832,UNCERTAINTY,complex,CG-B04-028,"Until I have more information about the apartment, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0833,STATEMENT,complex,CG-B04-028,"For the record, the apartment has two bedrooms.",for <shared> record <shared> <shared> has two bedrooms
+DMC-0834,AFFIRMATIVE_ANSWER,complex,CG-B04-029,"Yes, before coming here today I had already visited the apartment.",yes before coming here today i had already visited the apartment
+DMC-0835,NEGATIVE_ANSWER,complex,CG-B04-029,"No, despite having had the opportunity, I have not visited the apartment.",no despite having had the opportunity i have not visited the apartment
+DMC-0836,QUESTION,complex,CG-B04-029,"Before we move on from the apartment, could you tell me the following: how large is the apartment?",before we move on from the apartment could you tell me the following how large is the apartment
+DMC-0837,CLARIFICATION,complex,CG-B04-029,"Before we continue, could you explain again what you meant by ""better choice""?",before we continue could you explain again what you meant by better choice
+DMC-0838,GREETING,complex,CG-B04-030,"Good afternoon, it is a pleasure to meet you here at the viewing.",good afternoon it is a pleasure to meet you here at <shared> viewing
+DMC-0839,GOODBYE,complex,CG-B04-030,"I must leave the viewing now, so I will say goodbye until our next meeting.",i must leave <shared> viewing now so i will say goodbye until our next meeting
+DMC-0840,GRATITUDE,complex,CG-B04-030,I wanted to express my appreciation for your time spent arranging the visit.,i wanted to express my appreciation for your time spent arranging <shared> visit
+DMC-0841,AGREEMENT,complex,CG-B04-031,"After considering the alternatives, I have reached the same conclusion about the projection as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0842,DISAGREEMENT,complex,CG-B04-031,"Although I follow your reasoning, I cannot accept your conclusion about the projection.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0843,ACKNOWLEDGMENT,complex,CG-B04-031,"I have followed your explanation of the projection, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0844,UNCERTAINTY,complex,CG-B04-031,"Until I have more information about the projection, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0845,STATEMENT,complex,CG-B04-031,"For the record, the projection uses two screens.",for <shared> record <shared> <shared> uses two screens
+DMC-0846,AFFIRMATIVE_ANSWER,complex,CG-B04-032,"Yes, before coming here today I had already seen the projection.",yes before coming here today i had already seen the projection
+DMC-0847,NEGATIVE_ANSWER,complex,CG-B04-032,"No, despite having had the opportunity, I have not seen the projection.",no despite having had the opportunity i have not seen the projection
+DMC-0848,QUESTION,complex,CG-B04-032,"Before we move on from the projection, could you tell me the following: who designed the projection?",before we move on from the projection could you tell me the following who designed the projection
+DMC-0849,CLARIFICATION,complex,CG-B04-032,"Before we continue, could you explain again what you meant by ""darker room""?",before we continue could you explain again what you meant by darker room
+DMC-0850,GREETING,complex,CG-B04-033,"Good afternoon, it is a pleasure to meet you here at the gallery.",good afternoon it is a pleasure to meet you here at <shared> gallery
+DMC-0851,GOODBYE,complex,CG-B04-033,"I must leave the gallery now, so I will say goodbye until our next meeting.",i must leave <shared> gallery now so i will say goodbye until our next meeting
+DMC-0852,GRATITUDE,complex,CG-B04-033,I wanted to express my appreciation for your time spent showing the projection.,i wanted to express my appreciation for your time spent showing <shared> projection
+DMC-0853,AGREEMENT,complex,CG-B04-034,"After considering the alternatives, I have reached the same conclusion about the interface as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0854,DISAGREEMENT,complex,CG-B04-034,"Although I follow your reasoning, I cannot accept your conclusion about the interface.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0855,ACKNOWLEDGMENT,complex,CG-B04-034,"I have followed your explanation of the interface, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0856,UNCERTAINTY,complex,CG-B04-034,"Until I have more information about the interface, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0857,STATEMENT,complex,CG-B04-034,"For the record, the interface has a confirmation button.",for <shared> record <shared> <shared> has a confirmation button
+DMC-0858,AFFIRMATIVE_ANSWER,complex,CG-B04-035,"Yes, before coming here today I had already tried the interface.",yes before coming here today i had already tried the interface
+DMC-0859,NEGATIVE_ANSWER,complex,CG-B04-035,"No, despite having had the opportunity, I have not tried the interface.",no despite having had the opportunity i have not tried the interface
+DMC-0860,QUESTION,complex,CG-B04-035,"Before we move on from the interface, could you tell me the following: how long does the interface wait?",before we move on from the interface could you tell me the following how long does the interface wait
+DMC-0861,CLARIFICATION,complex,CG-B04-035,"Before we continue, could you explain again what you meant by ""wait for a response""?",before we continue could you explain again what you meant by wait for a response
+DMC-0862,GREETING,complex,CG-B04-036,"Good afternoon, it is a pleasure to meet you here at the installation.",good afternoon it is a pleasure to meet you here at <shared> installation
+DMC-0863,GOODBYE,complex,CG-B04-036,"I must leave the installation now, so I will say goodbye until our next meeting.",i must leave <shared> installation now so i will say goodbye until our next meeting
+DMC-0864,GRATITUDE,complex,CG-B04-036,I wanted to express my appreciation for your time spent guiding me through the interface.,i wanted to express my appreciation for your time spent guiding me through <shared> interface
+DMC-0865,AGREEMENT,complex,CG-B04-037,"After considering the alternatives, I have reached the same conclusion about the correction as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0866,DISAGREEMENT,complex,CG-B04-037,"Although I follow your reasoning, I cannot accept your conclusion about the correction.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0867,ACKNOWLEDGMENT,complex,CG-B04-037,"I have followed your explanation of the correction, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0868,UNCERTAINTY,complex,CG-B04-037,"Until I have more information about the correction, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0869,STATEMENT,complex,CG-B04-037,"For the record, the correction appears below the article.",for <shared> record <shared> <shared> appears below <shared> article
+DMC-0870,AFFIRMATIVE_ANSWER,complex,CG-B04-038,"Yes, before coming here today I had already read the correction.",yes before coming here today i had already read the correction
+DMC-0871,NEGATIVE_ANSWER,complex,CG-B04-038,"No, despite having had the opportunity, I have not read the correction.",no despite having had the opportunity i have not read the correction
+DMC-0872,QUESTION,complex,CG-B04-038,"Before we move on from the correction, could you tell me the following: where was the correction published?",before we move on from the correction could you tell me the following where was the correction published
+DMC-0873,CLARIFICATION,complex,CG-B04-038,"Before we continue, could you explain again what you meant by ""more attention""?",before we continue could you explain again what you meant by more attention
+DMC-0874,GREETING,complex,CG-B04-039,"Good afternoon, it is a pleasure to meet you here at the press briefing.",good afternoon it is a pleasure to meet you here at <shared> press briefing
+DMC-0875,GOODBYE,complex,CG-B04-039,"I must leave the press briefing now, so I will say goodbye until our next meeting.",i must leave <shared> press briefing now so i will say goodbye until our next meeting
+DMC-0876,GRATITUDE,complex,CG-B04-039,I wanted to express my appreciation for your time spent pointing out the correction.,i wanted to express my appreciation for your time spent pointing out <shared> correction
+DMC-0877,AGREEMENT,complex,CG-B04-040,"After considering the alternatives, I have reached the same conclusion about the photograph as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0878,DISAGREEMENT,complex,CG-B04-040,"Although I follow your reasoning, I cannot accept your conclusion about the photograph.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0879,ACKNOWLEDGMENT,complex,CG-B04-040,"I have followed your explanation of the photograph, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0880,UNCERTAINTY,complex,CG-B04-040,"Until I have more information about the photograph, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0881,STATEMENT,complex,CG-B04-040,"For the record, the photograph shows a street sign.",for <shared> record <shared> <shared> shows a street sign
+DMC-0882,AFFIRMATIVE_ANSWER,complex,CG-B04-041,"Yes, before coming here today I had already examined the photograph.",yes before coming here today i had already examined the photograph
+DMC-0883,NEGATIVE_ANSWER,complex,CG-B04-041,"No, despite having had the opportunity, I have not examined the photograph.",no despite having had the opportunity i have not examined the photograph
+DMC-0884,QUESTION,complex,CG-B04-041,"Before we move on from the photograph, could you tell me the following: when was the photograph taken?",before we move on from the photograph could you tell me the following when was the photograph taken
+DMC-0885,CLARIFICATION,complex,CG-B04-041,"Before we continue, could you explain again what you meant by ""insufficient proof""?",before we continue could you explain again what you meant by insufficient proof
+DMC-0886,GREETING,complex,CG-B04-042,"Good afternoon, it is a pleasure to meet you here at the archive.",good afternoon it is a pleasure to meet you here at <shared> archive
+DMC-0887,GOODBYE,complex,CG-B04-042,"I must leave the archive now, so I will say goodbye until our next meeting.",i must leave <shared> archive now so i will say goodbye until our next meeting
+DMC-0888,GRATITUDE,complex,CG-B04-042,I wanted to express my appreciation for your time spent retrieving the photograph.,i wanted to express my appreciation for your time spent retrieving <shared> photograph
+DMC-0889,AGREEMENT,complex,CG-B04-043,"After considering the alternatives, I have reached the same conclusion about the interview as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0890,DISAGREEMENT,complex,CG-B04-043,"Although I follow your reasoning, I cannot accept your conclusion about the interview.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0891,ACKNOWLEDGMENT,complex,CG-B04-043,"I have followed your explanation of the interview, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0892,UNCERTAINTY,complex,CG-B04-043,"Until I have more information about the interview, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0893,STATEMENT,complex,CG-B04-043,"For the record, the interview includes two speakers.",for <shared> record <shared> <shared> includes two speakers
+DMC-0894,AFFIRMATIVE_ANSWER,complex,CG-B04-044,"Yes, before coming here today I had already reviewed the interview.",yes before coming here today i had already reviewed the interview
+DMC-0895,NEGATIVE_ANSWER,complex,CG-B04-044,"No, despite having had the opportunity, I have not reviewed the interview.",no despite having had the opportunity i have not reviewed the interview
+DMC-0896,QUESTION,complex,CG-B04-044,"Before we move on from the interview, could you tell me the following: who conducted the interview?",before we move on from the interview could you tell me the following who conducted the interview
+DMC-0897,CLARIFICATION,complex,CG-B04-044,"Before we continue, could you explain again what you meant by ""useful reference""?",before we continue could you explain again what you meant by useful reference
+DMC-0898,GREETING,complex,CG-B04-045,"Good afternoon, it is a pleasure to meet you here at the research desk.",good afternoon it is a pleasure to meet you here at <shared> research desk
+DMC-0899,GOODBYE,complex,CG-B04-045,"I must leave the research desk now, so I will say goodbye until our next meeting.",i must leave <shared> research desk now so i will say goodbye until our next meeting
+DMC-0900,GRATITUDE,complex,CG-B04-045,I wanted to express my appreciation for your time spent sharing the interview.,i wanted to express my appreciation for your time spent sharing <shared> interview
+DMC-0901,AGREEMENT,complex,CG-B04-046,"After considering the alternatives, I have reached the same conclusion about the subtitles as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0902,DISAGREEMENT,complex,CG-B04-046,"Although I follow your reasoning, I cannot accept your conclusion about the subtitles.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0903,ACKNOWLEDGMENT,complex,CG-B04-046,"I have followed your explanation of the subtitles, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0904,UNCERTAINTY,complex,CG-B04-046,"Until I have more information about the subtitles, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0905,STATEMENT,complex,CG-B04-046,"For the record, the subtitles appear beneath the image.",for <shared> record <shared> <shared> appear beneath <shared> image
+DMC-0906,AFFIRMATIVE_ANSWER,complex,CG-B04-047,"Yes, before coming here today I had already reviewed the subtitles.",yes before coming here today i had already reviewed the subtitles
+DMC-0907,NEGATIVE_ANSWER,complex,CG-B04-047,"No, despite having had the opportunity, I have not reviewed the subtitles.",no despite having had the opportunity i have not reviewed the subtitles
+DMC-0908,QUESTION,complex,CG-B04-047,"Before we move on from the subtitles, could you tell me the following: which language are the subtitles in?",before we move on from the subtitles could you tell me the following which language are the subtitles in
+DMC-0909,CLARIFICATION,complex,CG-B04-047,"Before we continue, could you explain again what you meant by ""revision""?",before we continue could you explain again what you meant by revision
+DMC-0910,GREETING,complex,CG-B04-048,"Good afternoon, it is a pleasure to meet you here at the editing studio.",good afternoon it is a pleasure to meet you here at <shared> editing studio
+DMC-0911,GOODBYE,complex,CG-B04-048,"I must leave the editing studio now, so I will say goodbye until our next meeting.",i must leave <shared> editing studio now so i will say goodbye until our next meeting
+DMC-0912,GRATITUDE,complex,CG-B04-048,I wanted to express my appreciation for your time spent reviewing the subtitles.,i wanted to express my appreciation for your time spent reviewing <shared> subtitles
+DMC-0913,AGREEMENT,complex,CG-B04-049,"After considering the alternatives, I have reached the same conclusion about the measurement as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0914,DISAGREEMENT,complex,CG-B04-049,"Although I follow your reasoning, I cannot accept your conclusion about the measurement.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0915,ACKNOWLEDGMENT,complex,CG-B04-049,"I have followed your explanation of the measurement, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0916,UNCERTAINTY,complex,CG-B04-049,"Until I have more information about the measurement, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0917,STATEMENT,complex,CG-B04-049,"For the record, the measurement is expressed in grams.",for <shared> record <shared> <shared> is expressed in grams
+DMC-0918,AFFIRMATIVE_ANSWER,complex,CG-B04-050,"Yes, before coming here today I had already recorded the measurement.",yes before coming here today i had already recorded the measurement
+DMC-0919,NEGATIVE_ANSWER,complex,CG-B04-050,"No, despite having had the opportunity, I have not recorded the measurement.",no despite having had the opportunity i have not recorded the measurement
+DMC-0920,QUESTION,complex,CG-B04-050,"Before we move on from the measurement, could you tell me the following: which instrument was used?",before we move on from the measurement could you tell me the following which instrument was used
+DMC-0921,CLARIFICATION,complex,CG-B04-050,"Before we continue, could you explain again what you meant by ""repeated""?",before we continue could you explain again what you meant by repeated
+DMC-0922,GREETING,complex,CG-B04-051,"Good afternoon, it is a pleasure to meet you here at the laboratory.",good afternoon it is a pleasure to meet you here at <shared> laboratory
+DMC-0923,GOODBYE,complex,CG-B04-051,"I must leave the laboratory now, so I will say goodbye until our next meeting.",i must leave <shared> laboratory now so i will say goodbye until our next meeting
+DMC-0924,GRATITUDE,complex,CG-B04-051,I wanted to express my appreciation for your time spent checking the measurement.,i wanted to express my appreciation for your time spent checking <shared> measurement
+DMC-0925,AGREEMENT,complex,CG-B04-052,"After considering the alternatives, I have reached the same conclusion about the lecture as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0926,DISAGREEMENT,complex,CG-B04-052,"Although I follow your reasoning, I cannot accept your conclusion about the lecture.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0927,ACKNOWLEDGMENT,complex,CG-B04-052,"I have followed your explanation of the lecture, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0928,UNCERTAINTY,complex,CG-B04-052,"Until I have more information about the lecture, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0929,STATEMENT,complex,CG-B04-052,"For the record, the lecture lasted an hour.",for <shared> record <shared> <shared> lasted an hour
+DMC-0930,AFFIRMATIVE_ANSWER,complex,CG-B04-053,"Yes, before coming here today I had already attended the lecture.",yes before coming here today i had already attended the lecture
+DMC-0931,NEGATIVE_ANSWER,complex,CG-B04-053,"No, despite having had the opportunity, I have not attended the lecture.",no despite having had the opportunity i have not attended the lecture
+DMC-0932,QUESTION,complex,CG-B04-053,"Before we move on from the lecture, could you tell me the following: who delivered the lecture?",before we move on from the lecture could you tell me the following who delivered the lecture
+DMC-0933,CLARIFICATION,complex,CG-B04-053,"Before we continue, could you explain again what you meant by ""an example""?",before we continue could you explain again what you meant by an example
+DMC-0934,GREETING,complex,CG-B04-054,"Good afternoon, it is a pleasure to meet you here at the seminar.",good afternoon it is a pleasure to meet you here at <shared> seminar
+DMC-0935,GOODBYE,complex,CG-B04-054,"I must leave the seminar now, so I will say goodbye until our next meeting.",i must leave <shared> seminar now so i will say goodbye until our next meeting
+DMC-0936,GRATITUDE,complex,CG-B04-054,I wanted to express my appreciation for your time spent explaining the lecture.,i wanted to express my appreciation for your time spent explaining <shared> lecture
+DMC-0937,AGREEMENT,complex,CG-B04-055,"After considering the alternatives, I have reached the same conclusion about the appointment as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0938,DISAGREEMENT,complex,CG-B04-055,"Although I follow your reasoning, I cannot accept your conclusion about the appointment.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0939,ACKNOWLEDGMENT,complex,CG-B04-055,"I have followed your explanation of the appointment, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0940,UNCERTAINTY,complex,CG-B04-055,"Until I have more information about the appointment, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0941,STATEMENT,complex,CG-B04-055,"For the record, the appointment is on Thursday.",for <shared> record <shared> <shared> is on thursday
+DMC-0942,AFFIRMATIVE_ANSWER,complex,CG-B04-056,"Yes, before coming here today I had already confirmed the appointment.",yes before coming here today i had already confirmed the appointment
+DMC-0943,NEGATIVE_ANSWER,complex,CG-B04-056,"No, despite having had the opportunity, I have not confirmed the appointment.",no despite having had the opportunity i have not confirmed the appointment
+DMC-0944,QUESTION,complex,CG-B04-056,"Before we move on from the appointment, could you tell me the following: where is the appointment scheduled?",before we move on from the appointment could you tell me the following where is the appointment scheduled
+DMC-0945,CLARIFICATION,complex,CG-B04-056,"Before we continue, could you explain again what you meant by ""suits us better""?",before we continue could you explain again what you meant by suits us better
+DMC-0946,GREETING,complex,CG-B04-057,"Good afternoon, it is a pleasure to meet you here at the reception desk.",good afternoon it is a pleasure to meet you here at <shared> reception desk
+DMC-0947,GOODBYE,complex,CG-B04-057,"I must leave the reception desk now, so I will say goodbye until our next meeting.",i must leave <shared> reception desk now so i will say goodbye until our next meeting
+DMC-0948,GRATITUDE,complex,CG-B04-057,I wanted to express my appreciation for your time spent arranging the appointment.,i wanted to express my appreciation for your time spent arranging <shared> appointment
+DMC-0949,AGREEMENT,complex,CG-B04-058,"After considering the alternatives, I have reached the same conclusion about the sculpture as you.",after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you
+DMC-0950,DISAGREEMENT,complex,CG-B04-058,"Although I follow your reasoning, I cannot accept your conclusion about the sculpture.",although i follow your reasoning i cannot accept your conclusion about <shared> <shared>
+DMC-0951,ACKNOWLEDGMENT,complex,CG-B04-058,"I have followed your explanation of the sculpture, without taking a position on it.",i have followed your explanation of <shared> <shared> without taking a position on it
+DMC-0952,UNCERTAINTY,complex,CG-B04-058,"Until I have more information about the sculpture, I cannot decide which interpretation to accept.",until i have more information about <shared> <shared> i cannot decide which interpretation to accept
+DMC-0953,STATEMENT,complex,CG-B04-058,"For the record, the sculpture stands on a wooden base.",for <shared> record <shared> <shared> stands on a wooden base
+DMC-0954,AFFIRMATIVE_ANSWER,complex,CG-B04-059,"Yes, before coming here today I had already seen the sculpture.",yes before coming here today i had already seen the sculpture
+DMC-0955,NEGATIVE_ANSWER,complex,CG-B04-059,"No, despite having had the opportunity, I have not seen the sculpture.",no despite having had the opportunity i have not seen the sculpture
+DMC-0956,QUESTION,complex,CG-B04-059,"Before we move on from the sculpture, could you tell me the following: what material is the sculpture made of?",before we move on from the sculpture could you tell me the following what material is the sculpture made of
+DMC-0957,CLARIFICATION,complex,CG-B04-059,"Before we continue, could you explain again what you meant by ""more space""?",before we continue could you explain again what you meant by more space
+DMC-0958,GREETING,complex,CG-B04-060,"Good afternoon, it is a pleasure to meet you here at the exhibition.",good afternoon it is a pleasure to meet you here at <shared> exhibition
+DMC-0959,GOODBYE,complex,CG-B04-060,"I must leave the exhibition now, so I will say goodbye until our next meeting.",i must leave <shared> exhibition now so i will say goodbye until our next meeting
+DMC-0960,GRATITUDE,complex,CG-B04-060,I wanted to express my appreciation for your time spent introducing the sculpture.,i wanted to express my appreciation for your time spent introducing <shared> sculpture
+DMC-0961,AGREEMENT,challenging,CG-B05-001,I have no objection to your conclusion about this source.,i have no objection to your conclusion about this source
+DMC-0962,DISAGREEMENT,challenging,CG-B05-001,I would not endorse the claim that this source is unreliable.,i would not endorse the claim that this source is unreliable
+DMC-0963,ACKNOWLEDGMENT,challenging,CG-B05-001,I did not miss your point about this source.,i did not miss your point about this source
+DMC-0964,UNCERTAINTY,challenging,CG-B05-001,I cannot say for certain that this source is unreliable.,i cannot say for certain that this source is unreliable
+DMC-0965,STATEMENT,challenging,CG-B05-001,It is worth noting that the publisher lists its address online.,it is worth noting that the publisher lists its address online
+DMC-0966,AFFIRMATIVE_ANSWER,challenging,CG-B05-002,"Indeed, I can confirm that I have checked the publisher.",indeed i can confirm that i have checked the publisher
+DMC-0967,NEGATIVE_ANSWER,challenging,CG-B05-002,"I cannot confirm that I have checked the publisher, because I have not.",i cannot confirm that i have checked the publisher because i have not
+DMC-0968,QUESTION,challenging,CG-B05-002,Would you happen to know the answer to this: who owns the publication?,would you happen to know the answer to this who owns the publication
+DMC-0969,CLARIFICATION,challenging,CG-B05-002,"Would you mind explaining ""unreliable"" in other words?",would you mind explaining unreliable in other words
+DMC-0970,GREETING,challenging,CG-B05-003,"We have not met before, so hello from the media desk.",we have not met before so hello from <shared> media desk
+DMC-0971,GOODBYE,challenging,CG-B05-003,I cannot stay at the media desk any longer; see you next time.,i cannot stay at <shared> media desk any longer see you next time
+DMC-0972,GRATITUDE,challenging,CG-B05-003,I cannot thank you enough for checking the publisher.,i cannot thank you enough for checking <shared> publisher
+DMC-0973,AGREEMENT,challenging,CG-B05-004,I have no objection to your conclusion about the experiment.,i have no objection to your conclusion about <shared> <shared>
+DMC-0974,DISAGREEMENT,challenging,CG-B05-004,I would not endorse the claim that the experiment supports the hypothesis.,i would not endorse <shared> claim that <shared> <shared> supports <shared> hypothesis
+DMC-0975,ACKNOWLEDGMENT,challenging,CG-B05-004,I did not miss your point about the experiment.,i did not miss your point about <shared> <shared>
+DMC-0976,UNCERTAINTY,challenging,CG-B05-004,I cannot say for certain that the experiment supports the hypothesis.,i cannot say for certain that <shared> <shared> supports <shared> hypothesis
+DMC-0977,STATEMENT,challenging,CG-B05-004,It is worth noting that the experiment used two samples.,it is worth noting that <shared> <shared> used two samples
+DMC-0978,AFFIRMATIVE_ANSWER,challenging,CG-B05-005,"Indeed, I can confirm that I have read the laboratory notes.",indeed i can confirm that i have read <shared> laboratory notes
+DMC-0979,NEGATIVE_ANSWER,challenging,CG-B05-005,"I cannot confirm that I have read the laboratory notes, because I have not.",i cannot confirm that i have read <shared> laboratory notes because i have not
+DMC-0980,QUESTION,challenging,CG-B05-005,Would you happen to know the answer to this: when was the experiment conducted?,would you happen to know <shared> answer to this when was <shared> experiment conducted
+DMC-0981,CLARIFICATION,challenging,CG-B05-005,"Would you mind explaining ""supports the hypothesis"" in other words?",would you mind explaining supports <shared> hypothesis in other words
+DMC-0982,GREETING,challenging,CG-B05-006,"We have not met before, so hello from the science workshop.",we have not met before so hello from <shared> science workshop
+DMC-0983,GOODBYE,challenging,CG-B05-006,I cannot stay at the science workshop any longer; see you next time.,i cannot stay at <shared> science workshop any longer see you next time
+DMC-0984,GRATITUDE,challenging,CG-B05-006,I cannot thank you enough for explaining the experiment.,i cannot thank you enough for explaining <shared> experiment
+DMC-0985,AGREEMENT,challenging,CG-B05-007,I have no objection to your conclusion about the headline.,i have no objection to your conclusion about <shared> headline
+DMC-0986,DISAGREEMENT,challenging,CG-B05-007,I would not endorse the claim that the headline exaggerates the findings.,i would not endorse <shared> claim that <shared> headline exaggerates <shared> findings
+DMC-0987,ACKNOWLEDGMENT,challenging,CG-B05-007,I did not miss your point about the headline.,i did not miss your point about <shared> headline
+DMC-0988,UNCERTAINTY,challenging,CG-B05-007,I cannot say for certain that the headline exaggerates the findings.,i cannot say for certain that <shared> headline exaggerates <shared> findings
+DMC-0989,STATEMENT,challenging,CG-B05-007,It is worth noting that the article appeared on Monday.,it is worth noting that <shared> article appeared on monday
+DMC-0990,AFFIRMATIVE_ANSWER,challenging,CG-B05-008,"Indeed, I can confirm that I have read the full article.",indeed i can confirm that i have read <shared> full article
+DMC-0991,NEGATIVE_ANSWER,challenging,CG-B05-008,"I cannot confirm that I have read the full article, because I have not.",i cannot confirm that i have read <shared> full article because i have not
+DMC-0992,QUESTION,challenging,CG-B05-008,Would you happen to know the answer to this: who wrote the article?,would you happen to know <shared> answer to this who wrote <shared> article
+DMC-0993,CLARIFICATION,challenging,CG-B05-008,"Would you mind explaining ""exaggerates the findings"" in other words?",would you mind explaining exaggerates <shared> findings in other words
+DMC-0994,GREETING,challenging,CG-B05-009,"We have not met before, so hello from the newsroom.",we have not met before so hello from <shared> newsroom
+DMC-0995,GOODBYE,challenging,CG-B05-009,I cannot stay at the newsroom any longer; see you next time.,i cannot stay at <shared> newsroom any longer see you next time
+DMC-0996,GRATITUDE,challenging,CG-B05-009,I cannot thank you enough for finding the article.,i cannot thank you enough for finding <shared> article
+DMC-0997,AGREEMENT,challenging,CG-B05-010,I have no objection to your conclusion about the receipt.,i have no objection to your conclusion about <shared> <shared>
+DMC-0998,DISAGREEMENT,challenging,CG-B05-010,I would not endorse the claim that the receipt establishes the date.,i would not endorse <shared> claim that <shared> <shared> establishes <shared> date
+DMC-0999,ACKNOWLEDGMENT,challenging,CG-B05-010,I did not miss your point about the receipt.,i did not miss your point about <shared> <shared>
+DMC-1000,UNCERTAINTY,challenging,CG-B05-010,I cannot say for certain that the receipt establishes the date.,i cannot say for certain that <shared> <shared> establishes <shared> date
+DMC-1001,STATEMENT,challenging,CG-B05-010,It is worth noting that the receipt has a printed timestamp.,it is worth noting that <shared> <shared> has a printed timestamp
+DMC-1002,AFFIRMATIVE_ANSWER,challenging,CG-B05-011,"Indeed, I can confirm that I have examined the receipt.",indeed i can confirm that i have examined <shared> receipt
+DMC-1003,NEGATIVE_ANSWER,challenging,CG-B05-011,"I cannot confirm that I have examined the receipt, because I have not.",i cannot confirm that i have examined <shared> receipt because i have not
+DMC-1004,QUESTION,challenging,CG-B05-011,Would you happen to know the answer to this: where was the receipt issued?,would you happen to know <shared> answer to this where was <shared> receipt issued
+DMC-1005,CLARIFICATION,challenging,CG-B05-011,"Would you mind explaining ""establishes the date"" in other words?",would you mind explaining establishes <shared> date in other words
+DMC-1006,GREETING,challenging,CG-B05-012,"We have not met before, so hello from the evidence desk.",we have not met before so hello from <shared> evidence desk
+DMC-1007,GOODBYE,challenging,CG-B05-012,I cannot stay at the evidence desk any longer; see you next time.,i cannot stay at <shared> evidence desk any longer see you next time
+DMC-1008,GRATITUDE,challenging,CG-B05-012,I cannot thank you enough for locating the receipt.,i cannot thank you enough for locating <shared> receipt
+DMC-1009,AGREEMENT,challenging,CG-B05-013,I have no objection to your conclusion about the recording.,i have no objection to your conclusion about <shared> <shared>
+DMC-1010,DISAGREEMENT,challenging,CG-B05-013,I would not endorse the claim that the recording lacks context.,i would not endorse <shared> claim that <shared> <shared> lacks context
+DMC-1011,ACKNOWLEDGMENT,challenging,CG-B05-013,I did not miss your point about the recording.,i did not miss your point about <shared> <shared>
+DMC-1012,UNCERTAINTY,challenging,CG-B05-013,I cannot say for certain that the recording lacks context.,i cannot say for certain that <shared> <shared> lacks context
+DMC-1013,STATEMENT,challenging,CG-B05-013,It is worth noting that the recording lasts four minutes.,it is worth noting that <shared> <shared> lasts four minutes
+DMC-1014,AFFIRMATIVE_ANSWER,challenging,CG-B05-014,"Indeed, I can confirm that I have listened to the original audio.",indeed i can confirm that i have listened to the original audio
+DMC-1015,NEGATIVE_ANSWER,challenging,CG-B05-014,"I cannot confirm that I have listened to the original audio, because I have not.",i cannot confirm that i have listened to the original audio because i have not
+DMC-1016,QUESTION,challenging,CG-B05-014,Would you happen to know the answer to this: who recorded the interview?,would you happen to know the answer to this who recorded the interview
+DMC-1017,CLARIFICATION,challenging,CG-B05-014,"Would you mind explaining ""lacks context"" in other words?",would you mind explaining lacks context in other words
+DMC-1018,GREETING,challenging,CG-B05-015,"We have not met before, so hello from the screening room.",we have not met before so hello from <shared> screening room
+DMC-1019,GOODBYE,challenging,CG-B05-015,I cannot stay at the screening room any longer; see you next time.,i cannot stay at <shared> screening room any longer see you next time
+DMC-1020,GRATITUDE,challenging,CG-B05-015,I cannot thank you enough for playing the recording.,i cannot thank you enough for playing <shared> recording
+DMC-1021,AGREEMENT,challenging,CG-B05-016,I have no objection to your conclusion about the model.,i have no objection to your conclusion about <shared> <shared>
+DMC-1022,DISAGREEMENT,challenging,CG-B05-016,I would not endorse the claim that the model needs more examples.,i would not endorse <shared> claim that <shared> <shared> needs more examples
+DMC-1023,ACKNOWLEDGMENT,challenging,CG-B05-016,I did not miss your point about the model.,i did not miss your point about <shared> <shared>
+DMC-1024,UNCERTAINTY,challenging,CG-B05-016,I cannot say for certain that the model needs more examples.,i cannot say for certain that <shared> <shared> needs more examples
+DMC-1025,STATEMENT,challenging,CG-B05-016,It is worth noting that the model returns three scores.,it is worth noting that <shared> <shared> returns three scores
+DMC-1026,AFFIRMATIVE_ANSWER,challenging,CG-B05-017,"Indeed, I can confirm that I have tested the latest model.",indeed i can confirm that i have tested the latest model
+DMC-1027,NEGATIVE_ANSWER,challenging,CG-B05-017,"I cannot confirm that I have tested the latest model, because I have not.",i cannot confirm that i have tested the latest model because i have not
+DMC-1028,QUESTION,challenging,CG-B05-017,Would you happen to know the answer to this: which dataset was used?,would you happen to know the answer to this which dataset was used
+DMC-1029,CLARIFICATION,challenging,CG-B05-017,"Would you mind explaining ""more examples"" in other words?",would you mind explaining more examples in other words
+DMC-1030,GREETING,challenging,CG-B05-018,"We have not met before, so hello from the AI workshop.",we have not met before so hello from <shared> ai workshop
+DMC-1031,GOODBYE,challenging,CG-B05-018,I cannot stay at the AI workshop any longer; see you next time.,i cannot stay at <shared> ai workshop any longer see you next time
+DMC-1032,GRATITUDE,challenging,CG-B05-018,I cannot thank you enough for demonstrating the model.,i cannot thank you enough for demonstrating <shared> model
+DMC-1033,AGREEMENT,challenging,CG-B05-019,I have no objection to your conclusion about the update.,i have no objection to your conclusion about <shared> <shared>
+DMC-1034,DISAGREEMENT,challenging,CG-B05-019,I would not endorse the claim that the update improves stability.,i would not endorse <shared> claim that <shared> <shared> improves stability
+DMC-1035,ACKNOWLEDGMENT,challenging,CG-B05-019,I did not miss your point about the update.,i did not miss your point about <shared> <shared>
+DMC-1036,UNCERTAINTY,challenging,CG-B05-019,I cannot say for certain that the update improves stability.,i cannot say for certain that <shared> <shared> improves stability
+DMC-1037,STATEMENT,challenging,CG-B05-019,It is worth noting that the update requires a restart.,it is worth noting that <shared> <shared> requires a restart
+DMC-1038,AFFIRMATIVE_ANSWER,challenging,CG-B05-020,"Indeed, I can confirm that I have installed the update.",indeed i can confirm that i have installed the update
+DMC-1039,NEGATIVE_ANSWER,challenging,CG-B05-020,"I cannot confirm that I have installed the update, because I have not.",i cannot confirm that i have installed the update because i have not
+DMC-1040,QUESTION,challenging,CG-B05-020,Would you happen to know the answer to this: when was the update released?,would you happen to know the answer to this when was the update released
+DMC-1041,CLARIFICATION,challenging,CG-B05-020,"Would you mind explaining ""stability"" in other words?",would you mind explaining stability in other words
+DMC-1042,GREETING,challenging,CG-B05-021,"We have not met before, so hello from the computer lab.",we have not met before so hello from <shared> computer lab
+DMC-1043,GOODBYE,challenging,CG-B05-021,I cannot stay at the computer lab any longer; see you next time.,i cannot stay at <shared> computer lab any longer see you next time
+DMC-1044,GRATITUDE,challenging,CG-B05-021,I cannot thank you enough for installing the update.,i cannot thank you enough for installing <shared> update
+DMC-1045,AGREEMENT,challenging,CG-B05-022,I have no objection to your conclusion about the assignment.,i have no objection to your conclusion about <shared> <shared>
+DMC-1046,DISAGREEMENT,challenging,CG-B05-022,I would not endorse the claim that the assignment needs clearer instructions.,i would not endorse <shared> claim that <shared> <shared> needs clearer instructions
+DMC-1047,ACKNOWLEDGMENT,challenging,CG-B05-022,I did not miss your point about the assignment.,i did not miss your point about <shared> <shared>
+DMC-1048,UNCERTAINTY,challenging,CG-B05-022,I cannot say for certain that the assignment needs clearer instructions.,i cannot say for certain that <shared> <shared> needs clearer instructions
+DMC-1049,STATEMENT,challenging,CG-B05-022,It is worth noting that the assignment includes two exercises.,it is worth noting that <shared> <shared> includes two exercises
+DMC-1050,AFFIRMATIVE_ANSWER,challenging,CG-B05-023,"Indeed, I can confirm that I have submitted the assignment.",indeed i can confirm that i have submitted the assignment
+DMC-1051,NEGATIVE_ANSWER,challenging,CG-B05-023,"I cannot confirm that I have submitted the assignment, because I have not.",i cannot confirm that i have submitted the assignment because i have not
+DMC-1052,QUESTION,challenging,CG-B05-023,Would you happen to know the answer to this: when is the assignment due?,would you happen to know the answer to this when is the assignment due
+DMC-1053,CLARIFICATION,challenging,CG-B05-023,"Would you mind explaining ""clearer instructions"" in other words?",would you mind explaining clearer instructions in other words
+DMC-1054,GREETING,challenging,CG-B05-024,"We have not met before, so hello from the classroom.",we have not met before so hello from <shared> classroom
+DMC-1055,GOODBYE,challenging,CG-B05-024,I cannot stay at the classroom any longer; see you next time.,i cannot stay at <shared> classroom any longer see you next time
+DMC-1056,GRATITUDE,challenging,CG-B05-024,I cannot thank you enough for explaining the assignment.,i cannot thank you enough for explaining <shared> assignment
+DMC-1057,AGREEMENT,challenging,CG-B05-025,I have no objection to your conclusion about the train schedule.,i have no objection to your conclusion about <shared> <shared> schedule
+DMC-1058,DISAGREEMENT,challenging,CG-B05-025,I would not endorse the claim that the earlier train is more convenient.,i would not endorse <shared> claim that <shared> earlier <shared> is more convenient
+DMC-1059,ACKNOWLEDGMENT,challenging,CG-B05-025,I did not miss your point about the train schedule.,i did not miss your point about <shared> <shared> schedule
+DMC-1060,UNCERTAINTY,challenging,CG-B05-025,I cannot say for certain that the earlier train is more convenient.,i cannot say for certain that <shared> earlier <shared> is more convenient
+DMC-1061,STATEMENT,challenging,CG-B05-025,It is worth noting that the train stops at three stations.,it is worth noting that <shared> <shared> stops at three stations
+DMC-1062,AFFIRMATIVE_ANSWER,challenging,CG-B05-026,"Indeed, I can confirm that I have checked the timetable.",indeed i can confirm that i have checked the timetable
+DMC-1063,NEGATIVE_ANSWER,challenging,CG-B05-026,"I cannot confirm that I have checked the timetable, because I have not.",i cannot confirm that i have checked the timetable because i have not
+DMC-1064,QUESTION,challenging,CG-B05-026,Would you happen to know the answer to this: which platform does the train leave from?,would you happen to know the answer to this which platform does the train leave from
+DMC-1065,CLARIFICATION,challenging,CG-B05-026,"Would you mind explaining ""more convenient"" in other words?",would you mind explaining more convenient in other words
+DMC-1066,GREETING,challenging,CG-B05-027,"We have not met before, so hello from the station.",we have not met before so hello from <shared> station
+DMC-1067,GOODBYE,challenging,CG-B05-027,I cannot stay at the station any longer; see you next time.,i cannot stay at <shared> station any longer see you next time
+DMC-1068,GRATITUDE,challenging,CG-B05-027,I cannot thank you enough for checking the timetable.,i cannot thank you enough for checking <shared> timetable
+DMC-1069,AGREEMENT,challenging,CG-B05-028,I have no objection to your conclusion about the apartment.,i have no objection to your conclusion about <shared> <shared>
+DMC-1070,DISAGREEMENT,challenging,CG-B05-028,I would not endorse the claim that the smaller apartment is a better choice.,i would not endorse <shared> claim that <shared> smaller <shared> is a better choice
+DMC-1071,ACKNOWLEDGMENT,challenging,CG-B05-028,I did not miss your point about the apartment.,i did not miss your point about <shared> <shared>
+DMC-1072,UNCERTAINTY,challenging,CG-B05-028,I cannot say for certain that the smaller apartment is a better choice.,i cannot say for certain that <shared> smaller <shared> is a better choice
+DMC-1073,STATEMENT,challenging,CG-B05-028,It is worth noting that the apartment has two bedrooms.,it is worth noting that <shared> <shared> has two bedrooms
+DMC-1074,AFFIRMATIVE_ANSWER,challenging,CG-B05-029,"Indeed, I can confirm that I have visited the apartment.",indeed i can confirm that i have visited the apartment
+DMC-1075,NEGATIVE_ANSWER,challenging,CG-B05-029,"I cannot confirm that I have visited the apartment, because I have not.",i cannot confirm that i have visited the apartment because i have not
+DMC-1076,QUESTION,challenging,CG-B05-029,Would you happen to know the answer to this: how large is the apartment?,would you happen to know the answer to this how large is the apartment
+DMC-1077,CLARIFICATION,challenging,CG-B05-029,"Would you mind explaining ""better choice"" in other words?",would you mind explaining better choice in other words
+DMC-1078,GREETING,challenging,CG-B05-030,"We have not met before, so hello from the viewing.",we have not met before so hello from <shared> viewing
+DMC-1079,GOODBYE,challenging,CG-B05-030,I cannot stay at the viewing any longer; see you next time.,i cannot stay at <shared> viewing any longer see you next time
+DMC-1080,GRATITUDE,challenging,CG-B05-030,I cannot thank you enough for arranging the visit.,i cannot thank you enough for arranging <shared> visit
+DMC-1081,AGREEMENT,challenging,CG-B05-031,I have no objection to your conclusion about the projection.,i have no objection to your conclusion about <shared> <shared>
+DMC-1082,DISAGREEMENT,challenging,CG-B05-031,I would not endorse the claim that the projection belongs in the darker room.,i would not endorse <shared> claim that <shared> <shared> belongs in <shared> darker room
+DMC-1083,ACKNOWLEDGMENT,challenging,CG-B05-031,I did not miss your point about the projection.,i did not miss your point about <shared> <shared>
+DMC-1084,UNCERTAINTY,challenging,CG-B05-031,I cannot say for certain that the projection belongs in the darker room.,i cannot say for certain that <shared> <shared> belongs in <shared> darker room
+DMC-1085,STATEMENT,challenging,CG-B05-031,It is worth noting that the projection uses two screens.,it is worth noting that <shared> <shared> uses two screens
+DMC-1086,AFFIRMATIVE_ANSWER,challenging,CG-B05-032,"Indeed, I can confirm that I have seen the projection.",indeed i can confirm that i have seen the projection
+DMC-1087,NEGATIVE_ANSWER,challenging,CG-B05-032,"I cannot confirm that I have seen the projection, because I have not.",i cannot confirm that i have seen the projection because i have not
+DMC-1088,QUESTION,challenging,CG-B05-032,Would you happen to know the answer to this: who designed the projection?,would you happen to know the answer to this who designed the projection
+DMC-1089,CLARIFICATION,challenging,CG-B05-032,"Would you mind explaining ""darker room"" in other words?",would you mind explaining darker room in other words
+DMC-1090,GREETING,challenging,CG-B05-033,"We have not met before, so hello from the gallery.",we have not met before so hello from <shared> gallery
+DMC-1091,GOODBYE,challenging,CG-B05-033,I cannot stay at the gallery any longer; see you next time.,i cannot stay at <shared> gallery any longer see you next time
+DMC-1092,GRATITUDE,challenging,CG-B05-033,I cannot thank you enough for showing the projection.,i cannot thank you enough for showing <shared> projection
+DMC-1093,AGREEMENT,challenging,CG-B05-034,I have no objection to your conclusion about the interface.,i have no objection to your conclusion about <shared> <shared>
+DMC-1094,DISAGREEMENT,challenging,CG-B05-034,I would not endorse the claim that the interface should wait for a response.,i would not endorse <shared> claim that <shared> <shared> should wait for a response
+DMC-1095,ACKNOWLEDGMENT,challenging,CG-B05-034,I did not miss your point about the interface.,i did not miss your point about <shared> <shared>
+DMC-1096,UNCERTAINTY,challenging,CG-B05-034,I cannot say for certain that the interface should wait for a response.,i cannot say for certain that <shared> <shared> should wait for a response
+DMC-1097,STATEMENT,challenging,CG-B05-034,It is worth noting that the interface has a confirmation button.,it is worth noting that <shared> <shared> has a confirmation button
+DMC-1098,AFFIRMATIVE_ANSWER,challenging,CG-B05-035,"Indeed, I can confirm that I have tried the interface.",indeed i can confirm that i have tried the interface
+DMC-1099,NEGATIVE_ANSWER,challenging,CG-B05-035,"I cannot confirm that I have tried the interface, because I have not.",i cannot confirm that i have tried the interface because i have not
+DMC-1100,QUESTION,challenging,CG-B05-035,Would you happen to know the answer to this: how long does the interface wait?,would you happen to know the answer to this how long does the interface wait
+DMC-1101,CLARIFICATION,challenging,CG-B05-035,"Would you mind explaining ""wait for a response"" in other words?",would you mind explaining wait for a response in other words
+DMC-1102,GREETING,challenging,CG-B05-036,"We have not met before, so hello from the installation.",we have not met before so hello from <shared> installation
+DMC-1103,GOODBYE,challenging,CG-B05-036,I cannot stay at the installation any longer; see you next time.,i cannot stay at <shared> installation any longer see you next time
+DMC-1104,GRATITUDE,challenging,CG-B05-036,I cannot thank you enough for guiding me through the interface.,i cannot thank you enough for guiding me through <shared> interface
+DMC-1105,AGREEMENT,challenging,CG-B05-037,I have no objection to your conclusion about the correction.,i have no objection to your conclusion about <shared> <shared>
+DMC-1106,DISAGREEMENT,challenging,CG-B05-037,I would not endorse the claim that the correction deserves more attention.,i would not endorse <shared> claim that <shared> <shared> deserves more attention
+DMC-1107,ACKNOWLEDGMENT,challenging,CG-B05-037,I did not miss your point about the correction.,i did not miss your point about <shared> <shared>
+DMC-1108,UNCERTAINTY,challenging,CG-B05-037,I cannot say for certain that the correction deserves more attention.,i cannot say for certain that <shared> <shared> deserves more attention
+DMC-1109,STATEMENT,challenging,CG-B05-037,It is worth noting that the correction appears below the article.,it is worth noting that <shared> <shared> appears below <shared> article
+DMC-1110,AFFIRMATIVE_ANSWER,challenging,CG-B05-038,"Indeed, I can confirm that I have read the correction.",indeed i can confirm that i have read the correction
+DMC-1111,NEGATIVE_ANSWER,challenging,CG-B05-038,"I cannot confirm that I have read the correction, because I have not.",i cannot confirm that i have read the correction because i have not
+DMC-1112,QUESTION,challenging,CG-B05-038,Would you happen to know the answer to this: where was the correction published?,would you happen to know the answer to this where was the correction published
+DMC-1113,CLARIFICATION,challenging,CG-B05-038,"Would you mind explaining ""more attention"" in other words?",would you mind explaining more attention in other words
+DMC-1114,GREETING,challenging,CG-B05-039,"We have not met before, so hello from the press briefing.",we have not met before so hello from <shared> press briefing
+DMC-1115,GOODBYE,challenging,CG-B05-039,I cannot stay at the press briefing any longer; see you next time.,i cannot stay at <shared> press briefing any longer see you next time
+DMC-1116,GRATITUDE,challenging,CG-B05-039,I cannot thank you enough for pointing out the correction.,i cannot thank you enough for pointing out <shared> correction
+DMC-1117,AGREEMENT,challenging,CG-B05-040,I have no objection to your conclusion about the photograph.,i have no objection to your conclusion about <shared> <shared>
+DMC-1118,DISAGREEMENT,challenging,CG-B05-040,I would not endorse the claim that the photograph is insufficient proof.,i would not endorse <shared> claim that <shared> <shared> is insufficient proof
+DMC-1119,ACKNOWLEDGMENT,challenging,CG-B05-040,I did not miss your point about the photograph.,i did not miss your point about <shared> <shared>
+DMC-1120,UNCERTAINTY,challenging,CG-B05-040,I cannot say for certain that the photograph is insufficient proof.,i cannot say for certain that <shared> <shared> is insufficient proof
+DMC-1121,STATEMENT,challenging,CG-B05-040,It is worth noting that the photograph shows a street sign.,it is worth noting that <shared> <shared> shows a street sign
+DMC-1122,AFFIRMATIVE_ANSWER,challenging,CG-B05-041,"Indeed, I can confirm that I have examined the photograph.",indeed i can confirm that i have examined the photograph
+DMC-1123,NEGATIVE_ANSWER,challenging,CG-B05-041,"I cannot confirm that I have examined the photograph, because I have not.",i cannot confirm that i have examined the photograph because i have not
+DMC-1124,QUESTION,challenging,CG-B05-041,Would you happen to know the answer to this: when was the photograph taken?,would you happen to know the answer to this when was the photograph taken
+DMC-1125,CLARIFICATION,challenging,CG-B05-041,"Would you mind explaining ""insufficient proof"" in other words?",would you mind explaining insufficient proof in other words
+DMC-1126,GREETING,challenging,CG-B05-042,"We have not met before, so hello from the archive.",we have not met before so hello from <shared> archive
+DMC-1127,GOODBYE,challenging,CG-B05-042,I cannot stay at the archive any longer; see you next time.,i cannot stay at <shared> archive any longer see you next time
+DMC-1128,GRATITUDE,challenging,CG-B05-042,I cannot thank you enough for retrieving the photograph.,i cannot thank you enough for retrieving <shared> photograph
+DMC-1129,AGREEMENT,challenging,CG-B05-043,I have no objection to your conclusion about the interview.,i have no objection to your conclusion about <shared> <shared>
+DMC-1130,DISAGREEMENT,challenging,CG-B05-043,I would not endorse the claim that the interview is a useful reference.,i would not endorse <shared> claim that <shared> <shared> is a useful reference
+DMC-1131,ACKNOWLEDGMENT,challenging,CG-B05-043,I did not miss your point about the interview.,i did not miss your point about <shared> <shared>
+DMC-1132,UNCERTAINTY,challenging,CG-B05-043,I cannot say for certain that the interview is a useful reference.,i cannot say for certain that <shared> <shared> is a useful reference
+DMC-1133,STATEMENT,challenging,CG-B05-043,It is worth noting that the interview includes two speakers.,it is worth noting that <shared> <shared> includes two speakers
+DMC-1134,AFFIRMATIVE_ANSWER,challenging,CG-B05-044,"Indeed, I can confirm that I have reviewed the interview.",indeed i can confirm that i have reviewed the interview
+DMC-1135,NEGATIVE_ANSWER,challenging,CG-B05-044,"I cannot confirm that I have reviewed the interview, because I have not.",i cannot confirm that i have reviewed the interview because i have not
+DMC-1136,QUESTION,challenging,CG-B05-044,Would you happen to know the answer to this: who conducted the interview?,would you happen to know the answer to this who conducted the interview
+DMC-1137,CLARIFICATION,challenging,CG-B05-044,"Would you mind explaining ""useful reference"" in other words?",would you mind explaining useful reference in other words
+DMC-1138,GREETING,challenging,CG-B05-045,"We have not met before, so hello from the research desk.",we have not met before so hello from <shared> research desk
+DMC-1139,GOODBYE,challenging,CG-B05-045,I cannot stay at the research desk any longer; see you next time.,i cannot stay at <shared> research desk any longer see you next time
+DMC-1140,GRATITUDE,challenging,CG-B05-045,I cannot thank you enough for sharing the interview.,i cannot thank you enough for sharing <shared> interview
+DMC-1141,AGREEMENT,challenging,CG-B05-046,I have no objection to your conclusion about the subtitles.,i have no objection to your conclusion about <shared> <shared>
+DMC-1142,DISAGREEMENT,challenging,CG-B05-046,I would not endorse the claim that the subtitles need revision.,i would not endorse <shared> claim that <shared> <shared> need revision
+DMC-1143,ACKNOWLEDGMENT,challenging,CG-B05-046,I did not miss your point about the subtitles.,i did not miss your point about <shared> <shared>
+DMC-1144,UNCERTAINTY,challenging,CG-B05-046,I cannot say for certain that the subtitles need revision.,i cannot say for certain that <shared> <shared> need revision
+DMC-1145,STATEMENT,challenging,CG-B05-046,It is worth noting that the subtitles appear beneath the image.,it is worth noting that <shared> <shared> appear beneath <shared> image
+DMC-1146,AFFIRMATIVE_ANSWER,challenging,CG-B05-047,"Indeed, I can confirm that I have reviewed the subtitles.",indeed i can confirm that i have reviewed the subtitles
+DMC-1147,NEGATIVE_ANSWER,challenging,CG-B05-047,"I cannot confirm that I have reviewed the subtitles, because I have not.",i cannot confirm that i have reviewed the subtitles because i have not
+DMC-1148,QUESTION,challenging,CG-B05-047,Would you happen to know the answer to this: which language are the subtitles in?,would you happen to know the answer to this which language are the subtitles in
+DMC-1149,CLARIFICATION,challenging,CG-B05-047,"Would you mind explaining ""revision"" in other words?",would you mind explaining revision in other words
+DMC-1150,GREETING,challenging,CG-B05-048,"We have not met before, so hello from the editing studio.",we have not met before so hello from <shared> editing studio
+DMC-1151,GOODBYE,challenging,CG-B05-048,I cannot stay at the editing studio any longer; see you next time.,i cannot stay at <shared> editing studio any longer see you next time
+DMC-1152,GRATITUDE,challenging,CG-B05-048,I cannot thank you enough for reviewing the subtitles.,i cannot thank you enough for reviewing <shared> subtitles
+DMC-1153,AGREEMENT,challenging,CG-B05-049,I have no objection to your conclusion about the measurement.,i have no objection to your conclusion about <shared> <shared>
+DMC-1154,DISAGREEMENT,challenging,CG-B05-049,I would not endorse the claim that the measurement should be repeated.,i would not endorse <shared> claim that <shared> <shared> should be repeated
+DMC-1155,ACKNOWLEDGMENT,challenging,CG-B05-049,I did not miss your point about the measurement.,i did not miss your point about <shared> <shared>
+DMC-1156,UNCERTAINTY,challenging,CG-B05-049,I cannot say for certain that the measurement should be repeated.,i cannot say for certain that <shared> <shared> should be repeated
+DMC-1157,STATEMENT,challenging,CG-B05-049,It is worth noting that the measurement is expressed in grams.,it is worth noting that <shared> <shared> is expressed in grams
+DMC-1158,AFFIRMATIVE_ANSWER,challenging,CG-B05-050,"Indeed, I can confirm that I have recorded the measurement.",indeed i can confirm that i have recorded the measurement
+DMC-1159,NEGATIVE_ANSWER,challenging,CG-B05-050,"I cannot confirm that I have recorded the measurement, because I have not.",i cannot confirm that i have recorded the measurement because i have not
+DMC-1160,QUESTION,challenging,CG-B05-050,Would you happen to know the answer to this: which instrument was used?,would you happen to know the answer to this which instrument was used
+DMC-1161,CLARIFICATION,challenging,CG-B05-050,"Would you mind explaining ""repeated"" in other words?",would you mind explaining repeated in other words
+DMC-1162,GREETING,challenging,CG-B05-051,"We have not met before, so hello from the laboratory.",we have not met before so hello from <shared> laboratory
+DMC-1163,GOODBYE,challenging,CG-B05-051,I cannot stay at the laboratory any longer; see you next time.,i cannot stay at <shared> laboratory any longer see you next time
+DMC-1164,GRATITUDE,challenging,CG-B05-051,I cannot thank you enough for checking the measurement.,i cannot thank you enough for checking <shared> measurement
+DMC-1165,AGREEMENT,challenging,CG-B05-052,I have no objection to your conclusion about the lecture.,i have no objection to your conclusion about <shared> <shared>
+DMC-1166,DISAGREEMENT,challenging,CG-B05-052,I would not endorse the claim that the lecture should include an example.,i would not endorse <shared> claim that <shared> <shared> should include an example
+DMC-1167,ACKNOWLEDGMENT,challenging,CG-B05-052,I did not miss your point about the lecture.,i did not miss your point about <shared> <shared>
+DMC-1168,UNCERTAINTY,challenging,CG-B05-052,I cannot say for certain that the lecture should include an example.,i cannot say for certain that <shared> <shared> should include an example
+DMC-1169,STATEMENT,challenging,CG-B05-052,It is worth noting that the lecture lasted an hour.,it is worth noting that <shared> <shared> lasted an hour
+DMC-1170,AFFIRMATIVE_ANSWER,challenging,CG-B05-053,"Indeed, I can confirm that I have attended the lecture.",indeed i can confirm that i have attended the lecture
+DMC-1171,NEGATIVE_ANSWER,challenging,CG-B05-053,"I cannot confirm that I have attended the lecture, because I have not.",i cannot confirm that i have attended the lecture because i have not
+DMC-1172,QUESTION,challenging,CG-B05-053,Would you happen to know the answer to this: who delivered the lecture?,would you happen to know the answer to this who delivered the lecture
+DMC-1173,CLARIFICATION,challenging,CG-B05-053,"Would you mind explaining ""an example"" in other words?",would you mind explaining an example in other words
+DMC-1174,GREETING,challenging,CG-B05-054,"We have not met before, so hello from the seminar.",we have not met before so hello from <shared> seminar
+DMC-1175,GOODBYE,challenging,CG-B05-054,I cannot stay at the seminar any longer; see you next time.,i cannot stay at <shared> seminar any longer see you next time
+DMC-1176,GRATITUDE,challenging,CG-B05-054,I cannot thank you enough for explaining the lecture.,i cannot thank you enough for explaining <shared> lecture
+DMC-1177,AGREEMENT,challenging,CG-B05-055,I have no objection to your conclusion about the appointment.,i have no objection to your conclusion about <shared> <shared>
+DMC-1178,DISAGREEMENT,challenging,CG-B05-055,I would not endorse the claim that the later appointment suits us better.,i would not endorse <shared> claim that <shared> later <shared> suits us better
+DMC-1179,ACKNOWLEDGMENT,challenging,CG-B05-055,I did not miss your point about the appointment.,i did not miss your point about <shared> <shared>
+DMC-1180,UNCERTAINTY,challenging,CG-B05-055,I cannot say for certain that the later appointment suits us better.,i cannot say for certain that <shared> later <shared> suits us better
+DMC-1181,STATEMENT,challenging,CG-B05-055,It is worth noting that the appointment is on Thursday.,it is worth noting that <shared> <shared> is on thursday
+DMC-1182,AFFIRMATIVE_ANSWER,challenging,CG-B05-056,"Indeed, I can confirm that I have confirmed the appointment.",indeed i can confirm that i have confirmed the appointment
+DMC-1183,NEGATIVE_ANSWER,challenging,CG-B05-056,"I cannot confirm that I have confirmed the appointment, because I have not.",i cannot confirm that i have confirmed the appointment because i have not
+DMC-1184,QUESTION,challenging,CG-B05-056,Would you happen to know the answer to this: where is the appointment scheduled?,would you happen to know the answer to this where is the appointment scheduled
+DMC-1185,CLARIFICATION,challenging,CG-B05-056,"Would you mind explaining ""suits us better"" in other words?",would you mind explaining suits us better in other words
+DMC-1186,GREETING,challenging,CG-B05-057,"We have not met before, so hello from the reception desk.",we have not met before so hello from <shared> reception desk
+DMC-1187,GOODBYE,challenging,CG-B05-057,I cannot stay at the reception desk any longer; see you next time.,i cannot stay at <shared> reception desk any longer see you next time
+DMC-1188,GRATITUDE,challenging,CG-B05-057,I cannot thank you enough for arranging the appointment.,i cannot thank you enough for arranging <shared> appointment
+DMC-1189,AGREEMENT,challenging,CG-B05-058,I have no objection to your conclusion about the sculpture.,i have no objection to your conclusion about <shared> <shared>
+DMC-1190,DISAGREEMENT,challenging,CG-B05-058,I would not endorse the claim that the sculpture needs more space.,i would not endorse <shared> claim that <shared> <shared> needs more space
+DMC-1191,ACKNOWLEDGMENT,challenging,CG-B05-058,I did not miss your point about the sculpture.,i did not miss your point about <shared> <shared>
+DMC-1192,UNCERTAINTY,challenging,CG-B05-058,I cannot say for certain that the sculpture needs more space.,i cannot say for certain that <shared> <shared> needs more space
+DMC-1193,STATEMENT,challenging,CG-B05-058,It is worth noting that the sculpture stands on a wooden base.,it is worth noting that <shared> <shared> stands on a wooden base
+DMC-1194,AFFIRMATIVE_ANSWER,challenging,CG-B05-059,"Indeed, I can confirm that I have seen the sculpture.",indeed i can confirm that i have seen the sculpture
+DMC-1195,NEGATIVE_ANSWER,challenging,CG-B05-059,"I cannot confirm that I have seen the sculpture, because I have not.",i cannot confirm that i have seen the sculpture because i have not
+DMC-1196,QUESTION,challenging,CG-B05-059,Would you happen to know the answer to this: what material is the sculpture made of?,would you happen to know the answer to this what material is the sculpture made of
+DMC-1197,CLARIFICATION,challenging,CG-B05-059,"Would you mind explaining ""more space"" in other words?",would you mind explaining more space in other words
+DMC-1198,GREETING,challenging,CG-B05-060,"We have not met before, so hello from the exhibition.",we have not met before so hello from <shared> exhibition
+DMC-1199,GOODBYE,challenging,CG-B05-060,I cannot stay at the exhibition any longer; see you next time.,i cannot stay at <shared> exhibition any longer see you next time
+DMC-1200,GRATITUDE,challenging,CG-B05-060,I cannot thank you enough for introducing the sculpture.,i cannot thank you enough for introducing <shared> sculpture

@@ -1,0 +1,17 @@
+check,passed
+Record accounting,True
+No eligible/excluded ID overlap,True
+All original IDs accounted for,True
+Original eligible rows preserved,True
+Unique eligible IDs,True
+Unique eligible model texts,True
+No empty model texts,True
+All intent classes retained,True
+No internal conflicting labels,True
+No existing eligible domain duplicates,True
+No label conflicts with switchboard_train,True
+No overlap with switchboard_validation,True
+No overlap with switchboard_test,True
+No label conflicts with digital_mirror_eligible,True
+No overlap with installation_development,True
+No overlap with installation_benchmark,True

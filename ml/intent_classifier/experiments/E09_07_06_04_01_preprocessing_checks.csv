@@ -1,0 +1,15 @@
+check,passed
+Expected output columns,True
+Record count preserved,True
+Original columns preserved,True
+Record IDs preserved,True
+Unique record IDs,True
+Original text preserved,True
+Intent labels preserved,True
+Class distribution preserved,True
+Contrastive groups preserved,True
+Context preserved,True
+No empty normalized texts,True
+No empty model texts,True
+Normalization reproducible,True
+Model text reproducible,True

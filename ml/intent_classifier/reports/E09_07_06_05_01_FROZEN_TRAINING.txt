@@ -1,0 +1,976 @@
+=== E09.07.6.5.1: FROZEN FEATURE SPACE TRAINING ===
+
+=== DATASET LOADING ===
+Switchboard Train: 135827 records
+Digital Mirror Eligible: 579 records
+Contrastive Eligible: 1199 records
+Switchboard Validation: 16913 records
+Installation Benchmark: 240 records
+
+=== COMBINED TRAINING DATA ===
+training_source
+switchboard       135827
+contrastive         1199
+digital_mirror       579
+
+Total records: 137605
+
+=== CLASS DISTRIBUTION ===
+intent
+GREETING                316
+GOODBYE                2246
+GRATITUDE               208
+AGREEMENT              8901
+DISAGREEMENT            434
+UNCERTAINTY            1122
+ACKNOWLEDGMENT        30714
+AFFIRMATIVE_ANSWER     3228
+NEGATIVE_ANSWER        1489
+QUESTION               7197
+CLARIFICATION           395
+STATEMENT             81355
+
+=== DATA VALIDATION ===
+PASS | Expected training size
+PASS | All training classes retained
+PASS | No empty training texts
+PASS | Unique contrastive IDs
+PASS | Unique contrastive model texts
+PASS | No contrastive / Switchboard Train overlap
+PASS | No contrastive / Digital Mirror overlap
+PASS | No contrastive / Validation overlap
+PASS | No contrastive / Benchmark overlap
+PASS | No Digital Mirror / Validation overlap
+PASS | No training / Benchmark overlap
+PASS | Unique benchmark model texts
+PASS | Balanced benchmark classes
+PASS | No Switchboard conversation overlap
+PASS | Expected contrastive dataset hash
+Saved: E09_07_06_05_01_data_checks.csv
+
+Checks passed: 15/15
+
+=== LOADING FROZEN FEATURES ===
+Features: 177043
+
+=== TRANSFORMING TRAINING DATA ===
+Matrix shape: (137605, 177043)
+Non-zero elements: 15433602
+Transformation time: 11.4516
+
+=== ZERO VECTOR ANALYSIS ===
+switchboard: 0
+digital_mirror: 0
+contrastive: 0
+Saved: E09_07_06_05_01_zero_vector_records.csv
+
+============================================================
+STRATEGY: uniform | ALPHA: 0.0
+============================================================
+Frozen feature space verification: PASS
+
+=== SAMPLE WEIGHT ANALYSIS ===
+Strategy: a
+Minimum: 0.14095118
+Maximum: 55.13020833
+Mean: 1.00000000
+Total: 137605.0000
+
+=== SOURCE WEIGHTS ===
+training_source  records  total_weight  mean_weight  min_weight  max_weight  weight_share
+    contrastive     1199  17683.021557    14.748141    0.140951   55.130208      0.128506
+ digital_mirror      579   8572.554954    14.805794    0.140951   55.130208      0.062298
+    switchboard   135827 111349.423489     0.819789    0.140951   55.130208      0.809196
+Saved: E09_07_06_05_01_a_source_weights.csv
+
+=== CLASS WEIGHTS ===
+            intent  records  total_weight  mean_weight  min_weight  max_weight
+    ACKNOWLEDGMENT    30714  11467.083333     0.373350    0.373350    0.373350
+AFFIRMATIVE_ANSWER     3228  11467.083333     3.552380    3.552380    3.552380
+         AGREEMENT     8901  11467.083333     1.288292    1.288292    1.288292
+     CLARIFICATION      395  11467.083333    29.030591   29.030591   29.030591
+      DISAGREEMENT      434  11467.083333    26.421851   26.421851   26.421851
+           GOODBYE     2246  11467.083333     5.105558    5.105558    5.105558
+         GRATITUDE      208  11467.083333    55.130208   55.130208   55.130208
+          GREETING      316  11467.083333    36.288238   36.288238   36.288238
+   NEGATIVE_ANSWER     1489  11467.083333     7.701198    7.701198    7.701198
+          QUESTION     7197  11467.083333     1.593314    1.593314    1.593314
+         STATEMENT    81355  11467.083333     0.140951    0.140951    0.140951
+       UNCERTAINTY     1122  11467.083333    10.220217   10.220217   10.220217
+Saved: E09_07_06_05_01_a_class_weights.csv
+Saved: E09_07_06_05_01_a_source_class_weights.csv
+Saved: E09_07_06_05_01_a_effective_sample_size.csv
+
+=== TRAINING E09_07_06_05_01a_lr ===
+Classifier parameters: {'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': 0.0, 'max_iter': 1000, 'n_jobs': None, 'penalty': 'deprecated', 'random_state': 42, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+Training time: 134.4720 seconds
+Iterations: [190]
+Convergence warnings: 0
+Frozen feature space verification: PASS
+Saved model: E09_07_06_05_01a_lr.joblib
+Model SHA256: 214df9295fefe51f98171bd19fe45cdae6693750cd174e38aa9cc7fe3aa39156
+Frozen features unchanged: YES
+Saved model verification: PASS
+
+=== EVALUATION: baseline_a_lr / validation ===
+model: baseline_a_lr
+dataset: validation
+records: 16913
+correct: 12907
+accuracy: 0.7631407792822089
+macro_precision: 0.47026684655423145
+macro_recall: 0.6835390794704211
+macro_f1: 0.5142294666771875
+weighted_f1: 0.7906359406069537
+top3_accuracy: 0.9864009933187489
+statement_false_positives: 306
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.6000    0.8077    0.6885        26
+           GOODBYE     0.4792    0.7864    0.5955       220
+         GRATITUDE     0.3684    1.0000    0.5385         7
+         AGREEMENT     0.4417    0.4284    0.4349      1069
+      DISAGREEMENT     0.0270    0.0435    0.0333        23
+       UNCERTAINTY     0.4439    0.8407    0.5810       113
+    ACKNOWLEDGMENT     0.9413    0.4547    0.6132      3809
+AFFIRMATIVE_ANSWER     0.1342    0.7173    0.2262       428
+   NEGATIVE_ANSWER     0.4513    0.8176    0.5816       170
+          QUESTION     0.6669    0.8304    0.7398       967
+     CLARIFICATION     0.1215    0.5652    0.2000        23
+         STATEMENT     0.9677    0.9105    0.9382     10058
+
+          accuracy                         0.7631     16913
+         macro avg     0.4703    0.6835    0.5142     16913
+      weighted avg     0.8719    0.7631    0.7906     16913
+
+Saved: E09_07_06_05_01_baseline_a_lr_validation_predictions.csv
+Saved: E09_07_06_05_01_baseline_a_lr_validation_class_summary.csv
+Saved: E09_07_06_05_01_baseline_a_lr_validation_confusion_matrix.csv
+Saved: E09_07_06_05_01_baseline_a_lr_validation_errors.csv
+
+=== EVALUATION: E09_07_06_05_01a_lr / validation ===
+model: E09_07_06_05_01a_lr
+dataset: validation
+records: 16913
+correct: 12903
+accuracy: 0.7629042748181872
+macro_precision: 0.470229140765189
+macro_recall: 0.6824508267903768
+macro_f1: 0.514065156719248
+weighted_f1: 0.7903143464729883
+top3_accuracy: 0.9871696328268196
+statement_false_positives: 307
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.6000    0.8077    0.6885        26
+           GOODBYE     0.4753    0.7864    0.5925       220
+         GRATITUDE     0.3684    1.0000    0.5385         7
+         AGREEMENT     0.4412    0.4247    0.4328      1069
+      DISAGREEMENT     0.0244    0.0435    0.0312        23
+       UNCERTAINTY     0.4541    0.8319    0.5875       113
+    ACKNOWLEDGMENT     0.9393    0.4547    0.6128      3809
+AFFIRMATIVE_ANSWER     0.1347    0.7196    0.2269       428
+   NEGATIVE_ANSWER     0.4513    0.8176    0.5816       170
+          QUESTION     0.6639    0.8273    0.7366       967
+     CLARIFICATION     0.1226    0.5652    0.2016        23
+         STATEMENT     0.9676    0.9108    0.9383     10058
+
+          accuracy                         0.7629     16913
+         macro avg     0.4702    0.6825    0.5141     16913
+      weighted avg     0.8712    0.7629    0.7903     16913
+
+Saved: E09_07_06_05_01_E09_07_06_05_01a_lr_validation_predictions.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01a_lr_validation_class_summary.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01a_lr_validation_confusion_matrix.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01a_lr_validation_errors.csv
+
+=== PAIRED COMPARISON: a / validation ===
+                   metric     baseline  contrastive  difference
+                  correct 12907.000000 12903.000000   -4.000000
+                 accuracy     0.763141     0.762904   -0.000237
+          macro_precision     0.470267     0.470229   -0.000038
+             macro_recall     0.683539     0.682451   -0.001088
+                 macro_f1     0.514229     0.514065   -0.000164
+              weighted_f1     0.790636     0.790314   -0.000322
+            top3_accuracy     0.986401     0.987170    0.000769
+statement_false_positives   306.000000   307.000000    1.000000
+
+=== PREDICTION CHANGES ===
+status
+BOTH_CORRECT      12869
+BOTH_INCORRECT     3972
+REGRESSED            38
+IMPROVED             34
+
+=== CLASS RECALL COMPARISON ===
+            intent  recall_baseline  recall_contrastive  recall_difference
+          GREETING         0.807692            0.807692           0.000000
+           GOODBYE         0.786364            0.786364           0.000000
+         GRATITUDE         1.000000            1.000000           0.000000
+         AGREEMENT         0.428438            0.424696          -0.003742
+      DISAGREEMENT         0.043478            0.043478           0.000000
+       UNCERTAINTY         0.840708            0.831858          -0.008850
+    ACKNOWLEDGMENT         0.454713            0.454713           0.000000
+AFFIRMATIVE_ANSWER         0.717290            0.719626           0.002336
+   NEGATIVE_ANSWER         0.817647            0.817647           0.000000
+          QUESTION         0.830403            0.827301          -0.003102
+     CLARIFICATION         0.565217            0.565217           0.000000
+         STATEMENT         0.910519            0.910817           0.000298
+Saved: E09_07_06_05_01_a_validation_metric_comparison.csv
+Saved: E09_07_06_05_01_a_validation_prediction_comparison.csv
+Saved: E09_07_06_05_01_a_validation_class_comparison.csv
+Saved: E09_07_06_05_01_results.csv
+
+=== EVALUATION: baseline_a_lr / benchmark ===
+model: baseline_a_lr
+dataset: benchmark
+records: 240
+correct: 149
+accuracy: 0.6208333333333333
+macro_precision: 0.7249735777961583
+macro_recall: 0.6208333333333333
+macro_f1: 0.629013535055262
+weighted_f1: 0.6290135350552621
+top3_accuracy: 0.8291666666666667
+statement_false_positives: 59
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.7000    0.8235        20
+           GOODBYE     0.8750    0.7000    0.7778        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6667    0.3000    0.4138        20
+      DISAGREEMENT     0.6667    0.8000    0.7273        20
+       UNCERTAINTY     0.8889    0.4000    0.5517        20
+    ACKNOWLEDGMENT     0.0000    0.0000    0.0000        20
+AFFIRMATIVE_ANSWER     1.0000    0.7000    0.8235        20
+   NEGATIVE_ANSWER     0.9375    0.7500    0.8333        20
+          QUESTION     0.4839    0.7500    0.5882        20
+     CLARIFICATION     0.9375    0.7500    0.8333        20
+         STATEMENT     0.2436    0.9500    0.3878        20
+
+          accuracy                         0.6208       240
+         macro avg     0.7250    0.6208    0.6290       240
+      weighted avg     0.7250    0.6208    0.6290       240
+
+Saved: E09_07_06_05_01_baseline_a_lr_benchmark_predictions.csv
+Saved: E09_07_06_05_01_baseline_a_lr_benchmark_class_summary.csv
+Saved: E09_07_06_05_01_baseline_a_lr_benchmark_confusion_matrix.csv
+Saved: E09_07_06_05_01_baseline_a_lr_benchmark_errors.csv
+
+=== GROUP RESULTS ===
+       group  records  correct  accuracy  top3_accuracy
+     complex       60       32  0.533333       0.816667
+installation       60       40  0.666667       0.816667
+     natural       60       35  0.583333       0.833333
+       short       60       42  0.700000       0.850000
+Saved: E09_07_06_05_01_baseline_a_lr_benchmark_group_results.csv
+
+=== EVALUATION: E09_07_06_05_01a_lr / benchmark ===
+model: E09_07_06_05_01a_lr
+dataset: benchmark
+records: 240
+correct: 163
+accuracy: 0.6791666666666667
+macro_precision: 0.8146397572384414
+macro_recall: 0.6791666666666666
+macro_f1: 0.685892126294603
+weighted_f1: 0.6858921262946029
+top3_accuracy: 0.875
+statement_false_positives: 41
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.8000    0.8889        20
+           GOODBYE     0.9375    0.7500    0.8333        20
+         GRATITUDE     1.0000    0.7000    0.8235        20
+         AGREEMENT     0.6250    0.2500    0.3571        20
+      DISAGREEMENT     0.6000    0.7500    0.6667        20
+       UNCERTAINTY     0.9286    0.6500    0.7647        20
+    ACKNOWLEDGMENT     1.0000    0.1000    0.1818        20
+AFFIRMATIVE_ANSWER     1.0000    0.8500    0.9189        20
+   NEGATIVE_ANSWER     0.9444    0.8500    0.8947        20
+          QUESTION     0.4595    0.8500    0.5965        20
+     CLARIFICATION     1.0000    0.8000    0.8889        20
+         STATEMENT     0.2807    0.8000    0.4156        20
+
+          accuracy                         0.6792       240
+         macro avg     0.8146    0.6792    0.6859       240
+      weighted avg     0.8146    0.6792    0.6859       240
+
+Saved: E09_07_06_05_01_E09_07_06_05_01a_lr_benchmark_predictions.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01a_lr_benchmark_class_summary.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01a_lr_benchmark_confusion_matrix.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01a_lr_benchmark_errors.csv
+
+=== GROUP RESULTS ===
+       group  records  correct  accuracy  top3_accuracy
+     complex       60       36  0.600000       0.816667
+installation       60       45  0.750000       0.933333
+     natural       60       39  0.650000       0.883333
+       short       60       43  0.716667       0.866667
+Saved: E09_07_06_05_01_E09_07_06_05_01a_lr_benchmark_group_results.csv
+
+=== PAIRED COMPARISON: a / benchmark ===
+                   metric   baseline  contrastive  difference
+                  correct 149.000000   163.000000   14.000000
+                 accuracy   0.620833     0.679167    0.058333
+          macro_precision   0.724974     0.814640    0.089666
+             macro_recall   0.620833     0.679167    0.058333
+                 macro_f1   0.629014     0.685892    0.056879
+              weighted_f1   0.629014     0.685892    0.056879
+            top3_accuracy   0.829167     0.875000    0.045833
+statement_false_positives  59.000000    41.000000  -18.000000
+
+=== PREDICTION CHANGES ===
+status
+BOTH_CORRECT      143
+BOTH_INCORRECT     71
+IMPROVED           20
+REGRESSED           6
+
+=== CLASS RECALL COMPARISON ===
+            intent  recall_baseline  recall_contrastive  recall_difference
+          GREETING             0.70                0.80               0.10
+           GOODBYE             0.70                0.75               0.05
+         GRATITUDE             0.65                0.70               0.05
+         AGREEMENT             0.30                0.25              -0.05
+      DISAGREEMENT             0.80                0.75              -0.05
+       UNCERTAINTY             0.40                0.65               0.25
+    ACKNOWLEDGMENT             0.00                0.10               0.10
+AFFIRMATIVE_ANSWER             0.70                0.85               0.15
+   NEGATIVE_ANSWER             0.75                0.85               0.10
+          QUESTION             0.75                0.85               0.10
+     CLARIFICATION             0.75                0.80               0.05
+         STATEMENT             0.95                0.80              -0.15
+Saved: E09_07_06_05_01_a_benchmark_metric_comparison.csv
+Saved: E09_07_06_05_01_a_benchmark_prediction_comparison.csv
+Saved: E09_07_06_05_01_a_benchmark_class_comparison.csv
+Saved: E09_07_06_05_01_results.csv
+
+============================================================
+STRATEGY: moderate | ALPHA: 0.5
+============================================================
+Frozen feature space verification: PASS
+
+=== SAMPLE WEIGHT ANALYSIS ===
+Strategy: b
+Minimum: 0.01804645
+Maximum: 62.62212373
+Mean: 1.00000000
+Total: 137605.0000
+
+=== SOURCE WEIGHTS ===
+training_source  records  total_weight  mean_weight  min_weight  max_weight  weight_share
+    contrastive     1199  27664.578638    23.073043    0.143239   62.622124      0.201043
+ digital_mirror      579  13334.335826    23.029941    0.101285   62.622124      0.096903
+    switchboard   135827  96606.085536     0.711244    0.018046   62.622124      0.702054
+Saved: E09_07_06_05_01_b_source_weights.csv
+
+=== CLASS WEIGHTS ===
+            intent  records  total_weight  mean_weight  min_weight  max_weight
+    ACKNOWLEDGMENT    30714  11467.083333     0.373350    0.093114   10.042917
+AFFIRMATIVE_ANSWER     3228  11467.083333     3.552380    0.375516   13.596565
+         AGREEMENT     8901  11467.083333     1.288292    0.126893    6.666411
+     CLARIFICATION      395  11467.083333    29.030591    6.639045   36.964639
+      DISAGREEMENT      434  11467.083333    26.421851    3.501564   42.742031
+           GOODBYE     2246  11467.083333     5.105558    0.580990   10.163173
+         GRATITUDE      208  11467.083333    55.130208   14.366500   62.622124
+          GREETING      316  11467.083333    36.288238    6.495257   48.170115
+   NEGATIVE_ANSWER     1489  11467.083333     7.701198    0.851456   24.882345
+          QUESTION     7197  11467.083333     1.593314    0.225120    1.684641
+         STATEMENT    81355  11467.083333     0.140951    0.018046    0.143239
+       UNCERTAINTY     1122  11467.083333    10.220217    1.069652   18.984431
+Saved: E09_07_06_05_01_b_class_weights.csv
+Saved: E09_07_06_05_01_b_source_class_weights.csv
+Saved: E09_07_06_05_01_b_effective_sample_size.csv
+
+=== TRAINING E09_07_06_05_01b_lr ===
+Classifier parameters: {'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': 0.0, 'max_iter': 1000, 'n_jobs': None, 'penalty': 'deprecated', 'random_state': 42, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+Training time: 128.9357 seconds
+Iterations: [144]
+Convergence warnings: 0
+Frozen feature space verification: PASS
+Saved model: E09_07_06_05_01b_lr.joblib
+Model SHA256: fbfccf34091f3e0315156bd1bba2dd5a233a2a9b7029672884609bb852564aca
+Frozen features unchanged: YES
+Saved model verification: PASS
+
+=== EVALUATION: baseline_b_lr / validation ===
+model: baseline_b_lr
+dataset: validation
+records: 16913
+correct: 14042
+accuracy: 0.8302489209483829
+macro_precision: 0.4624736262053333
+macro_recall: 0.6636278748280661
+macro_f1: 0.5222308548436793
+weighted_f1: 0.8341673743108945
+top3_accuracy: 0.9819074085023355
+statement_false_positives: 241
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.5676    0.8077    0.6667        26
+           GOODBYE     0.4886    0.6818    0.5693       220
+         GRATITUDE     0.3684    1.0000    0.5385         7
+         AGREEMENT     0.4929    0.3246    0.3914      1069
+      DISAGREEMENT     0.0312    0.0435    0.0364        23
+       UNCERTAINTY     0.3880    0.8584    0.5344       113
+    ACKNOWLEDGMENT     0.8120    0.9467    0.8742      3809
+AFFIRMATIVE_ANSWER     0.2072    0.2407    0.2227       428
+   NEGATIVE_ANSWER     0.3866    0.8118    0.5237       170
+          QUESTION     0.6672    0.8108    0.7320       967
+     CLARIFICATION     0.1667    0.5652    0.2574        23
+         STATEMENT     0.9733    0.8724    0.9201     10058
+
+          accuracy                         0.8302     16913
+         macro avg     0.4625    0.6636    0.5222     16913
+      weighted avg     0.8503    0.8302    0.8342     16913
+
+Saved: E09_07_06_05_01_baseline_b_lr_validation_predictions.csv
+Saved: E09_07_06_05_01_baseline_b_lr_validation_class_summary.csv
+Saved: E09_07_06_05_01_baseline_b_lr_validation_confusion_matrix.csv
+Saved: E09_07_06_05_01_baseline_b_lr_validation_errors.csv
+
+=== EVALUATION: E09_07_06_05_01b_lr / validation ===
+model: E09_07_06_05_01b_lr
+dataset: validation
+records: 16913
+correct: 14070
+accuracy: 0.8319044521965352
+macro_precision: 0.46603950008266876
+macro_recall: 0.6643543995005499
+macro_f1: 0.5251144494367195
+weighted_f1: 0.835457040653047
+top3_accuracy: 0.9822030390823627
+statement_false_positives: 238
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.5833    0.8077    0.6774        26
+           GOODBYE     0.4918    0.6818    0.5714       220
+         GRATITUDE     0.3684    1.0000    0.5385         7
+         AGREEMENT     0.5000    0.3246    0.3936      1069
+      DISAGREEMENT     0.0270    0.0435    0.0333        23
+       UNCERTAINTY     0.3896    0.8584    0.5359       113
+    ACKNOWLEDGMENT     0.8115    0.9472    0.8741      3809
+AFFIRMATIVE_ANSWER     0.2106    0.2407    0.2246       428
+   NEGATIVE_ANSWER     0.3966    0.8118    0.5328       170
+          QUESTION     0.6689    0.8170    0.7356       967
+     CLARIFICATION     0.1711    0.5652    0.2626        23
+         STATEMENT     0.9737    0.8744    0.9214     10058
+
+          accuracy                         0.8319     16913
+         macro avg     0.4660    0.6644    0.5251     16913
+      weighted avg     0.8513    0.8319    0.8355     16913
+
+Saved: E09_07_06_05_01_E09_07_06_05_01b_lr_validation_predictions.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01b_lr_validation_class_summary.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01b_lr_validation_confusion_matrix.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01b_lr_validation_errors.csv
+
+=== PAIRED COMPARISON: b / validation ===
+                   metric     baseline  contrastive  difference
+                  correct 14042.000000 14070.000000   28.000000
+                 accuracy     0.830249     0.831904    0.001656
+          macro_precision     0.462474     0.466040    0.003566
+             macro_recall     0.663628     0.664354    0.000727
+                 macro_f1     0.522231     0.525114    0.002884
+              weighted_f1     0.834167     0.835457    0.001290
+            top3_accuracy     0.981907     0.982203    0.000296
+statement_false_positives   241.000000   238.000000   -3.000000
+
+=== PREDICTION CHANGES ===
+status
+BOTH_CORRECT      14000
+BOTH_INCORRECT     2801
+IMPROVED             70
+REGRESSED            42
+
+=== CLASS RECALL COMPARISON ===
+            intent  recall_baseline  recall_contrastive  recall_difference
+          GREETING         0.807692            0.807692           0.000000
+           GOODBYE         0.681818            0.681818           0.000000
+         GRATITUDE         1.000000            1.000000           0.000000
+         AGREEMENT         0.324602            0.324602           0.000000
+      DISAGREEMENT         0.043478            0.043478           0.000000
+       UNCERTAINTY         0.858407            0.858407           0.000000
+    ACKNOWLEDGMENT         0.946705            0.947230           0.000525
+AFFIRMATIVE_ANSWER         0.240654            0.240654           0.000000
+   NEGATIVE_ANSWER         0.811765            0.811765           0.000000
+          QUESTION         0.810755            0.816960           0.006205
+     CLARIFICATION         0.565217            0.565217           0.000000
+         STATEMENT         0.872440            0.874428           0.001988
+Saved: E09_07_06_05_01_b_validation_metric_comparison.csv
+Saved: E09_07_06_05_01_b_validation_prediction_comparison.csv
+Saved: E09_07_06_05_01_b_validation_class_comparison.csv
+Saved: E09_07_06_05_01_results.csv
+
+=== EVALUATION: baseline_b_lr / benchmark ===
+model: baseline_b_lr
+dataset: benchmark
+records: 240
+correct: 165
+accuracy: 0.6875
+macro_precision: 0.7865235458985459
+macro_recall: 0.6875
+macro_f1: 0.7057641008020514
+weighted_f1: 0.7057641008020515
+top3_accuracy: 0.8958333333333334
+statement_false_positives: 36
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.6500    0.7879        20
+           GOODBYE     0.6818    0.7500    0.7143        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6429    0.4500    0.5294        20
+      DISAGREEMENT     0.7273    0.8000    0.7619        20
+       UNCERTAINTY     0.9231    0.6000    0.7273        20
+    ACKNOWLEDGMENT     0.9091    0.5000    0.6452        20
+AFFIRMATIVE_ANSWER     0.8125    0.6500    0.7222        20
+   NEGATIVE_ANSWER     0.9375    0.7500    0.8333        20
+          QUESTION     0.5333    0.8000    0.6400        20
+     CLARIFICATION     0.9375    0.7500    0.8333        20
+         STATEMENT     0.3333    0.9000    0.4865        20
+
+          accuracy                         0.6875       240
+         macro avg     0.7865    0.6875    0.7058       240
+      weighted avg     0.7865    0.6875    0.7058       240
+
+Saved: E09_07_06_05_01_baseline_b_lr_benchmark_predictions.csv
+Saved: E09_07_06_05_01_baseline_b_lr_benchmark_class_summary.csv
+Saved: E09_07_06_05_01_baseline_b_lr_benchmark_confusion_matrix.csv
+Saved: E09_07_06_05_01_baseline_b_lr_benchmark_errors.csv
+
+=== GROUP RESULTS ===
+       group  records  correct  accuracy  top3_accuracy
+     complex       60       36      0.60       0.916667
+installation       60       45      0.75       0.900000
+     natural       60       39      0.65       0.866667
+       short       60       45      0.75       0.900000
+Saved: E09_07_06_05_01_baseline_b_lr_benchmark_group_results.csv
+
+=== EVALUATION: E09_07_06_05_01b_lr / benchmark ===
+model: E09_07_06_05_01b_lr
+dataset: benchmark
+records: 240
+correct: 169
+accuracy: 0.7041666666666667
+macro_precision: 0.7898344241122542
+macro_recall: 0.7041666666666666
+macro_f1: 0.7211337187312097
+weighted_f1: 0.7211337187312096
+top3_accuracy: 0.9125
+statement_false_positives: 30
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.7000    0.8235        20
+           GOODBYE     0.7619    0.8000    0.7805        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6000    0.4500    0.5143        20
+      DISAGREEMENT     0.6522    0.7500    0.6977        20
+       UNCERTAINTY     0.9231    0.6000    0.7273        20
+    ACKNOWLEDGMENT     0.9091    0.5000    0.6452        20
+AFFIRMATIVE_ANSWER     0.8421    0.8000    0.8205        20
+   NEGATIVE_ANSWER     0.9412    0.8000    0.8649        20
+          QUESTION     0.5152    0.8500    0.6415        20
+     CLARIFICATION     1.0000    0.8000    0.8889        20
+         STATEMENT     0.3333    0.7500    0.4615        20
+
+          accuracy                         0.7042       240
+         macro avg     0.7898    0.7042    0.7211       240
+      weighted avg     0.7898    0.7042    0.7211       240
+
+Saved: E09_07_06_05_01_E09_07_06_05_01b_lr_benchmark_predictions.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01b_lr_benchmark_class_summary.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01b_lr_benchmark_confusion_matrix.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01b_lr_benchmark_errors.csv
+
+=== GROUP RESULTS ===
+       group  records  correct  accuracy  top3_accuracy
+     complex       60       37  0.616667       0.900000
+installation       60       48  0.800000       0.950000
+     natural       60       39  0.650000       0.883333
+       short       60       45  0.750000       0.916667
+Saved: E09_07_06_05_01_E09_07_06_05_01b_lr_benchmark_group_results.csv
+
+=== PAIRED COMPARISON: b / benchmark ===
+                   metric   baseline  contrastive  difference
+                  correct 165.000000   169.000000    4.000000
+                 accuracy   0.687500     0.704167    0.016667
+          macro_precision   0.786524     0.789834    0.003311
+             macro_recall   0.687500     0.704167    0.016667
+                 macro_f1   0.705764     0.721134    0.015370
+              weighted_f1   0.705764     0.721134    0.015370
+            top3_accuracy   0.895833     0.912500    0.016667
+statement_false_positives  36.000000    30.000000   -6.000000
+
+=== PREDICTION CHANGES ===
+status
+BOTH_CORRECT      158
+BOTH_INCORRECT     64
+IMPROVED           11
+REGRESSED           7
+
+=== CLASS RECALL COMPARISON ===
+            intent  recall_baseline  recall_contrastive  recall_difference
+          GREETING             0.65                0.70               0.05
+           GOODBYE             0.75                0.80               0.05
+         GRATITUDE             0.65                0.65               0.00
+         AGREEMENT             0.45                0.45               0.00
+      DISAGREEMENT             0.80                0.75              -0.05
+       UNCERTAINTY             0.60                0.60               0.00
+    ACKNOWLEDGMENT             0.50                0.50               0.00
+AFFIRMATIVE_ANSWER             0.65                0.80               0.15
+   NEGATIVE_ANSWER             0.75                0.80               0.05
+          QUESTION             0.80                0.85               0.05
+     CLARIFICATION             0.75                0.80               0.05
+         STATEMENT             0.90                0.75              -0.15
+Saved: E09_07_06_05_01_b_benchmark_metric_comparison.csv
+Saved: E09_07_06_05_01_b_benchmark_prediction_comparison.csv
+Saved: E09_07_06_05_01_b_benchmark_class_comparison.csv
+Saved: E09_07_06_05_01_results.csv
+
+============================================================
+STRATEGY: strong | ALPHA: 1.0
+============================================================
+Frozen feature space verification: PASS
+
+=== SAMPLE WEIGHT ANALYSIS ===
+Strategy: c
+Minimum: 0.00189201
+Maximum: 65.52619048
+Mean: 1.00000000
+Total: 137605.0000
+
+=== SOURCE WEIGHTS ===
+training_source  records  total_weight  mean_weight  min_weight  max_weight  weight_share
+    contrastive     1199  31665.177869    26.409656    0.144216    65.52619      0.230116
+ digital_mirror      579  15234.624706    26.311960    0.072108    65.52619      0.110713
+    switchboard   135827  90705.197425     0.667799    0.001892    65.52619      0.659171
+Saved: E09_07_06_05_01_c_source_weights.csv
+
+=== CLASS WEIGHTS ===
+            intent  records  total_weight  mean_weight  min_weight  max_weight
+    ACKNOWLEDGMENT    30714  11467.083333     0.373350    0.001892   22.009757
+AFFIRMATIVE_ANSWER     3228  11467.083333     3.552380    0.012769   16.740268
+         AGREEMENT     8901  11467.083333     1.288292    0.003367    9.292612
+     CLARIFICATION      395  11467.083333    29.030591    1.288871   39.954994
+      DISAGREEMENT      434  11467.083333    26.421851    0.310324   46.238239
+           GOODBYE     2246  11467.083333     5.105558    0.039446   12.070614
+         GRATITUDE      208  11467.083333    55.130208    3.448747   65.526190
+          GREETING      316  11467.083333    36.288238    0.934944   51.421898
+   NEGATIVE_ANSWER     1489  11467.083333     7.701198    0.034877   29.784632
+          QUESTION     7197  11467.083333     1.593314    0.030829    1.726450
+         STATEMENT    81355  11467.083333     0.140951    0.002289    0.144216
+       UNCERTAINTY     1122  11467.083333    10.220217    0.069077   21.759171
+Saved: E09_07_06_05_01_c_class_weights.csv
+Saved: E09_07_06_05_01_c_source_class_weights.csv
+Saved: E09_07_06_05_01_c_effective_sample_size.csv
+
+=== TRAINING E09_07_06_05_01c_lr ===
+Classifier parameters: {'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': 0.0, 'max_iter': 1000, 'n_jobs': None, 'penalty': 'deprecated', 'random_state': 42, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+Training time: 110.0453 seconds
+Iterations: [140]
+Convergence warnings: 0
+Frozen feature space verification: PASS
+Saved model: E09_07_06_05_01c_lr.joblib
+Model SHA256: ba9dbca32cafdb99a222d1ce769b9b6297d788aeaccdd5055d81d3f86a1b4f64
+Frozen features unchanged: YES
+Saved model verification: PASS
+
+=== EVALUATION: baseline_c_lr / validation ===
+model: baseline_c_lr
+dataset: validation
+records: 16913
+correct: 13551
+accuracy: 0.801217997989712
+macro_precision: 0.37091983270626905
+macro_recall: 0.6163123369202584
+macro_f1: 0.4131355064274897
+weighted_f1: 0.8114450653993642
+top3_accuracy: 0.944184946490865
+statement_false_positives: 232
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.0792    0.8077    0.1443        26
+           GOODBYE     0.4679    0.6636    0.5489       220
+         GRATITUDE     0.3684    1.0000    0.5385         7
+         AGREEMENT     0.4090    0.2479    0.3087      1069
+      DISAGREEMENT     0.0359    0.5652    0.0675        23
+       UNCERTAINTY     0.3579    0.8584    0.5052       113
+    ACKNOWLEDGMENT     0.7985    0.9199    0.8549      3809
+AFFIRMATIVE_ANSWER     0.0836    0.0537    0.0654       428
+   NEGATIVE_ANSWER     0.1189    0.1294    0.1239       170
+          QUESTION     0.6644    0.8108    0.7303       967
+     CLARIFICATION     0.0932    0.4783    0.1560        23
+         STATEMENT     0.9739    0.8608    0.9139     10058
+
+          accuracy                         0.8012     16913
+         macro avg     0.3709    0.6163    0.4131     16913
+      weighted avg     0.8351    0.8012    0.8114     16913
+
+Saved: E09_07_06_05_01_baseline_c_lr_validation_predictions.csv
+Saved: E09_07_06_05_01_baseline_c_lr_validation_class_summary.csv
+Saved: E09_07_06_05_01_baseline_c_lr_validation_confusion_matrix.csv
+Saved: E09_07_06_05_01_baseline_c_lr_validation_errors.csv
+
+=== EVALUATION: E09_07_06_05_01c_lr / validation ===
+model: E09_07_06_05_01c_lr
+dataset: validation
+records: 16913
+correct: 13637
+accuracy: 0.8063028439661799
+macro_precision: 0.3776278821761454
+macro_recall: 0.6190231209494123
+macro_f1: 0.41910708333576285
+weighted_f1: 0.8166708733597537
+top3_accuracy: 0.9449535859989358
+statement_false_positives: 232
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.0789    0.8077    0.1438        26
+           GOODBYE     0.4693    0.6591    0.5482       220
+         GRATITUDE     0.3684    1.0000    0.5385         7
+         AGREEMENT     0.4397    0.2797    0.3419      1069
+      DISAGREEMENT     0.0355    0.5652    0.0668        23
+       UNCERTAINTY     0.3834    0.8584    0.5301       113
+    ACKNOWLEDGMENT     0.8048    0.9199    0.8585      3809
+AFFIRMATIVE_ANSWER     0.0878    0.0537    0.0667       428
+   NEGATIVE_ANSWER     0.1229    0.1294    0.1261       170
+          QUESTION     0.6735    0.8108    0.7358       967
+     CLARIFICATION     0.0932    0.4783    0.1560        23
+         STATEMENT     0.9741    0.8661    0.9169     10058
+
+          accuracy                         0.8063     16913
+         macro avg     0.3776    0.6190    0.4191     16913
+      weighted avg     0.8394    0.8063    0.8167     16913
+
+Saved: E09_07_06_05_01_E09_07_06_05_01c_lr_validation_predictions.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01c_lr_validation_class_summary.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01c_lr_validation_confusion_matrix.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01c_lr_validation_errors.csv
+
+=== PAIRED COMPARISON: c / validation ===
+                   metric     baseline  contrastive  difference
+                  correct 13551.000000 13637.000000   86.000000
+                 accuracy     0.801218     0.806303    0.005085
+          macro_precision     0.370920     0.377628    0.006708
+             macro_recall     0.616312     0.619023    0.002711
+                 macro_f1     0.413136     0.419107    0.005972
+              weighted_f1     0.811445     0.816671    0.005226
+            top3_accuracy     0.944185     0.944954    0.000769
+statement_false_positives   232.000000   232.000000    0.000000
+
+=== PREDICTION CHANGES ===
+status
+BOTH_CORRECT      13508
+BOTH_INCORRECT     3233
+IMPROVED            129
+REGRESSED            43
+
+=== CLASS RECALL COMPARISON ===
+            intent  recall_baseline  recall_contrastive  recall_difference
+          GREETING         0.807692            0.807692           0.000000
+           GOODBYE         0.663636            0.659091          -0.004545
+         GRATITUDE         1.000000            1.000000           0.000000
+         AGREEMENT         0.247895            0.279701           0.031805
+      DISAGREEMENT         0.565217            0.565217           0.000000
+       UNCERTAINTY         0.858407            0.858407           0.000000
+    ACKNOWLEDGMENT         0.919926            0.919926           0.000000
+AFFIRMATIVE_ANSWER         0.053738            0.053738           0.000000
+   NEGATIVE_ANSWER         0.129412            0.129412           0.000000
+          QUESTION         0.810755            0.810755           0.000000
+     CLARIFICATION         0.478261            0.478261           0.000000
+         STATEMENT         0.860807            0.866077           0.005269
+Saved: E09_07_06_05_01_c_validation_metric_comparison.csv
+Saved: E09_07_06_05_01_c_validation_prediction_comparison.csv
+Saved: E09_07_06_05_01_c_validation_class_comparison.csv
+Saved: E09_07_06_05_01_results.csv
+
+=== EVALUATION: baseline_c_lr / benchmark ===
+model: baseline_c_lr
+dataset: benchmark
+records: 240
+correct: 168
+accuracy: 0.7
+macro_precision: 0.7902842591982396
+macro_recall: 0.7000000000000001
+macro_f1: 0.717266038741307
+weighted_f1: 0.717266038741307
+top3_accuracy: 0.8958333333333334
+statement_false_positives: 34
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.6500    0.7879        20
+           GOODBYE     0.6957    0.8000    0.7442        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6667    0.5000    0.5714        20
+      DISAGREEMENT     0.7619    0.8000    0.7805        20
+       UNCERTAINTY     0.8571    0.6000    0.7059        20
+    ACKNOWLEDGMENT     0.9167    0.5500    0.6875        20
+AFFIRMATIVE_ANSWER     0.8125    0.6500    0.7222        20
+   NEGATIVE_ANSWER     0.9375    0.7500    0.8333        20
+          QUESTION     0.5517    0.8000    0.6531        20
+     CLARIFICATION     0.9375    0.7500    0.8333        20
+         STATEMENT     0.3462    0.9000    0.5000        20
+
+          accuracy                         0.7000       240
+         macro avg     0.7903    0.7000    0.7173       240
+      weighted avg     0.7903    0.7000    0.7173       240
+
+Saved: E09_07_06_05_01_baseline_c_lr_benchmark_predictions.csv
+Saved: E09_07_06_05_01_baseline_c_lr_benchmark_class_summary.csv
+Saved: E09_07_06_05_01_baseline_c_lr_benchmark_confusion_matrix.csv
+Saved: E09_07_06_05_01_baseline_c_lr_benchmark_errors.csv
+
+=== GROUP RESULTS ===
+       group  records  correct  accuracy  top3_accuracy
+     complex       60       37  0.616667       0.883333
+installation       60       46  0.766667       0.933333
+     natural       60       40  0.666667       0.866667
+       short       60       45  0.750000       0.900000
+Saved: E09_07_06_05_01_baseline_c_lr_benchmark_group_results.csv
+
+=== EVALUATION: E09_07_06_05_01c_lr / benchmark ===
+model: E09_07_06_05_01c_lr
+dataset: benchmark
+records: 240
+correct: 170
+accuracy: 0.7083333333333334
+macro_precision: 0.7873478527323298
+macro_recall: 0.7083333333333334
+macro_f1: 0.7245232305347322
+weighted_f1: 0.7245232305347321
+top3_accuracy: 0.9125
+statement_false_positives: 28
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.7000    0.8235        20
+           GOODBYE     0.7619    0.8000    0.7805        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6111    0.5500    0.5789        20
+      DISAGREEMENT     0.7143    0.7500    0.7317        20
+       UNCERTAINTY     0.8571    0.6000    0.7059        20
+    ACKNOWLEDGMENT     0.9091    0.5000    0.6452        20
+AFFIRMATIVE_ANSWER     0.7895    0.7500    0.7692        20
+   NEGATIVE_ANSWER     0.9412    0.8000    0.8649        20
+          QUESTION     0.5152    0.8500    0.6415        20
+     CLARIFICATION     1.0000    0.8000    0.8889        20
+         STATEMENT     0.3488    0.7500    0.4762        20
+
+          accuracy                         0.7083       240
+         macro avg     0.7873    0.7083    0.7245       240
+      weighted avg     0.7873    0.7083    0.7245       240
+
+Saved: E09_07_06_05_01_E09_07_06_05_01c_lr_benchmark_predictions.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01c_lr_benchmark_class_summary.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01c_lr_benchmark_confusion_matrix.csv
+Saved: E09_07_06_05_01_E09_07_06_05_01c_lr_benchmark_errors.csv
+
+=== GROUP RESULTS ===
+       group  records  correct  accuracy  top3_accuracy
+     complex       60       38  0.633333       0.916667
+installation       60       48  0.800000       0.950000
+     natural       60       41  0.683333       0.866667
+       short       60       43  0.716667       0.916667
+Saved: E09_07_06_05_01_E09_07_06_05_01c_lr_benchmark_group_results.csv
+
+=== PAIRED COMPARISON: c / benchmark ===
+                   metric   baseline  contrastive  difference
+                  correct 168.000000   170.000000    2.000000
+                 accuracy   0.700000     0.708333    0.008333
+          macro_precision   0.790284     0.787348   -0.002936
+             macro_recall   0.700000     0.708333    0.008333
+                 macro_f1   0.717266     0.724523    0.007257
+              weighted_f1   0.717266     0.724523    0.007257
+            top3_accuracy   0.895833     0.912500    0.016667
+statement_false_positives  34.000000    28.000000   -6.000000
+
+=== PREDICTION CHANGES ===
+status
+BOTH_CORRECT      161
+BOTH_INCORRECT     63
+IMPROVED            9
+REGRESSED           7
+
+=== CLASS RECALL COMPARISON ===
+            intent  recall_baseline  recall_contrastive  recall_difference
+          GREETING             0.65                0.70               0.05
+           GOODBYE             0.80                0.80               0.00
+         GRATITUDE             0.65                0.65               0.00
+         AGREEMENT             0.50                0.55               0.05
+      DISAGREEMENT             0.80                0.75              -0.05
+       UNCERTAINTY             0.60                0.60               0.00
+    ACKNOWLEDGMENT             0.55                0.50              -0.05
+AFFIRMATIVE_ANSWER             0.65                0.75               0.10
+   NEGATIVE_ANSWER             0.75                0.80               0.05
+          QUESTION             0.80                0.85               0.05
+     CLARIFICATION             0.75                0.80               0.05
+         STATEMENT             0.90                0.75              -0.15
+Saved: E09_07_06_05_01_c_benchmark_metric_comparison.csv
+Saved: E09_07_06_05_01_c_benchmark_prediction_comparison.csv
+Saved: E09_07_06_05_01_c_benchmark_class_comparison.csv
+Saved: E09_07_06_05_01_results.csv
+
+=== FINAL RESULTS ===
+              model    dataset  records  correct  accuracy  macro_precision  macro_recall  macro_f1  weighted_f1  top3_accuracy  statement_false_positives  alpha  training_seconds
+      baseline_a_lr validation    16913    12907  0.763141         0.470267      0.683539  0.514229     0.790636       0.986401                        306    0.0               NaN
+E09_07_06_05_01a_lr validation    16913    12903  0.762904         0.470229      0.682451  0.514065     0.790314       0.987170                        307    0.0        134.472036
+      baseline_a_lr  benchmark      240      149  0.620833         0.724974      0.620833  0.629014     0.629014       0.829167                         59    0.0               NaN
+E09_07_06_05_01a_lr  benchmark      240      163  0.679167         0.814640      0.679167  0.685892     0.685892       0.875000                         41    0.0        134.472036
+      baseline_b_lr validation    16913    14042  0.830249         0.462474      0.663628  0.522231     0.834167       0.981907                        241    0.5               NaN
+E09_07_06_05_01b_lr validation    16913    14070  0.831904         0.466040      0.664354  0.525114     0.835457       0.982203                        238    0.5        128.935743
+      baseline_b_lr  benchmark      240      165  0.687500         0.786524      0.687500  0.705764     0.705764       0.895833                         36    0.5               NaN
+E09_07_06_05_01b_lr  benchmark      240      169  0.704167         0.789834      0.704167  0.721134     0.721134       0.912500                         30    0.5        128.935743
+      baseline_c_lr validation    16913    13551  0.801218         0.370920      0.616312  0.413136     0.811445       0.944185                        232    1.0               NaN
+E09_07_06_05_01c_lr validation    16913    13637  0.806303         0.377628      0.619023  0.419107     0.816671       0.944954                        232    1.0        110.045335
+      baseline_c_lr  benchmark      240      168  0.700000         0.790284      0.700000  0.717266     0.717266       0.895833                         34    1.0               NaN
+E09_07_06_05_01c_lr  benchmark      240      170  0.708333         0.787348      0.708333  0.724523     0.724523       0.912500                         28    1.0        110.045335
+
+=== EXPERIMENT SUMMARY ===
+Models trained: 3
+Training records: 137605
+TF-IDF refitted: NO
+Feature count changed: NO
+Frozen feature extractor changed: NO
+Switchboard Test evaluated: NO
+Hyperparameter tuning: NO
+
+=== FILE INTEGRITY ===
+PASS | data\processed\intent_v1\train.csv
+PASS | data\processed\intent_v1\validation.csv
+PASS | data\processed\intent_v1\test.csv
+PASS | data\processed\digital_mirror_v1\train_eligible.csv
+PASS | data\processed\digital_mirror_contrastive_v1\train_eligible.csv
+PASS | data\evaluation\digital_mirror_final\test_processed.csv
+PASS | models\E09_07_03_combined_logreg.joblib
+PASS | models\E09_07_05a_lr.joblib
+PASS | models\E09_07_05b_lr.joblib
+PASS | models\E09_07_05c_lr.joblib
+Saved: E09_07_06_05_01_file_integrity.csv
+
+Integrity checks passed: 10/10
+
+=== EXPERIMENT FINISHED ===

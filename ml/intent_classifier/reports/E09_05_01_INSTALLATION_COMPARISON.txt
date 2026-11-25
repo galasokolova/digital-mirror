@@ -1,0 +1,441 @@
+=== E09.05.1: INSTALLATION BENCHMARK COMPARISON ===
+
+Benchmark records: 60
+Models: 5
+
+Class distribution:
+expected
+GREETING              5
+GOODBYE               5
+GRATITUDE             5
+AGREEMENT             5
+DISAGREEMENT          5
+UNCERTAINTY           5
+ACKNOWLEDGMENT        5
+AFFIRMATIVE_ANSWER    5
+NEGATIVE_ANSWER       5
+QUESTION              5
+CLARIFICATION         5
+STATEMENT             5
+
+======================================================================
+MODEL: E09_01
+======================================================================
+
+=== BENCHMARK METRICS ===
+Correct: 23 / 60
+Accuracy: 0.3833
+Macro F1: 0.3527
+Top-3 Accuracy: 0.7500
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.6000    0.7500         5
+           GOODBYE     0.3333    0.6000    0.4286         5
+         GRATITUDE     0.0000    0.0000    0.0000         5
+         AGREEMENT     0.5000    0.6000    0.5455         5
+      DISAGREEMENT     0.0000    0.0000    0.0000         5
+       UNCERTAINTY     1.0000    0.4000    0.5714         5
+    ACKNOWLEDGMENT     1.0000    0.4000    0.5714         5
+AFFIRMATIVE_ANSWER     1.0000    0.4000    0.5714         5
+   NEGATIVE_ANSWER     0.0000    0.0000    0.0000         5
+          QUESTION     0.4286    0.6000    0.5000         5
+     CLARIFICATION     0.0000    0.0000    0.0000         5
+         STATEMENT     0.1724    1.0000    0.2941         5
+
+          accuracy                         0.3833        60
+         macro avg     0.4529    0.3833    0.3527        60
+      weighted avg     0.4529    0.3833    0.3527        60
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                   3        1          0          0             0            0               0                   0                0         1              0          0
+GOODBYE                    0        3          0          0             0            0               0                   0                0         0              0          2
+GRATITUDE                  0        4          0          0             0            0               0                   0                0         0              0          1
+AGREEMENT                  0        0          0          3             0            0               0                   0                0         0              0          2
+DISAGREEMENT               0        0          0          1             0            0               0                   0                0         0              0          4
+UNCERTAINTY                0        0          0          0             0            2               0                   0                0         0              0          3
+ACKNOWLEDGMENT             0        0          0          0             0            0               2                   0                0         1              0          2
+AFFIRMATIVE_ANSWER         0        0          0          2             0            0               0                   2                0         0              0          1
+NEGATIVE_ANSWER            0        1          0          0             0            0               0                   0                0         0              0          4
+QUESTION                   0        0          0          0             0            0               0                   0                0         3              0          2
+CLARIFICATION              0        0          0          0             0            0               0                   0                0         2              0          3
+STATEMENT                  0        0          0          0             0            0               0                   0                0         0              0          5
+
+=== SEEN / UNSEEN ANALYSIS ===
+
+SEEN
+Records: 16
+Correct: 9
+Accuracy: 0.5625
+
+UNSEEN
+Records: 44
+Correct: 14
+Accuracy: 0.3182
+
+=== MISCLASSIFIED UTTERANCES ===
+                         text           expected predicted  model_score  seen_in_training
+                Good evening.           GREETING   GOODBYE       0.4159             False
+            Hey, how are you?           GREETING  QUESTION       0.9327             False
+                     Goodbye!            GOODBYE STATEMENT       0.7645             False
+            I have to go now.            GOODBYE STATEMENT       0.9806             False
+                   Thank you!          GRATITUDE   GOODBYE       0.5739              True
+                Thanks a lot.          GRATITUDE   GOODBYE       0.3236              True
+    Thank you for explaining.          GRATITUDE   GOODBYE       0.4844             False
+      I appreciate your help.          GRATITUDE STATEMENT       0.3946             False
+                 Many thanks.          GRATITUDE   GOODBYE       0.6031             False
+          I completely agree.          AGREEMENT STATEMENT       0.4582             False
+That is exactly what I think.          AGREEMENT STATEMENT       0.5944             False
+         I disagree with you.       DISAGREEMENT STATEMENT       0.3791             False
+               I don't agree.       DISAGREEMENT STATEMENT       0.4477              True
+       I think you are wrong.       DISAGREEMENT STATEMENT       0.8628             False
+  I have a different opinion.       DISAGREEMENT STATEMENT       0.9525             False
+  I don't think that's right.       DISAGREEMENT AGREEMENT       0.4884              True
+              I can't decide.        UNCERTAINTY STATEMENT       0.9344             False
+             I'm not certain.        UNCERTAINTY STATEMENT       0.9019              True
+          I have some doubts.        UNCERTAINTY STATEMENT       0.9587             False
+                I understand.     ACKNOWLEDGMENT STATEMENT       0.6356              True
+                      Got it.     ACKNOWLEDGMENT STATEMENT       0.9044             False
+  I understand what you mean.     ACKNOWLEDGMENT  QUESTION       0.3903             False
+                 Yes, please. AFFIRMATIVE_ANSWER AGREEMENT       0.3093             False
+                Yes, I would. AFFIRMATIVE_ANSWER AGREEMENT       0.3932             False
+                  Yes, I can. AFFIRMATIVE_ANSWER STATEMENT       0.3526             False
+               No, thank you.    NEGATIVE_ANSWER   GOODBYE       0.5544             False
+                 No, I don't.    NEGATIVE_ANSWER STATEMENT       0.3809             False
+                 No, I can't.    NEGATIVE_ANSWER STATEMENT       0.6351             False
+              No, I wouldn't.    NEGATIVE_ANSWER STATEMENT       0.4765             False
+                No, I am not.    NEGATIVE_ANSWER STATEMENT       0.5239             False
+     Who published this news?           QUESTION STATEMENT       0.7300             False
+  Can you show me the source?           QUESTION STATEMENT       0.6560             False
+            What do you mean?      CLARIFICATION  QUESTION       0.9985              True
+       Could you repeat that?      CLARIFICATION STATEMENT       0.4944             False
+    I didn't understand that.      CLARIFICATION STATEMENT       0.9337             False
+Could you explain that again?      CLARIFICATION STATEMENT       0.5768             False
+     Sorry, what did you say?      CLARIFICATION  QUESTION       0.7568             False
+
+======================================================================
+MODEL: E09_02
+======================================================================
+
+=== BENCHMARK METRICS ===
+Correct: 43 / 60
+Accuracy: 0.7167
+Macro F1: 0.7182
+Top-3 Accuracy: 0.8000
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.8000    0.8889         5
+           GOODBYE     0.5000    0.6000    0.5455         5
+         GRATITUDE     0.8000    0.8000    0.8000         5
+         AGREEMENT     0.6250    1.0000    0.7692         5
+      DISAGREEMENT     1.0000    0.4000    0.5714         5
+       UNCERTAINTY     1.0000    0.6000    0.7500         5
+    ACKNOWLEDGMENT     1.0000    0.4000    0.5714         5
+AFFIRMATIVE_ANSWER     1.0000    1.0000    1.0000         5
+   NEGATIVE_ANSWER     1.0000    0.8000    0.8889         5
+          QUESTION     0.7143    1.0000    0.8333         5
+     CLARIFICATION     0.6667    0.4000    0.5000         5
+         STATEMENT     0.3636    0.8000    0.5000         5
+
+          accuracy                         0.7167        60
+         macro avg     0.8058    0.7167    0.7182        60
+      weighted avg     0.8058    0.7167    0.7182        60
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                   4        1          0          0             0            0               0                   0                0         0              0          0
+GOODBYE                    0        3          0          0             0            0               0                   0                0         0              0          2
+GRATITUDE                  0        1          4          0             0            0               0                   0                0         0              0          0
+AGREEMENT                  0        0          0          5             0            0               0                   0                0         0              0          0
+DISAGREEMENT               0        1          0          1             2            0               0                   0                0         0              0          1
+UNCERTAINTY                0        0          0          0             0            3               0                   0                0         0              0          2
+ACKNOWLEDGMENT             0        0          0          1             0            0               2                   0                0         0              1          1
+AFFIRMATIVE_ANSWER         0        0          0          0             0            0               0                   5                0         0              0          0
+NEGATIVE_ANSWER            0        0          1          0             0            0               0                   0                4         0              0          0
+QUESTION                   0        0          0          0             0            0               0                   0                0         5              0          0
+CLARIFICATION              0        0          0          0             0            0               0                   0                0         2              2          1
+STATEMENT                  0        0          0          1             0            0               0                   0                0         0              0          4
+
+=== SEEN / UNSEEN ANALYSIS ===
+
+SEEN
+Records: 16
+Correct: 14
+Accuracy: 0.8750
+
+UNSEEN
+Records: 44
+Correct: 29
+Accuracy: 0.6591
+
+=== MISCLASSIFIED UTTERANCES ===
+                         text        expected     predicted  model_score  seen_in_training
+                Good evening.        GREETING       GOODBYE       0.7186             False
+                     Goodbye!         GOODBYE     STATEMENT       0.2952             False
+            I have to go now.         GOODBYE     STATEMENT       0.7413             False
+      I appreciate your help.       GRATITUDE       GOODBYE       0.8186             False
+       I think you are wrong.    DISAGREEMENT       GOODBYE       0.2314             False
+  I have a different opinion.    DISAGREEMENT     STATEMENT       0.6313             False
+  I don't think that's right.    DISAGREEMENT     AGREEMENT       0.5895              True
+              I can't decide.     UNCERTAINTY     STATEMENT       0.4781             False
+          I have some doubts.     UNCERTAINTY     STATEMENT       0.5658             False
+                I understand.  ACKNOWLEDGMENT     AGREEMENT       0.4456              True
+                      Got it.  ACKNOWLEDGMENT     STATEMENT       0.5887             False
+  I understand what you mean.  ACKNOWLEDGMENT CLARIFICATION       0.7933             False
+               No, thank you. NEGATIVE_ANSWER     GRATITUDE       0.9078             False
+       Could you repeat that?   CLARIFICATION      QUESTION       0.6890             False
+    I didn't understand that.   CLARIFICATION     STATEMENT       0.6121             False
+Could you explain that again?   CLARIFICATION      QUESTION       0.5525             False
+       I thought it was true.       STATEMENT     AGREEMENT       0.5500             False
+
+======================================================================
+MODEL: E09_05a
+======================================================================
+
+=== BENCHMARK METRICS ===
+Correct: 49 / 60
+Accuracy: 0.8167
+Macro F1: 0.8212
+Top-3 Accuracy: 0.9000
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    1.0000    1.0000         5
+           GOODBYE     1.0000    0.8000    0.8889         5
+         GRATITUDE     0.8333    1.0000    0.9091         5
+         AGREEMENT     0.6250    1.0000    0.7692         5
+      DISAGREEMENT     1.0000    0.6000    0.7500         5
+       UNCERTAINTY     1.0000    0.8000    0.8889         5
+    ACKNOWLEDGMENT     1.0000    0.4000    0.5714         5
+AFFIRMATIVE_ANSWER     1.0000    0.8000    0.8889         5
+   NEGATIVE_ANSWER     1.0000    0.8000    0.8889         5
+          QUESTION     1.0000    1.0000    1.0000         5
+     CLARIFICATION     0.6667    0.8000    0.7273         5
+         STATEMENT     0.4444    0.8000    0.5714         5
+
+          accuracy                         0.8167        60
+         macro avg     0.8808    0.8167    0.8212        60
+      weighted avg     0.8808    0.8167    0.8212        60
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                   5        0          0          0             0            0               0                   0                0         0              0          0
+GOODBYE                    0        4          0          0             0            0               0                   0                0         0              0          1
+GRATITUDE                  0        0          5          0             0            0               0                   0                0         0              0          0
+AGREEMENT                  0        0          0          5             0            0               0                   0                0         0              0          0
+DISAGREEMENT               0        0          0          1             3            0               0                   0                0         0              0          1
+UNCERTAINTY                0        0          0          0             0            4               0                   0                0         0              0          1
+ACKNOWLEDGMENT             0        0          0          1             0            0               2                   0                0         0              1          1
+AFFIRMATIVE_ANSWER         0        0          0          0             0            0               0                   4                0         0              1          0
+NEGATIVE_ANSWER            0        0          1          0             0            0               0                   0                4         0              0          0
+QUESTION                   0        0          0          0             0            0               0                   0                0         5              0          0
+CLARIFICATION              0        0          0          0             0            0               0                   0                0         0              4          1
+STATEMENT                  0        0          0          1             0            0               0                   0                0         0              0          4
+
+=== SEEN / UNSEEN ANALYSIS ===
+
+SEEN
+Records: 16
+Correct: 14
+Accuracy: 0.8750
+
+UNSEEN
+Records: 44
+Correct: 35
+Accuracy: 0.7955
+
+=== MISCLASSIFIED UTTERANCES ===
+                       text           expected     predicted  model_score  seen_in_training
+          I have to go now.            GOODBYE     STATEMENT       0.6834             False
+I have a different opinion.       DISAGREEMENT     STATEMENT       0.5170             False
+I don't think that's right.       DISAGREEMENT     AGREEMENT       0.6152              True
+        I have some doubts.        UNCERTAINTY     STATEMENT       0.5298             False
+              I understand.     ACKNOWLEDGMENT     AGREEMENT       0.4272              True
+                    Got it.     ACKNOWLEDGMENT     STATEMENT       0.5843             False
+I understand what you mean.     ACKNOWLEDGMENT CLARIFICATION       0.9118             False
+               Yes, please. AFFIRMATIVE_ANSWER CLARIFICATION       0.5344             False
+             No, thank you.    NEGATIVE_ANSWER     GRATITUDE       0.8490             False
+  I didn't understand that.      CLARIFICATION     STATEMENT       0.5419             False
+     I thought it was true.          STATEMENT     AGREEMENT       0.5368             False
+
+======================================================================
+MODEL: E09_05b
+======================================================================
+
+=== BENCHMARK METRICS ===
+Correct: 47 / 60
+Accuracy: 0.7833
+Macro F1: 0.7866
+Top-3 Accuracy: 0.9500
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    1.0000    1.0000         5
+           GOODBYE     0.8000    0.8000    0.8000         5
+         GRATITUDE     0.8000    0.8000    0.8000         5
+         AGREEMENT     0.6250    1.0000    0.7692         5
+      DISAGREEMENT     1.0000    0.6000    0.7500         5
+       UNCERTAINTY     1.0000    0.8000    0.8889         5
+    ACKNOWLEDGMENT     1.0000    0.4000    0.5714         5
+AFFIRMATIVE_ANSWER     0.8333    1.0000    0.9091         5
+   NEGATIVE_ANSWER     1.0000    0.8000    0.8889         5
+          QUESTION     0.8000    0.8000    0.8000         5
+     CLARIFICATION     0.8000    0.8000    0.8000         5
+         STATEMENT     0.3750    0.6000    0.4615         5
+
+          accuracy                         0.7833        60
+         macro avg     0.8361    0.7833    0.7866        60
+      weighted avg     0.8361    0.7833    0.7866        60
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                   5        0          0          0             0            0               0                   0                0         0              0          0
+GOODBYE                    0        4          0          0             0            0               0                   0                0         0              0          1
+GRATITUDE                  0        1          4          0             0            0               0                   0                0         0              0          0
+AGREEMENT                  0        0          0          5             0            0               0                   0                0         0              0          0
+DISAGREEMENT               0        0          0          1             3            0               0                   0                0         0              0          1
+UNCERTAINTY                0        0          0          0             0            4               0                   0                0         0              0          1
+ACKNOWLEDGMENT             0        0          0          1             0            0               2                   0                0         0              1          1
+AFFIRMATIVE_ANSWER         0        0          0          0             0            0               0                   5                0         0              0          0
+NEGATIVE_ANSWER            0        0          1          0             0            0               0                   0                4         0              0          0
+QUESTION                   0        0          0          0             0            0               0                   1                0         4              0          0
+CLARIFICATION              0        0          0          0             0            0               0                   0                0         0              4          1
+STATEMENT                  0        0          0          1             0            0               0                   0                0         1              0          3
+
+=== SEEN / UNSEEN ANALYSIS ===
+
+SEEN
+Records: 16
+Correct: 14
+Accuracy: 0.8750
+
+UNSEEN
+Records: 44
+Correct: 33
+Accuracy: 0.7500
+
+=== MISCLASSIFIED UTTERANCES ===
+                                text        expected          predicted  model_score  seen_in_training
+                   I have to go now.         GOODBYE          STATEMENT       0.6612             False
+                        Many thanks.       GRATITUDE            GOODBYE       0.5610             False
+         I have a different opinion.    DISAGREEMENT          STATEMENT       0.4501             False
+         I don't think that's right.    DISAGREEMENT          AGREEMENT       0.6566              True
+                 I have some doubts.     UNCERTAINTY          STATEMENT       0.5282             False
+                       I understand.  ACKNOWLEDGMENT          AGREEMENT       0.3416              True
+                             Got it.  ACKNOWLEDGMENT          STATEMENT       0.5917             False
+         I understand what you mean.  ACKNOWLEDGMENT      CLARIFICATION       0.7691             False
+                      No, thank you. NEGATIVE_ANSWER          GRATITUDE       0.6763             False
+         Can you show me the source?        QUESTION AFFIRMATIVE_ANSWER       0.3995             False
+           I didn't understand that.   CLARIFICATION          STATEMENT       0.5425             False
+              I thought it was true.       STATEMENT          AGREEMENT       0.5515             False
+The article was published last week.       STATEMENT           QUESTION       0.4703             False
+
+======================================================================
+MODEL: E09_05c
+======================================================================
+
+=== BENCHMARK METRICS ===
+Correct: 48 / 60
+Accuracy: 0.8000
+Macro F1: 0.8068
+Top-3 Accuracy: 0.9500
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    1.0000    1.0000         5
+           GOODBYE     0.8000    0.8000    0.8000         5
+         GRATITUDE     0.8000    0.8000    0.8000         5
+         AGREEMENT     0.7143    1.0000    0.8333         5
+      DISAGREEMENT     1.0000    0.6000    0.7500         5
+       UNCERTAINTY     0.8000    0.8000    0.8000         5
+    ACKNOWLEDGMENT     1.0000    0.6000    0.7500         5
+AFFIRMATIVE_ANSWER     0.8333    1.0000    0.9091         5
+   NEGATIVE_ANSWER     1.0000    0.8000    0.8889         5
+          QUESTION     1.0000    0.8000    0.8889         5
+     CLARIFICATION     0.8000    0.8000    0.8000         5
+         STATEMENT     0.3750    0.6000    0.4615         5
+
+          accuracy                         0.8000        60
+         macro avg     0.8436    0.8000    0.8068        60
+      weighted avg     0.8436    0.8000    0.8068        60
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                   5        0          0          0             0            0               0                   0                0         0              0          0
+GOODBYE                    0        4          0          0             0            0               0                   0                0         0              0          1
+GRATITUDE                  0        1          4          0             0            0               0                   0                0         0              0          0
+AGREEMENT                  0        0          0          5             0            0               0                   0                0         0              0          0
+DISAGREEMENT               0        0          0          1             3            0               0                   0                0         0              0          1
+UNCERTAINTY                0        0          0          0             0            4               0                   0                0         0              0          1
+ACKNOWLEDGMENT             0        0          0          0             0            0               3                   0                0         0              1          1
+AFFIRMATIVE_ANSWER         0        0          0          0             0            0               0                   5                0         0              0          0
+NEGATIVE_ANSWER            0        0          1          0             0            0               0                   0                4         0              0          0
+QUESTION                   0        0          0          0             0            0               0                   1                0         4              0          0
+CLARIFICATION              0        0          0          0             0            0               0                   0                0         0              4          1
+STATEMENT                  0        0          0          1             0            1               0                   0                0         0              0          3
+
+=== SEEN / UNSEEN ANALYSIS ===
+
+SEEN
+Records: 16
+Correct: 15
+Accuracy: 0.9375
+
+UNSEEN
+Records: 44
+Correct: 33
+Accuracy: 0.7500
+
+=== MISCLASSIFIED UTTERANCES ===
+                          text        expected          predicted  model_score  seen_in_training
+             I have to go now.         GOODBYE          STATEMENT       0.7116             False
+                  Many thanks.       GRATITUDE            GOODBYE       0.6534             False
+   I have a different opinion.    DISAGREEMENT          STATEMENT       0.4543             False
+   I don't think that's right.    DISAGREEMENT          AGREEMENT       0.7185              True
+           I have some doubts.     UNCERTAINTY          STATEMENT       0.6009             False
+                       Got it.  ACKNOWLEDGMENT          STATEMENT       0.6122             False
+   I understand what you mean.  ACKNOWLEDGMENT      CLARIFICATION       0.4810             False
+                No, thank you. NEGATIVE_ANSWER          GRATITUDE       0.6636             False
+   Can you show me the source?        QUESTION AFFIRMATIVE_ANSWER       0.5717             False
+     I didn't understand that.   CLARIFICATION          STATEMENT       0.5779             False
+        I thought it was true.       STATEMENT          AGREEMENT       0.5513             False
+This information is new to me.       STATEMENT        UNCERTAINTY       0.3246             False
+
+=== FINAL MODEL COMPARISON ===
+experiment  records  correct  accuracy  macro_f1  top3_accuracy  seen_records  seen_accuracy  unseen_records  unseen_accuracy
+   E09_05a       60       49    0.8167    0.8212           0.90            16         0.8750              44           0.7955
+   E09_05c       60       48    0.8000    0.8068           0.95            16         0.9375              44           0.7500
+   E09_05b       60       47    0.7833    0.7866           0.95            16         0.8750              44           0.7500
+    E09_02       60       43    0.7167    0.7182           0.80            16         0.8750              44           0.6591
+    E09_01       60       23    0.3833    0.3527           0.75            16         0.5625              44           0.3182
+
+=== CORRECT PREDICTIONS PER CLASS ===
+Maximum per class: 5
+experiment          E09_01  E09_02  E09_05a  E09_05b  E09_05c
+expected                                                     
+GREETING                 3       4        5        5        5
+GOODBYE                  3       3        4        4        4
+GRATITUDE                0       4        5        4        4
+AGREEMENT                3       5        5        5        5
+DISAGREEMENT             0       2        3        3        3
+UNCERTAINTY              2       3        4        4        4
+ACKNOWLEDGMENT           2       2        2        2        3
+AFFIRMATIVE_ANSWER       2       5        4        5        5
+NEGATIVE_ANSWER          0       4        4        4        4
+QUESTION                 3       5        5        4        4
+CLARIFICATION            0       2        4        4        4
+STATEMENT                5       4        4        3        3
+
+=== BENCHMARK COMPARISON COMPLETE ===

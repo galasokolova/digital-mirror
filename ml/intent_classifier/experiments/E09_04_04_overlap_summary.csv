@@ -1,0 +1,5 @@
+dataset,overlapping_records,overlap_percentage
+Switchboard Train,29,4.83
+Switchboard Validation,13,2.17
+Switchboard Test,19,3.17
+Installation Test E09.03,0,0.0

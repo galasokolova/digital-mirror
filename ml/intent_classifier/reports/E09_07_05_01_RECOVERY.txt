@@ -1,0 +1,1973 @@
+=== E09.07.5.1: CONVERGENCE RECOVERY AND VERIFICATION ===
+
+=== DATASET LOADING ===
+Switchboard training: 135,827
+Domain training: 579
+Switchboard validation: 16,913
+Digital Mirror benchmark: 240
+
+=== DATASET VALIDATION ===
+PASS | Expected Switchboard training size
+PASS | Expected domain training size
+PASS | Expected validation size
+PASS | Expected benchmark size
+PASS | All intent classes present
+PASS | No empty model texts
+PASS | Unique benchmark texts
+PASS | Balanced benchmark classes
+PASS | Valid benchmark groups
+PASS | Balanced benchmark groups
+PASS | Balanced intent-group distribution
+PASS | No Switchboard conversation overlap
+PASS | No domain-validation text overlap
+PASS | No Switchboard-benchmark text overlap
+PASS | No domain-benchmark text overlap
+PASS | No validation-benchmark text overlap
+
+Checks passed: 16 / 16
+
+=== TRAINING DATA PREPARATION ===
+Combined training records: 136,406
+
+Training class distribution:
+                    switchboard  domain  combined
+intent                                           
+GREETING                    167      49       216
+GOODBYE                    2099      47      2146
+GRATITUDE                    60      48       108
+AGREEMENT                  8756      45      8801
+DISAGREEMENT                284      50       334
+UNCERTAINTY                 973      49      1022
+ACKNOWLEDGMENT            30564      50     30614
+AFFIRMATIVE_ANSWER         3083      45      3128
+NEGATIVE_ANSWER            1341      48      1389
+QUESTION                   7048      50      7098
+CLARIFICATION               247      48       295
+STATEMENT                 81205      50     81255
+
+Switchboard sample weight: 1.0
+Domain sample weight: 1.0
+
+=== SAVED MODEL VERIFICATION ===
+
+PASS | a_lr
+Path: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\models\E09_07_05a_lr.joblib
+SHA256: c45a86d8826cb2ad2071f02013d5a68cdea1798375881d7c6d7ea8eab55549d0
+Iterations: [219]
+Coefficient shape: (12, 177043)
+Parameters: {'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': 0.0, 'max_iter': 1000, 'n_jobs': None, 'penalty': 'deprecated', 'random_state': 42, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+
+PASS | b_lr
+Path: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\models\E09_07_05b_lr.joblib
+SHA256: aa638e613c96c04087e5133f4fd1c39b9fc9c32d84266168504e9e1a021d0f6a
+Iterations: [159]
+Coefficient shape: (12, 177043)
+Parameters: {'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': 0.0, 'max_iter': 1000, 'n_jobs': None, 'penalty': 'deprecated', 'random_state': 42, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+
+PASS | c_lr
+Path: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\models\E09_07_05c_lr.joblib
+SHA256: c0c8e15d7b99b0a8e5ea188e390d17aee77b4b3016a0458fb7aef5e9fed37643
+Iterations: [129]
+Coefficient shape: (12, 177043)
+Parameters: {'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': 0.0, 'max_iter': 1000, 'n_jobs': None, 'penalty': 'deprecated', 'random_state': 42, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+
+PASS | a_svm
+Path: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\models\E09_07_05a_svm.joblib
+SHA256: d33cd73c151ec6f7c5e07bf042fa76d8a5cc06856274ea1e9687b89ca28a97ef
+Iterations: 3731
+Coefficient shape: (12, 177043)
+Parameters: {'C': 1.0, 'class_weight': None, 'dual': 'auto', 'fit_intercept': True, 'intercept_scaling': 1, 'loss': 'squared_hinge', 'max_iter': 5000, 'multi_class': 'ovr', 'penalty': 'l2', 'random_state': 42, 'tol': 0.0001, 'verbose': 0}
+
+PASS | b_svm
+Path: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\models\E09_07_05b_svm.joblib
+SHA256: 1932a9655d8862ab8943d872665f78b776fa6c9f5a0c33693fed4a878fe4794d
+Iterations: 4787
+Coefficient shape: (12, 177043)
+Parameters: {'C': 1.0, 'class_weight': None, 'dual': 'auto', 'fit_intercept': True, 'intercept_scaling': 1, 'loss': 'squared_hinge', 'max_iter': 5000, 'multi_class': 'ovr', 'penalty': 'l2', 'random_state': 42, 'tol': 0.0001, 'verbose': 0}
+
+=== FEATURE SPACE VERIFICATION ===
+PASS | a_lr
+PASS | b_lr
+PASS | c_lr
+PASS | a_svm
+PASS | b_svm
+PASS | reference_svm
+
+=== CLASSIFIER PARAMETERS: LR ===
+classifier         parameter  reference    uniform  identical
+        lr                 C        1.0        1.0       True
+        lr      class_weight   balanced       None      False
+        lr              dual      False      False       True
+        lr     fit_intercept       True       True       True
+        lr intercept_scaling          1          1       True
+        lr          l1_ratio        0.0        0.0       True
+        lr          max_iter       1000       1000       True
+        lr            n_jobs       None       None       True
+        lr           penalty deprecated deprecated       True
+        lr      random_state         42         42       True
+        lr            solver      lbfgs      lbfgs       True
+        lr               tol     0.0001     0.0001       True
+        lr           verbose          0          0       True
+        lr        warm_start      False      False       True
+
+=== UNIFORM BASELINE VERIFICATION ===
+Classifier: lr
+Dataset: validation
+Matching predictions: 16901 / 16913
+Prediction agreement: 0.999290
+Maximum score difference: 0.02331015
+WARNING: Uniform baseline predictions are not identical.
+
+=== UNIFORM BASELINE VERIFICATION ===
+Classifier: lr
+Dataset: benchmark
+Matching predictions: 238 / 240
+Prediction agreement: 0.991667
+Maximum score difference: 0.01511967
+WARNING: Uniform baseline predictions are not identical.
+
+=== CLASSIFIER PARAMETERS: SVM ===
+classifier         parameter     reference       uniform  identical
+       svm                 C           1.0           1.0       True
+       svm      class_weight      balanced          None      False
+       svm              dual          auto          auto       True
+       svm     fit_intercept          True          True       True
+       svm intercept_scaling             1             1       True
+       svm              loss squared_hinge squared_hinge       True
+       svm          max_iter          5000          5000       True
+       svm       multi_class           ovr           ovr       True
+       svm           penalty            l2            l2       True
+       svm      random_state            42            42       True
+       svm               tol        0.0001        0.0001       True
+       svm           verbose             0             0       True
+
+=== UNIFORM BASELINE VERIFICATION ===
+Classifier: svm
+Dataset: validation
+Matching predictions: 13982 / 16913
+Prediction agreement: 0.826701
+Maximum score difference: 2.69629667
+WARNING: Uniform baseline predictions are not identical.
+
+=== UNIFORM BASELINE VERIFICATION ===
+Classifier: svm
+Dataset: benchmark
+Matching predictions: 219 / 240
+Prediction agreement: 0.912500
+Maximum score difference: 1.37641923
+WARNING: Uniform baseline predictions are not identical.
+
+======================================================================
+MODEL: a_lr
+DATASET: validation
+======================================================================
+
+Score type: probability
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.9314
+Zero vectors: 10
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9732
+Zero vectors: 382
+
+=== OVERALL METRICS ===
+records: 16913
+correct: 12907
+accuracy: 0.7631
+macro_precision: 0.4703
+macro_recall: 0.6835
+macro_f1: 0.5142
+weighted_f1: 0.7906
+top3_accuracy: 0.9864
+model: a_lr
+dataset: validation
+score_type: probability
+inference_seconds: 1.6650
+ms_per_record: 0.0984
+word_feature_coverage: 0.9314
+word_zero_vectors: 10
+char_feature_coverage: 0.9732
+char_zero_vectors: 382
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 112.1361
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.6000    0.8077    0.6885        26
+           GOODBYE     0.4792    0.7864    0.5955       220
+         GRATITUDE     0.3684    1.0000    0.5385         7
+         AGREEMENT     0.4417    0.4284    0.4349      1069
+      DISAGREEMENT     0.0270    0.0435    0.0333        23
+       UNCERTAINTY     0.4439    0.8407    0.5810       113
+    ACKNOWLEDGMENT     0.9413    0.4547    0.6132      3809
+AFFIRMATIVE_ANSWER     0.1342    0.7173    0.2262       428
+   NEGATIVE_ANSWER     0.4513    0.8176    0.5816       170
+          QUESTION     0.6669    0.8304    0.7398       967
+     CLARIFICATION     0.1215    0.5652    0.2000        23
+         STATEMENT     0.9677    0.9105    0.9382     10058
+
+          accuracy                         0.7631     16913
+         macro avg     0.4703    0.6835    0.5142     16913
+      weighted avg     0.8719    0.7631    0.7906     16913
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  21        1          0          0             0            0               0                   0                0         0              0          4
+GOODBYE                    0      173         11          6             0            0               6                  10                2         2              0         10
+GRATITUDE                  0        0          7          0             0            0               0                   0                0         0              0          0
+AGREEMENT                  0       18          0        458             4            2              61                 393               65         6              3         59
+DISAGREEMENT               0        0          0          1             1            1               0                   0               13         0              0          7
+UNCERTAINTY                0        2          0          1             3           95               0                   0                1         3              0          8
+ACKNOWLEDGMENT             0       72          0        394             0            4            1732                1497               19         5             76         10
+AFFIRMATIVE_ANSWER         0        1          0         33             1            1              38                 307                0         6              0         41
+NEGATIVE_ANSWER            0        0          0          1             7            0               0                   1              139         0              0         22
+QUESTION                   0        5          0          4             2            2               0                   1                2       803              6        142
+CLARIFICATION              0        0          0          0             0            0               0                   1                0         6             13          3
+STATEMENT                 14       89          1        139            19          109               3                  77               67       373              9       9158
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 26       21  0.8077         0.9231             0     0.6000  0.6885
+GOODBYE                 220      173  0.7864         0.8909             0     0.4792  0.5955
+GRATITUDE                 7        7  1.0000         1.0000             0     0.3684  0.5385
+AGREEMENT              1069      458  0.4284         0.9616             0     0.4417  0.4349
+DISAGREEMENT             23        1  0.0435         0.7391             0     0.0270  0.0333
+UNCERTAINTY             113       95  0.8407         0.9204             0     0.4439  0.5810
+ACKNOWLEDGMENT         3809     1732  0.4547         0.9934             0     0.9413  0.6132
+AFFIRMATIVE_ANSWER      428      307  0.7173         0.9252             0     0.1342  0.2262
+NEGATIVE_ANSWER         170      139  0.8176         0.9176             0     0.4513  0.5816
+QUESTION                967      803  0.8304         0.9814             0     0.6669  0.7398
+CLARIFICATION            23       13  0.5652         0.7826             0     0.1215  0.2000
+STATEMENT             10058     9158  0.9105         0.9946             0     0.9677  0.9382
+
+=== ERROR ANALYSIS ===
+Errors: 4006
+
+Top 15 error pairs:
+      expected          predicted  count
+ACKNOWLEDGMENT AFFIRMATIVE_ANSWER   1497
+ACKNOWLEDGMENT          AGREEMENT    394
+     AGREEMENT AFFIRMATIVE_ANSWER    393
+     STATEMENT           QUESTION    373
+      QUESTION          STATEMENT    142
+     STATEMENT          AGREEMENT    139
+     STATEMENT        UNCERTAINTY    109
+     STATEMENT            GOODBYE     89
+     STATEMENT AFFIRMATIVE_ANSWER     77
+ACKNOWLEDGMENT      CLARIFICATION     76
+ACKNOWLEDGMENT            GOODBYE     72
+     STATEMENT    NEGATIVE_ANSWER     67
+     AGREEMENT    NEGATIVE_ANSWER     65
+     AGREEMENT     ACKNOWLEDGMENT     61
+     AGREEMENT          STATEMENT     59
+
+Correct class recovered in top-3: 3776 / 4006
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 9464
+Actual STATEMENT: 10058
+True positives: 9158
+False positives: 306
+Share of all errors: 0.0764
+
+======================================================================
+MODEL: a_lr
+DATASET: benchmark
+======================================================================
+
+Score type: probability
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.7688
+Zero vectors: 2
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9852
+Zero vectors: 0
+
+=== OVERALL METRICS ===
+records: 240
+correct: 149
+accuracy: 0.6208
+macro_precision: 0.7250
+macro_recall: 0.6208
+macro_f1: 0.6290
+weighted_f1: 0.6290
+top3_accuracy: 0.8292
+model: a_lr
+dataset: benchmark
+score_type: probability
+inference_seconds: 0.0226
+ms_per_record: 0.0941
+word_feature_coverage: 0.7688
+word_zero_vectors: 2
+char_feature_coverage: 0.9852
+char_zero_vectors: 0
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 104.8875
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.7000    0.8235        20
+           GOODBYE     0.8750    0.7000    0.7778        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6667    0.3000    0.4138        20
+      DISAGREEMENT     0.6667    0.8000    0.7273        20
+       UNCERTAINTY     0.8889    0.4000    0.5517        20
+    ACKNOWLEDGMENT     0.0000    0.0000    0.0000        20
+AFFIRMATIVE_ANSWER     1.0000    0.7000    0.8235        20
+   NEGATIVE_ANSWER     0.9375    0.7500    0.8333        20
+          QUESTION     0.4839    0.7500    0.5882        20
+     CLARIFICATION     0.9375    0.7500    0.8333        20
+         STATEMENT     0.2436    0.9500    0.3878        20
+
+          accuracy                         0.6208       240
+         macro avg     0.7250    0.6208    0.6290       240
+      weighted avg     0.7250    0.6208    0.6290       240
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  14        1          0          0             0            0               0                   0                0         3              0          2
+GOODBYE                    0       14          0          0             0            0               0                   0                0         2              0          4
+GRATITUDE                  0        0         13          0             0            0               0                   0                0         1              0          6
+AGREEMENT                  0        0          0          6             6            0               0                   0                0         2              0          6
+DISAGREEMENT               0        0          0          0            16            0               0                   0                1         1              0          2
+UNCERTAINTY                0        0          0          1             2            8               0                   0                0         0              0          9
+ACKNOWLEDGMENT             0        0          0          0             0            0               0                   0                0         4              0         16
+AFFIRMATIVE_ANSWER         0        0          0          1             0            0               0                  14                0         1              0          4
+NEGATIVE_ANSWER            0        0          0          0             0            1               0                   0               15         0              0          4
+QUESTION                   0        0          0          1             0            0               0                   0                0        15              1          3
+CLARIFICATION              0        1          0          0             0            0               0                   0                0         1             15          3
+STATEMENT                  0        0          0          0             0            0               0                   0                0         1              0         19
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 20       14    0.70           0.90             0     1.0000  0.8235
+GOODBYE                  20       14    0.70           0.95             0     0.8750  0.7778
+GRATITUDE                20       13    0.65           0.80             0     1.0000  0.7879
+AGREEMENT                20        6    0.30           0.65             0     0.6667  0.4138
+DISAGREEMENT             20       16    0.80           1.00             0     0.6667  0.7273
+UNCERTAINTY              20        8    0.40           0.90             0     0.8889  0.5517
+ACKNOWLEDGMENT           20        0    0.00           0.15             0     0.0000  0.0000
+AFFIRMATIVE_ANSWER       20       14    0.70           0.95             0     1.0000  0.8235
+NEGATIVE_ANSWER          20       15    0.75           0.90             0     0.9375  0.8333
+QUESTION                 20       15    0.75           0.95             0     0.4839  0.5882
+CLARIFICATION            20       15    0.75           0.80             0     0.9375  0.8333
+STATEMENT                20       19    0.95           1.00             0     0.2436  0.3878
+
+=== BENCHMARK GROUP RESULTS ===
+ records  correct  accuracy  macro_precision  macro_recall  macro_f1  weighted_f1  top3_accuracy model        group  zero_vectors
+      60       35    0.5833           0.7454        0.5833    0.5872       0.5872         0.8333  a_lr      natural             0
+      60       42    0.7000           0.7279        0.7000    0.6907       0.6907         0.8500  a_lr        short             0
+      60       40    0.6667           0.8021        0.6667    0.6644       0.6644         0.8167  a_lr installation             0
+      60       32    0.5333           0.7714        0.5333    0.5331       0.5331         0.8167  a_lr      complex             0
+
+=== ERROR ANALYSIS ===
+Errors: 91
+
+Top 15 error pairs:
+          expected    predicted  count
+    ACKNOWLEDGMENT    STATEMENT     16
+       UNCERTAINTY    STATEMENT      9
+         AGREEMENT    STATEMENT      6
+         AGREEMENT DISAGREEMENT      6
+         GRATITUDE    STATEMENT      6
+    ACKNOWLEDGMENT     QUESTION      4
+           GOODBYE    STATEMENT      4
+   NEGATIVE_ANSWER    STATEMENT      4
+AFFIRMATIVE_ANSWER    STATEMENT      4
+          QUESTION    STATEMENT      3
+          GREETING     QUESTION      3
+     CLARIFICATION    STATEMENT      3
+      DISAGREEMENT    STATEMENT      2
+         AGREEMENT     QUESTION      2
+       UNCERTAINTY DISAGREEMENT      2
+
+Correct class recovered in top-3: 50 / 91
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 78
+Actual STATEMENT: 20
+True positives: 19
+False positives: 59
+Share of all errors: 0.6484
+
+======================================================================
+MODEL: b_lr
+DATASET: validation
+======================================================================
+
+Score type: probability
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.9314
+Zero vectors: 10
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9732
+Zero vectors: 382
+
+=== OVERALL METRICS ===
+records: 16913
+correct: 14042
+accuracy: 0.8302
+macro_precision: 0.4625
+macro_recall: 0.6636
+macro_f1: 0.5222
+weighted_f1: 0.8342
+top3_accuracy: 0.9819
+model: b_lr
+dataset: validation
+score_type: probability
+inference_seconds: 1.6012
+ms_per_record: 0.0947
+word_feature_coverage: 0.9314
+word_zero_vectors: 10
+char_feature_coverage: 0.9732
+char_zero_vectors: 382
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 112.1361
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.5676    0.8077    0.6667        26
+           GOODBYE     0.4886    0.6818    0.5693       220
+         GRATITUDE     0.3684    1.0000    0.5385         7
+         AGREEMENT     0.4929    0.3246    0.3914      1069
+      DISAGREEMENT     0.0312    0.0435    0.0364        23
+       UNCERTAINTY     0.3880    0.8584    0.5344       113
+    ACKNOWLEDGMENT     0.8120    0.9467    0.8742      3809
+AFFIRMATIVE_ANSWER     0.2072    0.2407    0.2227       428
+   NEGATIVE_ANSWER     0.3866    0.8118    0.5237       170
+          QUESTION     0.6672    0.8108    0.7320       967
+     CLARIFICATION     0.1667    0.5652    0.2574        23
+         STATEMENT     0.9733    0.8724    0.9201     10058
+
+          accuracy                         0.8302     16913
+         macro avg     0.4625    0.6636    0.5222     16913
+      weighted avg     0.8503    0.8302    0.8342     16913
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  21        1          0          0             0            0               0                   0                0         0              0          4
+GOODBYE                    0      150         11          3             0            0              40                   2                3         2              0          9
+GRATITUDE                  0        0          7          0             0            0               0                   0                0         0              0          0
+AGREEMENT                  0        6          0        347             4            2             506                  99               64         4              3         34
+DISAGREEMENT               0        0          0          4             1            1               0                   1               13         0              0          3
+UNCERTAINTY                0        2          0          1             3           97               1                   1                1         2              0          5
+ACKNOWLEDGMENT             0        6          0         12             0            2            3606                 108               20         3             48          4
+AFFIRMATIVE_ANSWER         0        1          0         26             1            1             259                 103                0         4              0         33
+NEGATIVE_ANSWER            0        0          0          3             7            0               1                   1              138         1              0         19
+QUESTION                   0       13          0         12             2            4              11                   2                3       784              9        127
+CLARIFICATION              0        1          0          0             0            0               0                   1                0         5             13          3
+STATEMENT                 16      127          1        296            14          143              17                 179              115       370              5       8775
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 26       21  0.8077         0.9231             0     0.5676  0.6667
+GOODBYE                 220      150  0.6818         0.8864             0     0.4886  0.5693
+GRATITUDE                 7        7  1.0000         1.0000             0     0.3684  0.5385
+AGREEMENT              1069      347  0.3246         0.9710             0     0.4929  0.3914
+DISAGREEMENT             23        1  0.0435         0.7391             0     0.0312  0.0364
+UNCERTAINTY             113       97  0.8584         0.9115             0     0.3880  0.5344
+ACKNOWLEDGMENT         3809     3606  0.9467         0.9947             0     0.8120  0.8742
+AFFIRMATIVE_ANSWER      428      103  0.2407         0.9252             0     0.2072  0.2227
+NEGATIVE_ANSWER         170      138  0.8118         0.9176             0     0.3866  0.5237
+QUESTION                967      784  0.8108         0.9741             0     0.6672  0.7320
+CLARIFICATION            23       13  0.5652         0.6957             0     0.1667  0.2574
+STATEMENT             10058     8775  0.8724         0.9867             0     0.9733  0.9201
+
+=== ERROR ANALYSIS ===
+Errors: 2871
+
+Top 15 error pairs:
+          expected          predicted  count
+         AGREEMENT     ACKNOWLEDGMENT    506
+         STATEMENT           QUESTION    370
+         STATEMENT          AGREEMENT    296
+AFFIRMATIVE_ANSWER     ACKNOWLEDGMENT    259
+         STATEMENT AFFIRMATIVE_ANSWER    179
+         STATEMENT        UNCERTAINTY    143
+          QUESTION          STATEMENT    127
+         STATEMENT            GOODBYE    127
+         STATEMENT    NEGATIVE_ANSWER    115
+    ACKNOWLEDGMENT AFFIRMATIVE_ANSWER    108
+         AGREEMENT AFFIRMATIVE_ANSWER     99
+         AGREEMENT    NEGATIVE_ANSWER     64
+    ACKNOWLEDGMENT      CLARIFICATION     48
+           GOODBYE     ACKNOWLEDGMENT     40
+         AGREEMENT          STATEMENT     34
+
+Correct class recovered in top-3: 2565 / 2871
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 9016
+Actual STATEMENT: 10058
+True positives: 8775
+False positives: 241
+Share of all errors: 0.0839
+
+======================================================================
+MODEL: b_lr
+DATASET: benchmark
+======================================================================
+
+Score type: probability
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.7688
+Zero vectors: 2
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9852
+Zero vectors: 0
+
+=== OVERALL METRICS ===
+records: 240
+correct: 165
+accuracy: 0.6875
+macro_precision: 0.7865
+macro_recall: 0.6875
+macro_f1: 0.7058
+weighted_f1: 0.7058
+top3_accuracy: 0.8958
+model: b_lr
+dataset: benchmark
+score_type: probability
+inference_seconds: 0.0244
+ms_per_record: 0.1018
+word_feature_coverage: 0.7688
+word_zero_vectors: 2
+char_feature_coverage: 0.9852
+char_zero_vectors: 0
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 104.8875
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.6500    0.7879        20
+           GOODBYE     0.6818    0.7500    0.7143        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6429    0.4500    0.5294        20
+      DISAGREEMENT     0.7273    0.8000    0.7619        20
+       UNCERTAINTY     0.9231    0.6000    0.7273        20
+    ACKNOWLEDGMENT     0.9091    0.5000    0.6452        20
+AFFIRMATIVE_ANSWER     0.8125    0.6500    0.7222        20
+   NEGATIVE_ANSWER     0.9375    0.7500    0.8333        20
+          QUESTION     0.5333    0.8000    0.6400        20
+     CLARIFICATION     0.9375    0.7500    0.8333        20
+         STATEMENT     0.3333    0.9000    0.4865        20
+
+          accuracy                         0.6875       240
+         macro avg     0.7865    0.6875    0.7058       240
+      weighted avg     0.7865    0.6875    0.7058       240
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  13        2          0          0             0            0               0                   1                0         3              0          1
+GOODBYE                    0       15          0          0             0            0               0                   1                0         2              0          2
+GRATITUDE                  0        1         13          0             0            0               0                   0                0         1              0          5
+AGREEMENT                  0        1          0          9             4            0               1                   0                0         1              0          4
+DISAGREEMENT               0        0          0          0            16            0               0                   0                1         1              0          2
+UNCERTAINTY                0        1          0          1             2           12               0                   0                0         0              0          4
+ACKNOWLEDGMENT             0        0          0          0             0            0              10                   0                0         3              0          7
+AFFIRMATIVE_ANSWER         0        1          0          2             0            0               0                  13                0         1              0          3
+NEGATIVE_ANSWER            0        0          0          1             0            1               0                   0               15         0              0          3
+QUESTION                   0        0          0          1             0            0               0                   0                0        16              1          2
+CLARIFICATION              0        1          0          0             0            0               0                   0                0         1             15          3
+STATEMENT                  0        0          0          0             0            0               0                   1                0         1              0         18
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 20       13    0.65           0.90             0     1.0000  0.7879
+GOODBYE                  20       15    0.75           0.95             0     0.6818  0.7143
+GRATITUDE                20       13    0.65           0.80             0     1.0000  0.7879
+AGREEMENT                20        9    0.45           0.85             0     0.6429  0.5294
+DISAGREEMENT             20       16    0.80           0.95             0     0.7273  0.7619
+UNCERTAINTY              20       12    0.60           0.90             0     0.9231  0.7273
+ACKNOWLEDGMENT           20       10    0.50           0.75             0     0.9091  0.6452
+AFFIRMATIVE_ANSWER       20       13    0.65           1.00             0     0.8125  0.7222
+NEGATIVE_ANSWER          20       15    0.75           0.90             0     0.9375  0.8333
+QUESTION                 20       16    0.80           0.95             0     0.5333  0.6400
+CLARIFICATION            20       15    0.75           0.80             0     0.9375  0.8333
+STATEMENT                20       18    0.90           1.00             0     0.3333  0.4865
+
+=== BENCHMARK GROUP RESULTS ===
+ records  correct  accuracy  macro_precision  macro_recall  macro_f1  weighted_f1  top3_accuracy model        group  zero_vectors
+      60       39      0.65           0.7871          0.65    0.6689       0.6689         0.8667  b_lr      natural             0
+      60       45      0.75           0.8074          0.75    0.7601       0.7601         0.9000  b_lr        short             0
+      60       45      0.75           0.8666          0.75    0.7575       0.7575         0.9000  b_lr installation             0
+      60       36      0.60           0.8324          0.60    0.5987       0.5987         0.9167  b_lr      complex             0
+
+=== ERROR ANALYSIS ===
+Errors: 75
+
+Top 15 error pairs:
+          expected    predicted  count
+    ACKNOWLEDGMENT    STATEMENT      7
+         GRATITUDE    STATEMENT      5
+         AGREEMENT DISAGREEMENT      4
+       UNCERTAINTY    STATEMENT      4
+         AGREEMENT    STATEMENT      4
+    ACKNOWLEDGMENT     QUESTION      3
+AFFIRMATIVE_ANSWER    STATEMENT      3
+          GREETING     QUESTION      3
+   NEGATIVE_ANSWER    STATEMENT      3
+     CLARIFICATION    STATEMENT      3
+AFFIRMATIVE_ANSWER    AGREEMENT      2
+          GREETING      GOODBYE      2
+           GOODBYE    STATEMENT      2
+       UNCERTAINTY DISAGREEMENT      2
+           GOODBYE     QUESTION      2
+
+Correct class recovered in top-3: 50 / 75
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 54
+Actual STATEMENT: 20
+True positives: 18
+False positives: 36
+Share of all errors: 0.4800
+
+======================================================================
+MODEL: c_lr
+DATASET: validation
+======================================================================
+
+Score type: probability
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.9314
+Zero vectors: 10
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9732
+Zero vectors: 382
+
+=== OVERALL METRICS ===
+records: 16913
+correct: 13551
+accuracy: 0.8012
+macro_precision: 0.3709
+macro_recall: 0.6163
+macro_f1: 0.4131
+weighted_f1: 0.8114
+top3_accuracy: 0.9442
+model: c_lr
+dataset: validation
+score_type: probability
+inference_seconds: 1.5846
+ms_per_record: 0.0937
+word_feature_coverage: 0.9314
+word_zero_vectors: 10
+char_feature_coverage: 0.9732
+char_zero_vectors: 382
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 112.1361
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.0792    0.8077    0.1443        26
+           GOODBYE     0.4679    0.6636    0.5489       220
+         GRATITUDE     0.3684    1.0000    0.5385         7
+         AGREEMENT     0.4090    0.2479    0.3087      1069
+      DISAGREEMENT     0.0359    0.5652    0.0675        23
+       UNCERTAINTY     0.3579    0.8584    0.5052       113
+    ACKNOWLEDGMENT     0.7985    0.9199    0.8549      3809
+AFFIRMATIVE_ANSWER     0.0836    0.0537    0.0654       428
+   NEGATIVE_ANSWER     0.1189    0.1294    0.1239       170
+          QUESTION     0.6644    0.8108    0.7303       967
+     CLARIFICATION     0.0932    0.4783    0.1560        23
+         STATEMENT     0.9739    0.8608    0.9139     10058
+
+          accuracy                         0.8012     16913
+         macro avg     0.3709    0.6163    0.4131     16913
+      weighted avg     0.8351    0.8012    0.8114     16913
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  21        1          0          0             0            0               0                   0                0         0              0          4
+GOODBYE                    5      146         11          3             2            0              41                   2                1         1              0          8
+GRATITUDE                  0        0          7          0             0            0               0                   0                0         0              0          0
+AGREEMENT                 62        7          0        265            85            6             540                  33               33         4              3         31
+DISAGREEMENT               0        0          0          4            13            1               0                   1                1         0              0          3
+UNCERTAINTY                0        2          0          1             2           97               1                   1                1         3              0          5
+ACKNOWLEDGMENT            93        1          0         10            91            3            3504                   8                2         3             90          4
+AFFIRMATIVE_ANSWER        67        1          0         22            22            0             256                  23                1         4              0         32
+NEGATIVE_ANSWER            0        0          0          3           122            0               2                   2               22         1              0         18
+QUESTION                   1       13          0         14             3            3              12                   2                2       784              9        124
+CLARIFICATION              0        1          0          0             2            0               2                   0                0         4             11          3
+STATEMENT                 16      140          1        326            20          161              30                 203              122       376              5       8658
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 26       21  0.8077         0.9231             0     0.0792  0.1443
+GOODBYE                 220      146  0.6636         0.9227             0     0.4679  0.5489
+GRATITUDE                 7        7  1.0000         1.0000             0     0.3684  0.5385
+AGREEMENT              1069      265  0.2479         0.5575             0     0.4090  0.3087
+DISAGREEMENT             23       13  0.5652         0.7391             0     0.0359  0.0675
+UNCERTAINTY             113       97  0.8584         0.9115             0     0.3579  0.5052
+ACKNOWLEDGMENT         3809     3504  0.9199         0.9716             0     0.7985  0.8549
+AFFIRMATIVE_ANSWER      428       23  0.0537         0.7196             0     0.0836  0.0654
+NEGATIVE_ANSWER         170       22  0.1294         0.9176             0     0.1189  0.1239
+QUESTION                967      784  0.8108         0.9762             0     0.6644  0.7303
+CLARIFICATION            23       11  0.4783         0.6522             0     0.0932  0.1560
+STATEMENT             10058     8658  0.8608         0.9838             0     0.9739  0.9139
+
+=== ERROR ANALYSIS ===
+Errors: 3362
+
+Top 15 error pairs:
+          expected          predicted  count
+         AGREEMENT     ACKNOWLEDGMENT    540
+         STATEMENT           QUESTION    376
+         STATEMENT          AGREEMENT    326
+AFFIRMATIVE_ANSWER     ACKNOWLEDGMENT    256
+         STATEMENT AFFIRMATIVE_ANSWER    203
+         STATEMENT        UNCERTAINTY    161
+         STATEMENT            GOODBYE    140
+          QUESTION          STATEMENT    124
+         STATEMENT    NEGATIVE_ANSWER    122
+   NEGATIVE_ANSWER       DISAGREEMENT    122
+    ACKNOWLEDGMENT           GREETING     93
+    ACKNOWLEDGMENT       DISAGREEMENT     91
+    ACKNOWLEDGMENT      CLARIFICATION     90
+         AGREEMENT       DISAGREEMENT     85
+AFFIRMATIVE_ANSWER           GREETING     67
+
+Correct class recovered in top-3: 2418 / 3362
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 8890
+Actual STATEMENT: 10058
+True positives: 8658
+False positives: 232
+Share of all errors: 0.0690
+
+======================================================================
+MODEL: c_lr
+DATASET: benchmark
+======================================================================
+
+Score type: probability
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.7688
+Zero vectors: 2
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9852
+Zero vectors: 0
+
+=== OVERALL METRICS ===
+records: 240
+correct: 168
+accuracy: 0.7000
+macro_precision: 0.7903
+macro_recall: 0.7000
+macro_f1: 0.7173
+weighted_f1: 0.7173
+top3_accuracy: 0.8958
+model: c_lr
+dataset: benchmark
+score_type: probability
+inference_seconds: 0.0200
+ms_per_record: 0.0835
+word_feature_coverage: 0.7688
+word_zero_vectors: 2
+char_feature_coverage: 0.9852
+char_zero_vectors: 0
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 104.8875
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.6500    0.7879        20
+           GOODBYE     0.6957    0.8000    0.7442        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6667    0.5000    0.5714        20
+      DISAGREEMENT     0.7619    0.8000    0.7805        20
+       UNCERTAINTY     0.8571    0.6000    0.7059        20
+    ACKNOWLEDGMENT     0.9167    0.5500    0.6875        20
+AFFIRMATIVE_ANSWER     0.8125    0.6500    0.7222        20
+   NEGATIVE_ANSWER     0.9375    0.7500    0.8333        20
+          QUESTION     0.5517    0.8000    0.6531        20
+     CLARIFICATION     0.9375    0.7500    0.8333        20
+         STATEMENT     0.3462    0.9000    0.5000        20
+
+          accuracy                         0.7000       240
+         macro avg     0.7903    0.7000    0.7173       240
+      weighted avg     0.7903    0.7000    0.7173       240
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  13        2          0          0             0            0               0                   1                0         3              0          1
+GOODBYE                    0       16          0          0             0            0               0                   1                0         2              0          1
+GRATITUDE                  0        1         13          0             0            0               0                   0                0         1              0          5
+AGREEMENT                  0        1          0         10             3            1               1                   0                0         1              0          3
+DISAGREEMENT               0        0          0          0            16            0               0                   0                1         1              0          2
+UNCERTAINTY                0        1          0          1             2           12               0                   0                0         0              0          4
+ACKNOWLEDGMENT             0        0          0          0             0            0              11                   0                0         2              0          7
+AFFIRMATIVE_ANSWER         0        1          0          2             0            0               0                  13                0         1              0          3
+NEGATIVE_ANSWER            0        0          0          1             0            1               0                   0               15         0              0          3
+QUESTION                   0        0          0          1             0            0               0                   0                0        16              1          2
+CLARIFICATION              0        1          0          0             0            0               0                   0                0         1             15          3
+STATEMENT                  0        0          0          0             0            0               0                   1                0         1              0         18
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 20       13    0.65           0.90             0     1.0000  0.7879
+GOODBYE                  20       16    0.80           0.95             0     0.6957  0.7442
+GRATITUDE                20       13    0.65           0.80             0     1.0000  0.7879
+AGREEMENT                20       10    0.50           0.90             0     0.6667  0.5714
+DISAGREEMENT             20       16    0.80           0.90             0     0.7619  0.7805
+UNCERTAINTY              20       12    0.60           0.85             0     0.8571  0.7059
+ACKNOWLEDGMENT           20       11    0.55           0.85             0     0.9167  0.6875
+AFFIRMATIVE_ANSWER       20       13    0.65           1.00             0     0.8125  0.7222
+NEGATIVE_ANSWER          20       15    0.75           0.85             0     0.9375  0.8333
+QUESTION                 20       16    0.80           0.95             0     0.5517  0.6531
+CLARIFICATION            20       15    0.75           0.80             0     0.9375  0.8333
+STATEMENT                20       18    0.90           1.00             0     0.3462  0.5000
+
+=== BENCHMARK GROUP RESULTS ===
+ records  correct  accuracy  macro_precision  macro_recall  macro_f1  weighted_f1  top3_accuracy model        group  zero_vectors
+      60       40    0.6667           0.8135        0.6667    0.6846       0.6846         0.8667  c_lr      natural             0
+      60       45    0.7500           0.7891        0.7500    0.7566       0.7566         0.9000  c_lr        short             0
+      60       46    0.7667           0.8688        0.7667    0.7795       0.7795         0.9333  c_lr installation             0
+      60       37    0.6167           0.8435        0.6167    0.6246       0.6246         0.8833  c_lr      complex             0
+
+=== ERROR ANALYSIS ===
+Errors: 72
+
+Top 15 error pairs:
+          expected    predicted  count
+    ACKNOWLEDGMENT    STATEMENT      7
+         GRATITUDE    STATEMENT      5
+       UNCERTAINTY    STATEMENT      4
+AFFIRMATIVE_ANSWER    STATEMENT      3
+         AGREEMENT    STATEMENT      3
+     CLARIFICATION    STATEMENT      3
+         AGREEMENT DISAGREEMENT      3
+          GREETING     QUESTION      3
+   NEGATIVE_ANSWER    STATEMENT      3
+          GREETING      GOODBYE      2
+       UNCERTAINTY DISAGREEMENT      2
+AFFIRMATIVE_ANSWER    AGREEMENT      2
+    ACKNOWLEDGMENT     QUESTION      2
+          QUESTION    STATEMENT      2
+           GOODBYE     QUESTION      2
+
+Correct class recovered in top-3: 47 / 72
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 52
+Actual STATEMENT: 20
+True positives: 18
+False positives: 34
+Share of all errors: 0.4722
+
+======================================================================
+MODEL: a_svm
+DATASET: validation
+======================================================================
+
+Score type: decision_score
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.9314
+Zero vectors: 10
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9732
+Zero vectors: 382
+
+=== OVERALL METRICS ===
+records: 16913
+correct: 13078
+accuracy: 0.7733
+macro_precision: 0.4937
+macro_recall: 0.6752
+macro_f1: 0.5278
+weighted_f1: 0.7987
+top3_accuracy: 0.9835
+model: a_svm
+dataset: validation
+score_type: decision_score
+inference_seconds: 1.8967
+ms_per_record: 0.1121
+word_feature_coverage: 0.9314
+word_zero_vectors: 10
+char_feature_coverage: 0.9732
+char_zero_vectors: 382
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 112.1361
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.6897    0.7692    0.7273        26
+           GOODBYE     0.5059    0.7818    0.6143       220
+         GRATITUDE     0.3500    1.0000    0.5185         7
+         AGREEMENT     0.4366    0.4284    0.4325      1069
+      DISAGREEMENT     0.0303    0.0435    0.0357        23
+       UNCERTAINTY     0.5345    0.8230    0.6481       113
+    ACKNOWLEDGMENT     0.9369    0.4560    0.6135      3809
+AFFIRMATIVE_ANSWER     0.1338    0.7126    0.2253       428
+   NEGATIVE_ANSWER     0.4803    0.7882    0.5969       170
+          QUESTION     0.7365    0.8035    0.7685       967
+     CLARIFICATION     0.1250    0.5652    0.2047        23
+         STATEMENT     0.9654    0.9307    0.9477     10058
+
+          accuracy                         0.7733     16913
+         macro avg     0.4937    0.6752    0.5278     16913
+      weighted avg     0.8746    0.7733    0.7987     16913
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  20        1          0          0             0            0               0                   0                0         0              0          5
+GOODBYE                    0      172         11          6             0            0               6                  10                2         2              0         11
+GRATITUDE                  0        0          7          0             0            0               0                   0                0         0              0          0
+AGREEMENT                  0       16          0        458             4            3              65                 390               64         6              3         60
+DISAGREEMENT               0        0          0          0             1            1               0                   0               12         0              0          9
+UNCERTAINTY                0        2          0          1             2           93               0                   0                0         2              0         13
+ACKNOWLEDGMENT             0       73          0        396             0            3            1737                1493               19         4             76          8
+AFFIRMATIVE_ANSWER         0        1          0         34             2            2              39                 305                0         4              0         41
+NEGATIVE_ANSWER            0        0          0          1             7            0               0                   1              134         0              0         27
+QUESTION                   1        9          1          4             1            2               3                   1                2       777              8        158
+CLARIFICATION              0        0          0          0             0            0               0                   1                0         5             13          4
+STATEMENT                  8       66          1        149            16           70               4                  78               46       255              4       9361
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 26       20  0.7692         0.9231             0     0.6897  0.7273
+GOODBYE                 220      172  0.7818         0.8909             0     0.5059  0.6143
+GRATITUDE                 7        7  1.0000         1.0000             0     0.3500  0.5185
+AGREEMENT              1069      458  0.4284         0.9635             0     0.4366  0.4325
+DISAGREEMENT             23        1  0.0435         0.7391             0     0.0303  0.0357
+UNCERTAINTY             113       93  0.8230         0.9204             0     0.5345  0.6481
+ACKNOWLEDGMENT         3809     1737  0.4560         0.9921             0     0.9369  0.6135
+AFFIRMATIVE_ANSWER      428      305  0.7126         0.9159             0     0.1338  0.2253
+NEGATIVE_ANSWER         170      134  0.7882         0.9235             0     0.4803  0.5969
+QUESTION                967      777  0.8035         0.9721             0     0.7365  0.7685
+CLARIFICATION            23       13  0.5652         0.6957             0     0.1250  0.2047
+STATEMENT             10058     9361  0.9307         0.9914             0     0.9654  0.9477
+
+=== ERROR ANALYSIS ===
+Errors: 3835
+
+Top 15 error pairs:
+      expected          predicted  count
+ACKNOWLEDGMENT AFFIRMATIVE_ANSWER   1493
+ACKNOWLEDGMENT          AGREEMENT    396
+     AGREEMENT AFFIRMATIVE_ANSWER    390
+     STATEMENT           QUESTION    255
+      QUESTION          STATEMENT    158
+     STATEMENT          AGREEMENT    149
+     STATEMENT AFFIRMATIVE_ANSWER     78
+ACKNOWLEDGMENT      CLARIFICATION     76
+ACKNOWLEDGMENT            GOODBYE     73
+     STATEMENT        UNCERTAINTY     70
+     STATEMENT            GOODBYE     66
+     AGREEMENT     ACKNOWLEDGMENT     65
+     AGREEMENT    NEGATIVE_ANSWER     64
+     AGREEMENT          STATEMENT     60
+     STATEMENT    NEGATIVE_ANSWER     46
+
+Correct class recovered in top-3: 3556 / 3835
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 9697
+Actual STATEMENT: 10058
+True positives: 9361
+False positives: 336
+Share of all errors: 0.0876
+
+======================================================================
+MODEL: a_svm
+DATASET: benchmark
+======================================================================
+
+Score type: decision_score
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.7688
+Zero vectors: 2
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9852
+Zero vectors: 0
+
+=== OVERALL METRICS ===
+records: 240
+correct: 140
+accuracy: 0.5833
+macro_precision: 0.8070
+macro_recall: 0.5833
+macro_f1: 0.6218
+weighted_f1: 0.6218
+top3_accuracy: 0.9250
+model: a_svm
+dataset: benchmark
+score_type: decision_score
+inference_seconds: 0.0185
+ms_per_record: 0.0770
+word_feature_coverage: 0.7688
+word_zero_vectors: 2
+char_feature_coverage: 0.9852
+char_zero_vectors: 0
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 104.8875
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.6000    0.7500        20
+           GOODBYE     0.8125    0.6500    0.7222        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6000    0.3000    0.4000        20
+      DISAGREEMENT     0.7778    0.7000    0.7368        20
+       UNCERTAINTY     0.8333    0.5000    0.6250        20
+    ACKNOWLEDGMENT     1.0000    0.1500    0.2609        20
+AFFIRMATIVE_ANSWER     1.0000    0.5500    0.7097        20
+   NEGATIVE_ANSWER     0.9167    0.5500    0.6875        20
+          QUESTION     0.5417    0.6500    0.5909        20
+     CLARIFICATION     1.0000    0.7500    0.8571        20
+         STATEMENT     0.2021    0.9500    0.3333        20
+
+          accuracy                         0.5833       240
+         macro avg     0.8070    0.5833    0.6218       240
+      weighted avg     0.8070    0.5833    0.6218       240
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  12        1          0          0             0            0               0                   0                0         3              0          4
+GOODBYE                    0       13          0          0             0            0               0                   0                0         1              0          6
+GRATITUDE                  0        0         13          0             0            0               0                   0                0         1              0          6
+AGREEMENT                  0        1          0          6             2            1               0                   0                0         1              0          9
+DISAGREEMENT               0        0          0          0            14            0               0                   0                1         1              0          4
+UNCERTAINTY                0        0          0          0             2           10               0                   0                0         0              0          8
+ACKNOWLEDGMENT             0        0          0          0             0            0               3                   0                0         2              0         15
+AFFIRMATIVE_ANSWER         0        0          0          2             0            0               0                  11                0         0              0          7
+NEGATIVE_ANSWER            0        0          0          1             0            1               0                   0               11         0              0          7
+QUESTION                   0        0          0          1             0            0               0                   0                0        13              0          6
+CLARIFICATION              0        1          0          0             0            0               0                   0                0         1             15          3
+STATEMENT                  0        0          0          0             0            0               0                   0                0         1              0         19
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 20       12    0.60           0.95             0     1.0000  0.7500
+GOODBYE                  20       13    0.65           0.95             0     0.8125  0.7222
+GRATITUDE                20       13    0.65           0.90             0     1.0000  0.7879
+AGREEMENT                20        6    0.30           0.90             0     0.6000  0.4000
+DISAGREEMENT             20       14    0.70           0.95             0     0.7778  0.7368
+UNCERTAINTY              20       10    0.50           0.90             0     0.8333  0.6250
+ACKNOWLEDGMENT           20        3    0.15           0.85             0     1.0000  0.2609
+AFFIRMATIVE_ANSWER       20       11    0.55           1.00             0     1.0000  0.7097
+NEGATIVE_ANSWER          20       11    0.55           0.85             0     0.9167  0.6875
+QUESTION                 20       13    0.65           0.95             0     0.5417  0.5909
+CLARIFICATION            20       15    0.75           0.90             0     1.0000  0.8571
+STATEMENT                20       19    0.95           1.00             0     0.2021  0.3333
+
+=== BENCHMARK GROUP RESULTS ===
+ records  correct  accuracy  macro_precision  macro_recall  macro_f1  weighted_f1  top3_accuracy model        group  zero_vectors
+      60       38    0.6333           0.8615        0.6333    0.6638       0.6638         0.8833 a_svm      natural             0
+      60       39    0.6500           0.7726        0.6500    0.6419       0.6419         0.9000 a_svm        short             0
+      60       35    0.5833           0.7951        0.5833    0.6053       0.6053         0.9667 a_svm installation             0
+      60       28    0.4667           0.7706        0.4667    0.4986       0.4986         0.9500 a_svm      complex             0
+
+=== ERROR ANALYSIS ===
+Errors: 100
+
+Top 15 error pairs:
+          expected    predicted  count
+    ACKNOWLEDGMENT    STATEMENT     15
+         AGREEMENT    STATEMENT      9
+       UNCERTAINTY    STATEMENT      8
+AFFIRMATIVE_ANSWER    STATEMENT      7
+   NEGATIVE_ANSWER    STATEMENT      7
+           GOODBYE    STATEMENT      6
+         GRATITUDE    STATEMENT      6
+          QUESTION    STATEMENT      6
+          GREETING    STATEMENT      4
+      DISAGREEMENT    STATEMENT      4
+          GREETING     QUESTION      3
+     CLARIFICATION    STATEMENT      3
+    ACKNOWLEDGMENT     QUESTION      2
+AFFIRMATIVE_ANSWER    AGREEMENT      2
+       UNCERTAINTY DISAGREEMENT      2
+
+Correct class recovered in top-3: 82 / 100
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 94
+Actual STATEMENT: 20
+True positives: 19
+False positives: 75
+Share of all errors: 0.7500
+
+======================================================================
+MODEL: b_svm
+DATASET: validation
+======================================================================
+
+Score type: decision_score
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.9314
+Zero vectors: 10
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9732
+Zero vectors: 382
+
+=== OVERALL METRICS ===
+records: 16913
+correct: 14427
+accuracy: 0.8530
+macro_precision: 0.5085
+macro_recall: 0.6538
+macro_f1: 0.5492
+weighted_f1: 0.8507
+top3_accuracy: 0.9800
+model: b_svm
+dataset: validation
+score_type: decision_score
+inference_seconds: 1.8173
+ms_per_record: 0.1075
+word_feature_coverage: 0.9314
+word_zero_vectors: 10
+char_feature_coverage: 0.9732
+char_zero_vectors: 382
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 112.1361
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.6897    0.7692    0.7273        26
+           GOODBYE     0.6041    0.6727    0.6366       220
+         GRATITUDE     0.3500    1.0000    0.5185         7
+         AGREEMENT     0.5346    0.3106    0.3929      1069
+      DISAGREEMENT     0.0294    0.0435    0.0351        23
+       UNCERTAINTY     0.5167    0.8230    0.6348       113
+    ACKNOWLEDGMENT     0.8120    0.9470    0.8743      3809
+AFFIRMATIVE_ANSWER     0.2475    0.2360    0.2416       428
+   NEGATIVE_ANSWER     0.4490    0.7765    0.5690       170
+          QUESTION     0.7301    0.7859    0.7570       967
+     CLARIFICATION     0.1711    0.5652    0.2626        23
+         STATEMENT     0.9674    0.9160    0.9410     10058
+
+          accuracy                         0.8530     16913
+         macro avg     0.5085    0.6538    0.5492     16913
+      weighted avg     0.8573    0.8530    0.8507     16913
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  20        1          0          0             0            0               0                   0                0         0              0          5
+GOODBYE                    0      148         11          3             0            0              40                   2                2         2              0         12
+GRATITUDE                  0        0          7          0             0            0               0                   0                0         0              0          0
+AGREEMENT                  0        5          0        332             4            3             509                  95               64         7              3         47
+DISAGREEMENT               0        0          0          0             1            1               0                   0               13         0              0          8
+UNCERTAINTY                0        1          0          1             2           93               1                   1                1         3              0         10
+ACKNOWLEDGMENT             0        6          0         11             0            3            3607                 105               20         2             48          7
+AFFIRMATIVE_ANSWER         0        1          0         25             2            1             258                 101                0         5              0         35
+NEGATIVE_ANSWER            0        0          0          3             7            0               1                   1              132         0              0         26
+QUESTION                   1       14          1         11             1            2               9                   1                2       760              8        157
+CLARIFICATION              0        1          0          0             0            0               0                   1                0         5             13          3
+STATEMENT                  8       68          1        235            17           77              17                 101               60       257              4       9213
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 26       20  0.7692         0.9231             0     0.6897  0.7273
+GOODBYE                 220      148  0.6727         0.8864             0     0.6041  0.6366
+GRATITUDE                 7        7  1.0000         1.0000             0     0.3500  0.5185
+AGREEMENT              1069      332  0.3106         0.9579             0     0.5346  0.3929
+DISAGREEMENT             23        1  0.0435         0.6957             0     0.0294  0.0351
+UNCERTAINTY             113       93  0.8230         0.9204             0     0.5167  0.6348
+ACKNOWLEDGMENT         3809     3607  0.9470         0.9945             0     0.8120  0.8743
+AFFIRMATIVE_ANSWER      428      101  0.2360         0.9112             0     0.2475  0.2416
+NEGATIVE_ANSWER         170      132  0.7765         0.9235             0     0.4490  0.5690
+QUESTION                967      760  0.7859         0.9659             0     0.7301  0.7570
+CLARIFICATION            23       13  0.5652         0.6957             0     0.1711  0.2626
+STATEMENT             10058     9213  0.9160         0.9862             0     0.9674  0.9410
+
+=== ERROR ANALYSIS ===
+Errors: 2486
+
+Top 15 error pairs:
+          expected          predicted  count
+         AGREEMENT     ACKNOWLEDGMENT    509
+AFFIRMATIVE_ANSWER     ACKNOWLEDGMENT    258
+         STATEMENT           QUESTION    257
+         STATEMENT          AGREEMENT    235
+          QUESTION          STATEMENT    157
+    ACKNOWLEDGMENT AFFIRMATIVE_ANSWER    105
+         STATEMENT AFFIRMATIVE_ANSWER    101
+         AGREEMENT AFFIRMATIVE_ANSWER     95
+         STATEMENT        UNCERTAINTY     77
+         STATEMENT            GOODBYE     68
+         AGREEMENT    NEGATIVE_ANSWER     64
+         STATEMENT    NEGATIVE_ANSWER     60
+    ACKNOWLEDGMENT      CLARIFICATION     48
+         AGREEMENT          STATEMENT     47
+           GOODBYE     ACKNOWLEDGMENT     40
+
+Correct class recovered in top-3: 2147 / 2486
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 9523
+Actual STATEMENT: 10058
+True positives: 9213
+False positives: 310
+Share of all errors: 0.1247
+
+======================================================================
+MODEL: b_svm
+DATASET: benchmark
+======================================================================
+
+Score type: decision_score
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.7688
+Zero vectors: 2
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9852
+Zero vectors: 0
+
+=== OVERALL METRICS ===
+records: 240
+correct: 154
+accuracy: 0.6417
+macro_precision: 0.8214
+macro_recall: 0.6417
+macro_f1: 0.6857
+weighted_f1: 0.6857
+top3_accuracy: 0.9208
+model: b_svm
+dataset: benchmark
+score_type: decision_score
+inference_seconds: 0.0207
+ms_per_record: 0.0861
+word_feature_coverage: 0.7688
+word_zero_vectors: 2
+char_feature_coverage: 0.9852
+char_zero_vectors: 0
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 104.8875
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.6000    0.7500        20
+           GOODBYE     0.8235    0.7000    0.7568        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6667    0.5000    0.5714        20
+      DISAGREEMENT     0.8750    0.7000    0.7778        20
+       UNCERTAINTY     0.8333    0.5000    0.6250        20
+    ACKNOWLEDGMENT     0.9091    0.5000    0.6452        20
+AFFIRMATIVE_ANSWER     1.0000    0.6500    0.7879        20
+   NEGATIVE_ANSWER     0.9091    0.5000    0.6452        20
+          QUESTION     0.6087    0.7000    0.6512        20
+     CLARIFICATION     1.0000    0.7500    0.8571        20
+         STATEMENT     0.2317    0.9500    0.3725        20
+
+          accuracy                         0.6417       240
+         macro avg     0.8214    0.6417    0.6857       240
+      weighted avg     0.8214    0.6417    0.6857       240
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  12        1          0          0             0            0               0                   0                0         3              0          4
+GOODBYE                    0       14          0          0             0            0               0                   0                0         1              0          5
+GRATITUDE                  0        0         13          0             0            0               0                   0                0         1              0          6
+AGREEMENT                  0        1          0         10             0            1               1                   0                0         1              0          6
+DISAGREEMENT               0        0          0          1            14            0               0                   0                1         0              0          4
+UNCERTAINTY                0        0          0          0             2           10               0                   0                0         0              0          8
+ACKNOWLEDGMENT             0        0          0          0             0            0              10                   0                0         1              0          9
+AFFIRMATIVE_ANSWER         0        0          0          2             0            0               0                  13                0         0              0          5
+NEGATIVE_ANSWER            0        0          0          1             0            1               0                   0               10         0              0          8
+QUESTION                   0        0          0          1             0            0               0                   0                0        14              0          5
+CLARIFICATION              0        1          0          0             0            0               0                   0                0         1             15          3
+STATEMENT                  0        0          0          0             0            0               0                   0                0         1              0         19
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 20       12    0.60           0.95             0     1.0000  0.7500
+GOODBYE                  20       14    0.70           0.95             0     0.8235  0.7568
+GRATITUDE                20       13    0.65           0.90             0     1.0000  0.7879
+AGREEMENT                20       10    0.50           0.85             0     0.6667  0.5714
+DISAGREEMENT             20       14    0.70           1.00             0     0.8750  0.7778
+UNCERTAINTY              20       10    0.50           0.95             0     0.8333  0.6250
+ACKNOWLEDGMENT           20       10    0.50           0.85             0     0.9091  0.6452
+AFFIRMATIVE_ANSWER       20       13    0.65           1.00             0     1.0000  0.7879
+NEGATIVE_ANSWER          20       10    0.50           0.80             0     0.9091  0.6452
+QUESTION                 20       14    0.70           0.95             0     0.6087  0.6512
+CLARIFICATION            20       15    0.75           0.85             0     1.0000  0.8571
+STATEMENT                20       19    0.95           1.00             0     0.2317  0.3725
+
+=== BENCHMARK GROUP RESULTS ===
+ records  correct  accuracy  macro_precision  macro_recall  macro_f1  weighted_f1  top3_accuracy model        group  zero_vectors
+      60       40    0.6667           0.8529        0.6667    0.6897       0.6897         0.9000 b_svm      natural             0
+      60       43    0.7167           0.7766        0.7167    0.7059       0.7059         0.8833 b_svm        short             0
+      60       40    0.6667           0.9040        0.6667    0.7189       0.7189         0.9500 b_svm installation             0
+      60       31    0.5167           0.7857        0.5167    0.5447       0.5447         0.9500 b_svm      complex             0
+
+=== ERROR ANALYSIS ===
+Errors: 86
+
+Top 15 error pairs:
+          expected       predicted  count
+    ACKNOWLEDGMENT       STATEMENT      9
+       UNCERTAINTY       STATEMENT      8
+   NEGATIVE_ANSWER       STATEMENT      8
+         GRATITUDE       STATEMENT      6
+         AGREEMENT       STATEMENT      6
+AFFIRMATIVE_ANSWER       STATEMENT      5
+           GOODBYE       STATEMENT      5
+          QUESTION       STATEMENT      5
+          GREETING       STATEMENT      4
+      DISAGREEMENT       STATEMENT      4
+          GREETING        QUESTION      3
+     CLARIFICATION       STATEMENT      3
+AFFIRMATIVE_ANSWER       AGREEMENT      2
+       UNCERTAINTY    DISAGREEMENT      2
+      DISAGREEMENT NEGATIVE_ANSWER      1
+
+Correct class recovered in top-3: 67 / 86
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 82
+Actual STATEMENT: 20
+True positives: 19
+False positives: 63
+Share of all errors: 0.7326
+
+=== STRONG SVM RECOVERY ===
+Total weight: 136406.0000
+Mean weight: 1.0000
+Minimum weight: 0.00227206
+Maximum weight: 151.56222222
+Class weight normalization: PASS
+Feature transformation: 12.4716 seconds
+
+Classifier parameters:
+{'C': 1.0, 'class_weight': None, 'dual': 'auto', 'fit_intercept': True, 'intercept_scaling': 1, 'loss': 'squared_hinge', 'max_iter': 20000, 'multi_class': 'ovr', 'penalty': 'l2', 'random_state': 42, 'tol': 0.0001, 'verbose': 0}
+
+Training started: c_svm
+Training time: 536.5568 seconds
+Iterations: 5097
+Convergence warnings: 0
+Model saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\models\E09_07_05_01_c_svm.joblib
+Model SHA256: ec155d94f3a7c591008188c90748d92230471540ecfbef9d56483e1b1adb61f3
+PASS | Strong SVM recovery
+
+======================================================================
+MODEL: c_svm
+DATASET: validation
+======================================================================
+
+Score type: decision_score
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.9314
+Zero vectors: 10
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9732
+Zero vectors: 382
+
+=== OVERALL METRICS ===
+records: 16913
+correct: 12580
+accuracy: 0.7438
+macro_precision: 0.3847
+macro_recall: 0.5712
+macro_f1: 0.3994
+weighted_f1: 0.7757
+top3_accuracy: 0.9314
+model: c_svm
+dataset: validation
+score_type: decision_score
+inference_seconds: 2.8091
+ms_per_record: 0.1661
+word_feature_coverage: 0.9314
+word_zero_vectors: 10
+char_feature_coverage: 0.9732
+char_zero_vectors: 382
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 112.1361
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.0775    0.7692    0.1408        26
+           GOODBYE     0.5672    0.6136    0.5895       220
+         GRATITUDE     0.3500    1.0000    0.5185         7
+         AGREEMENT     0.4529    0.2161    0.2926      1069
+      DISAGREEMENT     0.0357    0.5652    0.0672        23
+       UNCERTAINTY     0.4947    0.8230    0.6179       113
+    ACKNOWLEDGMENT     0.7261    0.5519    0.6271      3809
+AFFIRMATIVE_ANSWER     0.1162    0.0537    0.0735       428
+   NEGATIVE_ANSWER     0.0100    0.0941    0.0180       170
+          QUESTION     0.7242    0.7766    0.7495       967
+     CLARIFICATION     0.0948    0.4783    0.1583        23
+         STATEMENT     0.9675    0.9125    0.9392     10058
+
+          accuracy                         0.7438     16913
+         macro avg     0.3847    0.5712    0.3994     16913
+      weighted avg     0.8231    0.7438    0.7757     16913
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  20        1          0          0             0            0               0                   0                0         0              0          5
+GOODBYE                    5      135         11          2             2            0              45                   2                4         2              0         12
+GRATITUDE                  0        0          7          0             0            0               0                   0                0         0              0          0
+AGREEMENT                 62        7          0        231            85            8             497                  48               75         7              3         46
+DISAGREEMENT               0        0          0          1            13            1               0                   0                0         0              0          8
+UNCERTAINTY                0        1          0          1             2           93               1                   1                1         3              0         10
+ACKNOWLEDGMENT            93        1          0         11            91            3            2102                   6             1403         2             90          7
+AFFIRMATIVE_ANSWER        67        1          0         19            23            1             217                  23               38         4              0         35
+NEGATIVE_ANSWER            0        0          0          3           123            0               2                   1               16         0              0         25
+QUESTION                   2       14          1         15             3            3              10                   2                0       751              9        157
+CLARIFICATION              0        1          0          0             2            0               1                   0                0         5             11          3
+STATEMENT                  9       77          1        227            20           79              20                 115               66       263              3       9178
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 26       20  0.7692         0.9231             0     0.0775  0.1408
+GOODBYE                 220      135  0.6136         0.9364             0     0.5672  0.5895
+GRATITUDE                 7        7  1.0000         1.0000             0     0.3500  0.5185
+AGREEMENT              1069      231  0.2161         0.3583             0     0.4529  0.2926
+DISAGREEMENT             23       13  0.5652         0.7391             0     0.0357  0.0672
+UNCERTAINTY             113       93  0.8230         0.9204             0     0.4947  0.6179
+ACKNOWLEDGMENT         3809     2102  0.5519         0.9709             0     0.7261  0.6271
+AFFIRMATIVE_ANSWER      428       23  0.0537         0.7033             0     0.1162  0.0735
+NEGATIVE_ANSWER         170       16  0.0941         0.9235             0     0.0100  0.0180
+QUESTION                967      751  0.7766         0.9659             0     0.7242  0.7495
+CLARIFICATION            23       11  0.4783         0.7391             0     0.0948  0.1583
+STATEMENT             10058     9178  0.9125         0.9848             0     0.9675  0.9392
+
+=== ERROR ANALYSIS ===
+Errors: 4333
+
+Top 15 error pairs:
+          expected          predicted  count
+    ACKNOWLEDGMENT    NEGATIVE_ANSWER   1403
+         AGREEMENT     ACKNOWLEDGMENT    497
+         STATEMENT           QUESTION    263
+         STATEMENT          AGREEMENT    227
+AFFIRMATIVE_ANSWER     ACKNOWLEDGMENT    217
+          QUESTION          STATEMENT    157
+   NEGATIVE_ANSWER       DISAGREEMENT    123
+         STATEMENT AFFIRMATIVE_ANSWER    115
+    ACKNOWLEDGMENT           GREETING     93
+    ACKNOWLEDGMENT       DISAGREEMENT     91
+    ACKNOWLEDGMENT      CLARIFICATION     90
+         AGREEMENT       DISAGREEMENT     85
+         STATEMENT        UNCERTAINTY     79
+         STATEMENT            GOODBYE     77
+         AGREEMENT    NEGATIVE_ANSWER     75
+
+Correct class recovered in top-3: 3173 / 4333
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 9486
+Actual STATEMENT: 10058
+True positives: 9178
+False positives: 308
+Share of all errors: 0.0711
+
+======================================================================
+MODEL: c_svm
+DATASET: benchmark
+======================================================================
+
+Score type: decision_score
+Ranked predictions match native predictions: YES
+
+=== FEATURE STATISTICS ===
+
+WORD FEATURES
+Vocabulary: 77,043
+Mean coverage: 0.7688
+Zero vectors: 2
+
+CHAR FEATURES
+Vocabulary: 100,000
+Mean coverage: 0.9852
+Zero vectors: 0
+
+=== OVERALL METRICS ===
+records: 240
+correct: 152
+accuracy: 0.6333
+macro_precision: 0.8146
+macro_recall: 0.6333
+macro_f1: 0.6764
+weighted_f1: 0.6764
+top3_accuracy: 0.9250
+model: c_svm
+dataset: benchmark
+score_type: decision_score
+inference_seconds: 0.0272
+ms_per_record: 0.1134
+word_feature_coverage: 0.7688
+word_zero_vectors: 2
+char_feature_coverage: 0.9852
+char_zero_vectors: 0
+vocabulary_size: 177043
+zero_vectors: 0
+mean_nonzero_features: 104.8875
+
+=== CLASSIFICATION REPORT ===
+                    precision    recall  f1-score   support
+
+          GREETING     1.0000    0.6000    0.7500        20
+           GOODBYE     0.7778    0.7000    0.7368        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.6429    0.4500    0.5294        20
+      DISAGREEMENT     0.8750    0.7000    0.7778        20
+       UNCERTAINTY     0.8333    0.5000    0.6250        20
+    ACKNOWLEDGMENT     0.9091    0.5000    0.6452        20
+AFFIRMATIVE_ANSWER     1.0000    0.6500    0.7879        20
+   NEGATIVE_ANSWER     0.9000    0.4500    0.6000        20
+          QUESTION     0.6087    0.7000    0.6512        20
+     CLARIFICATION     1.0000    0.7500    0.8571        20
+         STATEMENT     0.2289    0.9500    0.3689        20
+
+          accuracy                         0.6333       240
+         macro avg     0.8146    0.6333    0.6764       240
+      weighted avg     0.8146    0.6333    0.6764       240
+
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+GREETING                  12        1          0          0             0            0               0                   0                0         3              0          4
+GOODBYE                    0       14          0          0             0            0               0                   0                0         1              0          5
+GRATITUDE                  0        1         13          0             0            0               0                   0                0         1              0          5
+AGREEMENT                  0        1          0          9             0            1               1                   0                0         1              0          7
+DISAGREEMENT               0        0          0          1            14            0               0                   0                1         0              0          4
+UNCERTAINTY                0        0          0          0             2           10               0                   0                0         0              0          8
+ACKNOWLEDGMENT             0        0          0          0             0            0              10                   0                0         1              0          9
+AFFIRMATIVE_ANSWER         0        0          0          2             0            0               0                  13                0         0              0          5
+NEGATIVE_ANSWER            0        0          0          1             0            1               0                   0                9         0              0          9
+QUESTION                   0        0          0          1             0            0               0                   0                0        14              0          5
+CLARIFICATION              0        1          0          0             0            0               0                   0                0         1             15          3
+STATEMENT                  0        0          0          0             0            0               0                   0                0         1              0         19
+
+=== CLASS SUMMARY ===
+                    records  correct  recall  top3_accuracy  zero_vectors  precision      f1
+expected                                                                                    
+GREETING                 20       12    0.60           0.95             0     1.0000  0.7500
+GOODBYE                  20       14    0.70           0.95             0     0.7778  0.7368
+GRATITUDE                20       13    0.65           0.95             0     1.0000  0.7879
+AGREEMENT                20        9    0.45           0.85             0     0.6429  0.5294
+DISAGREEMENT             20       14    0.70           1.00             0     0.8750  0.7778
+UNCERTAINTY              20       10    0.50           0.95             0     0.8333  0.6250
+ACKNOWLEDGMENT           20       10    0.50           0.85             0     0.9091  0.6452
+AFFIRMATIVE_ANSWER       20       13    0.65           1.00             0     1.0000  0.7879
+NEGATIVE_ANSWER          20        9    0.45           0.80             0     0.9000  0.6000
+QUESTION                 20       14    0.70           0.95             0     0.6087  0.6512
+CLARIFICATION            20       15    0.75           0.85             0     1.0000  0.8571
+STATEMENT                20       19    0.95           1.00             0     0.2289  0.3689
+
+=== BENCHMARK GROUP RESULTS ===
+ records  correct  accuracy  macro_precision  macro_recall  macro_f1  weighted_f1  top3_accuracy model        group  zero_vectors
+      60       40    0.6667           0.8430        0.6667    0.6852       0.6852         0.9167 c_svm      natural             0
+      60       42    0.7000           0.7659        0.7000    0.6885       0.6885         0.8833 c_svm        short             0
+      60       40    0.6667           0.9040        0.6667    0.7189       0.7189         0.9500 c_svm installation             0
+      60       30    0.5000           0.7852        0.5000    0.5242       0.5242         0.9500 c_svm      complex             0
+
+=== ERROR ANALYSIS ===
+Errors: 88
+
+Top 15 error pairs:
+          expected    predicted  count
+    ACKNOWLEDGMENT    STATEMENT      9
+   NEGATIVE_ANSWER    STATEMENT      9
+       UNCERTAINTY    STATEMENT      8
+         AGREEMENT    STATEMENT      7
+           GOODBYE    STATEMENT      5
+         GRATITUDE    STATEMENT      5
+AFFIRMATIVE_ANSWER    STATEMENT      5
+          QUESTION    STATEMENT      5
+      DISAGREEMENT    STATEMENT      4
+          GREETING    STATEMENT      4
+          GREETING     QUESTION      3
+     CLARIFICATION    STATEMENT      3
+       UNCERTAINTY DISAGREEMENT      2
+AFFIRMATIVE_ANSWER    AGREEMENT      2
+    ACKNOWLEDGMENT     QUESTION      1
+
+Correct class recovered in top-3: 70 / 88
+
+=== STATEMENT OVERPREDICTION ===
+Predicted STATEMENT: 83
+Actual STATEMENT: 20
+True positives: 19
+False positives: 64
+Share of all errors: 0.7273
+
+=== FINAL MODEL COMPARISON ===
+
+=== VALIDATION ===
+model    dataset  correct  accuracy  macro_precision  macro_recall  macro_f1  weighted_f1  top3_accuracy  statement_false_positives  training_seconds
+b_svm validation    14427    0.8530           0.5085        0.6538    0.5492       0.8507         0.9800                        310               NaN
+a_svm validation    13078    0.7733           0.4937        0.6752    0.5278       0.7987         0.9835                        336               NaN
+ b_lr validation    14042    0.8302           0.4625        0.6636    0.5222       0.8342         0.9819                        241               NaN
+ a_lr validation    12907    0.7631           0.4703        0.6835    0.5142       0.7906         0.9864                        306               NaN
+ c_lr validation    13551    0.8012           0.3709        0.6163    0.4131       0.8114         0.9442                        232               NaN
+c_svm validation    12580    0.7438           0.3847        0.5712    0.3994       0.7757         0.9314                        308          536.5568
+
+=== BENCHMARK ===
+model   dataset  correct  accuracy  macro_precision  macro_recall  macro_f1  weighted_f1  top3_accuracy  statement_false_positives  training_seconds
+ c_lr benchmark      168    0.7000           0.7903        0.7000    0.7173       0.7173         0.8958                         34               NaN
+ b_lr benchmark      165    0.6875           0.7865        0.6875    0.7058       0.7058         0.8958                         36               NaN
+b_svm benchmark      154    0.6417           0.8214        0.6417    0.6857       0.6857         0.9208                         63               NaN
+c_svm benchmark      152    0.6333           0.8146        0.6333    0.6764       0.6764         0.9250                         64          536.5568
+ a_lr benchmark      149    0.6208           0.7250        0.6208    0.6290       0.6290         0.8292                         59               NaN
+a_svm benchmark      140    0.5833           0.8070        0.5833    0.6218       0.6218         0.9250                         75               NaN
+
+=== METRIC DIFFERENCES ===
+   dataset classifier model          metric  baseline  candidate  difference_pp
+validation         lr  b_lr        accuracy    0.7631     0.8302         6.7108
+validation         lr  b_lr macro_precision    0.4703     0.4625        -0.7793
+validation         lr  b_lr    macro_recall    0.6835     0.6636        -1.9911
+validation         lr  b_lr        macro_f1    0.5142     0.5222         0.8001
+validation         lr  b_lr     weighted_f1    0.7906     0.8342         4.3531
+validation         lr  b_lr   top3_accuracy    0.9864     0.9819        -0.4494
+validation         lr  c_lr        accuracy    0.7631     0.8012         3.8077
+validation         lr  c_lr macro_precision    0.4703     0.3709        -9.9347
+validation         lr  c_lr    macro_recall    0.6835     0.6163        -6.7227
+validation         lr  c_lr        macro_f1    0.5142     0.4131       -10.1094
+validation         lr  c_lr     weighted_f1    0.7906     0.8114         2.0809
+validation         lr  c_lr   top3_accuracy    0.9864     0.9442        -4.2216
+validation        svm b_svm        accuracy    0.7733     0.8530         7.9761
+validation        svm b_svm macro_precision    0.4937     0.5085         1.4731
+validation        svm b_svm    macro_recall    0.6752     0.6538        -2.1393
+validation        svm b_svm        macro_f1    0.5278     0.5492         2.1471
+validation        svm b_svm     weighted_f1    0.7987     0.8507         5.2014
+validation        svm b_svm   top3_accuracy    0.9835     0.9800        -0.3548
+validation        svm c_svm        accuracy    0.7733     0.7438        -2.9445
+validation        svm c_svm macro_precision    0.4937     0.3847       -10.8993
+validation        svm c_svm    macro_recall    0.6752     0.5712       -10.4000
+validation        svm c_svm        macro_f1    0.5278     0.3994       -12.8401
+validation        svm c_svm     weighted_f1    0.7987     0.7757        -2.3019
+validation        svm c_svm   top3_accuracy    0.9835     0.9314        -5.2090
+ benchmark         lr  b_lr        accuracy    0.6208     0.6875         6.6667
+ benchmark         lr  b_lr macro_precision    0.7250     0.7865         6.1550
+ benchmark         lr  b_lr    macro_recall    0.6208     0.6875         6.6667
+ benchmark         lr  b_lr        macro_f1    0.6290     0.7058         7.6751
+ benchmark         lr  b_lr     weighted_f1    0.6290     0.7058         7.6751
+ benchmark         lr  b_lr   top3_accuracy    0.8292     0.8958         6.6667
+ benchmark         lr  c_lr        accuracy    0.6208     0.7000         7.9167
+ benchmark         lr  c_lr macro_precision    0.7250     0.7903         6.5311
+ benchmark         lr  c_lr    macro_recall    0.6208     0.7000         7.9167
+ benchmark         lr  c_lr        macro_f1    0.6290     0.7173         8.8253
+ benchmark         lr  c_lr     weighted_f1    0.6290     0.7173         8.8253
+ benchmark         lr  c_lr   top3_accuracy    0.8292     0.8958         6.6667
+ benchmark        svm b_svm        accuracy    0.5833     0.6417         5.8333
+ benchmark        svm b_svm macro_precision    0.8070     0.8214         1.4420
+ benchmark        svm b_svm    macro_recall    0.5833     0.6417         5.8333
+ benchmark        svm b_svm        macro_f1    0.6218     0.6857         6.3877
+ benchmark        svm b_svm     weighted_f1    0.6218     0.6857         6.3877
+ benchmark        svm b_svm   top3_accuracy    0.9250     0.9208        -0.4167
+ benchmark        svm c_svm        accuracy    0.5833     0.6333         5.0000
+ benchmark        svm c_svm macro_precision    0.8070     0.8146         0.7633
+ benchmark        svm c_svm    macro_recall    0.5833     0.6333         5.0000
+ benchmark        svm c_svm        macro_f1    0.6218     0.6764         5.4651
+ benchmark        svm c_svm     weighted_f1    0.6218     0.6764         5.4651
+ benchmark        svm c_svm   top3_accuracy    0.9250     0.9250         0.0000
+
+=== BENCHMARK CLASS COMPARISON ===
+                    a_lr_recall  a_lr_f1  a_lr_top3  b_lr_recall  b_lr_f1  b_lr_top3  c_lr_recall  c_lr_f1  c_lr_top3  a_svm_recall  a_svm_f1  a_svm_top3  b_svm_recall  b_svm_f1  b_svm_top3  c_svm_recall  c_svm_f1  c_svm_top3
+GREETING                   0.70   0.8235       0.90         0.65   0.7879       0.90         0.65   0.7879       0.90          0.60    0.7500        0.95          0.60    0.7500        0.95          0.60    0.7500        0.95
+GOODBYE                    0.70   0.7778       0.95         0.75   0.7143       0.95         0.80   0.7442       0.95          0.65    0.7222        0.95          0.70    0.7568        0.95          0.70    0.7368        0.95
+GRATITUDE                  0.65   0.7879       0.80         0.65   0.7879       0.80         0.65   0.7879       0.80          0.65    0.7879        0.90          0.65    0.7879        0.90          0.65    0.7879        0.95
+AGREEMENT                  0.30   0.4138       0.65         0.45   0.5294       0.85         0.50   0.5714       0.90          0.30    0.4000        0.90          0.50    0.5714        0.85          0.45    0.5294        0.85
+DISAGREEMENT               0.80   0.7273       1.00         0.80   0.7619       0.95         0.80   0.7805       0.90          0.70    0.7368        0.95          0.70    0.7778        1.00          0.70    0.7778        1.00
+UNCERTAINTY                0.40   0.5517       0.90         0.60   0.7273       0.90         0.60   0.7059       0.85          0.50    0.6250        0.90          0.50    0.6250        0.95          0.50    0.6250        0.95
+ACKNOWLEDGMENT             0.00   0.0000       0.15         0.50   0.6452       0.75         0.55   0.6875       0.85          0.15    0.2609        0.85          0.50    0.6452        0.85          0.50    0.6452        0.85
+AFFIRMATIVE_ANSWER         0.70   0.8235       0.95         0.65   0.7222       1.00         0.65   0.7222       1.00          0.55    0.7097        1.00          0.65    0.7879        1.00          0.65    0.7879        1.00
+NEGATIVE_ANSWER            0.75   0.8333       0.90         0.75   0.8333       0.90         0.75   0.8333       0.85          0.55    0.6875        0.85          0.50    0.6452        0.80          0.45    0.6000        0.80
+QUESTION                   0.75   0.5882       0.95         0.80   0.6400       0.95         0.80   0.6531       0.95          0.65    0.5909        0.95          0.70    0.6512        0.95          0.70    0.6512        0.95
+CLARIFICATION              0.75   0.8333       0.80         0.75   0.8333       0.80         0.75   0.8333       0.80          0.75    0.8571        0.90          0.75    0.8571        0.85          0.75    0.8571        0.85
+STATEMENT                  0.95   0.3878       1.00         0.90   0.4865       1.00         0.90   0.5000       1.00          0.95    0.3333        1.00          0.95    0.3725        1.00          0.95    0.3689        1.00
+
+=== PAIRED PREDICTION COMPARISON ===
+
+B_LR
+BOTH_CORRECT      142
+BOTH_INCORRECT     68
+IMPROVED           23
+REGRESSED           7
+
+--- IMPROVED ---
+      id                                                                     text           expected a_lr_prediction    b_lr_prediction
+DMT-0035                                  See you on my next visit to the mirror.            GOODBYE       STATEMENT            GOODBYE
+DMT-0050                                                            Very grateful          GRATITUDE       STATEMENT          GRATITUDE
+DMT-0061                                               You've made a valid point.          AGREEMENT        QUESTION          AGREEMENT
+DMT-0063                                        Your reasoning makes sense to me.          AGREEMENT       STATEMENT          AGREEMENT
+DMT-0065                                                 I share your assessment.          AGREEMENT    DISAGREEMENT          AGREEMENT
+DMT-0068                                                          Agreed entirely          AGREEMENT       STATEMENT          AGREEMENT
+DMT-0103                                         I haven't formed an opinion yet.        UNCERTAINTY       STATEMENT        UNCERTAINTY
+DMT-0112                        I'm uncertain about the reliability of that clip.        UNCERTAINTY       STATEMENT        UNCERTAINTY
+DMT-0113                                        The evidence leaves me undecided.        UNCERTAINTY       STATEMENT        UNCERTAINTY
+DMT-0114                                  I can't tell which account is accurate.        UNCERTAINTY       STATEMENT        UNCERTAINTY
+DMT-0122                                   I've followed your explanation so far.     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0124                                          Your message has been received.     ACKNOWLEDGMENT        QUESTION     ACKNOWLEDGMENT
+DMT-0125                                            I'm following the discussion.     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0126                                                        Understood so far     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0127                                                               Duly noted     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0128                                                     Information received     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0129                                                            I'm following     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0133                   I follow your description of the verification process.     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0134                                I've heard your explanation of the video.     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0140         I've heard your account and am following what you're telling me.     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0157      Yes, I have previously encountered the article you're asking about. AFFIRMATIVE_ANSWER       STATEMENT AFFIRMATIVE_ANSWER
+DMT-0178                 No, I don't wish to take part in the optional recording.    NEGATIVE_ANSWER       STATEMENT    NEGATIVE_ANSWER
+DMT-0200 Who was responsible for collecting the statistics quoted in the article?           QUESTION       STATEMENT           QUESTION
+
+--- REGRESSED ---
+      id                          text           expected    a_lr_prediction    b_lr_prediction
+DMT-0012   Hi, is this where we begin?           GREETING           GREETING           QUESTION
+DMT-0045   I'm thankful for your time.          GRATITUDE          GRATITUDE            GOODBYE
+DMT-0067                   Quite right          AGREEMENT          AGREEMENT     ACKNOWLEDGMENT
+DMT-0144         Yes, I'd be happy to. AFFIRMATIVE_ANSWER AFFIRMATIVE_ANSWER            GOODBYE
+DMT-0147                      Sure can AFFIRMATIVE_ANSWER AFFIRMATIVE_ANSWER          AGREEMENT
+DMT-0169                    No I won't    NEGATIVE_ANSWER    NEGATIVE_ANSWER          AGREEMENT
+DMT-0224 I moved here three years ago.          STATEMENT          STATEMENT AFFIRMATIVE_ANSWER
+
+C_LR
+BOTH_CORRECT      140
+BOTH_INCORRECT     63
+IMPROVED           28
+REGRESSED           9
+
+--- IMPROVED ---
+      id                                                                     text           expected a_lr_prediction    c_lr_prediction
+DMT-0030                                                           Until tomorrow            GOODBYE       STATEMENT            GOODBYE
+DMT-0035                                  See you on my next visit to the mirror.            GOODBYE       STATEMENT            GOODBYE
+DMT-0050                                                            Very grateful          GRATITUDE       STATEMENT          GRATITUDE
+DMT-0061                                               You've made a valid point.          AGREEMENT        QUESTION          AGREEMENT
+DMT-0063                                        Your reasoning makes sense to me.          AGREEMENT       STATEMENT          AGREEMENT
+DMT-0065                                                 I share your assessment.          AGREEMENT    DISAGREEMENT          AGREEMENT
+DMT-0068                                                          Agreed entirely          AGREEMENT       STATEMENT          AGREEMENT
+DMT-0071                           Your assessment of that headline matches mine.          AGREEMENT       STATEMENT          AGREEMENT
+DMT-0079              I endorse your conclusion because the evidence supports it.          AGREEMENT    DISAGREEMENT          AGREEMENT
+DMT-0103                                         I haven't formed an opinion yet.        UNCERTAINTY       STATEMENT        UNCERTAINTY
+DMT-0112                        I'm uncertain about the reliability of that clip.        UNCERTAINTY       STATEMENT        UNCERTAINTY
+DMT-0113                                        The evidence leaves me undecided.        UNCERTAINTY       STATEMENT        UNCERTAINTY
+DMT-0114                                  I can't tell which account is accurate.        UNCERTAINTY       STATEMENT        UNCERTAINTY
+DMT-0122                                   I've followed your explanation so far.     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0124                                          Your message has been received.     ACKNOWLEDGMENT        QUESTION     ACKNOWLEDGMENT
+DMT-0125                                            I'm following the discussion.     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0126                                                        Understood so far     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0127                                                               Duly noted     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0128                                                     Information received     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0129                                                            I'm following     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0130                                                                Heard you     ACKNOWLEDGMENT        QUESTION     ACKNOWLEDGMENT
+DMT-0133                   I follow your description of the verification process.     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0134                                I've heard your explanation of the video.     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0140         I've heard your account and am following what you're telling me.     ACKNOWLEDGMENT       STATEMENT     ACKNOWLEDGMENT
+DMT-0157      Yes, I have previously encountered the article you're asking about. AFFIRMATIVE_ANSWER       STATEMENT AFFIRMATIVE_ANSWER
+DMT-0178                 No, I don't wish to take part in the optional recording.    NEGATIVE_ANSWER       STATEMENT    NEGATIVE_ANSWER
+DMT-0181                                                    When did that happen?           QUESTION   CLARIFICATION           QUESTION
+DMT-0200 Who was responsible for collecting the statistics quoted in the article?           QUESTION       STATEMENT           QUESTION
+
+--- REGRESSED ---
+      id                          text           expected    a_lr_prediction    c_lr_prediction
+DMT-0012   Hi, is this where we begin?           GREETING           GREETING           QUESTION
+DMT-0045   I'm thankful for your time.          GRATITUDE          GRATITUDE            GOODBYE
+DMT-0067                   Quite right          AGREEMENT          AGREEMENT     ACKNOWLEDGMENT
+DMT-0069           My thoughts exactly          AGREEMENT          AGREEMENT        UNCERTAINTY
+DMT-0144         Yes, I'd be happy to. AFFIRMATIVE_ANSWER AFFIRMATIVE_ANSWER            GOODBYE
+DMT-0147                      Sure can AFFIRMATIVE_ANSWER AFFIRMATIVE_ANSWER          AGREEMENT
+DMT-0169                    No I won't    NEGATIVE_ANSWER    NEGATIVE_ANSWER          AGREEMENT
+DMT-0190                What happened?           QUESTION           QUESTION      CLARIFICATION
+DMT-0224 I moved here three years ago.          STATEMENT          STATEMENT AFFIRMATIVE_ANSWER
+
+B_SVM
+BOTH_CORRECT      139
+BOTH_INCORRECT     85
+IMPROVED           15
+REGRESSED           1
+
+--- IMPROVED ---
+      id                                                                 text           expected a_svm_prediction   b_svm_prediction
+DMT-0031                                That's the end of my visit, farewell.            GOODBYE        STATEMENT            GOODBYE
+DMT-0063                                    Your reasoning makes sense to me.          AGREEMENT        STATEMENT          AGREEMENT
+DMT-0072                          I share your conclusion about the evidence.          AGREEMENT     DISAGREEMENT          AGREEMENT
+DMT-0074               Your interpretation of the report seems correct to me.          AGREEMENT     DISAGREEMENT          AGREEMENT
+DMT-0080    Although I initially hesitated, I now agree with your assessment.          AGREEMENT        STATEMENT          AGREEMENT
+DMT-0122                               I've followed your explanation so far.     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0126                                                    Understood so far     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0128                                                 Information received     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0129                                                        I'm following     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0130                                                            Heard you     ACKNOWLEDGMENT         QUESTION     ACKNOWLEDGMENT
+DMT-0133               I follow your description of the verification process.     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0134                            I've heard your explanation of the video.     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0156 Yes, I would be willing to answer another question about the report. AFFIRMATIVE_ANSWER        STATEMENT AFFIRMATIVE_ANSWER
+DMT-0157  Yes, I have previously encountered the article you're asking about. AFFIRMATIVE_ANSWER        STATEMENT AFFIRMATIVE_ANSWER
+DMT-0198        Which records establish the date on which the event occurred?           QUESTION        STATEMENT           QUESTION
+
+--- REGRESSED ---
+      id                                                     text        expected a_svm_prediction b_svm_prediction
+DMT-0178 No, I don't wish to take part in the optional recording. NEGATIVE_ANSWER  NEGATIVE_ANSWER        STATEMENT
+
+C_SVM
+BOTH_CORRECT      138
+BOTH_INCORRECT     86
+IMPROVED           14
+REGRESSED           2
+
+--- IMPROVED ---
+      id                                                                 text           expected a_svm_prediction   c_svm_prediction
+DMT-0031                                That's the end of my visit, farewell.            GOODBYE        STATEMENT            GOODBYE
+DMT-0063                                    Your reasoning makes sense to me.          AGREEMENT        STATEMENT          AGREEMENT
+DMT-0072                          I share your conclusion about the evidence.          AGREEMENT     DISAGREEMENT          AGREEMENT
+DMT-0074               Your interpretation of the report seems correct to me.          AGREEMENT     DISAGREEMENT          AGREEMENT
+DMT-0122                               I've followed your explanation so far.     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0126                                                    Understood so far     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0128                                                 Information received     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0129                                                        I'm following     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0130                                                            Heard you     ACKNOWLEDGMENT         QUESTION     ACKNOWLEDGMENT
+DMT-0133               I follow your description of the verification process.     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0134                            I've heard your explanation of the video.     ACKNOWLEDGMENT        STATEMENT     ACKNOWLEDGMENT
+DMT-0156 Yes, I would be willing to answer another question about the report. AFFIRMATIVE_ANSWER        STATEMENT AFFIRMATIVE_ANSWER
+DMT-0157  Yes, I have previously encountered the article you're asking about. AFFIRMATIVE_ANSWER        STATEMENT AFFIRMATIVE_ANSWER
+DMT-0198        Which records establish the date on which the event occurred?           QUESTION        STATEMENT           QUESTION
+
+--- REGRESSED ---
+      id                                                     text        expected a_svm_prediction c_svm_prediction
+DMT-0166                                                No chance NEGATIVE_ANSWER  NEGATIVE_ANSWER        STATEMENT
+DMT-0178 No, I don't wish to take part in the optional recording. NEGATIVE_ANSWER  NEGATIVE_ANSWER        STATEMENT
+
+=== RECOVERY STATUS ===
+Existing models loaded: 5
+Existing models retrained: 0
+New training attempts: 1
+Successfully evaluated models: 6
+Strong SVM converged: YES
+Strong SVM max_iter: 20000
+Feature extractor retrained: NO
+Probability calibration performed: NO
+Independent final test used: NO
+Uniform baseline equivalence: NOT ASSUMED
+Previous training times: NOT MEASURED DURING RECOVERY
+
+=== INTEGRITY VERIFICATION ===
+PASS | models/E09_07_03_combined_logreg.joblib
+PASS | models/E09_07_04_combined_svm.joblib
+PASS | digital_mirror_final/test_processed.csv
+PASS | digital_mirror_v1/train_eligible.csv
+PASS | intent_v1/train.csv
+PASS | intent_v1/validation.csv
+PASS | models/E09_05a_domain_adapted.joblib
+PASS | models/E09_07_02_char_logreg.joblib
+PASS | models/E09_07_05a_lr.joblib
+PASS | models/E09_07_05b_lr.joblib
+PASS | models/E09_07_05c_lr.joblib
+PASS | models/E09_07_05a_svm.joblib
+PASS | models/E09_07_05b_svm.joblib
+Protected files unchanged during recovery: YES
+
+=== RECOVERY COMPLETE ===

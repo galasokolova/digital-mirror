@@ -1,0 +1,35 @@
+=== E09_07_07_03_01: DATASET ASSEMBLY ===
+b01_greeting.json: PASS | 50 records | lengths=(35, 12, 3, 0)
+b02_goodbye.json: PASS | 50 records | lengths=(30, 15, 5, 0)
+b03_gratitude.json: PASS | 50 records | lengths=(30, 14, 5, 1)
+b04_agreement.json: PASS | 50 records | lengths=(25, 15, 8, 2)
+b05_disagreement.json: PASS | 50 records | lengths=(25, 15, 8, 2)
+b06_uncertainty.json: PASS | 50 records | lengths=(25, 15, 8, 2)
+b07_acknowledgment.json: PASS | 50 records | lengths=(35, 12, 3, 0)
+b08_affirmative_answer.json: PASS | 50 records | lengths=(30, 14, 5, 1)
+b09_negative_answer.json: PASS | 50 records | lengths=(30, 14, 5, 1)
+b10_question.json: PASS | 50 records | lengths=(10, 20, 14, 6)
+b11_clarification.json: PASS | 50 records | lengths=(15, 18, 12, 5)
+b12_statement.json: PASS | 50 records | lengths=(10, 16, 14, 10)
+
+=== DISTRIBUTION ===
+Records: 600
+Class counts: {'GREETING': 50, 'GOODBYE': 50, 'GRATITUDE': 50, 'AGREEMENT': 50, 'DISAGREEMENT': 50, 'UNCERTAINTY': 50, 'ACKNOWLEDGMENT': 50, 'AFFIRMATIVE_ANSWER': 50, 'NEGATIVE_ANSWER': 50, 'QUESTION': 50, 'CLARIFICATION': 50, 'STATEMENT': 50}
+Length counts (1-3, 4-6, 7-10, 11+): (300, 180, 90, 30)
+Styles: {'casual': 295, 'polite': 34, 'neutral': 233, 'emphatic': 7, 'hesitant': 16, 'fragmented': 15}
+Scenarios: {'initial_contact': 50, 'conversation_closing': 50, 'final_reaction': 50, 'discussion_and_clarification': 450}
+Context present: 365
+Context required: 296
+
+=== DUPLICATE DIAGNOSTICS ===
+Unique normalized texts: 599
+Duplicate groups: 1
+Conflicting groups: 1
+'not necessarily' [('NST-0213', 'DISAGREEMENT'), ('NST-0273', 'UNCERTAINTY')]
+
+CSV reload: PASS
+Output: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\raw\digital_mirror_small_talk\small_talk_intents_v1.csv
+Output SHA-256: 03c4261d33b01f2ea42634dc96bc48a6022b6006bf48ddfe6bad52fabb4a7ffd
+No records removed. No model trained.
+Input integrity: 12/12
+ASSEMBLY: PASS

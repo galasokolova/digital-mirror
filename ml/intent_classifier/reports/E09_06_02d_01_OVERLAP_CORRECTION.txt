@@ -1,0 +1,59 @@
+=== E09.06.2d.1: DATASET OVERLAP CORRECTION ===
+
+=== REPLACEMENT ID VALIDATION ===
+Overlapping IDs: 21
+Replacement IDs: 21
+Replacement ID validation: PASSED
+
+=== PROPOSED REPLACEMENTS ===
+      id             intent        group              original_text                             replacement_text
+DMT-0007           GREETING        short                  Greetings                             Greetings to you
+DMT-0008           GREETING        short                    Morning                               Lovely morning
+DMT-0009           GREETING        short                Hello there                                 Hello to you
+DMT-0010           GREETING        short                       Hiya                                   Hiya there
+DMT-0011           GREETING installation     Hello, digital mirror. Hello, interactive mirror, nice to meet you.
+DMT-0023            GOODBYE      natural       Until we meet again.                I hope our paths cross again.
+DMT-0026            GOODBYE        short                   Farewell                             Farewell for now
+DMT-0027            GOODBYE        short                    So long                            Goodbye for today
+DMT-0029            GOODBYE        short                    Bye now                                Bye for today
+DMT-0046          GRATITUDE        short           Much appreciated                       Really appreciate that
+DMT-0047          GRATITUDE        short            Cheers for that                        Thanks for everything
+DMT-0083       DISAGREEMENT      natural  I take the opposite view.     My view differs considerably from yours.
+DMT-0106        UNCERTAINTY        short                   Possibly                                  Possibly so
+DMT-0109        UNCERTAINTY        short                  Who knows                           Difficult to judge
+DMT-0122     ACKNOWLEDGMENT      natural I follow your explanation.       I've followed your explanation so far.
+DMT-0126     ACKNOWLEDGMENT        short                 Understood                            Understood so far
+DMT-0127     ACKNOWLEDGMENT        short                      Noted                                   Duly noted
+DMT-0128     ACKNOWLEDGMENT        short           Message received                         Information received
+DMT-0146 AFFIRMATIVE_ANSWER        short                 Yes indeed                                 Yes, I shall
+DMT-0170    NEGATIVE_ANSWER        short                  Not today                                No, not today
+DMT-0189           QUESTION        short                  How many?                       How many participants?
+
+=== CANDIDATE VALIDATION ===
+PASS | Expected record count
+PASS | Exactly 21 changed records
+PASS | Only overlapping IDs changed
+PASS | All non-text columns preserved
+PASS | Unique IDs
+PASS | Unique model texts
+PASS | No empty model texts
+PASS | Short group contains 1-3 words
+PASS | Balanced intent-group distribution
+
+=== REPLACEMENT OVERLAP CHECK ===
+switchboard_train: 0
+switchboard_validation: 0
+switchboard_test: 0
+digital_mirror_original_train: 1
+      id         text   intent group
+DMT-0009 Hello to you GREETING short
+digital_mirror_eligible_train: 1
+      id         text   intent group
+DMT-0009 Hello to you GREETING short
+installation_development_benchmark: 0
+
+Unique remaining overlaps: 1
+
+STATUS: REVIEW REQUIRED
+Original dataset modified: NO
+Some replacement texts still overlap with reference data.

@@ -1,0 +1,1 @@
+swda_filename,conversation_no,transcript_index,act_tag,caller,utterance_index,subutterance_index,text,damsl_tag,segment_count,source_indices,source_tags,end_transcript_index,clean_text,raw_token_count,clean_token_count,intent,normalized_text,model_text

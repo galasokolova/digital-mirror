@@ -1,0 +1,529 @@
+=== E07: GOEMOTIONS EXPLORATION ===
+
+=== DATASET OVERVIEW ===
+Total rows: 54,263
+Emotion categories: 28
+
+=== SPLIT DISTRIBUTION ===
+split
+train    43410
+test      5427
+dev       5426
+
+=== DATA QUALITY ===
+Missing values:
+text          0
+label_ids     0
+comment_id    0
+split         0
+labels        0
+
+Empty texts: 0
+Duplicate comment IDs: 0
+Duplicate texts: 269
+Invalid label IDs: []
+
+=== EMOTION DISTRIBUTION ===
+27 neutral               17,772  32.75%
+ 0 admiration             5,122   9.44%
+ 4 approval               3,687   6.79%
+15 gratitude              3,372   6.21%
+ 3 annoyance              3,093   5.70%
+ 1 amusement              2,895   5.34%
+ 7 curiosity              2,723   5.02%
+10 disapproval            2,581   4.76%
+18 love                   2,576   4.75%
+20 optimism               1,976   3.64%
+ 2 anger                  1,960   3.61%
+17 joy                    1,785   3.29%
+ 6 confusion              1,673   3.08%
+25 sadness                1,625   2.99%
+ 9 disappointment         1,583   2.92%
+22 realization            1,382   2.55%
+ 5 caring                 1,375   2.53%
+26 surprise               1,330   2.45%
+13 excitement             1,052   1.94%
+11 disgust                1,013   1.87%
+ 8 desire                   801   1.48%
+14 fear                     764   1.41%
+24 remorse                  669   1.23%
+12 embarrassment            375   0.69%
+19 nervousness              208   0.38%
+23 relief                   182   0.34%
+21 pride                    142   0.26%
+16 grief                     96   0.18%
+
+=== EMOTION DISTRIBUTION BY SPLIT ===
+split            dev  test  train
+emotion                          
+admiration       488   504   4130
+amusement        303   264   2328
+anger            195   198   1567
+annoyance        303   320   2470
+approval         397   351   2939
+caring           153   135   1087
+confusion        152   153   1368
+curiosity        248   284   2191
+desire            77    83    641
+disappointment   163   151   1269
+disapproval      292   267   2022
+disgust           97   123    793
+embarrassment     35    37    303
+excitement        96   103    853
+fear              90    78    596
+gratitude        358   352   2662
+grief             13     6     77
+joy              172   161   1452
+love             252   238   2086
+nervousness       21    23    164
+neutral         1766  1787  14219
+optimism         209   186   1581
+pride             15    16    111
+realization      127   145   1110
+relief            18    11    153
+remorse           68    56    545
+sadness          143   156   1326
+surprise         129   141   1060
+
+=== MULTILABEL ANALYSIS ===
+Single-label rows: 45,446
+Multilabel rows: 8,817
+Multilabel percentage: 16.25%
+Average labels per text: 1.1760
+
+=== LABEL COUNT DISTRIBUTION ===
+labels
+1    45446
+2     8124
+3      655
+4       37
+5        1
+
+=== MOST FREQUENT EMOTION PAIRS ===
+anger              + annoyance          348
+admiration         + gratitude          341
+admiration         + approval           298
+approval           + neutral            258
+confusion          + curiosity          253
+admiration         + love               236
+annoyance          + disapproval        222
+annoyance          + neutral            177
+disappointment     + sadness            163
+curiosity          + neutral            162
+admiration         + joy                155
+annoyance          + disappointment     140
+disapproval        + neutral            134
+admiration         + optimism           134
+approval           + optimism           123
+confusion          + neutral            119
+admiration         + neutral            117
+amusement          + joy                110
+excitement         + joy                108
+caring             + optimism           106
+admiration         + amusement          102
+annoyance          + disgust            99
+amusement          + gratitude          99
+realization        + neutral            93
+approval           + realization        91
+admiration         + excitement         90
+gratitude          + joy                87
+anger              + neutral            87
+approval           + caring             86
+gratitude          + optimism           84
+
+Neutral with other emotions: 1,751
+
+=== TEXT LENGTH STATISTICS ===
+count    54263.000000
+mean        12.828354
+std          6.705293
+min          1.000000
+25%          7.000000
+50%         12.000000
+75%         18.000000
+max         33.000000
+
+=== SHORT TEXT DISTRIBUTION ===
+text
+1      169
+2     1126
+3     2663
+4     2621
+5     2605
+6     2573
+7     2574
+8     2680
+9     2662
+10    2581
+11    2719
+
+Texts with 1-3 tokens: 3,958
+Short text percentage: 7.29%
+
+=== SPLIT OVERLAP ===
+
+train <-> dev
+Shared comment IDs: 0
+Shared exact texts: 41
+
+train <-> test
+Shared comment IDs: 0
+Shared exact texts: 32
+
+dev <-> test
+Shared comment IDs: 0
+Shared exact texts: 10
+
+=== TARGET EMOTION EXAMPLES ===
+
+======================================================================
+EMOTION: amusement
+TRAIN ROWS: 2,328
+======================================================================
+01. Yeah but it's fun lol. Hes banned a lot in NA also.
+    Labels: amusement
+02. been there dont remember where exactly it is but so much fun
+    Labels: amusement
+03. > LMAO, it's not free shit head, where the fuck is the source codes? This the real question.
+    Labels: amusement
+04. Signing [NAME] and [NAME] is not fucking around? Lol
+    Labels: amusement
+05. I'm so drunk I cheereds a bot as if it was OP LOL
+    Labels: amusement, joy
+06. >No but I know that fat ass just says [NAME] man bad lol [NAME] is pretty fat. Good observation.
+    Labels: amusement
+07. Haha I’m two edibles in and have shoveled twice...
+    Labels: amusement
+08. Besides the fact that's it's funny she also looks like me witch makes it .5% funnier
+    Labels: amusement
+09. well you done did it lol
+    Labels: amusement
+10. That IS a fun fact
+    Labels: amusement
+11. I went to high school with [NAME], never would have thought he’d be an isles fan lol
+    Labels: amusement
+12. She broke that young man's toes, ankles, and knees on that fall. lol
+    Labels: amusement
+13. How is that sarcasm lol just feels like you’re backpedaling
+    Labels: amusement
+14. Oh shit right. I forgot about that wonderfully horrible fact haha.
+    Labels: amusement
+15. I’m laughing more that I feel I should st this but I just lost my leg so...
+    Labels: amusement
+
+======================================================================
+EMOTION: annoyance
+TRAIN ROWS: 2,470
+======================================================================
+01. You need to look up what flaming is. Don't get offended just because I'm calling out 14 year old boys like you.
+    Labels: annoyance
+02. [NAME] is just another millionaire taking advantage of dumb people.
+    Labels: annoyance
+03. Because different characters have different advantages. Why do questions like this still get asked?
+    Labels: annoyance
+04. Add to that the balance mess.
+    Labels: annoyance
+05. Just another above average looking girl who works out for a year and gets a million followers for posting her ass. We live in a society
+    Labels: annoyance
+06. ITT: People defend delusional shitposts.
+    Labels: annoyance, neutral
+07. My point is that they give him shit for legitimate reasons.
+    Labels: annoyance
+08. She's so remarkably stupid.
+    Labels: annoyance
+09. No car wraps? This was already upvoted a dozen times... Seriously don't understand the mods, man. 
+    Labels: annoyance, confusion
+10. Those are liberal comments, you fucking idiot. Liberals are capitalists.
+    Labels: annoyance
+11. If the doctor has given the ok, give some ibuprofen for teething pain FFS!
+    Labels: annoyance, neutral
+12. they just want someone to agree with them and tell them they're right. that's all these sorts of posts ever are.
+    Labels: annoyance, realization
+13. That...that was way more disturbing than the top level sub. What the fuck?
+    Labels: annoyance
+14. "What ""same thing""? You're not addressing any of my actual argument and have barely been doing so for a while."
+    Labels: annoyance, curiosity
+15. Fuck these trendy hipster joints. Give me my shit like normal fucking people.
+    Labels: anger, annoyance
+
+======================================================================
+EMOTION: approval
+TRAIN ROWS: 2,939
+======================================================================
+01. I agree its needs a bit more, due to the 88mm gun, I’ve got the heat T round which really is kinda useless,
+    Labels: approval
+02. This sounds very familiar...
+    Labels: approval, neutral
+03. "They didn't have a ""bullpen"" when they won the WS or when they went to the ALCS last year. They will get by as always"
+    Labels: admiration, approval
+04. As guaranteed me under the terms of the Good Friday Agreement.
+    Labels: approval, neutral
+05. Japan uses anime for it all, but it does often prefix it with something like kaigai. (outside of the country).
+    Labels: approval
+06. She went on a PR tour in Syria and met with him. I think it’s fair to say she’s pro-Assad.
+    Labels: approval
+07. But the right to not have your property taken away from you is a right.
+    Labels: approval
+08. I completely agree, someone would take a flier on the kid.
+    Labels: approval
+09. Money can’t buy happiness, but it can make getting there a hell of a lot easier.
+    Labels: admiration, approval
+10. Time to fill our roster with Schiano Men!
+    Labels: approval
+11. My kids did, I’m sure! I hope this card enjoys the bottom of my trash can. 
+    Labels: approval, optimism
+12. This is an incredible insight I've never thought of before. loyalty vs disloyalty, compared to care vs harm, I mean.
+    Labels: admiration, approval
+13. You’re right, no one is taking you seriously, Reddit user.
+    Labels: approval
+14. I’ve never heard him say it but I wouldn’t be surprised if he did. It’s believable enough
+    Labels: approval, optimism
+15. Millennials are from 1981-1995. 1983 falls in that range.
+    Labels: approval
+
+======================================================================
+EMOTION: confusion
+TRAIN ROWS: 1,368
+======================================================================
+01. Yep. Still don't know what you're talking about. Come back when you actually read the pdf and become informed.
+    Labels: confusion
+02. So just tell me I dont want to go look, was the video cut/edited? Or is it RAW? I MUST KNOW!
+    Labels: confusion
+03. But then how will I betray it?
+    Labels: confusion
+04. I guess it's the word 'high'
+    Labels: confusion
+05. Input: Drink candle. NPC: You don't want to get wax in your mouth, do you? Input: Maybe I do, NPC.
+    Labels: confusion, neutral
+06. What do you mean by verified transactions?
+    Labels: confusion
+07. Uh, you can’t see the grille?
+    Labels: confusion
+08. did he just hecking kill [NAME]
+    Labels: confusion
+09. Are socdems welcome here?
+    Labels: confusion, curiosity
+10. I'm not sure if [NAME] is visiting the Podesta pizza party.
+    Labels: confusion
+11. I have no idea. That restaurant loves to put fried spaghettis everywhere.
+    Labels: confusion
+12. Disgusting performance. [NAME] appears clueless.
+    Labels: confusion, disgust
+13. Oops, guess youre straight now!
+    Labels: confusion
+14. I have no idea what that even means nor why you're being such a massive prick
+    Labels: confusion
+15. love em or hate em I think we can all agree that was blatant PI
+    Labels: confusion
+
+======================================================================
+EMOTION: curiosity
+TRAIN ROWS: 2,191
+======================================================================
+01. > and [NAME] mentions that he's cold to the touch. you mean after he almost froze to dealth?
+    Labels: curiosity
+02. Im sorry but I dont get the joke, can someone explain it to me?
+    Labels: curiosity, embarrassment
+03. Now I’m curious about their respective heights
+    Labels: curiosity
+04. Is it my personal responsability if I was scarred for life due to abuse as a child ? IS IT?
+    Labels: confusion, curiosity
+05. im curious to see what we can costumize in noob and jade
+    Labels: curiosity
+06. Like ConfusedYehud, I'm also curious why there is a difference between a woman's face in a newspaper and a woman's face in the street.
+    Labels: confusion, curiosity
+07. What is he doing here without [NAME]?!
+    Labels: curiosity
+08. Looks great but am I the only one who can't hear anything?
+    Labels: admiration, curiosity
+09. How is recognizing a sovereign country as a country hate?
+    Labels: curiosity
+10. Or is that a 3:14? You’re in trouble pal.
+    Labels: curiosity
+11. Cool! My [NAME] was in the Maori Battalion, I always wonder if there’s any photos of him floating around out there.
+    Labels: curiosity
+12. Are you promoting sex outside of marriage?
+    Labels: curiosity
+13. You mean morons??
+    Labels: curiosity
+14. Anyone link r/causalchildabuse yet? No? Allow me. r/causalchildabuse
+    Labels: confusion, curiosity
+15. Why is this downvoted? It’s right.
+    Labels: curiosity, disapproval
+
+======================================================================
+EMOTION: disapproval
+TRAIN ROWS: 2,022
+======================================================================
+01. it is very clearly incorrect, and it's apparent that your descent into reactionary politics has made you fully delusional. 
+    Labels: approval, disapproval
+02. This is why I could never work in construction
+    Labels: disapproval
+03. I don't like [NAME] but I'd never wish this fate to any parent.
+    Labels: disapproval
+04. i say no or in da club if they come to damce with me i walk away
+    Labels: disapproval
+05. "Not only that, the ""improved controls"" aren't a thing at all. I'm not re-buying Blood Money for nicer graphics. "
+    Labels: disapproval
+06. "simply reply ""no."" sometimes youve gotta be rude."
+    Labels: disapproval
+07. Please don't. I like the gym too be quiet
+    Labels: disapproval, love
+08. We used to do a lot of terrible shit in the past that’s not a good argument
+    Labels: disapproval
+09. Sorry, yes they do. [NAME] is the worst QB mentioned in that list.
+    Labels: disapproval
+10. Using high capital (money/picks) for 3 edge rushers would both be incredibly stupid *and* unjustifiable
+    Labels: disapproval
+11. "That's not correct. The ""Dallas-Fort Worth, TX-OK Combined Statistical Area"" includes Durant, as it does Athens. "
+    Labels: disapproval
+12. Injury history alone makes him super unattractive.
+    Labels: disapproval
+13. I can’t imagine choosing McD’s over Banh Mi, that’s just a complete lack of respect for your taste buds.
+    Labels: disapproval
+14. Afro samurai lol, that's pretty interesting never new they actually existed. I'm woman though so that wouldn't work for me 
+    Labels: disapproval
+15. Don't think you should be nominated for Breakout and Best of the year but whatever.
+    Labels: disapproval
+
+======================================================================
+EMOTION: gratitude
+TRAIN ROWS: 2,662
+======================================================================
+01. Not gonna lie. Sucked out a few, but am really trying to analyze my play afterwards. Thanks!
+    Labels: gratitude
+02. ok thanks I'll give it a read and try to fact check
+    Labels: gratitude
+03. Thanks for the recommendations!
+    Labels: gratitude
+04. Nice, I didn't know that! Thanks for the info.
+    Labels: admiration, gratitude
+05. Really glad you were there for her. I wish you both the best.
+    Labels: admiration, gratitude
+06. Thank you alot, I'll link to it in the post
+    Labels: gratitude
+07. Thank you for this
+    Labels: gratitude
+08. Lol. Thanks for the advice friend
+    Labels: amusement, gratitude
+09. Good idea, thanks
+    Labels: gratitude
+10. """I guess if you want children beaten, you have to do it yourself."" Thank you [NAME]. "
+    Labels: gratitude
+11. Just what I needed to hear today! Thanks!
+    Labels: gratitude
+12. thank you so much we do in fact [NAME]
+    Labels: gratitude
+13. Thanks! I’m only traveling for a week So I will for sure have less than 30g.
+    Labels: gratitude
+14. Thank you. [NAME] killed it, earned his spot. Love my packers but sometimes people in this sub are ridiculous 
+    Labels: gratitude, love
+15. What a wonderful post. Such love. Thanks so much.
+    Labels: admiration, gratitude, love
+
+======================================================================
+EMOTION: realization
+TRAIN ROWS: 1,110
+======================================================================
+01. It's this kind of fear that made me make this
+    Labels: fear, realization
+02. Me too! Just figured out how.
+    Labels: approval, realization
+03. Yup, that's exactly what happened when the alt-right took over the sub. So glad I won't get banned for saying that now.
+    Labels: joy, realization
+04. I isst thought y’all woooshed me but then I realized what subreddit I’m on
+    Labels: realization
+05. Yep, especially if the mob on reddit is any indication of the group-think that’s going on in 2019.
+    Labels: approval, realization
+06. Huh, never heard of that term before. Something new every day!
+    Labels: realization, surprise
+07. That's because: Emotion = Reality
+    Labels: realization, neutral
+08. I noticed this while watching it and cracked up... it was so cringey! It was after they watched their wedding montages.
+    Labels: embarrassment, realization
+09. and this is why I, having been baptized [RELIGION], choose to be cremated after I die because I am sacred and can, finally, no longer be used
+    Labels: realization
+10. This is why you always get a prenup. You never know if, during your marriage, you might become the wealthiest person in the world.
+    Labels: optimism, realization
+11. Yes I have been getting my own therapy but this month was a wash for that because of work. Back at it next week.
+    Labels: optimism, realization
+12. Thank you! I was thinking, man, I’ve never been corrected about this before. 😐
+    Labels: gratitude, realization
+13. I know this was a common thing, but never knew that were so many creative names for it until I read this thread. 
+    Labels: realization
+14. Oh. I never heard that before.
+    Labels: realization, surprise, neutral
+15. It took me a second to distinguish between whether it was [NAME] or [NAME]. I have officially been cursed by this subreddit.
+    Labels: realization
+
+======================================================================
+EMOTION: surprise
+TRAIN ROWS: 1,060
+======================================================================
+01. Wow starters before 6 min mark?? Insane
+    Labels: amusement, excitement, surprise
+02. >This weird exploding ice [NAME] I haven't seen before? Wow. I... that's some ick right there.
+    Labels: surprise
+03. Wow .. this is more terrifying than if they were a ghost ! Amazing twist
+    Labels: admiration, fear, surprise
+04. Omg I'm crying and shaking rn [NAME] would never say that
+    Labels: sadness, surprise
+05. That's an unexpected pair of fighters.
+    Labels: surprise
+06. Geez those heroes..
+    Labels: annoyance, surprise
+07. Omg. This is just the best ever. 💜💜💜
+    Labels: admiration, surprise
+08. I can't believe he came in and 4 seasons in he managed to turn the team into this.
+    Labels: surprise
+09. I can never refold the paper properly so kudos just for that!
+    Labels: gratitude, surprise
+10. I’m wondering the same; something seems weird about that interpretation of the law
+    Labels: surprise
+11. Seems fun, wonder how she would have ended up if the ca er was not there
+    Labels: amusement, surprise
+12. Wow! You were either a very precocious child or still lived at home when your wisdom teeth came in.
+    Labels: excitement, surprise
+13. *How???* The internet never ceases to amaze me.
+    Labels: curiosity, surprise
+14. Holy shit I didn’t realize he didn’t fumble all season that’s wild
+    Labels: surprise
+15. Also known as the song ice cream trucks play. I was wondering why it sounded so familiar!
+    Labels: surprise
+
+======================================================================
+EMOTION: neutral
+TRAIN ROWS: 14,219
+======================================================================
+01. Because they vote democrat and democrats are the party of Mexico
+    Labels: neutral
+02. I will keep that in mind for next time
+    Labels: neutral
+03. Talking about cats my lil Friend just jumped on the couch *pat pat from the nice people of reddit*
+    Labels: neutral
+04. Depends, but it seems that more states restrict teen drivers from packing their cars with friends than not.
+    Labels: neutral
+05. Let’s see, this house is designated Zone R3, which allows for cats, dogs, telephone answering monkeys...
+    Labels: neutral
+06. "This comment has been removed for breaking Rule 3: ""Top level comments must contain a genuine and unbiased attempt at an answer."""
+    Labels: neutral
+07. This happened to me recently. She was doing her thing and I was watching Rick and Morty. Wubalubadubdub
+    Labels: neutral
+08. Is River Rock not just filtered tap water?
+    Labels: neutral
+09. Two natural right backs is fine. Then the pretend one doesn't have to pretend anymore.
+    Labels: neutral
+10. You’re meant for Chicago :)
+    Labels: neutral
+11. She night have a work permit that’s good for a year. Those usually arrive “earlier” than the green card.
+    Labels: neutral
+12. downvoting for reupload please stop this nobody likes it
+    Labels: neutral
+13. Holy shit, your therapist just (inadvertently) explained SO MUCH in my life, internet stranger.
+    Labels: neutral
+14. 4th qrt over 10.5 looks reasonable, play-offs teams usually try the hardest at the 4th
+    Labels: neutral
+15. [NAME] would go down in the first game
+    Labels: neutral
+
+=== EXPLORATION COMPLETE ===

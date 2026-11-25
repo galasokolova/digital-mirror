@@ -1,0 +1,8 @@
+reference,role,reference_records,overlapping_records,same_label,conflicting_label,ambiguous_label,overlap_rate
+switchboard_train,training,135827,0,0,0,0,0.0
+switchboard_validation,evaluation,16913,0,0,0,0,0.0
+switchboard_test,evaluation,17966,0,0,0,0,0.0
+digital_mirror_original,diagnostic,600,1,1,0,0,0.0008333333333333334
+digital_mirror_eligible,training,579,1,1,0,0,0.0008333333333333334
+installation_development,evaluation,60,0,0,0,0,0.0
+installation_benchmark,evaluation,240,0,0,0,0,0.0

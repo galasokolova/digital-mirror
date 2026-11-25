@@ -1,0 +1,196 @@
+intent,prefix_size,prefix,count,class_share
+UNCERTAINTY,2,i am,40,0.4
+ACKNOWLEDGMENT,2,i have,21,0.21
+GREETING,4,nice to see you,20,0.2
+GREETING,4,good afternoon it is,20,0.2
+GREETING,4,we have not met,20,0.2
+GOODBYE,4,until next time at,20,0.2
+GOODBYE,4,i must leave the,20,0.2
+GOODBYE,4,i cannot stay at,20,0.2
+GRATITUDE,4,i really appreciate you,20,0.2
+GRATITUDE,4,i wanted to express,20,0.2
+GRATITUDE,4,i cannot thank you,20,0.2
+AGREEMENT,4,that is my view,20,0.2
+AGREEMENT,4,after considering the alternatives,20,0.2
+AGREEMENT,4,i have no objection,20,0.2
+DISAGREEMENT,4,not my view of,20,0.2
+DISAGREEMENT,4,although i follow your,20,0.2
+DISAGREEMENT,4,i would not endorse,20,0.2
+UNCERTAINTY,4,i am still weighing,20,0.2
+UNCERTAINTY,4,until i have more,20,0.2
+UNCERTAINTY,4,i cannot say for,20,0.2
+ACKNOWLEDGMENT,4,i have followed your,20,0.2
+ACKNOWLEDGMENT,4,i did not miss,20,0.2
+AFFIRMATIVE_ANSWER,4,yes before coming here,20,0.2
+AFFIRMATIVE_ANSWER,4,indeed i can confirm,20,0.2
+NEGATIVE_ANSWER,4,i have yet to,20,0.2
+NEGATIVE_ANSWER,4,no despite having had,20,0.2
+NEGATIVE_ANSWER,4,i cannot confirm that,20,0.2
+QUESTION,4,i would like to,20,0.2
+QUESTION,4,before we move on,20,0.2
+QUESTION,4,would you happen to,20,0.2
+CLARIFICATION,4,before we continue could,20,0.2
+CLARIFICATION,4,would you mind explaining,20,0.2
+STATEMENT,4,for the record the,20,0.2
+STATEMENT,4,it is worth noting,20,0.2
+GREETING,3,nice to see,20,0.2
+GREETING,3,hi from the,20,0.2
+GREETING,3,good afternoon it,20,0.2
+GREETING,3,we have not,20,0.2
+GOODBYE,3,until next time,20,0.2
+GOODBYE,3,bye from the,20,0.2
+GOODBYE,3,i must leave,20,0.2
+GOODBYE,3,i cannot stay,20,0.2
+GRATITUDE,3,thank you for,20,0.2
+GRATITUDE,3,i really appreciate,20,0.2
+GRATITUDE,3,i wanted to,20,0.2
+GRATITUDE,3,i cannot thank,20,0.2
+AGREEMENT,3,that is my,20,0.2
+AGREEMENT,3,same view on,20,0.2
+AGREEMENT,3,after considering the,20,0.2
+AGREEMENT,3,i have no,20,0.2
+DISAGREEMENT,3,not my view,20,0.2
+DISAGREEMENT,3,although i follow,20,0.2
+DISAGREEMENT,3,i would not,20,0.2
+UNCERTAINTY,3,i am still,20,0.2
+UNCERTAINTY,3,until i have,20,0.2
+UNCERTAINTY,3,i cannot say,20,0.2
+ACKNOWLEDGMENT,3,your point about,20,0.2
+ACKNOWLEDGMENT,3,i have followed,20,0.2
+ACKNOWLEDGMENT,3,i did not,20,0.2
+AFFIRMATIVE_ANSWER,3,i already have,20,0.2
+AFFIRMATIVE_ANSWER,3,yes before coming,20,0.2
+AFFIRMATIVE_ANSWER,3,indeed i can,20,0.2
+NEGATIVE_ANSWER,3,i have yet,20,0.2
+NEGATIVE_ANSWER,3,not yet regarding,20,0.2
+NEGATIVE_ANSWER,3,no despite having,20,0.2
+NEGATIVE_ANSWER,3,i cannot confirm,20,0.2
+QUESTION,3,i would like,20,0.2
+QUESTION,3,before we move,20,0.2
+QUESTION,3,would you happen,20,0.2
+CLARIFICATION,3,what exactly does,20,0.2
+CLARIFICATION,3,before we continue,20,0.2
+CLARIFICATION,3,would you mind,20,0.2
+STATEMENT,3,for reference the,20,0.2
+STATEMENT,3,for the record,20,0.2
+STATEMENT,3,it is worth,20,0.2
+GREETING,2,nice to,20,0.2
+GREETING,2,hi from,20,0.2
+GREETING,2,good afternoon,20,0.2
+GREETING,2,we have,20,0.2
+GOODBYE,2,goodbye i,20,0.2
+GOODBYE,2,until next,20,0.2
+GOODBYE,2,bye from,20,0.2
+GOODBYE,2,i must,20,0.2
+GOODBYE,2,i cannot,20,0.2
+GRATITUDE,2,thank you,20,0.2
+GRATITUDE,2,i really,20,0.2
+GRATITUDE,2,thanks for,20,0.2
+GRATITUDE,2,i wanted,20,0.2
+GRATITUDE,2,i cannot,20,0.2
+AGREEMENT,2,that is,20,0.2
+AGREEMENT,2,same view,20,0.2
+AGREEMENT,2,after considering,20,0.2
+AGREEMENT,2,i have,20,0.2
+DISAGREEMENT,2,i see,20,0.2
+DISAGREEMENT,2,not my,20,0.2
+DISAGREEMENT,2,although i,20,0.2
+DISAGREEMENT,2,i would,20,0.2
+UNCERTAINTY,2,undecided about,20,0.2
+UNCERTAINTY,2,until i,20,0.2
+UNCERTAINTY,2,i cannot,20,0.2
+ACKNOWLEDGMENT,2,your point,20,0.2
+ACKNOWLEDGMENT,2,point about,20,0.2
+ACKNOWLEDGMENT,2,i did,20,0.2
+AFFIRMATIVE_ANSWER,2,yes i,20,0.2
+AFFIRMATIVE_ANSWER,2,i already,20,0.2
+AFFIRMATIVE_ANSWER,2,yes before,20,0.2
+AFFIRMATIVE_ANSWER,2,indeed i,20,0.2
+NEGATIVE_ANSWER,2,no i,20,0.2
+NEGATIVE_ANSWER,2,i have,20,0.2
+NEGATIVE_ANSWER,2,not yet,20,0.2
+NEGATIVE_ANSWER,2,no despite,20,0.2
+NEGATIVE_ANSWER,2,i cannot,20,0.2
+QUESTION,2,i would,20,0.2
+QUESTION,2,before we,20,0.2
+QUESTION,2,would you,20,0.2
+CLARIFICATION,2,could you,20,0.2
+CLARIFICATION,2,what exactly,20,0.2
+CLARIFICATION,2,before we,20,0.2
+CLARIFICATION,2,would you,20,0.2
+STATEMENT,2,for reference,20,0.2
+STATEMENT,2,note the,20,0.2
+STATEMENT,2,for the,20,0.2
+STATEMENT,2,it is,20,0.2
+AGREEMENT,4,same view on the,19,0.19
+ACKNOWLEDGMENT,4,your point about the,19,0.19
+NEGATIVE_ANSWER,4,no i have not,19,0.19
+NEGATIVE_ANSWER,4,not yet regarding the,19,0.19
+CLARIFICATION,4,could you clarify what,19,0.19
+GOODBYE,3,goodbye i am,19,0.19
+AGREEMENT,3,i agree that,19,0.19
+DISAGREEMENT,3,i disagree with,19,0.19
+DISAGREEMENT,3,i see the,19,0.19
+UNCERTAINTY,3,undecided about the,19,0.19
+ACKNOWLEDGMENT,3,i understand your,19,0.19
+ACKNOWLEDGMENT,3,point about the,19,0.19
+AFFIRMATIVE_ANSWER,3,yes i have,19,0.19
+NEGATIVE_ANSWER,3,no i have,19,0.19
+CLARIFICATION,3,could you clarify,19,0.19
+AGREEMENT,2,i agree,19,0.19
+DISAGREEMENT,2,i disagree,19,0.19
+ACKNOWLEDGMENT,2,i understand,19,0.19
+GREETING,4,hello welcome to the,18,0.18
+GOODBYE,4,goodbye i am leaving,18,0.18
+AGREEMENT,4,i agree that the,18,0.18
+DISAGREEMENT,4,i disagree with the,18,0.18
+UNCERTAINTY,4,i am unsure whether,18,0.18
+ACKNOWLEDGMENT,4,i understand your explanation,18,0.18
+GREETING,3,hello welcome to,18,0.18
+UNCERTAINTY,3,i am unsure,18,0.18
+GREETING,2,hello welcome,18,0.18
+QUESTION,2,quick question,7,0.07
+QUESTION,2,which person,6,0.06
+CLARIFICATION,4,what exactly does more,4,0.04
+QUESTION,3,quick question which,4,0.04
+QUESTION,2,what date,4,0.04
+GRATITUDE,4,thanks for checking the,3,0.03
+GRATITUDE,4,thanks for explaining the,3,0.03
+AFFIRMATIVE_ANSWER,4,i already have read,3,0.03
+QUESTION,4,what date was the,3,0.03
+GRATITUDE,3,thanks for checking,3,0.03
+GRATITUDE,3,thanks for explaining,3,0.03
+AFFIRMATIVE_ANSWER,3,already read the,3,0.03
+QUESTION,3,what date was,3,0.03
+QUESTION,3,at what location,3,0.03
+AFFIRMATIVE_ANSWER,2,already read,3,0.03
+QUESTION,2,at what,3,0.03
+GRATITUDE,4,thank you for showing,2,0.02
+GRATITUDE,4,thank you for explaining,2,0.02
+GRATITUDE,4,thank you for checking,2,0.02
+GRATITUDE,4,thank you for arranging,2,0.02
+GRATITUDE,4,thanks for arranging the,2,0.02
+AFFIRMATIVE_ANSWER,4,yes i have installed,2,0.02
+AFFIRMATIVE_ANSWER,4,yes i have read,2,0.02
+AFFIRMATIVE_ANSWER,4,yes i have examined,2,0.02
+AFFIRMATIVE_ANSWER,4,yes i have seen,2,0.02
+AFFIRMATIVE_ANSWER,4,yes i have reviewed,2,0.02
+AFFIRMATIVE_ANSWER,4,i already have checked,2,0.02
+AFFIRMATIVE_ANSWER,4,i already have examined,2,0.02
+AFFIRMATIVE_ANSWER,4,i already have seen,2,0.02
+AFFIRMATIVE_ANSWER,4,i already have reviewed,2,0.02
+QUESTION,4,at what location was,2,0.02
+GRATITUDE,3,thanks for arranging,2,0.02
+AFFIRMATIVE_ANSWER,3,already checked the,2,0.02
+AFFIRMATIVE_ANSWER,3,already examined the,2,0.02
+AFFIRMATIVE_ANSWER,3,already seen the,2,0.02
+AFFIRMATIVE_ANSWER,3,already reviewed the,2,0.02
+QUESTION,3,where was the,2,0.02
+QUESTION,3,when was the,2,0.02
+QUESTION,3,quick question how,2,0.02
+AFFIRMATIVE_ANSWER,2,already checked,2,0.02
+AFFIRMATIVE_ANSWER,2,already examined,2,0.02
+AFFIRMATIVE_ANSWER,2,already seen,2,0.02
+AFFIRMATIVE_ANSWER,2,already reviewed,2,0.02
+QUESTION,2,where was,2,0.02
+QUESTION,2,when was,2,0.02

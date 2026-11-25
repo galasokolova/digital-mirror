@@ -1,0 +1,279 @@
+=== E05: TEXT PREPROCESSING ===
+Input rows: 204,915
+
+=== CLEANING STATISTICS ===
+Changed texts: 204,915
+Unchanged texts: 0
+Empty texts: 3,685
+Empty percentage: 1.80%
+
+=== RAW TOKEN STATISTICS ===
+count    204915.000000
+mean         10.706312
+std          10.442370
+min           1.000000
+25%           3.000000
+50%           8.000000
+75%          15.000000
+max         136.000000
+
+=== CLEAN TOKEN STATISTICS ===
+count    204915.000000
+mean          7.196394
+std           7.790070
+min           0.000000
+25%           1.000000
+50%           5.000000
+75%          10.000000
+max         107.000000
+
+=== EMPTY TEXTS BY LABEL ===
+damsl_tag
+x                  3630
+fo_o_fw_"_by_bc      33
+%                    12
+t3                    3
+b                     3
+sd                    1
+fc                    1
+qy                    1
+sv                    1
+
+=== SHORT TEXT DISTRIBUTION ===
+clean_token_count
+0      3685
+1     58506
+2     15515
+3     10903
+4     10394
+5     10951
+6     10691
+7     10248
+8      9157
+9      8233
+10     7035
+
+=== CLEANING EXAMPLES ===
+
+======================================================================
+Tag: qw
+Raw: {C And } what exactly are they going to do? /
+Clean: And what exactly are they going to do?
+
+======================================================================
+Tag: sv
+Raw: It's just going to take, {F uh, } {F uh, } really, {F uh, } {F uh, } {F uh, }  a combination effort, {A I think, } of the majority of the American people to come to a decisive answer, # or # vote to limit the way it's spent. /
+Clean: It's just going to take, uh, uh, really, uh, uh, uh, a combination effort, I think, of the majority of the American people to come to a decisive answer, or vote to limit the way it's spent.
+
+======================================================================
+Tag: sv
+Raw: -- I think that there's -- -- probably a lot of waste in defense and in government funded research in the first place. /
+Clean: I think that there's probably a lot of waste in defense and in government funded research in the first place.
+
+======================================================================
+Tag: %
+Raw: Because  everything, - /
+Clean: Because everything,
+
+======================================================================
+Tag: qw
+Raw: {F Oh, } what's that about? /
+Clean: Oh, what's that about?
+
+======================================================================
+Tag: sd
+Raw: {C And } all the juices and everything are all sealed in.  /
+Clean: And all the juices and everything are all sealed in.
+
+======================================================================
+Tag: sd
+Raw: {C but } I would like to have a garden, {D you know, }  /
+Clean: but I would like to have a garden, you know,
+
+======================================================================
+Tag: sd
+Raw: [ They shu-, + they shuttle ] them in and  shuttle them out  /
+Clean: They shu-, they shuttle them in and shuttle them out
+
+======================================================================
+Tag: sv
+Raw: It's kind of frustrating. /
+Clean: It's kind of frustrating.
+
+======================================================================
+Tag: sd
+Raw: he called in to get somebody on the line,  /
+Clean: he called in to get somebody on the line,
+
+======================================================================
+Tag: qy^d
+Raw: I guess that's a good question? /
+Clean: I guess that's a good question?
+
+======================================================================
+Tag: sd
+Raw: Charleston is a really nice place to visit. /
+Clean: Charleston is a really nice place to visit.
+
+======================================================================
+Tag: sd
+Raw: {F Um, } he was talking about the three things [ you could, + ] that cause aging smoking are inactivity,  / *[[ mistranscribed? listen]]
+Clean: Um, he was talking about the three things you could, that cause aging smoking are inactivity,
+
+======================================================================
+Tag: sd
+Raw: not only do I do P C type things like, {F uh, } using lotus or word processors, /
+Clean: not only do I do P C type things like, uh, using lotus or word processors,
+
+======================================================================
+Tag: qy
+Raw: Do have air conditioning in your car  /
+Clean: Do have air conditioning in your car
+
+======================================================================
+Tag: sv
+Raw: it kind of seems to me that everyone's offering, {D you know, } their token little tax cut program, {D you know, } [ when it's -- + -- when it's ] just such a bad time for it. /
+Clean: it kind of seems to me that everyone's offering, you know, their token little tax cut program, you know, when it's when it's just such a bad time for it.
+
+======================================================================
+Tag: aa
+Raw: Yeah.  /
+Clean: Yeah.
+
+======================================================================
+Tag: sd
+Raw: {E I mean } I'm sure there are those cases [ [ where, +  where ] the doctor is wrong or malicious or something. /
+Clean: I mean I'm sure there are those cases where, where the doctor is wrong or malicious or something.
+
+======================================================================
+Tag: nn
+Raw: no,  /
+Clean: no,
+
+======================================================================
+Tag: sd
+Raw: {C and } it's been kind of scary,  /
+Clean: and it's been kind of scary,
+
+======================================================================
+Tag: sd
+Raw: {C And } [ it's, + it's ] [ quite, + ] {D actually, } not very difficult to make,  /
+Clean: And it's, it's quite, actually, not very difficult to make,
+
+======================================================================
+Tag: sv
+Raw: of course, {E I mean } I might be, {D you know, } [ the + the  ] leading drug dealer here,  /
+Clean: of course, I mean I might be, you know, the the leading drug dealer here,
+
+======================================================================
+Tag: h
+Raw: -- {C but, } I don't know,  /
+Clean: but, I don't know,
+
+======================================================================
+Tag: b
+Raw: Right <laughter>. /
+Clean: Right.
+
+======================================================================
+Tag: sd
+Raw: It's basically just data entry and running, {D you know, } [ some, + some ] software  /
+Clean: It's basically just data entry and running, you know, some, some software
+
+======================================================================
+Tag: %
+Raw: # {C so, } # we could, {D you know, } - /
+Clean: so, we could, you know,
+
+======================================================================
+Tag: b
+Raw: {F Um. } /
+Clean: Um.
+
+======================================================================
+Tag: b^m
+Raw: Pappasito's. /
+Clean: Pappasito's.
+
+======================================================================
+Tag: %
+Raw: I know, I, - /
+Clean: I know, I,
+
+======================================================================
+Tag: aa
+Raw: It is,  /
+Clean: It is,
+
+=== EMPTY TEXT EXAMPLES ===
+
+======================================================================
+Tag: x
+Raw: <Laughter>.
+
+======================================================================
+Tag: x
+Raw: <Laughter>.
+
+======================================================================
+Tag: x
+Raw: <Laughter>.
+
+======================================================================
+Tag: x
+Raw: <breathing>
+
+======================================================================
+Tag: x
+Raw: <Breathing>.
+
+======================================================================
+Tag: x
+Raw: <Noise>.
+
+======================================================================
+Tag: x
+Raw: # <laughter>. #
+
+======================================================================
+Tag: x
+Raw: <Laughter>.
+
+======================================================================
+Tag: t3
+Raw: <Talking> <<voice in background: pour some charcoal in there>>.
+
+======================================================================
+Tag: x
+Raw: <Child_talking>.
+
+======================================================================
+Tag: x
+Raw: <static>.
+
+======================================================================
+Tag: x
+Raw: # <Laughter>. #
+
+======================================================================
+Tag: x
+Raw: <Laughter>.
+
+======================================================================
+Tag: x
+Raw: <Laughter>.
+
+======================================================================
+Tag: x
+Raw: # <Laughter>.  #
+
+=== VALIDATION ===
+Row accounting: PASSED
+Missing clean texts: 0
+Continuation tags: 0
+Cleaning idempotence: PASSED
+
+=== OUTPUT ===
+Saved to: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\switchboard_cleaned.csv
+
+=== PREPROCESSING COMPLETE ===

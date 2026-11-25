@@ -1,0 +1,41 @@
+id,text,model_text,intent,group,reference,reference_labels,status
+DMT-0009,Hello there,hello there,GREETING,short,switchboard_train,GREETING,SAME_LABEL
+DMT-0029,Bye now,bye now,GOODBYE,short,switchboard_train,GOODBYE,SAME_LABEL
+DMT-0109,Who knows,who knows,UNCERTAINTY,short,switchboard_train,UNCERTAINTY,SAME_LABEL
+DMT-0189,How many?,how many,QUESTION,short,switchboard_train,"QUESTION, STATEMENT",AMBIGUOUS_LABELS
+DMT-0029,Bye now,bye now,GOODBYE,short,switchboard_validation,GOODBYE,SAME_LABEL
+DMT-0027,So long,so long,GOODBYE,short,switchboard_test,GOODBYE,SAME_LABEL
+DMT-0029,Bye now,bye now,GOODBYE,short,switchboard_test,GOODBYE,SAME_LABEL
+DMT-0007,Greetings,greetings,GREETING,short,digital_mirror_original_train,GREETING,SAME_LABEL
+DMT-0008,Morning,morning,GREETING,short,digital_mirror_original_train,GREETING,SAME_LABEL
+DMT-0010,Hiya,hiya,GREETING,short,digital_mirror_original_train,GREETING,SAME_LABEL
+DMT-0011,"Hello, digital mirror.",hello digital mirror,GREETING,installation,digital_mirror_original_train,GREETING,SAME_LABEL
+DMT-0023,Until we meet again.,until we meet again,GOODBYE,natural,digital_mirror_original_train,GOODBYE,SAME_LABEL
+DMT-0026,Farewell,farewell,GOODBYE,short,digital_mirror_original_train,GOODBYE,SAME_LABEL
+DMT-0027,So long,so long,GOODBYE,short,digital_mirror_original_train,GOODBYE,SAME_LABEL
+DMT-0046,Much appreciated,much appreciated,GRATITUDE,short,digital_mirror_original_train,GRATITUDE,SAME_LABEL
+DMT-0047,Cheers for that,cheers for that,GRATITUDE,short,digital_mirror_original_train,GRATITUDE,SAME_LABEL
+DMT-0083,I take the opposite view.,i take the opposite view,DISAGREEMENT,natural,digital_mirror_original_train,DISAGREEMENT,SAME_LABEL
+DMT-0106,Possibly,possibly,UNCERTAINTY,short,digital_mirror_original_train,UNCERTAINTY,SAME_LABEL
+DMT-0122,I follow your explanation.,i follow your explanation,ACKNOWLEDGMENT,natural,digital_mirror_original_train,ACKNOWLEDGMENT,SAME_LABEL
+DMT-0126,Understood,understood,ACKNOWLEDGMENT,short,digital_mirror_original_train,ACKNOWLEDGMENT,SAME_LABEL
+DMT-0127,Noted,noted,ACKNOWLEDGMENT,short,digital_mirror_original_train,ACKNOWLEDGMENT,SAME_LABEL
+DMT-0128,Message received,message received,ACKNOWLEDGMENT,short,digital_mirror_original_train,ACKNOWLEDGMENT,SAME_LABEL
+DMT-0146,Yes indeed,yes indeed,AFFIRMATIVE_ANSWER,short,digital_mirror_original_train,AFFIRMATIVE_ANSWER,SAME_LABEL
+DMT-0170,Not today,not today,NEGATIVE_ANSWER,short,digital_mirror_original_train,NEGATIVE_ANSWER,SAME_LABEL
+DMT-0007,Greetings,greetings,GREETING,short,digital_mirror_eligible_train,GREETING,SAME_LABEL
+DMT-0008,Morning,morning,GREETING,short,digital_mirror_eligible_train,GREETING,SAME_LABEL
+DMT-0010,Hiya,hiya,GREETING,short,digital_mirror_eligible_train,GREETING,SAME_LABEL
+DMT-0011,"Hello, digital mirror.",hello digital mirror,GREETING,installation,digital_mirror_eligible_train,GREETING,SAME_LABEL
+DMT-0023,Until we meet again.,until we meet again,GOODBYE,natural,digital_mirror_eligible_train,GOODBYE,SAME_LABEL
+DMT-0026,Farewell,farewell,GOODBYE,short,digital_mirror_eligible_train,GOODBYE,SAME_LABEL
+DMT-0046,Much appreciated,much appreciated,GRATITUDE,short,digital_mirror_eligible_train,GRATITUDE,SAME_LABEL
+DMT-0047,Cheers for that,cheers for that,GRATITUDE,short,digital_mirror_eligible_train,GRATITUDE,SAME_LABEL
+DMT-0083,I take the opposite view.,i take the opposite view,DISAGREEMENT,natural,digital_mirror_eligible_train,DISAGREEMENT,SAME_LABEL
+DMT-0106,Possibly,possibly,UNCERTAINTY,short,digital_mirror_eligible_train,UNCERTAINTY,SAME_LABEL
+DMT-0122,I follow your explanation.,i follow your explanation,ACKNOWLEDGMENT,natural,digital_mirror_eligible_train,ACKNOWLEDGMENT,SAME_LABEL
+DMT-0126,Understood,understood,ACKNOWLEDGMENT,short,digital_mirror_eligible_train,ACKNOWLEDGMENT,SAME_LABEL
+DMT-0127,Noted,noted,ACKNOWLEDGMENT,short,digital_mirror_eligible_train,ACKNOWLEDGMENT,SAME_LABEL
+DMT-0128,Message received,message received,ACKNOWLEDGMENT,short,digital_mirror_eligible_train,ACKNOWLEDGMENT,SAME_LABEL
+DMT-0146,Yes indeed,yes indeed,AFFIRMATIVE_ANSWER,short,digital_mirror_eligible_train,AFFIRMATIVE_ANSWER,SAME_LABEL
+DMT-0170,Not today,not today,NEGATIVE_ANSWER,short,digital_mirror_eligible_train,NEGATIVE_ANSWER,SAME_LABEL

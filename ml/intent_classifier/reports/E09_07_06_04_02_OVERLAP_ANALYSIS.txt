@@ -1,0 +1,134 @@
+=== E09.07.6.4.2-4: CONTRASTIVE OVERLAP ANALYSIS ===
+
+=== DATASET LOADING ===
+Contrastive dataset: 1200
+switchboard_train: 135827 records | training
+switchboard_validation: 16913 records | evaluation
+switchboard_test: 17966 records | evaluation
+digital_mirror_original: 600 records | diagnostic
+digital_mirror_eligible: 579 records | training
+installation_development: 60 records | evaluation
+installation_benchmark: 240 records | evaluation
+
+=== INTERNAL OVERLAP ===
+Records involved in duplicates: 0
+Internal exclusions: 0
+Saved: E09_07_06_04_02_internal_duplicates.csv
+
+=== EXTERNAL OVERLAP ===
+               reference       role  reference_records  overlapping_records  same_label  conflicting_label  ambiguous_label  overlap_rate
+       switchboard_train   training             135827                    0           0                  0                0        0.0000
+  switchboard_validation evaluation              16913                    0           0                  0                0        0.0000
+        switchboard_test evaluation              17966                    0           0                  0                0        0.0000
+ digital_mirror_original diagnostic                600                    1           1                  0                0        0.0008
+ digital_mirror_eligible   training                579                    1           1                  0                0        0.0008
+installation_development evaluation                 60                    0           0                  0                0        0.0000
+  installation_benchmark evaluation                240                    0           0                  0                0        0.0000
+Saved: E09_07_06_04_02_overlap_summary.csv
+Saved: E09_07_06_04_02_overlap_details.csv
+
+=== TRAINING DATASET PREPARATION ===
+Original records: 1200
+Excluded records: 1
+Eligible records: 1199
+Retention rate: 99.92%
+
+=== EXCLUSION REASONS ===
+reason
+existing_domain_duplicate    1
+A record may have multiple exclusion reasons.
+Saved: E09_07_06_04_02_exclusion_reasons.csv
+Saved: E09_07_06_04_02_excluded_records.csv
+
+=== CLASS DISTRIBUTION ===
+            intent  before  after  excluded
+          GREETING     100    100         0
+           GOODBYE     100    100         0
+         GRATITUDE     100    100         0
+         AGREEMENT     100    100         0
+      DISAGREEMENT     100    100         0
+       UNCERTAINTY     100    100         0
+    ACKNOWLEDGMENT     100    100         0
+AFFIRMATIVE_ANSWER     100    100         0
+   NEGATIVE_ANSWER     100    100         0
+          QUESTION     100     99         1
+     CLARIFICATION     100    100         0
+         STATEMENT     100    100         0
+Saved: E09_07_06_04_02_eligible_class_distribution.csv
+
+=== ELIGIBLE INTENT / STYLE MATRIX ===
+style               explicit  implicit  short  complex  challenging
+intent                                                             
+GREETING                  20        20     20       20           20
+GOODBYE                   20        20     20       20           20
+GRATITUDE                 20        20     20       20           20
+AGREEMENT                 20        20     20       20           20
+DISAGREEMENT              20        20     20       20           20
+UNCERTAINTY               20        20     20       20           20
+ACKNOWLEDGMENT            20        20     20       20           20
+AFFIRMATIVE_ANSWER        20        20     20       20           20
+NEGATIVE_ANSWER           20        20     20       20           20
+QUESTION                  19        20     20       20           20
+CLARIFICATION             20        20     20       20           20
+STATEMENT                 20        20     20       20           20
+Saved: E09_07_06_04_02_eligible_intent_style_matrix.csv
+
+=== CONTRASTIVE GROUP INTEGRITY ===
+Unchanged groups: 299
+Modified groups: 1
+Groups with fewer than two intents: 0
+Saved: E09_07_06_04_02_eligible_group_statistics.csv
+
+=== FINAL ELIGIBILITY VALIDATION ===
+PASS | Record accounting
+PASS | No eligible/excluded ID overlap
+PASS | All original IDs accounted for
+PASS | Original eligible rows preserved
+PASS | Unique eligible IDs
+PASS | Unique eligible model texts
+PASS | No empty model texts
+PASS | All intent classes retained
+PASS | No internal conflicting labels
+PASS | No existing eligible domain duplicates
+PASS | No label conflicts with switchboard_train
+PASS | No overlap with switchboard_validation
+PASS | No overlap with switchboard_test
+PASS | No label conflicts with digital_mirror_eligible
+PASS | No overlap with installation_development
+PASS | No overlap with installation_benchmark
+
+Checks passed: 16 / 16
+Saved: E09_07_06_04_02_eligibility_checks.csv
+
+=== OUTPUT DATASET ===
+Saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\digital_mirror_contrastive_v1\train_eligible.csv
+Records: 1199
+Columns: 10
+Output SHA256: bc2fc93bff2b9ef8106cd09728d57f5956eba6dad551e2569b5976766541ccd8
+Saved dataset verification: PASS
+
+=== FINAL SUMMARY ===
+Overlap analysis: COMPLETE
+Original records: 1200
+Excluded records: 1
+Eligible records: 1199
+Exact evaluation text overlap: NONE
+Eligible for controlled training: YES
+Model loaded: NO
+Model trained: NO
+Evaluation data loaded: YES (overlap analysis only)
+Model evaluation performed: NO
+
+=== FILE INTEGRITY ===
+PASS | data\processed\digital_mirror_contrastive_v1\train.csv
+PASS | data\processed\intent_v1\train.csv
+PASS | data\processed\intent_v1\validation.csv
+PASS | data\processed\intent_v1\test.csv
+PASS | data\processed\digital_mirror_v1\train.csv
+PASS | data\processed\digital_mirror_v1\train_eligible.csv
+PASS | experiments\E09_03_installation_predictions.csv
+PASS | data\evaluation\digital_mirror_final\test_processed.csv
+
+Integrity checks passed: 8 / 8
+
+=== OVERLAP ANALYSIS FINISHED ===

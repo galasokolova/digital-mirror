@@ -1,0 +1,13 @@
+intent,news_media,evidence,information_sources,video_audio,artificial_intelligence,technology,science,education,everyday_conversation,personal_decisions,art_exhibitions,human_machine_interaction
+GREETING,10,10,9,10,5,5,9,10,5,10,11,6
+GOODBYE,10,10,9,10,5,5,9,10,5,10,11,6
+GRATITUDE,10,10,9,10,5,5,9,10,5,10,11,6
+AGREEMENT,10,10,10,10,5,5,10,10,5,10,10,5
+DISAGREEMENT,10,10,10,10,5,5,10,10,5,10,10,5
+UNCERTAINTY,10,10,10,10,5,5,10,10,5,10,10,5
+ACKNOWLEDGMENT,10,10,10,10,5,5,10,10,5,10,10,5
+AFFIRMATIVE_ANSWER,10,10,9,11,5,6,9,10,5,10,10,5
+NEGATIVE_ANSWER,10,10,9,11,5,6,9,10,5,10,10,5
+QUESTION,10,10,9,11,5,6,9,10,5,10,10,5
+CLARIFICATION,10,10,9,11,5,6,9,10,5,10,10,5
+STATEMENT,10,10,10,10,5,5,10,10,5,10,10,5

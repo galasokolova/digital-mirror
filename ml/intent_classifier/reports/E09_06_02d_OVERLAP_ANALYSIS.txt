@@ -1,0 +1,276 @@
+=== E09.06.2d: FINAL INSTALLATION DATASET OVERLAP ANALYSIS ===
+
+=== DATASET VALIDATION ===
+PASS | Expected final test size
+PASS | Unique final test IDs
+PASS | Unique final test model texts
+PASS | No empty final test model texts
+PASS | All intent classes present
+PASS | Balanced final test classes
+PASS | Balanced final test groups
+PASS | Expected size: switchboard_train
+PASS | Expected size: switchboard_validation
+PASS | Expected size: switchboard_test
+PASS | Expected size: digital_mirror_original_train
+PASS | Expected size: digital_mirror_eligible_train
+PASS | Expected size: installation_development_benchmark
+
+======================================================================
+REFERENCE: SWITCHBOARD_TRAIN
+======================================================================
+Reference records: 135,827
+Unique reference model texts: 88,914
+Overlapping final test records: 4
+Overlap percentage: 1.67%
+Non-overlapping records: 236
+
+Overlap categories:
+status
+SAME_LABEL           3
+AMBIGUOUS_LABELS     1
+CONFLICTING_LABEL    0
+
+Matching utterances:
+      id        text      intent    reference_labels           status
+DMT-0009 Hello there    GREETING            GREETING       SAME_LABEL
+DMT-0029     Bye now     GOODBYE             GOODBYE       SAME_LABEL
+DMT-0109   Who knows UNCERTAINTY         UNCERTAINTY       SAME_LABEL
+DMT-0189   How many?    QUESTION QUESTION, STATEMENT AMBIGUOUS_LABELS
+
+======================================================================
+REFERENCE: SWITCHBOARD_VALIDATION
+======================================================================
+Reference records: 16,913
+Unique reference model texts: 11,485
+Overlapping final test records: 1
+Overlap percentage: 0.42%
+Non-overlapping records: 239
+
+Overlap categories:
+status
+SAME_LABEL           1
+AMBIGUOUS_LABELS     0
+CONFLICTING_LABEL    0
+
+Matching utterances:
+      id    text  intent reference_labels     status
+DMT-0029 Bye now GOODBYE          GOODBYE SAME_LABEL
+
+======================================================================
+REFERENCE: SWITCHBOARD_TEST
+======================================================================
+Reference records: 17,966
+Unique reference model texts: 12,031
+Overlapping final test records: 2
+Overlap percentage: 0.83%
+Non-overlapping records: 238
+
+Overlap categories:
+status
+SAME_LABEL           2
+AMBIGUOUS_LABELS     0
+CONFLICTING_LABEL    0
+
+Matching utterances:
+      id    text  intent reference_labels     status
+DMT-0027 So long GOODBYE          GOODBYE SAME_LABEL
+DMT-0029 Bye now GOODBYE          GOODBYE SAME_LABEL
+
+======================================================================
+REFERENCE: DIGITAL_MIRROR_ORIGINAL_TRAIN
+======================================================================
+Reference records: 600
+Unique reference model texts: 600
+Overlapping final test records: 17
+Overlap percentage: 7.08%
+Non-overlapping records: 223
+
+Overlap categories:
+status
+SAME_LABEL           17
+AMBIGUOUS_LABELS      0
+CONFLICTING_LABEL     0
+
+Matching utterances:
+      id                       text             intent   reference_labels     status
+DMT-0007                  Greetings           GREETING           GREETING SAME_LABEL
+DMT-0008                    Morning           GREETING           GREETING SAME_LABEL
+DMT-0010                       Hiya           GREETING           GREETING SAME_LABEL
+DMT-0011     Hello, digital mirror.           GREETING           GREETING SAME_LABEL
+DMT-0023       Until we meet again.            GOODBYE            GOODBYE SAME_LABEL
+DMT-0026                   Farewell            GOODBYE            GOODBYE SAME_LABEL
+DMT-0027                    So long            GOODBYE            GOODBYE SAME_LABEL
+DMT-0046           Much appreciated          GRATITUDE          GRATITUDE SAME_LABEL
+DMT-0047            Cheers for that          GRATITUDE          GRATITUDE SAME_LABEL
+DMT-0083  I take the opposite view.       DISAGREEMENT       DISAGREEMENT SAME_LABEL
+DMT-0106                   Possibly        UNCERTAINTY        UNCERTAINTY SAME_LABEL
+DMT-0122 I follow your explanation.     ACKNOWLEDGMENT     ACKNOWLEDGMENT SAME_LABEL
+DMT-0126                 Understood     ACKNOWLEDGMENT     ACKNOWLEDGMENT SAME_LABEL
+DMT-0127                      Noted     ACKNOWLEDGMENT     ACKNOWLEDGMENT SAME_LABEL
+DMT-0128           Message received     ACKNOWLEDGMENT     ACKNOWLEDGMENT SAME_LABEL
+DMT-0146                 Yes indeed AFFIRMATIVE_ANSWER AFFIRMATIVE_ANSWER SAME_LABEL
+DMT-0170                  Not today    NEGATIVE_ANSWER    NEGATIVE_ANSWER SAME_LABEL
+
+======================================================================
+REFERENCE: DIGITAL_MIRROR_ELIGIBLE_TRAIN
+======================================================================
+Reference records: 579
+Unique reference model texts: 579
+Overlapping final test records: 16
+Overlap percentage: 6.67%
+Non-overlapping records: 224
+
+Overlap categories:
+status
+SAME_LABEL           16
+AMBIGUOUS_LABELS      0
+CONFLICTING_LABEL     0
+
+Matching utterances:
+      id                       text             intent   reference_labels     status
+DMT-0007                  Greetings           GREETING           GREETING SAME_LABEL
+DMT-0008                    Morning           GREETING           GREETING SAME_LABEL
+DMT-0010                       Hiya           GREETING           GREETING SAME_LABEL
+DMT-0011     Hello, digital mirror.           GREETING           GREETING SAME_LABEL
+DMT-0023       Until we meet again.            GOODBYE            GOODBYE SAME_LABEL
+DMT-0026                   Farewell            GOODBYE            GOODBYE SAME_LABEL
+DMT-0046           Much appreciated          GRATITUDE          GRATITUDE SAME_LABEL
+DMT-0047            Cheers for that          GRATITUDE          GRATITUDE SAME_LABEL
+DMT-0083  I take the opposite view.       DISAGREEMENT       DISAGREEMENT SAME_LABEL
+DMT-0106                   Possibly        UNCERTAINTY        UNCERTAINTY SAME_LABEL
+DMT-0122 I follow your explanation.     ACKNOWLEDGMENT     ACKNOWLEDGMENT SAME_LABEL
+DMT-0126                 Understood     ACKNOWLEDGMENT     ACKNOWLEDGMENT SAME_LABEL
+DMT-0127                      Noted     ACKNOWLEDGMENT     ACKNOWLEDGMENT SAME_LABEL
+DMT-0128           Message received     ACKNOWLEDGMENT     ACKNOWLEDGMENT SAME_LABEL
+DMT-0146                 Yes indeed AFFIRMATIVE_ANSWER AFFIRMATIVE_ANSWER SAME_LABEL
+DMT-0170                  Not today    NEGATIVE_ANSWER    NEGATIVE_ANSWER SAME_LABEL
+
+======================================================================
+REFERENCE: INSTALLATION_DEVELOPMENT_BENCHMARK
+======================================================================
+Reference records: 60
+Unique reference model texts: 60
+Overlapping final test records: 0
+Overlap percentage: 0.00%
+Non-overlapping records: 240
+
+Overlap categories:
+status
+SAME_LABEL           0
+AMBIGUOUS_LABELS     0
+CONFLICTING_LABEL    0
+
+=== REFERENCE OVERLAP SUMMARY ===
+                         reference  reference_records  unique_reference_texts  overlapping_records  overlap_percentage  same_label  ambiguous_labels  conflicting_label
+                 switchboard_train             135827                   88914                    4              1.6667           3                 1                  0
+            switchboard_validation              16913                   11485                    1              0.4167           1                 0                  0
+                  switchboard_test              17966                   12031                    2              0.8333           2                 0                  0
+     digital_mirror_original_train                600                     600                   17              7.0833          17                 0                  0
+     digital_mirror_eligible_train                579                     579                   16              6.6667          16                 0                  0
+installation_development_benchmark                 60                      60                    0              0.0000           0                 0                  0
+
+=== TOTAL OVERLAP ANALYSIS ===
+Original records: 240
+Unique overlapping records: 21
+Non-overlapping records: 219
+Total overlap percentage: 8.75%
+
+=== OVERLAP BY INTENT ===
+                    original  overlapping  non_overlapping
+intent                                                    
+GREETING                  20            5               15
+GOODBYE                   20            4               16
+GRATITUDE                 20            2               18
+AGREEMENT                 20            0               20
+DISAGREEMENT              20            1               19
+UNCERTAINTY               20            2               18
+ACKNOWLEDGMENT            20            4               16
+AFFIRMATIVE_ANSWER        20            1               19
+NEGATIVE_ANSWER           20            1               19
+QUESTION                  20            1               19
+CLARIFICATION             20            0               20
+STATEMENT                 20            0               20
+
+=== OVERLAP BY GROUP ===
+              original  overlapping  non_overlapping
+group                                               
+natural             60            3               57
+short               60           17               43
+installation        60            1               59
+complex             60            0               60
+
+=== OVERLAP BY INTENT AND GROUP ===
+group               natural  short  installation  complex
+intent                                                   
+GREETING                  0      4             1        0
+GOODBYE                   1      3             0        0
+GRATITUDE                 0      2             0        0
+AGREEMENT                 0      0             0        0
+DISAGREEMENT              1      0             0        0
+UNCERTAINTY               0      2             0        0
+ACKNOWLEDGMENT            1      3             0        0
+AFFIRMATIVE_ANSWER        0      1             0        0
+NEGATIVE_ANSWER           0      1             0        0
+QUESTION                  0      1             0        0
+CLARIFICATION             0      0             0        0
+STATEMENT                 0      0             0        0
+
+=== UNIQUE OVERLAPPING UTTERANCES ===
+      id                       text             intent        group
+DMT-0007                  Greetings           GREETING        short
+DMT-0008                    Morning           GREETING        short
+DMT-0009                Hello there           GREETING        short
+DMT-0010                       Hiya           GREETING        short
+DMT-0011     Hello, digital mirror.           GREETING installation
+DMT-0023       Until we meet again.            GOODBYE      natural
+DMT-0026                   Farewell            GOODBYE        short
+DMT-0027                    So long            GOODBYE        short
+DMT-0029                    Bye now            GOODBYE        short
+DMT-0046           Much appreciated          GRATITUDE        short
+DMT-0047            Cheers for that          GRATITUDE        short
+DMT-0083  I take the opposite view.       DISAGREEMENT      natural
+DMT-0106                   Possibly        UNCERTAINTY        short
+DMT-0109                  Who knows        UNCERTAINTY        short
+DMT-0122 I follow your explanation.     ACKNOWLEDGMENT      natural
+DMT-0126                 Understood     ACKNOWLEDGMENT        short
+DMT-0127                      Noted     ACKNOWLEDGMENT        short
+DMT-0128           Message received     ACKNOWLEDGMENT        short
+DMT-0146                 Yes indeed AFFIRMATIVE_ANSWER        short
+DMT-0170                  Not today    NEGATIVE_ANSWER        short
+DMT-0189                  How many?           QUESTION        short
+
+=== MATCHES ACROSS REFERENCES ===
+id
+DMT-0029    3
+DMT-0008    2
+DMT-0010    2
+DMT-0011    2
+DMT-0007    2
+DMT-0122    2
+DMT-0023    2
+DMT-0026    2
+DMT-0027    2
+DMT-0046    2
+DMT-0047    2
+DMT-0083    2
+DMT-0106    2
+DMT-0170    2
+DMT-0126    2
+DMT-0127    2
+DMT-0128    2
+DMT-0146    2
+DMT-0009    1
+DMT-0109    1
+DMT-0189    1
+
+=== FINAL DATASET STATUS ===
+Exact text overlap: 21 records
+Dataset eligible for final evaluation: REVIEW REQUIRED
+
+Original dataset modified: NO
+Processed dataset modified: NO
+Records automatically removed: NO
+Model loaded: NO
+Model training performed: NO
+
+=== OVERLAP ANALYSIS COMPLETE ===

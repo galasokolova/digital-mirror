@@ -1,0 +1,5 @@
+group,records,correct,accuracy,top3_accuracy
+complex,60,37,0.6166666666666667,0.9
+installation,60,48,0.8,0.95
+natural,60,39,0.65,0.8833333333333333
+short,60,45,0.75,0.9166666666666666

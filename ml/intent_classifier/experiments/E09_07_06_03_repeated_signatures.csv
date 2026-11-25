@@ -1,0 +1,16 @@
+intent,style,signature,count
+DISAGREEMENT,short,not my view of <shared> <shared>,17
+UNCERTAINTY,complex,until i have more information about <shared> <shared> i cannot decide which interpretation to accept,17
+ACKNOWLEDGMENT,implicit,your point about <shared> <shared> has come through clearly,17
+DISAGREEMENT,implicit,i see <shared> <shared> quite differently,17
+AGREEMENT,challenging,i have no objection to your conclusion about <shared> <shared>,17
+ACKNOWLEDGMENT,complex,i have followed your explanation of <shared> <shared> without taking a position on it,17
+AGREEMENT,short,same view on <shared> <shared>,17
+AGREEMENT,implicit,that is my view of <shared> <shared> as well,17
+ACKNOWLEDGMENT,short,point about <shared> <shared> understood,17
+DISAGREEMENT,complex,although i follow your reasoning i cannot accept your conclusion about <shared> <shared>,17
+AGREEMENT,complex,after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you,17
+ACKNOWLEDGMENT,challenging,i did not miss your point about <shared> <shared>,17
+UNCERTAINTY,implicit,i am still weighing up <shared> arguments about <shared> <shared>,17
+UNCERTAINTY,short,undecided about <shared> <shared>,17
+ACKNOWLEDGMENT,explicit,i understand your explanation about <shared> <shared>,16

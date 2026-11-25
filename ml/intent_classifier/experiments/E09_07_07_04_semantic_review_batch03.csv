@@ -1,0 +1,51 @@
+review_id,text,context,reviewed_intent,naturalness,context_required,review_status,notes,intent_without_context,intent_with_context
+REV-0101,Are you talking about the source or the author?,They were not identified.,CLARIFICATION,NATURAL,NO,ACCEPT,Explicit request to identify referent.,CLARIFICATION,CLARIFICATION
+REV-0102,Any updates?,The investigation is ongoing.,QUESTION,NATURAL,NO,ACCEPT,Requests new information.,QUESTION,QUESTION
+REV-0103,Appreciate your help.,,GRATITUDE,NATURAL,NO,ACCEPT,Explicit appreciation.,GRATITUDE,GRATITUDE
+REV-0104,I wouldn't.,Would you buy that again?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Elliptical negative response.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0105,All the time.,Do you listen to podcasts often?,AFFIRMATIVE_ANSWER,NATURAL,YES,ACCEPT,Frequency implies affirmative answer.,AMBIGUOUS,AFFIRMATIVE_ANSWER
+REV-0106,That's fair.,We should consider both explanations.,AGREEMENT,NATURAL,YES,ACCEPT,Accepts fairness of proposal; could acknowledge in isolation.,AMBIGUOUS,AGREEMENT
+REV-0107,Thank you for walking me through all that.,,GRATITUDE,NATURAL,NO,ACCEPT,Explicit thanks.,GRATITUDE,GRATITUDE
+REV-0108,Thanks!,,GRATITUDE,NATURAL,NO,ACCEPT,Explicit thanks.,GRATITUDE,GRATITUDE
+REV-0109,No argument there.,The evidence is incomplete.,AGREEMENT,NATURAL,NO,ACCEPT,Expresses absence of disagreement.,AGREEMENT,AGREEMENT
+REV-0110,I live near the coast.,,STATEMENT,NATURAL,NO,ACCEPT,Personal fact.,STATEMENT,STATEMENT
+REV-0111,I understand the instructions.,Press once to begin and twice to stop.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Explicit understanding.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0112,Someone had already cleared the snow from the pavement.,,STATEMENT,NATURAL,NO,ACCEPT,Reports completed event.,STATEMENT,STATEMENT
+REV-0113,Disagree.,This is the best approach.,DISAGREEMENT,NATURAL,NO,ACCEPT,Explicit disagreement.,DISAGREEMENT,DISAGREEMENT
+REV-0114,Who said that?,A witness claims the road was blocked.,QUESTION,NATURAL,NO,ACCEPT,Requests identity of speaker.,QUESTION,QUESTION
+REV-0115,I appreciate the extra detail.,,GRATITUDE,NATURAL,NO,ACCEPT,Explicit appreciation.,GRATITUDE,GRATITUDE
+REV-0116,Until tomorrow.,,GOODBYE,NATURAL,NO,ACCEPT,Conventional farewell.,GOODBYE,GOODBYE
+REV-0117,"Evening, everyone!",,GREETING,NATURAL,NO,ACCEPT,Conventional greeting.,GREETING,GREETING
+REV-0118,I think your criticism of the headline is justified.,The headline exaggerates the findings.,AGREEMENT,NATURAL,NO,ACCEPT,Endorses criticism.,AGREEMENT,AGREEMENT
+REV-0119,"Oh, I see.",The sound comes from the right speaker.,ACKNOWLEDGMENT,NATURAL,NO,ACCEPT,Signals understanding.,ACKNOWLEDGMENT,ACKNOWLEDGMENT
+REV-0120,"Ah, hello!",,GREETING,NATURAL,NO,ACCEPT,Conventional greeting.,GREETING,GREETING
+REV-0121,We haven't.,Have you both eaten?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Elliptical negative answer.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0122,Beats me.,Why did the screen freeze?,UNCERTAINTY,NATURAL,NO,ACCEPT,Idiomatic lack of knowledge.,UNCERTAINTY,UNCERTAINTY
+REV-0123,"Hello, nice to meet you.",,GREETING,NATURAL,NO,ACCEPT,Greeting and introduction.,GREETING,GREETING
+REV-0124,Thanks for pointing out something I had missed.,,GRATITUDE,NATURAL,NO,ACCEPT,Explicit thanks.,GRATITUDE,GRATITUDE
+REV-0125,Thanks again.,,GRATITUDE,NATURAL,NO,ACCEPT,Explicit thanks.,GRATITUDE,GRATITUDE
+REV-0126,I'm torn.,Which account seems more credible?,UNCERTAINTY,NATURAL,NO,ACCEPT,Expresses indecision.,UNCERTAINTY,UNCERTAINTY
+REV-0127,Hope to see you again.,,GOODBYE,NATURAL,NO,ACCEPT,Conventional closing wish.,GOODBYE,GOODBYE
+REV-0128,I suppose.,Could the delay have been accidental?,UNCERTAINTY,NATURAL,YES,ACCEPT,Tentative assent rather than definite yes.,AMBIGUOUS,UNCERTAINTY
+REV-0129,You've got a point.,The translation might be misleading.,AGREEMENT,NATURAL,YES,REVISE,Concedes validity of point; may merely acknowledge.,AMBIGUOUS,AGREEMENT
+REV-0130,That was kind of you.,I have helped you find what you were looking for.,GRATITUDE,NATURAL,YES,ACCEPT,Indirect appreciation of assistance.,STATEMENT,GRATITUDE
+REV-0131,My sister works in healthcare.,,STATEMENT,NATURAL,NO,ACCEPT,Personal fact.,STATEMENT,STATEMENT
+REV-0132,What are the main findings?,,QUESTION,NATURAL,NO,ACCEPT,Requests findings.,QUESTION,QUESTION
+REV-0133,I've got nothing in my pockets.,Do you have any coins?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Absence of pocket contents implies no coins.,STATEMENT,NEGATIVE_ANSWER
+REV-0134,I've already watched the whole thing at home.,Have you watched the entire video?,AFFIRMATIVE_ANSWER,NATURAL,YES,ACCEPT,Completed viewing answers yes.,STATEMENT,AFFIRMATIVE_ANSWER
+REV-0135,How many people responded?,,QUESTION,NATURAL,NO,ACCEPT,Requests count.,QUESTION,QUESTION
+REV-0136,We haven't had a chance to discuss it yet.,Have you talked about the proposal?,NEGATIVE_ANSWER,NATURAL,YES,ACCEPT,Not yet discussed proposal.,STATEMENT,NEGATIVE_ANSWER
+REV-0137,Neither did I.,I missed the broadcast. Did you watch it?,NEGATIVE_ANSWER,NATURAL,YES,REVISE,Negative answer; context contains both statement and question.,AMBIGUOUS,NEGATIVE_ANSWER
+REV-0138,Prices went up.,,STATEMENT,NATURAL,NO,ACCEPT,Reports price change.,STATEMENT,STATEMENT
+REV-0139,As in?,The footage was manipulated.,CLARIFICATION,NATURAL,NO,ACCEPT,Conventional request for elaboration.,CLARIFICATION,CLARIFICATION
+REV-0140,I honestly couldn't say.,Did the witness remember correctly?,UNCERTAINTY,NATURAL,NO,ACCEPT,Explicit inability to determine answer.,UNCERTAINTY,UNCERTAINTY
+REV-0141,How much?,Admission requires a ticket.,QUESTION,NATURAL,NO,ACCEPT,Requests price; referent needed but intent clear.,QUESTION,QUESTION
+REV-0142,Goodbye!,,GOODBYE,NATURAL,NO,ACCEPT,Explicit farewell.,GOODBYE,GOODBYE
+REV-0143,Are there any photographs from before the building collapsed?,,QUESTION,NATURAL,NO,ACCEPT,Requests existence of photographs.,QUESTION,QUESTION
+REV-0144,"Right, okay.",The file is still loading.,ACKNOWLEDGMENT,NATURAL,YES,ACCEPT,Acknowledges loading status.,AMBIGUOUS,ACKNOWLEDGMENT
+REV-0145,I feel the same way.,The presentation was too rushed.,AGREEMENT,NATURAL,NO,ACCEPT,Expresses shared opinion.,AGREEMENT,AGREEMENT
+REV-0146,I have.,Have you visited Lisbon?,AFFIRMATIVE_ANSWER,NATURAL,YES,ACCEPT,Elliptical affirmative answer.,AMBIGUOUS,AFFIRMATIVE_ANSWER
+REV-0147,The library has a separate room for group projects.,,STATEMENT,NATURAL,NO,ACCEPT,Reports library facility.,STATEMENT,STATEMENT
+REV-0148,That interpretation doesn't work for me.,The painting represents happiness alone.,DISAGREEMENT,NATURAL,NO,ACCEPT,Rejects interpretation.,DISAGREEMENT,DISAGREEMENT
+REV-0149,I'm off.,,GOODBYE,NATURAL,NO,ACCEPT,Conventional departure announcement.,GOODBYE,GOODBYE
+REV-0150,Good point.,The speaker may be mistaken.,AGREEMENT,NATURAL,YES,REVISE,Endorses point; could acknowledge without context.,AMBIGUOUS,AGREEMENT

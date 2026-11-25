@@ -1,0 +1,1057 @@
+=== E09.06.2e: FROZEN MODEL INSTALLATION EVALUATION ===
+
+=== FINAL DATASET VALIDATION ===
+PASS | Expected record count
+PASS | Unique IDs
+PASS | Unique model texts
+PASS | No empty model texts
+PASS | All intent classes present
+PASS | All groups present
+PASS | Balanced intent classes
+PASS | Balanced groups
+PASS | Five records per intent and group
+PASS | Raw and processed datasets match
+PASS | Consistent text preprocessing
+
+Checks passed: 11/11
+
+=== FINAL OVERLAP VERIFICATION ===
+switchboard_train: 0
+switchboard_validation: 0
+switchboard_test: 0
+digital_mirror_original_train: 0
+digital_mirror_eligible_train: 0
+installation_development_benchmark: 0
+Unique overlapping texts: 0
+
+=== EXPERIMENT IDENTIFICATION ===
+Dataset: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\evaluation\digital_mirror_final\test_processed.csv
+Dataset SHA-256: 95edcdb2de241103150890f99800b2ecf0ad3b6f43961c417fc87169fd86a390
+Model: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\models\E09_05a_domain_adapted.joblib
+Model SHA-256: 650b1a638d02e0c435cbb4d221dab74aa756e37e7f145b605b4772cb37276373
+
+=== FROZEN MODEL INFORMATION ===
+Model: E09.05a
+Classes: 12
+Vocabulary size: 77,043
+Class weight: balanced
+
+=== MODEL INFERENCE ===
+
+=== OVERALL EVALUATION ===
+records: 240
+correct: 149
+accuracy: 0.6208
+macro_precision: 0.7102
+macro_recall: 0.6208
+macro_f1: 0.6156
+weighted_f1: 0.6156
+top3_accuracy: 0.8000
+inference_seconds: 0.0333
+milliseconds_per_record: 0.1389
+
+=== PER-CLASS EVALUATION ===
+                    precision    recall  f1-score   support
+
+          GREETING     0.8824    0.7500    0.8108        20
+           GOODBYE     0.8235    0.7000    0.7568        20
+         GRATITUDE     1.0000    0.6500    0.7879        20
+         AGREEMENT     0.7500    0.1500    0.2500        20
+      DISAGREEMENT     0.6364    0.7000    0.6667        20
+       UNCERTAINTY     0.9000    0.4500    0.6000        20
+    ACKNOWLEDGMENT     0.0000    0.0000    0.0000        20
+AFFIRMATIVE_ANSWER     0.8750    0.7000    0.7778        20
+   NEGATIVE_ANSWER     0.8947    0.8500    0.8718        20
+          QUESTION     0.5143    0.9000    0.6545        20
+     CLARIFICATION     1.0000    0.7000    0.8235        20
+         STATEMENT     0.2466    0.9000    0.3871        20
+
+          accuracy                         0.6208       240
+         macro avg     0.7102    0.6208    0.6156       240
+      weighted avg     0.7102    0.6208    0.6156       240
+
+
+=== CLASS SUMMARY ===
+            intent  records  correct  accuracy  precision  recall     f1  top3_accuracy
+          GREETING       20       15      0.75     0.8824    0.75 0.8108           0.85
+           GOODBYE       20       14      0.70     0.8235    0.70 0.7568           1.00
+         GRATITUDE       20       13      0.65     1.0000    0.65 0.7879           0.80
+         AGREEMENT       20        3      0.15     0.7500    0.15 0.2500           0.40
+      DISAGREEMENT       20       14      0.70     0.6364    0.70 0.6667           0.95
+       UNCERTAINTY       20        9      0.45     0.9000    0.45 0.6000           0.95
+    ACKNOWLEDGMENT       20        0      0.00     0.0000    0.00 0.0000           0.00
+AFFIRMATIVE_ANSWER       20       14      0.70     0.8750    0.70 0.7778           0.95
+   NEGATIVE_ANSWER       20       17      0.85     0.8947    0.85 0.8718           0.90
+          QUESTION       20       18      0.90     0.5143    0.90 0.6545           0.95
+     CLARIFICATION       20       14      0.70     1.0000    0.70 0.8235           0.85
+         STATEMENT       20       18      0.90     0.2466    0.90 0.3871           1.00
+
+=== PER-GROUP EVALUATION ===
+
+--- NATURAL ---
+records: 60
+correct: 35
+accuracy: 0.5833
+macro_precision: 0.7398
+macro_recall: 0.5833
+macro_f1: 0.5822
+weighted_f1: 0.5822
+top3_accuracy: 0.7833
+group: natural
+
+--- SHORT ---
+records: 60
+correct: 37
+accuracy: 0.6167
+macro_precision: 0.6558
+macro_recall: 0.6167
+macro_f1: 0.5909
+weighted_f1: 0.5909
+top3_accuracy: 0.7833
+group: short
+
+--- INSTALLATION ---
+records: 60
+correct: 43
+accuracy: 0.7167
+macro_precision: 0.8231
+macro_recall: 0.7167
+macro_f1: 0.7153
+weighted_f1: 0.7153
+top3_accuracy: 0.8333
+group: installation
+
+--- COMPLEX ---
+records: 60
+correct: 34
+accuracy: 0.5667
+macro_precision: 0.6819
+macro_recall: 0.5667
+macro_f1: 0.5406
+weighted_f1: 0.5406
+top3_accuracy: 0.8000
+group: complex
+
+=== GROUP COMPARISON ===
+       group  records  correct  accuracy  macro_f1  top3_accuracy
+     natural       60       35    0.5833    0.5822         0.7833
+       short       60       37    0.6167    0.5909         0.7833
+installation       60       43    0.7167    0.7153         0.8333
+     complex       60       34    0.5667    0.5406         0.8000
+
+=== INTENT-GROUP ACCURACY ===
+group               natural  short  installation  complex
+expected                                                 
+GREETING                0.8    0.6           1.0      0.6
+GOODBYE                 0.6    0.6           0.6      1.0
+GRATITUDE               0.4    0.8           1.0      0.4
+AGREEMENT               0.2    0.2           0.2      0.0
+DISAGREEMENT            0.8    0.2           1.0      0.8
+UNCERTAINTY             0.4    0.8           0.4      0.2
+ACKNOWLEDGMENT          0.0    0.0           0.0      0.0
+AFFIRMATIVE_ANSWER      0.6    1.0           0.8      0.4
+NEGATIVE_ANSWER         0.8    0.8           1.0      0.8
+QUESTION                0.8    0.8           1.0      1.0
+CLARIFICATION           0.6    0.8           0.8      0.6
+STATEMENT               1.0    0.8           0.8      1.0
+
+=== CONFUSION MATRIX ===
+                    GREETING  GOODBYE  GRATITUDE  AGREEMENT  DISAGREEMENT  UNCERTAINTY  ACKNOWLEDGMENT  AFFIRMATIVE_ANSWER  NEGATIVE_ANSWER  QUESTION  CLARIFICATION  STATEMENT
+actual                                                                                                                                                                         
+GREETING                  15        0          0          0             0            0               0                   0                0         2              0          3
+GOODBYE                    0       14          0          0             0            0               0                   0                0         1              0          5
+GRATITUDE                  0        1         13          0             0            0               0                   0                0         1              0          5
+AGREEMENT                  0        0          0          3             5            0               0                   2                0         1              0          9
+DISAGREEMENT               0        0          0          0            14            0               0                   0                1         1              0          4
+UNCERTAINTY                0        0          0          0             2            9               0                   0                1         0              0          8
+ACKNOWLEDGMENT             1        0          0          0             0            0               0                   0                0         6              0         13
+AFFIRMATIVE_ANSWER         0        1          0          0             0            0               0                  14                0         1              0          4
+NEGATIVE_ANSWER            0        0          0          0             1            1               0                   0               17         0              0          1
+QUESTION                   0        0          0          1             0            0               0                   0                0        18              0          1
+CLARIFICATION              0        1          0          0             0            0               0                   0                0         3             14          2
+STATEMENT                  1        0          0          0             0            0               0                   0                0         1              0         18
+
+=== ERROR ANALYSIS ===
+Total errors: 91
+Error rate: 37.92%
+
+Most frequent error pairs:
+          expected          predicted  count
+    ACKNOWLEDGMENT          STATEMENT     13
+         AGREEMENT          STATEMENT      9
+       UNCERTAINTY          STATEMENT      8
+    ACKNOWLEDGMENT           QUESTION      6
+           GOODBYE          STATEMENT      5
+         AGREEMENT       DISAGREEMENT      5
+         GRATITUDE          STATEMENT      5
+AFFIRMATIVE_ANSWER          STATEMENT      4
+      DISAGREEMENT          STATEMENT      4
+     CLARIFICATION           QUESTION      3
+          GREETING          STATEMENT      3
+     CLARIFICATION          STATEMENT      2
+       UNCERTAINTY       DISAGREEMENT      2
+          GREETING           QUESTION      2
+         AGREEMENT AFFIRMATIVE_ANSWER      2
+
+Errors by group:
+group
+natural         25
+short           23
+installation    17
+complex         26
+
+Incorrect Top-1 predictions with correct label in Top-3: 43
+Top-3 recovery among errors: 47.25%
+
+=== ALL INCORRECT PREDICTIONS ===
+
+ID: DMT-0004
+Group: natural
+Text: Hope you're having a pleasant morning.
+Expected: GREETING
+Predicted: QUESTION
+Model score: 0.4134
+Top-3: QUESTION (0.4134), GOODBYE (0.2234), STATEMENT (0.1902)
+Top-3 correct: False
+
+ID: DMT-0006
+Group: short
+Text: Howdy
+Expected: GREETING
+Predicted: STATEMENT
+Model score: 0.2714
+Top-3: STATEMENT (0.2714), QUESTION (0.2650), GOODBYE (0.0846)
+Top-3 correct: False
+
+ID: DMT-0010
+Group: short
+Text: Hiya there
+Expected: GREETING
+Predicted: QUESTION
+Model score: 0.5160
+Top-3: QUESTION (0.5160), UNCERTAINTY (0.1693), STATEMENT (0.1646)
+Top-3 correct: False
+
+ID: DMT-0016
+Group: complex
+Text: Before we begin, I'd like to say hello.
+Expected: GREETING
+Predicted: STATEMENT
+Model score: 0.3323
+Top-3: STATEMENT (0.3323), GREETING (0.2196), AFFIRMATIVE_ANSWER (0.1406)
+Top-3 correct: True
+
+ID: DMT-0019
+Group: complex
+Text: Allow me to introduce myself and say hello.
+Expected: GREETING
+Predicted: STATEMENT
+Model score: 0.3420
+Top-3: STATEMENT (0.3420), GREETING (0.2675), QUESTION (0.0979)
+Top-3 correct: True
+
+ID: DMT-0022
+Group: natural
+Text: Enjoy the rest of your afternoon.
+Expected: GOODBYE
+Predicted: QUESTION
+Model score: 0.5176
+Top-3: QUESTION (0.5176), GOODBYE (0.2539), STATEMENT (0.1072)
+Top-3 correct: True
+
+ID: DMT-0024
+Group: natural
+Text: I must be on my way.
+Expected: GOODBYE
+Predicted: STATEMENT
+Model score: 0.4608
+Top-3: STATEMENT (0.4608), GOODBYE (0.1803), AFFIRMATIVE_ANSWER (0.1419)
+Top-3 correct: True
+
+ID: DMT-0028
+Group: short
+Text: Cheerio
+Expected: GOODBYE
+Predicted: STATEMENT
+Model score: 0.2714
+Top-3: STATEMENT (0.2714), QUESTION (0.2650), GOODBYE (0.0846)
+Top-3 correct: True
+
+ID: DMT-0030
+Group: short
+Text: Until tomorrow
+Expected: GOODBYE
+Predicted: STATEMENT
+Model score: 0.2700
+Top-3: STATEMENT (0.2700), QUESTION (0.2079), GOODBYE (0.1902)
+Top-3 correct: True
+
+ID: DMT-0031
+Group: installation
+Text: That's the end of my visit, farewell.
+Expected: GOODBYE
+Predicted: STATEMENT
+Model score: 0.4967
+Top-3: STATEMENT (0.4967), GOODBYE (0.1800), AFFIRMATIVE_ANSWER (0.1745)
+Top-3 correct: True
+
+ID: DMT-0035
+Group: installation
+Text: See you on my next visit to the mirror.
+Expected: GOODBYE
+Predicted: STATEMENT
+Model score: 0.3713
+Top-3: STATEMENT (0.3713), GOODBYE (0.2644), GREETING (0.1675)
+Top-3 correct: True
+
+ID: DMT-0042
+Group: natural
+Text: That was very kind of you.
+Expected: GRATITUDE
+Predicted: STATEMENT
+Model score: 0.6120
+Top-3: STATEMENT (0.6120), QUESTION (0.2717), AGREEMENT (0.0401)
+Top-3 correct: False
+
+ID: DMT-0043
+Group: natural
+Text: You've been a great help, thanks.
+Expected: GRATITUDE
+Predicted: GOODBYE
+Model score: 0.4738
+Top-3: GOODBYE (0.4738), QUESTION (0.3025), GRATITUDE (0.1193)
+Top-3 correct: True
+
+ID: DMT-0044
+Group: natural
+Text: Your help means a great deal to me.
+Expected: GRATITUDE
+Predicted: STATEMENT
+Model score: 0.5192
+Top-3: STATEMENT (0.5192), QUESTION (0.1672), GOODBYE (0.1165)
+Top-3 correct: False
+
+ID: DMT-0050
+Group: short
+Text: Very grateful
+Expected: GRATITUDE
+Predicted: STATEMENT
+Model score: 0.2394
+Top-3: STATEMENT (0.2394), AGREEMENT (0.1625), GRATITUDE (0.1502)
+Top-3 correct: True
+
+ID: DMT-0056
+Group: complex
+Text: I want to express my gratitude for the time you spent helping me.
+Expected: GRATITUDE
+Predicted: STATEMENT
+Model score: 0.8384
+Top-3: STATEMENT (0.8384), AFFIRMATIVE_ANSWER (0.0418), QUESTION (0.0300)
+Top-3 correct: False
+
+ID: DMT-0057
+Group: complex
+Text: Your willingness to explain the details is much appreciated.
+Expected: GRATITUDE
+Predicted: QUESTION
+Model score: 0.3821
+Top-3: QUESTION (0.3821), STATEMENT (0.3002), GRATITUDE (0.0743)
+Top-3 correct: True
+
+ID: DMT-0058
+Group: complex
+Text: I'm genuinely thankful that you took the trouble to clarify this.
+Expected: GRATITUDE
+Predicted: STATEMENT
+Model score: 0.4552
+Top-3: STATEMENT (0.4552), QUESTION (0.2690), CLARIFICATION (0.0624)
+Top-3 correct: False
+
+ID: DMT-0061
+Group: natural
+Text: You've made a valid point.
+Expected: AGREEMENT
+Predicted: QUESTION
+Model score: 0.3806
+Top-3: QUESTION (0.3806), STATEMENT (0.3261), AGREEMENT (0.0850)
+Top-3 correct: True
+
+ID: DMT-0063
+Group: natural
+Text: Your reasoning makes sense to me.
+Expected: AGREEMENT
+Predicted: STATEMENT
+Model score: 0.3260
+Top-3: STATEMENT (0.3260), QUESTION (0.1696), DISAGREEMENT (0.1437)
+Top-3 correct: False
+
+ID: DMT-0064
+Group: natural
+Text: We're of the same opinion.
+Expected: AGREEMENT
+Predicted: STATEMENT
+Model score: 0.7210
+Top-3: STATEMENT (0.7210), GOODBYE (0.1304), QUESTION (0.0454)
+Top-3 correct: False
+
+ID: DMT-0065
+Group: natural
+Text: I share your assessment.
+Expected: AGREEMENT
+Predicted: DISAGREEMENT
+Model score: 0.6323
+Top-3: DISAGREEMENT (0.6323), STATEMENT (0.0820), QUESTION (0.0740)
+Top-3 correct: False
+
+ID: DMT-0066
+Group: short
+Text: Spot on
+Expected: AGREEMENT
+Predicted: STATEMENT
+Model score: 0.3511
+Top-3: STATEMENT (0.3511), QUESTION (0.2732), GOODBYE (0.0732)
+Top-3 correct: False
+
+ID: DMT-0067
+Group: short
+Text: Quite right
+Expected: AGREEMENT
+Predicted: AFFIRMATIVE_ANSWER
+Model score: 0.2637
+Top-3: AFFIRMATIVE_ANSWER (0.2637), AGREEMENT (0.1997), QUESTION (0.1384)
+Top-3 correct: True
+
+ID: DMT-0068
+Group: short
+Text: Agreed entirely
+Expected: AGREEMENT
+Predicted: STATEMENT
+Model score: 0.2878
+Top-3: STATEMENT (0.2878), QUESTION (0.2449), GOODBYE (0.0788)
+Top-3 correct: False
+
+ID: DMT-0069
+Group: short
+Text: My thoughts exactly
+Expected: AGREEMENT
+Predicted: AFFIRMATIVE_ANSWER
+Model score: 0.3379
+Top-3: AFFIRMATIVE_ANSWER (0.3379), AGREEMENT (0.2537), STATEMENT (0.1231)
+Top-3 correct: True
+
+ID: DMT-0071
+Group: installation
+Text: Your assessment of that headline matches mine.
+Expected: AGREEMENT
+Predicted: STATEMENT
+Model score: 0.2688
+Top-3: STATEMENT (0.2688), DISAGREEMENT (0.2423), QUESTION (0.2419)
+Top-3 correct: False
+
+ID: DMT-0072
+Group: installation
+Text: I share your conclusion about the evidence.
+Expected: AGREEMENT
+Predicted: DISAGREEMENT
+Model score: 0.8613
+Top-3: DISAGREEMENT (0.8613), QUESTION (0.0466), STATEMENT (0.0226)
+Top-3 correct: False
+
+ID: DMT-0074
+Group: installation
+Text: Your interpretation of the report seems correct to me.
+Expected: AGREEMENT
+Predicted: STATEMENT
+Model score: 0.2907
+Top-3: STATEMENT (0.2907), QUESTION (0.2830), DISAGREEMENT (0.1111)
+Top-3 correct: False
+
+ID: DMT-0075
+Group: installation
+Text: We reach the same conclusion about this claim.
+Expected: AGREEMENT
+Predicted: STATEMENT
+Model score: 0.2786
+Top-3: STATEMENT (0.2786), GOODBYE (0.2030), DISAGREEMENT (0.1710)
+Top-3 correct: False
+
+ID: DMT-0076
+Group: complex
+Text: Having considered your reasoning, I reach the same conclusion.
+Expected: AGREEMENT
+Predicted: DISAGREEMENT
+Model score: 0.2902
+Top-3: DISAGREEMENT (0.2902), GOODBYE (0.1775), STATEMENT (0.1703)
+Top-3 correct: False
+
+ID: DMT-0077
+Group: complex
+Text: On that particular issue, our opinions are entirely aligned.
+Expected: AGREEMENT
+Predicted: STATEMENT
+Model score: 0.4064
+Top-3: STATEMENT (0.4064), QUESTION (0.3892), AGREEMENT (0.0435)
+Top-3 correct: True
+
+ID: DMT-0078
+Group: complex
+Text: The argument you've presented is consistent with my own view.
+Expected: AGREEMENT
+Predicted: STATEMENT
+Model score: 0.3459
+Top-3: STATEMENT (0.3459), QUESTION (0.3091), DISAGREEMENT (0.1628)
+Top-3 correct: False
+
+ID: DMT-0079
+Group: complex
+Text: I endorse your conclusion because the evidence supports it.
+Expected: AGREEMENT
+Predicted: DISAGREEMENT
+Model score: 0.7744
+Top-3: DISAGREEMENT (0.7744), STATEMENT (0.0659), QUESTION (0.0396)
+Top-3 correct: False
+
+ID: DMT-0080
+Group: complex
+Text: Although I initially hesitated, I now agree with your assessment.
+Expected: AGREEMENT
+Predicted: DISAGREEMENT
+Model score: 0.4107
+Top-3: DISAGREEMENT (0.4107), AGREEMENT (0.2800), STATEMENT (0.1510)
+Top-3 correct: True
+
+ID: DMT-0085
+Group: natural
+Text: That reasoning doesn't hold up.
+Expected: DISAGREEMENT
+Predicted: QUESTION
+Model score: 0.3049
+Top-3: QUESTION (0.3049), STATEMENT (0.2481), DISAGREEMENT (0.1785)
+Top-3 correct: True
+
+ID: DMT-0086
+Group: short
+Text: I object
+Expected: DISAGREEMENT
+Predicted: STATEMENT
+Model score: 0.3452
+Top-3: STATEMENT (0.3452), DISAGREEMENT (0.1877), AFFIRMATIVE_ANSWER (0.1246)
+Top-3 correct: True
+
+ID: DMT-0087
+Group: short
+Text: Not so
+Expected: DISAGREEMENT
+Predicted: NEGATIVE_ANSWER
+Model score: 0.6861
+Top-3: NEGATIVE_ANSWER (0.6861), DISAGREEMENT (0.1958), QUESTION (0.0369)
+Top-3 correct: True
+
+ID: DMT-0088
+Group: short
+Text: Quite the opposite
+Expected: DISAGREEMENT
+Predicted: STATEMENT
+Model score: 0.3384
+Top-3: STATEMENT (0.3384), QUESTION (0.2071), DISAGREEMENT (0.1824)
+Top-3 correct: True
+
+ID: DMT-0090
+Group: short
+Text: I differ
+Expected: DISAGREEMENT
+Predicted: STATEMENT
+Model score: 0.4530
+Top-3: STATEMENT (0.4530), AFFIRMATIVE_ANSWER (0.1343), GOODBYE (0.0852)
+Top-3 correct: False
+
+ID: DMT-0100
+Group: complex
+Text: Despite the points you've raised, I remain opposed to your conclusion.
+Expected: DISAGREEMENT
+Predicted: STATEMENT
+Model score: 0.3271
+Top-3: STATEMENT (0.3271), QUESTION (0.3082), DISAGREEMENT (0.1412)
+Top-3 correct: True
+
+ID: DMT-0102
+Group: natural
+Text: It's difficult for me to tell.
+Expected: UNCERTAINTY
+Predicted: STATEMENT
+Model score: 0.5184
+Top-3: STATEMENT (0.5184), GOODBYE (0.2369), UNCERTAINTY (0.0794)
+Top-3 correct: True
+
+ID: DMT-0104
+Group: natural
+Text: I could be mistaken about it.
+Expected: UNCERTAINTY
+Predicted: DISAGREEMENT
+Model score: 0.5416
+Top-3: DISAGREEMENT (0.5416), STATEMENT (0.2724), UNCERTAINTY (0.0599)
+Top-3 correct: True
+
+ID: DMT-0105
+Group: natural
+Text: I'm torn between the possibilities.
+Expected: UNCERTAINTY
+Predicted: STATEMENT
+Model score: 0.3230
+Top-3: STATEMENT (0.3230), UNCERTAINTY (0.2964), QUESTION (0.1345)
+Top-3 correct: True
+
+ID: DMT-0110
+Group: short
+Text: Not definite
+Expected: UNCERTAINTY
+Predicted: NEGATIVE_ANSWER
+Model score: 0.3412
+Top-3: NEGATIVE_ANSWER (0.3412), UNCERTAINTY (0.3210), DISAGREEMENT (0.1867)
+Top-3 correct: True
+
+ID: DMT-0111
+Group: installation
+Text: I haven't decided whether this headline is credible.
+Expected: UNCERTAINTY
+Predicted: STATEMENT
+Model score: 0.4658
+Top-3: STATEMENT (0.4658), NEGATIVE_ANSWER (0.1312), QUESTION (0.1107)
+Top-3 correct: False
+
+ID: DMT-0112
+Group: installation
+Text: I'm uncertain about the reliability of that clip.
+Expected: UNCERTAINTY
+Predicted: STATEMENT
+Model score: 0.4396
+Top-3: STATEMENT (0.4396), UNCERTAINTY (0.3420), QUESTION (0.1335)
+Top-3 correct: True
+
+ID: DMT-0114
+Group: installation
+Text: I can't tell which account is accurate.
+Expected: UNCERTAINTY
+Predicted: STATEMENT
+Model score: 0.3230
+Top-3: STATEMENT (0.3230), UNCERTAINTY (0.2583), QUESTION (0.0860)
+Top-3 correct: True
+
+ID: DMT-0116
+Group: complex
+Text: There are several plausible explanations and I cannot choose between them.
+Expected: UNCERTAINTY
+Predicted: STATEMENT
+Model score: 0.5322
+Top-3: STATEMENT (0.5322), UNCERTAINTY (0.2960), DISAGREEMENT (0.0426)
+Top-3 correct: True
+
+ID: DMT-0118
+Group: complex
+Text: Although both accounts sound plausible, I remain uncertain.
+Expected: UNCERTAINTY
+Predicted: STATEMENT
+Model score: 0.4010
+Top-3: STATEMENT (0.4010), UNCERTAINTY (0.1897), AFFIRMATIVE_ANSWER (0.1045)
+Top-3 correct: True
+
+ID: DMT-0119
+Group: complex
+Text: I'm hesitant to draw a conclusion because the details are incomplete.
+Expected: UNCERTAINTY
+Predicted: STATEMENT
+Model score: 0.5098
+Top-3: STATEMENT (0.5098), QUESTION (0.1977), UNCERTAINTY (0.0682)
+Top-3 correct: True
+
+ID: DMT-0120
+Group: complex
+Text: At this point I cannot confidently determine which interpretation is correct.
+Expected: UNCERTAINTY
+Predicted: DISAGREEMENT
+Model score: 0.5300
+Top-3: DISAGREEMENT (0.5300), UNCERTAINTY (0.1825), STATEMENT (0.0734)
+Top-3 correct: True
+
+ID: DMT-0121
+Group: natural
+Text: I've heard what you've said.
+Expected: ACKNOWLEDGMENT
+Predicted: QUESTION
+Model score: 0.3465
+Top-3: QUESTION (0.3465), CLARIFICATION (0.2621), STATEMENT (0.2579)
+Top-3 correct: False
+
+ID: DMT-0122
+Group: natural
+Text: I've followed your explanation so far.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.3251
+Top-3: STATEMENT (0.3251), QUESTION (0.2644), GOODBYE (0.1003)
+Top-3 correct: False
+
+ID: DMT-0123
+Group: natural
+Text: I've taken note of that.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.7814
+Top-3: STATEMENT (0.7814), QUESTION (0.0532), AFFIRMATIVE_ANSWER (0.0385)
+Top-3 correct: False
+
+ID: DMT-0124
+Group: natural
+Text: Your message has been received.
+Expected: ACKNOWLEDGMENT
+Predicted: QUESTION
+Model score: 0.5942
+Top-3: QUESTION (0.5942), STATEMENT (0.1692), GOODBYE (0.1368)
+Top-3 correct: False
+
+ID: DMT-0125
+Group: natural
+Text: I'm following the discussion.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.5184
+Top-3: STATEMENT (0.5184), QUESTION (0.1271), GREETING (0.0787)
+Top-3 correct: False
+
+ID: DMT-0126
+Group: short
+Text: Understood so far
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.3756
+Top-3: STATEMENT (0.3756), QUESTION (0.2504), AFFIRMATIVE_ANSWER (0.0917)
+Top-3 correct: False
+
+ID: DMT-0127
+Group: short
+Text: Duly noted
+Expected: ACKNOWLEDGMENT
+Predicted: QUESTION
+Model score: 0.2578
+Top-3: QUESTION (0.2578), STATEMENT (0.2436), AFFIRMATIVE_ANSWER (0.0846)
+Top-3 correct: False
+
+ID: DMT-0128
+Group: short
+Text: Information received
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.2902
+Top-3: STATEMENT (0.2902), QUESTION (0.2518), CLARIFICATION (0.0648)
+Top-3 correct: False
+
+ID: DMT-0129
+Group: short
+Text: I'm following
+Expected: ACKNOWLEDGMENT
+Predicted: GREETING
+Model score: 0.3872
+Top-3: GREETING (0.3872), STATEMENT (0.3376), UNCERTAINTY (0.0740)
+Top-3 correct: False
+
+ID: DMT-0130
+Group: short
+Text: Heard you
+Expected: ACKNOWLEDGMENT
+Predicted: QUESTION
+Model score: 0.7316
+Top-3: QUESTION (0.7316), STATEMENT (0.0741), GOODBYE (0.0553)
+Top-3 correct: False
+
+ID: DMT-0131
+Group: installation
+Text: I've noted the date shown on the screen.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.6534
+Top-3: STATEMENT (0.6534), QUESTION (0.1318), AFFIRMATIVE_ANSWER (0.0683)
+Top-3 correct: False
+
+ID: DMT-0132
+Group: installation
+Text: I've registered the information about the source.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.4889
+Top-3: STATEMENT (0.4889), QUESTION (0.1546), AFFIRMATIVE_ANSWER (0.0884)
+Top-3 correct: False
+
+ID: DMT-0133
+Group: installation
+Text: I follow your description of the verification process.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.3774
+Top-3: STATEMENT (0.3774), QUESTION (0.3189), AFFIRMATIVE_ANSWER (0.0791)
+Top-3 correct: False
+
+ID: DMT-0134
+Group: installation
+Text: I've heard your explanation of the video.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.3885
+Top-3: STATEMENT (0.3885), QUESTION (0.2732), AFFIRMATIVE_ANSWER (0.0898)
+Top-3 correct: False
+
+ID: DMT-0135
+Group: installation
+Text: I've taken in the details you've displayed.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.5042
+Top-3: STATEMENT (0.5042), QUESTION (0.3659), AFFIRMATIVE_ANSWER (0.0416)
+Top-3 correct: False
+
+ID: DMT-0136
+Group: complex
+Text: I have registered the information you provided without forming a judgment.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.4319
+Top-3: STATEMENT (0.4319), QUESTION (0.2641), AFFIRMATIVE_ANSWER (0.0663)
+Top-3 correct: False
+
+ID: DMT-0137
+Group: complex
+Text: I follow the sequence of events you've just described.
+Expected: ACKNOWLEDGMENT
+Predicted: QUESTION
+Model score: 0.3854
+Top-3: QUESTION (0.3854), STATEMENT (0.3612), AFFIRMATIVE_ANSWER (0.0746)
+Top-3 correct: False
+
+ID: DMT-0138
+Group: complex
+Text: I've taken note of the distinction you made between the two reports.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.4872
+Top-3: STATEMENT (0.4872), QUESTION (0.2130), GOODBYE (0.0822)
+Top-3 correct: False
+
+ID: DMT-0139
+Group: complex
+Text: I understand the procedure you've outlined for this session.
+Expected: ACKNOWLEDGMENT
+Predicted: QUESTION
+Model score: 0.4824
+Top-3: QUESTION (0.4824), STATEMENT (0.2889), AGREEMENT (0.0443)
+Top-3 correct: False
+
+ID: DMT-0140
+Group: complex
+Text: I've heard your account and am following what you're telling me.
+Expected: ACKNOWLEDGMENT
+Predicted: STATEMENT
+Model score: 0.3385
+Top-3: STATEMENT (0.3385), QUESTION (0.2271), CLARIFICATION (0.1665)
+Top-3 correct: False
+
+ID: DMT-0143
+Group: natural
+Text: Yes, I'm available for that.
+Expected: AFFIRMATIVE_ANSWER
+Predicted: STATEMENT
+Model score: 0.2231
+Top-3: STATEMENT (0.2231), AGREEMENT (0.1615), AFFIRMATIVE_ANSWER (0.1493)
+Top-3 correct: True
+
+ID: DMT-0144
+Group: natural
+Text: Yes, I'd be happy to.
+Expected: AFFIRMATIVE_ANSWER
+Predicted: GOODBYE
+Model score: 0.2269
+Top-3: GOODBYE (0.2269), STATEMENT (0.1764), AFFIRMATIVE_ANSWER (0.1573)
+Top-3 correct: True
+
+ID: DMT-0153
+Group: installation
+Text: Yes, I've watched the entire clip.
+Expected: AFFIRMATIVE_ANSWER
+Predicted: STATEMENT
+Model score: 0.3716
+Top-3: STATEMENT (0.3716), AFFIRMATIVE_ANSWER (0.2661), AGREEMENT (0.0820)
+Top-3 correct: True
+
+ID: DMT-0156
+Group: complex
+Text: Yes, I would be willing to answer another question about the report.
+Expected: AFFIRMATIVE_ANSWER
+Predicted: STATEMENT
+Model score: 0.3067
+Top-3: STATEMENT (0.3067), AFFIRMATIVE_ANSWER (0.2884), QUESTION (0.1224)
+Top-3 correct: True
+
+ID: DMT-0158
+Group: complex
+Text: Yes, I'd like you to proceed with the comparison you offered.
+Expected: AFFIRMATIVE_ANSWER
+Predicted: QUESTION
+Model score: 0.2995
+Top-3: QUESTION (0.2995), STATEMENT (0.2006), GOODBYE (0.1666)
+Top-3 correct: False
+
+ID: DMT-0159
+Group: complex
+Text: Yes, I can confirm that I've finished viewing the material.
+Expected: AFFIRMATIVE_ANSWER
+Predicted: STATEMENT
+Model score: 0.3972
+Top-3: STATEMENT (0.3972), AFFIRMATIVE_ANSWER (0.3221), AGREEMENT (0.0945)
+Top-3 correct: True
+
+ID: DMT-0163
+Group: natural
+Text: No, I'm unavailable for that.
+Expected: NEGATIVE_ANSWER
+Predicted: STATEMENT
+Model score: 0.2132
+Top-3: STATEMENT (0.2132), DISAGREEMENT (0.1909), GRATITUDE (0.1668)
+Top-3 correct: False
+
+ID: DMT-0167
+Group: short
+Text: I cannot
+Expected: NEGATIVE_ANSWER
+Predicted: UNCERTAINTY
+Model score: 0.8162
+Top-3: UNCERTAINTY (0.8162), DISAGREEMENT (0.1288), STATEMENT (0.0149)
+Top-3 correct: False
+
+ID: DMT-0179
+Group: complex
+Text: No, I wasn't able to view the entire video before responding.
+Expected: NEGATIVE_ANSWER
+Predicted: DISAGREEMENT
+Model score: 0.2816
+Top-3: DISAGREEMENT (0.2816), STATEMENT (0.2580), NEGATIVE_ANSWER (0.1654)
+Top-3 correct: True
+
+ID: DMT-0185
+Group: natural
+Text: Which option costs less?
+Expected: QUESTION
+Predicted: STATEMENT
+Model score: 0.3993
+Top-3: STATEMENT (0.3993), QUESTION (0.2917), CLARIFICATION (0.0574)
+Top-3 correct: True
+
+ID: DMT-0187
+Group: short
+Text: When exactly?
+Expected: QUESTION
+Predicted: AGREEMENT
+Model score: 0.7410
+Top-3: AGREEMENT (0.7410), AFFIRMATIVE_ANSWER (0.1273), STATEMENT (0.0790)
+Top-3 correct: False
+
+ID: DMT-0201
+Group: natural
+Text: Would you mind saying that once more?
+Expected: CLARIFICATION
+Predicted: QUESTION
+Model score: 0.6185
+Top-3: QUESTION (0.6185), STATEMENT (0.1425), CLARIFICATION (0.0869)
+Top-3 correct: True
+
+ID: DMT-0203
+Group: natural
+Text: I'm unclear about your last remark.
+Expected: CLARIFICATION
+Predicted: QUESTION
+Model score: 0.3937
+Top-3: QUESTION (0.3937), STATEMENT (0.3130), GREETING (0.0523)
+Top-3 correct: False
+
+ID: DMT-0207
+Group: short
+Text: Come again?
+Expected: CLARIFICATION
+Predicted: GOODBYE
+Model score: 0.3354
+Top-3: GOODBYE (0.3354), STATEMENT (0.2126), QUESTION (0.1980)
+Top-3 correct: False
+
+ID: DMT-0215
+Group: installation
+Text: I'm unclear about the distinction you just made between the reports.
+Expected: CLARIFICATION
+Predicted: STATEMENT
+Model score: 0.4112
+Top-3: STATEMENT (0.4112), QUESTION (0.3459), CLARIFICATION (0.0701)
+Top-3 correct: True
+
+ID: DMT-0219
+Group: complex
+Text: I'm not clear whether your last remark referred to the clip or the article.
+Expected: CLARIFICATION
+Predicted: STATEMENT
+Model score: 0.4452
+Top-3: STATEMENT (0.4452), QUESTION (0.2953), UNCERTAINTY (0.0804)
+Top-3 correct: False
+
+ID: DMT-0220
+Group: complex
+Text: Would you clarify the meaning of the phrase you used in your previous response?
+Expected: CLARIFICATION
+Predicted: QUESTION
+Model score: 0.5789
+Top-3: QUESTION (0.5789), CLARIFICATION (0.2866), STATEMENT (0.0674)
+Top-3 correct: True
+
+ID: DMT-0230
+Group: short
+Text: I'm visiting
+Expected: STATEMENT
+Predicted: GREETING
+Model score: 0.3823
+Top-3: GREETING (0.3823), STATEMENT (0.3072), AFFIRMATIVE_ANSWER (0.0779)
+Top-3 correct: True
+
+ID: DMT-0234
+Group: installation
+Text: The report includes a chart with five columns.
+Expected: STATEMENT
+Predicted: QUESTION
+Model score: 0.5428
+Top-3: QUESTION (0.5428), STATEMENT (0.3157), AFFIRMATIVE_ANSWER (0.0324)
+Top-3 correct: True
+
+=== SAVED EXPERIMENT FILES ===
+E09_06_02e_results.csv
+E09_06_02e_predictions.csv
+E09_06_02e_classification_report.csv
+E09_06_02e_class_summary.csv
+E09_06_02e_group_results.csv
+E09_06_02e_intent_group_accuracy.csv
+E09_06_02e_confusion_matrix.csv
+E09_06_02e_errors.csv
+E09_06_02e_error_pairs.csv
+
+=== EXPERIMENT INTEGRITY ===
+Dataset unchanged: True
+Model file unchanged: True
+Exact training text overlap: 0
+Model training performed: NO
+Hyperparameter tuning performed: NO
+
+=== FINAL EXPERIMENT SUMMARY ===
+records: 240
+correct: 149
+accuracy: 0.6208
+macro_precision: 0.7102
+macro_recall: 0.6208
+macro_f1: 0.6156
+weighted_f1: 0.6156
+top3_accuracy: 0.8000
+inference_seconds: 0.0333
+milliseconds_per_record: 0.1389
+
+=== FROZEN MODEL EVALUATION COMPLETE ===

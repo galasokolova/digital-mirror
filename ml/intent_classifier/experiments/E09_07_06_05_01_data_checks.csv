@@ -1,0 +1,16 @@
+check,passed
+Expected training size,True
+All training classes retained,True
+No empty training texts,True
+Unique contrastive IDs,True
+Unique contrastive model texts,True
+No contrastive / Switchboard Train overlap,True
+No contrastive / Digital Mirror overlap,True
+No contrastive / Validation overlap,True
+No contrastive / Benchmark overlap,True
+No Digital Mirror / Validation overlap,True
+No training / Benchmark overlap,True
+Unique benchmark model texts,True
+Balanced benchmark classes,True
+No Switchboard conversation overlap,True
+Expected contrastive dataset hash,True

@@ -1,0 +1,13 @@
+intent,topics_present,dominant_topic,dominant_topic_records,dominant_topic_share
+GREETING,12,art_exhibitions,11,0.11
+GOODBYE,12,art_exhibitions,11,0.11
+GRATITUDE,12,art_exhibitions,11,0.11
+AGREEMENT,12,news_media,10,0.1
+DISAGREEMENT,12,news_media,10,0.1
+UNCERTAINTY,12,news_media,10,0.1
+ACKNOWLEDGMENT,12,news_media,10,0.1
+AFFIRMATIVE_ANSWER,12,video_audio,11,0.11
+NEGATIVE_ANSWER,12,video_audio,11,0.11
+QUESTION,12,video_audio,11,0.11
+CLARIFICATION,12,video_audio,11,0.11
+STATEMENT,12,news_media,10,0.1

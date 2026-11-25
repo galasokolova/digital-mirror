@@ -1,0 +1,249 @@
+=== E04: UTTERANCE RECONSTRUCTION ===
+Transcript files found: 1155
+
+=== RECONSTRUCTION STATISTICS ===
+Original rows: 223,606
+Continuation rows: 18,691
+Merged continuations: 18,691
+Orphan continuations: 0
+Reconstructed rows: 204,915
+
+=== VALIDATION ===
+Row accounting: PASSED
+Continuation accounting: PASSED
+Remaining continuation tags: 0
+Output row count: PASSED
+
+=== SEGMENT COUNT DISTRIBUTION ===
+segment_count
+1    188556
+2     14398
+3      1670
+4       232
+5        43
+6        11
+7         5
+
+=== LABEL DISTRIBUTION ===
+damsl_tag
+sd                 75403
+b                  38381
+sv                 26527
+%                  15682
+aa                 11157
+ba                  4797
+qy                  4760
+x                   3678
+ny                  3040
+fc                  2585
+qw                  1990
+nn                  1378
+bk                  1309
+h                   1227
+fo_o_fw_"_by_bc     1222
+qy^d                1217
+bh                  1057
+^q                   986
+bf                   961
+na                   851
+ad                   752
+^2                   730
+b^m                  689
+qo                   657
+qh                   578
+^h                   557
+ar                   345
+ng                   303
+br                   299
+no                   286
+fp                   225
+qrr                  210
+arp_nd               207
+t3                   117
+oo_co_cc             110
+aap_am               105
+bd                   104
+t1                   103
+^g                    93
+qw^d                  80
+fa                    79
+ft                    78
+
+=== RECONSTRUCTED EXAMPLES ===
+
+======================================================================
+Conversation: 2457
+Caller: B
+Tag: sd
+Segments: 2
+Source indices: [59, 61]
+Source tags: ['sd', '+']
+Text: {C and } it's just you never really have like nice cool sixty-five or seventy degree weather with sunshine -- -- {D you know? }  /
+
+======================================================================
+Conversation: 3294
+Caller: A
+Tag: sd
+Segments: 2
+Source indices: [18, 20]
+Source tags: ['sd', '+']
+Text: {C and } just as we're preparing dinner or eating dinner -- -- the phone rings  /
+
+======================================================================
+Conversation: 2968
+Caller: A
+Tag: sd
+Segments: 2
+Source indices: [108, 110]
+Source tags: ['sd', '+@']
+Text: Like what makes a firefly light, {D you know } <laughter> </child_talking>. /
+
+======================================================================
+Conversation: 2678
+Caller: A
+Tag: sv
+Segments: 2
+Source indices: [188, 190]
+Source tags: ['sv', '+']
+Text: [ {C But } I, + {C but } I ] guess music comes  into that whole aspect of listening. {D So } as long you're listening.  /
+
+======================================================================
+Conversation: 2163
+Caller: B
+Tag: sd
+Segments: 2
+Source indices: [79, 81]
+Source tags: ['sd', '+']
+Text: I did switch to one, {F uh, } sponsored by the credit union, though. That seems to be a pretty low interest. {D Yeah, }  compared to some of the other ones. /
+
+======================================================================
+Conversation: 3020
+Caller: A
+Tag: sd
+Segments: 2
+Source indices: [5, 7]
+Source tags: ['sd', '+']
+Text: {C but } I never made it off of Oahu, which I've heard is not the nicest of the islands. /
+
+======================================================================
+Conversation: 2519
+Caller: A
+Tag: sv
+Segments: 4
+Source indices: [98, 100, 102, 104]
+Source tags: ['sv', '+', '+', '+']
+Text: {D You know, } [ during, +  when ] you're sitting watching T V at night, during every commercial get up off the couch, go to the living room and get a glass  of water, go to the bedroom and make the bed, go do something, but get up during every commercial.  And, things like that.  /
+
+======================================================================
+Conversation: 3019
+Caller: B
+Tag: fo_o_fw_"_by_bc
+Segments: 2
+Source indices: [69, 71]
+Source tags: ['o@', '+@']
+Text: That's right, {C and } some of those are fine programs. /
+
+======================================================================
+Conversation: 2797
+Caller: A
+Tag: %
+Segments: 2
+Source indices: [200, 203]
+Source tags: ['%', '+']
+Text: {C and, } they <laughter> {D you know, } - /
+
+======================================================================
+Conversation: 3251
+Caller: A
+Tag: sd
+Segments: 2
+Source indices: [119, 121]
+Source tags: ['sd', '+']
+Text: -- [ you, +  you -- ] -- really take a chance with them freezing, /
+
+======================================================================
+Conversation: 3346
+Caller: A
+Tag: sv
+Segments: 2
+Source indices: [119, 122]
+Source tags: ['sv', '+@']
+Text: course now Peace Corps,  that couldn't be done of course, until they were done with school -- -- {C so, } - *[[should this be it's own slash unit?]]/
+
+======================================================================
+Conversation: 2247
+Caller: B
+Tag: sd
+Segments: 2
+Source indices: [82, 84]
+Source tags: ['sd', '+']
+Text: {D Well, } it's just a huge file that tries to describe the requirements of what you're trying to build. {F Uh, } to one level down from assistant description. /
+
+======================================================================
+Conversation: 3926
+Caller: A
+Tag: sv
+Segments: 2
+Source indices: [33, 35]
+Source tags: ['sv', '+']
+Text: {C and, } {F uh, }  what bothers me is I was concerned of the ability of some of the people in the jury  to adequately understand -- -- what was being presented  so  that they themselves could make a proper and, {F uh, } accurate decision.  /
+
+======================================================================
+Conversation: 2576
+Caller: A
+Tag: sv
+Segments: 2
+Source indices: [44, 46]
+Source tags: ['sv', '+']
+Text: {C and, } {F uh, } they [ don't -- + -- no longer ] feel dependent upon men, /
+
+======================================================================
+Conversation: 2959
+Caller: A
+Tag: sv
+Segments: 2
+Source indices: [247, 249]
+Source tags: ['sv', '+']
+Text: You stand there with a rifle and blow [ a, + a ] piece of somebody apart, or blow their head off, /
+
+=== LONGEST RECONSTRUCTIONS ===
+
+======================================================================
+Conversation: 2429
+Caller: A
+Segments: 7
+Tag: bf
+Text: [ that + that ] got pretty competitive {D you know } as far as <breathing> who could come up with the best recipe <laughter> /
+
+======================================================================
+Conversation: 2780
+Caller: B
+Segments: 7
+Tag: sd
+Text: {D Now } [ I am + I am ] adamantly against that. /
+
+======================================================================
+Conversation: 2780
+Caller: A
+Segments: 7
+Tag: sd
+Text: I don't know if I could ever be a judge, because some things emotionally just aren't {D you know } -/
+
+======================================================================
+Conversation: 2926
+Caller: B
+Segments: 7
+Tag: sd
+Text: # {C But } [ you kn-, + # you know ]  what's really funny is that [ they, + there's ] been some research, because [ I'm a, + I'm a ]  college professor, <Lipsmack> [ [ {C and, } + {F um, } {F uh, } {C and, } ] +  {C and, } ] [ w-, + ] a lot of the research shows that like, [ Georgetown, + while Hewing was playing at Georgetown, ] {A basketball, Georgetown, } and they were winning, endowment to the university, in other words,   money that could to everything, everything, and normally gets directed away from sports, realistically, a lot of the, was, {F uh, }  was probably, two-thirds, I guess it's now two-thirds of what it was when they were national champions. -/
+
+======================================================================
+Conversation: 3104
+Caller: B
+Segments: 7
+Tag: sd
+Text: {E I mean } I was, taken out of my element, {D you know, } the homogeny midwest, which is a lovely place to grow up, and put into someplace else where, people thought differently, looked differently, sounded differently, {D you know, } different life style.  /
+
+=== OUTPUT ===
+Saved to: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\switchboard_reconstructed.csv
+
+=== RECONSTRUCTION COMPLETE ===

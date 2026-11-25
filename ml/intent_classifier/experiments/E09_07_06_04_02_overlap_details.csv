@@ -1,0 +1,3 @@
+id,text,model_text,intent,reference,reference_role,reference_labels,relation,exclusion_reason
+DMC-0032,Who wrote the article?,who wrote the article,QUESTION,digital_mirror_original,diagnostic,QUESTION,SAME_LABEL,
+DMC-0032,Who wrote the article?,who wrote the article,QUESTION,digital_mirror_eligible,training,QUESTION,SAME_LABEL,existing_domain_duplicate

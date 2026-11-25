@@ -1,0 +1,74 @@
+=== E08a.3: CONVERSATION-BASED SPLIT ===
+Random state: 42
+Input rows: 170,706
+Conversations: 1,155
+
+=== SPLIT STATISTICS ===
+
+TRAIN
+Rows: 135,827
+Percentage: 79.57%
+Conversations: 924
+Intent classes: 12
+
+VALIDATION
+Rows: 16,913
+Percentage: 9.91%
+Conversations: 115
+Intent classes: 12
+
+TEST
+Rows: 17,966
+Percentage: 10.52%
+Conversations: 116
+Intent classes: 12
+
+=== CLASS DISTRIBUTION ===
+                    train  validation   test   total
+intent                                              
+GREETING              167          26     32     225
+GOODBYE              2099         220    265    2584
+GRATITUDE              60           7     11      78
+AGREEMENT            8756        1069   1332   11157
+DISAGREEMENT          284          23     38     345
+UNCERTAINTY           973         113    141    1227
+ACKNOWLEDGMENT      30564        3809   4005   38378
+AFFIRMATIVE_ANSWER   3083         428    380    3891
+NEGATIVE_ANSWER      1341         170    170    1681
+QUESTION             7048         967    898    8913
+CLARIFICATION         247          23     29     299
+STATEMENT           81205       10058  10665  101928
+
+=== RARE CLASS WARNINGS ===
+WARNING: validation / GRATITUDE: 7 examples
+
+=== SPLIT OVERLAP ===
+
+train <-> validation
+Shared conversations: 0
+Shared normalized texts: 505
+
+train <-> test
+Shared conversations: 0
+Shared normalized texts: 517
+
+validation <-> test
+Shared conversations: 0
+Shared normalized texts: 227
+
+=== VALIDATION ===
+Row accounting: PASSED
+Row overlap: 0
+train: missing classes = []
+validation: missing classes = []
+test: missing classes = []
+Class coverage: PASSED
+Empty model texts: 0
+Conversation isolation: PASSED
+
+=== OUTPUT FILES ===
+Saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\intent_v1\train.csv
+Saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\intent_v1\validation.csv
+Saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\intent_v1\test.csv
+
+=== SPLIT COMPLETE ===

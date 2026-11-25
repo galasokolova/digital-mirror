@@ -1,0 +1,241 @@
+id,text,intent,group,source,normalized_text,model_text
+DMT-0001,"Hello there, how's everything going?",GREETING,natural,digital_mirror_synthetic_test_v1,"hello there, how's everything going?",hello there how's everything going
+DMT-0002,It's lovely to meet you today.,GREETING,natural,digital_mirror_synthetic_test_v1,it's lovely to meet you today.,it's lovely to meet you today
+DMT-0003,"Greetings, nice to be here.",GREETING,natural,digital_mirror_synthetic_test_v1,"greetings, nice to be here.",greetings nice to be here
+DMT-0004,Hope you're having a pleasant morning.,GREETING,natural,digital_mirror_synthetic_test_v1,hope you're having a pleasant morning.,hope you're having a pleasant morning
+DMT-0005,A warm hello to you.,GREETING,natural,digital_mirror_synthetic_test_v1,a warm hello to you.,a warm hello to you
+DMT-0006,Howdy,GREETING,short,digital_mirror_synthetic_test_v1,howdy,howdy
+DMT-0007,Greetings to you,GREETING,short,digital_mirror_synthetic_test_v1,greetings to you,greetings to you
+DMT-0008,Lovely morning,GREETING,short,digital_mirror_synthetic_test_v1,lovely morning,lovely morning
+DMT-0009,"Hello, good morning",GREETING,short,digital_mirror_synthetic_test_v1,"hello, good morning",hello good morning
+DMT-0010,Hiya there,GREETING,short,digital_mirror_synthetic_test_v1,hiya there,hiya there
+DMT-0011,"Hello, interactive mirror, nice to meet you.",GREETING,installation,digital_mirror_synthetic_test_v1,"hello, interactive mirror, nice to meet you.",hello interactive mirror nice to meet you
+DMT-0012,"Hi, is this where we begin?",GREETING,installation,digital_mirror_synthetic_test_v1,"hi, is this where we begin?",hi is this where we begin
+DMT-0013,Greetings to the virtual host.,GREETING,installation,digital_mirror_synthetic_test_v1,greetings to the virtual host.,greetings to the virtual host
+DMT-0014,"Hello, I'm here for the experience.",GREETING,installation,digital_mirror_synthetic_test_v1,"hello, i'm here for the experience.",hello i'm here for the experience
+DMT-0015,"Hi there, interactive mirror.",GREETING,installation,digital_mirror_synthetic_test_v1,"hi there, interactive mirror.",hi there interactive mirror
+DMT-0016,"Before we begin, I'd like to say hello.",GREETING,complex,digital_mirror_synthetic_test_v1,"before we begin, i'd like to say hello.",before we begin i'd like to say hello
+DMT-0017,What a pleasure it is to meet you today.,GREETING,complex,digital_mirror_synthetic_test_v1,what a pleasure it is to meet you today.,what a pleasure it is to meet you today
+DMT-0018,Hello to whoever is guiding this experience.,GREETING,complex,digital_mirror_synthetic_test_v1,hello to whoever is guiding this experience.,hello to whoever is guiding this experience
+DMT-0019,Allow me to introduce myself and say hello.,GREETING,complex,digital_mirror_synthetic_test_v1,allow me to introduce myself and say hello.,allow me to introduce myself and say hello
+DMT-0020,A very good afternoon to everyone here.,GREETING,complex,digital_mirror_synthetic_test_v1,a very good afternoon to everyone here.,a very good afternoon to everyone here
+DMT-0021,I'll be heading off shortly.,GOODBYE,natural,digital_mirror_synthetic_test_v1,i'll be heading off shortly.,i'll be heading off shortly
+DMT-0022,Enjoy the rest of your afternoon.,GOODBYE,natural,digital_mirror_synthetic_test_v1,enjoy the rest of your afternoon.,enjoy the rest of your afternoon
+DMT-0023,I hope our paths cross again.,GOODBYE,natural,digital_mirror_synthetic_test_v1,i hope our paths cross again.,i hope our paths cross again
+DMT-0024,I must be on my way.,GOODBYE,natural,digital_mirror_synthetic_test_v1,i must be on my way.,i must be on my way
+DMT-0025,Wishing you a pleasant evening.,GOODBYE,natural,digital_mirror_synthetic_test_v1,wishing you a pleasant evening.,wishing you a pleasant evening
+DMT-0026,Farewell for now,GOODBYE,short,digital_mirror_synthetic_test_v1,farewell for now,farewell for now
+DMT-0027,Goodbye for today,GOODBYE,short,digital_mirror_synthetic_test_v1,goodbye for today,goodbye for today
+DMT-0028,Cheerio,GOODBYE,short,digital_mirror_synthetic_test_v1,cheerio,cheerio
+DMT-0029,Bye for today,GOODBYE,short,digital_mirror_synthetic_test_v1,bye for today,bye for today
+DMT-0030,Until tomorrow,GOODBYE,short,digital_mirror_synthetic_test_v1,until tomorrow,until tomorrow
+DMT-0031,"That's the end of my visit, farewell.",GOODBYE,installation,digital_mirror_synthetic_test_v1,"that's the end of my visit, farewell.",that's the end of my visit farewell
+DMT-0032,"I'm leaving the exhibition now, bye.",GOODBYE,installation,digital_mirror_synthetic_test_v1,"i'm leaving the exhibition now, bye.",i'm leaving the exhibition now bye
+DMT-0033,"Goodbye, virtual host.",GOODBYE,installation,digital_mirror_synthetic_test_v1,"goodbye, virtual host.",goodbye virtual host
+DMT-0034,"I'll finish my session here, farewell.",GOODBYE,installation,digital_mirror_synthetic_test_v1,"i'll finish my session here, farewell.",i'll finish my session here farewell
+DMT-0035,See you on my next visit to the mirror.,GOODBYE,installation,digital_mirror_synthetic_test_v1,see you on my next visit to the mirror.,see you on my next visit to the mirror
+DMT-0036,"I've enjoyed our conversation, but it's time to leave.",GOODBYE,complex,digital_mirror_synthetic_test_v1,"i've enjoyed our conversation, but it's time to leave.",i've enjoyed our conversation but it's time to leave
+DMT-0037,"Before I head out, let me wish you well.",GOODBYE,complex,digital_mirror_synthetic_test_v1,"before i head out, let me wish you well.",before i head out let me wish you well
+DMT-0038,"I'll leave you to your next visitor now, goodbye.",GOODBYE,complex,digital_mirror_synthetic_test_v1,"i'll leave you to your next visitor now, goodbye.",i'll leave you to your next visitor now goodbye
+DMT-0039,"Although I'd enjoy staying longer, I must say farewell.",GOODBYE,complex,digital_mirror_synthetic_test_v1,"although i'd enjoy staying longer, i must say farewell.",although i'd enjoy staying longer i must say farewell
+DMT-0040,"Our conversation has come to an end, so goodbye for now.",GOODBYE,complex,digital_mirror_synthetic_test_v1,"our conversation has come to an end, so goodbye for now.",our conversation has come to an end so goodbye for now
+DMT-0041,I'm grateful for your assistance.,GRATITUDE,natural,digital_mirror_synthetic_test_v1,i'm grateful for your assistance.,i'm grateful for your assistance
+DMT-0042,That was very kind of you.,GRATITUDE,natural,digital_mirror_synthetic_test_v1,that was very kind of you.,that was very kind of you
+DMT-0043,"You've been a great help, thanks.",GRATITUDE,natural,digital_mirror_synthetic_test_v1,"you've been a great help, thanks.",you've been a great help thanks
+DMT-0044,Your help means a great deal to me.,GRATITUDE,natural,digital_mirror_synthetic_test_v1,your help means a great deal to me.,your help means a great deal to me
+DMT-0045,I'm thankful for your time.,GRATITUDE,natural,digital_mirror_synthetic_test_v1,i'm thankful for your time.,i'm thankful for your time
+DMT-0046,Really appreciate that,GRATITUDE,short,digital_mirror_synthetic_test_v1,really appreciate that,really appreciate that
+DMT-0047,Thanks for everything,GRATITUDE,short,digital_mirror_synthetic_test_v1,thanks for everything,thanks for everything
+DMT-0048,Thanks kindly,GRATITUDE,short,digital_mirror_synthetic_test_v1,thanks kindly,thanks kindly
+DMT-0049,My thanks,GRATITUDE,short,digital_mirror_synthetic_test_v1,my thanks,my thanks
+DMT-0050,Very grateful,GRATITUDE,short,digital_mirror_synthetic_test_v1,very grateful,very grateful
+DMT-0051,I'm grateful for the evidence you provided.,GRATITUDE,installation,digital_mirror_synthetic_test_v1,i'm grateful for the evidence you provided.,i'm grateful for the evidence you provided
+DMT-0052,Thanks for displaying the original report.,GRATITUDE,installation,digital_mirror_synthetic_test_v1,thanks for displaying the original report.,thanks for displaying the original report
+DMT-0053,I appreciate the explanation of that headline.,GRATITUDE,installation,digital_mirror_synthetic_test_v1,i appreciate the explanation of that headline.,i appreciate the explanation of that headline
+DMT-0054,Thank you for guiding me through the exhibit.,GRATITUDE,installation,digital_mirror_synthetic_test_v1,thank you for guiding me through the exhibit.,thank you for guiding me through the exhibit
+DMT-0055,"Your comparison of the sources was helpful, thanks.",GRATITUDE,installation,digital_mirror_synthetic_test_v1,"your comparison of the sources was helpful, thanks.",your comparison of the sources was helpful thanks
+DMT-0056,I want to express my gratitude for the time you spent helping me.,GRATITUDE,complex,digital_mirror_synthetic_test_v1,i want to express my gratitude for the time you spent helping me.,i want to express my gratitude for the time you spent helping me
+DMT-0057,Your willingness to explain the details is much appreciated.,GRATITUDE,complex,digital_mirror_synthetic_test_v1,your willingness to explain the details is much appreciated.,your willingness to explain the details is much appreciated
+DMT-0058,I'm genuinely thankful that you took the trouble to clarify this.,GRATITUDE,complex,digital_mirror_synthetic_test_v1,i'm genuinely thankful that you took the trouble to clarify this.,i'm genuinely thankful that you took the trouble to clarify this
+DMT-0059,Please accept my thanks for making the information accessible.,GRATITUDE,complex,digital_mirror_synthetic_test_v1,please accept my thanks for making the information accessible.,please accept my thanks for making the information accessible
+DMT-0060,I appreciate how patiently you've answered my questions.,GRATITUDE,complex,digital_mirror_synthetic_test_v1,i appreciate how patiently you've answered my questions.,i appreciate how patiently you've answered my questions
+DMT-0061,You've made a valid point.,AGREEMENT,natural,digital_mirror_synthetic_test_v1,you've made a valid point.,you've made a valid point
+DMT-0062,That's precisely my view.,AGREEMENT,natural,digital_mirror_synthetic_test_v1,that's precisely my view.,that's precisely my view
+DMT-0063,Your reasoning makes sense to me.,AGREEMENT,natural,digital_mirror_synthetic_test_v1,your reasoning makes sense to me.,your reasoning makes sense to me
+DMT-0064,We're of the same opinion.,AGREEMENT,natural,digital_mirror_synthetic_test_v1,we're of the same opinion.,we're of the same opinion
+DMT-0065,I share your assessment.,AGREEMENT,natural,digital_mirror_synthetic_test_v1,i share your assessment.,i share your assessment
+DMT-0066,Spot on,AGREEMENT,short,digital_mirror_synthetic_test_v1,spot on,spot on
+DMT-0067,Quite right,AGREEMENT,short,digital_mirror_synthetic_test_v1,quite right,quite right
+DMT-0068,Agreed entirely,AGREEMENT,short,digital_mirror_synthetic_test_v1,agreed entirely,agreed entirely
+DMT-0069,My thoughts exactly,AGREEMENT,short,digital_mirror_synthetic_test_v1,my thoughts exactly,my thoughts exactly
+DMT-0070,True indeed,AGREEMENT,short,digital_mirror_synthetic_test_v1,true indeed,true indeed
+DMT-0071,Your assessment of that headline matches mine.,AGREEMENT,installation,digital_mirror_synthetic_test_v1,your assessment of that headline matches mine.,your assessment of that headline matches mine
+DMT-0072,I share your conclusion about the evidence.,AGREEMENT,installation,digital_mirror_synthetic_test_v1,i share your conclusion about the evidence.,i share your conclusion about the evidence
+DMT-0073,I agree that the clip is misleading.,AGREEMENT,installation,digital_mirror_synthetic_test_v1,i agree that the clip is misleading.,i agree that the clip is misleading
+DMT-0074,Your interpretation of the report seems correct to me.,AGREEMENT,installation,digital_mirror_synthetic_test_v1,your interpretation of the report seems correct to me.,your interpretation of the report seems correct to me
+DMT-0075,We reach the same conclusion about this claim.,AGREEMENT,installation,digital_mirror_synthetic_test_v1,we reach the same conclusion about this claim.,we reach the same conclusion about this claim
+DMT-0076,"Having considered your reasoning, I reach the same conclusion.",AGREEMENT,complex,digital_mirror_synthetic_test_v1,"having considered your reasoning, i reach the same conclusion.",having considered your reasoning i reach the same conclusion
+DMT-0077,"On that particular issue, our opinions are entirely aligned.",AGREEMENT,complex,digital_mirror_synthetic_test_v1,"on that particular issue, our opinions are entirely aligned.",on that particular issue our opinions are entirely aligned
+DMT-0078,The argument you've presented is consistent with my own view.,AGREEMENT,complex,digital_mirror_synthetic_test_v1,the argument you've presented is consistent with my own view.,the argument you've presented is consistent with my own view
+DMT-0079,I endorse your conclusion because the evidence supports it.,AGREEMENT,complex,digital_mirror_synthetic_test_v1,i endorse your conclusion because the evidence supports it.,i endorse your conclusion because the evidence supports it
+DMT-0080,"Although I initially hesitated, I now agree with your assessment.",AGREEMENT,complex,digital_mirror_synthetic_test_v1,"although i initially hesitated, i now agree with your assessment.",although i initially hesitated i now agree with your assessment
+DMT-0081,That's not how I see things.,DISAGREEMENT,natural,digital_mirror_synthetic_test_v1,that's not how i see things.,that's not how i see things
+DMT-0082,Your conclusion seems mistaken to me.,DISAGREEMENT,natural,digital_mirror_synthetic_test_v1,your conclusion seems mistaken to me.,your conclusion seems mistaken to me
+DMT-0083,My view differs considerably from yours.,DISAGREEMENT,natural,digital_mirror_synthetic_test_v1,my view differs considerably from yours.,my view differs considerably from yours
+DMT-0084,I cannot endorse that argument.,DISAGREEMENT,natural,digital_mirror_synthetic_test_v1,i cannot endorse that argument.,i cannot endorse that argument
+DMT-0085,That reasoning doesn't hold up.,DISAGREEMENT,natural,digital_mirror_synthetic_test_v1,that reasoning doesn't hold up.,that reasoning doesn't hold up
+DMT-0086,I object,DISAGREEMENT,short,digital_mirror_synthetic_test_v1,i object,i object
+DMT-0087,Not so,DISAGREEMENT,short,digital_mirror_synthetic_test_v1,not so,not so
+DMT-0088,Quite the opposite,DISAGREEMENT,short,digital_mirror_synthetic_test_v1,quite the opposite,quite the opposite
+DMT-0089,That's mistaken,DISAGREEMENT,short,digital_mirror_synthetic_test_v1,that's mistaken,that's mistaken
+DMT-0090,I differ,DISAGREEMENT,short,digital_mirror_synthetic_test_v1,i differ,i differ
+DMT-0091,I reject your interpretation of the headline.,DISAGREEMENT,installation,digital_mirror_synthetic_test_v1,i reject your interpretation of the headline.,i reject your interpretation of the headline
+DMT-0092,Your assessment of this clip is incorrect.,DISAGREEMENT,installation,digital_mirror_synthetic_test_v1,your assessment of this clip is incorrect.,your assessment of this clip is incorrect
+DMT-0093,I dispute your conclusion about the source.,DISAGREEMENT,installation,digital_mirror_synthetic_test_v1,i dispute your conclusion about the source.,i dispute your conclusion about the source
+DMT-0094,I disagree with the way you've interpreted the evidence.,DISAGREEMENT,installation,digital_mirror_synthetic_test_v1,i disagree with the way you've interpreted the evidence.,i disagree with the way you've interpreted the evidence
+DMT-0095,The claim you just endorsed is wrong in my view.,DISAGREEMENT,installation,digital_mirror_synthetic_test_v1,the claim you just endorsed is wrong in my view.,the claim you just endorsed is wrong in my view
+DMT-0096,"Even after considering your argument, I cannot accept your conclusion.",DISAGREEMENT,complex,digital_mirror_synthetic_test_v1,"even after considering your argument, i cannot accept your conclusion.",even after considering your argument i cannot accept your conclusion
+DMT-0097,"While I respect your reasoning, I reach the opposite conclusion.",DISAGREEMENT,complex,digital_mirror_synthetic_test_v1,"while i respect your reasoning, i reach the opposite conclusion.",while i respect your reasoning i reach the opposite conclusion
+DMT-0098,The interpretation you've offered conflicts with my own assessment.,DISAGREEMENT,complex,digital_mirror_synthetic_test_v1,the interpretation you've offered conflicts with my own assessment.,the interpretation you've offered conflicts with my own assessment
+DMT-0099,I reject that explanation because its central premise is mistaken.,DISAGREEMENT,complex,digital_mirror_synthetic_test_v1,i reject that explanation because its central premise is mistaken.,i reject that explanation because its central premise is mistaken
+DMT-0100,"Despite the points you've raised, I remain opposed to your conclusion.",DISAGREEMENT,complex,digital_mirror_synthetic_test_v1,"despite the points you've raised, i remain opposed to your conclusion.",despite the points you've raised i remain opposed to your conclusion
+DMT-0101,I'm undecided about this.,UNCERTAINTY,natural,digital_mirror_synthetic_test_v1,i'm undecided about this.,i'm undecided about this
+DMT-0102,It's difficult for me to tell.,UNCERTAINTY,natural,digital_mirror_synthetic_test_v1,it's difficult for me to tell.,it's difficult for me to tell
+DMT-0103,I haven't formed an opinion yet.,UNCERTAINTY,natural,digital_mirror_synthetic_test_v1,i haven't formed an opinion yet.,i haven't formed an opinion yet
+DMT-0104,I could be mistaken about it.,UNCERTAINTY,natural,digital_mirror_synthetic_test_v1,i could be mistaken about it.,i could be mistaken about it
+DMT-0105,I'm torn between the possibilities.,UNCERTAINTY,natural,digital_mirror_synthetic_test_v1,i'm torn between the possibilities.,i'm torn between the possibilities
+DMT-0106,Possibly so,UNCERTAINTY,short,digital_mirror_synthetic_test_v1,possibly so,possibly so
+DMT-0107,Hard to tell,UNCERTAINTY,short,digital_mirror_synthetic_test_v1,hard to tell,hard to tell
+DMT-0108,Undecided,UNCERTAINTY,short,digital_mirror_synthetic_test_v1,undecided,undecided
+DMT-0109,Difficult to judge,UNCERTAINTY,short,digital_mirror_synthetic_test_v1,difficult to judge,difficult to judge
+DMT-0110,Not definite,UNCERTAINTY,short,digital_mirror_synthetic_test_v1,not definite,not definite
+DMT-0111,I haven't decided whether this headline is credible.,UNCERTAINTY,installation,digital_mirror_synthetic_test_v1,i haven't decided whether this headline is credible.,i haven't decided whether this headline is credible
+DMT-0112,I'm uncertain about the reliability of that clip.,UNCERTAINTY,installation,digital_mirror_synthetic_test_v1,i'm uncertain about the reliability of that clip.,i'm uncertain about the reliability of that clip
+DMT-0113,The evidence leaves me undecided.,UNCERTAINTY,installation,digital_mirror_synthetic_test_v1,the evidence leaves me undecided.,the evidence leaves me undecided
+DMT-0114,I can't tell which account is accurate.,UNCERTAINTY,installation,digital_mirror_synthetic_test_v1,i can't tell which account is accurate.,i can't tell which account is accurate
+DMT-0115,I'm unsure how to interpret this report.,UNCERTAINTY,installation,digital_mirror_synthetic_test_v1,i'm unsure how to interpret this report.,i'm unsure how to interpret this report
+DMT-0116,There are several plausible explanations and I cannot choose between them.,UNCERTAINTY,complex,digital_mirror_synthetic_test_v1,there are several plausible explanations and i cannot choose between them.,there are several plausible explanations and i cannot choose between them
+DMT-0117,I would need more information before forming a definite opinion.,UNCERTAINTY,complex,digital_mirror_synthetic_test_v1,i would need more information before forming a definite opinion.,i would need more information before forming a definite opinion
+DMT-0118,"Although both accounts sound plausible, I remain uncertain.",UNCERTAINTY,complex,digital_mirror_synthetic_test_v1,"although both accounts sound plausible, i remain uncertain.",although both accounts sound plausible i remain uncertain
+DMT-0119,I'm hesitant to draw a conclusion because the details are incomplete.,UNCERTAINTY,complex,digital_mirror_synthetic_test_v1,i'm hesitant to draw a conclusion because the details are incomplete.,i'm hesitant to draw a conclusion because the details are incomplete
+DMT-0120,At this point I cannot confidently determine which interpretation is correct.,UNCERTAINTY,complex,digital_mirror_synthetic_test_v1,at this point i cannot confidently determine which interpretation is correct.,at this point i cannot confidently determine which interpretation is correct
+DMT-0121,I've heard what you've said.,ACKNOWLEDGMENT,natural,digital_mirror_synthetic_test_v1,i've heard what you've said.,i've heard what you've said
+DMT-0122,I've followed your explanation so far.,ACKNOWLEDGMENT,natural,digital_mirror_synthetic_test_v1,i've followed your explanation so far.,i've followed your explanation so far
+DMT-0123,I've taken note of that.,ACKNOWLEDGMENT,natural,digital_mirror_synthetic_test_v1,i've taken note of that.,i've taken note of that
+DMT-0124,Your message has been received.,ACKNOWLEDGMENT,natural,digital_mirror_synthetic_test_v1,your message has been received.,your message has been received
+DMT-0125,I'm following the discussion.,ACKNOWLEDGMENT,natural,digital_mirror_synthetic_test_v1,i'm following the discussion.,i'm following the discussion
+DMT-0126,Understood so far,ACKNOWLEDGMENT,short,digital_mirror_synthetic_test_v1,understood so far,understood so far
+DMT-0127,Duly noted,ACKNOWLEDGMENT,short,digital_mirror_synthetic_test_v1,duly noted,duly noted
+DMT-0128,Information received,ACKNOWLEDGMENT,short,digital_mirror_synthetic_test_v1,information received,information received
+DMT-0129,I'm following,ACKNOWLEDGMENT,short,digital_mirror_synthetic_test_v1,i'm following,i'm following
+DMT-0130,Heard you,ACKNOWLEDGMENT,short,digital_mirror_synthetic_test_v1,heard you,heard you
+DMT-0131,I've noted the date shown on the screen.,ACKNOWLEDGMENT,installation,digital_mirror_synthetic_test_v1,i've noted the date shown on the screen.,i've noted the date shown on the screen
+DMT-0132,I've registered the information about the source.,ACKNOWLEDGMENT,installation,digital_mirror_synthetic_test_v1,i've registered the information about the source.,i've registered the information about the source
+DMT-0133,I follow your description of the verification process.,ACKNOWLEDGMENT,installation,digital_mirror_synthetic_test_v1,i follow your description of the verification process.,i follow your description of the verification process
+DMT-0134,I've heard your explanation of the video.,ACKNOWLEDGMENT,installation,digital_mirror_synthetic_test_v1,i've heard your explanation of the video.,i've heard your explanation of the video
+DMT-0135,I've taken in the details you've displayed.,ACKNOWLEDGMENT,installation,digital_mirror_synthetic_test_v1,i've taken in the details you've displayed.,i've taken in the details you've displayed
+DMT-0136,I have registered the information you provided without forming a judgment.,ACKNOWLEDGMENT,complex,digital_mirror_synthetic_test_v1,i have registered the information you provided without forming a judgment.,i have registered the information you provided without forming a judgment
+DMT-0137,I follow the sequence of events you've just described.,ACKNOWLEDGMENT,complex,digital_mirror_synthetic_test_v1,i follow the sequence of events you've just described.,i follow the sequence of events you've just described
+DMT-0138,I've taken note of the distinction you made between the two reports.,ACKNOWLEDGMENT,complex,digital_mirror_synthetic_test_v1,i've taken note of the distinction you made between the two reports.,i've taken note of the distinction you made between the two reports
+DMT-0139,I understand the procedure you've outlined for this session.,ACKNOWLEDGMENT,complex,digital_mirror_synthetic_test_v1,i understand the procedure you've outlined for this session.,i understand the procedure you've outlined for this session
+DMT-0140,I've heard your account and am following what you're telling me.,ACKNOWLEDGMENT,complex,digital_mirror_synthetic_test_v1,i've heard your account and am following what you're telling me.,i've heard your account and am following what you're telling me
+DMT-0141,"Yes, that would suit me.",AFFIRMATIVE_ANSWER,natural,digital_mirror_synthetic_test_v1,"yes, that would suit me.",yes that would suit me
+DMT-0142,"Yes, I have already done that.",AFFIRMATIVE_ANSWER,natural,digital_mirror_synthetic_test_v1,"yes, i have already done that.",yes i have already done that
+DMT-0143,"Yes, I'm available for that.",AFFIRMATIVE_ANSWER,natural,digital_mirror_synthetic_test_v1,"yes, i'm available for that.",yes i'm available for that
+DMT-0144,"Yes, I'd be happy to.",AFFIRMATIVE_ANSWER,natural,digital_mirror_synthetic_test_v1,"yes, i'd be happy to.",yes i'd be happy to
+DMT-0145,"Yes, that is what I requested.",AFFIRMATIVE_ANSWER,natural,digital_mirror_synthetic_test_v1,"yes, that is what i requested.",yes that is what i requested
+DMT-0146,"Yes, I shall",AFFIRMATIVE_ANSWER,short,digital_mirror_synthetic_test_v1,"yes, i shall",yes i shall
+DMT-0147,Sure can,AFFIRMATIVE_ANSWER,short,digital_mirror_synthetic_test_v1,sure can,sure can
+DMT-0148,I certainly can,AFFIRMATIVE_ANSWER,short,digital_mirror_synthetic_test_v1,i certainly can,i certainly can
+DMT-0149,Yes I have,AFFIRMATIVE_ANSWER,short,digital_mirror_synthetic_test_v1,yes i have,yes i have
+DMT-0150,Yes I will,AFFIRMATIVE_ANSWER,short,digital_mirror_synthetic_test_v1,yes i will,yes i will
+DMT-0151,"Yes, I'd like to view the original footage.",AFFIRMATIVE_ANSWER,installation,digital_mirror_synthetic_test_v1,"yes, i'd like to view the original footage.",yes i'd like to view the original footage
+DMT-0152,"Yes, I'm ready for the next claim.",AFFIRMATIVE_ANSWER,installation,digital_mirror_synthetic_test_v1,"yes, i'm ready for the next claim.",yes i'm ready for the next claim
+DMT-0153,"Yes, I've watched the entire clip.",AFFIRMATIVE_ANSWER,installation,digital_mirror_synthetic_test_v1,"yes, i've watched the entire clip.",yes i've watched the entire clip
+DMT-0154,"Yes, you may display the evidence.",AFFIRMATIVE_ANSWER,installation,digital_mirror_synthetic_test_v1,"yes, you may display the evidence.",yes you may display the evidence
+DMT-0155,"Yes, I want to continue this session.",AFFIRMATIVE_ANSWER,installation,digital_mirror_synthetic_test_v1,"yes, i want to continue this session.",yes i want to continue this session
+DMT-0156,"Yes, I would be willing to answer another question about the report.",AFFIRMATIVE_ANSWER,complex,digital_mirror_synthetic_test_v1,"yes, i would be willing to answer another question about the report.",yes i would be willing to answer another question about the report
+DMT-0157,"Yes, I have previously encountered the article you're asking about.",AFFIRMATIVE_ANSWER,complex,digital_mirror_synthetic_test_v1,"yes, i have previously encountered the article you're asking about.",yes i have previously encountered the article you're asking about
+DMT-0158,"Yes, I'd like you to proceed with the comparison you offered.",AFFIRMATIVE_ANSWER,complex,digital_mirror_synthetic_test_v1,"yes, i'd like you to proceed with the comparison you offered.",yes i'd like you to proceed with the comparison you offered
+DMT-0159,"Yes, I can confirm that I've finished viewing the material.",AFFIRMATIVE_ANSWER,complex,digital_mirror_synthetic_test_v1,"yes, i can confirm that i've finished viewing the material.",yes i can confirm that i've finished viewing the material
+DMT-0160,"Yes, I would prefer to examine the original source first.",AFFIRMATIVE_ANSWER,complex,digital_mirror_synthetic_test_v1,"yes, i would prefer to examine the original source first.",yes i would prefer to examine the original source first
+DMT-0161,"No, that wouldn't suit me.",NEGATIVE_ANSWER,natural,digital_mirror_synthetic_test_v1,"no, that wouldn't suit me.",no that wouldn't suit me
+DMT-0162,"No, I haven't done that yet.",NEGATIVE_ANSWER,natural,digital_mirror_synthetic_test_v1,"no, i haven't done that yet.",no i haven't done that yet
+DMT-0163,"No, I'm unavailable for that.",NEGATIVE_ANSWER,natural,digital_mirror_synthetic_test_v1,"no, i'm unavailable for that.",no i'm unavailable for that
+DMT-0164,"No, I'd rather not.",NEGATIVE_ANSWER,natural,digital_mirror_synthetic_test_v1,"no, i'd rather not.",no i'd rather not
+DMT-0165,"No, that isn't what I requested.",NEGATIVE_ANSWER,natural,digital_mirror_synthetic_test_v1,"no, that isn't what i requested.",no that isn't what i requested
+DMT-0166,No chance,NEGATIVE_ANSWER,short,digital_mirror_synthetic_test_v1,no chance,no chance
+DMT-0167,I cannot,NEGATIVE_ANSWER,short,digital_mirror_synthetic_test_v1,i cannot,i cannot
+DMT-0168,No I haven't,NEGATIVE_ANSWER,short,digital_mirror_synthetic_test_v1,no i haven't,no i haven't
+DMT-0169,No I won't,NEGATIVE_ANSWER,short,digital_mirror_synthetic_test_v1,no i won't,no i won't
+DMT-0170,"No, not today",NEGATIVE_ANSWER,short,digital_mirror_synthetic_test_v1,"no, not today",no not today
+DMT-0171,"No, I don't want to watch another clip.",NEGATIVE_ANSWER,installation,digital_mirror_synthetic_test_v1,"no, i don't want to watch another clip.",no i don't want to watch another clip
+DMT-0172,"No, I haven't encountered this report before.",NEGATIVE_ANSWER,installation,digital_mirror_synthetic_test_v1,"no, i haven't encountered this report before.",no i haven't encountered this report before
+DMT-0173,"No, I'm not ready to continue.",NEGATIVE_ANSWER,installation,digital_mirror_synthetic_test_v1,"no, i'm not ready to continue.",no i'm not ready to continue
+DMT-0174,"No, I didn't see the original footage.",NEGATIVE_ANSWER,installation,digital_mirror_synthetic_test_v1,"no, i didn't see the original footage.",no i didn't see the original footage
+DMT-0175,"No, I would prefer not to answer that question.",NEGATIVE_ANSWER,installation,digital_mirror_synthetic_test_v1,"no, i would prefer not to answer that question.",no i would prefer not to answer that question
+DMT-0176,"No, I would not like to proceed to another example at this time.",NEGATIVE_ANSWER,complex,digital_mirror_synthetic_test_v1,"no, i would not like to proceed to another example at this time.",no i would not like to proceed to another example at this time
+DMT-0177,"No, I haven't previously read the article you're asking about.",NEGATIVE_ANSWER,complex,digital_mirror_synthetic_test_v1,"no, i haven't previously read the article you're asking about.",no i haven't previously read the article you're asking about
+DMT-0178,"No, I don't wish to take part in the optional recording.",NEGATIVE_ANSWER,complex,digital_mirror_synthetic_test_v1,"no, i don't wish to take part in the optional recording.",no i don't wish to take part in the optional recording
+DMT-0179,"No, I wasn't able to view the entire video before responding.",NEGATIVE_ANSWER,complex,digital_mirror_synthetic_test_v1,"no, i wasn't able to view the entire video before responding.",no i wasn't able to view the entire video before responding
+DMT-0180,"No, I would prefer not to provide the additional information requested.",NEGATIVE_ANSWER,complex,digital_mirror_synthetic_test_v1,"no, i would prefer not to provide the additional information requested.",no i would prefer not to provide the additional information requested
+DMT-0181,When did that happen?,QUESTION,natural,digital_mirror_synthetic_test_v1,when did that happen?,when did that happen
+DMT-0182,Who was involved in the event?,QUESTION,natural,digital_mirror_synthetic_test_v1,who was involved in the event?,who was involved in the event
+DMT-0183,What caused the change?,QUESTION,natural,digital_mirror_synthetic_test_v1,what caused the change?,what caused the change
+DMT-0184,How long did the process take?,QUESTION,natural,digital_mirror_synthetic_test_v1,how long did the process take?,how long did the process take
+DMT-0185,Which option costs less?,QUESTION,natural,digital_mirror_synthetic_test_v1,which option costs less?,which option costs less
+DMT-0186,Who reported it?,QUESTION,short,digital_mirror_synthetic_test_v1,who reported it?,who reported it
+DMT-0187,When exactly?,QUESTION,short,digital_mirror_synthetic_test_v1,when exactly?,when exactly
+DMT-0188,Which country?,QUESTION,short,digital_mirror_synthetic_test_v1,which country?,which country
+DMT-0189,How many participants?,QUESTION,short,digital_mirror_synthetic_test_v1,how many participants?,how many participants
+DMT-0190,What happened?,QUESTION,short,digital_mirror_synthetic_test_v1,what happened?,what happened
+DMT-0191,Which organization verified this footage?,QUESTION,installation,digital_mirror_synthetic_test_v1,which organization verified this footage?,which organization verified this footage
+DMT-0192,Where can I access the original recording?,QUESTION,installation,digital_mirror_synthetic_test_v1,where can i access the original recording?,where can i access the original recording
+DMT-0193,When was the source document released?,QUESTION,installation,digital_mirror_synthetic_test_v1,when was the source document released?,when was the source document released
+DMT-0194,What evidence supports the reported figure?,QUESTION,installation,digital_mirror_synthetic_test_v1,what evidence supports the reported figure?,what evidence supports the reported figure
+DMT-0195,Who funded the study mentioned in the clip?,QUESTION,installation,digital_mirror_synthetic_test_v1,who funded the study mentioned in the clip?,who funded the study mentioned in the clip
+DMT-0196,What independent sources have corroborated the account presented in the video?,QUESTION,complex,digital_mirror_synthetic_test_v1,what independent sources have corroborated the account presented in the video?,what independent sources have corroborated the account presented in the video
+DMT-0197,How was the sample selected for the study described in this report?,QUESTION,complex,digital_mirror_synthetic_test_v1,how was the sample selected for the study described in this report?,how was the sample selected for the study described in this report
+DMT-0198,Which records establish the date on which the event occurred?,QUESTION,complex,digital_mirror_synthetic_test_v1,which records establish the date on which the event occurred?,which records establish the date on which the event occurred
+DMT-0199,What methods were used to verify the authenticity of the recording?,QUESTION,complex,digital_mirror_synthetic_test_v1,what methods were used to verify the authenticity of the recording?,what methods were used to verify the authenticity of the recording
+DMT-0200,Who was responsible for collecting the statistics quoted in the article?,QUESTION,complex,digital_mirror_synthetic_test_v1,who was responsible for collecting the statistics quoted in the article?,who was responsible for collecting the statistics quoted in the article
+DMT-0201,Would you mind saying that once more?,CLARIFICATION,natural,digital_mirror_synthetic_test_v1,would you mind saying that once more?,would you mind saying that once more
+DMT-0202,Which part are you referring to?,CLARIFICATION,natural,digital_mirror_synthetic_test_v1,which part are you referring to?,which part are you referring to
+DMT-0203,I'm unclear about your last remark.,CLARIFICATION,natural,digital_mirror_synthetic_test_v1,i'm unclear about your last remark.,i'm unclear about your last remark
+DMT-0204,Could you put that in simpler words?,CLARIFICATION,natural,digital_mirror_synthetic_test_v1,could you put that in simpler words?,could you put that in simpler words
+DMT-0205,I missed the last few words you said.,CLARIFICATION,natural,digital_mirror_synthetic_test_v1,i missed the last few words you said.,i missed the last few words you said
+DMT-0206,Say again?,CLARIFICATION,short,digital_mirror_synthetic_test_v1,say again?,say again
+DMT-0207,Come again?,CLARIFICATION,short,digital_mirror_synthetic_test_v1,come again?,come again
+DMT-0208,Meaning what?,CLARIFICATION,short,digital_mirror_synthetic_test_v1,meaning what?,meaning what
+DMT-0209,Which part exactly?,CLARIFICATION,short,digital_mirror_synthetic_test_v1,which part exactly?,which part exactly
+DMT-0210,Repeat that please,CLARIFICATION,short,digital_mirror_synthetic_test_v1,repeat that please,repeat that please
+DMT-0211,Could you explain what you mean by verified?,CLARIFICATION,installation,digital_mirror_synthetic_test_v1,could you explain what you mean by verified?,could you explain what you mean by verified
+DMT-0212,"I missed the name of the source, could you repeat it?",CLARIFICATION,installation,digital_mirror_synthetic_test_v1,"i missed the name of the source, could you repeat it?",i missed the name of the source could you repeat it
+DMT-0213,What does that term on the screen mean?,CLARIFICATION,installation,digital_mirror_synthetic_test_v1,what does that term on the screen mean?,what does that term on the screen mean
+DMT-0214,Could you rephrase the claim you just displayed?,CLARIFICATION,installation,digital_mirror_synthetic_test_v1,could you rephrase the claim you just displayed?,could you rephrase the claim you just displayed
+DMT-0215,I'm unclear about the distinction you just made between the reports.,CLARIFICATION,installation,digital_mirror_synthetic_test_v1,i'm unclear about the distinction you just made between the reports.,i'm unclear about the distinction you just made between the reports
+DMT-0216,"When you used that expression earlier, what exactly were you referring to?",CLARIFICATION,complex,digital_mirror_synthetic_test_v1,"when you used that expression earlier, what exactly were you referring to?",when you used that expression earlier what exactly were you referring to
+DMT-0217,Could you restate your previous explanation using less technical language?,CLARIFICATION,complex,digital_mirror_synthetic_test_v1,could you restate your previous explanation using less technical language?,could you restate your previous explanation using less technical language
+DMT-0218,"I couldn't follow the final part of your explanation, could you go over it again?",CLARIFICATION,complex,digital_mirror_synthetic_test_v1,"i couldn't follow the final part of your explanation, could you go over it again?",i couldn't follow the final part of your explanation could you go over it again
+DMT-0219,I'm not clear whether your last remark referred to the clip or the article.,CLARIFICATION,complex,digital_mirror_synthetic_test_v1,i'm not clear whether your last remark referred to the clip or the article.,i'm not clear whether your last remark referred to the clip or the article
+DMT-0220,Would you clarify the meaning of the phrase you used in your previous response?,CLARIFICATION,complex,digital_mirror_synthetic_test_v1,would you clarify the meaning of the phrase you used in your previous response?,would you clarify the meaning of the phrase you used in your previous response
+DMT-0221,I usually read the paper over breakfast.,STATEMENT,natural,digital_mirror_synthetic_test_v1,i usually read the paper over breakfast.,i usually read the paper over breakfast
+DMT-0222,My neighbour works at a library.,STATEMENT,natural,digital_mirror_synthetic_test_v1,my neighbour works at a library.,my neighbour works at a library
+DMT-0223,The meeting ended before noon.,STATEMENT,natural,digital_mirror_synthetic_test_v1,the meeting ended before noon.,the meeting ended before noon
+DMT-0224,I moved here three years ago.,STATEMENT,natural,digital_mirror_synthetic_test_v1,i moved here three years ago.,i moved here three years ago
+DMT-0225,The room has two large windows.,STATEMENT,natural,digital_mirror_synthetic_test_v1,the room has two large windows.,the room has two large windows
+DMT-0226,It's raining,STATEMENT,short,digital_mirror_synthetic_test_v1,it's raining,it's raining
+DMT-0227,I'm seated,STATEMENT,short,digital_mirror_synthetic_test_v1,i'm seated,i'm seated
+DMT-0228,The screen flickers,STATEMENT,short,digital_mirror_synthetic_test_v1,the screen flickers,the screen flickers
+DMT-0229,It's noon,STATEMENT,short,digital_mirror_synthetic_test_v1,it's noon,it's noon
+DMT-0230,I'm visiting,STATEMENT,short,digital_mirror_synthetic_test_v1,i'm visiting,i'm visiting
+DMT-0231,The video contains two interviews.,STATEMENT,installation,digital_mirror_synthetic_test_v1,the video contains two interviews.,the video contains two interviews
+DMT-0232,The headline appears above the photograph.,STATEMENT,installation,digital_mirror_synthetic_test_v1,the headline appears above the photograph.,the headline appears above the photograph
+DMT-0233,I watched a documentary about this subject last month.,STATEMENT,installation,digital_mirror_synthetic_test_v1,i watched a documentary about this subject last month.,i watched a documentary about this subject last month
+DMT-0234,The report includes a chart with five columns.,STATEMENT,installation,digital_mirror_synthetic_test_v1,the report includes a chart with five columns.,the report includes a chart with five columns
+DMT-0235,The display shows the publication date.,STATEMENT,installation,digital_mirror_synthetic_test_v1,the display shows the publication date.,the display shows the publication date
+DMT-0236,The article describes a series of events that occurred over several months.,STATEMENT,complex,digital_mirror_synthetic_test_v1,the article describes a series of events that occurred over several months.,the article describes a series of events that occurred over several months
+DMT-0237,I first encountered this topic during a lecture at university.,STATEMENT,complex,digital_mirror_synthetic_test_v1,i first encountered this topic during a lecture at university.,i first encountered this topic during a lecture at university
+DMT-0238,The recording begins with an introduction followed by an interview.,STATEMENT,complex,digital_mirror_synthetic_test_v1,the recording begins with an introduction followed by an interview.,the recording begins with an introduction followed by an interview
+DMT-0239,The document contains a list of references at the end of the final section.,STATEMENT,complex,digital_mirror_synthetic_test_v1,the document contains a list of references at the end of the final section.,the document contains a list of references at the end of the final section
+DMT-0240,Several newspapers covered the announcement on the following morning.,STATEMENT,complex,digital_mirror_synthetic_test_v1,several newspapers covered the announcement on the following morning.,several newspapers covered the announcement on the following morning

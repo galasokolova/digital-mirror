@@ -1,0 +1,224 @@
+=== E09.07.6.3: CONTRASTIVE DATASET VALIDATION ===
+
+Original SHA256: b11af2e72229fe7a1f1244f60f10340debc5f0ac92175522500c9fa1baa6987e
+
+=== DATASET LOADING ===
+Records: 1200
+Columns: 8
+
+=== STRUCTURAL VALIDATION ===
+PASS | Expected columns
+PASS | Expected dataset size
+PASS | Unique record IDs
+PASS | Valid record IDs
+PASS | No empty required fields
+PASS | All intent classes present
+PASS | Balanced intent classes
+PASS | All styles present
+PASS | Balanced styles
+PASS | Balanced intent-style combinations
+PASS | All topics present
+PASS | No duplicate raw texts
+PASS | No duplicate normalized texts
+PASS | No empty normalized texts
+PASS | No conflicting intent labels
+PASS | Expected contrastive group count
+PASS | At least two intents per group
+PASS | Single topic per group
+PASS | Single style per group
+PASS | Valid source
+
+Checks passed: 20 / 20
+
+=== GROUP SIZE DISTRIBUTION ===
+records
+3    100
+4    100
+5    100
+
+=== INTENTS PER GROUP ===
+intents
+3    100
+4    100
+5    100
+Saved: E09_07_06_03_group_statistics.csv
+Saved: E09_07_06_03_structural_checks.csv
+
+=== LEXICAL DIVERSITY ===
+            intent  records  total_tokens  unique_tokens  type_token_ratio  mean_words
+          GREETING      100           855             57            0.0667      8.5500
+           GOODBYE      100           929             57            0.0614      9.2900
+         GRATITUDE      100           817             60            0.0734      8.1700
+         AGREEMENT      100           949             93            0.0980      9.4900
+      DISAGREEMENT      100           969             96            0.0991      9.6900
+       UNCERTAINTY      100           996            100            0.1004      9.9600
+    ACKNOWLEDGMENT      100           886             47            0.0530      8.8600
+AFFIRMATIVE_ANSWER      100           764             57            0.0746      7.6400
+   NEGATIVE_ANSWER      100           937             67            0.0715      9.3700
+          QUESTION      100          1061             87            0.0820     10.6100
+     CLARIFICATION      100           850             63            0.0741      8.5000
+         STATEMENT      100           774             89            0.1150      7.7400
+Saved: E09_07_06_03_lexical_diversity.csv
+
+=== REPEATED OPENING PATTERNS ===
+
+Top 40 repeated patterns:
+            intent  prefix_size                             prefix  count  class_share
+       UNCERTAINTY            2                               i am     40         0.40
+    ACKNOWLEDGMENT            2                             i have     21         0.21
+          GREETING            4                    nice to see you     20         0.20
+          GREETING            4               good afternoon it is     20         0.20
+          GREETING            4                    we have not met     20         0.20
+           GOODBYE            4                 until next time at     20         0.20
+           GOODBYE            4                   i must leave the     20         0.20
+           GOODBYE            4                   i cannot stay at     20         0.20
+         GRATITUDE            4            i really appreciate you     20         0.20
+         GRATITUDE            4                i wanted to express     20         0.20
+         GRATITUDE            4                 i cannot thank you     20         0.20
+         AGREEMENT            4                    that is my view     20         0.20
+         AGREEMENT            4 after considering the alternatives     20         0.20
+         AGREEMENT            4                i have no objection     20         0.20
+      DISAGREEMENT            4                     not my view of     20         0.20
+      DISAGREEMENT            4             although i follow your     20         0.20
+      DISAGREEMENT            4                i would not endorse     20         0.20
+       UNCERTAINTY            4                i am still weighing     20         0.20
+       UNCERTAINTY            4                  until i have more     20         0.20
+       UNCERTAINTY            4                   i cannot say for     20         0.20
+    ACKNOWLEDGMENT            4               i have followed your     20         0.20
+    ACKNOWLEDGMENT            4                     i did not miss     20         0.20
+AFFIRMATIVE_ANSWER            4             yes before coming here     20         0.20
+AFFIRMATIVE_ANSWER            4               indeed i can confirm     20         0.20
+   NEGATIVE_ANSWER            4                      i have yet to     20         0.20
+   NEGATIVE_ANSWER            4              no despite having had     20         0.20
+   NEGATIVE_ANSWER            4              i cannot confirm that     20         0.20
+          QUESTION            4                    i would like to     20         0.20
+          QUESTION            4                  before we move on     20         0.20
+          QUESTION            4                would you happen to     20         0.20
+     CLARIFICATION            4           before we continue could     20         0.20
+     CLARIFICATION            4          would you mind explaining     20         0.20
+         STATEMENT            4                 for the record the     20         0.20
+         STATEMENT            4                 it is worth noting     20         0.20
+          GREETING            3                        nice to see     20         0.20
+          GREETING            3                        hi from the     20         0.20
+          GREETING            3                  good afternoon it     20         0.20
+          GREETING            3                        we have not     20         0.20
+           GOODBYE            3                    until next time     20         0.20
+           GOODBYE            3                       bye from the     20         0.20
+Saved: E09_07_06_03_repeated_prefixes.csv
+
+=== SHARED-WORD TEMPLATE PROXY ===
+        intent       style                                                                                                      signature  count
+  DISAGREEMENT       short                                                                               not my view of <shared> <shared>     17
+   UNCERTAINTY     complex           until i have more information about <shared> <shared> i cannot decide which interpretation to accept     17
+ACKNOWLEDGMENT    implicit                                                    your point about <shared> <shared> has come through clearly     17
+  DISAGREEMENT    implicit                                                                      i see <shared> <shared> quite differently     17
+     AGREEMENT challenging                                                 i have no objection to your conclusion about <shared> <shared>     17
+ACKNOWLEDGMENT     complex                          i have followed your explanation of <shared> <shared> without taking a position on it     17
+     AGREEMENT       short                                                                                 same view on <shared> <shared>     17
+     AGREEMENT    implicit                                                                   that is my view of <shared> <shared> as well     17
+ACKNOWLEDGMENT       short                                                                       point about <shared> <shared> understood     17
+  DISAGREEMENT     complex                       although i follow your reasoning i cannot accept your conclusion about <shared> <shared>     17
+     AGREEMENT     complex after considering <shared> alternatives i have reached <shared> same conclusion about <shared> <shared> as you     17
+ACKNOWLEDGMENT challenging                                                              i did not miss your point about <shared> <shared>     17
+   UNCERTAINTY    implicit                                              i am still weighing up <shared> arguments about <shared> <shared>     17
+   UNCERTAINTY       short                                                                              undecided about <shared> <shared>     17
+ACKNOWLEDGMENT    explicit                                                          i understand your explanation about <shared> <shared>     16
+Saved: E09_07_06_03_template_signatures.csv
+Saved: E09_07_06_03_repeated_signatures.csv
+
+=== INTENT / TOPIC MATRIX ===
+topic               news_media  evidence  information_sources  video_audio  artificial_intelligence  technology  science  education  everyday_conversation  personal_decisions  art_exhibitions  human_machine_interaction
+intent                                                                                                                                                                                                                    
+GREETING                    10        10                    9           10                        5           5        9         10                      5                  10               11                          6
+GOODBYE                     10        10                    9           10                        5           5        9         10                      5                  10               11                          6
+GRATITUDE                   10        10                    9           10                        5           5        9         10                      5                  10               11                          6
+AGREEMENT                   10        10                   10           10                        5           5       10         10                      5                  10               10                          5
+DISAGREEMENT                10        10                   10           10                        5           5       10         10                      5                  10               10                          5
+UNCERTAINTY                 10        10                   10           10                        5           5       10         10                      5                  10               10                          5
+ACKNOWLEDGMENT              10        10                   10           10                        5           5       10         10                      5                  10               10                          5
+AFFIRMATIVE_ANSWER          10        10                    9           11                        5           6        9         10                      5                  10               10                          5
+NEGATIVE_ANSWER             10        10                    9           11                        5           6        9         10                      5                  10               10                          5
+QUESTION                    10        10                    9           11                        5           6        9         10                      5                  10               10                          5
+CLARIFICATION               10        10                    9           11                        5           6        9         10                      5                  10               10                          5
+STATEMENT                   10        10                   10           10                        5           5       10         10                      5                  10               10                          5
+Saved: E09_07_06_03_intent_topic_matrix.csv
+
+=== TOPIC CONCENTRATION ===
+            intent  topics_present  dominant_topic  dominant_topic_records  dominant_topic_share
+          GREETING              12 art_exhibitions                      11                  0.11
+           GOODBYE              12 art_exhibitions                      11                  0.11
+         GRATITUDE              12 art_exhibitions                      11                  0.11
+         AGREEMENT              12      news_media                      10                  0.10
+      DISAGREEMENT              12      news_media                      10                  0.10
+       UNCERTAINTY              12      news_media                      10                  0.10
+    ACKNOWLEDGMENT              12      news_media                      10                  0.10
+AFFIRMATIVE_ANSWER              12     video_audio                      11                  0.11
+   NEGATIVE_ANSWER              12     video_audio                      11                  0.11
+          QUESTION              12     video_audio                      11                  0.11
+     CLARIFICATION              12     video_audio                      11                  0.11
+         STATEMENT              12      news_media                      10                  0.10
+Saved: E09_07_06_03_topic_concentration.csv
+
+Cramer's V: 0.012388
+Interpretation: descriptive association, not evidence of causality.
+
+=== STYLE LENGTH STATISTICS ===
+             records       mean  median  minimum  maximum       std
+style                                                              
+explicit         240   7.358333     7.0        4       13  1.911410
+implicit         240   8.095833     8.0        6       12  1.430095
+short            240   4.970833     5.0        2        9  1.110610
+complex          240  13.533333    13.0        8       21  2.324810
+challenging      240  10.987500    11.0        8       16  1.719884
+Saved: E09_07_06_03_style_statistics.csv
+
+=== STYLE REVIEW FLAGS ===
+Short expressions above 5 words: 60 / 240
+Complex expressions below 8 words: 0 / 240
+These are review flags, not errors.
+Saved: E09_07_06_03_style_review_flags.csv
+
+=== CONTEXT AVAILABILITY ===
+            intent  records  with_context  without_context  context_coverage
+          GREETING      100             0              100               0.0
+           GOODBYE      100             0              100               0.0
+         GRATITUDE      100             0              100               0.0
+         AGREEMENT      100           100                0               1.0
+      DISAGREEMENT      100           100                0               1.0
+       UNCERTAINTY      100           100                0               1.0
+    ACKNOWLEDGMENT      100           100                0               1.0
+AFFIRMATIVE_ANSWER      100           100                0               1.0
+   NEGATIVE_ANSWER      100           100                0               1.0
+          QUESTION      100           100                0               1.0
+     CLARIFICATION      100           100                0               1.0
+         STATEMENT      100             0              100               0.0
+Saved: E09_07_06_03_context_statistics.csv
+
+Context-sensitive records without context: 0
+Saved: E09_07_06_03_missing_context_review.csv
+
+=== SEMANTIC REVIEW PREPARATION ===
+Saved: E09_07_06_03_semantic_review_sample.csv
+Saved: E09_07_06_03_semantic_review_answer_key.csv
+Saved: E09_07_06_03_semantic_review_full.csv
+Saved: E09_07_06_03_semantic_review_full_answer_key.csv
+Review sample: 180
+Full review: 1200
+Semantic correctness verified: NO
+
+=== VALIDATION SUMMARY ===
+Structural validation: PASS
+Linguistic diagnostics: COMPLETE
+Semantic review: PENDING
+Evaluation overlap analysis: PENDING
+Dataset ready for training: NO
+Model loaded: NO
+Model trained: NO
+Evaluation data loaded: NO
+
+=== FILE INTEGRITY ===
+Original SHA256: b11af2e72229fe7a1f1244f60f10340debc5f0ac92175522500c9fa1baa6987e
+Current SHA256:  b11af2e72229fe7a1f1244f60f10340debc5f0ac92175522500c9fa1baa6987e
+Source dataset unchanged: YES
+
+=== VALIDATION FINISHED ===

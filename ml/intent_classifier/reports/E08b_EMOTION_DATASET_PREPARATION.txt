@@ -1,0 +1,133 @@
+=== E08b: EMOTION DATASET PREPARATION ===
+Taxonomy version: 1.0
+Original emotion categories: 28
+Target emotion categories: 10
+
+============================================================
+TRAIN
+============================================================
+Rows: 43,410
+No target emotions: 13,289
+Single target emotion: 27,938
+Multiple target emotions: 2,183
+Multilabel percentage: 5.03%
+
+Emotion distribution:
+emotions
+AMUSEMENT       2328
+ANNOYANCE       2470
+APPROVAL        2939
+CONFUSION       1368
+CURIOSITY       2191
+DISAPPROVAL     2022
+GRATITUDE       2662
+REALIZATION     1110
+SURPRISE        1060
+NEUTRAL        14219
+
+Target label count distribution:
+emotion_count
+0    13289
+1    27938
+2     2118
+3       65
+
+Neutral with other target emotions: 815
+
+============================================================
+VALIDATION
+============================================================
+Rows: 5,426
+No target emotions: 1,621
+Single target emotion: 3,543
+Multiple target emotions: 262
+Multilabel percentage: 4.83%
+
+Emotion distribution:
+emotions
+AMUSEMENT       303
+ANNOYANCE       303
+APPROVAL        397
+CONFUSION       152
+CURIOSITY       248
+DISAPPROVAL     292
+GRATITUDE       358
+REALIZATION     127
+SURPRISE        129
+NEUTRAL        1766
+
+Target label count distribution:
+emotion_count
+0    1621
+1    3543
+2     254
+3       8
+
+Neutral with other target emotions: 116
+
+============================================================
+TEST
+============================================================
+Rows: 5,427
+No target emotions: 1,646
+Single target emotion: 3,504
+Multiple target emotions: 277
+Multilabel percentage: 5.10%
+
+Emotion distribution:
+emotions
+AMUSEMENT       264
+ANNOYANCE       320
+APPROVAL        351
+CONFUSION       153
+CURIOSITY       284
+DISAPPROVAL     267
+GRATITUDE       352
+REALIZATION     145
+SURPRISE        141
+NEUTRAL        1787
+
+Target label count distribution:
+emotion_count
+0    1646
+1    3504
+2     271
+3       6
+
+Neutral with other target emotions: 116
+
+Total rows: 54,263
+
+=== SPLIT OVERLAP ===
+
+train <-> validation
+Shared IDs: 0
+Shared raw texts: 41
+Shared model texts: 92
+
+train <-> test
+Shared IDs: 0
+Shared raw texts: 32
+Shared model texts: 80
+
+validation <-> test
+Shared IDs: 0
+Shared raw texts: 10
+Shared model texts: 25
+
+=== VALIDATION ===
+train: validation PASSED
+train: empty model texts = 2
+validation: validation PASSED
+validation: empty model texts = 0
+test: validation PASSED
+test: empty model texts = 0
+Comment ID isolation: PASSED
+Emotion class coverage: PASSED
+
+=== OUTPUT FILES ===
+Saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\emotion_v1\train.csv
+Saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\emotion_v1\validation.csv
+Saved: C:\codes\JAVA_OpenAI_Projects\digital-mirror\ml\intent_classifier\data\processed\emotion_v1\test.csv
+
+=== PREPARATION COMPLETE ===

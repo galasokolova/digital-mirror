@@ -1,0 +1,21 @@
+check,passed
+Expected columns,True
+Expected dataset size,True
+Unique record IDs,True
+Valid record IDs,True
+No empty required fields,True
+All intent classes present,True
+Balanced intent classes,True
+All styles present,True
+Balanced styles,True
+Balanced intent-style combinations,True
+All topics present,True
+No duplicate raw texts,True
+No duplicate normalized texts,True
+No empty normalized texts,True
+No conflicting intent labels,True
+Expected contrastive group count,True
+At least two intents per group,True
+Single topic per group,True
+Single style per group,True
+Valid source,True
